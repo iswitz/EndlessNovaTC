@@ -12,6 +12,37 @@ Extraction scaffold for the Windows EV Nova install at `C:\Users\Isaac\EV Nova`.
 
 `reference/evntoes/` contains selected checked-in outputs from EVNToEndlessSky: its parsed JSON and generated ES data files. These are reference artifacts, not a claim that they came from this Windows install.
 
+## Work completed
+
+The current pipeline reads Windows EV Nova BurgerLib `.rez` containers, bridges them into NovaParse resource forks, extracts normalized gameplay records, and emits a total-conversion Endless Sky plugin named `Endless Nova TC`.
+
+Current extracted dataset:
+
+- 8,362 raw EVN resources preserved as JSON or compressed JSON.
+- 288 ships, 242 outfits, 81 weapons, 411 planets, 545 systems, and 15 explosions normalized.
+- 68 governments, 147 `düde` ship groups, 128 `flët` formations, 791 missions, 125 `crön` events, 19 `öops` disasters, and 4 `nëbu` nebula records preserved.
+
+Current ES conversion:
+
+- Ship, outfit, weapon, planet, system, government, fleet, shop, mission, conversation, start, and menu interface data emitted under `converted-plugin/data/`.
+- EVN government colors, reputation, allies, enemies, dock flags, tech levels, SpecialTech shops, commodity flags, asteroid fields, traffic fleets, reinforcement fleets, tribute, and defense fleets mapped into ES syntax.
+- EVN `DefCount` wave encoding converted to total ES tribute-fleet spawns. ES has no direct equivalent for EVN wave timing.
+- EVN murk mapped to ES system haze artwork. Sensor interference, visibility expressions, and decorative `nëbu` regions remain explicit source/attribute data because ES has no direct equivalents.
+- 18 simple missions and 39 conversations active. Complex mission branches remain preserved but inactive.
+- Startup menu override, `Endless Nova TC` metadata, EVN Trader start, and installed Windows test copy verified.
+
+Extracted images and sounds are intentionally excluded from Git for now. They remain local under `converted-plugin/images/` and `converted-plugin/sounds/`; `.gitignore` keeps them out of commits. The converter and asset scripts still support rebuilding them locally.
+
+## Plans moving forward
+
+1. Convert `öops` disasters into ES commodity price events and validate duration/frequency behavior.
+2. Convert `crön` records into ES events, including date windows, control-bit conditions, news, and state changes.
+3. Expand mission conversion: branch choices, complex availability expressions, mission starts, abort/failure paths, cargo/person handling, and control-bit state transitions.
+4. Improve ship and weapon fidelity: loadouts, AI, turrets, ammunition, animations, explosions, sound links, and remaining parser warnings.
+5. Map remaining planet and system fields: landing restrictions, tribute thresholds, services, stellar weapons, dead/reanimated states, navigation defaults, and system visibility replacements.
+6. Re-enable media packaging after data mappings stabilize, then validate the full plugin from a clean Endless Sky install.
+7. Add repeatable converter validation and release packaging, including a documented `git clone --recurse-submodules` workflow.
+
 ## Run
 
 From Windows Node.js:
