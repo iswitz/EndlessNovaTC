@@ -1,0 +1,2 @@
+# EVN bööm resources have no direct ES resource type.
+# See source/normalized/Explosion.json for preserved definitions.

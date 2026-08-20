@@ -1,0 +1,2971 @@
+# EV Nova mission catalog.
+# Simple contracts preserve EVN availability bits, completion flags, and recoverable offer/completion text.
+# Complex control-bit expressions and branch conversations remain disabled stubs.
+
+mission "EVN: Delivery to Earth; Vellos1"
+	landing
+	destination "Earth"
+	description "EV Nova contract: Delivery to Earth; Vellos1."
+	cargo "EVN random cargo" 5
+	npc
+		government "Vell-os"
+		system "Sol"
+		personality staying
+		ship "Vell-os Dart"
+	to offer
+		and
+			not "EVN bit 511"
+			not "EVN bit 515"
+			not "EVN bit 350"
+		random < 8
+	on offer
+		conversation "EVN dialogue 128 offer"
+	on complete
+		payment 15000
+		set "EVN bit 350"
+		set "EVN bit 6666"
+		conversation "EVN dialogue 128 complete"
+
+mission "EVN: Visit Vell-os Homeworld; Vellos2"
+	landing
+	source "Earth"
+	destination "Earth"
+	description "EV Nova contract: Visit Vell-os Homeworld; Vellos2."
+	to offer
+		and
+			not "EVN bit 511"
+			not "EVN bit 515"
+			has "EVN bit 350"
+			not "EVN bit 6666"
+			not "EVN bit 351"
+			not "EVN bit 4444"
+		random < 40
+	on offer
+		conversation "EVN dialogue 129 offer"
+	on accept
+		set "EVN bit 511"
+	on complete
+		payment 15000
+		set "EVN bit 351"
+		set "EVN bit 512"
+		set "EVN bit 515"
+		set "EVN bit 518"
+		"reputation: Vell-os" += 5
+		conversation "EVN dialogue 129 complete"
+	on fail
+		clear "EVN bit 511"
+	on abort
+		clear "EVN bit 511"
+		set "EVN bit 4444"
+	on decline
+		set "EVN bit 4444"
+		conversation "EVN dialogue 129 decline"
+
+mission "EVN: Return to Earth for Training; Vellos3"
+	invisible
+	to offer
+		never
+
+mission "EVN: Infiltrate the Rebels; Vellos4"
+	invisible
+	to offer
+		never
+
+mission "EVN: Escort Merchant to <RST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: Derelict Decoy"
+	invisible
+	to offer
+		never
+
+mission "EVN: Passengers for <DST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rush Delivery to <DST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: Delivery to <DST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: 25000 Credit Bounty"
+	invisible
+	to offer
+		never
+
+mission "EVN: Refuel Trader"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Food Drop; Vellos5"
+	invisible
+	to offer
+		never
+
+mission "EVN: Regular Food Run; Vellos5a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Equipment Drop; Vellos6"
+	invisible
+	to offer
+		never
+
+mission "EVN: Regular Equipment Run; Vellos6a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Agent; Vellos7"
+	invisible
+	to offer
+		never
+
+mission "EVN: Receive Instructions from Krane; Vellos8"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Rebel; Vellos8a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Insert Bureau Agent; Vellos9"
+	invisible
+	to offer
+		never
+
+mission "EVN: Transport Mu'Randa;Polaris1"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Mu'Randa to Sol;Polaris2"
+	invisible
+	to offer
+		never
+
+mission "EVN: See Vell-os Remains;Polaris3"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pick up Bis Andreya;Polaris4 CONTINUE"
+	invisible
+	to offer
+		never
+
+mission "EVN: Go to P'ar Aed;Polaris5"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Sample;Polaris6a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Explore Wraith Space;Polaris7a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Broadcast Message;Polaris8a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Watch Wraith Talks;Polaris9a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return From Talks;Polaris10a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Scout Wraith Space;Polaris11a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet With Rebels;Polaris12"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to Kel'ar Iy;Polaris13"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Mu'Hari to Port Kane;Polaris14"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return With Message;Polaris15"
+	invisible
+	to offer
+		never
+
+mission "EVN: ATTN: Ory'hara;Polaris16"
+	invisible
+	to offer
+		never
+
+mission "EVN: ATTN: Ory'hara;Polaris17"
+	invisible
+	to offer
+		never
+
+mission "EVN: ATTN: Ory'hara;Polaris18"
+	invisible
+	to offer
+		never
+
+mission "EVN: Eamon's Answer;Polaris19"
+	invisible
+	to offer
+		never
+
+mission "EVN: ATTN:Ory'hara;Polaris20"
+	invisible
+	to offer
+		never
+
+mission "EVN: Open Rebel Talks;Polaris21"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return With Rebel Ambassador;Polaris22"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to Nil'ar Kemorya;Polaris23"
+	invisible
+	to offer
+		never
+
+mission "EVN: Defend Polaris Space;Polaris24"
+	invisible
+	to offer
+		never
+
+mission "EVN: Defend Polaris Space;Polaris25"
+	invisible
+	to offer
+		never
+
+mission "EVN: Scout Auroran Space;Polaris26"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet With Rimertans;Polaris27"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet With Heraan House;Polaris28 - Unregistered cutoff"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return To Mu'ar Haro;Polaris29"
+	invisible
+	to offer
+		never
+
+mission "EVN: Consult Vell-os;Polaris30"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to P'ar Aed;Polaris31"
+	invisible
+	to offer
+		never
+
+mission "EVN: Find Vellos;Polaris32"
+	invisible
+	to offer
+		never
+
+mission "EVN: Observe Experiment;Polaris33"
+	invisible
+	to offer
+		never
+
+mission "EVN: Capture Vell-os;Polaris34"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pass on Info;Polaris35"
+	invisible
+	to offer
+		never
+
+mission "EVN: Alert Rimertans;Polaris36"
+	invisible
+	to offer
+		never
+
+mission "EVN: Observe Bureau;Polaris37"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet the Ruling Council;Polaris38"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to Kel'ar Iy;Polaris39"
+	invisible
+	to offer
+		never
+
+mission "EVN: Find Krypt-tokh;Polaris40"
+	invisible
+	to offer
+		never
+
+mission "EVN: Ferry Mu'Randa;Polaris41"
+	invisible
+	to offer
+		never
+
+mission "EVN: Travel to Ar'Za Iusia;Polaris42"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to Port Kane;Polaris43a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Insertion; Vellos10"
+	invisible
+	to offer
+		never
+
+mission "EVN: Learn the Rules...; Vellos11"
+	invisible
+	to offer
+		never
+
+mission "EVN: Scout Moash Space; Vellos12"
+	invisible
+	to offer
+		never
+
+mission "EVN: Distract Moash House; Vellos13"
+	invisible
+	to offer
+		never
+
+mission "EVN: Learn About Vell-os; Vellos14"
+	invisible
+	to offer
+		never
+
+mission "EVN: Talk to Moash Elders; Vellos15"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return With Response; Vellos16"
+	invisible
+	to offer
+		never
+
+mission "EVN: Ferry Passengers to <DST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: Ferry a P'aedt to <DST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: Ferry a Ver'ash to <DST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: Ferry a Tre'pira to <DST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: Ferry a Kel'ariy to <DST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: Ferry a Mu'hari to <DST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: Urgent Delivery to <DST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: Ferry Rebels to <DST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: Ferry Rimertans to <DST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: Ferry WG Rep to <DST>"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to Sol;Tutorial 001"
+	invisible
+	to offer
+		never
+
+mission "EVN: Intro to Bounty Hunters Guild;Bounty Hunter1"
+	invisible
+	to offer
+		never
+
+mission "EVN: 25000 Credit Bounty;Bounty Hunter1a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Auroran Negotiations;Bounty Hunter2"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return from Aurora;Bounty Hunter3"
+	invisible
+	to offer
+		never
+
+mission "EVN: 50000 Credit Bounty;Bounty Hunter3a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Heraan Warrior Initiation;Bounty Hunter Auroran link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Open Auroran Chapter House;Bounty Hunter4"
+	invisible
+	to offer
+		never
+
+mission "EVN: First Auroran Bounty;Bounty Hunter5"
+	invisible
+	to offer
+		never
+
+mission "EVN: First Auroran Bounty;Bounty Hunter6"
+	invisible
+	to offer
+		never
+
+mission "EVN: 25000 Credit Bounty;Bounty Hunter6a"
+	invisible
+	to offer
+		never
+
+mission "EVN: 50000 Credit Bounty;Bounty Hunter6b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet the Polaris;Bounty Hunter7"
+	invisible
+	to offer
+		never
+
+mission "EVN: Remember the 2nd Rule;Bounty Hunter8"
+	invisible
+	to offer
+		never
+
+mission "EVN: 150000 Renegade Bounty;Bounty Hunter8a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Information;Bounty Hunter9"
+	invisible
+	to offer
+		never
+
+mission "EVN: Join the Rebels;Bounty Hunter Rebel link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Tomak;Pirate Offshoot 001"
+	invisible
+	to offer
+		never
+
+mission "EVN: Deliver Instructions; Vellos17"
+	invisible
+	to offer
+		never
+
+mission "EVN: Deliver Further Instructions; Vellos18"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet With Krane; Vellos19"
+	invisible
+	to offer
+		never
+
+mission "EVN: Find Mu'hari HQ; Vellos20"
+	invisible
+	to offer
+		never
+
+mission "EVN: Confirm Mu'hari; Vellos21"
+	invisible
+	to offer
+		never
+
+mission "EVN: Confirm Mu'hari; Vellos21a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Food Drop;Rebel1 from Bounty Hunter"
+	invisible
+	to offer
+		never
+
+mission "EVN: Regular Food Run;Rebel1a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Food Drop;Rebel1 from Fed"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Equipment Drop;Rebel2"
+	invisible
+	to offer
+		never
+
+mission "EVN: Regular Equipment Run;Rebel2a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Agent;Rebel3"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Rebel;Rebel3a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Insertion;Rebel4"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Insertion;Rebel4a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Intel Re-assignment;Rebel5"
+	invisible
+	to offer
+		never
+
+mission "EVN: Answer Polaris Summons;Rebel6"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Mu'Randa Home;Rebel7 - split mission"
+	invisible
+	to offer
+		never
+
+mission "EVN: Get Polaris Tech;Rebel I8"
+	invisible
+	to offer
+		never
+
+mission "EVN: Test Polaris Tech;Rebel I9"
+	invisible
+	to offer
+		never
+
+mission "EVN: Check Out Roughnecks;Rebel I10"
+	invisible
+	to offer
+		never
+
+mission "EVN: Contact Wild Geese;Rebel I11 - Unregistered cutoff"
+	invisible
+	to offer
+		never
+
+mission "EVN: Scout Aurora;Rebel I12"
+	invisible
+	to offer
+		never
+
+mission "EVN: Scout Moash;Rebel I13"
+	invisible
+	to offer
+		never
+
+mission "EVN: Warn Wild Geese;Rebel I14"
+	invisible
+	to offer
+		never
+
+mission "EVN: Warn Heraan House;Rebel I15"
+	invisible
+	to offer
+		never
+
+mission "EVN: Warn Dechtakars;Rebel I16"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to Rebel II;Rebel I17"
+	invisible
+	to offer
+		never
+
+mission "EVN: Capture Commander Krane;Rebel I18"
+	invisible
+	to offer
+		never
+
+mission "EVN: Collect Polaris Telepaths;Rebel I19"
+	invisible
+	to offer
+		never
+
+mission "EVN: Bring Krane to Trial;Rebel I20"
+	invisible
+	to offer
+		never
+
+mission "EVN: Fetch Rebel Leaders;Rebel I21"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Polaris Home;Rebel I22 LAST"
+	invisible
+	to offer
+		never
+
+mission "EVN: Confirm Mu'hari; Vellos22"
+	invisible
+	to offer
+		never
+
+mission "EVN: Report to Krane; Vellos23 - Unregistered cutoff"
+	invisible
+	to offer
+		never
+
+mission "EVN: Report Mu'hari; Vellos24"
+	invisible
+	to offer
+		never
+
+mission "EVN: Report Mu'hari; Vellos24a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Mu'Randa Home;Rebel II27"
+	invisible
+	to offer
+		never
+
+mission "EVN: Fetch Rebel Leaders;Rebel  II26"
+	invisible
+	to offer
+		never
+
+mission "EVN: Bring Krane to trial;Rebel II25"
+	invisible
+	to offer
+		never
+
+mission "EVN: Capture Commander Krane;Rebel  II24"
+	invisible
+	to offer
+		never
+
+mission "EVN: Capture Vell-os;Rebel II23"
+	invisible
+	to offer
+		never
+
+mission "EVN: Observe Polaris Experiment;Rebel II22"
+	invisible
+	to offer
+		never
+
+mission "EVN: Talk to Polaris;Rebel II21"
+	invisible
+	to offer
+		never
+
+mission "EVN: Talk With Vell-os;Rebel II20"
+	invisible
+	to offer
+		never
+
+mission "EVN: Talk to Vell-os;Rebel II19"
+	invisible
+	to offer
+		never
+
+mission "EVN: Defend Rebel II;Rebel II18a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Defend Rebel II;Rebel II18"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to Rebel II;Rebel II17"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take People Home;Rebel II16"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Raczak;Rebel II15"
+	invisible
+	to offer
+		never
+
+mission "EVN: Drop by Heraan House;Rebel II14 - Unregistered cutoff"
+	invisible
+	to offer
+		never
+
+mission "EVN: Attack Moash House;Rebel II13"
+	invisible
+	to offer
+		never
+
+mission "EVN: Warn Heraan House;Rebel II12"
+	invisible
+	to offer
+		never
+
+mission "EVN: Check Out Roughnecks;Rebel II11"
+	invisible
+	to offer
+		never
+
+mission "EVN: Scout Moash;Rebel II10"
+	invisible
+	to offer
+		never
+
+mission "EVN: Scout Aurora;Rebel II9"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return Empty Handed;Rebel II8"
+	invisible
+	to offer
+		never
+
+mission "EVN: Report Mu'hari; Vellos25"
+	invisible
+	to offer
+		never
+
+mission "EVN: Liaise With Aurorans; Vellos26"
+	invisible
+	to offer
+		never
+
+mission "EVN: Invade Polaris Space; Vellos27"
+	invisible
+	to offer
+		never
+
+mission "EVN: Speak With Llyrell; Vellos28"
+	invisible
+	to offer
+		never
+
+mission "EVN: Speak With Krypt; Vellos29"
+	invisible
+	to offer
+		never
+
+mission "EVN: Attack Bureau HQ; Vellos30"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Llyrell to Korell; Vellos31 LAST"
+	invisible
+	to offer
+		never
+
+mission "EVN: Federation Resupply;Fed1"
+	invisible
+	to offer
+		never
+
+mission "EVN: Federation Resupply;Fed2"
+	invisible
+	to offer
+		never
+
+mission "EVN: Federation Resupply;Fed3"
+	invisible
+	to offer
+		never
+
+mission "EVN: Federation Resupply;Fed4"
+	invisible
+	to offer
+		never
+
+mission "EVN: Federation Resupply;Fed5"
+	invisible
+	to offer
+		never
+
+mission "EVN: Federation Resupply;Fed6"
+	invisible
+	to offer
+		never
+
+mission "EVN: Bring in Terrorist;Fed7"
+	invisible
+	to offer
+		never
+
+mission "EVN: Bring in Spy;Fed8"
+	invisible
+	to offer
+		never
+
+mission "EVN: Bring in Dissident;Fed9"
+	invisible
+	to offer
+		never
+
+mission "EVN: Bring in Political Dissident;Fed10"
+	invisible
+	to offer
+		never
+
+mission "EVN: Bring in Political Dissident;Fed11 (Rebel link)"
+	invisible
+	to offer
+		never
+
+mission "EVN: Bring in Fed Councilor;Fed12"
+	invisible
+	to offer
+		never
+
+mission "EVN: Infiltrate the Rebels;Fed13 from Bounty Hunter"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Food Drop;Fed14"
+	invisible
+	to offer
+		never
+
+mission "EVN: Regular Food Run;Fed14a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Infiltrate the Rebels;Fed13 from Fed"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Equipment Drop;Fed15"
+	invisible
+	to offer
+		never
+
+mission "EVN: Regular Equipment Run;Fed15a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Agent;Fed16"
+	invisible
+	to offer
+		never
+
+mission "EVN: Receive Instructions from Krane;Fed17 from Fed"
+	invisible
+	to offer
+		never
+
+mission "EVN: Receive Instructions from Krane;Fed17 from Bounty Hunter"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Rebel;Fed18 (Rebel link - Regain your life)"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Rebel;Fed19"
+	invisible
+	to offer
+		never
+
+mission "EVN: Insert Bureau Agent;Fed20"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Insertion;Fed21"
+	invisible
+	to offer
+		never
+
+mission "EVN: Scout Moash Space;Fed22"
+	invisible
+	to offer
+		never
+
+mission "EVN: Distract Moash House;Fed23"
+	invisible
+	to offer
+		never
+
+mission "EVN: Talk to Moash Elders;Fed24"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return With Response;Fed25"
+	invisible
+	to offer
+		never
+
+mission "EVN: Deliver Instructions;Fed26"
+	invisible
+	to offer
+		never
+
+mission "EVN: Deliver Further Instructions;Fed27"
+	invisible
+	to offer
+		never
+
+mission "EVN: Re-Infiltrate Rebels;Fed28"
+	invisible
+	to offer
+		never
+
+mission "EVN: Carry Rebel Message;Fed29"
+	invisible
+	to offer
+		never
+
+mission "EVN: Carry Reply;Fed30 - Unregistered cutoff"
+	invisible
+	to offer
+		never
+
+mission "EVN: Organize Meeting;Fed31"
+	invisible
+	to offer
+		never
+
+mission "EVN: Lead Attack on Rebels;Fed32"
+	invisible
+	to offer
+		never
+
+mission "EVN: Deliver Final Instructions;Fed33"
+	invisible
+	to offer
+		never
+
+mission "EVN: Chat With Federation President;Fed34"
+	invisible
+	to offer
+		never
+
+mission "EVN: Polaris Diplomatic Mission;Fed35"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return With Polaris Proposal;Fed36"
+	invisible
+	to offer
+		never
+
+mission "EVN: Scout Polaris Space;Fed37"
+	invisible
+	to offer
+		never
+
+mission "EVN: Scout Polaris Space;Fed38"
+	invisible
+	to offer
+		never
+
+mission "EVN: Fetch Polaris Leader;Fed39"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet Auroran Forces;Fed40"
+	invisible
+	to offer
+		never
+
+mission "EVN: Lead Auroran Forces;Fed41"
+	invisible
+	to offer
+		never
+
+mission "EVN: Destroy Polaris Raven;Fed42"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Krane to Earth;Fed43 LAST"
+	invisible
+	to offer
+		never
+
+mission "EVN: United Shipping Intro;United Shipping1"
+	invisible
+	to offer
+		never
+
+mission "EVN: Un. Shipping Delivery;United Shipping1a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Ferry United Shipping Negotiator;United Shipping2"
+	invisible
+	to offer
+		never
+
+mission "EVN: Un. Shipping Delivery;United Shipping3"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return With Samantha;United Shipping4"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return With Samantha;United Shipping3a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Un. Shipping Delivery;United Shipping4a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Un. Shipping Long Delivery;United Shipping4b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Terraforming Team to <RST>;Terraforming1"
+	invisible
+	to offer
+		never
+
+mission "EVN: Equipment Delivery;Terraforming1a"
+	landing
+	source "Misfire"
+	destination "Misfire"
+	description "EV Nova contract: Equipment Delivery;Terraforming1a."
+	cargo "EVN cargo type 5" 10
+	to offer
+		and
+			has "EVN bit 17"
+			not "EVN bit 18"
+			not "EVN bit 424"
+		random < 25
+	on offer
+		conversation "EVN dialogue 540 offer"
+	on complete
+		payment 25000
+		conversation "EVN dialogue 540 complete"
+
+mission "EVN: Take Team to <RST>;Terraforming2"
+	invisible
+	to offer
+		never
+
+mission "EVN: Equipment Delivery;Terraforming3"
+	landing
+	destination "UHP-1002"
+	description "EV Nova contract: Equipment Delivery;Terraforming3."
+	cargo "EVN cargo type 5" 10
+	to offer
+		and
+			has "EVN bit 36"
+			has "EVN bit 18"
+			not "EVN bit 19"
+			not "EVN bit 424"
+		random < 40
+	on offer
+		conversation "EVN dialogue 542 offer"
+	on complete
+		payment 25000
+		set "EVN bit 19"
+		conversation "EVN dialogue 542 complete"
+
+mission "EVN: Equipment Delivery;Terraforming4"
+	landing
+	destination "UHP-1002"
+	description "EV Nova contract: Equipment Delivery;Terraforming4."
+	cargo "EVN cargo type 5" 10
+	to offer
+		and
+			has "EVN bit 37"
+			has "EVN bit 19"
+			not "EVN bit 20"
+			not "EVN bit 424"
+		random < 40
+	on offer
+		conversation "EVN dialogue 543 offer"
+	on complete
+		payment 25000
+		set "EVN bit 20"
+		conversation "EVN dialogue 543 complete"
+
+mission "EVN: Equipment Delivery;Terraforming5"
+	landing
+	destination "UHP-1002"
+	description "EV Nova contract: Equipment Delivery;Terraforming5."
+	cargo "EVN cargo type 5" 10
+	to offer
+		and
+			has "EVN bit 38"
+			has "EVN bit 20"
+			not "EVN bit 21"
+			not "EVN bit 424"
+		random < 40
+	on offer
+		conversation "EVN dialogue 544 offer"
+	on complete
+		payment 25000
+		set "EVN bit 21"
+		conversation "EVN dialogue 544 complete"
+
+mission "EVN: Equipment Delivery;Terraforming6"
+	landing
+	destination "UHP-1002"
+	description "EV Nova contract: Equipment Delivery;Terraforming6."
+	cargo "EVN cargo type 5" 10
+	to offer
+		and
+			has "EVN bit 39"
+			has "EVN bit 21"
+			not "EVN bit 22"
+			not "EVN bit 424"
+		random < 40
+	on offer
+		conversation "EVN dialogue 545 offer"
+	on complete
+		payment 25000
+		set "EVN bit 22"
+		conversation "EVN dialogue 545 complete"
+
+mission "EVN: Equipment Delivery;Terraforming7"
+	landing
+	destination "UHP-1002"
+	description "EV Nova contract: Equipment Delivery;Terraforming7."
+	cargo "EVN cargo type 5" 10
+	to offer
+		and
+			has "EVN bit 40"
+			has "EVN bit 22"
+			not "EVN bit 23"
+			not "EVN bit 424"
+		random < 40
+	on offer
+		conversation "EVN dialogue 546 offer"
+	on complete
+		payment 25000
+		set "EVN bit 23"
+		conversation "EVN dialogue 546 complete"
+
+mission "EVN: Transport Colonists;Terraforming8"
+	invisible
+	to offer
+		never
+
+mission "EVN: Transport Colonists;Terraforming8a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Gli-tech Delivery;Gli-tech1"
+	landing
+	source "GLi-Tech-nia"
+	destination "GLi-Tech-nia"
+	description "EV Nova contract: Gli-tech Delivery;Gli-tech1."
+	cargo "EVN cargo type 48" 10
+	deadline 40
+	to offer
+		and
+			not "EVN bit 26"
+			not "EVN bit 424"
+		random < 75
+	on offer
+		conversation "EVN dialogue 549 offer"
+	on complete
+		payment 20000
+		set "EVN bit 26"
+		conversation "EVN dialogue 549 complete"
+
+mission "EVN: Gli-tech Delivery;Gli-tech2"
+	landing
+	source "GLi-Tech-nia"
+	destination "GLi-Tech-nia"
+	description "EV Nova contract: Gli-tech Delivery;Gli-tech2."
+	cargo "EVN cargo type 48" 10
+	deadline 25
+	to offer
+		and
+			has "EVN bit 26"
+			not "EVN bit 424"
+		random < 60
+	on offer
+		conversation "EVN dialogue 550 offer"
+	on complete
+		payment 20000
+		conversation "EVN dialogue 550 complete"
+
+mission "EVN: Test Polaron Cannon;Gli-tech3"
+	invisible
+	to offer
+		never
+
+mission "EVN: Test EW Missile;Gli-tech4"
+	invisible
+	to offer
+		never
+
+mission "EVN: Photograph Wraith Cannon;Gli-tech5"
+	invisible
+	to offer
+		never
+
+mission "EVN: Test Wraith Cannon;Gli-tech6"
+	invisible
+	to offer
+		never
+
+mission "EVN: Sigma Shipyards Delivery;Sigma1"
+	landing
+	source "Earth"
+	destination "Earth"
+	description "EV Nova contract: Sigma Shipyards Delivery;Sigma1."
+	cargo "EVN cargo type 5" 10
+	to offer
+		and
+			not "EVN bit 424"
+			not "EVN bit 33"
+			not "EVN bit 149"
+			not "EVN bit 6300"
+			not "EVN bit 6302"
+		random < 60
+	on offer
+		conversation "EVN dialogue 555 offer"
+	on complete
+		payment 20000
+		set "EVN bit 33"
+		conversation "EVN dialogue 555 complete"
+
+mission "EVN: Sigma Shipyards Delivery;Sigma2"
+	landing
+	destination "Earth"
+	description "EV Nova contract: Sigma Shipyards Delivery;Sigma2."
+	cargo "EVN cargo type 5" 10
+	to offer
+		and
+			has "EVN bit 33"
+			not "EVN bit 424"
+			not "EVN bit 46"
+		random < 75
+	on offer
+		conversation "EVN dialogue 556 offer"
+	on complete
+		payment 20000
+		conversation "EVN dialogue 556 complete"
+
+mission "EVN: Bulk Delivery;Sigma2a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Large Bulk Delivery;Sigma2b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Charter Flight;Sigma2c"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Rebel;Fed 18 (forced)"
+	invisible
+	to offer
+		never
+
+mission "EVN: Insert Bureau Agent;Fed 19 (forced)"
+	invisible
+	to offer
+		never
+
+mission "EVN: Open Talks With United Shipping;United Shipping5"
+	invisible
+	to offer
+		never
+
+mission "EVN: Un. Shipping Long Delivery;United Shipping6"
+	landing
+	destination "Tre'ar Zalom"
+	description "EV Nova contract: Un. Shipping Long Delivery;United Shipping6."
+	cargo "EVN cargo type 44" 5
+	deadline 40
+	to offer
+		and
+			has "EVN bit 1500"
+			not "EVN bit 1501"
+			not "EVN bit 424"
+		random < 10
+	on offer
+		conversation "EVN dialogue 578 offer"
+	on accept
+		set "EVN bit 1501"
+	on complete
+		payment 100000
+		"reputation: United Shipping" += 3
+		conversation "EVN dialogue 578 complete"
+	on abort
+		clear "EVN bit 1501"
+
+mission "EVN: Un. Shipping Long Delivery;United Shipping6a"
+	landing
+	destination "Tre'ar Zalom"
+	description "EV Nova contract: Un. Shipping Long Delivery;United Shipping6a."
+	cargo "EVN cargo type 43" 1
+	deadline 50
+	to offer
+		and
+			has "EVN bit 1501"
+			not "EVN bit 1502"
+			not "EVN bit 424"
+		random < 20
+	on offer
+		conversation "EVN dialogue 579 offer"
+	on complete
+		payment 100000
+		"reputation: United Shipping" += 3
+		conversation "EVN dialogue 579 complete"
+
+mission "EVN: Rebel Insertion;Fed 20 (forced)"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Rebel;Fed 21 (Rebel link - Regain your life)"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pass on Message;Fed22 (forced)"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pass on Message;Fed23 (forced)"
+	invisible
+	to offer
+		never
+
+mission "EVN: Steal Wraith Technology;Fed24 (forced)"
+	invisible
+	to offer
+		never
+
+mission "EVN: Steal Wraith Technology;Fed25 (forced)"
+	invisible
+	to offer
+		never
+
+mission "EVN: A Parting Gift;Fed26 (forced) LAST"
+	invisible
+	to offer
+		never
+
+mission "EVN: Test RAGE Gunboat;Gli-tech7 (if doing Fed)"
+	invisible
+	to offer
+		never
+
+mission "EVN: Make fast-jumping available;Polaris Spinoff1"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to <RST>;Polaris Spinoff2"
+	invisible
+	to offer
+		never
+
+mission "EVN: Scout Wraith Space;Polaris11b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Observe Wraith;Polaris6b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take P'Jeena to Ver'a Se;Polaris7b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Observe Cloak-Ship;Polaris8b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Observe Cloak-Ship;Polaris9b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Report Incident to Rebels;Pirate 009b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Distract Moash defenders"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Rebel defenders"
+	invisible
+	to offer
+		never
+
+mission "EVN: Steal Hypergate Codes;Rebel Sideline"
+	invisible
+	to offer
+		never
+
+mission "EVN: GOTCHA!! Auroran Drop Bear scores again..."
+	invisible
+	to offer
+		never
+
+mission "EVN: Infiltrate the Rebels;Fed13 from Rebel"
+	invisible
+	to offer
+		never
+
+mission "EVN: Test Rebel Cloaking Device"
+	invisible
+	to offer
+		never
+
+mission "EVN: Destroy Polaris Cruiser;Fed46(if done GLi-tech)"
+	invisible
+	to offer
+		never
+
+mission "EVN: Avoid Federation Secession Task-Force"
+	invisible
+	to offer
+		never
+
+mission "EVN: Avoid Federation Task Force"
+	invisible
+	to offer
+		never
+
+mission "EVN: Avoid Rebel Enforcement Squad"
+	invisible
+	to offer
+		never
+
+mission "EVN: Avoid Nil'kemorya"
+	invisible
+	to offer
+		never
+
+mission "EVN: Avoid Auroran Warriors"
+	invisible
+	to offer
+		never
+
+mission "EVN: Avoid Pirates"
+	invisible
+	to offer
+		never
+
+mission "EVN: Avoid Wild Rovers"
+	invisible
+	to offer
+		never
+
+mission "EVN: Avoid Bounty Hunters"
+	invisible
+	to offer
+		never
+
+mission "EVN: Trade between Earth and Port Kane;Tutorial 002"
+	invisible
+	to offer
+		never
+
+mission "EVN: Trade between Port Kane and New England;Tutorial 003"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head Back to Earth;Tutorial 004"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to Rauther;Tutorial 005"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Michaleen to New Ireland;Wild Geese 1"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Michaleen to Sol;Wild Geese 2"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return Michaleen's body to New Ireland;Wild Geese 3a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Destroy McGowan's Drug Factory;Wild Geese 4a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Deliver Explosives to Ryll;Wild Geese 5a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Free Eiric;Wild Geese 6a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Talk with Rebels;Wild Geese 7aI - link to Pirate storyline"
+	invisible
+	to offer
+		never
+
+mission "EVN: Talk with Aurorans;Wild Geese 7aII - link to Auroran storyline"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to New Ireland with Michaleen;Wild Geese 3b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Destroy McGowan's Drug Factory;Wild Geese 4b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Deliver Explosives to Ryll;Wild Geese 5b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Peace-Proposal to McGowan;Wild Geese 6b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return With McGowan's Acceptance;Wild Geese 7bI"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return With McGowan's Rejection;Wild Geese 7bII"
+	invisible
+	to offer
+		never
+
+mission "EVN: Talk with Rebels;Wild Geese 8bII link to Pirate storyline"
+	invisible
+	to offer
+		never
+
+mission "EVN: Renew darts"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Supplies to <RST>;Auroran 001"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Supplies to <RST>;Auroran 002"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Plans to Bazara;Auroran 003"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Bazara to <RST>;Auroran 004"
+	invisible
+	to offer
+		never
+
+mission "EVN: Defeat Fellow Initiates;Auroran 005"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to <RST> to be Initiated;Auroran 006"
+	invisible
+	to offer
+		never
+
+mission "EVN: Receive Training from Karlaekaar;Auroran 007"
+	invisible
+	to offer
+		never
+
+mission "EVN: Find and Return with Bazara;Auroran 008"
+	invisible
+	to offer
+		never
+
+mission "EVN: Hunt Down Traitor;Auroran 009"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rumourmill - Moash Space;Auroran 009a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rumourmill - Fed Space;Auroran 009b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Find and Destroy Supply Fleet;Auroran 010"
+	invisible
+	to offer
+		never
+
+mission "EVN: Cause Havoc for Dani;Auroran 011"
+	invisible
+	to offer
+		never
+
+mission "EVN: Start Dechtakars Service;Auroran 012"
+	invisible
+	to offer
+		never
+
+mission "EVN: Destroy Pirate Menace;Auroran 012a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Escort Moash Dignitary;Auroran 012b"
+	landing
+	source "Rimerta"
+	destination "Auroran LP I"
+	description "EV Nova contract: Escort Moash Dignitary;Auroran 012b."
+	npc
+		government "Family Moash"
+		personality heroic staying
+		ship "Aurora Cruiser"
+	to offer
+		and
+			has "EVN bit 216"
+			not "EVN bit 218"
+			not "EVN bit 217"
+		random < 100
+	on offer
+		conversation "EVN dialogue 668 offer"
+	on complete
+		payment 10000
+		set "EVN bit 218"
+		"reputation: Rimerta" += 5
+		conversation "EVN dialogue 668 complete"
+	on fail
+		set "EVN bit 217"
+	on abort
+		set "EVN bit 217"
+	on decline
+		set "EVN bit 217"
+		conversation "EVN dialogue 668 decline"
+
+mission "EVN: Battle with Wild Geese;Auroran 012c"
+	invisible
+	to offer
+		never
+
+mission "EVN: Fight Duel for House Honor;Auroran 013"
+	invisible
+	to offer
+		never
+
+mission "EVN: Make a Name for 'The Pack';Auroran 014"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet With Eiric;Auroran 015"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to Heraan;Auroran 016"
+	invisible
+	to offer
+		never
+
+mission "EVN: Fight to be Thurokiir;Auroran 017"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet With Hune;Auroran 018"
+	invisible
+	to offer
+		never
+
+mission "EVN: Observe Auroran Border;Auroran 019"
+	invisible
+	to offer
+		never
+
+mission "EVN: Defend Heraan Honor;Auroran 020 - Unregistered cutoff"
+	invisible
+	to offer
+		never
+
+mission "EVN: Defend Heraan Space;Auroran 021"
+	invisible
+	to offer
+		never
+
+mission "EVN: Duel with Moash Thurokiir;Auroran 022"
+	invisible
+	to offer
+		never
+
+mission "EVN: Speak With Polaris;Auroran 023"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to Aurora;Auroran 024"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet with Mu'Randa;Auroran 025"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet with Frandall;Auroran 026"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet With Eamon Flannigan;Auroran 027"
+	invisible
+	to offer
+		never
+
+mission "EVN: Assassinate Krane;Auroran 028"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to Heraan;Auroran 029 LAST"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Plans to Bazara;Auroran 003 - Wild Geese Link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Battle with Wild Geese;Auroran 012c - if done Wild Geese"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Terraforming Team to New Ireland"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet With Eamon Flannigan;Auroran 027 - if done Wild Geese"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Plans to Bazara;Auroran 003 - Bounty Hunter Link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Bazara to <RST>;Auroran 004 From B/Hunter"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pick Up Cargo From Sol;Pirate 001"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Cargo to Misfire;Pirate 002"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Cargo to SD3;Pirate 003"
+	invisible
+	to offer
+		never
+
+mission "EVN: Speak to Dace;Pirate 004"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet With Rebels;Pirate 005"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Food Drop;Pirate 005A"
+	invisible
+	to offer
+		never
+
+mission "EVN: Regular Food Run;Pirate 005Ai"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Equipment Drop;Pirate 005B"
+	invisible
+	to offer
+		never
+
+mission "EVN: Regular Equipment Run;Pirate 005Bi"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Agent;Pirate 005C"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Rebel;Pirate 005Ci"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Insertion;Pirate005D"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rebel Insertion;Pirate005Di"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pick Up Blind Charlie;Pirate 006"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pick Up Sven Fjordnham;Pirate 007 - Unregistered cutoff"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pick Up Ferret and Dizzy;Pirate 008"
+	invisible
+	to offer
+		never
+
+mission "EVN: Investigate Incidents;Pirate 009a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Set and Launch Trap;Pirate 010"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission for Extra special ships;Pirate 010A"
+	invisible
+	to offer
+		never
+
+mission "EVN: Destroy McGowan;Pirate 011 LAST"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission for Extra special ships;Pirate 011A"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission for Extra special ships;Pirate 011B"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission for Extra special ships;Pirate 011C"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Bis Andreya to <RST>;Polaris4 CONTINUE"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Vellos 31a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Tomak;Pirate Offshoot 001b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Tomak;Pirate Offshoot 001a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pick Up Cargo;Pirate Offshoot 002"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pick Up Cargo;Pirate Offshoot 002b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pick Up Engine Upgrades;Pirate Offshoot 003"
+	invisible
+	to offer
+		never
+
+mission "EVN: Beat On 'Daring' Dan McGraw;Pirate Offshoot 003b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return With Upgrades;Pirate Offshoot 003c"
+	invisible
+	to offer
+		never
+
+mission "EVN: Beat On Skinny;Pirate Offshoot 003bi"
+	invisible
+	to offer
+		never
+
+mission "EVN: McGraw Family Revenge;Pirate Offshoot 003d"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pick Up Alloy from <DST>; Pirate Offshoot 004"
+	invisible
+	to offer
+		never
+
+mission "EVN: Locate Ryan's Last Chance; Pirate Offshoot 004a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Dr Ralph's Family; Pirate Offshoot 004bi"
+	invisible
+	to offer
+		never
+
+mission "EVN: Exotic Licence Forgery - Silent mission"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Money Mission - for Deliver explosives to Ryll"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Heraan Spy;Auroran Off-shoot 001"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Heraan Spy;Auroran Off-shoot 001b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Steal Jamming Technology;Auroran Off-shoot 002"
+	invisible
+	to offer
+		never
+
+mission "EVN: Destroy Moash Fleet;Auroran Off-shoot 003"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Auroran Off-shoot 003b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Destroy Federation Fleet;Auroran Off-shoot 004"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Auroran Off-shoot 004b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Heraan Operatives;Auroran Off-shoot 005"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Vell-os Slaves;Auroran Off-shoot 007"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Vell-os Slaves;Auroran Off-shoot 007b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Vell-os to Korell;Auroran Off-shoot 008"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Vell-os to Polaris;Auroran Off-shoot 009"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Vell-os to Kel'ar Iy;Auroran Off-shoot 010"
+	invisible
+	to offer
+		never
+
+mission "EVN: Start mission for Thunderforge cron;Auroran Off-shoot 011"
+	invisible
+	to offer
+		never
+
+mission "EVN: Thunderforge Availability;Auroran Off-shoot 012"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Auroran 001b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Auroran 001c"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Auroran 001d"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Auroran 001e"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to <RST>;Polaris 8bi"
+	invisible
+	to offer
+		never
+
+mission "EVN: Shoot down Derelict;Tutorial 006"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Tutorial 006a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to Earth;Tutorial 007"
+	invisible
+	to offer
+		never
+
+mission "EVN: Ferry Barry to <RST>;Tutorial 008"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Barry to <RST>;Tutorial 009"
+	invisible
+	to offer
+		never
+
+mission "EVN: Duel;generic  Auroran"
+	invisible
+	to offer
+		never
+
+mission "EVN: Duel;generic  Moash"
+	invisible
+	to offer
+		never
+
+mission "EVN: Duel;generic  Dani"
+	invisible
+	to offer
+		never
+
+mission "EVN: Duel;generic  Vella"
+	invisible
+	to offer
+		never
+
+mission "EVN: Duel;generic  Tekel"
+	invisible
+	to offer
+		never
+
+mission "EVN: Duel;generic  Heraan"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rumor mission;Auroran 008b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Vell-os 2 refusal Fed reaction"
+	invisible
+	to offer
+		never
+
+mission "EVN: Transport Mu'Randa;Polaris1 - Vell-os refusal"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet With Merrol DockMaster"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pick Up Supplies from <RST>;Auroran 001a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Report Back to Krane"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet With DockMaster"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to <RST>;Generic Auroran linking misn"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Rebel I9a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Auroran 011a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Hune Misn; Auroran generic"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pick Up Hune"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Misn;fed42a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Redeem Yourself;Auroran Dechtakar Service re-start"
+	invisible
+	to offer
+		never
+
+mission "EVN: Talk to Fllyraen;Vellos 2 -> 3 link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Report Back In;Vell-os 7 -> 8 link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Report Back In;Vell-os 10 -> 11 link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to <RST>;Vell-os 29 -> 30 link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Find Kuron;Auroran 4 -> 5 link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Invisible Return to Heraan"
+	invisible
+	to offer
+		never
+
+mission "EVN: The Pack invisible misn;Generic Auroran"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to <RST>; Auroran 23 -> 24 link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to <RST> with Sven;pirate link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to <RST> with Ferret and Dizzy;pirate link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Set Up Trap;pirate link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent misn;Pirate 010a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Vell-os 20a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pick Up Cargo From Sol;Pirate 001 from WG"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to Misfire; Wild Geese link misn"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to <RST>;WG -> Auroran link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to <RST>;Generic Auroran silent linking misn"
+	invisible
+	to offer
+		never
+
+mission "EVN: Take Datacubes Back to <RST>;link between Auroran offshoot 010 -> 011"
+	invisible
+	to offer
+		never
+
+mission "EVN: Meet with Your Uncle Olaf;WG -> Pirate link misn"
+	invisible
+	to offer
+		never
+
+mission "EVN: Drop By Kane Band Bar;Vell-os 3->4 link misn"
+	invisible
+	to offer
+		never
+
+mission "EVN: Drop By Merrol Bar;Rebel Reminder link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Pirate 010b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Escort Rock Group;Special Klavs 01a"
+	landing
+	destination "Cornwall"
+	description "EV Nova contract: Escort Rock Group;Special Klavs 01a."
+	cargo "EVN cargo type 74" 15
+	to offer
+		and
+			not "EVN bit 7777"
+			not "EVN bit 7778"
+			not "EVN bit 423"
+			not "EVN bit 424"
+			not "EVN bit 8338"
+			not "EVN bit 8339"
+		random < 25
+	on offer
+		conversation "EVN dialogue 828 offer"
+	on accept
+		set "EVN bit 8338"
+	on complete
+		payment 50000
+		set "EVN bit 7778"
+	on abort
+		set "EVN bit 7777"
+		clear "EVN bit 8338"
+	on decline
+		set "EVN bit 7777"
+		set "EVN bit 6666"
+		conversation "EVN dialogue 828 decline"
+
+mission "EVN: Escort Rock Group;Special Klavs 01b"
+	landing
+	source "Cornwall"
+	destination "Syracuse"
+	description "EV Nova contract: Escort Rock Group;Special Klavs 01b."
+	cargo "EVN cargo type 74" 15
+	npc
+		government "Marauder"
+		personality staying
+		ship "Pirate Viper"
+		ship "Pirate Viper"
+		ship "Pirate Viper"
+		ship "Pirate Viper"
+		ship "Pirate Viper"
+	to offer
+		and
+			has "EVN bit 7778"
+			not "EVN bit 7779"
+			not "EVN bit 424"
+			not "EVN bit 423"
+		random < 100
+	on offer
+		conversation "EVN dialogue 829 offer"
+	on complete
+		payment 50000
+		set "EVN bit 7779"
+		conversation "EVN dialogue 829 complete"
+	on abort
+		set "EVN bit 7779"
+
+mission "EVN: Launch Exploration Probe;Special Klavs 02"
+	invisible
+	to offer
+		never
+
+mission "EVN: Escort Temmin Shard;Special Klavs 03a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Recover Stolen Art;Special Klavs 03b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Recover Stolen Art;Special Klavs 03c (invisible)"
+	invisible
+	to offer
+		never
+
+mission "EVN: Go On Cunjo Hunt;Special Klavs 04a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Go On Cunjo Hunt;Special Klavs 04b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Find Mu'ar Haro"
+	invisible
+	to offer
+		never
+
+mission "EVN: Drop By P'ar Aed Bar"
+	invisible
+	to offer
+		never
+
+mission "EVN: Drop By Tre'ar Erma Bar"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head Back to Mu'ar Haro"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to <RST>;Pirate 010a"
+	invisible
+	to offer
+		never
+
+mission "EVN: ATTN: <PN>;Polaris ActionMan 001"
+	invisible
+	to offer
+		never
+
+mission "EVN: Defend <RST>;Polaris ActionMan 002"
+	invisible
+	to offer
+		never
+
+mission "EVN: Defend <RST>;Polaris ActionMan 002a"
+	invisible
+	to offer
+		never
+
+mission "EVN: ATTN: Ory'hara;Polaris ActionMan 003"
+	invisible
+	to offer
+		never
+
+mission "EVN: Try to Get Back to <RST>;Polaris ActionMan 004"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Polaris ActionMan 004a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Eliminate Traitor;Vell-os ActionMan 001"
+	invisible
+	to offer
+		never
+
+mission "EVN: Capture Traitor;Vell-os ActionMan 002"
+	invisible
+	to offer
+		never
+
+mission "EVN: Eliminate Traitor;Fed ActionMan 001"
+	invisible
+	to offer
+		never
+
+mission "EVN: Capture Traitor;Fed ActionMan 002"
+	invisible
+	to offer
+		never
+
+mission "EVN: Defend Rebel II;Rebel ActionMan 001"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Pol 034"
+	invisible
+	to offer
+		never
+
+mission "EVN: Defend Heraan Space;Auroran ActionMan 001"
+	invisible
+	to offer
+		never
+
+mission "EVN: Defend Heraan Space;Auroran ActionMan 002"
+	invisible
+	to offer
+		never
+
+mission "EVN: Lead Raid on Moash;Auroran ActionMan 003"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Auroran ActionMan 003a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rumour misn;Rebel I9a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Please Register;Registration reminder"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head Back to Merrol"
+	invisible
+	to offer
+		never
+
+mission "EVN: Krypt Mind Attack;Polaris 32a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Krypt Mind Attack Exit;Polaris 32b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Generic Passenger Cargo Str# misn"
+	invisible
+	to offer
+		never
+
+mission "EVN: Destroy Upstart Guild-Master;Pirate Blow-stuff-up"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Pirate Blow-stuff-up support"
+	invisible
+	to offer
+		never
+
+mission "EVN: Destroy Upstart Guild-Master;Pirate Blow-stuff-up generic"
+	invisible
+	to offer
+		never
+
+mission "EVN: Destroy Bureau Cell;Aur, Vell, Pol, Reb Blow-stuff-up"
+	invisible
+	to offer
+		never
+
+mission "EVN: Put Down Uprising;Fed Blow-stuff-up"
+	invisible
+	to offer
+		never
+
+mission "EVN: Pirate 002 silent money misn"
+	invisible
+	to offer
+		never
+
+mission "EVN: Polaris Scarabs"
+	invisible
+	to offer
+		never
+
+mission "EVN: Polaris Smaller Ships"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to Earth;Polaris44a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Fed Interception Fleet"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to Aurora;Polaris45a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Polaris Raven"
+	invisible
+	to offer
+		never
+
+mission "EVN: Return to Ar'Za Iusia;Polaris 46"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to Neilha Memorial Station;Polaris43b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to Aurora;Polaris44b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Auroran Interception Fleet"
+	invisible
+	to offer
+		never
+
+mission "EVN: Head to Earth;Polaris45b"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent misn;last pirate misn link"
+	invisible
+	to offer
+		never
+
+mission "EVN: Clean Fed Record;pirate offshoot"
+	invisible
+	to offer
+		never
+
+mission "EVN: Sigma Shipyards Delivery;Sigma3"
+	landing
+	source "Earth"
+	destination "Earth"
+	description "EV Nova contract: Sigma Shipyards Delivery;Sigma3."
+	cargo "EVN cargo type 63" 20
+	npc
+		government "Houseless Warriors"
+		system destination
+		personality staying
+		ship "Firebird"
+		ship "Firebird"
+	to offer
+		random < 60
+	on offer
+		conversation "EVN dialogue 897 offer"
+	on complete
+		payment 250000
+		set "EVN bit 47"
+		conversation "EVN dialogue 897 complete"
+	on fail
+		set "EVN bit 46"
+	on abort
+		set "EVN bit 46"
+	on decline
+		set "EVN bit 46"
+		conversation "EVN dialogue 897 decline"
+
+mission "EVN: Deliver New Hypergate Code;Sigma4"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Ships misn;Sigma 4a"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Ships misn;Sigma 4b"
+	invisible
+	to offer
+		never
+
+mission "EVN: You Need to Register..."
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Vell-os Auroran pay player misn"
+	invisible
+	to offer
+		never
+
+mission "EVN: Go On Cunjo Hunt;Special Klavs 04a II"
+	invisible
+	to offer
+		never
+
+mission "EVN: Go On Cunjo Hunt;Special Klavs 04b II"
+	invisible
+	to offer
+		never
+
+mission "EVN: Eamon Boarding misn"
+	invisible
+	to offer
+		never
+
+mission "EVN: Rescue Dr Ralph's Family; Pirate Offshoot 004bii"
+	invisible
+	to offer
+		never
+
+mission "EVN: Silent Mission;Return to New England"
+	invisible
+	to offer
+		never
+
+mission "EVN: Scout Aurora;Rebel I12 if b2 is set"
+	invisible
+	to offer
+		never
+
+mission "EVN: Scout Aurora;Rebel II9 if b2 is set"
+	invisible
+	to offer
+		never
+
+conversation "EVN dialogue 128 offer"
+	`Take <cargo> tons of <cargo> to <destination> in the <system> system.`
+
+conversation "EVN dialogue 128 complete"
+	`As a group of dockworkers unloads the shipment of <cargo> from your cargo bay you are a little surprised to see the traditional long hair and utilitarian jumpsuit of a Vell-os coming towards you. The nameless Vell-os looks at you oddly for a moment before smiling softly and walking away.`
+
+conversation "EVN dialogue 129 offer"
+	`Find the Vell-os homeworld and return to Sol with news about its condition.`
+
+conversation "EVN dialogue 129 complete"
+	`You are not terribly surprised to see your Vell-os friend waiting for you when you land. "I can see the devastation in your mind," he tells you sadly, and you are reminded that all Vell-os are powerful telepaths. "We knew that the Colonial Council had destroyed it, but we had hoped that it might have recovered a little in the intervening years. "I'm glad the Krypt-mind left you alone," he says with a mysterious smile. "It always attacks every Vell-os that approaches it. For some reason it leaves you humans alone. "Anyway," he explains, after shaking himself out of his reverie, "it is imperative that you learn more about yourself. You must go and see my friend Fllyraen who lives on New England in the Wolf 359 system. He isn't always around, but if you keep stopping by occasionally you'll catch him eventually." After he walks off, you are left with more questions than answers. What is this Krypt-mind? What is it you need to learn about yourself? What exactly is going on? You resolve to find this Fllyraen and ask him as soon as possible.`
+
+conversation "EVN dialogue 129 decline"
+	`As soon as you shake your head, you see an almost imperceptible smile of sheer joy cross his face before he turns even more serious than before and leans forward. <you had better leave federation space as soon as possible> You look around for a moment to see who spoke to you before you realise that the words were spoken inside your own head. "I have never been to Auroran space myself," the Vell-os grins subtly, "but I hear it is a land of opportunity where a resourceful them can go far..." As he walks away, you are left feeling like he was trying to tell you something. And when you see black Federation stormtroopers obviously heading in your direction, you decide that the best place to try and figure it out would be somewhere else...`
+
+conversation "EVN dialogue 540 offer"
+	`Pick <cargo> tons of <cargo> on <destination> in the <system> system and take it back to <destination> in the <system> system so that David Rengel and his team can continue their work.`
+
+conversation "EVN dialogue 540 complete"
+	`Upon arrival you are greeted by David and his team and they quickly unload your cargo and begin opening it to inspect the contents for damage. As they pull out device after bewildering device you can't help but shake your head at some of the bizarre looking equipment you have been carrying. After nearly twenty minutes they seem satisfied and begin repacking the equipment back into the crates. "Everything seems to have survived the trip in one piece," David grins, "and I can tell you that the credit transfer has already been taken care of. Thanks again and keep an eye out in the bar."`
+
+conversation "EVN dialogue 542 offer"
+	`Pick <cargo> tons of <cargo> on <destination> in the <system> system and take it back to <destination> in the <system> system so that David Rengel and his team can continue their work.`
+
+conversation "EVN dialogue 542 complete"
+	`You can see the changes wrought by the terraformers as soon as you land. Much of the landscape is now covered by the blue-green algae that had barely gained a foothold when you were last here, and the thick smog-like atmosphere seems to be significantly clearer to you. You soon see a group of eight people in suits trekking towards you and when they get closer you recognize several of the members of the team and they smile in greeting. You give them a hand, and in no time you have unloaded everything. "Thanks again, Captain <planet>," says David after he comes over and touches helmets. "As you can see we have made some progress, but we needed this to take the next step. I've already passed on a message letting the head office know that you have arrived, and the credits should be being transferred into your account as we speak. Keep looking in the Mission BBS', as we may need you again at some stage."`
+
+conversation "EVN dialogue 543 offer"
+	`Pick <cargo> tons of <cargo> on <destination> in the <system> system and take it back to <destination> in the <system> system so that David Rengel and his team can continue their work.`
+
+conversation "EVN dialogue 543 complete"
+	`You are amazed at some of the changes wrought by David and his team as you pilot your way down through the atmosphere. From what you can see there is not only the blue-green algae, but also a significant amount of running water and even small amounts of plant life starting to spread around the equator. Once again David and some of his team come out to unload the equipment from your holds. When you are finished you head over to David to tell him how impressed you are. "Why thank you, <planet>," he answers, pleased at your comment. "It is good to hear an outside opinion because it can be hard to notice the effects when you live here day after day after day. "Anyway, we need to get back to keep an eye on a couple of things we just started growing," he explains seriously. "The head office knows that you've arrived, so the 25000 credits should already be in your account. Keep checking out the Mission BBS' as I don't doubt that we'll need your services again."`
+
+conversation "EVN dialogue 544 offer"
+	`Pick <cargo> tons of <cargo> on <destination> in the <system> system and take it back to <destination> in the <system> system so that David Rengel and his team can continue their work.`
+
+conversation "EVN dialogue 544 complete"
+	`Piloting down through the atmosphere you can see that the planet's surface is nearly half covered by water, and that the predominant life forms are now vegetation which covers most of the rest of the surface and that the oceans are filled with a simple plankton-like organism. Your sensors show that there is no longer any need for the heavy environment suit, but that a breathing mask is still necessary. Once again after he and his team have finished unloading David comes over and shakes your hand. "It might interest you to know that if we keep up the accelerated plant and algae growth, we may have a breathable atmosphere in around five more years," he tells you proudly, and you're impressed. "It won't be long until we begin introducing animal life to start balancing the ecosystem a little more. Keep looking in the Mission BBS', as we'll probably need you a few more times before we finish here."`
+
+conversation "EVN dialogue 545 offer"
+	`Pick <cargo> tons of <cargo> on <destination> in the <system> system and take it back to <destination> in the <system> system so that David Rengel and his team can continue their work.`
+
+conversation "EVN dialogue 545 complete"
+	`You are very surprised at the changes in the world you see below you as you fly down to the surface. Your sensors tell you that the air is breathable, but that a breath mask is recommended for extended exposure of longer than 30 minutes. But more than that there are literally thousands of animals running, flying and swimming all over the surface. As you unload you notice that a lot of your equipment looks like rudimentary weather control equipment and you ask David about it. "Well we are getting to the stage that our ecosystem is starting to run itself," he explains, happy to share his knowledge, "but by our calculations, unless we manually interfere with the process this world will never be habitable for humans, so we are going to set up atmosphere 'purifiers' to see how effective they are in the hope that they can help us overcome it." You clap him on the back and tell him that he and his team have done an outstanding job so far, and that you have every confidence they will solve the problem.`
+
+conversation "EVN dialogue 546 offer"
+	`Pick <cargo> tons of <cargo> on <destination> in the <system> system and take it back to <destination> in the <system> system so that David Rengel and his team can continue their work.`
+
+conversation "EVN dialogue 546 complete"
+	`As you pilot your way down, you see a paradise of a world, with vast sweeping oceans, archipelagos, mountain ranges and vast forests. According to your sensors the atmosphere is capable of indefinitely supporting humans, but is a little on the thin side. For the first time you see David and his team without any breathmasks or other apparatus come over to begin the unloading. "The experiment with the atmosphere purifiers worked even better than we expected it to," David explains as you unload what appear to industrial fabrication machinery. "So now we are going to start manufacturing the necessary equipment right here. Within a few months this planet will be ready to be colonized. Keep an eye out, I'll make sure you get one of the first loads so that you can see the finished product."`
+
+conversation "EVN dialogue 549 offer"
+	`Pick up a package of <cargo> tons of <cargo> from <destination> in the <system> system and deliver it to <destination> in the <system> system by the deadline for 10000 credits.`
+
+conversation "EVN dialogue 549 complete"
+	`As soon as you land Gli-tech dockworkers swarm over your vessel and in only a few minutes they have unloaded their cargo. Sharon walks out onto the concourse and makes her way over. "Good work," she congratulates you. "I've just notified the finance department to transfer 20000 credits into your account for your services. If you want any more work like this, just look in the Mission BBS down the hall, and if I need you again I'll keep an eye out in the outfitters."`
+
+conversation "EVN dialogue 550 offer"
+	`Pick up a package of <cargo> tons of <cargo> from <destination> in the <system> system and deliver it to <destination> in the <system> system by the deadline for 10000 credits.`
+
+conversation "EVN dialogue 550 complete"
+	`As soon as you land Gli-tech dockworkers swarm over your vessel and in only a few minutes they have unloaded their cargo. Once again Sharon walks out and greets you. "The money should be getting transferred into your account as we speak," she tells you in her feminine voice. "Good work."`
+
+conversation "EVN dialogue 555 offer"
+	`Go to <destination> in the <system> system to pick up <cargo> tons of <cargo> and deliver it to <destination> in the <system> system making sure that you land on the area of the Kane Band that is owned by Sigma Shipyards.`
+
+conversation "EVN dialogue 555 complete"
+	`"Firstly," Rodney ticks off a finger, "you have been paid 20000 credits for your services and I have also made available similar missions through the Mission BBS' throughout the Federation. "Secondly, as an employee of Sigma Shipyards you are allowed to purchase all the ships in our range," he informs you to your delight. "In particular I am talking about the Starliner, the Pegasus, and the Leviathan. If you can scrape together the funds, you can purchase them from here at any time. You should also be able to find a few ship upgrade outfits available here on the Kane Band. "Anyway, if you'll forgive me," he finishes a little tiredly, "I have a thousand and one things I still have to do today, so I'll take my leave of you. Thanks again."`
+
+conversation "EVN dialogue 556 offer"
+	`Go to <destination> in the <system> system to pick up <cargo> tons of <cargo> and deliver it to <destination> in the <system> system making sure that you land on the area of the Kane Band that is owned by Sigma Shipyards.`
+
+conversation "EVN dialogue 556 complete"
+	`As you pilot your way into one of the countless docking bays in the Sigma Shipyards area of the Kane Band you once again take a moment to glance over the enormous shipyards at their disposal. As soon as you land dockworkers swarm all over your vessel and in no time they have unloaded your cargo. Their supervisor informs you when his people are finished that 20000 credits has been transferred into your account before moving on to the next ship.`
+
+conversation "EVN dialogue 578 offer"
+	`Go to <destination> in the <system> system to pick up <cargo> tons of <cargo> and deliver it to <destination> in the <system> system by the deadline.`
+
+conversation "EVN dialogue 578 complete"
+	`You are met by a tired but happy looking Samantha and several members of the Tre'pira when you land. "It is good to see you again 'Ory'hara'," Samantha bows deeply, obviously having learned a great deal about the Polaris culture. "We will take care of things from here. "I would love to stay and chat," she says finally with a wistful smile as the workers start unloading your cargo, "but as with any new enterprise there is still an awful amount of work to be done. However I have taken the liberty of transferring the money into your account, and if you keep an eye out in the Mission BBS', you will occasionally see a few more missions like this one offered to you. It's been good talking to someone from the Federation again. I look forward to seeing you in the not-too distant future."`
+
+conversation "EVN dialogue 579 offer"
+	`Go to <destination> in the <system> system to pick up <cargo> tons of <cargo> and deliver it to <destination> in the <system> system by the deadline.`
+
+conversation "EVN dialogue 579 complete"
+	`As soon as you land Tre'pira wearing their traditional white utility suits quietly and efficiently unload the cargo from your ship. In a matter of minutes they are finished and one of them wanders over to inform you that the money has been credited to your account.`
+
+conversation "EVN dialogue 668 offer"
+	`Escort Duradar to <destination> in the <system> system so that he can meet his nephew.`
+
+conversation "EVN dialogue 668 complete"
+	`"Well, it seems that when put to use protecting those of us who are worthy of such security, even the Heraani are capable of performing to a level that is acceptable, if only barely," sneers Duradar. "Still, I fully expect you to run back to where you came from, where they will encourage you in the bad manners you have shown throughout the journey here. It would do you well, them, to remember that you should respect your betters!" As he starts to walk away, all the many hours of snide and derogatory comments finally becomes too much, and now that you have discharged your service to this pompous windbag, you let fly with a single comment that stops him in his tracks. "You can be assured, Duradar, that whenever I meet my betters, I will be more than ready to respect them. Until then, I will simply discharge my duty." With that you turn away to head back to your ship for the journey back to Rimerta smiling at the indignant sputtering of the Moashi fool...`
+
+conversation "EVN dialogue 668 decline"
+	`Hune looks at you with a disappointed expression in his face. "I thought you were made of sterner stuff," he informs you quietly standing up. With that he walks away, his entire attitude showing his disdain for you.`
+
+conversation "EVN dialogue 828 offer"
+	`Escort the band 'Debris Field' to <destination> in the <system> system.`
+
+conversation "EVN dialogue 828 decline"
+	`You point out to Styles just what you think of him, his clothes and his offer of a job. It could have been said in just two short words, but you decided to tell him exactly how you feel. "Whoa!" Styles throws his hands up "No need for you to show me the attitude. Just thought I'd offer you a job, them. Never thought I'd have to come down here to be hassled by some badly dressed space-them!" "Debris Field are the hottest band around at the moment. Listen!" Styles waves to the Juke-bot. "That's pure genius!". You tell him just what you think of the garbage playing on the bot and tell him to leave you alone.`
+
+conversation "EVN dialogue 829 offer"
+	`Escort the band 'Debris Field' to <destination> in the <system> system.`
+
+conversation "EVN dialogue 829 complete"
+	`Despite the possibility of death, you are still amazed that the entire battle went off to the dulcet tones of Debris Field chanting "Rock On!" and "Fire it up!" In between their noise, you managed to fend off the attackers and make it to <destination>. Truth be told you wouldn't care if the band had been killed, but the money's good and now you just have to watch the show and get paid. You are standing at the front of the stage, looking for would-be unsavory types (and seeing them everywhere, since none of the fans seem to have washed in a decade) when you notice a commotion on stage. The lead singer appears to be on fire, as smoke and steam pours out of his joints and his mouth. Suddenly, it occurs to you that he's a robot, and he isn't singing the garbage coming from the speakers at all. The crowd notices too, and you see a number of techs and spacies rush on stage to haul the malfunctioning unit away. Next minute, Sly Styles appears to the hoots and jeers of his disgruntled audience. He tries to calm things down, but the situation is well out of hand. You quickly vault onto the stage, grab Styles and hustle him off amid a barrage of empty cups and cans. A riot ensues. After the Federal troops have calmed everything down, you make your way back to your ship. You have your money, but it seems that Styles is on his way to prison for false advertising and fraud. The Feds let you go, considering that you only joined this motley crew recently, and they kindly let you keep your pay. You conclude that if this is show business, you are better off avoiding it.`
+
+conversation "EVN dialogue 897 offer"
+	`Pick up <cargo> tons of <cargo> on the planet <destination> in the <system> system and take it back to <destination> in the <system> system without being scanned.`
+
+conversation "EVN dialogue 897 complete"
+	`As soon as you land you sigh with relief. The last few weeks have been pretty stressful, and you are glad to have made it back in one piece with your cargo intact. "Well done," congratulates Rodney, when he drops by as you are unloading. "This load should keep us going for another couple of months." You tell him the news from the small mining operation down there, and how they can hold out. "Well that is good news," he mutters thoughtfully. "So the only problem we have is shipping through the blockade. I think we can do something about that. "In the mean time," he concludes quietly, "keep an eye out around here, as I may have another mission for you in a month or two. Why don't you recuperate for a little while; if you check your account, I think you will find that you have a little bit more spending money now... "`
+
+conversation "EVN dialogue 897 decline"
+	`"Well," drawls Rodney quietly, "I guess we know just how much we can trust you. Thanks for your efforts."`

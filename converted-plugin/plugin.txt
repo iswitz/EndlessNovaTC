@@ -1,0 +1,2 @@
+name "Endless Nova TC"
+about `Escape Velocity Nova total conversion for Endless Sky.`

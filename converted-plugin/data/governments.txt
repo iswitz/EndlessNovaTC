@@ -1,0 +1,524 @@
+# Government data extracted from EV Nova gövt resources.
+# Class-based allies and enemies, colors, initial reputation, and xenophobic behavior mapped to ES.
+
+"government" "Federation"
+	"color" 0.1725 0.1725 0.6863
+	"attitude toward"
+		"ATMOS" 1
+		"Ambrosia" 1
+		"Bureau" 1
+		"Civvies" 1
+		"Federation;hates Temmin Shard" 1
+		"Guild of Bounty Hunters" 1
+		"Pyrogenesis Skymining" 1
+		"Roughnecks" 1
+		"Sigma Shipyards" 1
+		"Vell-os" 1
+		"Associated Guild of Free Traders" -1
+		"Auroran Empire" -1
+		"Houseless Warriors" -1
+		"Mu'Hari" -1
+		"Nil'kemorya" -1
+		"Pirate" -1
+		"Polaris" -1
+		"Rebellion" -1
+		"Rimerta" -1
+
+"government" "Auroran Empire"
+	"color" 0.8118 0.0471 0.0471
+	"attitude toward"
+		"ATMOS" 1
+		"Ambrosia" 1
+		"Civvies" 1
+		"Guild of Bounty Hunters" 1
+		"Pyrogenesis Skymining" 1
+		"Rimerta" 1
+		"Sigma Shipyards" 1
+		"Federation" -1
+		"Federation;hates Temmin Shard" -1
+		"Mu'Hari" -1
+		"Nil'kemorya" -1
+		"Polaris" -1
+		"Roughnecks" -1
+		"Vell-os" -1
+
+"government" "Polaris"
+	"color" 0.4863 0.1098 0.4863
+	"attitude toward"
+		"Mu'Hari" 1
+		"Nil'kemorya" 1
+		"Rebellion" 1
+		"Wild Geese" 1
+		"Associated Guild of Free Traders" -1
+		"Bureau" -1
+		"Family Moash" -1
+		"Federation" -1
+		"Houseless Warriors" -1
+		"Pirate" -1
+
+"government" "Family Moash"
+	"color" 0.2471 0.2471 0.2471
+	"attitude toward"
+		"Auroran Empire" 1
+		"Bureau" 1
+		"Federation" 1
+		"Rimerta" 1
+		"Family Heraan" -1
+		"Family Vella" -1
+		"Roughnecks" -1
+		"Temmin Shard" -1
+
+"government" "Family Tekel"
+	"color" 0.3725 0.3725 0.3725
+	"attitude toward"
+		"Auroran Empire" 1
+		"Family Vella" 1
+		"Rimerta" 1
+		"Bureau" -1
+		"Family Dani" -1
+		"Federation" -1
+		"Federation;hates Temmin Shard" -1
+		"Roughnecks" -1
+		"Vell-os" -1
+
+"government" "Family Vella"
+	"color" 0.3098 0.3098 0.3098
+	"attitude toward"
+		"Auroran Empire" 1
+		"Family Tekel" 1
+		"Rimerta" 1
+		"Bureau" -1
+		"Family Moash" -1
+		"Federation" -1
+		"Federation;hates Temmin Shard" -1
+		"Vell-os" -1
+		"Wild Geese" -1
+
+"government" "Family Dani"
+	"color" 0.3098 0.3098 0.3098
+	"player reputation" 2
+	"attitude toward"
+		"Auroran Empire" 1
+		"Family Heraan" 1
+		"Rimerta" 1
+		"Temmin Shard" 1
+		"Associated Guild of Free Traders" -1
+		"Bureau" -1
+		"Family Tekel" -1
+		"Federation" -1
+		"Federation;hates Temmin Shard" -1
+		"Houseless Warriors" -1
+		"Pirate" -1
+		"Vell-os" -1
+
+"government" "Family Heraan"
+	"color" 0.4353 0.4353 0.4353
+	"attitude toward"
+		"Auroran Empire" 1
+		"Rebellion" 1
+		"Rimerta" 1
+		"Temmin Shard" 1
+		"Wild Geese" 1
+		"Associated Guild of Free Traders" -1
+		"Bureau" -1
+		"Family Moash" -1
+		"Federation" -1
+		"Federation;hates Temmin Shard" -1
+		"Houseless Warriors" -1
+		"Pirate" -1
+		"Vell-os" -1
+
+"government" "Vell-os"
+	"color" 0.7647 0.7647 0.0627
+	"attitude toward"
+		"Association of Free Traders" 1
+		"Bureau" 1
+		"Federation;hates Temmin Shard" 1
+		"Roughnecks" 1
+		"Associated Guild of Free Traders" -1
+		"Auroran Empire" -1
+		"Federation" -1
+		"Houseless Warriors" -1
+		"Krypt" -1
+		"Pirate" -1
+		"Rebellion" -1
+		"Rimerta" -1
+
+"government" "Pirate"
+	"color" 0.2471 0.2471 0.2471
+	"attitude toward"
+		"Associated Guild of Free Traders" 1
+		"Houseless Warriors" 1
+		"ATMOS" -1
+		"Ambrosia" -1
+		"Civvies" -1
+		"Guild of Bounty Hunters" -1
+		"Pyrogenesis Skymining" -1
+		"Rebellion" -1
+		"Sigma Shipyards" -1
+		"Wild Geese" -1
+	"default attitude" -1
+
+"government" "Wraith"
+	"color" 0.1098 0.4627 0.4627
+	"attitude toward"
+		"Association of Free Traders" 1
+		"Vell-os" 1
+		"Associated Guild of Free Traders" -1
+		"Houseless Warriors" -1
+		"Mu'Hari" -1
+		"Nil'kemorya" -1
+		"Pirate" -1
+		"Polaris" -1
+
+"government" "Krypt"
+	"color" 0.2667 0.2667 0.2667
+	"attitude toward"
+		"Vell-os" -1
+
+"government" "Rebellion"
+	"color" 0.1686 0.6667 0.1686
+	"attitude toward"
+		"ATMOS" 1
+		"Ambrosia" 1
+		"Civvies" 1
+		"Family Heraan" 1
+		"Guild of Bounty Hunters" 1
+		"Mu'Hari" 1
+		"Nil'kemorya" 1
+		"Polaris" 1
+		"Pyrogenesis Skymining" 1
+		"Sigma Shipyards" 1
+		"Temmin Shard" 1
+		"Wild Geese" 1
+		"Associated Guild of Free Traders" -1
+		"Bureau" -1
+		"Family Moash" -1
+		"Federation" -1
+		"Houseless Warriors" -1
+		"Pirate" -1
+
+"government" "Rimerta"
+	"color" 0.0000 0.0000 0.0000
+	"attitude toward"
+		"Auroran Empire" 1
+		"Family Heraan" 1
+		"Rebellion" 1
+		"Temmin Shard" 1
+		"Bureau" -1
+		"Federation" -1
+		"Federation;hates Temmin Shard" -1
+		"Roughnecks" -1
+		"Vell-os" -1
+
+"government" "Wild Geese"
+	"color" 0.0000 0.2000 0.0000
+	"attitude toward"
+		"ATMOS" 1
+		"Ambrosia" 1
+		"Civvies" 1
+		"Family Heraan" 1
+		"Federation;hates Temmin Shard" 1
+		"Guild of Bounty Hunters" 1
+		"Pyrogenesis Skymining" 1
+		"Sigma Shipyards" 1
+		"Temmin Shard" 1
+		"Vell-os" 1
+		"Associated Guild of Free Traders" -1
+		"Auroran Empire" -1
+		"Bureau" -1
+		"Family Moash" -1
+		"Federation" -1
+		"Houseless Warriors" -1
+		"Pirate" -1
+		"Rimerta" -1
+
+"government" "Roughnecks"
+	"color" 0.1725 0.1725 0.6863
+	"attitude toward"
+		"ATMOS" 1
+		"Ambrosia" 1
+		"Civvies" 1
+		"Federation;hates Temmin Shard" 1
+		"Guild of Bounty Hunters" 1
+		"Pyrogenesis Skymining" 1
+		"Sigma Shipyards" 1
+		"Vell-os" 1
+		"Associated Guild of Free Traders" -1
+		"Auroran Empire" -1
+		"Federation" -1
+		"Houseless Warriors" -1
+		"Pirate" -1
+		"Rebellion" -1
+		"Rimerta" -1
+
+"government" "Nil'kemorya"
+	"color" 0.4235 0.0471 0.4235
+	"player reputation" -5
+	"attitude toward"
+		"Mu'Hari" 1
+		"Polaris" 1
+		"Rebellion" 1
+		"Bureau" -1
+		"Federation" -1
+
+"government" "Hyperioid"
+	"color" 0.0000 0.0000 0.0000
+
+"government" "Guild of Bounty Hunters"
+	"color" 0.0000 0.0000 0.0000
+	"attitude toward"
+		"ATMOS" 1
+		"Ambrosia" 1
+		"Civvies" 1
+		"Pyrogenesis Skymining" 1
+		"Rebellion" 1
+		"Sigma Shipyards" 1
+		"Wild Geese" 1
+		"Associated Guild of Free Traders" -1
+		"Houseless Warriors" -1
+		"Pirate" -1
+
+"government" "Bureau"
+	"color" 0.1725 0.1725 0.6863
+	"attitude toward"
+		"Associated Guild of Free Traders" 1
+		"Family Moash" 1
+		"Federation" 1
+		"Federation;hates Temmin Shard" 1
+		"Houseless Warriors" 1
+		"Pirate" 1
+		"Vell-os" 1
+		"Family Heraan" -1
+		"Mu'Hari" -1
+		"Nil'kemorya" -1
+		"Polaris" -1
+		"Rebellion" -1
+		"Temmin Shard" -1
+
+"government" "Civvies"
+	"color" 0.4118 0.4118 0.4118
+	"attitude toward"
+		"ATMOS" 1
+		"Ambrosia" 1
+		"Auroran Empire" 1
+		"Federation" 1
+		"Federation;hates Temmin Shard" 1
+		"Guild of Bounty Hunters" 1
+		"Pyrogenesis Skymining" 1
+		"Rebellion" 1
+		"Rimerta" 1
+		"Sigma Shipyards" 1
+		"Vell-os" 1
+		"Associated Guild of Free Traders" -1
+		"Houseless Warriors" -1
+		"Pirate" -1
+
+"government" "Derelicts"
+	"color" 0.0000 0.0000 0.0000
+	"attitude toward"
+		"Associated Guild of Free Traders" 1
+		"Association of Free Traders" 1
+		"Houseless Warriors" 1
+		"Pirate" 1
+		"Vell-os" 1
+
+"government" "ATMOS"
+	"color" 0.6863 0.0000 0.4863
+	"attitude toward"
+		"Ambrosia" 1
+		"Civvies" 1
+		"Guild of Bounty Hunters" 1
+		"Pyrogenesis Skymining" 1
+		"Sigma Shipyards" 1
+
+"government" "United Shipping"
+	"color" 0.0000 0.0000 0.0000
+	"attitude toward"
+		"Auroran Empire" 1
+		"Federation" 1
+		"Federation;hates Temmin Shard" 1
+		"Mu'Hari" 1
+		"Nil'kemorya" 1
+		"Polaris" 1
+		"Rebellion" 1
+		"Rimerta" 1
+		"Vell-os" 1
+		"Associated Guild of Free Traders" -1
+		"Houseless Warriors" -1
+		"Marauder" -1
+		"Pirate" -1
+
+"government" "Ambrosia"
+	"color" 0.3098 0.4118 0.3098
+	"attitude toward"
+		"ATMOS" 1
+		"Civvies" 1
+		"Guild of Bounty Hunters" 1
+		"Pyrogenesis Skymining" 1
+		"Sigma Shipyards" 1
+
+"government" "Mu'Hari"
+	"color" 0.4235 0.0471 0.4235
+	"player reputation" 2
+	"attitude toward"
+		"Nil'kemorya" 1
+		"Polaris" 1
+		"Rebellion" 1
+		"Bureau" -1
+		"Federation" -1
+
+"government" "Associated Guild of Free Traders"
+	"color" 0.0000 0.0000 0.0000
+	"attitude toward"
+		"Bureau" 1
+		"Federation" 1
+		"Houseless Warriors" 1
+		"Pirate" 1
+		"Marauder" -1
+		"Wild Geese" -1
+
+"government" "Houseless Warriors"
+	"color" 0.2471 0.2471 0.2471
+	"default attitude" -1
+
+"government" "Spanner"
+	"color" 0.0000 0.0000 0.0000
+	"attitude toward"
+		"Associated Guild of Free Traders" -1
+		"Auroran Empire" -1
+		"Federation" -1
+		"Federation;hates Temmin Shard" -1
+		"Houseless Warriors" -1
+		"Pirate" -1
+		"Rebellion" -1
+		"Rimerta" -1
+		"Vell-os" -1
+	"default attitude" -1
+
+"government" "Sigma Shipyards"
+	"color" 0.3490 0.3490 0.3490
+	"attitude toward"
+		"ATMOS" 1
+		"Ambrosia" 1
+		"Auroran Empire" 1
+		"Civvies" 1
+		"Federation" 1
+		"Federation;hates Temmin Shard" 1
+		"Guild of Bounty Hunters" 1
+		"Pyrogenesis Skymining" 1
+		"Rebellion" 1
+		"Rimerta" 1
+		"Vell-os" 1
+		"Associated Guild of Free Traders" -1
+		"Houseless Warriors" -1
+		"Pirate" -1
+
+"government" "Pyrogenesis Skymining"
+	"color" 0.1569 0.1569 0.1569
+	"attitude toward"
+		"ATMOS" 1
+		"Ambrosia" 1
+		"Auroran Empire" 1
+		"Civvies" 1
+		"Federation" 1
+		"Federation;hates Temmin Shard" 1
+		"Guild of Bounty Hunters" 1
+		"Rebellion" 1
+		"Rimerta" 1
+		"Sigma Shipyards" 1
+		"Vell-os" 1
+		"Associated Guild of Free Traders" -1
+		"Houseless Warriors" -1
+		"Pirate" -1
+
+"government" "Duellist"
+	"color" 0.1176 0.1176 0.1176
+
+"government" "Association of Free Traders"
+	"color" 0.0000 0.0000 0.0000
+	"attitude toward"
+		"Rebellion" 1
+		"Wild Geese" 1
+		"Associated Guild of Free Traders" -1
+		"Houseless Warriors" -1
+		"Marauder" -1
+		"Pirate" -1
+
+"government" "Marauder"
+	"color" 0.0000 0.0000 0.0000
+	"attitude toward"
+		"Associated Guild of Free Traders" -1
+		"Auroran Empire" -1
+		"Federation" -1
+		"Federation;hates Temmin Shard" -1
+		"Houseless Warriors" -1
+		"Mu'Hari" -1
+		"Nil'kemorya" -1
+		"Pirate" -1
+		"Polaris" -1
+		"Rimerta" -1
+		"Vell-os" -1
+	"default attitude" -1
+
+"government" "Hypergate"
+	"color" 0.0000 0.0000 0.0000
+
+"government" "Cargo Drone Robots"
+	"color" 0.0000 0.0000 0.0000
+	"attitude toward"
+		"Auroran Empire" 1
+		"Federation" 1
+		"Federation;hates Temmin Shard" 1
+		"Rebellion" 1
+		"Rimerta" 1
+		"Vell-os" 1
+
+"government" "Temmin Shard"
+	"color" 0.0000 0.0000 0.0000
+	"attitude toward"
+		"Family Heraan" 1
+
+"government" "Federation;hates Temmin Shard"
+	"color" 0.1725 0.1725 0.6863
+	"attitude toward"
+		"ATMOS" 1
+		"Ambrosia" 1
+		"Bureau" 1
+		"Civvies" 1
+		"Guild of Bounty Hunters" 1
+		"Pyrogenesis Skymining" 1
+		"Roughnecks" 1
+		"Sigma Shipyards" 1
+		"Vell-os" 1
+		"Auroran Empire" -1
+		"Family Heraan" -1
+		"Federation" -1
+		"Mu'Hari" -1
+		"Nil'kemorya" -1
+		"Polaris" -1
+		"Rebellion" -1
+		"Rimerta" -1
+		"Temmin Shard" -1
+
+"government" "United Shipping refuelling for free"
+	"color" 0.0000 0.0000 0.0000
+	"attitude toward"
+		"Shards" 1
+		"United Shipping" 1
+
+"government" "Shards"
+	"color" 0.2471 0.2471 0.2471
+	"attitude toward"
+		"Auroran Empire" 1
+		"Family Heraan" 1
+		"Mu'Hari" 1
+		"Nil'kemorya" 1
+		"Polaris" 1
+		"Rebellion" 1
+		"Rimerta" 1
+		"Temmin Shard" 1
+		"Bureau" -1
+		"Federation" -1
+		"Federation;hates Temmin Shard" -1
+		"Vell-os" -1

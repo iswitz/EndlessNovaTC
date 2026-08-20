@@ -1,0 +1,7 @@
+# Endless Nova TC menu override.
+# Replace stock Endless Sky menu artwork with the EVN/ES hybrid title scene.
+
+overwrite
+interface "menu background"
+	sprite "_menu/endless-nova-title"
+		center 0 -80

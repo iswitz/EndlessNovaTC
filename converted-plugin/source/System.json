@@ -1,0 +1,9113 @@
+{
+  "nova:128": {
+    "id": "nova:128",
+    "name": "Kania",
+    "prefix": "nova",
+    "links": [
+      "nova:199",
+      "nova:200",
+      "nova:202",
+      "nova:129",
+      "nova:135"
+    ],
+    "position": [
+      160,
+      -20
+    ],
+    "planets": [
+      "nova:137",
+      "nova:1404"
+    ]
+  },
+  "nova:129": {
+    "id": "nova:129",
+    "name": "Tichel",
+    "prefix": "nova",
+    "links": [
+      "nova:128",
+      "nova:325",
+      "nova:327",
+      "nova:130",
+      "nova:531",
+      "nova:136"
+    ],
+    "position": [
+      110,
+      40
+    ],
+    "planets": [
+      "nova:157",
+      "nova:133",
+      "nova:1405"
+    ]
+  },
+  "nova:130": {
+    "id": "nova:130",
+    "name": "Sol",
+    "prefix": "nova",
+    "links": [
+      "nova:162",
+      "nova:132",
+      "nova:131",
+      "nova:129",
+      "nova:143",
+      "nova:133",
+      "nova:536",
+      "nova:134",
+      "nova:142"
+    ],
+    "position": [
+      0,
+      0
+    ],
+    "planets": [
+      "nova:128",
+      "nova:158",
+      "nova:159",
+      "nova:160",
+      "nova:465"
+    ]
+  },
+  "nova:131": {
+    "id": "nova:131",
+    "name": "Alphara",
+    "prefix": "nova",
+    "links": [
+      "nova:137",
+      "nova:336",
+      "nova:144",
+      "nova:130",
+      "nova:531"
+    ],
+    "position": [
+      50,
+      70
+    ],
+    "planets": [
+      "nova:136",
+      "nova:1406"
+    ]
+  },
+  "nova:132": {
+    "id": "nova:132",
+    "name": "Nesre Primus",
+    "prefix": "nova",
+    "links": [
+      "nova:465",
+      "nova:139",
+      "nova:138",
+      "nova:531",
+      "nova:130",
+      "nova:532",
+      "nova:141",
+      "nova:140"
+    ],
+    "position": [
+      30,
+      -70
+    ],
+    "planets": [
+      "nova:134",
+      "nova:142",
+      "nova:175",
+      "nova:1407"
+    ]
+  },
+  "nova:133": {
+    "id": "nova:133",
+    "name": "Nesre Secundus",
+    "prefix": "nova",
+    "links": [
+      "nova:146",
+      "nova:531",
+      "nova:130",
+      "nova:376",
+      "nova:145"
+    ],
+    "position": [
+      -75,
+      20
+    ],
+    "planets": [
+      "nova:161",
+      "nova:176",
+      "nova:150",
+      "nova:1408"
+    ]
+  },
+  "nova:134": {
+    "id": "nova:134",
+    "name": "Kerella",
+    "prefix": "nova",
+    "links": [
+      "nova:148",
+      "nova:1127",
+      "nova:531",
+      "nova:130",
+      "nova:147",
+      "nova:149",
+      "nova:391"
+    ],
+    "position": [
+      -120,
+      -60
+    ],
+    "planets": [
+      "nova:154",
+      "nova:1409"
+    ]
+  },
+  "nova:135": {
+    "id": "nova:135",
+    "name": "Altair",
+    "prefix": "nova",
+    "links": [
+      "nova:150",
+      "nova:128",
+      "nova:151"
+    ],
+    "position": [
+      130,
+      -50
+    ],
+    "planets": [
+      "nova:162",
+      "nova:163"
+    ]
+  },
+  "nova:136": {
+    "id": "nova:136",
+    "name": "Fomalhaut",
+    "prefix": "nova",
+    "links": [
+      "nova:152",
+      "nova:129",
+      "nova:154",
+      "nova:153"
+    ],
+    "position": [
+      105,
+      10
+    ],
+    "planets": [
+      "nova:164",
+      "nova:165"
+    ]
+  },
+  "nova:137": {
+    "id": "nova:137",
+    "name": "Vega",
+    "prefix": "nova",
+    "links": [
+      "nova:156",
+      "nova:155",
+      "nova:131",
+      "nova:157"
+    ],
+    "position": [
+      50,
+      40
+    ],
+    "planets": [
+      "nova:140",
+      "nova:131"
+    ]
+  },
+  "nova:138": {
+    "id": "nova:138",
+    "name": "Arcturus",
+    "prefix": "nova",
+    "links": [
+      "nova:166",
+      "nova:165",
+      "nova:164",
+      "nova:163",
+      "nova:167",
+      "nova:132"
+    ],
+    "position": [
+      50,
+      -40
+    ],
+    "planets": [
+      "nova:166",
+      "nova:167"
+    ]
+  },
+  "nova:139": {
+    "id": "nova:139",
+    "name": "Pollux",
+    "prefix": "nova",
+    "links": [
+      "nova:169",
+      "nova:132",
+      "nova:168",
+      "nova:170"
+    ],
+    "position": [
+      50,
+      -80
+    ],
+    "planets": []
+  },
+  "nova:140": {
+    "id": "nova:140",
+    "name": "Capella",
+    "prefix": "nova",
+    "links": [
+      "nova:171",
+      "nova:132"
+    ],
+    "position": [
+      10,
+      -90
+    ],
+    "planets": [
+      "nova:168"
+    ]
+  },
+  "nova:141": {
+    "id": "nova:141",
+    "name": "Aldebaran",
+    "prefix": "nova",
+    "links": [
+      "nova:132",
+      "nova:173",
+      "nova:174",
+      "nova:172"
+    ],
+    "position": [
+      -10,
+      -70
+    ],
+    "planets": [
+      "nova:148",
+      "nova:169",
+      "nova:170",
+      "nova:171",
+      "nova:130"
+    ]
+  },
+  "nova:142": {
+    "id": "nova:142",
+    "name": "Archenar",
+    "prefix": "nova",
+    "links": [
+      "nova:531",
+      "nova:130",
+      "nova:177",
+      "nova:176",
+      "nova:175"
+    ],
+    "position": [
+      -10,
+      -30
+    ],
+    "planets": [
+      "nova:155",
+      "nova:156"
+    ]
+  },
+  "nova:143": {
+    "id": "nova:143",
+    "name": "Tau Ceti",
+    "prefix": "nova",
+    "links": [
+      "nova:531",
+      "nova:130",
+      "nova:179",
+      "nova:180",
+      "nova:178"
+    ],
+    "position": [
+      -10,
+      30
+    ],
+    "planets": [
+      "nova:151",
+      "nova:152",
+      "nova:153"
+    ]
+  },
+  "nova:144": {
+    "id": "nova:144",
+    "name": "Spica",
+    "prefix": "nova",
+    "links": [
+      "nova:158",
+      "nova:131",
+      "nova:159",
+      "nova:160",
+      "nova:161"
+    ],
+    "position": [
+      0,
+      70
+    ],
+    "planets": [
+      "nova:172",
+      "nova:466"
+    ]
+  },
+  "nova:145": {
+    "id": "nova:145",
+    "name": "HJG-1034",
+    "prefix": "nova",
+    "links": [
+      "nova:536",
+      "nova:133",
+      "nova:184",
+      "nova:185",
+      "nova:186"
+    ],
+    "position": [
+      -90,
+      60
+    ],
+    "planets": [
+      "nova:135"
+    ]
+  },
+  "nova:146": {
+    "id": "nova:146",
+    "name": "HJG-0637",
+    "prefix": "nova",
+    "links": [
+      "nova:181",
+      "nova:183",
+      "nova:536",
+      "nova:133",
+      "nova:182"
+    ],
+    "position": [
+      -70,
+      -10
+    ],
+    "planets": []
+  },
+  "nova:147": {
+    "id": "nova:147",
+    "name": "Procyon",
+    "prefix": "nova",
+    "links": [
+      "nova:134",
+      "nova:187",
+      "nova:188",
+      "nova:189",
+      "nova:190"
+    ],
+    "position": [
+      -120,
+      -20
+    ],
+    "planets": [
+      "nova:173",
+      "nova:174"
+    ]
+  },
+  "nova:148": {
+    "id": "nova:148",
+    "name": "Sirius",
+    "prefix": "nova",
+    "links": [
+      "nova:194",
+      "nova:193",
+      "nova:191",
+      "nova:192",
+      "nova:134"
+    ],
+    "position": [
+      -80,
+      -70
+    ],
+    "planets": [
+      "nova:145",
+      "nova:146"
+    ]
+  },
+  "nova:149": {
+    "id": "nova:149",
+    "name": "Lalande 21185",
+    "prefix": "nova",
+    "links": [
+      "nova:197",
+      "nova:196",
+      "nova:134",
+      "nova:195",
+      "nova:198"
+    ],
+    "position": [
+      -150,
+      -80
+    ],
+    "planets": [
+      "nova:147"
+    ]
+  },
+  "nova:150": {
+    "id": "nova:150",
+    "name": "Tenetria",
+    "prefix": "nova",
+    "links": [
+      "nova:135",
+      "nova:486"
+    ],
+    "position": [
+      140,
+      -70
+    ],
+    "planets": []
+  },
+  "nova:151": {
+    "id": "nova:151",
+    "name": "Galvan",
+    "prefix": "nova",
+    "links": [
+      "nova:135"
+    ],
+    "position": [
+      100,
+      -45
+    ],
+    "planets": [
+      "nova:177"
+    ]
+  },
+  "nova:152": {
+    "id": "nova:152",
+    "name": "Kon",
+    "prefix": "nova",
+    "links": [
+      "nova:136"
+    ],
+    "position": [
+      120,
+      -20
+    ],
+    "planets": [
+      "nova:179",
+      "nova:178"
+    ]
+  },
+  "nova:153": {
+    "id": "nova:153",
+    "name": "SPC-1927",
+    "prefix": "nova",
+    "links": [
+      "nova:136"
+    ],
+    "position": [
+      90,
+      -10
+    ],
+    "planets": [
+      "nova:132",
+      "nova:180"
+    ]
+  },
+  "nova:154": {
+    "id": "nova:154",
+    "name": "Murasaki",
+    "prefix": "nova",
+    "links": [
+      "nova:136"
+    ],
+    "position": [
+      80,
+      10
+    ],
+    "planets": [
+      "nova:181",
+      "nova:231"
+    ]
+  },
+  "nova:155": {
+    "id": "nova:155",
+    "name": "Obatta",
+    "prefix": "nova",
+    "links": [
+      "nova:137"
+    ],
+    "position": [
+      80,
+      80
+    ],
+    "planets": [
+      "nova:468"
+    ]
+  },
+  "nova:156": {
+    "id": "nova:156",
+    "name": "Fire",
+    "prefix": "nova",
+    "links": [
+      "nova:137"
+    ],
+    "position": [
+      60,
+      30
+    ],
+    "planets": [
+      "nova:182"
+    ]
+  },
+  "nova:157": {
+    "id": "nova:157",
+    "name": "McMurdo",
+    "prefix": "nova",
+    "links": [
+      "nova:137"
+    ],
+    "position": [
+      30,
+      30
+    ],
+    "planets": [
+      "nova:183"
+    ]
+  },
+  "nova:158": {
+    "id": "nova:158",
+    "name": "NGC-1170",
+    "prefix": "nova",
+    "links": [
+      "nova:144"
+    ],
+    "position": [
+      0,
+      50
+    ],
+    "planets": []
+  },
+  "nova:159": {
+    "id": "nova:159",
+    "name": "Gateway",
+    "prefix": "nova",
+    "links": [
+      "nova:351",
+      "nova:144"
+    ],
+    "position": [
+      10,
+      100
+    ],
+    "planets": [
+      "nova:184",
+      "nova:1410"
+    ]
+  },
+  "nova:160": {
+    "id": "nova:160",
+    "name": "Jenner",
+    "prefix": "nova",
+    "links": [
+      "nova:144"
+    ],
+    "position": [
+      -20,
+      80
+    ],
+    "planets": []
+  },
+  "nova:161": {
+    "id": "nova:161",
+    "name": "Horizon",
+    "prefix": "nova",
+    "links": [
+      "nova:144"
+    ],
+    "position": [
+      -40,
+      70
+    ],
+    "planets": [
+      "nova:185",
+      "nova:186",
+      "nova:187"
+    ]
+  },
+  "nova:162": {
+    "id": "nova:162",
+    "name": "Wolf 359",
+    "prefix": "nova",
+    "links": [
+      "nova:531",
+      "nova:130"
+    ],
+    "position": [
+      40,
+      -10
+    ],
+    "planets": [
+      "nova:138"
+    ]
+  },
+  "nova:163": {
+    "id": "nova:163",
+    "name": "Gefjon",
+    "prefix": "nova",
+    "links": [
+      "nova:138"
+    ],
+    "position": [
+      40,
+      -20
+    ],
+    "planets": [
+      "nova:188",
+      "nova:189"
+    ]
+  },
+  "nova:164": {
+    "id": "nova:164",
+    "name": "Naka",
+    "prefix": "nova",
+    "links": [
+      "nova:138"
+    ],
+    "position": [
+      70,
+      -20
+    ],
+    "planets": []
+  },
+  "nova:165": {
+    "id": "nova:165",
+    "name": "Tidbinbilla",
+    "prefix": "nova",
+    "links": [
+      "nova:487",
+      "nova:138"
+    ],
+    "position": [
+      90,
+      -40
+    ],
+    "planets": [
+      "nova:190"
+    ]
+  },
+  "nova:166": {
+    "id": "nova:166",
+    "name": "Rautherion",
+    "prefix": "nova",
+    "links": [
+      "nova:138"
+    ],
+    "position": [
+      60,
+      -60
+    ],
+    "planets": [
+      "nova:191",
+      "nova:192",
+      "nova:495"
+    ]
+  },
+  "nova:167": {
+    "id": "nova:167",
+    "name": "Lesten",
+    "prefix": "nova",
+    "links": [
+      "nova:138"
+    ],
+    "position": [
+      30,
+      -50
+    ],
+    "planets": [
+      "nova:149"
+    ]
+  },
+  "nova:168": {
+    "id": "nova:168",
+    "name": "Aral",
+    "prefix": "nova",
+    "links": [
+      "nova:139"
+    ],
+    "position": [
+      44,
+      -60
+    ],
+    "planets": [
+      "nova:193"
+    ]
+  },
+  "nova:169": {
+    "id": "nova:169",
+    "name": "Eeniar",
+    "prefix": "nova",
+    "links": [
+      "nova:484",
+      "nova:139"
+    ],
+    "position": [
+      64,
+      -70
+    ],
+    "planets": [
+      "nova:194"
+    ]
+  },
+  "nova:170": {
+    "id": "nova:170",
+    "name": "Porto Rillia",
+    "prefix": "nova",
+    "links": [
+      "nova:139"
+    ],
+    "position": [
+      40,
+      -90
+    ],
+    "planets": [
+      "nova:195",
+      "nova:496"
+    ]
+  },
+  "nova:171": {
+    "id": "nova:171",
+    "name": "Bloodstone",
+    "prefix": "nova",
+    "links": [
+      "nova:140"
+    ],
+    "position": [
+      30,
+      -95
+    ],
+    "planets": [
+      "nova:196",
+      "nova:471"
+    ]
+  },
+  "nova:172": {
+    "id": "nova:172",
+    "name": "Petra",
+    "prefix": "nova",
+    "links": [
+      "nova:450",
+      "nova:532",
+      "nova:141"
+    ],
+    "position": [
+      -20,
+      -84
+    ],
+    "planets": [
+      "nova:197"
+    ]
+  },
+  "nova:173": {
+    "id": "nova:173",
+    "name": "Homeland",
+    "prefix": "nova",
+    "links": [
+      "nova:532",
+      "nova:141"
+    ],
+    "position": [
+      -36,
+      -60
+    ],
+    "planets": [
+      "nova:198"
+    ]
+  },
+  "nova:174": {
+    "id": "nova:174",
+    "name": "Barnard's Star",
+    "prefix": "nova",
+    "links": [
+      "nova:532",
+      "nova:141"
+    ],
+    "position": [
+      -16,
+      -48
+    ],
+    "planets": []
+  },
+  "nova:175": {
+    "id": "nova:175",
+    "name": "Centauri",
+    "prefix": "nova",
+    "links": [
+      "nova:142"
+    ],
+    "position": [
+      -28,
+      -43
+    ],
+    "planets": [
+      "nova:511",
+      "nova:490"
+    ]
+  },
+  "nova:176": {
+    "id": "nova:176",
+    "name": "Lotus",
+    "prefix": "nova",
+    "links": [
+      "nova:142"
+    ],
+    "position": [
+      -20,
+      -20
+    ],
+    "planets": [
+      "nova:199"
+    ]
+  },
+  "nova:177": {
+    "id": "nova:177",
+    "name": "Hannaford",
+    "prefix": "nova",
+    "links": [
+      "nova:142"
+    ],
+    "position": [
+      0,
+      -14
+    ],
+    "planets": [
+      "nova:200"
+    ]
+  },
+  "nova:178": {
+    "id": "nova:178",
+    "name": "Sanddown",
+    "prefix": "nova",
+    "links": [
+      "nova:143"
+    ],
+    "position": [
+      -20,
+      16
+    ],
+    "planets": [
+      "nova:201",
+      "nova:202"
+    ]
+  },
+  "nova:179": {
+    "id": "nova:179",
+    "name": "Merrynne",
+    "prefix": "nova",
+    "links": [
+      "nova:143"
+    ],
+    "position": [
+      12,
+      36
+    ],
+    "planets": [
+      "nova:143"
+    ]
+  },
+  "nova:180": {
+    "id": "nova:180",
+    "name": "Enlightenment",
+    "prefix": "nova",
+    "links": [
+      "nova:143"
+    ],
+    "position": [
+      -40,
+      40
+    ],
+    "planets": [
+      "nova:144",
+      "nova:203",
+      "nova:493",
+      "nova:470"
+    ]
+  },
+  "nova:181": {
+    "id": "nova:181",
+    "name": "Canopus",
+    "prefix": "nova",
+    "links": [
+      "nova:146"
+    ],
+    "position": [
+      -52,
+      4
+    ],
+    "planets": []
+  },
+  "nova:182": {
+    "id": "nova:182",
+    "name": "Metter",
+    "prefix": "nova",
+    "links": [
+      "nova:146"
+    ],
+    "position": [
+      -76,
+      -28
+    ],
+    "planets": []
+  },
+  "nova:183": {
+    "id": "nova:183",
+    "name": "Avalon",
+    "prefix": "nova",
+    "links": [
+      "nova:146"
+    ],
+    "position": [
+      -100,
+      12
+    ],
+    "planets": [
+      "nova:204"
+    ]
+  },
+  "nova:184": {
+    "id": "nova:184",
+    "name": "Moonrise",
+    "prefix": "nova",
+    "links": [
+      "nova:145"
+    ],
+    "position": [
+      -64,
+      44
+    ],
+    "planets": [
+      "nova:205",
+      "nova:206",
+      "nova:207"
+    ]
+  },
+  "nova:185": {
+    "id": "nova:185",
+    "name": "Tuatha",
+    "prefix": "nova",
+    "links": [
+      "nova:145"
+    ],
+    "position": [
+      -70,
+      75
+    ],
+    "planets": [
+      "nova:139"
+    ]
+  },
+  "nova:186": {
+    "id": "nova:186",
+    "name": "Nadir",
+    "prefix": "nova",
+    "links": [
+      "nova:145"
+    ],
+    "position": [
+      -96,
+      85
+    ],
+    "planets": [
+      "nova:208"
+    ]
+  },
+  "nova:187": {
+    "id": "nova:187",
+    "name": "Journey's End",
+    "prefix": "nova",
+    "links": [
+      "nova:1127",
+      "nova:147"
+    ],
+    "position": [
+      -100,
+      -40
+    ],
+    "planets": [
+      "nova:209"
+    ]
+  },
+  "nova:188": {
+    "id": "nova:188",
+    "name": "Rigel",
+    "prefix": "nova",
+    "links": [
+      "nova:1127",
+      "nova:147"
+    ],
+    "position": [
+      -106,
+      0
+    ],
+    "planets": [
+      "nova:141",
+      "nova:210"
+    ]
+  },
+  "nova:189": {
+    "id": "nova:189",
+    "name": "Trishka",
+    "prefix": "nova",
+    "links": [
+      "nova:1127",
+      "nova:147"
+    ],
+    "position": [
+      -140,
+      12
+    ],
+    "planets": [
+      "nova:211"
+    ]
+  },
+  "nova:190": {
+    "id": "nova:190",
+    "name": "Sibko",
+    "prefix": "nova",
+    "links": [
+      "nova:147",
+      "nova:1127"
+    ],
+    "position": [
+      -148,
+      -12
+    ],
+    "planets": [
+      "nova:212"
+    ]
+  },
+  "nova:191": {
+    "id": "nova:191",
+    "name": "Outpost 819",
+    "prefix": "nova",
+    "links": [
+      "nova:148"
+    ],
+    "position": [
+      -48,
+      -32
+    ],
+    "planets": [
+      "nova:213"
+    ]
+  },
+  "nova:192": {
+    "id": "nova:192",
+    "name": "NGC-1776",
+    "prefix": "nova",
+    "links": [
+      "nova:148"
+    ],
+    "position": [
+      -64,
+      -64
+    ],
+    "planets": []
+  },
+  "nova:193": {
+    "id": "nova:193",
+    "name": "Glimmer",
+    "prefix": "nova",
+    "links": [
+      "nova:148"
+    ],
+    "position": [
+      -60,
+      -80
+    ],
+    "planets": [
+      "nova:214"
+    ]
+  },
+  "nova:194": {
+    "id": "nova:194",
+    "name": "Codehaven",
+    "prefix": "nova",
+    "links": [
+      "nova:148"
+    ],
+    "position": [
+      -80,
+      -100
+    ],
+    "planets": [
+      "nova:215",
+      "nova:494"
+    ]
+  },
+  "nova:195": {
+    "id": "nova:195",
+    "name": "Narcissus",
+    "prefix": "nova",
+    "links": [
+      "nova:149",
+      "nova:408"
+    ],
+    "position": [
+      -156,
+      -52
+    ],
+    "planets": []
+  },
+  "nova:196": {
+    "id": "nova:196",
+    "name": "Agate",
+    "prefix": "nova",
+    "links": [
+      "nova:149"
+    ],
+    "position": [
+      -100,
+      -80
+    ],
+    "planets": [
+      "nova:129"
+    ]
+  },
+  "nova:197": {
+    "id": "nova:197",
+    "name": "Rimshot",
+    "prefix": "nova",
+    "links": [
+      "nova:149"
+    ],
+    "position": [
+      -140,
+      -92
+    ],
+    "planets": [
+      "nova:216"
+    ]
+  },
+  "nova:198": {
+    "id": "nova:198",
+    "name": "South Manchester",
+    "prefix": "nova",
+    "links": [
+      "nova:149",
+      "nova:409",
+      "nova:621",
+      "nova:427"
+    ],
+    "position": [
+      -180,
+      -100
+    ],
+    "planets": [
+      "nova:217",
+      "nova:218",
+      "nova:1411"
+    ]
+  },
+  "nova:199": {
+    "id": "nova:199",
+    "name": "Polaris",
+    "prefix": "nova",
+    "links": [
+      "nova:542",
+      "nova:204",
+      "nova:203",
+      "nova:128"
+    ],
+    "position": [
+      210,
+      -29
+    ],
+    "planets": []
+  },
+  "nova:200": {
+    "id": "nova:200",
+    "name": "NGC-2051",
+    "prefix": "nova",
+    "links": [
+      "nova:500",
+      "nova:201",
+      "nova:128",
+      "nova:488"
+    ],
+    "position": [
+      192,
+      -60
+    ],
+    "planets": []
+  },
+  "nova:201": {
+    "id": "nova:201",
+    "name": "NGC-0500",
+    "prefix": "nova",
+    "links": [
+      "nova:542",
+      "nova:204",
+      "nova:200"
+    ],
+    "position": [
+      218,
+      -58
+    ],
+    "planets": []
+  },
+  "nova:202": {
+    "id": "nova:202",
+    "name": "NGC-1743",
+    "prefix": "nova",
+    "links": [
+      "nova:203",
+      "nova:308",
+      "nova:128"
+    ],
+    "position": [
+      208,
+      11
+    ],
+    "planets": []
+  },
+  "nova:203": {
+    "id": "nova:203",
+    "name": "SPC-1414",
+    "prefix": "nova",
+    "links": [
+      "nova:209",
+      "nova:546",
+      "nova:307",
+      "nova:544",
+      "nova:206",
+      "nova:202",
+      "nova:199"
+    ],
+    "position": [
+      258,
+      -16
+    ],
+    "planets": []
+  },
+  "nova:204": {
+    "id": "nova:204",
+    "name": "Outbound",
+    "prefix": "nova",
+    "links": [
+      "nova:208",
+      "nova:606",
+      "nova:199",
+      "nova:201"
+    ],
+    "position": [
+      275,
+      -51
+    ],
+    "planets": [
+      "nova:219",
+      "nova:497"
+    ]
+  },
+  "nova:205": {
+    "id": "nova:205",
+    "name": "Ne'mor",
+    "prefix": "nova",
+    "links": [
+      "nova:210",
+      "nova:206"
+    ],
+    "position": [
+      300,
+      -18
+    ],
+    "planets": []
+  },
+  "nova:206": {
+    "id": "nova:206",
+    "name": "Mjolnir",
+    "prefix": "nova",
+    "links": [
+      "nova:205",
+      "nova:207",
+      "nova:203"
+    ],
+    "position": [
+      297,
+      -11
+    ],
+    "planets": [
+      "nova:220",
+      "nova:498"
+    ]
+  },
+  "nova:207": {
+    "id": "nova:207",
+    "name": "Za'krana",
+    "prefix": "nova",
+    "links": [
+      "nova:211",
+      "nova:544",
+      "nova:206"
+    ],
+    "position": [
+      308,
+      18
+    ],
+    "planets": []
+  },
+  "nova:208": {
+    "id": "nova:208",
+    "name": "Nil'kvee",
+    "prefix": "nova",
+    "links": [
+      "nova:212",
+      "nova:657",
+      "nova:209",
+      "nova:204",
+      "nova:573",
+      "nova:501"
+    ],
+    "position": [
+      298,
+      -65
+    ],
+    "planets": [
+      "nova:221"
+    ]
+  },
+  "nova:209": {
+    "id": "nova:209",
+    "name": "Nil'kol",
+    "prefix": "nova",
+    "links": [
+      "nova:210",
+      "nova:203",
+      "nova:606",
+      "nova:208"
+    ],
+    "position": [
+      321,
+      -42
+    ],
+    "planets": [
+      "nova:222",
+      "nova:223"
+    ]
+  },
+  "nova:210": {
+    "id": "nova:210",
+    "name": "Nil'vran",
+    "prefix": "nova",
+    "links": [
+      "nova:215",
+      "nova:205",
+      "nova:209"
+    ],
+    "position": [
+      348,
+      -30
+    ],
+    "planets": [
+      "nova:226"
+    ]
+  },
+  "nova:211": {
+    "id": "nova:211",
+    "name": "P'napna",
+    "prefix": "nova",
+    "links": [
+      "nova:216",
+      "nova:555",
+      "nova:265",
+      "nova:207"
+    ],
+    "position": [
+      364,
+      -6
+    ],
+    "planets": [
+      "nova:224",
+      "nova:225"
+    ]
+  },
+  "nova:212": {
+    "id": "nova:212",
+    "name": "Tri'niphu",
+    "prefix": "nova",
+    "links": [
+      "nova:215",
+      "nova:545",
+      "nova:606",
+      "nova:208",
+      "nova:213"
+    ],
+    "position": [
+      326,
+      -66
+    ],
+    "planets": [
+      "nova:227"
+    ]
+  },
+  "nova:213": {
+    "id": "nova:213",
+    "name": "Tri'lipra",
+    "prefix": "nova",
+    "links": [
+      "nova:548",
+      "nova:214",
+      "nova:657",
+      "nova:212"
+    ],
+    "position": [
+      324,
+      -90
+    ],
+    "planets": [
+      "nova:228",
+      "nova:229"
+    ]
+  },
+  "nova:214": {
+    "id": "nova:214",
+    "name": "Ne'prata",
+    "prefix": "nova",
+    "links": [
+      "nova:222",
+      "nova:239",
+      "nova:607",
+      "nova:215",
+      "nova:213"
+    ],
+    "position": [
+      367,
+      -100
+    ],
+    "planets": []
+  },
+  "nova:215": {
+    "id": "nova:215",
+    "name": "K'marak",
+    "prefix": "nova",
+    "links": [
+      "nova:221",
+      "nova:216",
+      "nova:547",
+      "nova:210",
+      "nova:657",
+      "nova:212",
+      "nova:214",
+      "nova:548"
+    ],
+    "position": [
+      401,
+      -63
+    ],
+    "planets": [
+      "nova:235"
+    ]
+  },
+  "nova:216": {
+    "id": "nova:216",
+    "name": "Tre'vasar",
+    "prefix": "nova",
+    "links": [
+      "nova:238",
+      "nova:550",
+      "nova:217",
+      "nova:266",
+      "nova:211",
+      "nova:215",
+      "nova:229"
+    ],
+    "position": [
+      444,
+      -34
+    ],
+    "planets": [
+      "nova:230"
+    ]
+  },
+  "nova:217": {
+    "id": "nova:217",
+    "name": "K'onl",
+    "prefix": "nova",
+    "links": [
+      "nova:219",
+      "nova:549",
+      "nova:218",
+      "nova:216"
+    ],
+    "position": [
+      459,
+      -4
+    ],
+    "planets": [
+      "nova:236"
+    ]
+  },
+  "nova:218": {
+    "id": "nova:218",
+    "name": "Nil'kemorya",
+    "prefix": "nova",
+    "links": [
+      "nova:217",
+      "nova:267"
+    ],
+    "position": [
+      459,
+      29
+    ],
+    "planets": [
+      "nova:232",
+      "nova:499"
+    ]
+  },
+  "nova:219": {
+    "id": "nova:219",
+    "name": "Ki'manora",
+    "prefix": "nova",
+    "links": [
+      "nova:217"
+    ],
+    "position": [
+      472,
+      11
+    ],
+    "planets": [
+      "nova:237"
+    ]
+  },
+  "nova:220": {
+    "id": "nova:220",
+    "name": "Z'heaj",
+    "prefix": "nova",
+    "links": [
+      "nova:231",
+      "nova:229",
+      "nova:221"
+    ],
+    "position": [
+      421,
+      -70
+    ],
+    "planets": [
+      "nova:233"
+    ]
+  },
+  "nova:221": {
+    "id": "nova:221",
+    "name": "Tre'illica",
+    "prefix": "nova",
+    "links": [
+      "nova:222",
+      "nova:231",
+      "nova:220",
+      "nova:215"
+    ],
+    "position": [
+      411,
+      -91
+    ],
+    "planets": [
+      "nova:234"
+    ]
+  },
+  "nova:222": {
+    "id": "nova:222",
+    "name": "Z'precti",
+    "prefix": "nova",
+    "links": [
+      "nova:232",
+      "nova:548",
+      "nova:214",
+      "nova:221",
+      "nova:223"
+    ],
+    "position": [
+      413,
+      -109
+    ],
+    "planets": [
+      "nova:238"
+    ]
+  },
+  "nova:223": {
+    "id": "nova:223",
+    "name": "K'minkek",
+    "prefix": "nova",
+    "links": [
+      "nova:224",
+      "nova:222",
+      "nova:232",
+      "nova:607",
+      "nova:551",
+      "nova:239"
+    ],
+    "position": [
+      401,
+      -125
+    ],
+    "planets": [
+      "nova:239"
+    ]
+  },
+  "nova:224": {
+    "id": "nova:224",
+    "name": "P'ecksa",
+    "prefix": "nova",
+    "links": [
+      "nova:233",
+      "nova:656",
+      "nova:225",
+      "nova:223",
+      "nova:232",
+      "nova:261"
+    ],
+    "position": [
+      424,
+      -144
+    ],
+    "planets": [
+      "nova:240"
+    ]
+  },
+  "nova:225": {
+    "id": "nova:225",
+    "name": "Tre'helov",
+    "prefix": "nova",
+    "links": [
+      "nova:256",
+      "nova:234",
+      "nova:226",
+      "nova:224"
+    ],
+    "position": [
+      444,
+      -135
+    ],
+    "planets": [
+      "nova:241"
+    ]
+  },
+  "nova:226": {
+    "id": "nova:226",
+    "name": "Ver'ashan",
+    "prefix": "nova",
+    "links": [
+      "nova:249",
+      "nova:234",
+      "nova:227",
+      "nova:225"
+    ],
+    "position": [
+      472,
+      -126
+    ],
+    "planets": [
+      "nova:242",
+      "nova:243",
+      "nova:500",
+      "nova:473"
+    ]
+  },
+  "nova:227": {
+    "id": "nova:227",
+    "name": "Til'hapin",
+    "prefix": "nova",
+    "links": [
+      "nova:226",
+      "nova:228",
+      "nova:236",
+      "nova:235"
+    ],
+    "position": [
+      472,
+      -103
+    ],
+    "planets": [
+      "nova:244"
+    ]
+  },
+  "nova:228": {
+    "id": "nova:228",
+    "name": "Z'rena",
+    "prefix": "nova",
+    "links": [
+      "nova:244",
+      "nova:552",
+      "nova:229",
+      "nova:236",
+      "nova:227"
+    ],
+    "position": [
+      483,
+      -86
+    ],
+    "planets": []
+  },
+  "nova:229": {
+    "id": "nova:229",
+    "name": "Tri'cikilla",
+    "prefix": "nova",
+    "links": [
+      "nova:228",
+      "nova:230",
+      "nova:216",
+      "nova:220"
+    ],
+    "position": [
+      440,
+      -76
+    ],
+    "planets": [
+      "nova:245"
+    ]
+  },
+  "nova:230": {
+    "id": "nova:230",
+    "name": "Bis'routak",
+    "prefix": "nova",
+    "links": [
+      "nova:236",
+      "nova:229",
+      "nova:231",
+      "nova:237"
+    ],
+    "position": [
+      446,
+      -84
+    ],
+    "planets": [
+      "nova:246"
+    ]
+  },
+  "nova:231": {
+    "id": "nova:231",
+    "name": "Bis'valalo",
+    "prefix": "nova",
+    "links": [
+      "nova:237",
+      "nova:230",
+      "nova:221",
+      "nova:232",
+      "nova:220"
+    ],
+    "position": [
+      427,
+      -97
+    ],
+    "planets": [
+      "nova:247"
+    ]
+  },
+  "nova:232": {
+    "id": "nova:232",
+    "name": "Ver'avo",
+    "prefix": "nova",
+    "links": [
+      "nova:224",
+      "nova:233",
+      "nova:656",
+      "nova:231",
+      "nova:237",
+      "nova:222",
+      "nova:223"
+    ],
+    "position": [
+      418,
+      -117
+    ],
+    "planets": [
+      "nova:248"
+    ]
+  },
+  "nova:233": {
+    "id": "nova:233",
+    "name": "Za'iuso",
+    "prefix": "nova",
+    "links": [
+      "nova:237",
+      "nova:234",
+      "nova:232",
+      "nova:224"
+    ],
+    "position": [
+      434,
+      -124
+    ],
+    "planets": [
+      "nova:249"
+    ]
+  },
+  "nova:234": {
+    "id": "nova:234",
+    "name": "Ki'actia",
+    "prefix": "nova",
+    "links": [
+      "nova:226",
+      "nova:235",
+      "nova:237",
+      "nova:656",
+      "nova:233",
+      "nova:225"
+    ],
+    "position": [
+      450,
+      -116
+    ],
+    "planets": [
+      "nova:250"
+    ]
+  },
+  "nova:235": {
+    "id": "nova:235",
+    "name": "K'yapta",
+    "prefix": "nova",
+    "links": [
+      "nova:227",
+      "nova:236",
+      "nova:237",
+      "nova:234"
+    ],
+    "position": [
+      466,
+      -110
+    ],
+    "planets": [
+      "nova:251"
+    ]
+  },
+  "nova:236": {
+    "id": "nova:236",
+    "name": "Ver'ikar",
+    "prefix": "nova",
+    "links": [
+      "nova:235",
+      "nova:227",
+      "nova:228",
+      "nova:230",
+      "nova:237"
+    ],
+    "position": [
+      463,
+      -95
+    ],
+    "planets": [
+      "nova:252",
+      "nova:253"
+    ]
+  },
+  "nova:237": {
+    "id": "nova:237",
+    "name": "Kel'ariy",
+    "prefix": "nova",
+    "links": [
+      "nova:235",
+      "nova:234",
+      "nova:230",
+      "nova:236",
+      "nova:231",
+      "nova:232",
+      "nova:656",
+      "nova:233"
+    ],
+    "position": [
+      436,
+      -104
+    ],
+    "planets": [
+      "nova:254",
+      "nova:255",
+      "nova:501"
+    ]
+  },
+  "nova:238": {
+    "id": "nova:238",
+    "name": "Ne'helipar",
+    "prefix": "nova",
+    "links": [
+      "nova:244",
+      "nova:241",
+      "nova:216"
+    ],
+    "position": [
+      472,
+      -58
+    ],
+    "planets": [
+      "nova:256"
+    ]
+  },
+  "nova:239": {
+    "id": "nova:239",
+    "name": "Nil'nesa",
+    "prefix": "nova",
+    "links": [
+      "nova:261",
+      "nova:223",
+      "nova:214",
+      "nova:602",
+      "nova:530"
+    ],
+    "position": [
+      392,
+      -136
+    ],
+    "planets": [
+      "nova:257"
+    ]
+  },
+  "nova:240": {
+    "id": "nova:240",
+    "name": "Kel'hepera",
+    "prefix": "nova",
+    "links": [
+      "nova:243",
+      "nova:241"
+    ],
+    "position": [
+      500,
+      -32
+    ],
+    "planets": [
+      "nova:258"
+    ]
+  },
+  "nova:241": {
+    "id": "nova:241",
+    "name": "Bis'usoca",
+    "prefix": "nova",
+    "links": [
+      "nova:240",
+      "nova:242",
+      "nova:550",
+      "nova:238"
+    ],
+    "position": [
+      493,
+      -25
+    ],
+    "planets": [
+      "nova:259",
+      "nova:260"
+    ]
+  },
+  "nova:242": {
+    "id": "nova:242",
+    "name": "Tre'pirana",
+    "prefix": "nova",
+    "links": [
+      "nova:243",
+      "nova:241"
+    ],
+    "position": [
+      501,
+      -10
+    ],
+    "planets": [
+      "nova:261",
+      "nova:262",
+      "nova:263",
+      "nova:502"
+    ]
+  },
+  "nova:243": {
+    "id": "nova:243",
+    "name": "J'llon",
+    "prefix": "nova",
+    "links": [
+      "nova:242",
+      "nova:240"
+    ],
+    "position": [
+      509,
+      -21
+    ],
+    "planets": [
+      "nova:264"
+    ]
+  },
+  "nova:244": {
+    "id": "nova:244",
+    "name": "Nil'pesetra",
+    "prefix": "nova",
+    "links": [
+      "nova:245",
+      "nova:238",
+      "nova:228",
+      "nova:249"
+    ],
+    "position": [
+      520,
+      -73
+    ],
+    "planets": [
+      "nova:265",
+      "nova:266"
+    ]
+  },
+  "nova:245": {
+    "id": "nova:245",
+    "name": "Mu'hari",
+    "prefix": "nova",
+    "links": [
+      "nova:247",
+      "nova:248",
+      "nova:246",
+      "nova:552",
+      "nova:244"
+    ],
+    "position": [
+      558,
+      -69
+    ],
+    "planets": [
+      "nova:267"
+    ]
+  },
+  "nova:246": {
+    "id": "nova:246",
+    "name": "Ver'roqi",
+    "prefix": "nova",
+    "links": [
+      "nova:245"
+    ],
+    "position": [
+      564,
+      -52
+    ],
+    "planets": [
+      "nova:268",
+      "nova:269",
+      "nova:270"
+    ]
+  },
+  "nova:247": {
+    "id": "nova:247",
+    "name": "J'narr",
+    "prefix": "nova",
+    "links": [
+      "nova:245"
+    ],
+    "position": [
+      587,
+      -71
+    ],
+    "planets": [
+      "nova:271"
+    ]
+  },
+  "nova:248": {
+    "id": "nova:248",
+    "name": "Tre'petaka",
+    "prefix": "nova",
+    "links": [
+      "nova:245"
+    ],
+    "position": [
+      567,
+      -84
+    ],
+    "planets": [
+      "nova:272"
+    ]
+  },
+  "nova:249": {
+    "id": "nova:249",
+    "name": "Tre'minor",
+    "prefix": "nova",
+    "links": [
+      "nova:251",
+      "nova:244",
+      "nova:552",
+      "nova:226",
+      "nova:254"
+    ],
+    "position": [
+      510,
+      -122
+    ],
+    "planets": [
+      "nova:273",
+      "nova:274"
+    ]
+  },
+  "nova:250": {
+    "id": "nova:250",
+    "name": "P'omlpha",
+    "prefix": "nova",
+    "links": [
+      "nova:251"
+    ],
+    "position": [
+      538,
+      -124
+    ],
+    "planets": [
+      "nova:275"
+    ]
+  },
+  "nova:251": {
+    "id": "nova:251",
+    "name": "Z'elta",
+    "prefix": "nova",
+    "links": [
+      "nova:252",
+      "nova:250",
+      "nova:249"
+    ],
+    "position": [
+      534,
+      -140
+    ],
+    "planets": []
+  },
+  "nova:252": {
+    "id": "nova:252",
+    "name": "Ki'asman",
+    "prefix": "nova",
+    "links": [
+      "nova:253",
+      "nova:251"
+    ],
+    "position": [
+      554,
+      -147
+    ],
+    "planets": [
+      "nova:276"
+    ]
+  },
+  "nova:253": {
+    "id": "nova:253",
+    "name": "K'kiptorak",
+    "prefix": "nova",
+    "links": [
+      "nova:252"
+    ],
+    "position": [
+      568,
+      -140
+    ],
+    "planets": [
+      "nova:277",
+      "nova:278"
+    ]
+  },
+  "nova:254": {
+    "id": "nova:254",
+    "name": "Tre'olepla",
+    "prefix": "nova",
+    "links": [
+      "nova:255",
+      "nova:249",
+      "nova:256"
+    ],
+    "position": [
+      501,
+      -137
+    ],
+    "planets": [
+      "nova:279",
+      "nova:280"
+    ]
+  },
+  "nova:255": {
+    "id": "nova:255",
+    "name": "Za'diti",
+    "prefix": "nova",
+    "links": [
+      "nova:254"
+    ],
+    "position": [
+      520,
+      -150
+    ],
+    "planets": [
+      "nova:281"
+    ]
+  },
+  "nova:256": {
+    "id": "nova:256",
+    "name": "Kel'fella",
+    "prefix": "nova",
+    "links": [
+      "nova:257",
+      "nova:254",
+      "nova:225",
+      "nova:261"
+    ],
+    "position": [
+      457,
+      -166
+    ],
+    "planets": [
+      "nova:282"
+    ]
+  },
+  "nova:257": {
+    "id": "nova:257",
+    "name": "Ki'ade",
+    "prefix": "nova",
+    "links": [
+      "nova:259",
+      "nova:256"
+    ],
+    "position": [
+      462,
+      -201
+    ],
+    "planets": [
+      "nova:283"
+    ]
+  },
+  "nova:258": {
+    "id": "nova:258",
+    "name": "Ne'ritai",
+    "prefix": "nova",
+    "links": [
+      "nova:259"
+    ],
+    "position": [
+      496,
+      -200
+    ],
+    "planets": [
+      "nova:284",
+      "nova:285"
+    ]
+  },
+  "nova:259": {
+    "id": "nova:259",
+    "name": "P'aedt",
+    "prefix": "nova",
+    "links": [
+      "nova:553",
+      "nova:258",
+      "nova:257",
+      "nova:260"
+    ],
+    "position": [
+      488,
+      -212
+    ],
+    "planets": [
+      "nova:286"
+    ]
+  },
+  "nova:260": {
+    "id": "nova:260",
+    "name": "J'raphit",
+    "prefix": "nova",
+    "links": [
+      "nova:259"
+    ],
+    "position": [
+      486,
+      -230
+    ],
+    "planets": [
+      "nova:287"
+    ]
+  },
+  "nova:261": {
+    "id": "nova:261",
+    "name": "Ver'asplast",
+    "prefix": "nova",
+    "links": [
+      "nova:262",
+      "nova:609",
+      "nova:224",
+      "nova:256",
+      "nova:607",
+      "nova:239",
+      "nova:551"
+    ],
+    "position": [
+      410,
+      -197
+    ],
+    "planets": [
+      "nova:288",
+      "nova:289"
+    ]
+  },
+  "nova:262": {
+    "id": "nova:262",
+    "name": "Tre'erman",
+    "prefix": "nova",
+    "links": [
+      "nova:554",
+      "nova:263",
+      "nova:261",
+      "nova:264"
+    ],
+    "position": [
+      419,
+      -233
+    ],
+    "planets": [
+      "nova:290",
+      "nova:291"
+    ]
+  },
+  "nova:263": {
+    "id": "nova:263",
+    "name": "Nil'blei",
+    "prefix": "nova",
+    "links": [
+      "nova:262"
+    ],
+    "position": [
+      436,
+      -223
+    ],
+    "planets": [
+      "nova:292",
+      "nova:293"
+    ]
+  },
+  "nova:264": {
+    "id": "nova:264",
+    "name": "J'fhor",
+    "prefix": "nova",
+    "links": [
+      "nova:262",
+      "nova:528",
+      "nova:600",
+      "nova:597",
+      "nova:525"
+    ],
+    "position": [
+      408,
+      -255
+    ],
+    "planets": [
+      "nova:294",
+      "nova:474"
+    ]
+  },
+  "nova:265": {
+    "id": "nova:265",
+    "name": "Nil'ikro",
+    "prefix": "nova",
+    "links": [
+      "nova:266",
+      "nova:268",
+      "nova:211"
+    ],
+    "position": [
+      388,
+      28
+    ],
+    "planets": [
+      "nova:295"
+    ]
+  },
+  "nova:266": {
+    "id": "nova:266",
+    "name": "Ki'vless",
+    "prefix": "nova",
+    "links": [
+      "nova:216",
+      "nova:555",
+      "nova:265"
+    ],
+    "position": [
+      401,
+      15
+    ],
+    "planets": [
+      "nova:296"
+    ]
+  },
+  "nova:267": {
+    "id": "nova:267",
+    "name": "Tiria",
+    "prefix": "nova",
+    "links": [
+      "nova:549",
+      "nova:218",
+      "nova:270",
+      "nova:268"
+    ],
+    "position": [
+      433,
+      50
+    ],
+    "planets": []
+  },
+  "nova:268": {
+    "id": "nova:268",
+    "name": "Ferris",
+    "prefix": "nova",
+    "links": [
+      "nova:267",
+      "nova:269",
+      "nova:279",
+      "nova:555",
+      "nova:265"
+    ],
+    "position": [
+      394,
+      52
+    ],
+    "planets": []
+  },
+  "nova:269": {
+    "id": "nova:269",
+    "name": "Sender",
+    "prefix": "nova",
+    "links": [
+      "nova:270",
+      "nova:268"
+    ],
+    "position": [
+      411,
+      87
+    ],
+    "planets": [
+      "nova:297"
+    ]
+  },
+  "nova:270": {
+    "id": "nova:270",
+    "name": "Caryo",
+    "prefix": "nova",
+    "links": [
+      "nova:274",
+      "nova:269",
+      "nova:267"
+    ],
+    "position": [
+      438,
+      89
+    ],
+    "planets": [
+      "nova:298"
+    ]
+  },
+  "nova:271": {
+    "id": "nova:271",
+    "name": "Holpa",
+    "prefix": "nova",
+    "links": [
+      "nova:272"
+    ],
+    "position": [
+      486,
+      120
+    ],
+    "planets": [
+      "nova:299"
+    ]
+  },
+  "nova:272": {
+    "id": "nova:272",
+    "name": "Cworn",
+    "prefix": "nova",
+    "links": [
+      "nova:271",
+      "nova:273",
+      "nova:276"
+    ],
+    "position": [
+      446,
+      126
+    ],
+    "planets": [
+      "nova:300"
+    ]
+  },
+  "nova:273": {
+    "id": "nova:273",
+    "name": "Tocc",
+    "prefix": "nova",
+    "links": [
+      "nova:274",
+      "nova:272"
+    ],
+    "position": [
+      461,
+      152
+    ],
+    "planets": [
+      "nova:301"
+    ]
+  },
+  "nova:274": {
+    "id": "nova:274",
+    "name": "Nibos",
+    "prefix": "nova",
+    "links": [
+      "nova:270",
+      "nova:273",
+      "nova:275"
+    ],
+    "position": [
+      422,
+      170
+    ],
+    "planets": [
+      "nova:302"
+    ]
+  },
+  "nova:275": {
+    "id": "nova:275",
+    "name": "Grip",
+    "prefix": "nova",
+    "links": [
+      "nova:276",
+      "nova:274"
+    ],
+    "position": [
+      390,
+      158
+    ],
+    "planets": [
+      "nova:303"
+    ]
+  },
+  "nova:276": {
+    "id": "nova:276",
+    "name": "Tekel Hook",
+    "prefix": "nova",
+    "links": [
+      "nova:272",
+      "nova:275",
+      "nova:277"
+    ],
+    "position": [
+      406,
+      124
+    ],
+    "planets": [
+      "nova:304"
+    ]
+  },
+  "nova:277": {
+    "id": "nova:277",
+    "name": "Tekel Rom",
+    "prefix": "nova",
+    "links": [
+      "nova:276",
+      "nova:278"
+    ],
+    "position": [
+      376,
+      107
+    ],
+    "planets": [
+      "nova:305"
+    ]
+  },
+  "nova:278": {
+    "id": "nova:278",
+    "name": "Tekel Nicka",
+    "prefix": "nova",
+    "links": [
+      "nova:277",
+      "nova:538",
+      "nova:282",
+      "nova:279"
+    ],
+    "position": [
+      366,
+      83
+    ],
+    "planets": [
+      "nova:306",
+      "nova:307"
+    ]
+  },
+  "nova:279": {
+    "id": "nova:279",
+    "name": "Fallen",
+    "prefix": "nova",
+    "links": [
+      "nova:268",
+      "nova:278",
+      "nova:280"
+    ],
+    "position": [
+      330,
+      54
+    ],
+    "planets": [
+      "nova:308"
+    ]
+  },
+  "nova:280": {
+    "id": "nova:280",
+    "name": "Tekel Reeva",
+    "prefix": "nova",
+    "links": [
+      "nova:279",
+      "nova:538",
+      "nova:282",
+      "nova:281",
+      "nova:306"
+    ],
+    "position": [
+      322,
+      104
+    ],
+    "planets": [
+      "nova:309"
+    ]
+  },
+  "nova:281": {
+    "id": "nova:281",
+    "name": "Tekel Over",
+    "prefix": "nova",
+    "links": [
+      "nova:280",
+      "nova:538",
+      "nova:282",
+      "nova:289"
+    ],
+    "position": [
+      318,
+      113
+    ],
+    "planets": [
+      "nova:310",
+      "nova:311"
+    ]
+  },
+  "nova:282": {
+    "id": "nova:282",
+    "name": "Tekel",
+    "prefix": "nova",
+    "links": [
+      "nova:278",
+      "nova:283",
+      "nova:281",
+      "nova:280"
+    ],
+    "position": [
+      344,
+      140
+    ],
+    "planets": [
+      "nova:312",
+      "nova:1412"
+    ]
+  },
+  "nova:283": {
+    "id": "nova:283",
+    "name": "Tekel Kymon",
+    "prefix": "nova",
+    "links": [
+      "nova:538",
+      "nova:282",
+      "nova:284"
+    ],
+    "position": [
+      340,
+      179
+    ],
+    "planets": [
+      "nova:313",
+      "nova:314"
+    ]
+  },
+  "nova:284": {
+    "id": "nova:284",
+    "name": "Smada",
+    "prefix": "nova",
+    "links": [
+      "nova:285",
+      "nova:286",
+      "nova:283"
+    ],
+    "position": [
+      352,
+      243
+    ],
+    "planets": []
+  },
+  "nova:285": {
+    "id": "nova:285",
+    "name": "Kontik",
+    "prefix": "nova",
+    "links": [
+      "nova:284"
+    ],
+    "position": [
+      382,
+      257
+    ],
+    "planets": [
+      "nova:315"
+    ]
+  },
+  "nova:286": {
+    "id": "nova:286",
+    "name": "Eguit",
+    "prefix": "nova",
+    "links": [
+      "nova:284",
+      "nova:287"
+    ],
+    "position": [
+      315,
+      241
+    ],
+    "planets": [
+      "nova:316"
+    ]
+  },
+  "nova:287": {
+    "id": "nova:287",
+    "name": "Neilha",
+    "prefix": "nova",
+    "links": [
+      "nova:286",
+      "nova:290"
+    ],
+    "position": [
+      310,
+      205
+    ],
+    "planets": [
+      "nova:317"
+    ]
+  },
+  "nova:288": {
+    "id": "nova:288",
+    "name": "Kipa",
+    "prefix": "nova",
+    "links": [
+      "nova:290",
+      "nova:289"
+    ],
+    "position": [
+      297,
+      180
+    ],
+    "planets": [
+      "nova:318",
+      "nova:475"
+    ]
+  },
+  "nova:289": {
+    "id": "nova:289",
+    "name": "Cipa",
+    "prefix": "nova",
+    "links": [
+      "nova:281",
+      "nova:288",
+      "nova:290"
+    ],
+    "position": [
+      293,
+      160
+    ],
+    "planets": []
+  },
+  "nova:290": {
+    "id": "nova:290",
+    "name": "Zipa",
+    "prefix": "nova",
+    "links": [
+      "nova:289",
+      "nova:287",
+      "nova:288",
+      "nova:291"
+    ],
+    "position": [
+      277,
+      171
+    ],
+    "planets": []
+  },
+  "nova:291": {
+    "id": "nova:291",
+    "name": "Tural",
+    "prefix": "nova",
+    "links": [
+      "nova:290",
+      "nova:292",
+      "nova:293"
+    ],
+    "position": [
+      249,
+      214
+    ],
+    "planets": [
+      "nova:319"
+    ]
+  },
+  "nova:292": {
+    "id": "nova:292",
+    "name": "Boro",
+    "prefix": "nova",
+    "links": [
+      "nova:291"
+    ],
+    "position": [
+      284,
+      224
+    ],
+    "planets": [
+      "nova:320"
+    ]
+  },
+  "nova:293": {
+    "id": "nova:293",
+    "name": "Terval",
+    "prefix": "nova",
+    "links": [
+      "nova:291",
+      "nova:294",
+      "nova:295",
+      "nova:296"
+    ],
+    "position": [
+      212,
+      242
+    ],
+    "planets": [
+      "nova:321"
+    ]
+  },
+  "nova:294": {
+    "id": "nova:294",
+    "name": "Nutin",
+    "prefix": "nova",
+    "links": [
+      "nova:295",
+      "nova:293"
+    ],
+    "position": [
+      298,
+      272
+    ],
+    "planets": []
+  },
+  "nova:295": {
+    "id": "nova:295",
+    "name": "Gary",
+    "prefix": "nova",
+    "links": [
+      "nova:293",
+      "nova:294"
+    ],
+    "position": [
+      187,
+      259
+    ],
+    "planets": [
+      "nova:322"
+    ]
+  },
+  "nova:296": {
+    "id": "nova:296",
+    "name": "Dani Kilik",
+    "prefix": "nova",
+    "links": [
+      "nova:297",
+      "nova:293",
+      "nova:313"
+    ],
+    "position": [
+      208,
+      207
+    ],
+    "planets": [
+      "nova:323"
+    ]
+  },
+  "nova:297": {
+    "id": "nova:297",
+    "name": "Dani Renan",
+    "prefix": "nova",
+    "links": [
+      "nova:541",
+      "nova:298",
+      "nova:296"
+    ],
+    "position": [
+      238,
+      188
+    ],
+    "planets": [
+      "nova:324"
+    ]
+  },
+  "nova:298": {
+    "id": "nova:298",
+    "name": "Dani",
+    "prefix": "nova",
+    "links": [
+      "nova:299",
+      "nova:297",
+      "nova:302"
+    ],
+    "position": [
+      238,
+      158
+    ],
+    "planets": [
+      "nova:325",
+      "nova:1413"
+    ]
+  },
+  "nova:299": {
+    "id": "nova:299",
+    "name": "Dani Fort",
+    "prefix": "nova",
+    "links": [
+      "nova:541",
+      "nova:298",
+      "nova:300"
+    ],
+    "position": [
+      284,
+      129
+    ],
+    "planets": [
+      "nova:326",
+      "nova:327"
+    ]
+  },
+  "nova:300": {
+    "id": "nova:300",
+    "name": "Dani Evera",
+    "prefix": "nova",
+    "links": [
+      "nova:299",
+      "nova:301"
+    ],
+    "position": [
+      272,
+      94
+    ],
+    "planets": [
+      "nova:328"
+    ]
+  },
+  "nova:301": {
+    "id": "nova:301",
+    "name": "Dani Ivar",
+    "prefix": "nova",
+    "links": [
+      "nova:300",
+      "nova:302"
+    ],
+    "position": [
+      232,
+      133
+    ],
+    "planets": [
+      "nova:329"
+    ]
+  },
+  "nova:302": {
+    "id": "nova:302",
+    "name": "Dani Himear",
+    "prefix": "nova",
+    "links": [
+      "nova:303",
+      "nova:301",
+      "nova:541",
+      "nova:298",
+      "nova:311"
+    ],
+    "position": [
+      200,
+      148
+    ],
+    "planets": [
+      "nova:330"
+    ]
+  },
+  "nova:303": {
+    "id": "nova:303",
+    "name": "Gotim",
+    "prefix": "nova",
+    "links": [
+      "nova:304",
+      "nova:306",
+      "nova:302",
+      "nova:326",
+      "nova:309"
+    ],
+    "position": [
+      219,
+      107
+    ],
+    "planets": []
+  },
+  "nova:304": {
+    "id": "nova:304",
+    "name": "Hanova",
+    "prefix": "nova",
+    "links": [
+      "nova:305",
+      "nova:303"
+    ],
+    "position": [
+      230,
+      62
+    ],
+    "planets": []
+  },
+  "nova:305": {
+    "id": "nova:305",
+    "name": "Pilot",
+    "prefix": "nova",
+    "links": [
+      "nova:307",
+      "nova:306",
+      "nova:304"
+    ],
+    "position": [
+      264,
+      59
+    ],
+    "planets": [
+      "nova:331"
+    ]
+  },
+  "nova:306": {
+    "id": "nova:306",
+    "name": "Reer",
+    "prefix": "nova",
+    "links": [
+      "nova:280",
+      "nova:303",
+      "nova:305"
+    ],
+    "position": [
+      271,
+      76
+    ],
+    "planets": [
+      "nova:332"
+    ]
+  },
+  "nova:307": {
+    "id": "nova:307",
+    "name": "Zel",
+    "prefix": "nova",
+    "links": [
+      "nova:305",
+      "nova:308",
+      "nova:203"
+    ],
+    "position": [
+      270,
+      31
+    ],
+    "planets": []
+  },
+  "nova:308": {
+    "id": "nova:308",
+    "name": "SPC-1421",
+    "prefix": "nova",
+    "links": [
+      "nova:307",
+      "nova:202",
+      "nova:310",
+      "nova:309"
+    ],
+    "position": [
+      166,
+      32
+    ],
+    "planets": [
+      "nova:333"
+    ]
+  },
+  "nova:309": {
+    "id": "nova:309",
+    "name": "Iplik",
+    "prefix": "nova",
+    "links": [
+      "nova:303",
+      "nova:310",
+      "nova:308"
+    ],
+    "position": [
+      202,
+      63
+    ],
+    "planets": []
+  },
+  "nova:310": {
+    "id": "nova:310",
+    "name": "Aria",
+    "prefix": "nova",
+    "links": [
+      "nova:309",
+      "nova:311",
+      "nova:327",
+      "nova:308"
+    ],
+    "position": [
+      179,
+      84
+    ],
+    "planets": [
+      "nova:334"
+    ]
+  },
+  "nova:311": {
+    "id": "nova:311",
+    "name": "Hope",
+    "prefix": "nova",
+    "links": [
+      "nova:310",
+      "nova:302",
+      "nova:312",
+      "nova:324"
+    ],
+    "position": [
+      167,
+      140
+    ],
+    "planets": [
+      "nova:476"
+    ]
+  },
+  "nova:312": {
+    "id": "nova:312",
+    "name": "Pimen",
+    "prefix": "nova",
+    "links": [
+      "nova:311",
+      "nova:313",
+      "nova:322",
+      "nova:323"
+    ],
+    "position": [
+      144,
+      150
+    ],
+    "planets": [
+      "nova:335"
+    ]
+  },
+  "nova:313": {
+    "id": "nova:313",
+    "name": "Freya",
+    "prefix": "nova",
+    "links": [
+      "nova:296",
+      "nova:315",
+      "nova:603",
+      "nova:314",
+      "nova:322",
+      "nova:312"
+    ],
+    "position": [
+      168,
+      178
+    ],
+    "planets": [
+      "nova:336"
+    ]
+  },
+  "nova:314": {
+    "id": "nova:314",
+    "name": "Kin",
+    "prefix": "nova",
+    "links": [
+      "nova:313",
+      "nova:603",
+      "nova:315"
+    ],
+    "position": [
+      163,
+      203
+    ],
+    "planets": [
+      "nova:337"
+    ]
+  },
+  "nova:315": {
+    "id": "nova:315",
+    "name": "Aurora",
+    "prefix": "nova",
+    "links": [
+      "nova:313",
+      "nova:317",
+      "nova:314",
+      "nova:316"
+    ],
+    "position": [
+      123,
+      191
+    ],
+    "planets": [
+      "nova:338",
+      "nova:339",
+      "nova:340",
+      "nova:1414"
+    ]
+  },
+  "nova:316": {
+    "id": "nova:316",
+    "name": "Amnaho",
+    "prefix": "nova",
+    "links": [
+      "nova:603",
+      "nova:315"
+    ],
+    "position": [
+      114,
+      200
+    ],
+    "planets": [
+      "nova:341"
+    ]
+  },
+  "nova:317": {
+    "id": "nova:317",
+    "name": "Olein",
+    "prefix": "nova",
+    "links": [
+      "nova:318",
+      "nova:603",
+      "nova:315"
+    ],
+    "position": [
+      136,
+      220
+    ],
+    "planets": [
+      "nova:342"
+    ]
+  },
+  "nova:318": {
+    "id": "nova:318",
+    "name": "Ofine",
+    "prefix": "nova",
+    "links": [
+      "nova:317",
+      "nova:319"
+    ],
+    "position": [
+      111,
+      222
+    ],
+    "planets": []
+  },
+  "nova:319": {
+    "id": "nova:319",
+    "name": "Issar",
+    "prefix": "nova",
+    "links": [
+      "nova:318",
+      "nova:333",
+      "nova:320"
+    ],
+    "position": [
+      103,
+      190
+    ],
+    "planets": [
+      "nova:343"
+    ]
+  },
+  "nova:320": {
+    "id": "nova:320",
+    "name": "Inci",
+    "prefix": "nova",
+    "links": [
+      "nova:321",
+      "nova:319",
+      "nova:335"
+    ],
+    "position": [
+      78,
+      172
+    ],
+    "planets": []
+  },
+  "nova:321": {
+    "id": "nova:321",
+    "name": "Sale",
+    "prefix": "nova",
+    "links": [
+      "nova:324",
+      "nova:320",
+      "nova:336"
+    ],
+    "position": [
+      80,
+      140
+    ],
+    "planets": []
+  },
+  "nova:322": {
+    "id": "nova:322",
+    "name": "Aplix",
+    "prefix": "nova",
+    "links": [
+      "nova:312",
+      "nova:313",
+      "nova:323"
+    ],
+    "position": [
+      122,
+      176
+    ],
+    "planets": [
+      "nova:344"
+    ]
+  },
+  "nova:323": {
+    "id": "nova:323",
+    "name": "Rcaris",
+    "prefix": "nova",
+    "links": [
+      "nova:322",
+      "nova:312"
+    ],
+    "position": [
+      115,
+      135
+    ],
+    "planets": []
+  },
+  "nova:324": {
+    "id": "nova:324",
+    "name": "Wittor",
+    "prefix": "nova",
+    "links": [
+      "nova:311",
+      "nova:321",
+      "nova:325"
+    ],
+    "position": [
+      122,
+      114
+    ],
+    "planets": [
+      "nova:345",
+      "nova:509"
+    ]
+  },
+  "nova:325": {
+    "id": "nova:325",
+    "name": "SPC-050",
+    "prefix": "nova",
+    "links": [
+      "nova:324",
+      "nova:326",
+      "nova:129"
+    ],
+    "position": [
+      118,
+      78
+    ],
+    "planets": [
+      "nova:346"
+    ]
+  },
+  "nova:326": {
+    "id": "nova:326",
+    "name": "Uroa",
+    "prefix": "nova",
+    "links": [
+      "nova:303",
+      "nova:325",
+      "nova:327"
+    ],
+    "position": [
+      148,
+      96
+    ],
+    "planets": []
+  },
+  "nova:327": {
+    "id": "nova:327",
+    "name": "Unin",
+    "prefix": "nova",
+    "links": [
+      "nova:326",
+      "nova:310",
+      "nova:129"
+    ],
+    "position": [
+      143,
+      71
+    ],
+    "planets": [
+      "nova:347"
+    ]
+  },
+  "nova:328": {
+    "id": "nova:328",
+    "name": "Futurend",
+    "prefix": "nova",
+    "links": [
+      "nova:329"
+    ],
+    "position": [
+      122,
+      242
+    ],
+    "planets": [
+      "nova:348"
+    ]
+  },
+  "nova:329": {
+    "id": "nova:329",
+    "name": "Laok",
+    "prefix": "nova",
+    "links": [
+      "nova:330",
+      "nova:328",
+      "nova:332"
+    ],
+    "position": [
+      90,
+      233
+    ],
+    "planets": []
+  },
+  "nova:330": {
+    "id": "nova:330",
+    "name": "Bluyo",
+    "prefix": "nova",
+    "links": [
+      "nova:331",
+      "nova:329"
+    ],
+    "position": [
+      96,
+      260
+    ],
+    "planets": []
+  },
+  "nova:331": {
+    "id": "nova:331",
+    "name": "Chayos",
+    "prefix": "nova",
+    "links": [
+      "nova:330",
+      "nova:340"
+    ],
+    "position": [
+      88,
+      274
+    ],
+    "planets": [
+      "nova:349"
+    ]
+  },
+  "nova:332": {
+    "id": "nova:332",
+    "name": "Typin",
+    "prefix": "nova",
+    "links": [
+      "nova:333",
+      "nova:329",
+      "nova:334"
+    ],
+    "position": [
+      72,
+      210
+    ],
+    "planets": []
+  },
+  "nova:333": {
+    "id": "nova:333",
+    "name": "Ivo",
+    "prefix": "nova",
+    "links": [
+      "nova:319",
+      "nova:332"
+    ],
+    "position": [
+      78,
+      196
+    ],
+    "planets": []
+  },
+  "nova:334": {
+    "id": "nova:334",
+    "name": "Ivia",
+    "prefix": "nova",
+    "links": [
+      "nova:332",
+      "nova:338",
+      "nova:349"
+    ],
+    "position": [
+      54,
+      188
+    ],
+    "planets": [
+      "nova:350"
+    ]
+  },
+  "nova:335": {
+    "id": "nova:335",
+    "name": "Sonete",
+    "prefix": "nova",
+    "links": [
+      "nova:320"
+    ],
+    "position": [
+      45,
+      162
+    ],
+    "planets": [
+      "nova:351"
+    ]
+  },
+  "nova:336": {
+    "id": "nova:336",
+    "name": "Vemap",
+    "prefix": "nova",
+    "links": [
+      "nova:321",
+      "nova:337",
+      "nova:131"
+    ],
+    "position": [
+      47,
+      112
+    ],
+    "planets": [
+      "nova:352"
+    ]
+  },
+  "nova:337": {
+    "id": "nova:337",
+    "name": "Heraan Cov",
+    "prefix": "nova",
+    "links": [
+      "nova:336",
+      "nova:349",
+      "nova:344",
+      "nova:604",
+      "nova:540"
+    ],
+    "position": [
+      26,
+      132
+    ],
+    "planets": [
+      "nova:353"
+    ]
+  },
+  "nova:338": {
+    "id": "nova:338",
+    "name": "Heraan Malo",
+    "prefix": "nova",
+    "links": [
+      "nova:334",
+      "nova:604",
+      "nova:540",
+      "nova:344"
+    ],
+    "position": [
+      24,
+      200
+    ],
+    "planets": [
+      "nova:354",
+      "nova:355"
+    ]
+  },
+  "nova:339": {
+    "id": "nova:339",
+    "name": "Heraan Lacora",
+    "prefix": "nova",
+    "links": [
+      "nova:340",
+      "nova:604",
+      "nova:540",
+      "nova:344"
+    ],
+    "position": [
+      38,
+      222
+    ],
+    "planets": [
+      "nova:356"
+    ]
+  },
+  "nova:340": {
+    "id": "nova:340",
+    "name": "Heraan Hiro",
+    "prefix": "nova",
+    "links": [
+      "nova:341",
+      "nova:331",
+      "nova:339"
+    ],
+    "position": [
+      48,
+      230
+    ],
+    "planets": [
+      "nova:357"
+    ]
+  },
+  "nova:341": {
+    "id": "nova:341",
+    "name": "Hepen",
+    "prefix": "nova",
+    "links": [
+      "nova:342",
+      "nova:340"
+    ],
+    "position": [
+      60,
+      248
+    ],
+    "planets": []
+  },
+  "nova:342": {
+    "id": "nova:342",
+    "name": "Kao",
+    "prefix": "nova",
+    "links": [
+      "nova:341"
+    ],
+    "position": [
+      46,
+      271
+    ],
+    "planets": [
+      "nova:358"
+    ]
+  },
+  "nova:343": {
+    "id": "nova:343",
+    "name": "Heraan Gulag",
+    "prefix": "nova",
+    "links": [
+      "nova:604",
+      "nova:540",
+      "nova:344"
+    ],
+    "position": [
+      8,
+      238
+    ],
+    "planets": [
+      "nova:359"
+    ]
+  },
+  "nova:344": {
+    "id": "nova:344",
+    "name": "Heraan",
+    "prefix": "nova",
+    "links": [
+      "nova:337",
+      "nova:338",
+      "nova:343",
+      "nova:339",
+      "nova:356",
+      "nova:345",
+      "nova:346"
+    ],
+    "position": [
+      3,
+      219
+    ],
+    "planets": [
+      "nova:360",
+      "nova:361",
+      "nova:1415",
+      "nova:477"
+    ]
+  },
+  "nova:345": {
+    "id": "nova:345",
+    "name": "Heraan Sa",
+    "prefix": "nova",
+    "links": [
+      "nova:604",
+      "nova:540",
+      "nova:344"
+    ],
+    "position": [
+      -10,
+      206
+    ],
+    "planets": [
+      "nova:362",
+      "nova:363"
+    ]
+  },
+  "nova:346": {
+    "id": "nova:346",
+    "name": "Heraan Astra",
+    "prefix": "nova",
+    "links": [
+      "nova:540",
+      "nova:604",
+      "nova:344",
+      "nova:347"
+    ],
+    "position": [
+      -8,
+      185
+    ],
+    "planets": [
+      "nova:364"
+    ]
+  },
+  "nova:347": {
+    "id": "nova:347",
+    "name": "Vantra",
+    "prefix": "nova",
+    "links": [
+      "nova:348",
+      "nova:346",
+      "nova:354",
+      "nova:352"
+    ],
+    "position": [
+      -24,
+      167
+    ],
+    "planets": [
+      "nova:365"
+    ]
+  },
+  "nova:348": {
+    "id": "nova:348",
+    "name": "Derlic",
+    "prefix": "nova",
+    "links": [
+      "nova:349",
+      "nova:347",
+      "nova:350"
+    ],
+    "position": [
+      -10,
+      159
+    ],
+    "planets": []
+  },
+  "nova:349": {
+    "id": "nova:349",
+    "name": "Tuente",
+    "prefix": "nova",
+    "links": [
+      "nova:337",
+      "nova:334",
+      "nova:348"
+    ],
+    "position": [
+      -8,
+      148
+    ],
+    "planets": []
+  },
+  "nova:350": {
+    "id": "nova:350",
+    "name": "Creyt",
+    "prefix": "nova",
+    "links": [
+      "nova:351",
+      "nova:348",
+      "nova:362"
+    ],
+    "position": [
+      -38,
+      136
+    ],
+    "planets": [
+      "nova:366"
+    ]
+  },
+  "nova:351": {
+    "id": "nova:351",
+    "name": "Neirt",
+    "prefix": "nova",
+    "links": [
+      "nova:159",
+      "nova:350"
+    ],
+    "position": [
+      -16,
+      125
+    ],
+    "planets": []
+  },
+  "nova:352": {
+    "id": "nova:352",
+    "name": "Khyste",
+    "prefix": "nova",
+    "links": [
+      "nova:347",
+      "nova:353"
+    ],
+    "position": [
+      -43,
+      154
+    ],
+    "planets": []
+  },
+  "nova:353": {
+    "id": "nova:353",
+    "name": "Mackle",
+    "prefix": "nova",
+    "links": [
+      "nova:352",
+      "nova:360"
+    ],
+    "position": [
+      -52,
+      171
+    ],
+    "planets": [
+      "nova:367"
+    ]
+  },
+  "nova:354": {
+    "id": "nova:354",
+    "name": "Schev",
+    "prefix": "nova",
+    "links": [
+      "nova:347",
+      "nova:355"
+    ],
+    "position": [
+      -25,
+      196
+    ],
+    "planets": []
+  },
+  "nova:355": {
+    "id": "nova:355",
+    "name": "Pren",
+    "prefix": "nova",
+    "links": [
+      "nova:354"
+    ],
+    "position": [
+      -56,
+      197
+    ],
+    "planets": [
+      "nova:368"
+    ]
+  },
+  "nova:356": {
+    "id": "nova:356",
+    "name": "Heraan Okiia",
+    "prefix": "nova",
+    "links": [
+      "nova:540",
+      "nova:604",
+      "nova:344",
+      "nova:357"
+    ],
+    "position": [
+      -39,
+      237
+    ],
+    "planets": [
+      "nova:369",
+      "nova:370"
+    ]
+  },
+  "nova:357": {
+    "id": "nova:357",
+    "name": "Aalolph",
+    "prefix": "nova",
+    "links": [
+      "nova:359",
+      "nova:356",
+      "nova:358",
+      "nova:371",
+      "nova:370"
+    ],
+    "position": [
+      -80,
+      278
+    ],
+    "planets": [
+      "nova:371"
+    ]
+  },
+  "nova:358": {
+    "id": "nova:358",
+    "name": "Gecht",
+    "prefix": "nova",
+    "links": [
+      "nova:357"
+    ],
+    "position": [
+      -16,
+      300
+    ],
+    "planets": [
+      "nova:372"
+    ]
+  },
+  "nova:359": {
+    "id": "nova:359",
+    "name": "Vestin",
+    "prefix": "nova",
+    "links": [
+      "nova:357",
+      "nova:370",
+      "nova:360",
+      "nova:369"
+    ],
+    "position": [
+      -65,
+      211
+    ],
+    "planets": [
+      "nova:373"
+    ]
+  },
+  "nova:360": {
+    "id": "nova:360",
+    "name": "Odnan",
+    "prefix": "nova",
+    "links": [
+      "nova:353",
+      "nova:359"
+    ],
+    "position": [
+      -82,
+      182
+    ],
+    "planets": []
+  },
+  "nova:361": {
+    "id": "nova:361",
+    "name": "Moash Teckra",
+    "prefix": "nova",
+    "links": [
+      "nova:367",
+      "nova:605",
+      "nova:535",
+      "nova:366"
+    ],
+    "position": [
+      -83,
+      162
+    ],
+    "planets": [
+      "nova:374"
+    ]
+  },
+  "nova:362": {
+    "id": "nova:362",
+    "name": "Moash Eplic",
+    "prefix": "nova",
+    "links": [
+      "nova:363",
+      "nova:350",
+      "nova:367",
+      "nova:368",
+      "nova:364"
+    ],
+    "position": [
+      -86,
+      136
+    ],
+    "planets": [
+      "nova:375"
+    ]
+  },
+  "nova:363": {
+    "id": "nova:363",
+    "name": "Chirt",
+    "prefix": "nova",
+    "links": [
+      "nova:362"
+    ],
+    "position": [
+      -64,
+      110
+    ],
+    "planets": [
+      "nova:376",
+      "nova:478"
+    ]
+  },
+  "nova:364": {
+    "id": "nova:364",
+    "name": "Moash Alala",
+    "prefix": "nova",
+    "links": [
+      "nova:535",
+      "nova:605",
+      "nova:366",
+      "nova:362",
+      "nova:367",
+      "nova:375"
+    ],
+    "position": [
+      -119,
+      115
+    ],
+    "planets": [
+      "nova:377"
+    ]
+  },
+  "nova:365": {
+    "id": "nova:365",
+    "name": "Moash Rep",
+    "prefix": "nova",
+    "links": [
+      "nova:535",
+      "nova:605",
+      "nova:366",
+      "nova:367",
+      "nova:375",
+      "nova:374"
+    ],
+    "position": [
+      -133,
+      142
+    ],
+    "planets": [
+      "nova:378",
+      "nova:379"
+    ]
+  },
+  "nova:366": {
+    "id": "nova:366",
+    "name": "Moash",
+    "prefix": "nova",
+    "links": [
+      "nova:361",
+      "nova:367",
+      "nova:365",
+      "nova:364"
+    ],
+    "position": [
+      -114,
+      154
+    ],
+    "planets": [
+      "nova:380",
+      "nova:1416"
+    ]
+  },
+  "nova:367": {
+    "id": "nova:367",
+    "name": "Moash Llima",
+    "prefix": "nova",
+    "links": [
+      "nova:365",
+      "nova:364",
+      "nova:361",
+      "nova:605",
+      "nova:535",
+      "nova:366",
+      "nova:362",
+      "nova:368"
+    ],
+    "position": [
+      -136,
+      183
+    ],
+    "planets": [
+      "nova:381"
+    ]
+  },
+  "nova:368": {
+    "id": "nova:368",
+    "name": "Moash Nek",
+    "prefix": "nova",
+    "links": [
+      "nova:362",
+      "nova:369",
+      "nova:370",
+      "nova:367"
+    ],
+    "position": [
+      -108,
+      200
+    ],
+    "planets": [
+      "nova:382"
+    ]
+  },
+  "nova:369": {
+    "id": "nova:369",
+    "name": "Fynar",
+    "prefix": "nova",
+    "links": [
+      "nova:359",
+      "nova:368"
+    ],
+    "position": [
+      -106,
+      212
+    ],
+    "planets": []
+  },
+  "nova:370": {
+    "id": "nova:370",
+    "name": "Hiferryl",
+    "prefix": "nova",
+    "links": [
+      "nova:368",
+      "nova:357",
+      "nova:371",
+      "nova:359"
+    ],
+    "position": [
+      -144,
+      218
+    ],
+    "planets": [
+      "nova:383"
+    ]
+  },
+  "nova:371": {
+    "id": "nova:371",
+    "name": "Pact",
+    "prefix": "nova",
+    "links": [
+      "nova:373",
+      "nova:370",
+      "nova:357",
+      "nova:372",
+      "nova:383"
+    ],
+    "position": [
+      -166,
+      230
+    ],
+    "planets": []
+  },
+  "nova:372": {
+    "id": "nova:372",
+    "name": "Sect",
+    "prefix": "nova",
+    "links": [
+      "nova:371"
+    ],
+    "position": [
+      -178,
+      252
+    ],
+    "planets": [
+      "nova:384"
+    ]
+  },
+  "nova:373": {
+    "id": "nova:373",
+    "name": "Iris",
+    "prefix": "nova",
+    "links": [
+      "nova:374",
+      "nova:371",
+      "nova:381"
+    ],
+    "position": [
+      -162,
+      168
+    ],
+    "planets": [
+      "nova:385"
+    ]
+  },
+  "nova:374": {
+    "id": "nova:374",
+    "name": "Jerlyl",
+    "prefix": "nova",
+    "links": [
+      "nova:365",
+      "nova:373"
+    ],
+    "position": [
+      -154,
+      130
+    ],
+    "planets": [
+      "nova:386"
+    ]
+  },
+  "nova:375": {
+    "id": "nova:375",
+    "name": "Biri",
+    "prefix": "nova",
+    "links": [
+      "nova:376",
+      "nova:365",
+      "nova:364",
+      "nova:380",
+      "nova:393"
+    ],
+    "position": [
+      -154,
+      105
+    ],
+    "planets": [
+      "nova:387"
+    ]
+  },
+  "nova:376": {
+    "id": "nova:376",
+    "name": "Xante",
+    "prefix": "nova",
+    "links": [
+      "nova:536",
+      "nova:133",
+      "nova:375",
+      "nova:377"
+    ],
+    "position": [
+      -118,
+      44
+    ],
+    "planets": []
+  },
+  "nova:377": {
+    "id": "nova:377",
+    "name": "Felos",
+    "prefix": "nova",
+    "links": [
+      "nova:376",
+      "nova:388"
+    ],
+    "position": [
+      -146,
+      59
+    ],
+    "planets": []
+  },
+  "nova:378": {
+    "id": "nova:378",
+    "name": "Erante",
+    "prefix": "nova",
+    "links": [
+      "nova:379"
+    ],
+    "position": [
+      -169,
+      78
+    ],
+    "planets": [
+      "nova:388"
+    ]
+  },
+  "nova:379": {
+    "id": "nova:379",
+    "name": "Vella Inkira",
+    "prefix": "nova",
+    "links": [
+      "nova:378",
+      "nova:385",
+      "nova:386",
+      "nova:380",
+      "nova:387"
+    ],
+    "position": [
+      -180,
+      66
+    ],
+    "planets": [
+      "nova:389"
+    ]
+  },
+  "nova:380": {
+    "id": "nova:380",
+    "name": "Warana",
+    "prefix": "nova",
+    "links": [
+      "nova:379",
+      "nova:375",
+      "nova:381"
+    ],
+    "position": [
+      -184,
+      106
+    ],
+    "planets": [
+      "nova:390"
+    ]
+  },
+  "nova:381": {
+    "id": "nova:381",
+    "name": "Uvon",
+    "prefix": "nova",
+    "links": [
+      "nova:380",
+      "nova:373",
+      "nova:382",
+      "nova:383"
+    ],
+    "position": [
+      -191,
+      146
+    ],
+    "planets": [
+      "nova:391"
+    ]
+  },
+  "nova:382": {
+    "id": "nova:382",
+    "name": "Vella Belt",
+    "prefix": "nova",
+    "links": [
+      "nova:381",
+      "nova:396",
+      "nova:385"
+    ],
+    "position": [
+      -207,
+      152
+    ],
+    "planets": [
+      "nova:392"
+    ]
+  },
+  "nova:383": {
+    "id": "nova:383",
+    "name": "Qreck",
+    "prefix": "nova",
+    "links": [
+      "nova:381",
+      "nova:371",
+      "nova:384"
+    ],
+    "position": [
+      -200,
+      196
+    ],
+    "planets": []
+  },
+  "nova:384": {
+    "id": "nova:384",
+    "name": "Rend",
+    "prefix": "nova",
+    "links": [
+      "nova:383"
+    ],
+    "position": [
+      -224,
+      184
+    ],
+    "planets": [
+      "nova:393"
+    ]
+  },
+  "nova:385": {
+    "id": "nova:385",
+    "name": "Vella Cak",
+    "prefix": "nova",
+    "links": [
+      "nova:379",
+      "nova:382"
+    ],
+    "position": [
+      -215,
+      112
+    ],
+    "planets": [
+      "nova:394"
+    ]
+  },
+  "nova:386": {
+    "id": "nova:386",
+    "name": "Vella Olaralo",
+    "prefix": "nova",
+    "links": [
+      "nova:379",
+      "nova:539",
+      "nova:395",
+      "nova:393"
+    ],
+    "position": [
+      -217,
+      76
+    ],
+    "planets": [
+      "nova:395"
+    ]
+  },
+  "nova:387": {
+    "id": "nova:387",
+    "name": "Manit",
+    "prefix": "nova",
+    "links": [
+      "nova:388",
+      "nova:379",
+      "nova:393"
+    ],
+    "position": [
+      -197,
+      40
+    ],
+    "planets": []
+  },
+  "nova:388": {
+    "id": "nova:388",
+    "name": "Yria",
+    "prefix": "nova",
+    "links": [
+      "nova:377",
+      "nova:387",
+      "nova:389"
+    ],
+    "position": [
+      -179,
+      30
+    ],
+    "planets": []
+  },
+  "nova:389": {
+    "id": "nova:389",
+    "name": "Kanto",
+    "prefix": "nova",
+    "links": [
+      "nova:391",
+      "nova:388",
+      "nova:393",
+      "nova:390"
+    ],
+    "position": [
+      -197,
+      5
+    ],
+    "planets": [
+      "nova:396"
+    ]
+  },
+  "nova:390": {
+    "id": "nova:390",
+    "name": "Grak",
+    "prefix": "nova",
+    "links": [
+      "nova:389"
+    ],
+    "position": [
+      -200,
+      -7
+    ],
+    "planets": [
+      "nova:397"
+    ]
+  },
+  "nova:391": {
+    "id": "nova:391",
+    "name": "SPC-034",
+    "prefix": "nova",
+    "links": [
+      "nova:134",
+      "nova:389",
+      "nova:392"
+    ],
+    "position": [
+      -180,
+      -35
+    ],
+    "planets": []
+  },
+  "nova:392": {
+    "id": "nova:392",
+    "name": "Zalo",
+    "prefix": "nova",
+    "links": [
+      "nova:391",
+      "nova:406"
+    ],
+    "position": [
+      -212,
+      -29
+    ],
+    "planets": []
+  },
+  "nova:393": {
+    "id": "nova:393",
+    "name": "Ovia",
+    "prefix": "nova",
+    "links": [
+      "nova:389",
+      "nova:386",
+      "nova:375",
+      "nova:387",
+      "nova:394",
+      "nova:403"
+    ],
+    "position": [
+      -226,
+      30
+    ],
+    "planets": [
+      "nova:398"
+    ]
+  },
+  "nova:394": {
+    "id": "nova:394",
+    "name": "Nto",
+    "prefix": "nova",
+    "links": [
+      "nova:393"
+    ],
+    "position": [
+      -243,
+      56
+    ],
+    "planets": [
+      "nova:479"
+    ]
+  },
+  "nova:395": {
+    "id": "nova:395",
+    "name": "Vella",
+    "prefix": "nova",
+    "links": [
+      "nova:386",
+      "nova:396",
+      "nova:399"
+    ],
+    "position": [
+      -247,
+      116
+    ],
+    "planets": [
+      "nova:399",
+      "nova:1417"
+    ]
+  },
+  "nova:396": {
+    "id": "nova:396",
+    "name": "Vella Jocci",
+    "prefix": "nova",
+    "links": [
+      "nova:539",
+      "nova:395",
+      "nova:382",
+      "nova:397"
+    ],
+    "position": [
+      -247,
+      140
+    ],
+    "planets": [
+      "nova:400",
+      "nova:401"
+    ]
+  },
+  "nova:397": {
+    "id": "nova:397",
+    "name": "Vella Hevel",
+    "prefix": "nova",
+    "links": [
+      "nova:396"
+    ],
+    "position": [
+      -298,
+      132
+    ],
+    "planets": [
+      "nova:402"
+    ]
+  },
+  "nova:398": {
+    "id": "nova:398",
+    "name": "Shel",
+    "prefix": "nova",
+    "links": [
+      "nova:399",
+      "nova:401"
+    ],
+    "position": [
+      -288,
+      94
+    ],
+    "planets": []
+  },
+  "nova:399": {
+    "id": "nova:399",
+    "name": "Vella Mikhail",
+    "prefix": "nova",
+    "links": [
+      "nova:539",
+      "nova:395",
+      "nova:398",
+      "nova:400"
+    ],
+    "position": [
+      -273,
+      82
+    ],
+    "planets": [
+      "nova:403"
+    ]
+  },
+  "nova:400": {
+    "id": "nova:400",
+    "name": "Aradne",
+    "prefix": "nova",
+    "links": [
+      "nova:403",
+      "nova:399"
+    ],
+    "position": [
+      -280,
+      68
+    ],
+    "planets": []
+  },
+  "nova:401": {
+    "id": "nova:401",
+    "name": "Teft",
+    "prefix": "nova",
+    "links": [
+      "nova:398"
+    ],
+    "position": [
+      -337,
+      23
+    ],
+    "planets": [
+      "nova:404"
+    ]
+  },
+  "nova:402": {
+    "id": "nova:402",
+    "name": "Peflek",
+    "prefix": "nova",
+    "links": [
+      "nova:404"
+    ],
+    "position": [
+      -272,
+      6
+    ],
+    "planets": []
+  },
+  "nova:403": {
+    "id": "nova:403",
+    "name": "Hydden",
+    "prefix": "nova",
+    "links": [
+      "nova:393",
+      "nova:400",
+      "nova:404"
+    ],
+    "position": [
+      -236,
+      -16
+    ],
+    "planets": [
+      "nova:405"
+    ]
+  },
+  "nova:404": {
+    "id": "nova:404",
+    "name": "Llysla",
+    "prefix": "nova",
+    "links": [
+      "nova:406",
+      "nova:403",
+      "nova:402",
+      "nova:405"
+    ],
+    "position": [
+      -250,
+      -36
+    ],
+    "planets": [
+      "nova:406"
+    ]
+  },
+  "nova:405": {
+    "id": "nova:405",
+    "name": "Allarei",
+    "prefix": "nova",
+    "links": [
+      "nova:409",
+      "nova:404"
+    ],
+    "position": [
+      -289,
+      -42
+    ],
+    "planets": []
+  },
+  "nova:406": {
+    "id": "nova:406",
+    "name": "Tonallo",
+    "prefix": "nova",
+    "links": [
+      "nova:407",
+      "nova:392",
+      "nova:404"
+    ],
+    "position": [
+      -243,
+      -59
+    ],
+    "planets": []
+  },
+  "nova:407": {
+    "id": "nova:407",
+    "name": "SPC-013",
+    "prefix": "nova",
+    "links": [
+      "nova:408",
+      "nova:406"
+    ],
+    "position": [
+      -209,
+      -72
+    ],
+    "planets": []
+  },
+  "nova:408": {
+    "id": "nova:408",
+    "name": "SPC-1367",
+    "prefix": "nova",
+    "links": [
+      "nova:195",
+      "nova:407"
+    ],
+    "position": [
+      -181,
+      -19
+    ],
+    "planets": []
+  },
+  "nova:409": {
+    "id": "nova:409",
+    "name": "Dellor",
+    "prefix": "nova",
+    "links": [
+      "nova:198",
+      "nova:405",
+      "nova:410",
+      "nova:416"
+    ],
+    "position": [
+      -256,
+      -84
+    ],
+    "planets": []
+  },
+  "nova:410": {
+    "id": "nova:410",
+    "name": "Fyllaren",
+    "prefix": "nova",
+    "links": [
+      "nova:409",
+      "nova:411",
+      "nova:412"
+    ],
+    "position": [
+      -295,
+      -78
+    ],
+    "planets": []
+  },
+  "nova:411": {
+    "id": "nova:411",
+    "name": "Molliari",
+    "prefix": "nova",
+    "links": [
+      "nova:410"
+    ],
+    "position": [
+      -328,
+      -59
+    ],
+    "planets": []
+  },
+  "nova:412": {
+    "id": "nova:412",
+    "name": "Telluer",
+    "prefix": "nova",
+    "links": [
+      "nova:410",
+      "nova:413"
+    ],
+    "position": [
+      -344,
+      -87
+    ],
+    "planets": [
+      "nova:480"
+    ]
+  },
+  "nova:413": {
+    "id": "nova:413",
+    "name": "Sondurll",
+    "prefix": "nova",
+    "links": [
+      "nova:611",
+      "nova:414",
+      "nova:412"
+    ],
+    "position": [
+      -358,
+      -123
+    ],
+    "planets": []
+  },
+  "nova:414": {
+    "id": "nova:414",
+    "name": "Korell",
+    "prefix": "nova",
+    "links": [
+      "nova:415",
+      "nova:418",
+      "nova:413"
+    ],
+    "position": [
+      -344,
+      -152
+    ],
+    "planets": [
+      "nova:407",
+      "nova:1403",
+      "nova:481"
+    ]
+  },
+  "nova:415": {
+    "id": "nova:415",
+    "name": "Enrylliath",
+    "prefix": "nova",
+    "links": [
+      "nova:612",
+      "nova:418",
+      "nova:414",
+      "nova:611"
+    ],
+    "position": [
+      -323,
+      -109
+    ],
+    "planets": []
+  },
+  "nova:416": {
+    "id": "nova:416",
+    "name": "Yllar",
+    "prefix": "nova",
+    "links": [
+      "nova:619",
+      "nova:425",
+      "nova:409"
+    ],
+    "position": [
+      -278,
+      -123
+    ],
+    "planets": []
+  },
+  "nova:417": {
+    "id": "nova:417",
+    "name": "Llearn",
+    "prefix": "nova",
+    "links": [
+      "nova:621",
+      "nova:427"
+    ],
+    "position": [
+      -235,
+      -118
+    ],
+    "planets": []
+  },
+  "nova:418": {
+    "id": "nova:418",
+    "name": "Onllot",
+    "prefix": "nova",
+    "links": [
+      "nova:420",
+      "nova:419",
+      "nova:415",
+      "nova:414"
+    ],
+    "position": [
+      -300,
+      -143
+    ],
+    "planets": []
+  },
+  "nova:419": {
+    "id": "nova:419",
+    "name": "Estearll",
+    "prefix": "nova",
+    "links": [
+      "nova:422",
+      "nova:418"
+    ],
+    "position": [
+      -270,
+      -189
+    ],
+    "planets": []
+  },
+  "nova:420": {
+    "id": "nova:420",
+    "name": "Uriall",
+    "prefix": "nova",
+    "links": [
+      "nova:421",
+      "nova:418"
+    ],
+    "position": [
+      -280,
+      -225
+    ],
+    "planets": []
+  },
+  "nova:421": {
+    "id": "nova:421",
+    "name": "Jellosia",
+    "prefix": "nova",
+    "links": [
+      "nova:430",
+      "nova:420"
+    ],
+    "position": [
+      -251,
+      -261
+    ],
+    "planets": []
+  },
+  "nova:422": {
+    "id": "nova:422",
+    "name": "Pontoll",
+    "prefix": "nova",
+    "links": [
+      "nova:431",
+      "nova:429",
+      "nova:419",
+      "nova:423"
+    ],
+    "position": [
+      -245,
+      -222
+    ],
+    "planets": []
+  },
+  "nova:423": {
+    "id": "nova:423",
+    "name": "Qellan",
+    "prefix": "nova",
+    "links": [
+      "nova:422",
+      "nova:424"
+    ],
+    "position": [
+      -247,
+      -204
+    ],
+    "planets": []
+  },
+  "nova:424": {
+    "id": "nova:424",
+    "name": "Vellos",
+    "prefix": "nova",
+    "links": [
+      "nova:425",
+      "nova:423"
+    ],
+    "position": [
+      -233,
+      -188
+    ],
+    "planets": [
+      "nova:408",
+      "nova:1402"
+    ]
+  },
+  "nova:425": {
+    "id": "nova:425",
+    "name": "VNP-002",
+    "prefix": "nova",
+    "links": [
+      "nova:424",
+      "nova:427",
+      "nova:416"
+    ],
+    "position": [
+      -247,
+      -156
+    ],
+    "planets": [
+      "nova:1401"
+    ]
+  },
+  "nova:426": {
+    "id": "nova:426",
+    "name": "Illiask",
+    "prefix": "nova",
+    "links": [
+      "nova:429",
+      "nova:427"
+    ],
+    "position": [
+      -200,
+      -163
+    ],
+    "planets": []
+  },
+  "nova:427": {
+    "id": "nova:427",
+    "name": "VNP-001",
+    "prefix": "nova",
+    "links": [
+      "nova:433",
+      "nova:198",
+      "nova:428",
+      "nova:417",
+      "nova:425",
+      "nova:426"
+    ],
+    "position": [
+      -189,
+      -135
+    ],
+    "planets": [
+      "nova:1400"
+    ]
+  },
+  "nova:428": {
+    "id": "nova:428",
+    "name": "Pentori",
+    "prefix": "nova",
+    "links": [
+      "nova:441",
+      "nova:427"
+    ],
+    "position": [
+      -149,
+      -134
+    ],
+    "planets": [
+      "nova:409"
+    ]
+  },
+  "nova:429": {
+    "id": "nova:429",
+    "name": "Rendell",
+    "prefix": "nova",
+    "links": [
+      "nova:426",
+      "nova:422"
+    ],
+    "position": [
+      -191,
+      -204
+    ],
+    "planets": []
+  },
+  "nova:430": {
+    "id": "nova:430",
+    "name": "K-008",
+    "prefix": "nova",
+    "links": [
+      "nova:436",
+      "nova:421"
+    ],
+    "position": [
+      -177,
+      -258
+    ],
+    "planets": []
+  },
+  "nova:431": {
+    "id": "nova:431",
+    "name": "Allia",
+    "prefix": "nova",
+    "links": [
+      "nova:446",
+      "nova:432",
+      "nova:422"
+    ],
+    "position": [
+      -163,
+      -230
+    ],
+    "planets": []
+  },
+  "nova:432": {
+    "id": "nova:432",
+    "name": "Blleia",
+    "prefix": "nova",
+    "links": [
+      "nova:431",
+      "nova:433"
+    ],
+    "position": [
+      -171,
+      -212
+    ],
+    "planets": []
+  },
+  "nova:433": {
+    "id": "nova:433",
+    "name": "Systoll",
+    "prefix": "nova",
+    "links": [
+      "nova:432",
+      "nova:437",
+      "nova:439",
+      "nova:427"
+    ],
+    "position": [
+      -184,
+      -185
+    ],
+    "planets": []
+  },
+  "nova:434": {
+    "id": "nova:434",
+    "name": "K-015",
+    "prefix": "nova",
+    "links": [
+      "nova:444",
+      "nova:440"
+    ],
+    "position": [
+      -163,
+      -165
+    ],
+    "planets": []
+  },
+  "nova:435": {
+    "id": "nova:435",
+    "name": "K-004",
+    "prefix": "nova",
+    "links": [
+      "nova:436",
+      "nova:447"
+    ],
+    "position": [
+      -148,
+      -193
+    ],
+    "planets": []
+  },
+  "nova:436": {
+    "id": "nova:436",
+    "name": "K-005",
+    "prefix": "nova",
+    "links": [
+      "nova:452",
+      "nova:435",
+      "nova:430"
+    ],
+    "position": [
+      -136,
+      -256
+    ],
+    "planets": [
+      "nova:466"
+    ]
+  },
+  "nova:437": {
+    "id": "nova:437",
+    "name": "K-017",
+    "prefix": "nova",
+    "links": [
+      "nova:454",
+      "nova:433"
+    ],
+    "position": [
+      -116,
+      -231
+    ],
+    "planets": [
+      "nova:410"
+    ]
+  },
+  "nova:438": {
+    "id": "nova:438",
+    "name": "K-009",
+    "prefix": "nova",
+    "links": [
+      "nova:445",
+      "nova:440"
+    ],
+    "position": [
+      -125,
+      -208
+    ],
+    "planets": []
+  },
+  "nova:439": {
+    "id": "nova:439",
+    "name": "K-016",
+    "prefix": "nova",
+    "links": [
+      "nova:453",
+      "nova:433"
+    ],
+    "position": [
+      -132,
+      -172
+    ],
+    "planets": [
+      "nova:411"
+    ]
+  },
+  "nova:440": {
+    "id": "nova:440",
+    "name": "K-010",
+    "prefix": "nova",
+    "links": [
+      "nova:452",
+      "nova:443",
+      "nova:434",
+      "nova:438"
+    ],
+    "position": [
+      -113,
+      -158
+    ],
+    "planets": []
+  },
+  "nova:441": {
+    "id": "nova:441",
+    "name": "Willon",
+    "prefix": "nova",
+    "links": [
+      "nova:443",
+      "nova:428"
+    ],
+    "position": [
+      -111,
+      -118
+    ],
+    "planets": [
+      "nova:412"
+    ]
+  },
+  "nova:442": {
+    "id": "nova:442",
+    "name": "K-019",
+    "prefix": "nova",
+    "links": [
+      "nova:454",
+      "nova:451"
+    ],
+    "position": [
+      -98,
+      -194
+    ],
+    "planets": []
+  },
+  "nova:443": {
+    "id": "nova:443",
+    "name": "Chicea",
+    "prefix": "nova",
+    "links": [
+      "nova:448",
+      "nova:441",
+      "nova:440"
+    ],
+    "position": [
+      -82,
+      -146
+    ],
+    "planets": [
+      "nova:413"
+    ]
+  },
+  "nova:444": {
+    "id": "nova:444",
+    "name": "K-014",
+    "prefix": "nova",
+    "links": [
+      "nova:453",
+      "nova:434"
+    ],
+    "position": [
+      -91,
+      -218
+    ],
+    "planets": []
+  },
+  "nova:445": {
+    "id": "nova:445",
+    "name": "K-007",
+    "prefix": "nova",
+    "links": [
+      "nova:455",
+      "nova:446",
+      "nova:458",
+      "nova:438"
+    ],
+    "position": [
+      -78,
+      -246
+    ],
+    "planets": []
+  },
+  "nova:446": {
+    "id": "nova:446",
+    "name": "K-011",
+    "prefix": "nova",
+    "links": [
+      "nova:431",
+      "nova:445"
+    ],
+    "position": [
+      -66,
+      -194
+    ],
+    "planets": []
+  },
+  "nova:447": {
+    "id": "nova:447",
+    "name": "K-001",
+    "prefix": "nova",
+    "links": [
+      "nova:457",
+      "nova:435"
+    ],
+    "position": [
+      -68,
+      -162
+    ],
+    "planets": []
+  },
+  "nova:448": {
+    "id": "nova:448",
+    "name": "Varden",
+    "prefix": "nova",
+    "links": [
+      "nova:450",
+      "nova:443"
+    ],
+    "position": [
+      -48,
+      -136
+    ],
+    "planets": [
+      "nova:414"
+    ]
+  },
+  "nova:449": {
+    "id": "nova:449",
+    "name": "SPC-2637",
+    "prefix": "nova",
+    "links": [
+      "nova:450"
+    ],
+    "position": [
+      -40,
+      -105
+    ],
+    "planets": []
+  },
+  "nova:450": {
+    "id": "nova:450",
+    "name": "SPC-2421",
+    "prefix": "nova",
+    "links": [
+      "nova:456",
+      "nova:648",
+      "nova:449",
+      "nova:172",
+      "nova:448",
+      "nova:642"
+    ],
+    "position": [
+      -15,
+      -121
+    ],
+    "planets": []
+  },
+  "nova:451": {
+    "id": "nova:451",
+    "name": "K-020",
+    "prefix": "nova",
+    "links": [
+      "nova:456",
+      "nova:442",
+      "nova:452"
+    ],
+    "position": [
+      -25,
+      -167
+    ],
+    "planets": []
+  },
+  "nova:452": {
+    "id": "nova:452",
+    "name": "K-003",
+    "prefix": "nova",
+    "links": [
+      "nova:455",
+      "nova:451",
+      "nova:457",
+      "nova:440",
+      "nova:436"
+    ],
+    "position": [
+      -56,
+      -218
+    ],
+    "planets": [
+      "nova:415",
+      "nova:416",
+      "nova:417",
+      "nova:418",
+      "nova:482"
+    ]
+  },
+  "nova:453": {
+    "id": "nova:453",
+    "name": "K-013",
+    "prefix": "nova",
+    "links": [
+      "nova:458",
+      "nova:439",
+      "nova:444"
+    ],
+    "position": [
+      -21,
+      -195
+    ],
+    "planets": []
+  },
+  "nova:454": {
+    "id": "nova:454",
+    "name": "K-018",
+    "prefix": "nova",
+    "links": [
+      "nova:442",
+      "nova:437"
+    ],
+    "position": [
+      -15,
+      -226
+    ],
+    "planets": []
+  },
+  "nova:455": {
+    "id": "nova:455",
+    "name": "K-006",
+    "prefix": "nova",
+    "links": [
+      "nova:459",
+      "nova:452",
+      "nova:445"
+    ],
+    "position": [
+      -8,
+      -262
+    ],
+    "planets": []
+  },
+  "nova:456": {
+    "id": "nova:456",
+    "name": "SPC-2710",
+    "prefix": "nova",
+    "links": [
+      "nova:462",
+      "nova:464",
+      "nova:450",
+      "nova:451"
+    ],
+    "position": [
+      1,
+      -151
+    ],
+    "planets": []
+  },
+  "nova:457": {
+    "id": "nova:457",
+    "name": "K-002",
+    "prefix": "nova",
+    "links": [
+      "nova:447",
+      "nova:452"
+    ],
+    "position": [
+      6,
+      -200
+    ],
+    "planets": []
+  },
+  "nova:458": {
+    "id": "nova:458",
+    "name": "K-012",
+    "prefix": "nova",
+    "links": [
+      "nova:460",
+      "nova:461",
+      "nova:453",
+      "nova:445"
+    ],
+    "position": [
+      18,
+      -242
+    ],
+    "planets": []
+  },
+  "nova:459": {
+    "id": "nova:459",
+    "name": "Nestin",
+    "prefix": "nova",
+    "links": [
+      "nova:460",
+      "nova:471",
+      "nova:455"
+    ],
+    "position": [
+      40,
+      -284
+    ],
+    "planets": []
+  },
+  "nova:460": {
+    "id": "nova:460",
+    "name": "Ganorran",
+    "prefix": "nova",
+    "links": [
+      "nova:470",
+      "nova:557",
+      "nova:458",
+      "nova:459"
+    ],
+    "position": [
+      46,
+      -243
+    ],
+    "planets": []
+  },
+  "nova:461": {
+    "id": "nova:461",
+    "name": "Kanius",
+    "prefix": "nova",
+    "links": [
+      "nova:469",
+      "nova:556",
+      "nova:468",
+      "nova:458"
+    ],
+    "position": [
+      44,
+      -213
+    ],
+    "planets": []
+  },
+  "nova:462": {
+    "id": "nova:462",
+    "name": "Teltar",
+    "prefix": "nova",
+    "links": [
+      "nova:468",
+      "nova:534",
+      "nova:467",
+      "nova:456"
+    ],
+    "position": [
+      28,
+      -160
+    ],
+    "planets": []
+  },
+  "nova:463": {
+    "id": "nova:463",
+    "name": "SPC-0193",
+    "prefix": "nova",
+    "links": [
+      "nova:467",
+      "nova:465",
+      "nova:655",
+      "nova:464"
+    ],
+    "position": [
+      35,
+      -125
+    ],
+    "planets": []
+  },
+  "nova:464": {
+    "id": "nova:464",
+    "name": "SPC-1555",
+    "prefix": "nova",
+    "links": [
+      "nova:463",
+      "nova:456"
+    ],
+    "position": [
+      24,
+      -119
+    ],
+    "planets": []
+  },
+  "nova:465": {
+    "id": "nova:465",
+    "name": "SPC-011",
+    "prefix": "nova",
+    "links": [
+      "nova:466",
+      "nova:132",
+      "nova:463"
+    ],
+    "position": [
+      44,
+      -116
+    ],
+    "planets": []
+  },
+  "nova:466": {
+    "id": "nova:466",
+    "name": "SPC-020",
+    "prefix": "nova",
+    "links": [
+      "nova:480",
+      "nova:484",
+      "nova:465"
+    ],
+    "position": [
+      60,
+      -112
+    ],
+    "planets": []
+  },
+  "nova:467": {
+    "id": "nova:467",
+    "name": "Denier",
+    "prefix": "nova",
+    "links": [
+      "nova:480",
+      "nova:463",
+      "nova:462",
+      "nova:654"
+    ],
+    "position": [
+      51,
+      -142
+    ],
+    "planets": []
+  },
+  "nova:468": {
+    "id": "nova:468",
+    "name": "Evlei",
+    "prefix": "nova",
+    "links": [
+      "nova:469",
+      "nova:556",
+      "nova:478",
+      "nova:462",
+      "nova:461"
+    ],
+    "position": [
+      73,
+      -200
+    ],
+    "planets": [
+      "nova:419",
+      "nova:425",
+      "nova:483"
+    ]
+  },
+  "nova:469": {
+    "id": "nova:469",
+    "name": "Cor'I'Hon",
+    "prefix": "nova",
+    "links": [
+      "nova:470",
+      "nova:461",
+      "nova:468",
+      "nova:534"
+    ],
+    "position": [
+      81,
+      -237
+    ],
+    "planets": []
+  },
+  "nova:470": {
+    "id": "nova:470",
+    "name": "Diy'I'Cor",
+    "prefix": "nova",
+    "links": [
+      "nova:473",
+      "nova:475",
+      "nova:469",
+      "nova:460",
+      "nova:471"
+    ],
+    "position": [
+      91,
+      -256
+    ],
+    "planets": []
+  },
+  "nova:471": {
+    "id": "nova:471",
+    "name": "Foroth",
+    "prefix": "nova",
+    "links": [
+      "nova:557",
+      "nova:470",
+      "nova:459",
+      "nova:651"
+    ],
+    "position": [
+      74,
+      -276
+    ],
+    "planets": []
+  },
+  "nova:472": {
+    "id": "nova:472",
+    "name": "S7evyn",
+    "prefix": "nova",
+    "links": [],
+    "position": [
+      78,
+      -304
+    ],
+    "planets": [
+      "nova:420",
+      "nova:514"
+    ]
+  },
+  "nova:473": {
+    "id": "nova:473",
+    "name": "Yon'I'Res",
+    "prefix": "nova",
+    "links": [
+      "nova:494",
+      "nova:474",
+      "nova:470"
+    ],
+    "position": [
+      114,
+      -258
+    ],
+    "planets": []
+  },
+  "nova:474": {
+    "id": "nova:474",
+    "name": "Rom'I'Luj",
+    "prefix": "nova",
+    "links": [
+      "nova:493",
+      "nova:473"
+    ],
+    "position": [
+      134,
+      -238
+    ],
+    "planets": []
+  },
+  "nova:475": {
+    "id": "nova:475",
+    "name": "Deb'I'Vad",
+    "prefix": "nova",
+    "links": [
+      "nova:476",
+      "nova:470"
+    ],
+    "position": [
+      103,
+      -218
+    ],
+    "planets": []
+  },
+  "nova:476": {
+    "id": "nova:476",
+    "name": "Son'I'Dot",
+    "prefix": "nova",
+    "links": [
+      "nova:479",
+      "nova:477",
+      "nova:478",
+      "nova:475"
+    ],
+    "position": [
+      119,
+      -205
+    ],
+    "planets": []
+  },
+  "nova:477": {
+    "id": "nova:477",
+    "name": "Bel'I'Gul",
+    "prefix": "nova",
+    "links": [
+      "nova:493",
+      "nova:476"
+    ],
+    "position": [
+      134,
+      -197
+    ],
+    "planets": []
+  },
+  "nova:478": {
+    "id": "nova:478",
+    "name": "Scheros",
+    "prefix": "nova",
+    "links": [
+      "nova:561",
+      "nova:476",
+      "nova:481",
+      "nova:480",
+      "nova:468"
+    ],
+    "position": [
+      93,
+      -168
+    ],
+    "planets": []
+  },
+  "nova:479": {
+    "id": "nova:479",
+    "name": "Fer'I'Jus",
+    "prefix": "nova",
+    "links": [
+      "nova:492",
+      "nova:482",
+      "nova:491",
+      "nova:476"
+    ],
+    "position": [
+      122,
+      -162
+    ],
+    "planets": []
+  },
+  "nova:480": {
+    "id": "nova:480",
+    "name": "SPC-089",
+    "prefix": "nova",
+    "links": [
+      "nova:478",
+      "nova:483",
+      "nova:533",
+      "nova:466",
+      "nova:467"
+    ],
+    "position": [
+      79,
+      -142
+    ],
+    "planets": []
+  },
+  "nova:481": {
+    "id": "nova:481",
+    "name": "Mallereth",
+    "prefix": "nova",
+    "links": [
+      "nova:482",
+      "nova:478"
+    ],
+    "position": [
+      106,
+      -137
+    ],
+    "planets": []
+  },
+  "nova:482": {
+    "id": "nova:482",
+    "name": "NGC-1066",
+    "prefix": "nova",
+    "links": [
+      "nova:486",
+      "nova:483",
+      "nova:481",
+      "nova:479",
+      "nova:563"
+    ],
+    "position": [
+      123,
+      -121
+    ],
+    "planets": []
+  },
+  "nova:483": {
+    "id": "nova:483",
+    "name": "Koria;Rebs !assim",
+    "prefix": "nova",
+    "links": [
+      "nova:482",
+      "nova:485",
+      "nova:480"
+    ],
+    "position": [
+      94,
+      -125
+    ],
+    "planets": [
+      "nova:421",
+      "nova:1418"
+    ]
+  },
+  "nova:484": {
+    "id": "nova:484",
+    "name": "SPC-1948",
+    "prefix": "nova",
+    "links": [
+      "nova:169",
+      "nova:466"
+    ],
+    "position": [
+      82,
+      -92
+    ],
+    "planets": []
+  },
+  "nova:485": {
+    "id": "nova:485",
+    "name": "NGC-2013",
+    "prefix": "nova",
+    "links": [
+      "nova:487",
+      "nova:483",
+      "nova:533"
+    ],
+    "position": [
+      102,
+      -91
+    ],
+    "planets": []
+  },
+  "nova:486": {
+    "id": "nova:486",
+    "name": "NGC-0946",
+    "prefix": "nova",
+    "links": [
+      "nova:489",
+      "nova:150",
+      "nova:487",
+      "nova:482"
+    ],
+    "position": [
+      124,
+      -93
+    ],
+    "planets": []
+  },
+  "nova:487": {
+    "id": "nova:487",
+    "name": "NGC-1894",
+    "prefix": "nova",
+    "links": [
+      "nova:485",
+      "nova:486",
+      "nova:165"
+    ],
+    "position": [
+      98,
+      -68
+    ],
+    "planets": []
+  },
+  "nova:488": {
+    "id": "nova:488",
+    "name": "NGC-0613",
+    "prefix": "nova",
+    "links": [
+      "nova:490",
+      "nova:564",
+      "nova:200",
+      "nova:489"
+    ],
+    "position": [
+      161,
+      -92
+    ],
+    "planets": []
+  },
+  "nova:489": {
+    "id": "nova:489",
+    "name": "NGC-3183",
+    "prefix": "nova",
+    "links": [
+      "nova:491",
+      "nova:488",
+      "nova:486"
+    ],
+    "position": [
+      140,
+      -111
+    ],
+    "planets": []
+  },
+  "nova:490": {
+    "id": "nova:490",
+    "name": "Tyr'I'Ded",
+    "prefix": "nova",
+    "links": [
+      "nova:499",
+      "nova:488"
+    ],
+    "position": [
+      171,
+      -137
+    ],
+    "planets": []
+  },
+  "nova:491": {
+    "id": "nova:491",
+    "name": "Scheall",
+    "prefix": "nova",
+    "links": [
+      "nova:489",
+      "nova:479",
+      "nova:563"
+    ],
+    "position": [
+      153,
+      -143
+    ],
+    "planets": [
+      "nova:422"
+    ]
+  },
+  "nova:492": {
+    "id": "nova:492",
+    "name": "Sel'I'Gal",
+    "prefix": "nova",
+    "links": [
+      "nova:498",
+      "nova:479",
+      "nova:493"
+    ],
+    "position": [
+      179,
+      -188
+    ],
+    "planets": []
+  },
+  "nova:493": {
+    "id": "nova:493",
+    "name": "Bur'I'Loc",
+    "prefix": "nova",
+    "links": [
+      "nova:496",
+      "nova:492",
+      "nova:477",
+      "nova:474",
+      "nova:494"
+    ],
+    "position": [
+      168,
+      -220
+    ],
+    "planets": []
+  },
+  "nova:494": {
+    "id": "nova:494",
+    "name": "Tur'I'Nis",
+    "prefix": "nova",
+    "links": [
+      "nova:495",
+      "nova:493",
+      "nova:496",
+      "nova:473"
+    ],
+    "position": [
+      144,
+      -263
+    ],
+    "planets": []
+  },
+  "nova:495": {
+    "id": "nova:495",
+    "name": "Vel'I'Non",
+    "prefix": "nova",
+    "links": [
+      "nova:496",
+      "nova:497",
+      "nova:494"
+    ],
+    "position": [
+      176,
+      -297
+    ],
+    "planets": []
+  },
+  "nova:496": {
+    "id": "nova:496",
+    "name": "Fer'U'Weill",
+    "prefix": "nova",
+    "links": [
+      "nova:505",
+      "nova:497",
+      "nova:498",
+      "nova:504",
+      "nova:493",
+      "nova:494",
+      "nova:495"
+    ],
+    "position": [
+      194,
+      -229
+    ],
+    "planets": []
+  },
+  "nova:497": {
+    "id": "nova:497",
+    "name": "Don'U'Cusyon",
+    "prefix": "nova",
+    "links": [
+      "nova:506",
+      "nova:505",
+      "nova:496",
+      "nova:495"
+    ],
+    "position": [
+      217,
+      -263
+    ],
+    "planets": []
+  },
+  "nova:498": {
+    "id": "nova:498",
+    "name": "Kor'U'Deidt",
+    "prefix": "nova",
+    "links": [
+      "nova:504",
+      "nova:499",
+      "nova:492",
+      "nova:496"
+    ],
+    "position": [
+      213,
+      -171
+    ],
+    "planets": []
+  },
+  "nova:499": {
+    "id": "nova:499",
+    "name": "Fur'I'Sos",
+    "prefix": "nova",
+    "links": [
+      "nova:503",
+      "nova:498",
+      "nova:500",
+      "nova:502",
+      "nova:490"
+    ],
+    "position": [
+      197,
+      -139
+    ],
+    "planets": []
+  },
+  "nova:500": {
+    "id": "nova:500",
+    "name": "NGC-1317",
+    "prefix": "nova",
+    "links": [
+      "nova:502",
+      "nova:574",
+      "nova:573",
+      "nova:501",
+      "nova:200",
+      "nova:572",
+      "nova:499"
+    ],
+    "position": [
+      212,
+      -87
+    ],
+    "planets": []
+  },
+  "nova:501": {
+    "id": "nova:501",
+    "name": "Ere'I'Cal",
+    "prefix": "nova",
+    "links": [
+      "nova:515",
+      "nova:545",
+      "nova:606",
+      "nova:208",
+      "nova:500",
+      "nova:502"
+    ],
+    "position": [
+      251,
+      -82
+    ],
+    "planets": []
+  },
+  "nova:502": {
+    "id": "nova:502",
+    "name": "Fet'I'Dan",
+    "prefix": "nova",
+    "links": [
+      "nova:515",
+      "nova:501",
+      "nova:500",
+      "nova:499",
+      "nova:503"
+    ],
+    "position": [
+      244,
+      -112
+    ],
+    "planets": []
+  },
+  "nova:503": {
+    "id": "nova:503",
+    "name": "Gan'U'Tornes",
+    "prefix": "nova",
+    "links": [
+      "nova:514",
+      "nova:513",
+      "nova:502",
+      "nova:515",
+      "nova:499",
+      "nova:504"
+    ],
+    "position": [
+      243,
+      -143
+    ],
+    "planets": [
+      "nova:484"
+    ]
+  },
+  "nova:504": {
+    "id": "nova:504",
+    "name": "Tin'E'Tivel",
+    "prefix": "nova",
+    "links": [
+      "nova:505",
+      "nova:510",
+      "nova:503",
+      "nova:513",
+      "nova:498",
+      "nova:496"
+    ],
+    "position": [
+      239,
+      -187
+    ],
+    "planets": []
+  },
+  "nova:505": {
+    "id": "nova:505",
+    "name": "One'E'Ringa",
+    "prefix": "nova",
+    "links": [
+      "nova:509",
+      "nova:506",
+      "nova:510",
+      "nova:504",
+      "nova:496",
+      "nova:497"
+    ],
+    "position": [
+      248,
+      -237
+    ],
+    "planets": []
+  },
+  "nova:506": {
+    "id": "nova:506",
+    "name": "Def'E'Loren",
+    "prefix": "nova",
+    "links": [
+      "nova:508",
+      "nova:507",
+      "nova:509",
+      "nova:505",
+      "nova:497"
+    ],
+    "position": [
+      265,
+      -280
+    ],
+    "planets": []
+  },
+  "nova:507": {
+    "id": "nova:507",
+    "name": "Far'E'Bunor",
+    "prefix": "nova",
+    "links": [
+      "nova:523",
+      "nova:508",
+      "nova:506"
+    ],
+    "position": [
+      288,
+      -315
+    ],
+    "planets": []
+  },
+  "nova:508": {
+    "id": "nova:508",
+    "name": "Tus'E'Viro",
+    "prefix": "nova",
+    "links": [
+      "nova:522",
+      "nova:523",
+      "nova:521",
+      "nova:506",
+      "nova:509",
+      "nova:507"
+    ],
+    "position": [
+      300,
+      -300
+    ],
+    "planets": []
+  },
+  "nova:509": {
+    "id": "nova:509",
+    "name": "Von'E'Richt",
+    "prefix": "nova",
+    "links": [
+      "nova:508",
+      "nova:521",
+      "nova:520",
+      "nova:510",
+      "nova:505",
+      "nova:506"
+    ],
+    "position": [
+      279,
+      -238
+    ],
+    "planets": []
+  },
+  "nova:510": {
+    "id": "nova:510",
+    "name": "Hel'A'Forius",
+    "prefix": "nova",
+    "links": [
+      "nova:520",
+      "nova:509",
+      "nova:513",
+      "nova:511",
+      "nova:504",
+      "nova:505"
+    ],
+    "position": [
+      261,
+      -213
+    ],
+    "planets": [
+      "nova:423"
+    ]
+  },
+  "nova:511": {
+    "id": "nova:511",
+    "name": "Nin'E'Lordus",
+    "prefix": "nova",
+    "links": [
+      "nova:520",
+      "nova:512",
+      "nova:513",
+      "nova:510"
+    ],
+    "position": [
+      285,
+      -197
+    ],
+    "planets": []
+  },
+  "nova:512": {
+    "id": "nova:512",
+    "name": "Sur'E'Qoru",
+    "prefix": "nova",
+    "links": [
+      "nova:519",
+      "nova:518",
+      "nova:514",
+      "nova:511"
+    ],
+    "position": [
+      299,
+      -179
+    ],
+    "planets": []
+  },
+  "nova:513": {
+    "id": "nova:513",
+    "name": "Ver'E'Liani",
+    "prefix": "nova",
+    "links": [
+      "nova:511",
+      "nova:514",
+      "nova:503",
+      "nova:504",
+      "nova:510"
+    ],
+    "position": [
+      269,
+      -179
+    ],
+    "planets": []
+  },
+  "nova:514": {
+    "id": "nova:514",
+    "name": "Dal'U'Sinto",
+    "prefix": "nova",
+    "links": [
+      "nova:512",
+      "nova:518",
+      "nova:516",
+      "nova:517",
+      "nova:515",
+      "nova:503",
+      "nova:513"
+    ],
+    "position": [
+      296,
+      -150
+    ],
+    "planets": []
+  },
+  "nova:515": {
+    "id": "nova:515",
+    "name": "Iwo'U'Sentar",
+    "prefix": "nova",
+    "links": [
+      "nova:514",
+      "nova:516",
+      "nova:501",
+      "nova:502",
+      "nova:503"
+    ],
+    "position": [
+      284,
+      -118
+    ],
+    "planets": []
+  },
+  "nova:516": {
+    "id": "nova:516",
+    "name": "Can'U'Hilfen",
+    "prefix": "nova",
+    "links": [
+      "nova:517",
+      "nova:515",
+      "nova:514"
+    ],
+    "position": [
+      313,
+      -112
+    ],
+    "planets": []
+  },
+  "nova:517": {
+    "id": "nova:517",
+    "name": "Net'U'Moria",
+    "prefix": "nova",
+    "links": [
+      "nova:530",
+      "nova:516",
+      "nova:514",
+      "nova:518"
+    ],
+    "position": [
+      335,
+      -134
+    ],
+    "planets": []
+  },
+  "nova:518": {
+    "id": "nova:518",
+    "name": "Mes'E'Ruma",
+    "prefix": "nova",
+    "links": [
+      "nova:529",
+      "nova:517",
+      "nova:530",
+      "nova:514",
+      "nova:512",
+      "nova:519"
+    ],
+    "position": [
+      332,
+      -176
+    ],
+    "planets": []
+  },
+  "nova:519": {
+    "id": "nova:519",
+    "name": "Cur'E'Dyni",
+    "prefix": "nova",
+    "links": [
+      "nova:527",
+      "nova:518",
+      "nova:529",
+      "nova:512",
+      "nova:520"
+    ],
+    "position": [
+      329,
+      -200
+    ],
+    "planets": []
+  },
+  "nova:520": {
+    "id": "nova:520",
+    "name": "Gir'E'Valen",
+    "prefix": "nova",
+    "links": [
+      "nova:527",
+      "nova:521",
+      "nova:519",
+      "nova:511",
+      "nova:510",
+      "nova:509"
+    ],
+    "position": [
+      306,
+      -215
+    ],
+    "planets": []
+  },
+  "nova:521": {
+    "id": "nova:521",
+    "name": "Hot'A'Tanius",
+    "prefix": "nova",
+    "links": [
+      "nova:522",
+      "nova:527",
+      "nova:526",
+      "nova:509",
+      "nova:520",
+      "nova:508"
+    ],
+    "position": [
+      318,
+      -252
+    ],
+    "planets": [
+      "nova:424",
+      "nova:485"
+    ]
+  },
+  "nova:522": {
+    "id": "nova:522",
+    "name": "Lil'E'Song",
+    "prefix": "nova",
+    "links": [
+      "nova:524",
+      "nova:526",
+      "nova:525",
+      "nova:521",
+      "nova:508",
+      "nova:523"
+    ],
+    "position": [
+      341,
+      -304
+    ],
+    "planets": []
+  },
+  "nova:523": {
+    "id": "nova:523",
+    "name": "Ran'E'Shepos",
+    "prefix": "nova",
+    "links": [
+      "nova:522",
+      "nova:524",
+      "nova:508",
+      "nova:507"
+    ],
+    "position": [
+      330,
+      -330
+    ],
+    "planets": []
+  },
+  "nova:524": {
+    "id": "nova:524",
+    "name": "Xym'E'Caros",
+    "prefix": "nova",
+    "links": [
+      "nova:522",
+      "nova:525",
+      "nova:523"
+    ],
+    "position": [
+      380,
+      -313
+    ],
+    "planets": []
+  },
+  "nova:525": {
+    "id": "nova:525",
+    "name": "Vyl'E'Tinti",
+    "prefix": "nova",
+    "links": [
+      "nova:524",
+      "nova:528",
+      "nova:264",
+      "nova:526",
+      "nova:522"
+    ],
+    "position": [
+      373,
+      -271
+    ],
+    "planets": []
+  },
+  "nova:526": {
+    "id": "nova:526",
+    "name": "Mis'E'Odres",
+    "prefix": "nova",
+    "links": [
+      "nova:525",
+      "nova:528",
+      "nova:527",
+      "nova:521",
+      "nova:522"
+    ],
+    "position": [
+      355,
+      -246
+    ],
+    "planets": []
+  },
+  "nova:527": {
+    "id": "nova:527",
+    "name": "Pet'E'Nalos",
+    "prefix": "nova",
+    "links": [
+      "nova:526",
+      "nova:528",
+      "nova:529",
+      "nova:519",
+      "nova:520",
+      "nova:521"
+    ],
+    "position": [
+      353,
+      -216
+    ],
+    "planets": []
+  },
+  "nova:528": {
+    "id": "nova:528",
+    "name": "Too'E'Bindem",
+    "prefix": "nova",
+    "links": [
+      "nova:264",
+      "nova:529",
+      "nova:527",
+      "nova:526",
+      "nova:525"
+    ],
+    "position": [
+      387,
+      -216
+    ],
+    "planets": []
+  },
+  "nova:529": {
+    "id": "nova:529",
+    "name": "Ser'E'Ousa",
+    "prefix": "nova",
+    "links": [
+      "nova:528",
+      "nova:530",
+      "nova:518",
+      "nova:519",
+      "nova:527"
+    ],
+    "position": [
+      385,
+      -186
+    ],
+    "planets": []
+  },
+  "nova:530": {
+    "id": "nova:530",
+    "name": "For'U'Destro",
+    "prefix": "nova",
+    "links": [
+      "nova:529",
+      "nova:551",
+      "nova:607",
+      "nova:239",
+      "nova:517",
+      "nova:518"
+    ],
+    "position": [
+      364,
+      -155
+    ],
+    "planets": []
+  },
+  "nova:531": {
+    "id": "nova:531",
+    "name": "Sol",
+    "prefix": "nova",
+    "links": [
+      "nova:162",
+      "nova:132",
+      "nova:131",
+      "nova:129",
+      "nova:143",
+      "nova:133",
+      "nova:536",
+      "nova:134",
+      "nova:142"
+    ],
+    "position": [
+      0,
+      0
+    ],
+    "planets": [
+      "nova:426",
+      "nova:427",
+      "nova:429",
+      "nova:159",
+      "nova:465"
+    ]
+  },
+  "nova:532": {
+    "id": "nova:532",
+    "name": "Aldebaran",
+    "prefix": "nova",
+    "links": [
+      "nova:132",
+      "nova:173",
+      "nova:174",
+      "nova:172"
+    ],
+    "position": [
+      -10,
+      -70
+    ],
+    "planets": [
+      "nova:430",
+      "nova:169",
+      "nova:170",
+      "nova:433",
+      "nova:130"
+    ]
+  },
+  "nova:533": {
+    "id": "nova:533",
+    "name": "Koria; Rebs assim",
+    "prefix": "nova",
+    "links": [
+      "nova:482",
+      "nova:485",
+      "nova:480"
+    ],
+    "position": [
+      94,
+      -125
+    ],
+    "planets": [
+      "nova:434",
+      "nova:1418"
+    ]
+  },
+  "nova:534": {
+    "id": "nova:534",
+    "name": "Evlei",
+    "prefix": "nova",
+    "links": [
+      "nova:469",
+      "nova:478",
+      "nova:462",
+      "nova:461"
+    ],
+    "position": [
+      73,
+      -200
+    ],
+    "planets": [
+      "nova:435",
+      "nova:425"
+    ]
+  },
+  "nova:535": {
+    "id": "nova:535",
+    "name": "Moash",
+    "prefix": "nova",
+    "links": [
+      "nova:361",
+      "nova:367",
+      "nova:365",
+      "nova:364"
+    ],
+    "position": [
+      -114,
+      154
+    ],
+    "planets": [
+      "nova:437",
+      "nova:1416"
+    ]
+  },
+  "nova:536": {
+    "id": "nova:536",
+    "name": "Nesre Secundus",
+    "prefix": "nova",
+    "links": [
+      "nova:146",
+      "nova:531",
+      "nova:130",
+      "nova:376",
+      "nova:145"
+    ],
+    "position": [
+      -75,
+      20
+    ],
+    "planets": [
+      "nova:438",
+      "nova:161",
+      "nova:176",
+      "nova:1408"
+    ]
+  },
+  "nova:538": {
+    "id": "nova:538",
+    "name": "Tekel",
+    "prefix": "nova",
+    "links": [
+      "nova:278",
+      "nova:283",
+      "nova:281",
+      "nova:280"
+    ],
+    "position": [
+      344,
+      140
+    ],
+    "planets": [
+      "nova:441",
+      "nova:1412",
+      "nova:491"
+    ]
+  },
+  "nova:539": {
+    "id": "nova:539",
+    "name": "Vella",
+    "prefix": "nova",
+    "links": [
+      "nova:386",
+      "nova:396",
+      "nova:399"
+    ],
+    "position": [
+      -247,
+      116
+    ],
+    "planets": [
+      "nova:444",
+      "nova:1417"
+    ]
+  },
+  "nova:540": {
+    "id": "nova:540",
+    "name": "Heraan",
+    "prefix": "nova",
+    "links": [
+      "nova:337",
+      "nova:338",
+      "nova:343",
+      "nova:339",
+      "nova:356",
+      "nova:345",
+      "nova:346"
+    ],
+    "position": [
+      3,
+      219
+    ],
+    "planets": [
+      "nova:443",
+      "nova:445",
+      "nova:1415"
+    ]
+  },
+  "nova:541": {
+    "id": "nova:541",
+    "name": "Dani",
+    "prefix": "nova",
+    "links": [
+      "nova:299",
+      "nova:297",
+      "nova:302"
+    ],
+    "position": [
+      238,
+      158
+    ],
+    "planets": [
+      "nova:442",
+      "nova:1413"
+    ]
+  },
+  "nova:542": {
+    "id": "nova:542",
+    "name": "Outbound",
+    "prefix": "nova",
+    "links": [
+      "nova:545",
+      "nova:199",
+      "nova:201"
+    ],
+    "position": [
+      275,
+      -51
+    ],
+    "planets": [
+      "nova:449",
+      "nova:497"
+    ]
+  },
+  "nova:543": {
+    "id": "nova:543",
+    "name": "Ne'mor",
+    "prefix": "nova",
+    "links": [
+      "nova:547",
+      "nova:544"
+    ],
+    "position": [
+      300,
+      -18
+    ],
+    "planets": []
+  },
+  "nova:544": {
+    "id": "nova:544",
+    "name": "Mjolnir",
+    "prefix": "nova",
+    "links": [
+      "nova:543",
+      "nova:207",
+      "nova:203"
+    ],
+    "position": [
+      297,
+      -11
+    ],
+    "planets": [
+      "nova:450",
+      "nova:498"
+    ]
+  },
+  "nova:545": {
+    "id": "nova:545",
+    "name": "Nil'kvee",
+    "prefix": "nova",
+    "links": [
+      "nova:212",
+      "nova:657",
+      "nova:546",
+      "nova:542",
+      "nova:501"
+    ],
+    "position": [
+      298,
+      -65
+    ],
+    "planets": [
+      "nova:451",
+      "nova:486"
+    ]
+  },
+  "nova:546": {
+    "id": "nova:546",
+    "name": "Nil'kol",
+    "prefix": "nova",
+    "links": [
+      "nova:547",
+      "nova:203",
+      "nova:545"
+    ],
+    "position": [
+      321,
+      -42
+    ],
+    "planets": [
+      "nova:452",
+      "nova:453"
+    ]
+  },
+  "nova:547": {
+    "id": "nova:547",
+    "name": "Nil'vran",
+    "prefix": "nova",
+    "links": [
+      "nova:215",
+      "nova:543",
+      "nova:546"
+    ],
+    "position": [
+      348,
+      -30
+    ],
+    "planets": [
+      "nova:454"
+    ]
+  },
+  "nova:548": {
+    "id": "nova:548",
+    "name": "Ne'prata",
+    "prefix": "nova",
+    "links": [
+      "nova:222",
+      "nova:551",
+      "nova:215",
+      "nova:213"
+    ],
+    "position": [
+      367,
+      -100
+    ],
+    "planets": []
+  },
+  "nova:549": {
+    "id": "nova:549",
+    "name": "Nil'kemorya",
+    "prefix": "nova",
+    "links": [
+      "nova:217",
+      "nova:267"
+    ],
+    "position": [
+      459,
+      29
+    ],
+    "planets": [
+      "nova:455",
+      "nova:499"
+    ]
+  },
+  "nova:550": {
+    "id": "nova:550",
+    "name": "Ne'helipar",
+    "prefix": "nova",
+    "links": [
+      "nova:552",
+      "nova:241",
+      "nova:216"
+    ],
+    "position": [
+      472,
+      -58
+    ],
+    "planets": [
+      "nova:456"
+    ]
+  },
+  "nova:551": {
+    "id": "nova:551",
+    "name": "Nil'nesa",
+    "prefix": "nova",
+    "links": [
+      "nova:261",
+      "nova:223",
+      "nova:548",
+      "nova:530"
+    ],
+    "position": [
+      392,
+      -136
+    ],
+    "planets": [
+      "nova:457"
+    ]
+  },
+  "nova:552": {
+    "id": "nova:552",
+    "name": "Nil'pesetra",
+    "prefix": "nova",
+    "links": [
+      "nova:245",
+      "nova:550",
+      "nova:228",
+      "nova:249"
+    ],
+    "position": [
+      520,
+      -73
+    ],
+    "planets": [
+      "nova:458",
+      "nova:459"
+    ]
+  },
+  "nova:553": {
+    "id": "nova:553",
+    "name": "Ne'ritai",
+    "prefix": "nova",
+    "links": [
+      "nova:259"
+    ],
+    "position": [
+      496,
+      -200
+    ],
+    "planets": [
+      "nova:460",
+      "nova:461"
+    ]
+  },
+  "nova:554": {
+    "id": "nova:554",
+    "name": "Nil'blei",
+    "prefix": "nova",
+    "links": [
+      "nova:262"
+    ],
+    "position": [
+      436,
+      -223
+    ],
+    "planets": [
+      "nova:462",
+      "nova:463"
+    ]
+  },
+  "nova:555": {
+    "id": "nova:555",
+    "name": "Nil'ikro",
+    "prefix": "nova",
+    "links": [
+      "nova:266",
+      "nova:268",
+      "nova:211"
+    ],
+    "position": [
+      388,
+      28
+    ],
+    "planets": [
+      "nova:464"
+    ]
+  },
+  "nova:556": {
+    "id": "nova:556",
+    "name": "Cor'I'Hon",
+    "prefix": "nova",
+    "links": [
+      "nova:557",
+      "nova:653",
+      "nova:461",
+      "nova:468"
+    ],
+    "position": [
+      81,
+      -237
+    ],
+    "planets": []
+  },
+  "nova:557": {
+    "id": "nova:557",
+    "name": "Diy'I'Cor",
+    "prefix": "nova",
+    "links": [
+      "nova:560",
+      "nova:556",
+      "nova:652",
+      "nova:460",
+      "nova:471"
+    ],
+    "position": [
+      91,
+      -256
+    ],
+    "planets": []
+  },
+  "nova:558": {
+    "id": "nova:558",
+    "name": "Yon'I'Res",
+    "prefix": "nova",
+    "links": [
+      "nova:567",
+      "nova:559",
+      "nova:557"
+    ],
+    "position": [
+      114,
+      -258
+    ],
+    "planets": []
+  },
+  "nova:559": {
+    "id": "nova:559",
+    "name": "Rom'I'Luj",
+    "prefix": "nova",
+    "links": [
+      "nova:566",
+      "nova:558"
+    ],
+    "position": [
+      134,
+      -238
+    ],
+    "planets": []
+  },
+  "nova:560": {
+    "id": "nova:560",
+    "name": "Deb'I'Vad",
+    "prefix": "nova",
+    "links": [
+      "nova:561",
+      "nova:557"
+    ],
+    "position": [
+      103,
+      -218
+    ],
+    "planets": []
+  },
+  "nova:561": {
+    "id": "nova:561",
+    "name": "Son'I'Dot",
+    "prefix": "nova",
+    "links": [
+      "nova:563",
+      "nova:562",
+      "nova:478",
+      "nova:560"
+    ],
+    "position": [
+      119,
+      -205
+    ],
+    "planets": []
+  },
+  "nova:562": {
+    "id": "nova:562",
+    "name": "Bel'I'Gul",
+    "prefix": "nova",
+    "links": [
+      "nova:566",
+      "nova:561"
+    ],
+    "position": [
+      134,
+      -197
+    ],
+    "planets": []
+  },
+  "nova:563": {
+    "id": "nova:563",
+    "name": "Fer'I'Jus",
+    "prefix": "nova",
+    "links": [
+      "nova:565",
+      "nova:482",
+      "nova:491"
+    ],
+    "position": [
+      122,
+      -162
+    ],
+    "planets": []
+  },
+  "nova:564": {
+    "id": "nova:564",
+    "name": "Tyr'I'Ded",
+    "prefix": "nova",
+    "links": [
+      "nova:572",
+      "nova:488"
+    ],
+    "position": [
+      171,
+      -137
+    ],
+    "planets": []
+  },
+  "nova:565": {
+    "id": "nova:565",
+    "name": "Sel'I'Gal",
+    "prefix": "nova",
+    "links": [
+      "nova:571",
+      "nova:563",
+      "nova:566"
+    ],
+    "position": [
+      179,
+      -188
+    ],
+    "planets": []
+  },
+  "nova:566": {
+    "id": "nova:566",
+    "name": "Bur'I'Loc",
+    "prefix": "nova",
+    "links": [
+      "nova:569",
+      "nova:565",
+      "nova:562",
+      "nova:559",
+      "nova:567"
+    ],
+    "position": [
+      168,
+      -220
+    ],
+    "planets": []
+  },
+  "nova:567": {
+    "id": "nova:567",
+    "name": "Tur'I'Nis",
+    "prefix": "nova",
+    "links": [
+      "nova:568",
+      "nova:566",
+      "nova:569",
+      "nova:558"
+    ],
+    "position": [
+      144,
+      -263
+    ],
+    "planets": []
+  },
+  "nova:568": {
+    "id": "nova:568",
+    "name": "Vel'I'Non",
+    "prefix": "nova",
+    "links": [
+      "nova:569",
+      "nova:570",
+      "nova:567"
+    ],
+    "position": [
+      176,
+      -297
+    ],
+    "planets": []
+  },
+  "nova:569": {
+    "id": "nova:569",
+    "name": "Fer'U'Weill",
+    "prefix": "nova",
+    "links": [
+      "nova:577",
+      "nova:570",
+      "nova:571",
+      "nova:576",
+      "nova:566",
+      "nova:567",
+      "nova:568"
+    ],
+    "position": [
+      194,
+      -229
+    ],
+    "planets": []
+  },
+  "nova:570": {
+    "id": "nova:570",
+    "name": "Don'U'Cusyon",
+    "prefix": "nova",
+    "links": [
+      "nova:578",
+      "nova:577",
+      "nova:569",
+      "nova:568"
+    ],
+    "position": [
+      217,
+      -263
+    ],
+    "planets": []
+  },
+  "nova:571": {
+    "id": "nova:571",
+    "name": "Kor'U'Deidt",
+    "prefix": "nova",
+    "links": [
+      "nova:576",
+      "nova:572",
+      "nova:565",
+      "nova:569"
+    ],
+    "position": [
+      213,
+      -171
+    ],
+    "planets": [
+      "nova:487"
+    ]
+  },
+  "nova:572": {
+    "id": "nova:572",
+    "name": "Fur'I'Sos",
+    "prefix": "nova",
+    "links": [
+      "nova:575",
+      "nova:571",
+      "nova:500",
+      "nova:574",
+      "nova:564"
+    ],
+    "position": [
+      197,
+      -139
+    ],
+    "planets": []
+  },
+  "nova:573": {
+    "id": "nova:573",
+    "name": "Ere'I'Cal",
+    "prefix": "nova",
+    "links": [
+      "nova:587",
+      "nova:606",
+      "nova:208",
+      "nova:500",
+      "nova:574"
+    ],
+    "position": [
+      251,
+      -82
+    ],
+    "planets": []
+  },
+  "nova:574": {
+    "id": "nova:574",
+    "name": "Fet'I'Dan",
+    "prefix": "nova",
+    "links": [
+      "nova:587",
+      "nova:573",
+      "nova:500",
+      "nova:572",
+      "nova:575"
+    ],
+    "position": [
+      244,
+      -112
+    ],
+    "planets": []
+  },
+  "nova:575": {
+    "id": "nova:575",
+    "name": "Gan'U'Tornes",
+    "prefix": "nova",
+    "links": [
+      "nova:586",
+      "nova:585",
+      "nova:574",
+      "nova:587",
+      "nova:572",
+      "nova:576"
+    ],
+    "position": [
+      243,
+      -143
+    ],
+    "planets": []
+  },
+  "nova:576": {
+    "id": "nova:576",
+    "name": "Tin'E'Tivel",
+    "prefix": "nova",
+    "links": [
+      "nova:577",
+      "nova:582",
+      "nova:575",
+      "nova:585",
+      "nova:571",
+      "nova:569"
+    ],
+    "position": [
+      239,
+      -187
+    ],
+    "planets": []
+  },
+  "nova:577": {
+    "id": "nova:577",
+    "name": "One'E'Ringa",
+    "prefix": "nova",
+    "links": [
+      "nova:581",
+      "nova:578",
+      "nova:582",
+      "nova:576",
+      "nova:569",
+      "nova:570"
+    ],
+    "position": [
+      248,
+      -237
+    ],
+    "planets": []
+  },
+  "nova:578": {
+    "id": "nova:578",
+    "name": "Def'E'Loren",
+    "prefix": "nova",
+    "links": [
+      "nova:580",
+      "nova:579",
+      "nova:581",
+      "nova:577",
+      "nova:570"
+    ],
+    "position": [
+      265,
+      -280
+    ],
+    "planets": []
+  },
+  "nova:579": {
+    "id": "nova:579",
+    "name": "Far'E'Bunor",
+    "prefix": "nova",
+    "links": [
+      "nova:595",
+      "nova:580",
+      "nova:578"
+    ],
+    "position": [
+      288,
+      -315
+    ],
+    "planets": []
+  },
+  "nova:580": {
+    "id": "nova:580",
+    "name": "Tus'E'Viro",
+    "prefix": "nova",
+    "links": [
+      "nova:594",
+      "nova:595",
+      "nova:593",
+      "nova:578",
+      "nova:581",
+      "nova:579"
+    ],
+    "position": [
+      300,
+      -300
+    ],
+    "planets": []
+  },
+  "nova:581": {
+    "id": "nova:581",
+    "name": "Von'E'Richt",
+    "prefix": "nova",
+    "links": [
+      "nova:580",
+      "nova:593",
+      "nova:592",
+      "nova:582",
+      "nova:577",
+      "nova:578"
+    ],
+    "position": [
+      279,
+      -238
+    ],
+    "planets": []
+  },
+  "nova:582": {
+    "id": "nova:582",
+    "name": "Hel'A'Forius",
+    "prefix": "nova",
+    "links": [
+      "nova:592",
+      "nova:581",
+      "nova:583",
+      "nova:576",
+      "nova:577"
+    ],
+    "position": [
+      261,
+      -213
+    ],
+    "planets": [
+      "nova:423"
+    ]
+  },
+  "nova:583": {
+    "id": "nova:583",
+    "name": "Nin'E'Lordus",
+    "prefix": "nova",
+    "links": [
+      "nova:592",
+      "nova:584",
+      "nova:585",
+      "nova:582"
+    ],
+    "position": [
+      285,
+      -197
+    ],
+    "planets": []
+  },
+  "nova:584": {
+    "id": "nova:584",
+    "name": "Sur'E'Qoru",
+    "prefix": "nova",
+    "links": [
+      "nova:591",
+      "nova:590",
+      "nova:586",
+      "nova:583"
+    ],
+    "position": [
+      299,
+      -179
+    ],
+    "planets": []
+  },
+  "nova:585": {
+    "id": "nova:585",
+    "name": "Ver'E'Liani",
+    "prefix": "nova",
+    "links": [
+      "nova:583",
+      "nova:586",
+      "nova:575",
+      "nova:576",
+      "nova:582"
+    ],
+    "position": [
+      269,
+      -179
+    ],
+    "planets": []
+  },
+  "nova:586": {
+    "id": "nova:586",
+    "name": "Dal'U'Sinto",
+    "prefix": "nova",
+    "links": [
+      "nova:584",
+      "nova:590",
+      "nova:588",
+      "nova:589",
+      "nova:587",
+      "nova:575",
+      "nova:585"
+    ],
+    "position": [
+      296,
+      -150
+    ],
+    "planets": []
+  },
+  "nova:587": {
+    "id": "nova:587",
+    "name": "Iwo'U'Sentar",
+    "prefix": "nova",
+    "links": [
+      "nova:586",
+      "nova:588",
+      "nova:573",
+      "nova:574",
+      "nova:575"
+    ],
+    "position": [
+      284,
+      -118
+    ],
+    "planets": []
+  },
+  "nova:588": {
+    "id": "nova:588",
+    "name": "Can'U'Hilfen",
+    "prefix": "nova",
+    "links": [
+      "nova:589",
+      "nova:587",
+      "nova:586"
+    ],
+    "position": [
+      313,
+      -112
+    ],
+    "planets": []
+  },
+  "nova:589": {
+    "id": "nova:589",
+    "name": "Net'U'Moria",
+    "prefix": "nova",
+    "links": [
+      "nova:602",
+      "nova:588",
+      "nova:586",
+      "nova:590"
+    ],
+    "position": [
+      335,
+      -134
+    ],
+    "planets": []
+  },
+  "nova:590": {
+    "id": "nova:590",
+    "name": "Mes'E'Ruma",
+    "prefix": "nova",
+    "links": [
+      "nova:601",
+      "nova:589",
+      "nova:602",
+      "nova:586",
+      "nova:591"
+    ],
+    "position": [
+      332,
+      -176
+    ],
+    "planets": []
+  },
+  "nova:591": {
+    "id": "nova:591",
+    "name": "Cur'E'Dyni",
+    "prefix": "nova",
+    "links": [
+      "nova:599",
+      "nova:590",
+      "nova:601",
+      "nova:584",
+      "nova:592"
+    ],
+    "position": [
+      329,
+      -200
+    ],
+    "planets": []
+  },
+  "nova:592": {
+    "id": "nova:592",
+    "name": "Gir'E'Valen",
+    "prefix": "nova",
+    "links": [
+      "nova:599",
+      "nova:593",
+      "nova:591",
+      "nova:583",
+      "nova:582",
+      "nova:581"
+    ],
+    "position": [
+      306,
+      -215
+    ],
+    "planets": []
+  },
+  "nova:593": {
+    "id": "nova:593",
+    "name": "Hot'A'Tanius",
+    "prefix": "nova",
+    "links": [
+      "nova:594",
+      "nova:599",
+      "nova:598",
+      "nova:581",
+      "nova:592",
+      "nova:580"
+    ],
+    "position": [
+      318,
+      -252
+    ],
+    "planets": [
+      "nova:424"
+    ]
+  },
+  "nova:594": {
+    "id": "nova:594",
+    "name": "Lil'E'Song",
+    "prefix": "nova",
+    "links": [
+      "nova:596",
+      "nova:598",
+      "nova:597",
+      "nova:593",
+      "nova:580",
+      "nova:595"
+    ],
+    "position": [
+      341,
+      -304
+    ],
+    "planets": []
+  },
+  "nova:595": {
+    "id": "nova:595",
+    "name": "Ran'E'Shepos",
+    "prefix": "nova",
+    "links": [
+      "nova:594",
+      "nova:596",
+      "nova:580",
+      "nova:579"
+    ],
+    "position": [
+      330,
+      -330
+    ],
+    "planets": []
+  },
+  "nova:596": {
+    "id": "nova:596",
+    "name": "Xym'E'Caros",
+    "prefix": "nova",
+    "links": [
+      "nova:594",
+      "nova:597",
+      "nova:595"
+    ],
+    "position": [
+      380,
+      -313
+    ],
+    "planets": []
+  },
+  "nova:597": {
+    "id": "nova:597",
+    "name": "Vyl'E'Tinti",
+    "prefix": "nova",
+    "links": [
+      "nova:596",
+      "nova:600",
+      "nova:264",
+      "nova:598",
+      "nova:594"
+    ],
+    "position": [
+      373,
+      -271
+    ],
+    "planets": []
+  },
+  "nova:598": {
+    "id": "nova:598",
+    "name": "Mis'E'Odres",
+    "prefix": "nova",
+    "links": [
+      "nova:597",
+      "nova:600",
+      "nova:599",
+      "nova:593",
+      "nova:594"
+    ],
+    "position": [
+      355,
+      -246
+    ],
+    "planets": []
+  },
+  "nova:599": {
+    "id": "nova:599",
+    "name": "Pet'E'Nalos",
+    "prefix": "nova",
+    "links": [
+      "nova:598",
+      "nova:600",
+      "nova:601",
+      "nova:591",
+      "nova:592",
+      "nova:593"
+    ],
+    "position": [
+      353,
+      -216
+    ],
+    "planets": []
+  },
+  "nova:600": {
+    "id": "nova:600",
+    "name": "Too'E'Bindem",
+    "prefix": "nova",
+    "links": [
+      "nova:264",
+      "nova:601",
+      "nova:599",
+      "nova:598",
+      "nova:597"
+    ],
+    "position": [
+      387,
+      -216
+    ],
+    "planets": []
+  },
+  "nova:601": {
+    "id": "nova:601",
+    "name": "Ser'E'Ousa",
+    "prefix": "nova",
+    "links": [
+      "nova:600",
+      "nova:590",
+      "nova:591",
+      "nova:599",
+      "nova:602"
+    ],
+    "position": [
+      385,
+      -186
+    ],
+    "planets": []
+  },
+  "nova:602": {
+    "id": "nova:602",
+    "name": "For'U'Destro",
+    "prefix": "nova",
+    "links": [
+      "nova:601",
+      "nova:239",
+      "nova:607",
+      "nova:589",
+      "nova:590",
+      "nova:551"
+    ],
+    "position": [
+      364,
+      -155
+    ],
+    "planets": []
+  },
+  "nova:603": {
+    "id": "nova:603",
+    "name": "Aurora",
+    "prefix": "nova",
+    "links": [
+      "nova:313",
+      "nova:317",
+      "nova:314",
+      "nova:316"
+    ],
+    "position": [
+      123,
+      191
+    ],
+    "planets": [
+      "nova:439",
+      "nova:440",
+      "nova:428",
+      "nova:1414",
+      "nova:488"
+    ]
+  },
+  "nova:604": {
+    "id": "nova:604",
+    "name": "Heraan",
+    "prefix": "nova",
+    "links": [
+      "nova:337",
+      "nova:338",
+      "nova:343",
+      "nova:339",
+      "nova:356",
+      "nova:345",
+      "nova:346"
+    ],
+    "position": [
+      3,
+      219
+    ],
+    "planets": [
+      "nova:431",
+      "nova:432",
+      "nova:1415"
+    ]
+  },
+  "nova:605": {
+    "id": "nova:605",
+    "name": "Moash",
+    "prefix": "nova",
+    "links": [
+      "nova:361",
+      "nova:367",
+      "nova:365",
+      "nova:364"
+    ],
+    "position": [
+      -114,
+      154
+    ],
+    "planets": [
+      "nova:446",
+      "nova:1416"
+    ]
+  },
+  "nova:606": {
+    "id": "nova:606",
+    "name": "Nil'kvee",
+    "prefix": "nova",
+    "links": [
+      "nova:212",
+      "nova:657",
+      "nova:209",
+      "nova:204",
+      "nova:573",
+      "nova:501"
+    ],
+    "position": [
+      298,
+      -65
+    ],
+    "planets": [
+      "nova:221"
+    ]
+  },
+  "nova:607": {
+    "id": "nova:607",
+    "name": "Nil'nesa",
+    "prefix": "nova",
+    "links": [
+      "nova:261",
+      "nova:223",
+      "nova:214",
+      "nova:602",
+      "nova:530"
+    ],
+    "position": [
+      392,
+      -136
+    ],
+    "planets": [
+      "nova:257"
+    ]
+  },
+  "nova:608": {
+    "id": "nova:608",
+    "name": "J'fhor",
+    "prefix": "nova",
+    "links": [
+      "nova:609",
+      "nova:600",
+      "nova:528",
+      "nova:525",
+      "nova:597"
+    ],
+    "position": [
+      408,
+      -255
+    ],
+    "planets": [
+      "nova:294"
+    ]
+  },
+  "nova:609": {
+    "id": "nova:609",
+    "name": "Tre'erman",
+    "prefix": "nova",
+    "links": [
+      "nova:610",
+      "nova:261",
+      "nova:608"
+    ],
+    "position": [
+      419,
+      -233
+    ],
+    "planets": [
+      "nova:290",
+      "nova:291"
+    ]
+  },
+  "nova:610": {
+    "id": "nova:610",
+    "name": "Nil'blei",
+    "prefix": "nova",
+    "links": [
+      "nova:609"
+    ],
+    "position": [
+      436,
+      -223
+    ],
+    "planets": [
+      "nova:436",
+      "nova:447"
+    ]
+  },
+  "nova:611": {
+    "id": "nova:611",
+    "name": "Korell",
+    "prefix": "nova",
+    "links": [
+      "nova:415",
+      "nova:612",
+      "nova:413"
+    ],
+    "position": [
+      -344,
+      -152
+    ],
+    "planets": [
+      "nova:469",
+      "nova:1403"
+    ]
+  },
+  "nova:612": {
+    "id": "nova:612",
+    "name": "Onllot",
+    "prefix": "nova",
+    "links": [
+      "nova:614",
+      "nova:613",
+      "nova:415",
+      "nova:611"
+    ],
+    "position": [
+      -300,
+      -143
+    ],
+    "planets": []
+  },
+  "nova:613": {
+    "id": "nova:613",
+    "name": "Estearll",
+    "prefix": "nova",
+    "links": [
+      "nova:616",
+      "nova:612"
+    ],
+    "position": [
+      -270,
+      -189
+    ],
+    "planets": []
+  },
+  "nova:614": {
+    "id": "nova:614",
+    "name": "Uriall",
+    "prefix": "nova",
+    "links": [
+      "nova:615",
+      "nova:612"
+    ],
+    "position": [
+      -280,
+      -225
+    ],
+    "planets": []
+  },
+  "nova:615": {
+    "id": "nova:615",
+    "name": "Jellosia",
+    "prefix": "nova",
+    "links": [
+      "nova:624",
+      "nova:614"
+    ],
+    "position": [
+      -251,
+      -261
+    ],
+    "planets": []
+  },
+  "nova:616": {
+    "id": "nova:616",
+    "name": "Pontoll",
+    "prefix": "nova",
+    "links": [
+      "nova:623",
+      "nova:613",
+      "nova:617"
+    ],
+    "position": [
+      -245,
+      -222
+    ],
+    "planets": []
+  },
+  "nova:617": {
+    "id": "nova:617",
+    "name": "Qellan",
+    "prefix": "nova",
+    "links": [
+      "nova:616",
+      "nova:618"
+    ],
+    "position": [
+      -247,
+      -204
+    ],
+    "planets": []
+  },
+  "nova:618": {
+    "id": "nova:618",
+    "name": "Vellos",
+    "prefix": "nova",
+    "links": [
+      "nova:619",
+      "nova:617"
+    ],
+    "position": [
+      -233,
+      -188
+    ],
+    "planets": [
+      "nova:467",
+      "nova:1402",
+      "nova:489"
+    ]
+  },
+  "nova:619": {
+    "id": "nova:619",
+    "name": "VNP-002",
+    "prefix": "nova",
+    "links": [
+      "nova:618",
+      "nova:621",
+      "nova:416"
+    ],
+    "position": [
+      -247,
+      -156
+    ],
+    "planets": [
+      "nova:1401"
+    ]
+  },
+  "nova:620": {
+    "id": "nova:620",
+    "name": "Illiask",
+    "prefix": "nova",
+    "links": [
+      "nova:623",
+      "nova:621"
+    ],
+    "position": [
+      -200,
+      -163
+    ],
+    "planets": []
+  },
+  "nova:621": {
+    "id": "nova:621",
+    "name": "VNP-001",
+    "prefix": "nova",
+    "links": [
+      "nova:627",
+      "nova:198",
+      "nova:622",
+      "nova:417",
+      "nova:619",
+      "nova:620"
+    ],
+    "position": [
+      -189,
+      -135
+    ],
+    "planets": [
+      "nova:1400"
+    ]
+  },
+  "nova:622": {
+    "id": "nova:622",
+    "name": "Pentori",
+    "prefix": "nova",
+    "links": [
+      "nova:635",
+      "nova:621"
+    ],
+    "position": [
+      -149,
+      -134
+    ],
+    "planets": [
+      "nova:409"
+    ]
+  },
+  "nova:623": {
+    "id": "nova:623",
+    "name": "Rendell",
+    "prefix": "nova",
+    "links": [
+      "nova:620",
+      "nova:616"
+    ],
+    "position": [
+      -191,
+      -204
+    ],
+    "planets": []
+  },
+  "nova:624": {
+    "id": "nova:624",
+    "name": "K-008",
+    "prefix": "nova",
+    "links": [
+      "nova:630",
+      "nova:615"
+    ],
+    "position": [
+      -177,
+      -258
+    ],
+    "planets": []
+  },
+  "nova:625": {
+    "id": "nova:625",
+    "name": "Allia",
+    "prefix": "nova",
+    "links": [
+      "nova:640",
+      "nova:626",
+      "nova:616"
+    ],
+    "position": [
+      -163,
+      -230
+    ],
+    "planets": []
+  },
+  "nova:626": {
+    "id": "nova:626",
+    "name": "Blleia",
+    "prefix": "nova",
+    "links": [
+      "nova:625",
+      "nova:627"
+    ],
+    "position": [
+      -171,
+      -212
+    ],
+    "planets": []
+  },
+  "nova:627": {
+    "id": "nova:627",
+    "name": "Systoll",
+    "prefix": "nova",
+    "links": [
+      "nova:626",
+      "nova:631",
+      "nova:633",
+      "nova:621"
+    ],
+    "position": [
+      -184,
+      -185
+    ],
+    "planets": []
+  },
+  "nova:628": {
+    "id": "nova:628",
+    "name": "K-015",
+    "prefix": "nova",
+    "links": [
+      "nova:638",
+      "nova:634"
+    ],
+    "position": [
+      -163,
+      -165
+    ],
+    "planets": []
+  },
+  "nova:629": {
+    "id": "nova:629",
+    "name": "K-004",
+    "prefix": "nova",
+    "links": [
+      "nova:630",
+      "nova:641"
+    ],
+    "position": [
+      -148,
+      -193
+    ],
+    "planets": []
+  },
+  "nova:630": {
+    "id": "nova:630",
+    "name": "K-005",
+    "prefix": "nova",
+    "links": [
+      "nova:644",
+      "nova:629",
+      "nova:624"
+    ],
+    "position": [
+      -136,
+      -256
+    ],
+    "planets": []
+  },
+  "nova:631": {
+    "id": "nova:631",
+    "name": "K-017",
+    "prefix": "nova",
+    "links": [
+      "nova:646",
+      "nova:627"
+    ],
+    "position": [
+      -116,
+      -231
+    ],
+    "planets": [
+      "nova:410"
+    ]
+  },
+  "nova:632": {
+    "id": "nova:632",
+    "name": "K-009",
+    "prefix": "nova",
+    "links": [
+      "nova:639",
+      "nova:634"
+    ],
+    "position": [
+      -125,
+      -208
+    ],
+    "planets": []
+  },
+  "nova:633": {
+    "id": "nova:633",
+    "name": "K-016",
+    "prefix": "nova",
+    "links": [
+      "nova:645",
+      "nova:627"
+    ],
+    "position": [
+      -132,
+      -172
+    ],
+    "planets": [
+      "nova:411"
+    ]
+  },
+  "nova:634": {
+    "id": "nova:634",
+    "name": "K-010",
+    "prefix": "nova",
+    "links": [
+      "nova:644",
+      "nova:637",
+      "nova:628",
+      "nova:632"
+    ],
+    "position": [
+      -113,
+      -158
+    ],
+    "planets": []
+  },
+  "nova:635": {
+    "id": "nova:635",
+    "name": "Willon",
+    "prefix": "nova",
+    "links": [
+      "nova:637",
+      "nova:622"
+    ],
+    "position": [
+      -111,
+      -118
+    ],
+    "planets": [
+      "nova:412"
+    ]
+  },
+  "nova:636": {
+    "id": "nova:636",
+    "name": "K-019",
+    "prefix": "nova",
+    "links": [
+      "nova:646",
+      "nova:643"
+    ],
+    "position": [
+      -98,
+      -194
+    ],
+    "planets": []
+  },
+  "nova:637": {
+    "id": "nova:637",
+    "name": "Chicea",
+    "prefix": "nova",
+    "links": [
+      "nova:642",
+      "nova:635",
+      "nova:634"
+    ],
+    "position": [
+      -82,
+      -146
+    ],
+    "planets": [
+      "nova:413"
+    ]
+  },
+  "nova:638": {
+    "id": "nova:638",
+    "name": "K-014",
+    "prefix": "nova",
+    "links": [
+      "nova:645",
+      "nova:628"
+    ],
+    "position": [
+      -91,
+      -218
+    ],
+    "planets": []
+  },
+  "nova:639": {
+    "id": "nova:639",
+    "name": "K-007",
+    "prefix": "nova",
+    "links": [
+      "nova:647",
+      "nova:640",
+      "nova:650",
+      "nova:632"
+    ],
+    "position": [
+      -78,
+      -246
+    ],
+    "planets": []
+  },
+  "nova:640": {
+    "id": "nova:640",
+    "name": "K-011",
+    "prefix": "nova",
+    "links": [
+      "nova:625",
+      "nova:639"
+    ],
+    "position": [
+      -66,
+      -194
+    ],
+    "planets": []
+  },
+  "nova:641": {
+    "id": "nova:641",
+    "name": "K-001",
+    "prefix": "nova",
+    "links": [
+      "nova:649",
+      "nova:629"
+    ],
+    "position": [
+      -68,
+      -162
+    ],
+    "planets": []
+  },
+  "nova:642": {
+    "id": "nova:642",
+    "name": "Varden",
+    "prefix": "nova",
+    "links": [
+      "nova:450",
+      "nova:637"
+    ],
+    "position": [
+      -48,
+      -136
+    ],
+    "planets": [
+      "nova:414"
+    ]
+  },
+  "nova:643": {
+    "id": "nova:643",
+    "name": "K-020",
+    "prefix": "nova",
+    "links": [
+      "nova:648",
+      "nova:636",
+      "nova:644"
+    ],
+    "position": [
+      -25,
+      -167
+    ],
+    "planets": []
+  },
+  "nova:644": {
+    "id": "nova:644",
+    "name": "K-003",
+    "prefix": "nova",
+    "links": [
+      "nova:647",
+      "nova:643",
+      "nova:649",
+      "nova:634",
+      "nova:630"
+    ],
+    "position": [
+      -56,
+      -218
+    ],
+    "planets": [
+      "nova:415",
+      "nova:416",
+      "nova:417",
+      "nova:418"
+    ]
+  },
+  "nova:645": {
+    "id": "nova:645",
+    "name": "K-013",
+    "prefix": "nova",
+    "links": [
+      "nova:650",
+      "nova:633",
+      "nova:638"
+    ],
+    "position": [
+      -21,
+      -195
+    ],
+    "planets": []
+  },
+  "nova:646": {
+    "id": "nova:646",
+    "name": "K-018",
+    "prefix": "nova",
+    "links": [
+      "nova:636",
+      "nova:631"
+    ],
+    "position": [
+      -15,
+      -226
+    ],
+    "planets": []
+  },
+  "nova:647": {
+    "id": "nova:647",
+    "name": "K-006",
+    "prefix": "nova",
+    "links": [
+      "nova:651",
+      "nova:644",
+      "nova:639"
+    ],
+    "position": [
+      -8,
+      -262
+    ],
+    "planets": []
+  },
+  "nova:648": {
+    "id": "nova:648",
+    "name": "SPC-2710",
+    "prefix": "nova",
+    "links": [
+      "nova:654",
+      "nova:655",
+      "nova:450",
+      "nova:643"
+    ],
+    "position": [
+      1,
+      -151
+    ],
+    "planets": []
+  },
+  "nova:649": {
+    "id": "nova:649",
+    "name": "K-002",
+    "prefix": "nova",
+    "links": [
+      "nova:641",
+      "nova:644"
+    ],
+    "position": [
+      6,
+      -200
+    ],
+    "planets": []
+  },
+  "nova:650": {
+    "id": "nova:650",
+    "name": "K-012",
+    "prefix": "nova",
+    "links": [
+      "nova:652",
+      "nova:653",
+      "nova:645",
+      "nova:639"
+    ],
+    "position": [
+      18,
+      -242
+    ],
+    "planets": []
+  },
+  "nova:651": {
+    "id": "nova:651",
+    "name": "Nestin",
+    "prefix": "nova",
+    "links": [
+      "nova:652",
+      "nova:471",
+      "nova:647"
+    ],
+    "position": [
+      40,
+      -284
+    ],
+    "planets": []
+  },
+  "nova:652": {
+    "id": "nova:652",
+    "name": "Ganorran",
+    "prefix": "nova",
+    "links": [
+      "nova:557",
+      "nova:650",
+      "nova:651"
+    ],
+    "position": [
+      46,
+      -243
+    ],
+    "planets": []
+  },
+  "nova:653": {
+    "id": "nova:653",
+    "name": "Kanius",
+    "prefix": "nova",
+    "links": [
+      "nova:556",
+      "nova:534",
+      "nova:650"
+    ],
+    "position": [
+      44,
+      -213
+    ],
+    "planets": []
+  },
+  "nova:654": {
+    "id": "nova:654",
+    "name": "Teltar",
+    "prefix": "nova",
+    "links": [
+      "nova:534",
+      "nova:467",
+      "nova:648"
+    ],
+    "position": [
+      28,
+      -160
+    ],
+    "planets": []
+  },
+  "nova:655": {
+    "id": "nova:655",
+    "name": "SPC-1555",
+    "prefix": "nova",
+    "links": [
+      "nova:463",
+      "nova:648"
+    ],
+    "position": [
+      24,
+      -119
+    ],
+    "planets": []
+  },
+  "nova:656": {
+    "id": "nova:656",
+    "name": "Za'iuso",
+    "prefix": "nova",
+    "links": [
+      "nova:237",
+      "nova:234",
+      "nova:232",
+      "nova:224"
+    ],
+    "position": [
+      434,
+      -124
+    ],
+    "planets": [
+      "nova:249",
+      "nova:472"
+    ]
+  },
+  "nova:657": {
+    "id": "nova:657",
+    "name": "Tri'niphu",
+    "prefix": "nova",
+    "links": [
+      "nova:215",
+      "nova:545",
+      "nova:606",
+      "nova:208",
+      "nova:213"
+    ],
+    "position": [
+      326,
+      -66
+    ],
+    "planets": [
+      "nova:448"
+    ]
+  },
+  "nova:677": {
+    "id": "nova:677",
+    "name": "Glimmer",
+    "prefix": "nova",
+    "links": [
+      "nova:148"
+    ],
+    "position": [
+      -60,
+      -80
+    ],
+    "planets": [
+      "nova:512"
+    ]
+  },
+  "nova:678": {
+    "id": "nova:678",
+    "name": "Glimmer",
+    "prefix": "nova",
+    "links": [
+      "nova:148"
+    ],
+    "position": [
+      -60,
+      -80
+    ],
+    "planets": [
+      "nova:513"
+    ]
+  },
+  "nova:759": {
+    "id": "nova:759",
+    "name": "Glimmer",
+    "prefix": "nova",
+    "links": [
+      "nova:148"
+    ],
+    "position": [
+      -60,
+      -80
+    ],
+    "planets": [
+      "nova:503"
+    ]
+  },
+  "nova:760": {
+    "id": "nova:760",
+    "name": "Glimmer",
+    "prefix": "nova",
+    "links": [
+      "nova:148"
+    ],
+    "position": [
+      -60,
+      -80
+    ],
+    "planets": [
+      "nova:504"
+    ]
+  },
+  "nova:761": {
+    "id": "nova:761",
+    "name": "Glimmer",
+    "prefix": "nova",
+    "links": [
+      "nova:148"
+    ],
+    "position": [
+      -60,
+      -80
+    ],
+    "planets": [
+      "nova:505"
+    ]
+  },
+  "nova:762": {
+    "id": "nova:762",
+    "name": "Tuatha",
+    "prefix": "nova",
+    "links": [
+      "nova:145"
+    ],
+    "position": [
+      -70,
+      75
+    ],
+    "planets": [
+      "nova:506"
+    ]
+  },
+  "nova:763": {
+    "id": "nova:763",
+    "name": "Tuatha",
+    "prefix": "nova",
+    "links": [
+      "nova:145"
+    ],
+    "position": [
+      -70,
+      75
+    ],
+    "planets": [
+      "nova:507"
+    ]
+  },
+  "nova:764": {
+    "id": "nova:764",
+    "name": "Tuatha",
+    "prefix": "nova",
+    "links": [
+      "nova:145"
+    ],
+    "position": [
+      -70,
+      75
+    ],
+    "planets": [
+      "nova:508"
+    ]
+  },
+  "nova:765": {
+    "id": "nova:765",
+    "name": "SPC-1421",
+    "prefix": "nova",
+    "links": [
+      "nova:307",
+      "nova:202",
+      "nova:310",
+      "nova:309"
+    ],
+    "position": [
+      166,
+      32
+    ],
+    "planets": [
+      "nova:333"
+    ]
+  },
+  "nova:766": {
+    "id": "nova:766",
+    "name": "SPC-050",
+    "prefix": "nova",
+    "links": [
+      "nova:324",
+      "nova:326",
+      "nova:129"
+    ],
+    "position": [
+      118,
+      78
+    ],
+    "planets": [
+      "nova:346"
+    ]
+  },
+  "nova:767": {
+    "id": "nova:767",
+    "name": "Unin",
+    "prefix": "nova",
+    "links": [
+      "nova:326",
+      "nova:310",
+      "nova:129"
+    ],
+    "position": [
+      143,
+      71
+    ],
+    "planets": [
+      "nova:347"
+    ]
+  },
+  "nova:768": {
+    "id": "nova:768",
+    "name": "Lesten",
+    "prefix": "nova",
+    "links": [
+      "nova:138"
+    ],
+    "position": [
+      30,
+      -50
+    ],
+    "planets": [
+      "nova:510"
+    ]
+  },
+  "nova:1124": {
+    "id": "nova:1124",
+    "name": "Procyon",
+    "prefix": "nova",
+    "links": [
+      "nova:134",
+      "nova:187",
+      "nova:188",
+      "nova:189",
+      "nova:190"
+    ],
+    "position": [
+      -120,
+      -20
+    ],
+    "planets": [
+      "nova:173",
+      "nova:517"
+    ]
+  },
+  "nova:1125": {
+    "id": "nova:1125",
+    "name": "Procyon",
+    "prefix": "nova",
+    "links": [
+      "nova:134",
+      "nova:187",
+      "nova:188",
+      "nova:189",
+      "nova:190"
+    ],
+    "position": [
+      -120,
+      -20
+    ],
+    "planets": [
+      "nova:173",
+      "nova:516"
+    ]
+  },
+  "nova:1126": {
+    "id": "nova:1126",
+    "name": "Procyon",
+    "prefix": "nova",
+    "links": [
+      "nova:134",
+      "nova:187",
+      "nova:188",
+      "nova:189",
+      "nova:190"
+    ],
+    "position": [
+      -120,
+      -20
+    ],
+    "planets": [
+      "nova:173",
+      "nova:515"
+    ]
+  },
+  "nova:1127": {
+    "id": "nova:1127",
+    "name": "Procyon",
+    "prefix": "nova",
+    "links": [
+      "nova:134",
+      "nova:187",
+      "nova:188",
+      "nova:189",
+      "nova:190"
+    ],
+    "position": [
+      -120,
+      -20
+    ],
+    "planets": [
+      "nova:1419",
+      "nova:1420",
+      "nova:492"
+    ]
+  }
+}

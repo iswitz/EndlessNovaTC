@@ -1,0 +1,17 @@
+{
+  "name": "evnova-to-endless-sky",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "extract": "node scripts/extract-nova.js",
+    "extract:burger": "perl scripts/extract-burger-resources.pl",
+    "bridge:burger": "node scripts/burger-to-resourcefork.js",
+    "extract:all": "npm run extract:burger && npm run bridge:burger && npm run extract",
+    "convert": "node scripts/convert-to-es.js",
+    "assets": "node scripts/prepare-media.js && python scripts/extract-assets.py",
+    "build": "npm run extract:all && npm run convert && npm run assets"
+  },
+  "dependencies": {
+    "novaparse": "github:mattsoulanille/NovaParse"
+  }
+}

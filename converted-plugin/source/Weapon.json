@@ -1,0 +1,4373 @@
+{
+  "nova:128": {
+    "id": "nova:128",
+    "name": "Light Blaster",
+    "prefix": "nova",
+    "accuracy": 9,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "primary",
+    "fireRate": 3,
+    "fireSimultaneously": false,
+    "shotSpeed": 1500,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 13,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 10,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "unguided",
+    "submunitions": [],
+    "proxRadius": 5,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 9,
+      "lifeMin": 9,
+      "lifeMax": 9,
+      "velocity": 600,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:128",
+      "name": "Light Blaster",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:200",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1500,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:129": {
+    "id": "nova:129",
+    "name": "Medium Blaster",
+    "prefix": "nova",
+    "accuracy": 4,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "primary",
+    "fireRate": 2.3076923076923075,
+    "fireSimultaneously": false,
+    "shotSpeed": 1400,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 25,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 20,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "unguided",
+    "submunitions": [],
+    "proxRadius": 5,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 19,
+      "lifeMin": 14,
+      "lifeMax": 14,
+      "velocity": 610,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:129",
+      "name": "Medium Blaster",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:202",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1400,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:130": {
+    "id": "nova:130",
+    "name": "Light Blaster Turret",
+    "prefix": "nova",
+    "accuracy": 10,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "turret",
+    "fireGroup": "primary",
+    "fireRate": 3,
+    "fireSimultaneously": false,
+    "shotSpeed": 1500,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 15,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 10,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "turret",
+    "submunitions": [],
+    "proxRadius": 5,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 4,
+      "lifeMin": 6,
+      "lifeMax": 6,
+      "velocity": 500,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:130",
+      "name": "Light Blaster Turret",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:200",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1500,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:131": {
+    "id": "nova:131",
+    "name": "Medium Blaster Turret",
+    "prefix": "nova",
+    "accuracy": 5,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "turret",
+    "fireGroup": "primary",
+    "fireRate": 3.3333333333333335,
+    "fireSimultaneously": false,
+    "shotSpeed": 1400,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 30,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 20,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "turret",
+    "submunitions": [],
+    "proxRadius": 5,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 8,
+      "lifeMin": 8,
+      "lifeMax": 8,
+      "velocity": 500,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:131",
+      "name": "Medium Blaster Turret",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:202",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1400,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:132": {
+    "id": "nova:132",
+    "name": "Heavy Blaster Turret",
+    "prefix": "nova",
+    "accuracy": 5,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "turret",
+    "fireGroup": "primary",
+    "fireRate": 1.5,
+    "fireSimultaneously": false,
+    "shotSpeed": 1300,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 60,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 40,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "turret",
+    "submunitions": [],
+    "proxRadius": 5,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 13,
+      "lifeMin": 16,
+      "lifeMax": 16,
+      "velocity": 600,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:132",
+      "name": "Heavy Blaster Turret",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:204",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1300,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:133": {
+    "id": "nova:133",
+    "name": "Quad Light Blaster Turret",
+    "prefix": "nova",
+    "accuracy": 10,
+    "ammoType": "unlimited",
+    "burstCount": 4,
+    "burstReload": 20,
+    "destroyShipWhenFiring": false,
+    "exitType": "turret",
+    "fireGroup": "pointDefense",
+    "fireRate": 6,
+    "fireSimultaneously": false,
+    "shotSpeed": 2000,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 12,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 10,
+    "damageType": "pointDefense",
+    "type": "ProjectileWeaponData",
+    "guidance": "pointDefense",
+    "submunitions": [],
+    "proxRadius": 5,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 4,
+      "lifeMin": 6,
+      "lifeMax": 6,
+      "velocity": 500,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:133",
+      "name": "Quad Light Blaster Turret",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:200",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 2000,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:134": {
+    "id": "nova:134",
+    "name": "IR Missile",
+    "prefix": "nova",
+    "accuracy": 2,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 2,
+    "fireSimultaneously": false,
+    "shotSpeed": 1350,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 100,
+    "primaryExplosion": "nova:128",
+    "secondaryExplosion": null,
+    "knockback": 50,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "guided",
+    "submunitions": [],
+    "proxRadius": 2,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 1,
+      "velocity": 25,
+      "lifeMin": 35,
+      "lifeMax": 45,
+      "color": 4288716960
+    },
+    "hitParticles": {
+      "count": 11,
+      "lifeMin": 13,
+      "lifeMax": 13,
+      "velocity": 850,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:134",
+      "name": "IR Missile",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:206",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [
+      "pointDefense"
+    ],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1350,
+      "turnRate": 4.072434921320102,
+      "shield": 0,
+      "armor": 4
+    }
+  },
+  "nova:135": {
+    "id": "nova:135",
+    "name": "Radar Missile",
+    "prefix": "nova",
+    "accuracy": 1,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 1,
+    "fireSimultaneously": false,
+    "shotSpeed": 1100,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 110,
+    "primaryExplosion": "nova:128",
+    "secondaryExplosion": null,
+    "knockback": 65,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "guided",
+    "submunitions": [],
+    "proxRadius": 4,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 2,
+      "velocity": 30,
+      "lifeMin": 50,
+      "lifeMax": 60,
+      "color": 4288716928
+    },
+    "hitParticles": {
+      "count": 12,
+      "lifeMin": 13,
+      "lifeMax": 13,
+      "velocity": 850,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:135",
+      "name": "Radar Missile",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:208",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [
+      "pointDefense"
+    ],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1100,
+      "turnRate": 3.490658503988659,
+      "shield": 0,
+      "armor": 8
+    }
+  },
+  "nova:136": {
+    "id": "nova:136",
+    "name": "Grav. Missile",
+    "prefix": "nova",
+    "accuracy": 3,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 0.6666666666666666,
+    "fireSimultaneously": false,
+    "shotSpeed": 1100,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 175,
+    "primaryExplosion": "nova:129",
+    "secondaryExplosion": null,
+    "knockback": 80,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "guided",
+    "submunitions": [],
+    "proxRadius": 8,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 3,
+      "velocity": 35,
+      "lifeMin": 60,
+      "lifeMax": 70,
+      "color": 4288716960
+    },
+    "hitParticles": {
+      "count": 13,
+      "lifeMin": 14,
+      "lifeMax": 14,
+      "velocity": 850,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:136",
+      "name": "Grav. Missile",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:210",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [
+      "pointDefense"
+    ],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1100,
+      "turnRate": 4.072434921320102,
+      "shield": 0,
+      "armor": 12
+    }
+  },
+  "nova:137": {
+    "id": "nova:137",
+    "name": "EW. Missile",
+    "prefix": "nova",
+    "accuracy": 3,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 0.6666666666666666,
+    "fireSimultaneously": false,
+    "shotSpeed": 900,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4279792948,
+    "shotDuration": 130,
+    "primaryExplosion": "nova:129",
+    "secondaryExplosion": null,
+    "knockback": 95,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "guided",
+    "submunitions": [],
+    "proxRadius": 12,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 4,
+      "velocity": 30,
+      "lifeMin": 30,
+      "lifeMax": 80,
+      "color": 4286619776
+    },
+    "hitParticles": {
+      "count": 18,
+      "lifeMin": 11,
+      "lifeMax": 11,
+      "velocity": 900,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:137",
+      "name": "EW. Missile",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:212",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [
+      "pointDefense"
+    ],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 900,
+      "turnRate": 2.3271056693257726,
+      "shield": 0,
+      "armor": 16
+    }
+  },
+  "nova:138": {
+    "id": "nova:138",
+    "name": "Raven Rocket",
+    "prefix": "nova",
+    "accuracy": 1,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 2,
+    "fireSimultaneously": false,
+    "shotSpeed": 1500,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 120,
+    "primaryExplosion": "nova:128",
+    "secondaryExplosion": null,
+    "knockback": 45,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "rocket",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 1,
+      "velocity": 15,
+      "lifeMin": 30,
+      "lifeMax": 40,
+      "color": 4288716960
+    },
+    "hitParticles": {
+      "count": 9,
+      "lifeMin": 9,
+      "lifeMax": 9,
+      "velocity": 800,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:138",
+      "name": "Raven Rocket",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:214",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1500,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 55
+    }
+  },
+  "nova:139": {
+    "id": "nova:139",
+    "name": "Raven Turret",
+    "prefix": "nova",
+    "accuracy": 2,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 1.5,
+    "fireSimultaneously": false,
+    "shotSpeed": 1300,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 120,
+    "primaryExplosion": "nova:128",
+    "secondaryExplosion": null,
+    "knockback": 45,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "turret",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 1,
+      "velocity": 15,
+      "lifeMin": 30,
+      "lifeMax": 40,
+      "color": 4288716960
+    },
+    "hitParticles": {
+      "count": 9,
+      "lifeMin": 9,
+      "lifeMax": 9,
+      "velocity": 800,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:139",
+      "name": "Raven Turret",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:214",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1300,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 5
+    }
+  },
+  "nova:140": {
+    "id": "nova:140",
+    "name": "Stellar Grnd.",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.6,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 90,
+    "primaryExplosion": "nova:129",
+    "secondaryExplosion": null,
+    "knockback": 220,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "rocket",
+    "submunitions": [],
+    "proxRadius": 30,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 7,
+      "lifeMin": 9,
+      "lifeMax": 9,
+      "velocity": 850,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:140",
+      "name": "Stellar Grnd.",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:216",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 2
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 0,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:141": {
+    "id": "nova:141",
+    "name": "Polaron Cannon",
+    "prefix": "nova",
+    "accuracy": 2,
+    "ammoType": "unlimited",
+    "burstCount": 60,
+    "burstReload": 30,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "secondary",
+    "fireRate": null,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": true,
+    "ionizationColor": 4278190080,
+    "shotDuration": 1,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 10,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beam",
+    "beamAnimation": {
+      "beamColor": 4294931426,
+      "coronaColor": 4289637631,
+      "coronaFalloff": 2,
+      "length": 180,
+      "width": 3
+    }
+  },
+  "nova:142": {
+    "id": "nova:142",
+    "name": "Ion Cannon",
+    "prefix": "nova",
+    "accuracy": 4,
+    "ammoType": "unlimited",
+    "burstCount": 60,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "primary",
+    "fireRate": null,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": true,
+    "ionizationColor": 4281647871,
+    "shotDuration": 1,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 20,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beamTurret",
+    "beamAnimation": {
+      "beamColor": 4289658879,
+      "coronaColor": 4281647871,
+      "coronaFalloff": 8,
+      "length": 240,
+      "width": 2
+    }
+  },
+  "nova:143": {
+    "id": "nova:143",
+    "name": "Fusion Pulse Cannon",
+    "prefix": "nova",
+    "accuracy": 2,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "primary",
+    "fireRate": 1.5,
+    "fireSimultaneously": false,
+    "shotSpeed": 1200,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 50,
+    "primaryExplosion": "nova:134",
+    "secondaryExplosion": null,
+    "knockback": 40,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "frontQuadrant",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 1,
+      "velocity": 30,
+      "lifeMin": 18,
+      "lifeMax": 24,
+      "color": 4294931200
+    },
+    "hitParticles": {
+      "count": 12,
+      "lifeMin": 12,
+      "lifeMax": 12,
+      "velocity": 850,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:143",
+      "name": "Fusion Pulse Cannon",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:218",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1200,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:144": {
+    "id": "nova:144",
+    "name": "Fusion Pulse Turret",
+    "prefix": "nova",
+    "accuracy": 4,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "turret",
+    "fireGroup": "primary",
+    "fireRate": 2,
+    "fireSimultaneously": false,
+    "shotSpeed": 1100,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 55,
+    "primaryExplosion": "nova:134",
+    "secondaryExplosion": null,
+    "knockback": 40,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "turret",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 1,
+      "velocity": 30,
+      "lifeMin": 18,
+      "lifeMax": 24,
+      "color": 4294931200
+    },
+    "hitParticles": {
+      "count": 12,
+      "lifeMin": 12,
+      "lifeMax": 12,
+      "velocity": 850,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:144",
+      "name": "Fusion Pulse Turret",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:218",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1100,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:145": {
+    "id": "nova:145",
+    "name": "Wraithii",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "turret",
+    "fireGroup": "secondary",
+    "fireRate": 2,
+    "fireSimultaneously": false,
+    "shotSpeed": 1850,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 40,
+    "primaryExplosion": "nova:140",
+    "secondaryExplosion": null,
+    "knockback": 40,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "frontQuadrant",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 1,
+      "velocity": 30,
+      "lifeMin": 14,
+      "lifeMax": 20,
+      "color": 4288217241
+    },
+    "hitParticles": {
+      "count": 19,
+      "lifeMin": 14,
+      "lifeMax": 14,
+      "velocity": 610,
+      "color": 4294918143
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:145",
+      "name": "Wraithii",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:220",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1850,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:146": {
+    "id": "nova:146",
+    "name": "Pulse Laser",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 15,
+    "burstReload": 15,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "primary",
+    "fireRate": 2,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4294902015,
+    "shotDuration": 15,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 30,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beam",
+    "beamAnimation": {
+      "beamColor": 4294950911,
+      "coronaColor": 4294902015,
+      "coronaFalloff": 0,
+      "length": 400,
+      "width": 2
+    }
+  },
+  "nova:147": {
+    "id": "nova:147",
+    "name": "BioRelay Laser",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "primary",
+    "fireRate": null,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 1,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 5,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beam",
+    "beamAnimation": {
+      "beamColor": 4294901760,
+      "coronaColor": 4294901760,
+      "coronaFalloff": 0,
+      "length": 320,
+      "width": 1
+    }
+  },
+  "nova:148": {
+    "id": "nova:148",
+    "name": "Polaron Torp.",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 0.375,
+    "fireSimultaneously": false,
+    "shotSpeed": 1300,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4294902015,
+    "shotDuration": 250,
+    "primaryExplosion": "nova:141",
+    "secondaryExplosion": null,
+    "knockback": 200,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "guided",
+    "submunitions": [],
+    "proxRadius": 10,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 2,
+      "velocity": 50,
+      "lifeMin": 32,
+      "lifeMax": 42,
+      "color": 4294902015
+    },
+    "hitParticles": {
+      "count": 22,
+      "lifeMin": 18,
+      "lifeMax": 18,
+      "velocity": 500,
+      "color": 4294942719
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:148",
+      "name": "Polaron Torp.",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:222",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1300,
+      "turnRate": 3.490658503988659,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:149": {
+    "id": "nova:149",
+    "name": "Viper Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.5,
+    "fireSimultaneously": false,
+    "shotSpeed": 400,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:144"
+  },
+  "nova:150": {
+    "id": "nova:150",
+    "name": "Anaconda Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.42857142857142855,
+    "fireSimultaneously": false,
+    "shotSpeed": 350,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:145"
+  },
+  "nova:151": {
+    "id": "nova:151",
+    "name": "Firebird Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.47619047619047616,
+    "fireSimultaneously": true,
+    "shotSpeed": 350,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:155"
+  },
+  "nova:152": {
+    "id": "nova:152",
+    "name": "Phoenix Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.4,
+    "fireSimultaneously": true,
+    "shotSpeed": 300,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:156"
+  },
+  "nova:153": {
+    "id": "nova:153",
+    "name": "Thunderhead Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.24,
+    "fireSimultaneously": false,
+    "shotSpeed": 150,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:157"
+  },
+  "nova:154": {
+    "id": "nova:154",
+    "name": "Manta Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.6666666666666666,
+    "fireSimultaneously": false,
+    "shotSpeed": 500,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:161"
+  },
+  "nova:155": {
+    "id": "nova:155",
+    "name": "Hail Chaingun",
+    "prefix": "nova",
+    "accuracy": 3,
+    "ammoType": "unlimited",
+    "burstCount": 10,
+    "burstReload": 15,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "primary",
+    "fireRate": null,
+    "fireSimultaneously": false,
+    "shotSpeed": 1800,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": true,
+    "ionizationColor": 4278190080,
+    "shotDuration": 20,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 10,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "frontQuadrant",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 10,
+      "lifeMin": 22,
+      "lifeMax": 22,
+      "velocity": 250,
+      "color": 4288256409
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:155",
+      "name": "Hail Chaingun",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:224",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1800,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:156": {
+    "id": "nova:156",
+    "name": "Fixed Railgun (100mm)",
+    "prefix": "nova",
+    "accuracy": 1,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "primary",
+    "fireRate": 1.2,
+    "fireSimultaneously": false,
+    "shotSpeed": 2000,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 110,
+    "primaryExplosion": "nova:136",
+    "secondaryExplosion": null,
+    "knockback": 40,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "frontQuadrant",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 2,
+      "velocity": 25,
+      "lifeMin": 10,
+      "lifeMax": 24,
+      "color": 4279255295
+    },
+    "hitParticles": {
+      "count": 15,
+      "lifeMin": 16,
+      "lifeMax": 16,
+      "velocity": 250,
+      "color": 4278591590
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:156",
+      "name": "Fixed Railgun (100mm)",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:226",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 64
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 2000,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:157": {
+    "id": "nova:157",
+    "name": "Fixed Railgun (150mm)",
+    "prefix": "nova",
+    "accuracy": 2,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "primary",
+    "fireRate": 1.2,
+    "fireSimultaneously": false,
+    "shotSpeed": 1730,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 115,
+    "primaryExplosion": "nova:137",
+    "secondaryExplosion": null,
+    "knockback": 80,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "frontQuadrant",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 2,
+      "velocity": 24,
+      "lifeMin": 11,
+      "lifeMax": 25,
+      "color": 4279321087
+    },
+    "hitParticles": {
+      "count": 17,
+      "lifeMin": 19,
+      "lifeMax": 19,
+      "velocity": 250,
+      "color": 4278591590
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:157",
+      "name": "Fixed Railgun (150mm)",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:228",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 64
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1730,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:158": {
+    "id": "nova:158",
+    "name": "Fixed Railgun (200mm)",
+    "prefix": "nova",
+    "accuracy": 3,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "primary",
+    "fireRate": 0.6666666666666666,
+    "fireSimultaneously": false,
+    "shotSpeed": 1480,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 120,
+    "primaryExplosion": "nova:138",
+    "secondaryExplosion": null,
+    "knockback": 120,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "frontQuadrant",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 2,
+      "velocity": 23,
+      "lifeMin": 12,
+      "lifeMax": 26,
+      "color": 4279386879
+    },
+    "hitParticles": {
+      "count": 19,
+      "lifeMin": 19,
+      "lifeMax": 19,
+      "velocity": 270,
+      "color": 4278591590
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:158",
+      "name": "Fixed Railgun (200mm)",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:230",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 64
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1480,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:159": {
+    "id": "nova:159",
+    "name": "Turreted Railgun (100mm)",
+    "prefix": "nova",
+    "accuracy": 3,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "primary",
+    "fireRate": 0.8571428571428571,
+    "fireSimultaneously": false,
+    "shotSpeed": 1740,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 100,
+    "primaryExplosion": "nova:136",
+    "secondaryExplosion": null,
+    "knockback": 40,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "turret",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 2,
+      "velocity": 25,
+      "lifeMin": 10,
+      "lifeMax": 24,
+      "color": 4279255295
+    },
+    "hitParticles": {
+      "count": 15,
+      "lifeMin": 16,
+      "lifeMax": 16,
+      "velocity": 250,
+      "color": 4278591590
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:159",
+      "name": "Turreted Railgun (100mm)",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:226",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 64
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1740,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:160": {
+    "id": "nova:160",
+    "name": "EMP Torp.",
+    "prefix": "nova",
+    "accuracy": 3,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 0.3,
+    "fireSimultaneously": false,
+    "shotSpeed": 750,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4292149247,
+    "shotDuration": 180,
+    "primaryExplosion": "nova:135",
+    "secondaryExplosion": null,
+    "knockback": 250,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "guided",
+    "submunitions": [],
+    "proxRadius": 5,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 45,
+      "lifeMin": 45,
+      "lifeMax": 45,
+      "velocity": 850,
+      "color": 4292149247
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:160",
+      "name": "EMP Torp.",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:232",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [
+      "pointDefense"
+    ],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 750,
+      "turnRate": 1.1635528346628863,
+      "shield": 0,
+      "armor": 25
+    }
+  },
+  "nova:161": {
+    "id": "nova:161",
+    "name": "Storm Chaingun",
+    "prefix": "nova",
+    "accuracy": 20,
+    "ammoType": "unlimited",
+    "burstCount": 3,
+    "burstReload": 10,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "pointDefense",
+    "fireRate": 7.5,
+    "fireSimultaneously": false,
+    "shotSpeed": 1200,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": true,
+    "ionizationColor": 4278190080,
+    "shotDuration": 15,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 10,
+    "damageType": "pointDefense",
+    "type": "ProjectileWeaponData",
+    "guidance": "pointDefense",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 10,
+      "lifeMin": 22,
+      "lifeMax": 22,
+      "velocity": 250,
+      "color": 4288256409
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:161",
+      "name": "Storm Chaingun",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:224",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1200,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:162": {
+    "id": "nova:162",
+    "name": "Fusion Pulse Battery",
+    "prefix": "nova",
+    "accuracy": 5,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "turret",
+    "fireGroup": "primary",
+    "fireRate": 6,
+    "fireSimultaneously": false,
+    "shotSpeed": 900,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 55,
+    "primaryExplosion": "nova:134",
+    "secondaryExplosion": null,
+    "knockback": 40,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "turret",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 1,
+      "velocity": 30,
+      "lifeMin": 18,
+      "lifeMax": 24,
+      "color": 4294931200
+    },
+    "hitParticles": {
+      "count": 12,
+      "lifeMin": 12,
+      "lifeMax": 12,
+      "velocity": 850,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:162",
+      "name": "Fusion Pulse Battery",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:218",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 900,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:163": {
+    "id": "nova:163",
+    "name": "Nanites",
+    "prefix": "nova",
+    "accuracy": 180,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "primary",
+    "fireRate": 1.5,
+    "fireSimultaneously": false,
+    "shotSpeed": 1250,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4284243036,
+    "shotDuration": 15,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 0,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "turret",
+    "submunitions": [
+      {
+        "count": 1,
+        "fireAtNearest": true,
+        "id": "nova:229",
+        "limit": 0,
+        "subIfExpire": true,
+        "theta": 0
+      }
+    ],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "velocity": 0,
+      "color": 4278190080
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:163",
+      "name": "Nanites",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:264",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1250,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:164": {
+    "id": "nova:164",
+    "name": "Solar Lance",
+    "prefix": "nova",
+    "accuracy": 5,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "primary",
+    "fireRate": null,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 1,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 10,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beam",
+    "beamAnimation": {
+      "beamColor": 4294967040,
+      "coronaColor": 4294967040,
+      "coronaFalloff": 0,
+      "length": 300,
+      "width": 3
+    }
+  },
+  "nova:165": {
+    "id": "nova:165",
+    "name": "Wraith Graviton Beam (Adult)",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 1,
+    "burstReload": 45,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "primary",
+    "fireRate": 2,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 20,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 10,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beam",
+    "beamAnimation": {
+      "beamColor": 4294967295,
+      "coronaColor": 4279782273,
+      "coronaFalloff": 0,
+      "length": 350,
+      "width": 3
+    }
+  },
+  "nova:166": {
+    "id": "nova:166",
+    "name": "Thunderhead Lance",
+    "prefix": "nova",
+    "accuracy": 2,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "primary",
+    "fireRate": 3,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 10,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 50,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beam",
+    "beamAnimation": {
+      "beamColor": 4278249826,
+      "coronaColor": 4278249826,
+      "coronaFalloff": 0,
+      "length": 100,
+      "width": 2
+    }
+  },
+  "nova:167": {
+    "id": "nova:167",
+    "name": "Wraith Graviton Beam (Youth)",
+    "prefix": "nova",
+    "accuracy": 1,
+    "ammoType": "unlimited",
+    "burstCount": 1,
+    "burstReload": 45,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "primary",
+    "fireRate": 1.5,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 15,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 8,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beam",
+    "beamAnimation": {
+      "beamColor": 4280456191,
+      "coronaColor": 4280696575,
+      "coronaFalloff": 0,
+      "length": 250,
+      "width": 2
+    }
+  },
+  "nova:168": {
+    "id": "nova:168",
+    "name": "Wraith Graviton Beam (Child)",
+    "prefix": "nova",
+    "accuracy": 2,
+    "ammoType": "unlimited",
+    "burstCount": 1,
+    "burstReload": 45,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "primary",
+    "fireRate": 3,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 25,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 4,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beam",
+    "beamAnimation": {
+      "beamColor": 4294941392,
+      "coronaColor": 4291573456,
+      "coronaFalloff": 0,
+      "length": 150,
+      "width": 1
+    }
+  },
+  "nova:169": {
+    "id": "nova:169",
+    "name": "Pirate Viper Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 1,
+    "fireSimultaneously": false,
+    "shotSpeed": 250,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:166"
+  },
+  "nova:170": {
+    "id": "nova:170",
+    "name": "Turreted Pulse Biorelay Laser",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "primary",
+    "fireRate": null,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 1,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 10,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beamTurret",
+    "beamAnimation": {
+      "beamColor": 4294901760,
+      "coronaColor": 4294901760,
+      "coronaFalloff": 0,
+      "length": 320,
+      "width": 1
+    }
+  },
+  "nova:171": {
+    "id": "nova:171",
+    "name": "Flower of Spring",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "secondary",
+    "fireRate": null,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 1,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": -5,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beam",
+    "beamAnimation": {
+      "beamColor": 4294961688,
+      "coronaColor": 4289963520,
+      "coronaFalloff": 12,
+      "length": 260,
+      "width": 1
+    }
+  },
+  "nova:172": {
+    "id": "nova:172",
+    "name": "Summer Bloom",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "secondary",
+    "fireRate": null,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 1,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 5,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beamTurret",
+    "beamAnimation": {
+      "beamColor": 4293269887,
+      "coronaColor": 4288217164,
+      "coronaFalloff": 8,
+      "length": 300,
+      "width": 2
+    }
+  },
+  "nova:173": {
+    "id": "nova:173",
+    "name": "Autumn Petal",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "secondary",
+    "fireRate": null,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4290641916,
+    "shotDuration": 1,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 10,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beamTurret",
+    "beamAnimation": {
+      "beamColor": 4294967295,
+      "coronaColor": 4290641916,
+      "coronaFalloff": 0,
+      "length": 340,
+      "width": 3
+    }
+  },
+  "nova:174": {
+    "id": "nova:174",
+    "name": "Winter Tempest",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "secondary",
+    "fireRate": null,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278714359,
+    "shotDuration": 1,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 15,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beam",
+    "beamAnimation": {
+      "beamColor": 4284332746,
+      "coronaColor": 4278714359,
+      "coronaFalloff": 0,
+      "length": 380,
+      "width": 2
+    }
+  },
+  "nova:175": {
+    "id": "nova:175",
+    "name": "Create Dart",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.75,
+    "fireSimultaneously": false,
+    "shotSpeed": 500,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:173"
+  },
+  "nova:176": {
+    "id": "nova:176",
+    "name": "Pirate Thunderhead Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.24,
+    "fireSimultaneously": false,
+    "shotSpeed": 150,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:275"
+  },
+  "nova:177": {
+    "id": "nova:177",
+    "name": "Viper Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.5,
+    "fireSimultaneously": false,
+    "shotSpeed": 400,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:223"
+  },
+  "nova:178": {
+    "id": "nova:178",
+    "name": "Anaconda Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.42857142857142855,
+    "fireSimultaneously": false,
+    "shotSpeed": 350,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:225"
+  },
+  "nova:179": {
+    "id": "nova:179",
+    "name": "Viper Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.5,
+    "fireSimultaneously": false,
+    "shotSpeed": 400,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:224"
+  },
+  "nova:180": {
+    "id": "nova:180",
+    "name": "Anaconda Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.42857142857142855,
+    "fireSimultaneously": false,
+    "shotSpeed": 350,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:226"
+  },
+  "nova:181": {
+    "id": "nova:181",
+    "name": "Mining Blaster",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "secondary",
+    "fireRate": 1.5,
+    "fireSimultaneously": false,
+    "shotSpeed": 1000,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 12,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 5,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "unguided",
+    "submunitions": [],
+    "proxRadius": 5,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 9,
+      "lifeMin": 9,
+      "lifeMax": 9,
+      "velocity": 600,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:181",
+      "name": "Mining Blaster",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:244",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1000,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:182": {
+    "id": "nova:182",
+    "name": "Polaron Multi-Torp.",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 0.375,
+    "fireSimultaneously": false,
+    "shotSpeed": 1300,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4294902015,
+    "shotDuration": 20,
+    "primaryExplosion": "nova:141",
+    "secondaryExplosion": null,
+    "knockback": 200,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "guided",
+    "submunitions": [
+      {
+        "count": 5,
+        "fireAtNearest": true,
+        "id": "nova:148",
+        "limit": 0,
+        "subIfExpire": true,
+        "theta": 45
+      }
+    ],
+    "proxRadius": 10,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 2,
+      "velocity": 50,
+      "lifeMin": 32,
+      "lifeMax": 42,
+      "color": 4294902015
+    },
+    "hitParticles": {
+      "count": 22,
+      "lifeMin": 18,
+      "lifeMax": 18,
+      "velocity": 500,
+      "color": 4294942719
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:182",
+      "name": "Polaron Multi-Torp.",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:222",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1300,
+      "turnRate": 3.490658503988659,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:183": {
+    "id": "nova:183",
+    "name": "Wraithii",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "secondary",
+    "fireRate": 2,
+    "fireSimultaneously": false,
+    "shotSpeed": 1850,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 40,
+    "primaryExplosion": "nova:140",
+    "secondaryExplosion": null,
+    "knockback": 40,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "frontQuadrant",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 1,
+      "velocity": 30,
+      "lifeMin": 14,
+      "lifeMax": 20,
+      "color": 4288217241
+    },
+    "hitParticles": {
+      "count": 19,
+      "lifeMin": 14,
+      "lifeMax": 14,
+      "velocity": 610,
+      "color": 4294918143
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:183",
+      "name": "Wraithii",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:220",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1850,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:184": {
+    "id": "nova:184",
+    "name": "Polaron Torp.",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 0.375,
+    "fireSimultaneously": false,
+    "shotSpeed": 1300,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4294902015,
+    "shotDuration": 300,
+    "primaryExplosion": "nova:141",
+    "secondaryExplosion": null,
+    "knockback": 200,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "guided",
+    "submunitions": [],
+    "proxRadius": 10,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 2,
+      "velocity": 50,
+      "lifeMin": 32,
+      "lifeMax": 42,
+      "color": 4294902015
+    },
+    "hitParticles": {
+      "count": 22,
+      "lifeMin": 18,
+      "lifeMax": 18,
+      "velocity": 500,
+      "color": 4294942719
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:184",
+      "name": "Polaron Torp.",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:222",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1300,
+      "turnRate": 3.490658503988659,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:185": {
+    "id": "nova:185",
+    "name": "Polaron Multi-Torp.",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 0.375,
+    "fireSimultaneously": false,
+    "shotSpeed": 1300,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4294902015,
+    "shotDuration": 20,
+    "primaryExplosion": "nova:141",
+    "secondaryExplosion": null,
+    "knockback": 200,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "guided",
+    "submunitions": [
+      {
+        "count": 5,
+        "fireAtNearest": true,
+        "id": "nova:148",
+        "limit": 0,
+        "subIfExpire": true,
+        "theta": 45
+      }
+    ],
+    "proxRadius": 10,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 2,
+      "velocity": 50,
+      "lifeMin": 32,
+      "lifeMax": 42,
+      "color": 4294902015
+    },
+    "hitParticles": {
+      "count": 22,
+      "lifeMin": 18,
+      "lifeMax": 18,
+      "velocity": 500,
+      "color": 4294942719
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:185",
+      "name": "Polaron Multi-Torp.",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:222",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1300,
+      "turnRate": 3.490658503988659,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:186": {
+    "id": "nova:186",
+    "name": "Firebird Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.4838709677419355,
+    "fireSimultaneously": true,
+    "shotSpeed": 350,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:303"
+  },
+  "nova:187": {
+    "id": "nova:187",
+    "name": "Firebird Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.4838709677419355,
+    "fireSimultaneously": true,
+    "shotSpeed": 350,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:304"
+  },
+  "nova:188": {
+    "id": "nova:188",
+    "name": "Phoenix Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.4,
+    "fireSimultaneously": true,
+    "shotSpeed": 300,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:305"
+  },
+  "nova:189": {
+    "id": "nova:189",
+    "name": "Phoenix Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.4,
+    "fireSimultaneously": true,
+    "shotSpeed": 300,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:306"
+  },
+  "nova:190": {
+    "id": "nova:190",
+    "name": "Pirate Viper Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 1,
+    "fireSimultaneously": false,
+    "shotSpeed": 250,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:333"
+  },
+  "nova:191": {
+    "id": "nova:191",
+    "name": "Pirate Viper Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 1,
+    "fireSimultaneously": false,
+    "shotSpeed": 250,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:334"
+  },
+  "nova:192": {
+    "id": "nova:192",
+    "name": "Rebel Viper Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.5454545454545454,
+    "fireSimultaneously": false,
+    "shotSpeed": 400,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:177"
+  },
+  "nova:193": {
+    "id": "nova:193",
+    "name": "Rebel Viper Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.5454545454545454,
+    "fireSimultaneously": false,
+    "shotSpeed": 400,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:337"
+  },
+  "nova:194": {
+    "id": "nova:194",
+    "name": "Rebel Viper Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.5454545454545454,
+    "fireSimultaneously": false,
+    "shotSpeed": 400,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:338"
+  },
+  "nova:195": {
+    "id": "nova:195",
+    "name": "Rebel Viper Bay",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "secondary",
+    "fireRate": 0.5454545454545454,
+    "fireSimultaneously": false,
+    "shotSpeed": 400,
+    "useFiringAnimation": false,
+    "type": "BayWeaponData",
+    "shipID": "nova:339"
+  },
+  "nova:196": {
+    "id": "nova:196",
+    "name": "Enormous Blaster Turret",
+    "prefix": "nova",
+    "accuracy": 7,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "turret",
+    "fireGroup": "primary",
+    "fireRate": 0.5,
+    "fireSimultaneously": false,
+    "shotSpeed": 1150,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 60,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 200,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "turret",
+    "submunitions": [],
+    "proxRadius": 5,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 40,
+      "lifeMin": 20,
+      "lifeMax": 20,
+      "velocity": 1000,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:196",
+      "name": "Enormous Blaster Turret",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:236",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1150,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:197": {
+    "id": "nova:197",
+    "name": "Turreted Railgun (400mm)",
+    "prefix": "nova",
+    "accuracy": 8,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "primary",
+    "fireRate": 0.3,
+    "fireSimultaneously": false,
+    "shotSpeed": 1300,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 180,
+    "primaryExplosion": "nova:138",
+    "secondaryExplosion": null,
+    "knockback": 300,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "turret",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 2,
+      "velocity": 23,
+      "lifeMin": 12,
+      "lifeMax": 26,
+      "color": 4279386879
+    },
+    "hitParticles": {
+      "count": 80,
+      "lifeMin": 80,
+      "lifeMax": 80,
+      "velocity": 1000,
+      "color": 4278591590
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:197",
+      "name": "Turreted Railgun (400mm)",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:234",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 64
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1300,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:198": {
+    "id": "nova:198",
+    "name": "Enormous Ion Turret",
+    "prefix": "nova",
+    "accuracy": 5,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "turret",
+    "fireGroup": "primary",
+    "fireRate": 0.3333333333333333,
+    "fireSimultaneously": false,
+    "shotSpeed": 1500,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4290476800,
+    "shotDuration": 90,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 200,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "turret",
+    "submunitions": [],
+    "proxRadius": 5,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 50,
+      "lifeMin": 50,
+      "lifeMax": 50,
+      "velocity": 2500,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:198",
+      "name": "Enormous Ion Turret",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:238",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1500,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:199": {
+    "id": "nova:199",
+    "name": "Polaron Massive Torp.",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 0.1875,
+    "fireSimultaneously": false,
+    "shotSpeed": 1300,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 20,
+    "primaryExplosion": "nova:141",
+    "secondaryExplosion": null,
+    "knockback": 800,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "guided",
+    "submunitions": [],
+    "proxRadius": 10,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 2,
+      "velocity": 50,
+      "lifeMin": 32,
+      "lifeMax": 42,
+      "color": 4294902015
+    },
+    "hitParticles": {
+      "count": 100,
+      "lifeMin": 80,
+      "lifeMax": 80,
+      "velocity": 2000,
+      "color": 4294918143
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:199",
+      "name": "Polaron Massive Torp.",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:240",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1300,
+      "turnRate": 3.490658503988659,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:200": {
+    "id": "nova:200",
+    "name": "Wraithii",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "secondary",
+    "fireRate": 2,
+    "fireSimultaneously": false,
+    "shotSpeed": 1850,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 40,
+    "primaryExplosion": "nova:140",
+    "secondaryExplosion": null,
+    "knockback": 40,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "frontQuadrant",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 1,
+      "velocity": 30,
+      "lifeMin": 14,
+      "lifeMax": 20,
+      "color": 4288217241
+    },
+    "hitParticles": {
+      "count": 19,
+      "lifeMin": 14,
+      "lifeMax": 14,
+      "velocity": 610,
+      "color": 4294918143
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:200",
+      "name": "Wraithii",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:220",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1850,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:201": {
+    "id": "nova:201",
+    "name": "Ion Cannon;non-weapon glow",
+    "prefix": "nova",
+    "accuracy": 4,
+    "ammoType": "unlimited",
+    "burstCount": 60,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "primary",
+    "fireRate": null,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": true,
+    "ionizationColor": 4281647871,
+    "shotDuration": 1,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 20,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beamTurret",
+    "beamAnimation": {
+      "beamColor": 4289658879,
+      "coronaColor": 4281647871,
+      "coronaFalloff": 8,
+      "length": 240,
+      "width": 2
+    }
+  },
+  "nova:219": {
+    "id": "nova:219",
+    "name": "Wraithii",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "secondary",
+    "fireRate": 2,
+    "fireSimultaneously": false,
+    "shotSpeed": 1850,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 40,
+    "primaryExplosion": "nova:140",
+    "secondaryExplosion": null,
+    "knockback": 40,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "frontQuadrant",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 1,
+      "velocity": 30,
+      "lifeMin": 14,
+      "lifeMax": 20,
+      "color": 4288217241
+    },
+    "hitParticles": {
+      "count": 19,
+      "lifeMin": 14,
+      "lifeMax": 14,
+      "velocity": 610,
+      "color": 4294918143
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:219",
+      "name": "Wraithii",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:220",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1850,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:229": {
+    "id": "nova:229",
+    "name": "Nanites",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "center",
+    "fireGroup": "primary",
+    "fireRate": 1.2,
+    "fireSimultaneously": false,
+    "shotSpeed": 1000,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4284243036,
+    "shotDuration": 225,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 0,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "guided",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "velocity": 0,
+      "color": 4278190080
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:229",
+      "name": "Nanites",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:264",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [
+      "pointDefense"
+    ],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1000,
+      "turnRate": 3.490658503988659,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:230": {
+    "id": "nova:230",
+    "name": "Hellhound Missile",
+    "prefix": "nova",
+    "accuracy": 1,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 0.8571428571428571,
+    "fireSimultaneously": false,
+    "shotSpeed": 1000,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4294594073,
+    "shotDuration": 160,
+    "primaryExplosion": "nova:142",
+    "secondaryExplosion": "nova:128",
+    "knockback": 100,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "guided",
+    "submunitions": [],
+    "proxRadius": 25,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 3,
+      "velocity": 35,
+      "lifeMin": 60,
+      "lifeMax": 70,
+      "color": 4290289546
+    },
+    "hitParticles": {
+      "count": 45,
+      "lifeMin": 45,
+      "lifeMax": 45,
+      "velocity": 850,
+      "color": 4294594073
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:230",
+      "name": "Hellhound Missile",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:242",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [
+      "pointDefense"
+    ],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1000,
+      "turnRate": 3.1997702953229377,
+      "shield": 0,
+      "armor": 12
+    }
+  },
+  "nova:231": {
+    "id": "nova:231",
+    "name": "Light Cannon",
+    "prefix": "nova",
+    "accuracy": 4,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "gun",
+    "fireGroup": "primary",
+    "fireRate": 4.285714285714286,
+    "fireSimultaneously": false,
+    "shotSpeed": 2000,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 15,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 8,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "unguided",
+    "submunitions": [],
+    "proxRadius": 4,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 0,
+      "velocity": 0,
+      "lifeMin": 0,
+      "lifeMax": 0,
+      "color": 4278190080
+    },
+    "hitParticles": {
+      "count": 9,
+      "lifeMin": 9,
+      "lifeMax": 9,
+      "velocity": 750,
+      "color": 4279792948
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:231",
+      "name": "Light Cannon",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:244",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 2000,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:232": {
+    "id": "nova:232",
+    "name": "TripHammer",
+    "prefix": "nova",
+    "accuracy": 0,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "beam",
+    "fireGroup": "primary",
+    "fireRate": 1.5,
+    "fireSimultaneously": false,
+    "shotSpeed": 0,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4292739037,
+    "shotDuration": 2,
+    "primaryExplosion": null,
+    "secondaryExplosion": null,
+    "knockback": 10,
+    "damageType": "normal",
+    "type": "BeamWeaponData",
+    "guidance": "beam",
+    "beamAnimation": {
+      "beamColor": 4294967295,
+      "coronaColor": 4290641916,
+      "coronaFalloff": 0,
+      "length": 240,
+      "width": 2
+    }
+  },
+  "nova:233": {
+    "id": "nova:233",
+    "name": "Fusion Pulse Turret",
+    "prefix": "nova",
+    "accuracy": 5,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "turret",
+    "fireGroup": "primary",
+    "fireRate": 1.3636363636363635,
+    "fireSimultaneously": false,
+    "shotSpeed": 900,
+    "useFiringAnimation": true,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 55,
+    "primaryExplosion": "nova:134",
+    "secondaryExplosion": null,
+    "knockback": 40,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "turret",
+    "submunitions": [],
+    "proxRadius": 0,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 1,
+      "velocity": 30,
+      "lifeMin": 18,
+      "lifeMax": 24,
+      "color": 4294931200
+    },
+    "hitParticles": {
+      "count": 12,
+      "lifeMin": 12,
+      "lifeMax": 12,
+      "velocity": 850,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:233",
+      "name": "Fusion Pulse Turret",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:218",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 900,
+      "turnRate": 0,
+      "shield": 0,
+      "armor": 0
+    }
+  },
+  "nova:234": {
+    "id": "nova:234",
+    "name": "Radar Missile",
+    "prefix": "nova",
+    "accuracy": 1,
+    "ammoType": "unlimited",
+    "burstCount": 0,
+    "burstReload": 0,
+    "destroyShipWhenFiring": false,
+    "exitType": "guided",
+    "fireGroup": "secondary",
+    "fireRate": 1,
+    "fireSimultaneously": false,
+    "shotSpeed": 1100,
+    "useFiringAnimation": false,
+    "oneAmmoPerBurst": false,
+    "ionizationColor": 4278190080,
+    "shotDuration": 110,
+    "primaryExplosion": "nova:128",
+    "secondaryExplosion": null,
+    "knockback": 650,
+    "damageType": "normal",
+    "type": "ProjectileWeaponData",
+    "guidance": "guided",
+    "submunitions": [],
+    "proxRadius": 4,
+    "proxSafety": 0,
+    "trailParticles": {
+      "count": 2,
+      "velocity": 30,
+      "lifeMin": 50,
+      "lifeMax": 60,
+      "color": 4288716928
+    },
+    "hitParticles": {
+      "count": 12,
+      "lifeMin": 13,
+      "lifeMax": 13,
+      "velocity": 850,
+      "color": 4294950656
+    },
+    "animation": {
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:234",
+      "name": "Radar Missile",
+      "prefix": "nova",
+      "images": {
+        "baseImage": {
+          "id": "nova:208",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 36
+            }
+          }
+        }
+      }
+    },
+    "vulnerableTo": [
+      "pointDefense"
+    ],
+    "physics": {
+      "acceleration": 0,
+      "armorRecharge": 0,
+      "deionize": 0,
+      "energy": 0,
+      "energyRecharge": 0,
+      "ionization": 0,
+      "mass": 0,
+      "shieldRecharge": 0,
+      "speed": 1100,
+      "turnRate": 3.490658503988659,
+      "shield": 0,
+      "armor": 8
+    }
+  }
+}

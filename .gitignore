@@ -1,0 +1,23 @@
+# Local dependencies and nested repository histories.
+node_modules/
+**/node_modules/
+**/.git/
+__pycache__/
+*.pyc
+
+# Graphify cache is local and stores absolute workspace paths.
+graphify-out/
+
+# Large extracted media; keep local until asset packaging is decided.
+converted-plugin/images/
+converted-plugin/sounds/
+
+# EVN installation copies and regenerated extraction intermediates.
+parsed-data/burger-resources.json
+parsed-data/media-resources.json
+parsed-data/nova-source/
+parsed-data/novaparse-source/
+
+# Large third-party reference documents and exported EVN media.
+vendor/burgerlib/docs/manuals/
+vendor/evntoes/novaExports/

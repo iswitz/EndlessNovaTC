@@ -1,0 +1,2426 @@
+# EVN düde and flët records converted to Endless Sky fleets.
+# düde probabilities become variant weights; flët escort ranges become mean fixed counts.
+
+fleet "EVN Dude 274 Big Rebels"
+	government "Rebellion"
+	personality heroic
+	variant 14
+		"Mod Starbridge"
+	variant 12
+		"Rebel Destroyer"
+	variant 12
+		"Rebel IDA Frigate"
+	variant 8
+		"Rebel Dragon"
+
+fleet "EVN Dude 273 RAGE Gunboat"
+	government "Bureau"
+	personality nemesis
+	variant 100
+		"RAGE Gunboat"
+
+fleet "EVN Dude 272 Small Polaris"
+	government "Nil'kemorya"
+	personality nemesis
+	variant 50
+		"Striker;Cloaking+fast jump"
+	variant 30
+		"Dragon;Cloaking+fast jump"
+	variant 20
+		"Arachnid;Cloaking+fast jump"
+
+fleet "EVN Dude 269 RAGE Gunboat"
+	government "Bureau"
+	personality nemesis
+	variant 100
+		"RAGE Gunboat"
+
+fleet "EVN Dude 268 Pirate Carrier"
+	government "Associated Guild of Free Traders"
+	personality timid
+	variant 100
+		"Pirate Carrier"
+
+fleet "EVN Dude 267 Duellists"
+	government "Duellist"
+	personality nemesis
+	variant 50
+		"Abomination"
+	variant 30
+		"Aurora Cruiser"
+
+fleet "EVN Dude 266 Association"
+	government "Association of Free Traders"
+	personality heroic
+	variant 100
+		"Pirate Valkyrie"
+
+fleet "EVN Dude 263 Small Auroran Interceptor"
+	government "Auroran Empire"
+	personality nemesis
+	variant 40
+		"Abomination"
+	variant 30
+		"Firebird"
+	variant 14
+		"Phoenix"
+	variant 10
+		"Aurora Carrier"
+
+fleet "EVN Dude 262 Big Rebels"
+	government "Rebellion"
+	personality heroic
+	variant 100
+		"Rebel Dragon"
+
+fleet "EVN Dude 261 Pirates - Advanced dude"
+	government "Pirate"
+	personality nemesis
+	variant 25
+		"Pirate Viper"
+	variant 15
+		"Pirate Argosy"
+	variant 15
+		"Pirate Enterprise"
+	variant 15
+		"Pirate Starbridge"
+	variant 15
+		"Pirate Valkyrie"
+	variant 15
+		"Valkyrie"
+
+fleet "EVN Dude 260 Marauders - Advanced dude"
+	government "Marauder"
+	personality nemesis
+	variant 25
+		"Pirate Viper"
+	variant 15
+		"Pirate Argosy"
+	variant 15
+		"Pirate Enterprise"
+	variant 15
+		"Pirate Starbridge"
+	variant 15
+		"Pirate Valkyrie"
+	variant 15
+		"Valkyrie"
+
+fleet "EVN Dude 257 Manticore"
+	government "Pirate"
+	personality heroic
+	variant 100
+		"Manticore"
+
+fleet "EVN Dude 256 Fed Patrol Boat"
+	government "Federation"
+	personality heroic
+	variant 100
+		"Fed Patrol Boat"
+
+fleet "EVN Dude 255 Fed Destroyer"
+	government "Federation"
+	personality heroic
+	variant 100
+		"Fed Destroyer"
+
+fleet "EVN Dude 254 Auroran Cruiser"
+	government "Auroran Empire"
+	personality nemesis
+	variant 100
+		"Aurora Cruiser"
+
+fleet "EVN Dude 252 Pirate Valkyrie"
+	government "Pirate"
+	personality heroic
+	variant 100
+		"Pirate Valkyrie"
+
+fleet "EVN Dude 249 Civilian shuttle craft"
+	government "Civvies"
+	personality timid
+	variant 50
+		"Cargo Drone;economy at work"
+	variant 25
+		"Heavy Shuttle;economy at work"
+	variant 25
+		"Shuttle;economy at work"
+
+fleet "EVN Dude 248 Sigma shuttle craft"
+	government "Sigma Shipyards"
+	personality timid
+	variant 50
+		"Cargo Drone;economy at work"
+	variant 25
+		"Heavy Shuttle;economy at work"
+	variant 25
+		"Shuttle;economy at work"
+
+fleet "EVN Dude 245 Leviathan"
+	government "Federation;hates Temmin Shard"
+	personality timid
+	variant 100
+		"Leviathan"
+
+fleet "EVN Dude 243 Disabled Auroran Cruiser"
+	government "Derelicts"
+	personality timid
+	variant 100
+		"Aurora Cruiser"
+
+fleet "EVN Dude 241 Large Heraan War Ships"
+	government "Family Heraan"
+	personality heroic
+	variant 100
+		"Aurora Carrier"
+
+fleet "EVN Dude 239 Duellists"
+	government "Duellist"
+	personality nemesis
+	variant 100
+		"Abomination"
+
+fleet "EVN Dude 238 Tutorial Derelict"
+	government "Derelicts"
+	personality timid
+	variant 100
+		"Pirate Viper"
+
+fleet "EVN Dude 236 Small Auroran Interceptor"
+	government "Auroran Empire"
+	personality nemesis
+	variant 40
+		"Abomination"
+	variant 30
+		"Firebird"
+	variant 14
+		"Phoenix"
+	variant 10
+		"Aurora Carrier"
+
+fleet "EVN Dude 234 Pirate"
+	government "Pirate"
+	personality heroic
+	variant 33
+		"Pirate Starbridge"
+	variant 30
+		"Pirate Valkyrie"
+	variant 2
+		"Pirate Thunderhead"
+
+fleet "EVN Dude 226 Krane"
+	government "Bureau"
+	personality uninterested
+	variant 100
+		"Starbridge"
+
+fleet "EVN Dude 218 Slyvilian Defence Scum"
+	government "Bureau"
+	personality nemesis
+	variant 39
+		"Valkyrie"
+	variant 29
+		"Starbridge"
+	variant 5
+		"IDA Frigate"
+
+fleet "EVN Dude 225 Merrick'Ahh"
+	government "Family Moash"
+	personality heroic
+	variant 100
+		"Aurora Carrier"
+
+fleet "EVN Dude 233 Rogue Pirates (mixed)"
+	government "Marauder"
+	personality nemesis
+	variant 39
+		"Viper"
+	variant 21
+		"Pirate Viper"
+	variant 9
+		"Pegasus;rogue"
+	variant 9
+		"Pegasus;Second-Hand - poor"
+	variant 9
+		"Terrapin"
+
+fleet "EVN Dude 237 Large Auroran War Ships"
+	government "Auroran Empire"
+	personality heroic
+	variant 44
+		"Aurora Cruiser"
+	variant 25
+		"Aurora Carrier"
+	variant 10
+		"Abomination"
+
+fleet "EVN Dude 253 Pirate Starbridge"
+	government "Pirate"
+	personality heroic
+	variant 100
+		"Pirate Starbridge"
+
+fleet "EVN Dude 128 Lone Federation Ship"
+	government "Federation"
+	personality nemesis
+	variant 20
+		"Fed Patrol Boat"
+	variant 20
+		"RAGE Gunboat"
+	variant 16
+		"Fed Viper"
+	variant 11
+		"Fed Anaconda"
+	variant 10
+		"Fed Scout Ship"
+
+fleet "EVN Dude 209 Desperation..."
+	government "Pirate"
+	personality heroic
+	variant 100
+		"Manticore"
+
+fleet "EVN Dude 213 Starbridge"
+	government "Civvies"
+	personality timid
+	variant 65
+		"Starbridge"
+
+fleet "EVN Dude 228 Association"
+	government "Association of Free Traders"
+	personality heroic
+	variant 22
+		"Pirate Enterprise"
+	variant 17
+		"Pirate Argosy"
+	variant 13
+		"Manticore"
+	variant 9
+		"Pirate Carrier"
+
+fleet "EVN Dude 242 Large Dani War Ships"
+	government "Family Dani"
+	personality heroic
+	variant 45
+		"Abomination"
+	variant 40
+		"Aurora Cruiser"
+	variant 15
+		"Aurora Carrier"
+
+fleet "EVN Dude 130 Lone Big Federation Ship"
+	government "Federation"
+	personality heroic
+	variant 86
+		"Fed Destroyer"
+	variant 11
+		"Fed Carrier"
+
+fleet "EVN Dude 207 Small Houseless"
+	government "Houseless Warriors"
+	personality heroic
+	variant 20
+		"Firebird"
+	variant 20
+		"Phoenix"
+	variant 15
+		"Abomination"
+	variant 5
+		"Argosy"
+
+fleet "EVN Dude 217 Trader"
+	government "Bureau"
+	personality nemesis
+	variant 100
+		"IDA Frigate"
+
+fleet "EVN Dude 227 Association - disabled"
+	government "Association of Free Traders"
+	personality heroic
+	variant 22
+		"Pirate Enterprise"
+	variant 17
+		"Pirate Argosy"
+	variant 13
+		"Manticore"
+	variant 9
+		"Pirate Carrier"
+
+fleet "EVN Dude 235 Auroran"
+	government "Auroran Empire"
+	personality heroic
+	variant 50
+		"Abomination"
+	variant 15
+		"Firebird"
+	variant 14
+		"Aurora Cruiser"
+	variant 3
+		"Aurora Carrier"
+
+fleet "EVN Dude 265 Pirates"
+	government "Pirate"
+	personality heroic
+	variant 22
+		"Pirate Enterprise"
+	variant 17
+		"Manticore"
+	variant 17
+		"Pirate Argosy"
+	variant 5
+		"Pirate Carrier"
+
+fleet "EVN Dude 131 Auroran"
+	government "Federation"
+	personality nemesis
+	variant 50
+		"Abomination"
+	variant 15
+		"Firebird"
+	variant 14
+		"Aurora Cruiser"
+	variant 3
+		"Aurora Carrier"
+
+fleet "EVN Dude 202 Pirate"
+	government "Associated Guild of Free Traders"
+	personality heroic
+	variant 20
+		"Pirate Starbridge"
+	variant 18
+		"Pirate Valkyrie"
+	variant 14
+		"Manticore"
+	variant 13
+		"Pirate Viper"
+
+fleet "EVN Dude 208 Michaleen's Honourguard"
+	government "Wild Geese"
+	personality timid
+	variant 58
+		"Thunderhead"
+
+fleet "EVN Dude 216 Small Heraan Interceptor"
+	government "Family Heraan"
+	personality nemesis
+	variant 40
+		"Abomination"
+	variant 30
+		"Firebird"
+	variant 20
+		"Phoenix"
+	variant 6
+		"Aurora Carrier"
+
+fleet "EVN Dude 219 Large Heraan War Ships"
+	government "Family Heraan"
+	personality heroic
+	variant 100
+		"Aurora Carrier"
+
+fleet "EVN Dude 224 Duellists"
+	government "Duellist"
+	personality nemesis
+	variant 100
+		"Abomination"
+
+fleet "EVN Dude 250 Polaris Sprite shuttle"
+	government "Polaris"
+	personality timid
+	variant 100
+		"Sprite"
+
+fleet "EVN Dude 251 Abomination"
+	government "Auroran Empire"
+	personality nemesis
+	variant 100
+		"Abomination"
+
+fleet "EVN Dude 264 Large Heraan War Ships"
+	government "Family Heraan"
+	personality nemesis
+	variant 100
+		"Aurora Cruiser"
+
+fleet "EVN Dude 132 Lone idiot in terrapin"
+	government "Civvies"
+	personality uninterested
+	variant 53
+		"Terrapin"
+	variant 17
+		"Asteroid Miner"
+	variant 10
+		"Cargo Drone"
+	variant 10
+		"Heavy Shuttle"
+	variant 10
+		"Shuttle"
+
+fleet "EVN Dude 199 United Shipping"
+	government "United Shipping"
+	personality uninterested
+	variant 24
+		"IDA Frigate"
+	variant 17
+		"Fed Scout Ship"
+	variant 12
+		"Starbridge"
+	variant 9
+		"Pegasus"
+	variant 7
+		"Valkyrie"
+
+fleet "EVN Dude 206 Houseless"
+	government "Houseless Warriors"
+	personality heroic
+	variant 30
+		"Argosy"
+	variant 20
+		"Phoenix"
+	variant 10
+		"Abomination"
+
+fleet "EVN Dude 212 Valkyrie"
+	government "Civvies"
+	personality timid
+	variant 65
+		"Valkyrie"
+
+fleet "EVN Dude 240 Initiates"
+	government "Duellist"
+	personality nemesis
+	variant 100
+		"Phoenix"
+
+fleet "EVN Dude 133 Pirate"
+	government "Pirate"
+	personality heroic
+	variant 20
+		"Pirate Starbridge"
+	variant 18
+		"Pirate Valkyrie"
+	variant 14
+		"Manticore"
+	variant 13
+		"Pirate Viper"
+
+fleet "EVN Dude 191 Large Auroran War Ships"
+	government "Auroran Empire"
+	personality heroic
+	variant 41
+		"Abomination"
+	variant 30
+		"Aurora Cruiser"
+	variant 10
+		"Aurora Carrier"
+
+fleet "EVN Dude 198 Small Pirates"
+	government "Pirate"
+	personality heroic
+	variant 22
+		"Pirate Viper"
+	variant 21
+		"Pirate Starbridge"
+	variant 14
+		"Pirate Valkyrie"
+
+fleet "EVN Dude 203 Pirates"
+	government "Associated Guild of Free Traders"
+	personality heroic
+	variant 22
+		"Pirate Enterprise"
+	variant 17
+		"Manticore"
+	variant 17
+		"Pirate Argosy"
+	variant 5
+		"Pirate Carrier"
+
+fleet "EVN Dude 229 McGowan"
+	government "Associated Guild of Free Traders"
+	personality heroic
+	variant 100
+		"Pirate Carrier"
+
+fleet "EVN Dude 232 Rogue Pirates - Freighters"
+	government "Marauder"
+	personality nemesis
+	variant 35
+		"Pegasus;rogue"
+	variant 35
+		"Terrapin"
+	variant 30
+		"Pegasus;Second-Hand - poor"
+
+fleet "EVN Dude 129 Trader"
+	government "Civvies"
+	personality timid
+	variant 25
+		"Terrapin"
+	variant 18
+		"Shuttle"
+	variant 17
+		"Heavy Shuttle"
+	variant 12
+		"Lightning"
+
+fleet "EVN Dude 187 Wraith (nice)"
+	government "Wraith"
+	personality uninterested
+	variant 100
+		"Wraith (Adult)"
+
+fleet "EVN Dude 197 RAGE Gunboat"
+	government "Bureau"
+	personality nemesis
+	variant 100
+		"RAGE Gunboat"
+
+fleet "EVN Dude 222 Duellist"
+	government "Duellist"
+	personality nemesis
+	variant 50
+		"Abomination"
+	variant 30
+		"Phoenix"
+	variant 20
+		"Firebird"
+
+fleet "EVN Dude 223 The Pack"
+	government "Family Heraan"
+	personality nemesis
+	variant 100
+		"Abomination"
+
+fleet "EVN Dude 134 Tough Trader"
+	government "Civvies"
+	personality uninterested
+	variant 15
+		"Pegasus"
+	variant 15
+		"Starbridge"
+	variant 11
+		"IDA Frigate"
+	variant 11
+		"Valkyrie"
+	variant 8
+		"Fed Scout Ship"
+
+fleet "EVN Dude 186 Wraith (nasty)"
+	government "Wraith"
+	personality uninterested
+	variant 100
+		"Wraith (Adult)"
+
+fleet "EVN Dude 195 Lone Federation Ship"
+	government "Federation"
+	personality nemesis
+	variant 25
+		"Fed Patrol Boat"
+	variant 25
+		"Fed Viper"
+	variant 15
+		"Fed Anaconda"
+	variant 15
+		"Fed Scout Ship"
+
+fleet "EVN Dude 210 Pyrogenesis Skymining"
+	government "Pyrogenesis Skymining"
+	personality uninterested
+	variant 15
+		"Pegasus"
+	variant 10
+		"IDA Frigate"
+	variant 10
+		"Starbridge"
+	variant 10
+		"Valkyrie"
+	variant 8
+		"Cargo Drone"
+	variant 8
+		"Fed Scout Ship"
+
+fleet "EVN Dude 211 Sigma Shipyards"
+	government "Sigma Shipyards"
+	personality timid
+	variant 48
+		"Pegasus"
+	variant 39
+		"Leviathan"
+	variant 10
+		"Mod Starbridge"
+
+fleet "EVN Dude 220 Hune"
+	government "Rimerta"
+	personality heroic
+	variant 100
+		"Abomination;Hune"
+
+fleet "EVN Dude 221 Large Moash War Ships"
+	government "Family Moash"
+	personality heroic
+	variant 100
+		"Aurora Cruiser"
+
+fleet "EVN Dude 270 Shards"
+	government "Shards"
+	personality heroic
+	variant 25
+		"Rebel Dragon"
+	variant 20
+		"Aurora Cruiser"
+	variant 15
+		"Abomination"
+	variant 15
+		"Arachnid;Cloaking+fast jump"
+	variant 10
+		"Aurora Carrier"
+	variant 10
+		"Scarab;Cloaking+fast jump"
+	variant 5
+		"Raven;Cloaking+fast jump"
+
+fleet "EVN Dude 271 Scarab"
+	government "Polaris"
+	personality heroic
+	variant 100
+		"Scarab;Cloaking+fast jump"
+
+fleet "EVN Dude 135 Lone Polaris Freighter"
+	government "Polaris"
+	personality timid
+	variant 42
+		"Sprite"
+	variant 26
+		"Cambrian"
+	variant 16
+		"Zephyr"
+	variant 16
+		"Zephyr;Cloaking"
+
+fleet "EVN Dude 185 Auroran"
+	government "Auroran Empire"
+	personality heroic
+	variant 50
+		"Abomination"
+	variant 15
+		"Firebird"
+	variant 14
+		"Aurora Cruiser"
+	variant 2
+		"Aurora Carrier"
+
+fleet "EVN Dude 190 Krypt"
+	government "Krypt"
+	personality nemesis
+	variant 100
+		"Krypt Pod"
+
+fleet "EVN Dude 205 Houseless"
+	government "Houseless Warriors"
+	personality heroic
+	variant 25
+		"Firebird"
+	variant 25
+		"Phoenix"
+	variant 10
+		"Argosy"
+	variant 10
+		"Enterprise"
+	variant 8
+		"Abomination"
+
+fleet "EVN Dude 258 Raczak"
+	government "Roughnecks"
+	personality heroic
+	variant 100
+		"Fed Carrier"
+
+fleet "EVN Dude 259 Lone idiot in terrapin"
+	government "Civvies"
+	personality uninterested
+	variant 100
+		"Terrapin"
+
+fleet "EVN Dude 136 Lone Polaris"
+	government "Nil'kemorya"
+	personality heroic
+	variant 23
+		"Zephyr"
+	variant 23
+		"Zephyr;Cloaking"
+	variant 18
+		"Striker;Cloaking"
+	variant 15
+		"Striker"
+	variant 13
+		"Manta"
+	variant 1
+		"Dragon"
+
+fleet "EVN Dude 182 Polaris cruiser"
+	government "Polaris"
+	personality heroic
+	variant 100
+		"Raven;Cloaking+fast jump"
+
+fleet "EVN Dude 183 RAGE Gunboat"
+	government "Federation"
+	personality nemesis
+	variant 100
+		"RAGE Gunboat"
+
+fleet "EVN Dude 196 Llyrell"
+	government "Vell-os"
+	personality nemesis
+	variant 100
+		"Vell-os Javelin"
+
+fleet "EVN Dude 246 Lone Federation Ship"
+	government "Federation;hates Temmin Shard"
+	personality nemesis
+	variant 20
+		"Fed Patrol Boat"
+	variant 20
+		"RAGE Gunboat"
+	variant 16
+		"Fed Viper"
+	variant 11
+		"Fed Anaconda"
+	variant 10
+		"Fed Scout Ship"
+
+fleet "EVN Dude 247 Pyro shuttle craft"
+	government "Pyrogenesis Skymining"
+	personality timid
+	variant 50
+		"Cargo Drone;economy at work"
+	variant 25
+		"Heavy Shuttle;economy at work"
+	variant 25
+		"Shuttle;economy at work"
+
+fleet "EVN Dude 138 Large Polaris"
+	government "Nil'kemorya"
+	personality heroic
+	variant 26
+		"Arachnid"
+	variant 26
+		"Arachnid;Cloaking"
+	variant 14
+		"Scarab"
+	variant 14
+		"Scarab;Cloaking"
+	variant 2
+		"Arachnid;Cloaking+fast jump"
+	variant 2
+		"Dragon;Cloaking+fast jump"
+	variant 2
+		"Raven;Cloaking"
+
+fleet "EVN Dude 180 Lone Federation Ship"
+	government "Federation"
+	personality nemesis
+	variant 25
+		"Fed Patrol Boat"
+	variant 25
+		"Fed Viper"
+	variant 15
+		"Fed Anaconda"
+	variant 15
+		"Fed Scout Ship"
+
+fleet "EVN Dude 181 Large Auroran War Ships"
+	government "Auroran Empire"
+	personality heroic
+	variant 90
+		"Aurora Cruiser"
+
+fleet "EVN Dude 184 Large Auroran War Ships"
+	government "Auroran Empire"
+	personality heroic
+	variant 45
+		"Aurora Cruiser"
+	variant 20
+		"Aurora Carrier"
+	variant 10
+		"Abomination"
+
+fleet "EVN Dude 194 Lone Big Federation Ship"
+	government "Federation"
+	personality heroic
+	variant 60
+		"Fed Destroyer"
+	variant 30
+		"Fed Carrier"
+
+fleet "EVN Dude 230 Leviathan - disabled"
+	government "Derelicts"
+	personality timid
+	variant 100
+		"Leviathan"
+
+fleet "EVN Dude 231 Rogue Pirates (Fighters)"
+	government "Marauder"
+	personality nemesis
+	variant 60
+		"Pirate Viper"
+	variant 40
+		"Viper"
+
+fleet "EVN Dude 244 Temmin Shard"
+	government "Temmin Shard"
+	personality heroic
+	variant 100
+		"Mod Starbridge"
+
+fleet "EVN Dude 137 Small Polaris"
+	government "Nil'kemorya"
+	personality nemesis
+	variant 25
+		"Manta"
+	variant 20
+		"Zephyr;Cloaking"
+	variant 19
+		"Striker"
+	variant 17
+		"Striker;Cloaking"
+	variant 3
+		"Dragon;Cloaking+fast jump"
+
+fleet "EVN Dude 175 Civilian"
+	government "Civvies"
+	personality timid
+	variant 30
+		"Lightning"
+	variant 13
+		"Thunderhead"
+	variant 9
+		"Leviathan"
+	variant 9
+		"Pegasus"
+
+fleet "EVN Dude 178 RAGE Gunboat"
+	government "Federation"
+	personality nemesis
+	variant 100
+		"RAGE Gunboat"
+
+fleet "EVN Dude 179 Federation Carrier"
+	government "Federation"
+	personality heroic
+	variant 100
+		"Fed Carrier"
+
+fleet "EVN Dude 193 Large Polaris"
+	government "Nil'kemorya"
+	personality heroic
+	variant 30
+		"Arachnid"
+	variant 30
+		"Arachnid;Cloaking"
+	variant 21
+		"Scarab;Cloaking"
+	variant 19
+		"Scarab"
+
+fleet "EVN Dude 204 Small Pirates"
+	government "Associated Guild of Free Traders"
+	personality heroic
+	variant 22
+		"Pirate Viper"
+	variant 21
+		"Pirate Starbridge"
+	variant 14
+		"Pirate Valkyrie"
+
+fleet "EVN Dude 214 Terrapin"
+	government "Civvies"
+	personality timid
+	variant 65
+		"Terrapin"
+
+fleet "EVN Dude 215 Pegasus"
+	government "Civvies"
+	personality timid
+	variant 65
+		"Pegasus"
+
+fleet "EVN Dude 139 Auroran (Fed chapter 1)"
+	government "Auroran Empire"
+	personality heroic
+	variant 45
+		"Firebird"
+	variant 35
+		"Phoenix"
+	variant 10
+		"Abomination"
+
+fleet "EVN Dude 168 Mad Auroran Interceptor"
+	government "Auroran Empire"
+	personality nemesis
+	variant 40
+		"Abomination"
+	variant 20
+		"Firebird"
+	variant 14
+		"Phoenix"
+	variant 9
+		"Aurora Carrier"
+
+fleet "EVN Dude 172 Pirates"
+	government "Pirate"
+	personality heroic
+	variant 22
+		"Pirate Enterprise"
+	variant 17
+		"Manticore"
+	variant 17
+		"Pirate Argosy"
+	variant 5
+		"Pirate Carrier"
+
+fleet "EVN Dude 173 Lone Small Federation Ship"
+	government "Federation"
+	personality nemesis
+	variant 25
+		"Fed Patrol Boat"
+	variant 25
+		"Fed Viper"
+	variant 20
+		"Fed Anaconda"
+
+fleet "EVN Dude 192 Small Auroran Interceptor"
+	government "Auroran Empire"
+	personality nemesis
+	variant 40
+		"Abomination"
+	variant 20
+		"Firebird"
+	variant 14
+		"Phoenix"
+	variant 9
+		"Aurora Carrier"
+
+fleet "EVN Dude 200 Zephyr"
+	government "Mu'Hari"
+	personality nemesis
+	variant 100
+		"Zephyr"
+
+fleet "EVN Dude 201 Zephyr"
+	government "Mu'Hari"
+	personality nemesis
+	variant 100
+		"Zephyr;Cloaking"
+
+fleet "EVN Dude 140 Auroran (Fed end chap 1)"
+	government "Auroran Empire"
+	personality heroic
+	variant 21
+		"Firebird"
+	variant 21
+		"Phoenix"
+	variant 17
+		"Abomination"
+	variant 9
+		"Aurora Cruiser"
+
+fleet "EVN Dude 165 Large Heraan War Ships"
+	government "Family Heraan"
+	personality heroic
+	variant 45
+		"Aurora Cruiser"
+	variant 25
+		"Abomination"
+	variant 25
+		"Aurora Carrier"
+	variant 5
+		"Aurora Thunderforge"
+
+fleet "EVN Dude 170 Rebels"
+	government "Rebellion"
+	personality heroic
+	variant 25
+		"Rebel Viper"
+	variant 12
+		"Rebel Valkyrie"
+	variant 10
+		"Rebel Lightning"
+	variant 10
+		"Rebel Thunderhead"
+	variant 5
+		"Rebel Starbridge"
+
+fleet "EVN Dude 171 Big Rebels"
+	government "Rebellion"
+	personality heroic
+	variant 20
+		"Rebel IDA Frigate"
+	variant 16
+		"Mod Starbridge"
+	variant 16
+		"Rebel Destroyer"
+	variant 9
+		"Rebel Dragon"
+
+fleet "EVN Dude 188 RAGE Gunboat"
+	government "Bureau"
+	personality nemesis
+	variant 100
+		"RAGE Gunboat"
+
+fleet "EVN Dude 189 Roughnecks"
+	government "Roughnecks"
+	personality heroic
+	variant 10
+		"Fed Destroyer"
+	variant 8
+		"Fed Carrier"
+
+fleet "EVN Dude 141 Rebel (Fed chap2)"
+	government "Rebellion"
+	personality heroic
+	variant 40
+		"Rebel Viper"
+	variant 15
+		"Rebel Thunderhead"
+	variant 8
+		"Rebel Lightning"
+	variant 6
+		"Rebel Valkyrie"
+	variant 4
+		"Rebel Starbridge"
+
+fleet "EVN Dude 163 Large Vella War Ships"
+	government "Family Vella"
+	personality heroic
+	variant 45
+		"Abomination"
+	variant 40
+		"Aurora Cruiser"
+	variant 15
+		"Aurora Carrier"
+
+fleet "EVN Dude 164 Large Dani War Ships"
+	government "Family Dani"
+	personality heroic
+	variant 45
+		"Abomination"
+	variant 40
+		"Aurora Cruiser"
+	variant 15
+		"Aurora Carrier"
+
+fleet "EVN Dude 169 Mad Auroran War Ships"
+	government "Auroran Empire"
+	personality heroic
+	variant 35
+		"Aurora Cruiser"
+	variant 34
+		"Abomination"
+	variant 5
+		"Aurora Carrier"
+
+fleet "EVN Dude 176 Big Rebels"
+	government "Rebellion"
+	personality heroic
+	variant 100
+		"Rebel Dragon"
+
+fleet "EVN Dude 177 Roughnecks"
+	government "Roughnecks"
+	personality heroic
+	variant 10
+		"Fed Destroyer"
+	variant 8
+		"Fed Carrier"
+
+fleet "EVN Dude 142 Auroran Trader (small)"
+	government "Auroran Empire"
+	personality uninterested
+	variant 40
+		"Argosy"
+	variant 32
+		"Enterprise"
+
+fleet "EVN Dude 162 Large Tekel War Ships"
+	government "Family Tekel"
+	personality heroic
+	variant 45
+		"Abomination"
+	variant 35
+		"Aurora Cruiser"
+	variant 20
+		"Aurora Carrier"
+
+fleet "EVN Dude 166 Small Rimertan Interceptor"
+	government "Rimerta"
+	personality nemesis
+	variant 35
+		"Phoenix"
+	variant 34
+		"Firebird"
+	variant 20
+		"Abomination"
+	variant 11
+		"Aurora Carrier"
+
+fleet "EVN Dude 167 Large Rimertan War Ships"
+	government "Rimerta"
+	personality heroic
+	variant 40
+		"Abomination"
+	variant 36
+		"Aurora Cruiser"
+	variant 24
+		"Aurora Carrier"
+
+fleet "EVN Dude 143 Wraith (nice)"
+	government "Wraith"
+	personality uninterested
+	variant 45
+		"Wraith (Youth)"
+	variant 30
+		"Wraith (Adult)"
+	variant 25
+		"Wraith (Child)"
+
+fleet "EVN Dude 160 Small Heraan Interceptor"
+	government "Family Heraan"
+	personality nemesis
+	variant 40
+		"Abomination"
+	variant 30
+		"Firebird"
+	variant 20
+		"Phoenix"
+	variant 6
+		"Aurora Carrier"
+
+fleet "EVN Dude 161 Large Moash War Ships"
+	government "Family Moash"
+	personality heroic
+	variant 45
+		"Abomination"
+	variant 35
+		"Aurora Cruiser"
+	variant 20
+		"Aurora Carrier"
+
+fleet "EVN Dude 144 Wraith (nasty)"
+	government "Wraith"
+	personality nemesis
+	variant 50
+		"Wraith (Youth)"
+	variant 40
+		"Wraith (Adult)"
+	variant 10
+		"Wraith (Child)"
+
+fleet "EVN Dude 156 Small Moash Interceptor"
+	government "Family Moash"
+	personality nemesis
+	variant 40
+		"Abomination"
+	variant 30
+		"Firebird"
+	variant 20
+		"Phoenix"
+	variant 10
+		"Aurora Carrier"
+
+fleet "EVN Dude 157 Small Tekel Interceptor"
+	government "Family Tekel"
+	personality nemesis
+	variant 40
+		"Abomination"
+	variant 30
+		"Firebird"
+	variant 20
+		"Phoenix"
+	variant 10
+		"Aurora Carrier"
+
+fleet "EVN Dude 158 Small Vella Interceptor"
+	government "Family Vella"
+	personality nemesis
+	variant 40
+		"Abomination"
+	variant 30
+		"Firebird"
+	variant 15
+		"Phoenix"
+	variant 10
+		"Aurora Carrier"
+	variant 5
+		"Thunderhead"
+
+fleet "EVN Dude 159 Small Dani Interceptor"
+	government "Family Dani"
+	personality nemesis
+	variant 40
+		"Abomination"
+	variant 30
+		"Firebird"
+	variant 20
+		"Phoenix"
+	variant 10
+		"Aurora Carrier"
+
+fleet "EVN Dude 174 Civilian"
+	government "Civvies"
+	personality timid
+	variant 24
+		"Leviathan"
+	variant 24
+		"Pegasus"
+	variant 9
+		"Starbridge"
+	variant 8
+		"Star Liner"
+
+fleet "EVN Dude 146 Krypt"
+	government "Krypt"
+	personality nemesis
+	variant 100
+		"Krypt Pod"
+
+fleet "EVN Dude 152 Roughnecks"
+	government "Roughnecks"
+	personality heroic
+	variant 13
+		"Fed Destroyer"
+	variant 5
+		"Fed Carrier"
+
+fleet "EVN Dude 153 Federation"
+	government "Federation"
+	personality heroic
+	variant 26
+		"Fed Patrol Boat"
+	variant 20
+		"Fed Scout Ship"
+	variant 5
+		"Fed Carrier"
+
+fleet "EVN Dude 154 Small Auroran Interceptor"
+	government "Auroran Empire"
+	personality nemesis
+	variant 40
+		"Abomination"
+	variant 30
+		"Firebird"
+	variant 14
+		"Phoenix"
+	variant 10
+		"Aurora Carrier"
+
+fleet "EVN Dude 155 Large Auroran War Ships"
+	government "Auroran Empire"
+	personality heroic
+	variant 42
+		"Abomination"
+	variant 38
+		"Aurora Cruiser"
+	variant 5
+		"Aurora Carrier"
+
+fleet "EVN Dude 147 Hyperioid"
+	government "Hyperioid"
+	personality uninterested
+	variant 100
+		"Hyperioid"
+
+fleet "EVN Dude 149 Rimertans"
+	government "Rimerta"
+	personality uninterested
+	variant 25
+		"Abomination"
+	variant 25
+		"Aurora Cruiser"
+	variant 25
+		"Firebird"
+	variant 25
+		"Phoenix"
+
+fleet "EVN Dude 150 Slyvilian Defence Scum"
+	personality nemesis
+	variant 35
+		"Valkyrie"
+	variant 25
+		"Starbridge"
+	variant 5
+		"IDA Frigate"
+
+fleet "EVN Dude 151 Wild Geese"
+	government "Wild Geese"
+	personality heroic
+	variant 14
+		"Fed Viper"
+	variant 13
+		"Mod Starbridge"
+	variant 12
+		"Fed Patrol Boat"
+	variant 8
+		"Fed Anaconda"
+	variant 8
+		"IDA Frigate"
+
+fleet "EVN Dude 145 Vell-os"
+	government "Vell-os"
+	personality nemesis
+	variant 70
+		"Vell-os Dart"
+	variant 20
+		"Vell-os Arrow"
+	variant 10
+		"Vell-os Javelin"
+
+fleet "EVN Dude 148 Big traders"
+	government "Civvies"
+	personality timid
+	variant 45
+		"Pegasus"
+	variant 40
+		"Leviathan"
+	variant 10
+		"Mod Starbridge"
+
+fleet "EVN Fleet 255 Hyperioids"
+	government "Hyperioid"
+	personality heroic
+	variant
+		"Hyperioid" 3
+
+fleet "EVN Fleet 254 Hyperioids"
+	government "Hyperioid"
+	personality heroic
+	variant
+		"Hyperioid" 3
+
+fleet "EVN Fleet 253 Vell-os Armada"
+	government "Federation"
+	personality heroic
+	variant
+		"Vell-os Javelin"
+		"Vell-os Arrow" 2
+		"Vell-os Dart" 4
+
+fleet "EVN Fleet 252 Auroran Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Enterprise" 2
+		"Firebird" 3
+		"Phoenix"
+
+fleet "EVN Fleet 251 Auroran Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Enterprise" 2
+		"Firebird" 3
+		"Phoenix"
+
+fleet "EVN Fleet 250 Auroran Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Enterprise" 2
+		"Firebird" 3
+		"Phoenix"
+
+fleet "EVN Fleet 249 Auroran Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Enterprise" 2
+		"Firebird" 3
+		"Phoenix"
+
+fleet "EVN Fleet 248 Auroran Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Enterprise" 2
+		"Firebird" 3
+		"Phoenix"
+
+fleet "EVN Fleet 247 Auroran Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Enterprise" 2
+		"Firebird" 3
+		"Phoenix"
+
+fleet "EVN Fleet 246 Auroran Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Enterprise" 2
+		"Firebird" 3
+		"Phoenix"
+
+fleet "EVN Fleet 245 Auroran Fleet"
+	government "Auroran Empire"
+	personality heroic
+	variant
+		"Aurora Carrier"
+		"Aurora Cruiser" 2
+		"Firebird"
+		"Phoenix" 2
+
+fleet "EVN Fleet 244 Auroran Fleet"
+	government "Auroran Empire"
+	personality heroic
+	variant
+		"Aurora Carrier"
+		"Aurora Cruiser" 2
+		"Firebird"
+		"Phoenix" 2
+
+fleet "EVN Fleet 243 Auroran Fleet"
+	government "Auroran Empire"
+	personality heroic
+	variant
+		"Aurora Carrier"
+		"Aurora Cruiser" 2
+		"Firebird"
+		"Phoenix" 2
+
+fleet "EVN Fleet 242 Auroran Task Force"
+	government "Auroran Empire"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 241 Auroran Task Force"
+	government "Auroran Empire"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 240 Auroran Task Force"
+	government "Auroran Empire"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 239 Auroran Task Force"
+	government "Auroran Empire"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 238 Auroran Task Force"
+	government "Auroran Empire"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 237 Auroran Task Force"
+	government "Auroran Empire"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 236 Pirates"
+	government "Pirate"
+	personality heroic
+	variant
+		"Pirate Valkyrie"
+		"Pirate Viper" 3
+
+fleet "EVN Fleet 235 Pirates"
+	government "Pirate"
+	personality heroic
+	variant
+		"Pirate Valkyrie"
+		"Pirate Viper" 3
+
+fleet "EVN Fleet 234 Pirates"
+	government "Pirate"
+	personality heroic
+	variant
+		"Pirate Valkyrie"
+		"Pirate Viper" 3
+
+fleet "EVN Fleet 233 Pirates"
+	government "Pirate"
+	personality heroic
+	variant
+		"Pirate Valkyrie"
+		"Pirate Viper" 3
+
+fleet "EVN Fleet 232 Little Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Heavy Shuttle"
+		"Shuttle" 2
+		"Terrapin"
+		"Viper"
+
+fleet "EVN Fleet 231 Little Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Heavy Shuttle"
+		"Shuttle" 2
+		"Terrapin"
+		"Viper"
+
+fleet "EVN Fleet 230 Little Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Heavy Shuttle"
+		"Shuttle" 2
+		"Terrapin"
+		"Viper"
+
+fleet "EVN Fleet 229 Little Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Heavy Shuttle"
+		"Shuttle" 2
+		"Terrapin"
+		"Viper"
+
+fleet "EVN Fleet 228 Little Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Heavy Shuttle"
+		"Shuttle" 2
+		"Terrapin"
+		"Viper"
+
+fleet "EVN Fleet 227 Pirate Raiders"
+	government "Pirate"
+	personality heroic
+	variant
+		"Manticore"
+		"Pirate Valkyrie"
+		"Pirate Starbridge"
+		"Pirate Viper"
+
+fleet "EVN Fleet 226 Pirate Raiders"
+	government "Pirate"
+	personality heroic
+	variant
+		"Manticore"
+		"Pirate Valkyrie"
+		"Pirate Starbridge"
+		"Pirate Viper"
+
+fleet "EVN Fleet 225 Liner + Escorts"
+	government "Civvies"
+	personality heroic
+	variant
+		"Star Liner"
+		"Viper" 3
+
+fleet "EVN Fleet 224 Liner + Escorts"
+	government "Civvies"
+	personality heroic
+	variant
+		"Star Liner"
+		"Viper" 3
+
+fleet "EVN Fleet 223 Liner + Escorts"
+	government "Civvies"
+	personality heroic
+	variant
+		"Star Liner"
+		"Viper" 3
+
+fleet "EVN Fleet 222 Smaller Private Freighters"
+	government "Civvies"
+	personality heroic
+	variant
+		"Pegasus"
+		"Terrapin" 2
+		"Viper" 4
+
+fleet "EVN Fleet 221 Smaller Private Freighters"
+	government "Civvies"
+	personality heroic
+	variant
+		"Pegasus"
+		"Terrapin" 2
+		"Viper" 4
+
+fleet "EVN Fleet 220 Smaller Private Freighters"
+	government "Civvies"
+	personality heroic
+	variant
+		"Pegasus"
+		"Terrapin" 2
+		"Viper" 4
+
+fleet "EVN Fleet 219 Smaller Private Freighters"
+	government "Civvies"
+	personality heroic
+	variant
+		"Pegasus"
+		"Terrapin" 2
+		"Viper" 4
+
+fleet "EVN Fleet 218 Smaller Private Freighters"
+	government "Civvies"
+	personality heroic
+	variant
+		"Pegasus"
+		"Terrapin" 2
+		"Viper" 3
+
+fleet "EVN Fleet 217 Smaller Private Freighters"
+	government "Civvies"
+	personality heroic
+	variant
+		"Pegasus"
+		"Terrapin" 2
+		"Viper" 3
+
+fleet "EVN Fleet 216 Smaller Private Freighters"
+	government "Civvies"
+	personality heroic
+	variant
+		"Pegasus"
+		"Terrapin" 2
+		"Viper" 4
+
+fleet "EVN Fleet 215 Leviathan + Escorts"
+	personality heroic
+	variant
+		"Leviathan"
+		"IDA Frigate"
+		"Viper" 4
+
+fleet "EVN Fleet 214 Leviathan + Escorts"
+	personality heroic
+	variant
+		"Leviathan"
+		"IDA Frigate"
+		"Viper" 4
+
+fleet "EVN Fleet 213 Federation Carrier + Escorts"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Carrier"
+		"Fed Destroyer" 3
+
+fleet "EVN Fleet 212 Federation Carrier + Escorts"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Carrier"
+		"Fed Destroyer" 4
+
+fleet "EVN Fleet 211 Federation Carrier + Escorts"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Carrier"
+		"Fed Destroyer" 4
+
+fleet "EVN Fleet 210 Small Federation Fleet"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Destroyer"
+		"Fed Viper" 3
+
+fleet "EVN Fleet 209 Small Federation Fleet"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Destroyer"
+		"Fed Viper" 3
+
+fleet "EVN Fleet 208 Small Federation Fleet"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Destroyer"
+		"Fed Viper" 3
+
+fleet "EVN Fleet 207 Small Federation Fleet"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Destroyer"
+		"Fed Viper" 3
+
+fleet "EVN Fleet 206 Small Federation Fleet"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Destroyer"
+		"Fed Viper" 3
+
+fleet "EVN Fleet 205 Wraith Tribe (nice)"
+	government "Wraith"
+	personality heroic
+	variant
+		"Wraith (Adult)" 2
+		"Wraith (Youth)"
+		"Wraith (Child)" 2
+
+fleet "EVN Fleet 204 Wraith Tribe (nice)"
+	government "Wraith"
+	personality heroic
+	variant
+		"Wraith (Adult)" 2
+		"Wraith (Youth)"
+		"Wraith (Child)" 2
+
+fleet "EVN Fleet 203 Wraith Tribe (nasty)"
+	government "Wraith"
+	personality heroic
+	variant
+		"Wraith (Adult)" 2
+		"Wraith (Youth)"
+		"Wraith (Child)" 2
+
+fleet "EVN Fleet 202 Wraith Tribe (nasty)"
+	government "Wraith"
+	personality heroic
+	variant
+		"Wraith (Adult)" 2
+		"Wraith (Youth)"
+		"Wraith (Child)" 2
+
+fleet "EVN Fleet 201 Wraith Tribe (nice)"
+	government "Wraith"
+	personality heroic
+	variant
+		"Wraith (Adult)" 2
+		"Wraith (Youth)"
+		"Wraith (Child)" 2
+
+fleet "EVN Fleet 200 Wraith Tribe (nice)"
+	government "Wraith"
+	personality heroic
+	variant
+		"Wraith (Adult)" 2
+		"Wraith (Youth)"
+		"Wraith (Child)" 2
+
+fleet "EVN Fleet 199 Wraith Tribe (nasty)"
+	government "Wraith"
+	personality heroic
+	variant
+		"Wraith (Adult)" 2
+		"Wraith (Youth)"
+		"Wraith (Child)" 2
+
+fleet "EVN Fleet 198 Wraith Tribe (nasty)"
+	government "Wraith"
+	personality heroic
+	variant
+		"Wraith (Adult)" 2
+		"Wraith (Youth)"
+		"Wraith (Child)" 2
+
+fleet "EVN Fleet 197 Vellos"
+	government "Federation"
+	personality heroic
+	variant
+		"Vell-os Javelin"
+		"Vell-os Arrow"
+		"Vell-os Dart"
+
+fleet "EVN Fleet 196 Vellos"
+	government "Federation"
+	personality heroic
+	variant
+		"Vell-os Javelin"
+		"Vell-os Arrow"
+		"Vell-os Dart"
+
+fleet "EVN Fleet 195 Vellos"
+	government "Federation"
+	personality heroic
+	variant
+		"Vell-os Javelin"
+		"Vell-os Arrow"
+		"Vell-os Dart"
+
+fleet "EVN Fleet 194 Fed +S. Vell"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Carrier"
+		"Fed Destroyer"
+		"Fed Patrol Boat"
+		"Fed Viper"
+		"Vell-os Dart"
+
+fleet "EVN Fleet 193 Fed +S. Vell"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Carrier"
+		"Fed Destroyer"
+		"Fed Patrol Boat"
+		"Fed Viper"
+		"Vell-os Dart"
+
+fleet "EVN Fleet 192 Fed +S. Vell"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Carrier"
+		"Fed Destroyer"
+		"Fed Patrol Boat"
+		"Fed Viper"
+		"Vell-os Dart"
+
+fleet "EVN Fleet 191 Fed +S. Vell"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Carrier"
+		"Fed Destroyer"
+		"Fed Patrol Boat"
+		"Fed Viper"
+		"Vell-os Dart"
+
+fleet "EVN Fleet 190 Fed +S. Vell"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Carrier"
+		"Fed Destroyer"
+		"Fed Patrol Boat"
+		"Fed Viper"
+		"Vell-os Dart"
+
+fleet "EVN Fleet 189 Fed +S. Vell"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Carrier"
+		"Fed Destroyer"
+		"Fed Patrol Boat"
+		"Vell-os Dart"
+		"Vell-os Arrow"
+
+fleet "EVN Fleet 188 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 4
+		"Shuttle"
+
+fleet "EVN Fleet 187 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 4
+		"Shuttle"
+
+fleet "EVN Fleet 186 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 4
+		"Shuttle"
+
+fleet "EVN Fleet 185 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 4
+		"Shuttle"
+
+fleet "EVN Fleet 184 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 4
+		"Shuttle"
+
+fleet "EVN Fleet 183 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 4
+		"Shuttle"
+
+fleet "EVN Fleet 182 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 4
+		"Shuttle"
+
+fleet "EVN Fleet 181 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 4
+		"Shuttle"
+
+fleet "EVN Fleet 180 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 4
+		"Shuttle"
+
+fleet "EVN Fleet 179 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 4
+		"Shuttle"
+
+fleet "EVN Fleet 178 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 4
+		"Shuttle"
+
+fleet "EVN Fleet 177 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 4
+		"Shuttle"
+
+fleet "EVN Fleet 176 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 3
+		"Shuttle"
+
+fleet "EVN Fleet 175 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 3
+		"Shuttle"
+
+fleet "EVN Fleet 174 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 3
+		"Shuttle"
+
+fleet "EVN Fleet 173 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 3
+		"Shuttle"
+
+fleet "EVN Fleet 172 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 3
+		"Shuttle"
+
+fleet "EVN Fleet 171 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 3
+		"Shuttle"
+
+fleet "EVN Fleet 170 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 3
+		"Shuttle"
+
+fleet "EVN Fleet 169 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 3
+		"Shuttle"
+
+fleet "EVN Fleet 168 Cargo Drones"
+	government "Civvies"
+	personality heroic
+	variant
+		"Cargo Drone" 3
+		"Shuttle"
+
+fleet "EVN Fleet 167 Heraan Task Force"
+	government "Family Heraan"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 166 Heraan Task Force"
+	government "Family Heraan"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 165 Dani Task Force"
+	government "Family Dani"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 164 Tekel Task Force"
+	government "Family Tekel"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 163 Moash Task Force"
+	government "Family Moash"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird"
+		"Phoenix" 2
+
+fleet "EVN Fleet 162 Rimertan Task Force"
+	government "Rimerta"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 161 Rimertan Fleet"
+	government "Rimerta"
+	personality heroic
+	variant
+		"Aurora Carrier"
+		"Aurora Cruiser" 2
+		"Firebird"
+		"Phoenix" 2
+
+fleet "EVN Fleet 160 Heraan Fleet"
+	government "Family Heraan"
+	personality heroic
+	variant
+		"Aurora Carrier"
+		"Aurora Cruiser" 2
+		"Firebird"
+		"Phoenix" 2
+
+fleet "EVN Fleet 159 Dani Fleet"
+	government "Family Dani"
+	personality heroic
+	variant
+		"Aurora Carrier"
+		"Aurora Cruiser" 2
+		"Firebird"
+		"Phoenix" 2
+
+fleet "EVN Fleet 158 Vella Fleet"
+	government "Family Vella"
+	personality heroic
+	variant
+		"Aurora Carrier"
+		"Aurora Cruiser" 2
+		"Firebird"
+		"Phoenix" 2
+
+fleet "EVN Fleet 157 Tekel Fleet"
+	government "Family Tekel"
+	personality heroic
+	variant
+		"Aurora Carrier"
+		"Aurora Cruiser" 2
+		"Firebird"
+		"Phoenix" 2
+
+fleet "EVN Fleet 156 Heraan Task Force"
+	government "Family Heraan"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 155 Dani Task Force"
+	government "Family Dani"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 154 Vella Task Force"
+	government "Family Vella"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 153 Tekel Task Force"
+	government "Family Tekel"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 152 Moash Fleet"
+	government "Family Moash"
+	personality heroic
+	variant
+		"Aurora Carrier"
+		"Aurora Cruiser" 2
+		"Firebird"
+		"Phoenix"
+
+fleet "EVN Fleet 151 Moash Task Force"
+	government "Family Moash"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix" 2
+
+fleet "EVN Fleet 150 Rebel Fleet"
+	government "Rebellion"
+	personality heroic
+	variant
+		"Rebel Destroyer" 2
+		"Rebel Dragon"
+		"Rebel Valkyrie" 2
+		"Rebel Starbridge" 2
+
+fleet "EVN Fleet 149 Rebels"
+	government "Rebellion"
+	personality heroic
+	variant
+		"Rebel Destroyer"
+		"Rebel Starbridge"
+		"Rebel Valkyrie"
+		"Rebel Dragon"
+		"Rebel Viper" 2
+
+fleet "EVN Fleet 148 Hyperioids"
+	government "Hyperioid"
+	personality heroic
+	variant
+		"Hyperioid" 3
+
+fleet "EVN Fleet 147 Wild Geese"
+	government "Wild Geese"
+	personality heroic
+	variant
+		"Mod Starbridge"
+		"Starbridge"
+		"Thunderhead"
+		"Valkyrie"
+		"Viper" 2
+
+fleet "EVN Fleet 146 Roughnecks"
+	government "Roughnecks"
+	personality heroic
+	variant
+		"Fed Carrier" 2
+		"Fed Destroyer"
+		"Fed Patrol Boat" 2
+		"Fed Anaconda" 2
+
+fleet "EVN Fleet 145 Vell-os Armada"
+	government "Vell-os"
+	personality heroic
+	variant
+		"Vell-os Javelin"
+		"Vell-os Arrow"
+		"Vell-os Dart" 2
+
+fleet "EVN Fleet 144 Wild Geese"
+	government "Wild Geese"
+	personality heroic
+	variant
+		"Mod Starbridge"
+		"Starbridge"
+		"Thunderhead"
+		"Valkyrie"
+		"Viper" 2
+
+fleet "EVN Fleet 143 Wraith Tribe (nasty)"
+	government "Wraith"
+	personality heroic
+	variant
+		"Wraith (Adult)" 2
+		"Wraith (Youth)" 2
+		"Wraith (Child)"
+
+fleet "EVN Fleet 142 Wraith Tribe (nice)"
+	government "Wraith"
+	personality heroic
+	variant
+		"Wraith (Adult)" 2
+		"Wraith (Youth)"
+		"Wraith (Child)"
+
+fleet "EVN Fleet 141 Auroran Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Enterprise" 2
+		"Firebird"
+		"Phoenix"
+
+fleet "EVN Fleet 140 Kick-the-butt Polaris Serious Fleet"
+	government "Nil'kemorya"
+	personality heroic
+	variant
+		"Scarab"
+		"Arachnid"
+		"Striker"
+		"Manta"
+		"Zephyr"
+
+fleet "EVN Fleet 139 Polaris Freighters + escorts"
+	government "Polaris"
+	personality heroic
+	variant
+		"Sprite" 3
+		"Cambrian"
+		"Manta"
+		"Striker"
+
+fleet "EVN Fleet 138 Small Polaris Fleet"
+	government "Nil'kemorya"
+	personality heroic
+	variant
+		"Arachnid"
+		"Manta"
+		"Striker"
+		"Zephyr"
+
+fleet "EVN Fleet 137 Auroran Fleet"
+	government "Auroran Empire"
+	personality heroic
+	variant
+		"Aurora Carrier"
+		"Aurora Cruiser" 2
+		"Firebird"
+		"Phoenix"
+
+fleet "EVN Fleet 136 Auroran Task Force"
+	government "Auroran Empire"
+	personality heroic
+	variant
+		"Aurora Cruiser"
+		"Abomination"
+		"Firebird" 2
+		"Phoenix"
+
+fleet "EVN Fleet 135 Pirates"
+	government "Pirate"
+	personality heroic
+	variant
+		"Pirate Valkyrie"
+		"Pirate Viper" 3
+		"Pirate Thunderhead"
+
+fleet "EVN Fleet 134 Pirate Raiders"
+	government "Pirate"
+	personality heroic
+	variant
+		"Manticore"
+		"Pirate Valkyrie"
+		"Pirate Starbridge"
+		"Pirate Viper"
+		"Pirate Thunderhead"
+
+fleet "EVN Fleet 130 Leviathan + Escorts"
+	government "Civvies"
+	personality heroic
+	variant
+		"Leviathan"
+		"IDA Frigate"
+		"Viper"
+
+fleet "EVN Fleet 131 Smaller Private Freighters"
+	government "Civvies"
+	personality heroic
+	variant
+		"Pegasus"
+		"Terrapin" 2
+		"Viper" 3
+
+fleet "EVN Fleet 132 Liner + Escorts"
+	government "Civvies"
+	personality heroic
+	variant
+		"Star Liner"
+		"Viper" 3
+
+fleet "EVN Fleet 133 Little Traders"
+	government "Civvies"
+	personality heroic
+	variant
+		"Heavy Shuttle"
+		"Shuttle" 2
+		"Terrapin"
+		"Viper"
+
+fleet "EVN Fleet 128 Small Federation Fleet"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Destroyer"
+		"Fed Viper" 2
+
+fleet "EVN Fleet 129 Federation Carrier + Escorts"
+	government "Federation"
+	personality heroic
+	variant
+		"Fed Carrier"
+		"Fed Destroyer" 2

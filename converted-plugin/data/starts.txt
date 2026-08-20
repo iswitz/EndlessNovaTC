@@ -1,0 +1,22 @@
+# EVN chär character template converted to an ES start.
+
+start "evn-trader"
+	name "Endless Nova Trader"
+	description "EV Nova character template: .Trader."
+	system "Kania"
+	planet "Port Kane"
+	date 1 1 3020
+	conversation "EVN start trader"
+	account
+		credits 25000
+		score 0
+	set "license: Pilot's"
+	set "start: EVN trader"
+
+conversation "EVN start trader"
+	action
+		give ship "Shuttle" "EVN Trader"
+		set "EVN character: trader"
+		log "Started as the EVN Trader character template."
+	`Your Nova career begins in the Kania system.`
+	name

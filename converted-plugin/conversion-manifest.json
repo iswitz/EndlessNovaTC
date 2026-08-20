@@ -1,0 +1,196 @@
+{
+  "generatedFrom": "C:\\Users\\Isaac\\Documents\\ChatGPT\\EVNova-to-ES-Converter\\parsed-data",
+  "types": {
+    "bööm": {
+      "count": 15,
+      "file": "source/b__m.json",
+      "esMapping": "preserved source data"
+    },
+    "chär": {
+      "count": 1,
+      "file": "source/ch_r.json",
+      "esMapping": "preserved source data"
+    },
+    "cicn": {
+      "count": 29,
+      "file": "source/cicn.json",
+      "esMapping": "preserved source data"
+    },
+    "cölr": {
+      "count": 1,
+      "file": "source/c_lr.json",
+      "esMapping": "preserved source data"
+    },
+    "crön": {
+      "count": 125,
+      "file": "source/cr_n.json",
+      "esMapping": "preserved source data"
+    },
+    "dësc": {
+      "count": 3032,
+      "file": "source/d_sc.json",
+      "esMapping": "preserved source data"
+    },
+    "DITL": {
+      "count": 0,
+      "file": "source/DITL.json",
+      "esMapping": "preserved source data"
+    },
+    "DLOG": {
+      "count": 0,
+      "file": "source/DLOG.json",
+      "esMapping": "preserved source data"
+    },
+    "düde": {
+      "count": 147,
+      "file": "source/d_de.json",
+      "esMapping": "preserved source data"
+    },
+    "flët": {
+      "count": 128,
+      "file": "source/fl_t.json",
+      "esMapping": "preserved source data"
+    },
+    "gövt": {
+      "count": 68,
+      "file": "source/g_vt.json",
+      "esMapping": "preserved source data"
+    },
+    "ïntf": {
+      "count": 7,
+      "file": "source/_ntf.json",
+      "esMapping": "preserved source data"
+    },
+    "jünk": {
+      "count": 23,
+      "file": "source/j_nk.json",
+      "esMapping": "preserved source data"
+    },
+    "mïsn": {
+      "count": 791,
+      "file": "source/m_sn.json",
+      "esMapping": "preserved source data"
+    },
+    "nëbu": {
+      "count": 4,
+      "file": "source/n_bu.json",
+      "esMapping": "preserved source data"
+    },
+    "öops": {
+      "count": 19,
+      "file": "source/_ops.json",
+      "esMapping": "preserved source data"
+    },
+    "oütf": {
+      "count": 242,
+      "file": "source/o_tf.json",
+      "esMapping": "preserved source data"
+    },
+    "përs": {
+      "count": 516,
+      "file": "source/p_rs.json",
+      "esMapping": "preserved source data"
+    },
+    "PICT": {
+      "count": 671,
+      "file": "source/PICT.json",
+      "esMapping": "preserved source data"
+    },
+    "ränk": {
+      "count": 31,
+      "file": "source/r_nk.json",
+      "esMapping": "preserved source data"
+    },
+    "rlë8": {
+      "count": 0,
+      "file": "source/rl_8.json",
+      "esMapping": "preserved source data"
+    },
+    "rlëD": {
+      "count": 282,
+      "file": "source/rl_D.json",
+      "esMapping": "preserved source data"
+    },
+    "röid": {
+      "count": 16,
+      "file": "source/r_id.json",
+      "esMapping": "preserved source data"
+    },
+    "shän": {
+      "count": 288,
+      "file": "source/sh_n.json",
+      "esMapping": "preserved source data"
+    },
+    "shïp": {
+      "count": 288,
+      "file": "source/sh_p.json",
+      "esMapping": "preserved source data"
+    },
+    "snd ": {
+      "count": 0,
+      "file": "source/snd_.json",
+      "esMapping": "preserved source data"
+    },
+    "spïn": {
+      "count": 136,
+      "file": "source/sp_n.json",
+      "esMapping": "preserved source data"
+    },
+    "spöb": {
+      "count": 411,
+      "file": "source/sp_b.json",
+      "esMapping": "preserved source data"
+    },
+    "STR ": {
+      "count": 0,
+      "file": "source/STR_.json",
+      "esMapping": "preserved source data"
+    },
+    "STRH": {
+      "count": 0,
+      "file": "source/STRH.json",
+      "esMapping": "preserved source data"
+    },
+    "sÿst": {
+      "count": 545,
+      "file": "source/s_st.json",
+      "esMapping": "preserved source data"
+    },
+    "vers": {
+      "count": 0,
+      "file": "source/vers.json",
+      "esMapping": "preserved source data"
+    },
+    "wëap": {
+      "count": 81,
+      "file": "source/w_ap.json",
+      "esMapping": "preserved source data"
+    }
+  },
+  "normalized": {
+    "Ship": {
+      "count": 288,
+      "file": "source/Ship.json"
+    },
+    "Outfit": {
+      "count": 242,
+      "file": "source/Outfit.json"
+    },
+    "Weapon": {
+      "count": 81,
+      "file": "source/Weapon.json"
+    },
+    "Planet": {
+      "count": 411,
+      "file": "source/Planet.json"
+    },
+    "System": {
+      "count": 545,
+      "file": "source/System.json"
+    },
+    "Explosion": {
+      "count": 15,
+      "file": "source/Explosion.json"
+    }
+  }
+}

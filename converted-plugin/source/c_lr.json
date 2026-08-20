@@ -1,0 +1,46 @@
+{
+  "nova:128": {
+    "idSpace": {
+      "bööm": {},
+      "chär": {},
+      "cicn": {},
+      "cölr": {},
+      "crön": {},
+      "dësc": {},
+      "DITL": {},
+      "DLOG": {},
+      "düde": {},
+      "flët": {},
+      "gövt": {},
+      "ïntf": {},
+      "jünk": {},
+      "mïsn": {},
+      "nëbu": {},
+      "öops": {},
+      "oütf": {},
+      "përs": {},
+      "PICT": {},
+      "ränk": {},
+      "rlë8": {},
+      "rlëD": {},
+      "röid": {},
+      "shän": {},
+      "shïp": {},
+      "snd ": {},
+      "spïn": {},
+      "spöb": {},
+      "STR ": {},
+      "STRH": {},
+      "sÿst": {},
+      "vers": {},
+      "wëap": {}
+    },
+    "name": "Colors",
+    "id": 128,
+    "data": {
+      "byteLength": 244
+    },
+    "_globalID": "nova:128",
+    "_prefix": "nova"
+  }
+}

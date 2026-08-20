@@ -1,0 +1,23 @@
+[submodule "vendor/burgerlib"]
+	path = vendor/burgerlib
+	url = https://github.com/Olde-Skuul/burgerlib.git
+
+[submodule "vendor/evnova-utils"]
+	path = vendor/evnova-utils
+	url = https://github.com/vasi/evnova-utils.git
+
+[submodule "vendor/evntoes"]
+	path = vendor/evntoes
+	url = https://github.com/edelventhal/EVNToEndlessSky.git
+
+[submodule "vendor/novajs"]
+	path = vendor/novajs
+	url = https://github.com/mattsoulanille/NovaJS.git
+
+[submodule "vendor/novaparse"]
+	path = vendor/novaparse
+	url = https://github.com/mattsoulanille/NovaParse.git
+
+[submodule "vendor/rsrcdump"]
+	path = vendor/rsrcdump
+	url = https://github.com/jorio/rsrcdump.git

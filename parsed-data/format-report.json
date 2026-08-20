@@ -1,0 +1,48 @@
+{
+  "evnRoot": "C:/Users/Isaac/EV Nova",
+  "parser": "NovaParse",
+  "supportedInput": [
+    "Mac resource fork",
+    ".ndat"
+  ],
+  "detectedInput": "EV Nova Windows BurgerLib .rez",
+  "reason": "NovaParse/resourceforkjs reads classic Mac resource-fork headers. Windows EVN .rez files begin with BRGR and require BurgerLib container decoding first.",
+  "files": [
+    {
+      "name": "Nova Data 1.rez",
+      "size": 2448865,
+      "headerAscii": "BRGR\u0001\u0000\u0000\u0000\u00157\u0000\u0000\u0001\u0000\u0000\u0000",
+      "headerHex": "42524752010000001537000001000000"
+    },
+    {
+      "name": "Nova Data 2.rez",
+      "size": 1036415,
+      "headerAscii": "BRGR\u0001\u0000\u0000\u000016\u0000\u0000\u0001\u0000\u0000\u0000",
+      "headerHex": "42524752010000003136000001000000"
+    },
+    {
+      "name": "Nova Data 3.rez",
+      "size": 719139,
+      "headerAscii": "BRGR\u0001\u0000\u0000\u0000-,\u0000\u0000\u0001\u0000\u0000\u0000",
+      "headerHex": "42524752010000002d2c000001000000"
+    },
+    {
+      "name": "Nova Data 4.rez",
+      "size": 730215,
+      "headerAscii": "BRGR\u0001\u0000\u0000\u0000\u0005'\u0000\u0000\u0001\u0000\u0000\u0000",
+      "headerHex": "42524752010000000527000001000000"
+    },
+    {
+      "name": "Nova Data 5.rez",
+      "size": 909648,
+      "headerAscii": "BRGR\u0001\u0000\u0000\u0000),\u0000\u0000\u0001\u0000\u0000\u0000",
+      "headerHex": "4252475201000000292c000001000000"
+    },
+    {
+      "name": "Nova Data 6.rez",
+      "size": 1117644,
+      "headerAscii": "BRGR\u0001\u0000\u0000\u00001E\u0000\u0000\u0001\u0000\u0000\u0000",
+      "headerHex": "42524752010000003145000001000000"
+    }
+  ]
+}

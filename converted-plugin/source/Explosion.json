@@ -1,0 +1,467 @@
+{
+  "nova:128": {
+    "id": "nova:128",
+    "name": "FAE Small",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4000",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 16
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:128",
+      "name": "FAE Small",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 1
+  },
+  "nova:129": {
+    "id": "nova:129",
+    "name": "FAE Medium",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4002",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 16
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:129",
+      "name": "FAE Medium",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 1
+  },
+  "nova:130": {
+    "id": "nova:130",
+    "name": "FAE Large",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4004",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 20
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:130",
+      "name": "FAE Large",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 1
+  },
+  "nova:131": {
+    "id": "nova:131",
+    "name": "mushroom",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4006",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 20
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:131",
+      "name": "mushroom",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 0.6
+  },
+  "nova:132": {
+    "id": "nova:132",
+    "name": "ship breakup",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4000",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 16
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:132",
+      "name": "ship breakup",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 1
+  },
+  "nova:133": {
+    "id": "nova:133",
+    "name": "ship exploding",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4004",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 20
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:133",
+      "name": "ship exploding",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 1
+  },
+  "nova:134": {
+    "id": "nova:134",
+    "name": "FPC Impact",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4008",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 16
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:134",
+      "name": "FPC Impact",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 1
+  },
+  "nova:135": {
+    "id": "nova:135",
+    "name": "Nuclear detonation",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4010",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 16
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:135",
+      "name": "Nuclear detonation",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 0.3
+  },
+  "nova:136": {
+    "id": "nova:136",
+    "name": "Small Railgun Impact",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4012",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 16
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:136",
+      "name": "Small Railgun Impact",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 1
+  },
+  "nova:137": {
+    "id": "nova:137",
+    "name": "Medium Railgun Impact",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4014",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 16
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:137",
+      "name": "Medium Railgun Impact",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 1
+  },
+  "nova:138": {
+    "id": "nova:138",
+    "name": "Large Railgun Impact",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4016",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 16
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:138",
+      "name": "Large Railgun Impact",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 1
+  },
+  "nova:139": {
+    "id": "nova:139",
+    "name": "Superlarge Railgun Impact",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4018",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 16
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:139",
+      "name": "Superlarge Railgun Impact",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 1
+  },
+  "nova:140": {
+    "id": "nova:140",
+    "name": "Small Polaron Detonation",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4020",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 16
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:140",
+      "name": "Small Polaron Detonation",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 1
+  },
+  "nova:141": {
+    "id": "nova:141",
+    "name": "Large Polaron Detonation",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4022",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 16
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:141",
+      "name": "Large Polaron Detonation",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 1
+  },
+  "nova:142": {
+    "id": "nova:142",
+    "name": "HellHound Detonation",
+    "prefix": "nova",
+    "animation": {
+      "images": {
+        "baseImage": {
+          "id": "nova:4024",
+          "imagePurposes": {
+            "normal": {
+              "start": 0,
+              "length": 17
+            }
+          }
+        }
+      },
+      "exitPoints": {
+        "gun": [],
+        "turret": [],
+        "guided": [],
+        "beam": [],
+        "upCompress": [],
+        "downCompress": []
+      },
+      "id": "nova:142",
+      "name": "HellHound Detonation",
+      "prefix": "nova"
+    },
+    "sound": null,
+    "rate": 0.5
+  }
+}
