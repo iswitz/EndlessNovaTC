@@ -29,14 +29,16 @@ Current ES conversion:
 - EVN `DefCount` wave encoding converted to total ES tribute-fleet spawns. ES has no direct equivalent for EVN wave timing.
 - EVN murk mapped to ES system haze artwork. Sensor interference, visibility expressions, and decorative `nëbu` regions remain explicit source/attribute data because ES has no direct equivalents.
 - 18 simple missions and 39 conversations active. Complex mission branches remain preserved but inactive.
+- All 19 EVN `öops` disasters now emit ES system trade events plus hidden landing schedulers. EVN's daily frequency is approximated at landing because ES has no independent daily random-event hook; duration schedules a price reset.
+- `crön` conversion now classifies fixed-date, random, and control-bit records. `cron-events.txt` emits deterministic records only; current fixed records require random or `EnableOn` handling, so all 125 remain preserved for the mission/event pass.
 - Startup menu override, `Endless Nova TC` metadata, EVN Trader start, and installed Windows test copy verified.
 
 Extracted images and sounds are intentionally excluded from Git for now. They remain local under `converted-plugin/images/` and `converted-plugin/sounds/`; `.gitignore` keeps them out of commits. The converter and asset scripts still support rebuilding them locally.
 
 ## Plans moving forward
 
-1. Convert `öops` disasters into ES commodity price events and validate duration/frequency behavior.
-2. Convert `crön` records into ES events, including date windows, control-bit conditions, news, and state changes.
+1. Validate `öops` event overlap, scheduler behavior, and price reset behavior in-game.
+2. Convert `crön` control-bit records through hidden ES missions, then add date-window, news, and state-change mappings.
 3. Expand mission conversion: branch choices, complex availability expressions, mission starts, abort/failure paths, cargo/person handling, and control-bit state transitions.
 4. Improve ship and weapon fidelity: loadouts, AI, turrets, ammunition, animations, explosions, sound links, and remaining parser warnings.
 5. Map remaining planet and system fields: landing restrictions, tribute thresholds, services, stellar weapons, dead/reanimated states, navigation defaults, and system visibility replacements.

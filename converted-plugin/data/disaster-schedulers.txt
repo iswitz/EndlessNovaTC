@@ -1,0 +1,269 @@
+# Hidden landing schedulers for EVN öops disasters.
+# Freq is applied when the player lands at the affected planet or station.
+
+mission "EVN öops scheduler 146: Another good harvest"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Stlap"
+	to offer
+		not "EVN öops active 146"
+		random < 65
+	on offer
+		event "EVN öops 146: Another good harvest"
+		event "EVN öops 146: Another good harvest end" 60
+		fail
+
+mission "EVN öops scheduler 145: A shortage in supply"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Heraan"
+	to offer
+		not "EVN öops active 145"
+		not "EVN bit 80"
+		random < 70
+	on offer
+		event "EVN öops 145: A shortage in supply"
+		event "EVN öops 145: A shortage in supply end" 15
+		fail
+
+mission "EVN öops scheduler 144: The discovery of a new drug"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Tranquility"
+	to offer
+		not "EVN öops active 144"
+		random < 30
+	on offer
+		event "EVN öops 144: The discovery of a new drug"
+		event "EVN öops 144: The discovery of a new drug end" 50
+		fail
+
+mission "EVN öops scheduler 143: The discovery of a new ore deposit"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Atar"
+	to offer
+		not "EVN öops active 143"
+		random < 25
+	on offer
+		event "EVN öops 143: The discovery of a new ore deposit"
+		event "EVN öops 143: The discovery of a new ore deposit end" 50
+		fail
+
+mission "EVN öops scheduler 142: Damage due to student pranks"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Palein"
+	to offer
+		not "EVN öops active 142"
+		random < 30
+	on offer
+		event "EVN öops 142: Damage due to student pranks"
+		event "EVN öops 142: Damage due to student pranks end" 50
+		fail
+
+mission "EVN öops scheduler 141: A series of good raids"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Houseless"
+	to offer
+		not "EVN öops active 141"
+		random < 30
+	on offer
+		event "EVN öops 141: A series of good raids"
+		event "EVN öops 141: A series of good raids end" 20
+		fail
+
+mission "EVN öops scheduler 140: A large number of prisoner deaths"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Eguit"
+	to offer
+		not "EVN öops active 140"
+		random < 50
+	on offer
+		event "EVN öops 140: A large number of prisoner deaths"
+		event "EVN öops 140: A large number of prisoner deaths end" 30
+		fail
+
+mission "EVN öops scheduler 139: An excellent harvest"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Aria"
+	to offer
+		not "EVN öops active 139"
+		random < 30
+	on offer
+		event "EVN öops 139: An excellent harvest"
+		event "EVN öops 139: An excellent harvest end" 50
+		fail
+
+mission "EVN öops scheduler 138: Damage due to student pranks"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Romule"
+	to offer
+		not "EVN öops active 138"
+		random < 30
+	on offer
+		event "EVN öops 138: Damage due to student pranks"
+		event "EVN öops 138: Damage due to student pranks end" 30
+		fail
+
+mission "EVN öops scheduler 137: An enormous surplus"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Ver'ar Pised"
+	to offer
+		not "EVN öops active 137"
+		random < 75
+	on offer
+		event "EVN öops 137: An enormous surplus"
+		event "EVN öops 137: An enormous surplus end" 100
+		fail
+
+mission "EVN öops scheduler 136: An excellent harvest"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Tre'ar Vilarn"
+	to offer
+		not "EVN öops active 136"
+		random < 75
+	on offer
+		event "EVN öops 136: An excellent harvest"
+		event "EVN öops 136: An excellent harvest end" 60
+		fail
+
+mission "EVN öops scheduler 135: A good harvest of bio-agents"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Hargen"
+	to offer
+		not "EVN öops active 135"
+		random < 25
+	on offer
+		event "EVN öops 135: A good harvest of bio-agents"
+		event "EVN öops 135: A good harvest of bio-agents end" 15
+		fail
+
+mission "EVN öops scheduler 134: A spate of break-downs"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Greenwich"
+	to offer
+		not "EVN öops active 134"
+		random < 25
+	on offer
+		event "EVN öops 134: A spate of break-downs"
+		event "EVN öops 134: A spate of break-downs end" 40
+		fail
+
+mission "EVN öops scheduler 133: A recent increase in trade"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Lodestone"
+	to offer
+		not "EVN öops active 133"
+		random < 30
+	on offer
+		event "EVN öops 133: A recent increase in trade"
+		event "EVN öops 133: A recent increase in trade end" 30
+		fail
+
+mission "EVN öops scheduler 132: An excess of trade"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "New Ireland"
+	to offer
+		not "EVN öops active 132"
+		random < 50
+	on offer
+		event "EVN öops 132: An excess of trade"
+		event "EVN öops 132: An excess of trade end" 40
+		fail
+
+mission "EVN öops scheduler 131: A seasonal lull"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Gineia"
+	to offer
+		not "EVN öops active 131"
+		random < 50
+	on offer
+		event "EVN öops 131: A seasonal lull"
+		event "EVN öops 131: A seasonal lull end" 40
+		fail
+
+mission "EVN öops scheduler 130: A minor drought"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Altia"
+	to offer
+		not "EVN öops active 130"
+		random < 50
+	on offer
+		event "EVN öops 130: A minor drought"
+		event "EVN öops 130: A minor drought end" 25
+		fail
+
+mission "EVN öops scheduler 128: An enormous food surplus"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Port Kane"
+	to offer
+		not "EVN öops active 128"
+		random < 35
+	on offer
+		event "EVN öops 128: An enormous food surplus"
+		event "EVN öops 128: An enormous food surplus end" 30
+		fail
+
+mission "EVN öops scheduler 129: A glut on the market"
+	invisible
+	non-blocking
+	landing
+	repeat
+	source "Georgia"
+	to offer
+		not "EVN öops active 129"
+		random < 40
+	on offer
+		event "EVN öops 129: A glut on the market"
+		event "EVN öops 129: A glut on the market end" 15
+		fail

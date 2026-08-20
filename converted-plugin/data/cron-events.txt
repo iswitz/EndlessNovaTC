@@ -1,0 +1,6 @@
+# EVN crön records with fixed dates and deterministic activation.
+# Control-bit-only crön records remain in source/cr_n.json for mission/event conversion.
+# EVN Random values below 100 are not emitted: ES has no fixed-date event probability.
+
+# Skipped EVN crön 128 "Wraith Change": EnableOn "b317 & !b1300" requires a mission trigger.
+# Skipped EVN crön 129 "Terraforming Start": Random 40 cannot map to a fixed ES event.

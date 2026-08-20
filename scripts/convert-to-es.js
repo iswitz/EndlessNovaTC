@@ -212,7 +212,7 @@ function evnCommodityPrice(commodity, tier) {
   const ratio = 0.25 + (normalizedTier - 1) * 0.25;
   return Math.round(commodity.min + (commodity.max - commodity.min) * ratio);
 }
-function systemTradeLines(system) {
+function systemTradeValues(system) {
   const totals = new Map();
   for (const reference of system.planets || []) {
     const planet = normalizedOf("Planet", reference);
@@ -227,11 +227,15 @@ function systemTradeLines(system) {
       totals.set(commodity.name, current);
     }
   }
-  return EVN_COMMODITIES.flatMap(commodity => {
+  const prices = new Map();
+  for (const commodity of EVN_COMMODITIES) {
     const current = totals.get(commodity.name);
-    if (!current) return [];
-    return [`\ttrade ${q(commodity.name)} ${evnCommodityPrice(commodity, current.total / current.count)}`];
-  });
+    if (current) prices.set(commodity.name, evnCommodityPrice(commodity, current.total / current.count));
+  }
+  return prices;
+}
+function systemTradeLines(system) {
+  return [...systemTradeValues(system)].map(([commodity, price]) => `\ttrade ${q(commodity)} ${price}`);
 }
 function evnDefenseShipCount(value) {
   const encoded = Math.trunc(number(value, 0));
@@ -1029,6 +1033,151 @@ function convertMissionStubs() {
   write(path.join(output, "data", "missions.txt"), lines.join("\n"));
 }
 
+function evnDate(data, prefix) {
+  const day = Math.trunc(Number(data && data[`${prefix}Day`]) || 0);
+  const month = Math.trunc(Number(data && data[`${prefix}Month`]) || 0);
+  const year = Math.trunc(Number(data && data[`${prefix}Year`]) || 0);
+  return day > 0 && month > 0 && year > 0 ? [day, month, year] : null;
+}
+
+function emitEventBitActions(lines, expression, indent) {
+  const value = String(expression || "").trim();
+  if (!value) return true;
+  if (!/!?b\d+(?:\s*[&|]\s*!?b\d+)*$/.test(value)) return false;
+  emitEvnBitActions(lines, value, indent);
+  return true;
+}
+
+function convertCronEvents() {
+  const lines = [
+    "# EVN crön records with fixed dates and deterministic activation.",
+    "# Control-bit-only crön records remain in source/cr_n.json for mission/event conversion.",
+    "# EVN Random values below 100 are not emitted: ES has no fixed-date event probability.",
+    ""
+  ];
+  let emitted = 0;
+  let skippedRandom = 0;
+  let skippedControl = 0;
+  let skippedCondition = 0;
+  for (const record of referenceData["crön"] || []) {
+    const data = record.data || {};
+    const startDate = evnDate(data, "First");
+    const name = safeName(record.name, `EVN crön ${record.id}`);
+    if (!startDate) {
+      skippedControl++;
+      continue;
+    }
+    const random = Math.trunc(Number(data.Random) || 0);
+    if (random !== 100) {
+      skippedRandom++;
+      lines.push(`# Skipped EVN crön ${record.id} ${q(name)}: Random ${random} cannot map to a fixed ES event.`);
+      continue;
+    }
+    if (String(data.EnableOn || "").trim()) {
+      skippedCondition++;
+      lines.push(`# Skipped EVN crön ${record.id} ${q(name)}: EnableOn ${q(data.EnableOn)} requires a mission trigger.`);
+      continue;
+    }
+    const eventName = `EVN crön ${record.id}: ${name}`;
+    lines.push(`event ${q(eventName)}`);
+    lines.push(`\tdate ${startDate.join(" ")}`);
+    if (!emitEventBitActions(lines, data.OnStart, "\t")) lines.push(`\t# EVN OnStart preserved: ${q(data.OnStart)}`);
+    if (data.IndNewsStr && Number(data.IndNewsStr) >= 0) lines.push(`\t# EVN IndNewsStr ${Number(data.IndNewsStr)} requires converted news text.`);
+    lines.push("");
+    emitted++;
+
+    const endDate = evnDate(data, "Last");
+    if (endDate && String(data.OnEnd || "").trim()) {
+      const endName = `${eventName} end`;
+      lines.push(`event ${q(endName)}`);
+      lines.push(`\tdate ${endDate.join(" ")}`);
+      if (!emitEventBitActions(lines, data.OnEnd, "\t")) lines.push(`\t# EVN OnEnd preserved: ${q(data.OnEnd)}`);
+      lines.push("");
+    }
+  }
+  write(path.join(output, "data", "cron-events.txt"), lines.join("\n"));
+  return { emitted, skippedRandom, skippedControl, skippedCondition };
+}
+
+function convertDisasters() {
+  const lines = [
+    "# EVN öops disasters converted to ES system-level trade events.",
+    "# EVN changes one planet or station; ES trade prices belong to the containing system.",
+    "# The hidden landing mission approximates EVN's daily Freq roll because ES has no daily random event hook.",
+    ""
+  ];
+  const missionLines = [
+    "# Hidden landing schedulers for EVN öops disasters.",
+    "# Freq is applied when the player lands at the affected planet or station.",
+    ""
+  ];
+  const byPlanet = new Map();
+  const systems = new Map();
+  for (const system of Object.values(normalized.System || {})) {
+    if (system.parseError) continue;
+    const systemName = safeName(system.name, `EVN system ${system.id}`);
+    systems.set(systemName, systemTradeValues(system));
+    for (const reference of system.planets || []) byPlanet.set(String(refId(reference)), { system, systemName });
+  }
+  let emitted = 0;
+  let skipped = 0;
+  for (const record of referenceData["öops"] || []) {
+    const data = record.data || {};
+    const target = Math.trunc(Number(data.Stellar));
+    const commodity = EVN_COMMODITIES[Math.trunc(Number(data.Commodity))];
+    const location = byPlanet.get(String(target));
+    const targetPlanet = normalizedOf("Planet", target);
+    const targetName = targetPlanet ? safeName(targetPlanet.name, `EVN planet ${target}`) : null;
+    const base = location && commodity && systems.get(location.systemName).get(commodity.name);
+    if (!location || !commodity || !Number.isFinite(base)) {
+      lines.push(`# Skipped EVN öops ${record.id} ${q(record.name)}: no ES system market mapping.`);
+      skipped++;
+      continue;
+    }
+    const delta = Math.trunc(Number(data.PriceDelta) || 0);
+    const adjusted = Math.max(1, base + delta);
+    const eventName = `EVN öops ${record.id}: ${safeName(record.name, `disaster ${record.id}`)}`;
+    const endName = `${eventName} end`;
+    const activeFlag = `EVN öops active ${record.id}`;
+    const freq = Math.max(1, Math.min(100, Math.trunc(Number(data.Freq) || 1)));
+    const duration = Math.max(0, Math.trunc(Number(data.Duration) || 0));
+
+    lines.push(`# EVN target ${targetName || `stellar ${target}`} in ${location.systemName}; base ${base}, delta ${delta}, duration ${duration}, frequency ${freq}.`);
+    lines.push(`event ${q(eventName)}`);
+    lines.push(`\tset ${q(activeFlag)}`);
+    lines.push(`\tsystem ${q(location.systemName)}`);
+    lines.push(`\t\ttrade ${q(commodity.name)} ${adjusted}`);
+    if (data.ActivateOn) lines.push(`# EVN ActivateOn ${q(data.ActivateOn)} is enforced by the scheduler mission.`);
+    lines.push("");
+    if (duration > 0) {
+      lines.push(`event ${q(endName)}`);
+      lines.push(`\tclear ${q(activeFlag)}`);
+      lines.push(`\tsystem ${q(location.systemName)}`);
+      lines.push(`\t\ttrade ${q(commodity.name)} ${base}`);
+      lines.push("");
+    }
+
+    missionLines.push(`mission ${q(`EVN öops scheduler ${record.id}: ${safeName(record.name, `disaster ${record.id}`)}`)}`);
+    missionLines.push("\tinvisible");
+    missionLines.push("\tnon-blocking");
+    missionLines.push("\tlanding");
+    missionLines.push("\trepeat");
+    if (targetName) missionLines.push(`\tsource ${q(targetName)}`);
+    missionLines.push("\tto offer");
+    missionLines.push(`\t\tnot ${q(activeFlag)}`);
+    if (data.ActivateOn && !emitEvnBitConditions(missionLines, data.ActivateOn, "\t\t")) missionLines.push(`\t\t# EVN ActivateOn preserved: ${q(data.ActivateOn)}`);
+    missionLines.push(`\t\trandom < ${freq}`);
+    missionLines.push("\ton offer");
+    missionLines.push(`\t\tevent ${q(eventName)}`);
+    if (duration > 0) missionLines.push(`\t\tevent ${q(endName)} ${duration}`);
+    missionLines.push("\t\tfail", "");
+    emitted++;
+  }
+  write(path.join(output, "data", "disasters.txt"), lines.join("\n"));
+  write(path.join(output, "data", "disaster-schedulers.txt"), missionLines.join("\n"));
+  return { emitted, skipped };
+}
+
 function preserveAllResources() {
   const sourceDir = path.join(output, "source");
   mkdir(sourceDir);
@@ -1063,8 +1212,10 @@ function main() {
   convertStarts();
   convertGovernments();
   convertMissionStubs();
+  const cron = convertCronEvents();
+  const disasters = convertDisasters();
   preserveAllResources();
-  console.log(JSON.stringify({ output, normalized: Object.fromEntries(Object.entries(normalized).map(([k, v]) => [k, Object.keys(v).length])), raw: Object.fromEntries(Object.entries(resources).map(([k, v]) => [k, Object.keys(v).length])) }, null, 2));
+  console.log(JSON.stringify({ output, cron, disasters, normalized: Object.fromEntries(Object.entries(normalized).map(([k, v]) => [k, Object.keys(v).length])), raw: Object.fromEntries(Object.entries(resources).map(([k, v]) => [k, Object.keys(v).length])) }, null, 2));
 }
 
 main();

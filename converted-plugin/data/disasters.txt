@@ -1,0 +1,213 @@
+# EVN öops disasters converted to ES system-level trade events.
+# EVN changes one planet or station; ES trade prices belong to the containing system.
+# The hidden landing mission approximates EVN's daily Freq roll because ES has no daily random event hook.
+
+# EVN target Stlap in Moash Rep; base 225, delta -30, duration 60, frequency 65.
+event "EVN öops 146: Another good harvest"
+	set "EVN öops active 146"
+	system "Moash Rep"
+		trade "Food" 195
+
+event "EVN öops 146: Another good harvest end"
+	clear "EVN öops active 146"
+	system "Moash Rep"
+		trade "Food" 225
+
+# EVN target Heraan in Heraan; base 720, delta 70, duration 15, frequency 70.
+event "EVN öops 145: A shortage in supply"
+	set "EVN öops active 145"
+	system "Heraan"
+		trade "Industrial" 790
+# EVN ActivateOn "!b80" is enforced by the scheduler mission.
+
+event "EVN öops 145: A shortage in supply end"
+	clear "EVN öops active 145"
+	system "Heraan"
+		trade "Industrial" 720
+
+# EVN target Tranquility in Heraan Malo; base 555, delta -150, duration 50, frequency 30.
+event "EVN öops 144: The discovery of a new drug"
+	set "EVN öops active 144"
+	system "Heraan Malo"
+		trade "Medical" 405
+
+event "EVN öops 144: The discovery of a new drug end"
+	clear "EVN öops active 144"
+	system "Heraan Malo"
+		trade "Medical" 555
+
+# EVN target Atar in Pilot; base 290, delta -110, duration 50, frequency 25.
+event "EVN öops 143: The discovery of a new ore deposit"
+	set "EVN öops active 143"
+	system "Pilot"
+		trade "Metal" 180
+
+event "EVN öops 143: The discovery of a new ore deposit end"
+	clear "EVN öops active 143"
+	system "Pilot"
+		trade "Metal" 290
+
+# EVN target Palein in Dani Evera; base 630, delta 40, duration 50, frequency 30.
+event "EVN öops 142: Damage due to student pranks"
+	set "EVN öops active 142"
+	system "Dani Evera"
+		trade "Equipment" 670
+
+event "EVN öops 142: Damage due to student pranks end"
+	clear "EVN öops active 142"
+	system "Dani Evera"
+		trade "Equipment" 630
+
+# EVN target Houseless in Kipa; base 1070, delta -180, duration 20, frequency 30.
+event "EVN öops 141: A series of good raids"
+	set "EVN öops active 141"
+	system "Kipa"
+		trade "Luxury Goods" 890
+
+event "EVN öops 141: A series of good raids end"
+	clear "EVN öops active 141"
+	system "Kipa"
+		trade "Luxury Goods" 1070
+
+# EVN target Eguit in Eguit; base 290, delta 40, duration 30, frequency 50.
+event "EVN öops 140: A large number of prisoner deaths"
+	set "EVN öops active 140"
+	system "Eguit"
+		trade "Metal" 330
+
+event "EVN öops 140: A large number of prisoner deaths end"
+	clear "EVN öops active 140"
+	system "Eguit"
+		trade "Metal" 290
+
+# EVN target Aria in Aria; base 225, delta -15, duration 50, frequency 30.
+event "EVN öops 139: An excellent harvest"
+	set "EVN öops active 139"
+	system "Aria"
+		trade "Food" 210
+
+event "EVN öops 139: An excellent harvest end"
+	clear "EVN öops active 139"
+	system "Aria"
+		trade "Food" 225
+
+# EVN target Romule in Tekel Rom; base 630, delta 110, duration 30, frequency 30.
+event "EVN öops 138: Damage due to student pranks"
+	set "EVN öops active 138"
+	system "Tekel Rom"
+		trade "Equipment" 740
+
+event "EVN öops 138: Damage due to student pranks end"
+	clear "EVN öops active 138"
+	system "Tekel Rom"
+		trade "Equipment" 630
+
+# EVN target Ver'ar Pised in Ver'avo; base 555, delta -110, duration 100, frequency 75.
+event "EVN öops 137: An enormous surplus"
+	set "EVN öops active 137"
+	system "Ver'avo"
+		trade "Medical" 445
+
+event "EVN öops 137: An enormous surplus end"
+	clear "EVN öops active 137"
+	system "Ver'avo"
+		trade "Medical" 555
+
+# EVN target Tre'ar Vilarn in Tri'cikilla; base 225, delta -15, duration 60, frequency 75.
+event "EVN öops 136: An excellent harvest"
+	set "EVN öops active 136"
+	system "Tri'cikilla"
+		trade "Food" 210
+
+event "EVN öops 136: An excellent harvest end"
+	clear "EVN öops active 136"
+	system "Tri'cikilla"
+		trade "Food" 225
+
+# EVN target Hargen in Merrynne; base 555, delta -150, duration 15, frequency 25.
+event "EVN öops 135: A good harvest of bio-agents"
+	set "EVN öops active 135"
+	system "Merrynne"
+		trade "Medical" 405
+
+event "EVN öops 135: A good harvest of bio-agents end"
+	clear "EVN öops active 135"
+	system "Merrynne"
+		trade "Medical" 555
+
+# EVN target Greenwich in Horizon; base 630, delta 115, duration 40, frequency 25.
+event "EVN öops 134: A spate of break-downs"
+	set "EVN öops active 134"
+	system "Horizon"
+		trade "Equipment" 745
+
+event "EVN öops 134: A spate of break-downs end"
+	clear "EVN öops active 134"
+	system "Horizon"
+		trade "Equipment" 630
+
+# EVN target Lodestone in Fire; base 620, delta -70, duration 30, frequency 30.
+event "EVN öops 133: A recent increase in trade"
+	set "EVN öops active 133"
+	system "Fire"
+		trade "Industrial" 550
+
+event "EVN öops 133: A recent increase in trade end"
+	clear "EVN öops active 133"
+	system "Fire"
+		trade "Industrial" 620
+
+# EVN target New Ireland in Tuatha; base 1070, delta -180, duration 40, frequency 50.
+event "EVN öops 132: An excess of trade"
+	set "EVN öops active 132"
+	system "Tuatha"
+		trade "Luxury Goods" 890
+
+event "EVN öops 132: An excess of trade end"
+	clear "EVN öops active 132"
+	system "Tuatha"
+		trade "Luxury Goods" 1070
+
+# EVN target Gineia in Outpost 819; base 290, delta -40, duration 40, frequency 50.
+event "EVN öops 131: A seasonal lull"
+	set "EVN öops active 131"
+	system "Outpost 819"
+		trade "Metal" 250
+
+event "EVN öops 131: A seasonal lull end"
+	clear "EVN öops active 131"
+	system "Outpost 819"
+		trade "Metal" 290
+
+# EVN target Altia in Altair; base 475, delta 15, duration 25, frequency 50.
+event "EVN öops 130: A minor drought"
+	set "EVN öops active 130"
+	system "Altair"
+		trade "Food" 490
+
+event "EVN öops 130: A minor drought end"
+	clear "EVN öops active 130"
+	system "Altair"
+		trade "Food" 475
+
+# EVN target Port Kane in Kania; base 475, delta -15, duration 30, frequency 35.
+event "EVN öops 128: An enormous food surplus"
+	set "EVN öops active 128"
+	system "Kania"
+		trade "Food" 460
+
+event "EVN öops 128: An enormous food surplus end"
+	clear "EVN öops active 128"
+	system "Kania"
+		trade "Food" 475
+
+# EVN target Georgia in Nesre Primus; base 620, delta -70, duration 15, frequency 40.
+event "EVN öops 129: A glut on the market"
+	set "EVN öops active 129"
+	system "Nesre Primus"
+		trade "Industrial" 550
+
+event "EVN öops 129: A glut on the market end"
+	clear "EVN öops active 129"
+	system "Nesre Primus"
+		trade "Industrial" 620
