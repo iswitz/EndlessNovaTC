@@ -1,0 +1,2101 @@
+# Hidden schedulers for EVN crön records.
+# EnableOn becomes an ES mission condition; PreHoldoff, Duration, and PostHoldoff become delayed events.
+
+mission "EVN crön scheduler 215: Sigma Shipyards 4 cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 215"
+		not "EVN crön pending 215"
+		and
+			has "EVN bit 47"
+			not "EVN bit 48"
+		random < 100
+	on offer
+		set "EVN crön pending 215"
+		event "EVN crön 215: Sigma Shipyards 4 cron" 30
+		event "EVN crön 215: Sigma Shipyards 4 cron end" 30
+		fail
+
+mission "EVN crön scheduler 214: Sigma Shipyards 3 cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 214"
+		not "EVN crön pending 214"
+		and
+			has "EVN bit 33"
+			not "EVN bit 34"
+		random < 100
+	on offer
+		set "EVN crön pending 214"
+		event "EVN crön 214: Sigma Shipyards 3 cron" 30
+		event "EVN crön 214: Sigma Shipyards 3 cron end" 30
+		fail
+
+mission "EVN crön scheduler 213: Re-land on Merrol cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 213"
+		not "EVN crön pending 213"
+		and
+			has "EVN bit 9333"
+			not "EVN bit 9334"
+		random < 100
+	on offer
+		set "EVN crön pending 213"
+		event "EVN crön 213: Re-land on Merrol cron" 1
+		event "EVN crön 213: Re-land on Merrol cron end" 1
+		fail
+
+mission "EVN crön scheduler 233: News: Player Defeats Bad Pirate Fleet"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 233"
+		not "EVN crön pending 233"
+		and
+			has "EVN bit 8910"
+			not "EVN bit 8911"
+		random < 100
+	on offer
+		set "EVN crön pending 233"
+		event "EVN crön 233: News: Player Defeats Bad Pirate Fleet" 0
+		event "EVN crön 233: News: Player Defeats Bad Pirate Fleet end" 100
+		fail
+
+mission "EVN crön scheduler 232: News: Rebs beat Feds"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 232"
+		not "EVN crön pending 232"
+		and
+			has "EVN bit 8908"
+			not "EVN bit 8909"
+		random < 100
+	on offer
+		set "EVN crön pending 232"
+		event "EVN crön 232: News: Rebs beat Feds" 0
+		event "EVN crön 232: News: Rebs beat Feds end" 100
+		fail
+
+mission "EVN crön scheduler 231: News: Player discovers way to free Vell-os"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 231"
+		not "EVN crön pending 231"
+		and
+			has "EVN bit 8906"
+			not "EVN bit 8907"
+		random < 100
+	on offer
+		set "EVN crön pending 231"
+		event "EVN crön 231: News: Player discovers way to free Vell-os" 0
+		event "EVN crön 231: News: Player discovers way to free Vell-os end" 100
+		fail
+
+mission "EVN crön scheduler 230: News: Feds Beat Pols"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 230"
+		not "EVN crön pending 230"
+		and
+			has "EVN bit 8904"
+			not "EVN bit 8905"
+		random < 100
+	on offer
+		set "EVN crön pending 230"
+		event "EVN crön 230: News: Feds Beat Pols" 0
+		event "EVN crön 230: News: Feds Beat Pols end" 100
+		fail
+
+mission "EVN crön scheduler 229: News: Assassinating Pol Leader"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 229"
+		not "EVN crön pending 229"
+		and
+			has "EVN bit 8902"
+			not "EVN bit 8903"
+		random < 100
+	on offer
+		set "EVN crön pending 229"
+		event "EVN crön 229: News: Assassinating Pol Leader" 0
+		event "EVN crön 229: News: Assassinating Pol Leader end" 100
+		fail
+
+mission "EVN crön scheduler 228: News: Feds Destroy Rebs"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 228"
+		not "EVN crön pending 228"
+		and
+			has "EVN bit 8900"
+			not "EVN bit 8901"
+		random < 100
+	on offer
+		set "EVN crön pending 228"
+		event "EVN crön 228: News: Feds Destroy Rebs" 0
+		event "EVN crön 228: News: Feds Destroy Rebs end" 100
+		fail
+
+mission "EVN crön scheduler 227: News: Rebs Liaise with Pols"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 227"
+		not "EVN crön pending 227"
+		and
+			has "EVN bit 8898"
+			not "EVN bit 8899"
+		random < 100
+	on offer
+		set "EVN crön pending 227"
+		event "EVN crön 227: News: Rebs Liaise with Pols" 0
+		event "EVN crön 227: News: Rebs Liaise with Pols end" 100
+		fail
+
+mission "EVN crön scheduler 226: News: Player Auroran Thurokiir"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 226"
+		not "EVN crön pending 226"
+		and
+			has "EVN bit 8896"
+			not "EVN bit 8897"
+		random < 100
+	on offer
+		set "EVN crön pending 226"
+		event "EVN crön 226: News: Player Auroran Thurokiir" 0
+		event "EVN crön 226: News: Player Auroran Thurokiir end" 100
+		fail
+
+mission "EVN crön scheduler 225: News: Player Heraan Thurokiir"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 225"
+		not "EVN crön pending 225"
+		and
+			has "EVN bit 8894"
+			not "EVN bit 8895"
+		random < 100
+	on offer
+		set "EVN crön pending 225"
+		event "EVN crön 225: News: Player Heraan Thurokiir" 0
+		event "EVN crön 225: News: Player Heraan Thurokiir end" 100
+		fail
+
+mission "EVN crön scheduler 224: News: Auroran Champion"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 224"
+		not "EVN crön pending 224"
+		and
+			has "EVN bit 8892"
+			not "EVN bit 8893"
+		random < 100
+	on offer
+		set "EVN crön pending 224"
+		event "EVN crön 224: News: Auroran Champion" 0
+		event "EVN crön 224: News: Auroran Champion end" 100
+		fail
+
+mission "EVN crön scheduler 223: News: Pack disrupts shipping"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 223"
+		not "EVN crön pending 223"
+		and
+			has "EVN bit 8890"
+			not "EVN bit 8891"
+		random < 100
+	on offer
+		set "EVN crön pending 223"
+		event "EVN crön 223: News: Pack disrupts shipping" 0
+		event "EVN crön 223: News: Pack disrupts shipping end" 100
+		fail
+
+mission "EVN crön scheduler 222: Advanced Pirate news"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 222"
+		not "EVN crön pending 222"
+		and
+			has "EVN bit 8888"
+			not "EVN bit 8889"
+		random < 100
+	on offer
+		set "EVN crön pending 222"
+		event "EVN crön 222: Advanced Pirate news" 0
+		event "EVN crön 222: Advanced Pirate news end" 365
+		fail
+
+mission "EVN crön scheduler 221: Generic misn delay cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 221"
+		not "EVN crön pending 221"
+		has "EVN bit 6666"
+		random < 100
+	on offer
+		set "EVN crön pending 221"
+		event "EVN crön 221: Generic misn delay cron" 1
+		event "EVN crön 221: Generic misn delay cron end" 1
+		fail
+
+mission "EVN crön scheduler 220: Dechtakar Service Re-Availability cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 220"
+		not "EVN crön pending 220"
+		and
+			has "EVN bit 217"
+			not "EVN bit 5999"
+		random < 100
+	on offer
+		set "EVN crön pending 220"
+		event "EVN crön 220: Dechtakar Service Re-Availability cron" 120
+		event "EVN crön 220: Dechtakar Service Re-Availability cron end" 120
+		fail
+
+mission "EVN crön scheduler 219: First Auroran mission second chance"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 219"
+		not "EVN crön pending 219"
+		and
+			has "EVN bit 201"
+			not "EVN bit 3789"
+		random < 100
+	on offer
+		set "EVN crön pending 219"
+		event "EVN crön 219: First Auroran mission second chance" 183
+		event "EVN crön 219: First Auroran mission second chance end" 183
+		fail
+
+mission "EVN crön scheduler 218: Re-offer 'Launch Exploration Probe'"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 218"
+		not "EVN crön pending 218"
+		has "EVN bit 7780"
+		random < 100
+	on offer
+		set "EVN crön pending 218"
+		event "EVN crön 218: Re-offer 'Launch Exploration Probe'" 270
+		event "EVN crön 218: Re-offer 'Launch Exploration Probe' end" 270
+		fail
+
+mission "EVN crön scheduler 217: UN Shipping Intro non-persistance"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 217"
+		not "EVN crön pending 217"
+		has "EVN bit 8444"
+		random < 100
+	on offer
+		set "EVN crön pending 217"
+		event "EVN crön 217: UN Shipping Intro non-persistance" 90
+		event "EVN crön 217: UN Shipping Intro non-persistance end" 90
+		fail
+
+mission "EVN crön scheduler 216: Avoid too many starting misns cron 1"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 216"
+		not "EVN crön pending 216"
+		has "EVN bit 8338"
+		random < 100
+	on offer
+		set "EVN crön pending 216"
+		event "EVN crön 216: Avoid too many starting misns cron 1" 28
+		event "EVN crön 216: Avoid too many starting misns cron 1 end" 28
+		fail
+
+mission "EVN crön scheduler 385: Rebel Dragon + outfs cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 385"
+		not "EVN crön pending 385"
+		and
+			has "EVN bit 511"
+			not "EVN bit 179"
+		random < 100
+	on offer
+		set "EVN crön pending 385"
+		event "EVN crön 385: Rebel Dragon + outfs cron" 0
+		event "EVN crön 385: Rebel Dragon + outfs cron end" 730
+		fail
+
+mission "EVN crön scheduler 384: Thunderforge Appearance cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 384"
+		not "EVN crön pending 384"
+		and
+			has "EVN bit 168"
+			not "EVN bit 169"
+		random < 100
+	on offer
+		set "EVN crön pending 384"
+		event "EVN crön 384: Thunderforge Appearance cron" 0
+		event "EVN crön 384: Thunderforge Appearance cron end" 180
+		fail
+
+mission "EVN crön scheduler 383: Thunderforge Availability cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 383"
+		not "EVN crön pending 383"
+		and
+			has "EVN bit 166"
+			not "EVN bit 167"
+		random < 100
+	on offer
+		set "EVN crön pending 383"
+		event "EVN crön 383: Thunderforge Availability cron" 0
+		event "EVN crön 383: Thunderforge Availability cron end" 90
+		fail
+
+mission "EVN crön scheduler 382: Menin Rebuild cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 382"
+		not "EVN crön pending 382"
+		has "EVN bit 170"
+		random < 100
+	on offer
+		set "EVN crön pending 382"
+		event "EVN crön 382: Menin Rebuild cron" 0
+		event "EVN crön 382: Menin Rebuild cron end" 180
+		fail
+
+mission "EVN crön scheduler 381: Vell-os Area Map cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 381"
+		not "EVN crön pending 381"
+		has "EVN bit 450"
+		random < 100
+	on offer
+		set "EVN crön pending 381"
+		event "EVN crön 381: Vell-os Area Map cron" 0
+		event "EVN crön 381: Vell-os Area Map cron end" 0
+		fail
+
+mission "EVN crön scheduler 380: All Dampener and Repair Droid Availability"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 380"
+		not "EVN crön pending 380"
+		and
+			has "EVN bit 445"
+			not "EVN bit 446"
+		random < 100
+	on offer
+		set "EVN crön pending 380"
+		event "EVN crön 380: All Dampener and Repair Droid Availability" 60
+		event "EVN crön 380: All Dampener and Repair Droid Availability end" 60
+		fail
+
+mission "EVN crön scheduler 379: Final Pirate Off-shoot availability"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 379"
+		not "EVN crön pending 379"
+		and
+			has "EVN bit 443"
+			not "EVN bit 444"
+		random < 100
+	on offer
+		set "EVN crön pending 379"
+		event "EVN crön 379: Final Pirate Off-shoot availability" 30
+		event "EVN crön 379: Final Pirate Off-shoot availability end" 30
+		fail
+
+mission "EVN crön scheduler 378: Pirate Off-Shoot outf availability"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 378"
+		not "EVN crön pending 378"
+		and
+			has "EVN bit 439"
+			not "EVN bit 437"
+		random < 100
+	on offer
+		set "EVN crön pending 378"
+		event "EVN crön 378: Pirate Off-Shoot outf availability" 65
+		event "EVN crön 378: Pirate Off-Shoot outf availability end" 65
+		fail
+
+mission "EVN crön scheduler 377: Beat On Skinny cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 377"
+		not "EVN crön pending 377"
+		and
+			has "EVN bit 435"
+			not "EVN bit 438"
+		random < 100
+	on offer
+		set "EVN crön pending 377"
+		event "EVN crön 377: Beat On Skinny cron" 1
+		event "EVN crön 377: Beat On Skinny cron end" 1
+		fail
+
+mission "EVN crön scheduler 376: Pirate Off-Shoot outf availability"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 376"
+		not "EVN crön pending 376"
+		and
+			has "EVN bit 436"
+			not "EVN bit 437"
+		random < 100
+	on offer
+		set "EVN crön pending 376"
+		event "EVN crön 376: Pirate Off-Shoot outf availability" 65
+		event "EVN crön 376: Pirate Off-Shoot outf availability end" 65
+		fail
+
+mission "EVN crön scheduler 375: Pirate Storyline Penultimate missionbit change"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 375"
+		not "EVN crön pending 375"
+		and
+			has "EVN bit 609"
+			not "EVN bit 610"
+		random < 100
+	on offer
+		set "EVN crön pending 375"
+		event "EVN crön 375: Pirate Storyline Penultimate missionbit change" 10
+		event "EVN crön 375: Pirate Storyline Penultimate missionbit change end" 10
+		fail
+
+mission "EVN crön scheduler 374: New Ireland Restore cron 1"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 374"
+		not "EVN crön pending 374"
+		and
+			has "EVN bit 237"
+			has "EVN bit 851"
+			not "EVN bit 852"
+		random < 100
+	on offer
+		set "EVN crön pending 374"
+		event "EVN crön 374: New Ireland Restore cron 1" 365
+		event "EVN crön 374: New Ireland Restore cron 1 end" 365
+		fail
+
+mission "EVN crön scheduler 373: New Ireland Restore cron 1"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 373"
+		not "EVN crön pending 373"
+		and
+			has "EVN bit 237"
+			has "EVN bit 850"
+			not "EVN bit 851"
+		random < 100
+	on offer
+		set "EVN crön pending 373"
+		event "EVN crön 373: New Ireland Restore cron 1" 365
+		event "EVN crön 373: New Ireland Restore cron 1 end" 365
+		fail
+
+mission "EVN crön scheduler 278: New Ireland re-habitation crön"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 278"
+		not "EVN crön pending 278"
+		and
+			has "EVN bit 850"
+			not "EVN bit 851"
+		random < 100
+	on offer
+		set "EVN crön pending 278"
+		event "EVN crön 278: New Ireland re-habitation crön" 540
+		event "EVN crön 278: New Ireland re-habitation crön end" 540
+		fail
+
+mission "EVN crön scheduler 212: BH Intro availability"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 212"
+		not "EVN crön pending 212"
+		has "EVN bit 96"
+		random < 100
+	on offer
+		set "EVN crön pending 212"
+		event "EVN crön 212: BH Intro availability" 0
+		event "EVN crön 212: BH Intro availability end" 70
+		fail
+
+mission "EVN crön scheduler 211: Brass Loses Ground cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 211"
+		not "EVN crön pending 211"
+		or
+			and
+				has "EVN bit 353"
+				not "EVN bit 6302"
+			and
+				has "EVN bit 62"
+				not "EVN bit 6302"
+		random < 100
+	on offer
+		set "EVN crön pending 211"
+		event "EVN crön 211: Brass Loses Ground cron" 250
+		event "EVN crön 211: Brass Loses Ground cron end" 250
+		fail
+
+mission "EVN crön scheduler 210: Brass Improvement cron 1.1"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 210"
+		not "EVN crön pending 210"
+		and
+			has "EVN bit 6300"
+			not "EVN bit 6301"
+		random < 100
+	on offer
+		set "EVN crön pending 210"
+		event "EVN crön 210: Brass Improvement cron 1.1" 100
+		event "EVN crön 210: Brass Improvement cron 1.1 end" 150
+		fail
+
+mission "EVN crön scheduler 209: Brass Improvement cron 1"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 209"
+		not "EVN crön pending 209"
+		or
+			and
+				has "EVN bit 279"
+				not "EVN bit 6300"
+			and
+				has "EVN bit 130"
+				not "EVN bit 6300"
+		random < 75
+	on offer
+		set "EVN crön pending 209"
+		event "EVN crön 209: Brass Improvement cron 1" 100
+		event "EVN crön 209: Brass Improvement cron 1 end" 150
+		fail
+
+mission "EVN crön scheduler 208: Dominate cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 208"
+		not "EVN crön pending 208"
+		has "EVN bit 6206"
+		random < 100
+	on offer
+		set "EVN crön pending 208"
+		event "EVN crön 208: Dominate cron" 0
+		event "EVN crön 208: Dominate cron end" 60
+		fail
+
+mission "EVN crön scheduler 207: Dominate cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 207"
+		not "EVN crön pending 207"
+		has "EVN bit 6106"
+		random < 100
+	on offer
+		set "EVN crön pending 207"
+		event "EVN crön 207: Dominate cron" 0
+		event "EVN crön 207: Dominate cron end" 30
+		fail
+
+mission "EVN crön scheduler 206: W/Gse D cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 206"
+		not "EVN crön pending 206"
+		has "EVN bit 6205"
+		random < 100
+	on offer
+		set "EVN crön pending 206"
+		event "EVN crön 206: W/Gse D cron" 0
+		event "EVN crön 206: W/Gse D cron end" 180
+		fail
+
+mission "EVN crön scheduler 205: W/Gse Dominate cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 205"
+		not "EVN crön pending 205"
+		has "EVN bit 6105"
+		random < 100
+	on offer
+		set "EVN crön pending 205"
+		event "EVN crön 205: W/Gse Dominate cron" 0
+		event "EVN crön 205: W/Gse Dominate cron end" 90
+		fail
+
+mission "EVN crön scheduler 204: Pir Dead cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 204"
+		not "EVN crön pending 204"
+		has "EVN bit 6204"
+		random < 100
+	on offer
+		set "EVN crön pending 204"
+		event "EVN crön 204: Pir Dead cron" 0
+		event "EVN crön 204: Pir Dead cron end" 90
+		fail
+
+mission "EVN crön scheduler 203: Pir Dominate cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 203"
+		not "EVN crön pending 203"
+		has "EVN bit 6104"
+		random < 100
+	on offer
+		set "EVN crön pending 203"
+		event "EVN crön 203: Pir Dominate cron" 0
+		event "EVN crön 203: Pir Dominate cron end" 45
+		fail
+
+mission "EVN crön scheduler 202: Aur Dead cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 202"
+		not "EVN crön pending 202"
+		has "EVN bit 6203"
+		random < 100
+	on offer
+		set "EVN crön pending 202"
+		event "EVN crön 202: Aur Dead cron" 0
+		event "EVN crön 202: Aur Dead cron end" 240
+		fail
+
+mission "EVN crön scheduler 201: Aur Dominate cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 201"
+		not "EVN crön pending 201"
+		has "EVN bit 6103"
+		random < 100
+	on offer
+		set "EVN crön pending 201"
+		event "EVN crön 201: Aur Dominate cron" 0
+		event "EVN crön 201: Aur Dominate cron end" 120
+		fail
+
+mission "EVN crön scheduler 200: Pol Dead cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 200"
+		not "EVN crön pending 200"
+		has "EVN bit 6202"
+		random < 100
+	on offer
+		set "EVN crön pending 200"
+		event "EVN crön 200: Pol Dead cron" 0
+		event "EVN crön 200: Pol Dead cron end" 360
+		fail
+
+mission "EVN crön scheduler 199: Pol Dominate cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 199"
+		not "EVN crön pending 199"
+		has "EVN bit 6102"
+		random < 100
+	on offer
+		set "EVN crön pending 199"
+		event "EVN crön 199: Pol Dominate cron" 0
+		event "EVN crön 199: Pol Dominate cron end" 180
+		fail
+
+mission "EVN crön scheduler 198: Reb Dead cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 198"
+		not "EVN crön pending 198"
+		has "EVN bit 6201"
+		random < 100
+	on offer
+		set "EVN crön pending 198"
+		event "EVN crön 198: Reb Dead cron" 0
+		event "EVN crön 198: Reb Dead cron end" 120
+		fail
+
+mission "EVN crön scheduler 197: Reb Dominate cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 197"
+		not "EVN crön pending 197"
+		has "EVN bit 6101"
+		random < 100
+	on offer
+		set "EVN crön pending 197"
+		event "EVN crön 197: Reb Dominate cron" 0
+		event "EVN crön 197: Reb Dominate cron end" 60
+		fail
+
+mission "EVN crön scheduler 196: Fed Dead cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 196"
+		not "EVN crön pending 196"
+		has "EVN bit 6200"
+		random < 100
+	on offer
+		set "EVN crön pending 196"
+		event "EVN crön 196: Fed Dead cron" 0
+		event "EVN crön 196: Fed Dead cron end" 180
+		fail
+
+mission "EVN crön scheduler 195: Fed Dominate cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 195"
+		not "EVN crön pending 195"
+		has "EVN bit 6100"
+		random < 100
+	on offer
+		set "EVN crön pending 195"
+		event "EVN crön 195: Fed Dominate cron" 0
+		event "EVN crön 195: Fed Dominate cron end" 90
+		fail
+
+mission "EVN crön scheduler 194: RAGE Gunboat Appearance cron"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 194"
+		not "EVN crön pending 194"
+		and
+			has "EVN bit 511"
+			not "EVN bit 341"
+			not "EVN bit 50"
+			not "EVN bit 61"
+		random < 80
+	on offer
+		set "EVN crön pending 194"
+		event "EVN crön 194: RAGE Gunboat Appearance cron" 500
+		event "EVN crön 194: RAGE Gunboat Appearance cron end" 530
+		fail
+
+mission "EVN crön scheduler 193: Reb/Fed Syst Change 1 Aldebaran"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 193"
+		not "EVN crön pending 193"
+		and
+			has "EVN bit 6033"
+			not "EVN bit 332"
+		random < 50
+	on offer
+		set "EVN crön pending 193"
+		event "EVN crön 193: Reb/Fed Syst Change 1 Aldebaran" 0
+		event "EVN crön 193: Reb/Fed Syst Change 1 Aldebaran end" 20
+		fail
+
+mission "EVN crön scheduler 192: Reb/Fed Syst Change 1 Nesre Primus"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 192"
+		not "EVN crön pending 192"
+		and
+			not "EVN bit 6031"
+			not "EVN bit 332"
+		random < 50
+	on offer
+		set "EVN crön pending 192"
+		event "EVN crön 192: Reb/Fed Syst Change 1 Nesre Primus" 0
+		event "EVN crön 192: Reb/Fed Syst Change 1 Nesre Primus end" 10
+		event "EVN crön 192: Reb/Fed Syst Change 1 Nesre Primus cooldown" 110
+		fail
+
+mission "EVN crön scheduler 191: V Rare Aur/Fed Syst Change 11 Lalande"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 191"
+		not "EVN crön pending 191"
+		and
+			has "EVN bit 6016"
+			not "EVN bit 6023"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 191"
+		event "EVN crön 191: V Rare Aur/Fed Syst Change 11 Lalande" 4
+		event "EVN crön 191: V Rare Aur/Fed Syst Change 11 Lalande end" 9
+		fail
+
+mission "EVN crön scheduler 190: V Rare Aur/Fed Syst Change 10 Kania"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 190"
+		not "EVN crön pending 190"
+		and
+			has "EVN bit 6008"
+			not "EVN bit 333"
+		random < 15
+	on offer
+		set "EVN crön pending 190"
+		event "EVN crön 190: V Rare Aur/Fed Syst Change 10 Kania" 4
+		event "EVN crön 190: V Rare Aur/Fed Syst Change 10 Kania end" 9
+		fail
+
+mission "EVN crön scheduler 189: V Rare Aur/Fed Syst Change 9 Formalhaut"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 189"
+		not "EVN crön pending 189"
+		and
+			has "EVN bit 6008"
+			not "EVN bit 333"
+		random < 15
+	on offer
+		set "EVN crön pending 189"
+		event "EVN crön 189: V Rare Aur/Fed Syst Change 9 Formalhaut" 4
+		event "EVN crön 189: V Rare Aur/Fed Syst Change 9 Formalhaut end" 9
+		fail
+
+mission "EVN crön scheduler 188: V Rare Aur/Fed Syst Change 8 Nesre Secundus"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 188"
+		not "EVN crön pending 188"
+		and
+			has "EVN bit 6007"
+			not "EVN bit 333"
+		random < 25
+	on offer
+		set "EVN crön pending 188"
+		event "EVN crön 188: V Rare Aur/Fed Syst Change 8 Nesre Secundus" 4
+		event "EVN crön 188: V Rare Aur/Fed Syst Change 8 Nesre Secundus end" 9
+		fail
+
+mission "EVN crön scheduler 187: V Rare Aur/Fed Syst Change 7 Sol"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 187"
+		not "EVN crön pending 187"
+		and
+			has "EVN bit 6008"
+			not "EVN bit 333"
+		random < 20
+	on offer
+		set "EVN crön pending 187"
+		event "EVN crön 187: V Rare Aur/Fed Syst Change 7 Sol" 4
+		event "EVN crön 187: V Rare Aur/Fed Syst Change 7 Sol end" 9
+		fail
+
+mission "EVN crön scheduler 186: V Rare Aur/Fed Syst Change 6 SPC-1367"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 186"
+		not "EVN crön pending 186"
+		and
+			has "EVN bit 6016"
+			not "EVN bit 6028"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 186"
+		event "EVN crön 186: V Rare Aur/Fed Syst Change 6 SPC-1367" 4
+		event "EVN crön 186: V Rare Aur/Fed Syst Change 6 SPC-1367 end" 9
+		fail
+
+mission "EVN crön scheduler 185: V Rare Aur/Fed Syst Change 5 Kerella"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 185"
+		not "EVN crön pending 185"
+		and
+			not "EVN bit 6031"
+			not "EVN bit 333"
+		random < 12
+	on offer
+		set "EVN crön pending 185"
+		event "EVN crön 185: V Rare Aur/Fed Syst Change 5 Kerella" 0
+		event "EVN crön 185: V Rare Aur/Fed Syst Change 5 Kerella end" 14
+		event "EVN crön 185: V Rare Aur/Fed Syst Change 5 Kerella cooldown" 614
+		fail
+
+mission "EVN crön scheduler 184: V Rare Aur/Fed Syst Change 4 SPC-034"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 184"
+		not "EVN crön pending 184"
+		and
+			not "EVN bit 6031"
+			not "EVN bit 333"
+		random < 12
+	on offer
+		set "EVN crön pending 184"
+		event "EVN crön 184: V Rare Aur/Fed Syst Change 4 SPC-034" 0
+		event "EVN crön 184: V Rare Aur/Fed Syst Change 4 SPC-034 end" 14
+		event "EVN crön 184: V Rare Aur/Fed Syst Change 4 SPC-034 cooldown" 564
+		fail
+
+mission "EVN crön scheduler 183: V Rare Aur/Fed Syst Change 3 Heraan Cov"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 183"
+		not "EVN crön pending 183"
+		and
+			has "EVN bit 6002"
+			not "EVN bit 333"
+		random < 25
+	on offer
+		set "EVN crön pending 183"
+		event "EVN crön 183: V Rare Aur/Fed Syst Change 3 Heraan Cov" 4
+		event "EVN crön 183: V Rare Aur/Fed Syst Change 3 Heraan Cov end" 9
+		fail
+
+mission "EVN crön scheduler 182: V Rare Aur/Fed Syst Change 2 Inci"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 182"
+		not "EVN crön pending 182"
+		and
+			has "EVN bit 6012"
+			has "EVN bit 6010"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 182"
+		event "EVN crön 182: V Rare Aur/Fed Syst Change 2 Inci" 4
+		event "EVN crön 182: V Rare Aur/Fed Syst Change 2 Inci end" 9
+		fail
+
+mission "EVN crön scheduler 181: V Rare Aur/Fed Syst Change 1 Hope"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 181"
+		not "EVN crön pending 181"
+		and
+			has "EVN bit 6011"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 181"
+		event "EVN crön 181: V Rare Aur/Fed Syst Change 1 Hope" 4
+		event "EVN crön 181: V Rare Aur/Fed Syst Change 1 Hope end" 9
+		fail
+
+mission "EVN crön scheduler 180: Rare Aur/Fed Syst Change 9 Spica"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 180"
+		not "EVN crön pending 180"
+		and
+			not "EVN bit 6029"
+			not "EVN bit 6030"
+			has "EVN bit 6017"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 180"
+		event "EVN crön 180: Rare Aur/Fed Syst Change 9 Spica" 4
+		event "EVN crön 180: Rare Aur/Fed Syst Change 9 Spica end" 14
+		fail
+
+mission "EVN crön scheduler 179: Rare Aur/Fed Syst Change 8 Narcissus"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 179"
+		not "EVN crön pending 179"
+		and
+			not "EVN bit 6029"
+			not "EVN bit 6031"
+			not "EVN bit 333"
+		random < 25
+	on offer
+		set "EVN crön pending 179"
+		event "EVN crön 179: Rare Aur/Fed Syst Change 8 Narcissus" 4
+		event "EVN crön 179: Rare Aur/Fed Syst Change 8 Narcissus end" 14
+		fail
+
+mission "EVN crön scheduler 178: Rare Aur/Fed Syst Change 7 Biri"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 178"
+		not "EVN crön pending 178"
+		and
+			not "EVN bit 6029"
+			not "EVN bit 6030"
+			has "EVN bit 6007"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 178"
+		event "EVN crön 178: Rare Aur/Fed Syst Change 7 Biri" 4
+		event "EVN crön 178: Rare Aur/Fed Syst Change 7 Biri end" 14
+		fail
+
+mission "EVN crön scheduler 177: Rare Aur/Fed Syst Change 6 Derlic"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 177"
+		not "EVN crön pending 177"
+		and
+			not "EVN bit 6029"
+			not "EVN bit 6030"
+			has "EVN bit 6013"
+			not "EVN bit 333"
+		random < 100
+	on offer
+		set "EVN crön pending 177"
+		event "EVN crön 177: Rare Aur/Fed Syst Change 6 Derlic" 4
+		event "EVN crön 177: Rare Aur/Fed Syst Change 6 Derlic end" 14
+		fail
+
+mission "EVN crön scheduler 176: Rare Aur/Fed Syst Change 5 Creyt"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 176"
+		not "EVN crön pending 176"
+		and
+			not "EVN bit 6029"
+			not "EVN bit 6030"
+			has "EVN bit 6000"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 176"
+		event "EVN crön 176: Rare Aur/Fed Syst Change 5 Creyt" 4
+		event "EVN crön 176: Rare Aur/Fed Syst Change 5 Creyt end" 14
+		fail
+
+mission "EVN crön scheduler 175: Rare Aur/Fed Syst Change 4 Sale"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 175"
+		not "EVN crön pending 175"
+		and
+			not "EVN bit 6029"
+			not "EVN bit 6030"
+			has "EVN bit 6002"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 175"
+		event "EVN crön 175: Rare Aur/Fed Syst Change 4 Sale" 4
+		event "EVN crön 175: Rare Aur/Fed Syst Change 4 Sale end" 14
+		fail
+
+mission "EVN crön scheduler 174: Rare Aur/Fed Syst Change 3 Aria"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 174"
+		not "EVN crön pending 174"
+		and
+			not "EVN bit 6029"
+			not "EVN bit 6030"
+			has "EVN bit 6004"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 174"
+		event "EVN crön 174: Rare Aur/Fed Syst Change 3 Aria" 4
+		event "EVN crön 174: Rare Aur/Fed Syst Change 3 Aria end" 14
+		fail
+
+mission "EVN crön scheduler 173: Rare Aur/Fed Syst Change 2 Wittor"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 173"
+		not "EVN crön pending 173"
+		or
+			and
+				not "EVN bit 6029"
+				not "EVN bit 6030"
+				not "EVN bit 333"
+				has "EVN bit 6005"
+			and
+				not "EVN bit 6029"
+				not "EVN bit 6030"
+				not "EVN bit 333"
+				has "EVN bit 6012"
+		random < 50
+	on offer
+		set "EVN crön pending 173"
+		event "EVN crön 173: Rare Aur/Fed Syst Change 2 Wittor" 4
+		event "EVN crön 173: Rare Aur/Fed Syst Change 2 Wittor end" 14
+		fail
+
+mission "EVN crön scheduler 172: Rare Aur/Fed Syst Change 1.2"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 172"
+		not "EVN crön pending 172"
+		and
+			has "EVN bit 6009"
+			not "EVN bit 333"
+		random < 100
+	on offer
+		set "EVN crön pending 172"
+		event "EVN crön 172: Rare Aur/Fed Syst Change 1.2" 0
+		event "EVN crön 172: Rare Aur/Fed Syst Change 1.2 end" 10
+		fail
+
+mission "EVN crön scheduler 171: Rare Aur/Fed Syst Change 1.1"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 171"
+		not "EVN crön pending 171"
+		and
+			has "EVN bit 6008"
+			not "EVN bit 333"
+		random < 100
+	on offer
+		set "EVN crön pending 171"
+		event "EVN crön 171: Rare Aur/Fed Syst Change 1.1" 50
+		event "EVN crön 171: Rare Aur/Fed Syst Change 1.1 end" 64
+		fail
+
+mission "EVN crön scheduler 170: Rare Aur/Fed Syst Change 1 Tichel or Uroa"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 170"
+		not "EVN crön pending 170"
+		and
+			not "EVN bit 6029"
+			not "EVN bit 6030"
+			has "EVN bit 6006"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 170"
+		event "EVN crön 170: Rare Aur/Fed Syst Change 1 Tichel or Uroa" 4
+		event "EVN crön 170: Rare Aur/Fed Syst Change 1 Tichel or Uroa end" 14
+		fail
+
+mission "EVN crön scheduler 169: Common Aur/Fed Syst Change 2.3 SPC-050 & Unin"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 169"
+		not "EVN crön pending 169"
+		and
+			not "EVN bit 6029"
+			not "EVN bit 6031"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 169"
+		event "EVN crön 169: Common Aur/Fed Syst Change 2.3 SPC-050 & Unin" 120
+		event "EVN crön 169: Common Aur/Fed Syst Change 2.3 SPC-050 & Unin end" 141
+		fail
+
+mission "EVN crön scheduler 168: Common Aur/Fed Syst Change 2.2 Xante"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 168"
+		not "EVN crön pending 168"
+		and
+			not "EVN bit 6029"
+			not "EVN bit 6031"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 168"
+		event "EVN crön 168: Common Aur/Fed Syst Change 2.2 Xante" 180
+		event "EVN crön 168: Common Aur/Fed Syst Change 2.2 Xante end" 201
+		fail
+
+mission "EVN crön scheduler 167: Common Aur/Fed Syst Change 2.1 SPC-050"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 167"
+		not "EVN crön pending 167"
+		and
+			not "EVN bit 6029"
+			not "EVN bit 6031"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 167"
+		event "EVN crön 167: Common Aur/Fed Syst Change 2.1 SPC-050" 180
+		event "EVN crön 167: Common Aur/Fed Syst Change 2.1 SPC-050 end" 201
+		fail
+
+mission "EVN crön scheduler 166: Common Aur/Fed Syst Change 2 Unin"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 166"
+		not "EVN crön pending 166"
+		and
+			not "EVN bit 6029"
+			not "EVN bit 6031"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 166"
+		event "EVN crön 166: Common Aur/Fed Syst Change 2 Unin" 210
+		event "EVN crön 166: Common Aur/Fed Syst Change 2 Unin end" 231
+		fail
+
+mission "EVN crön scheduler 165: Common Aur/Fed Syst Change 1.4 Alphara & Gateway"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 165"
+		not "EVN crön pending 165"
+		and
+			not "EVN bit 6030"
+			not "EVN bit 6031"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 165"
+		event "EVN crön 165: Common Aur/Fed Syst Change 1.4 Alphara & Gateway" 180
+		event "EVN crön 165: Common Aur/Fed Syst Change 1.4 Alphara & Gateway end" 201
+		fail
+
+mission "EVN crön scheduler 164: Common Aur/Fed Syst Change 1.3 Alphara"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 164"
+		not "EVN crön pending 164"
+		and
+			not "EVN bit 6030"
+			not "EVN bit 6031"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 164"
+		event "EVN crön 164: Common Aur/Fed Syst Change 1.3 Alphara" 120
+		event "EVN crön 164: Common Aur/Fed Syst Change 1.3 Alphara end" 141
+		fail
+
+mission "EVN crön scheduler 163: Common Aur/Fed Syst Change 1.2 Vemap"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 163"
+		not "EVN crön pending 163"
+		and
+			not "EVN bit 6030"
+			not "EVN bit 6031"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 163"
+		event "EVN crön 163: Common Aur/Fed Syst Change 1.2 Vemap" 150
+		event "EVN crön 163: Common Aur/Fed Syst Change 1.2 Vemap end" 171
+		fail
+
+mission "EVN crön scheduler 162: Common Aur/Fed Syst Change 1.1 Gateway"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 162"
+		not "EVN crön pending 162"
+		and
+			not "EVN bit 6030"
+			not "EVN bit 6031"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 162"
+		event "EVN crön 162: Common Aur/Fed Syst Change 1.1 Gateway" 180
+		event "EVN crön 162: Common Aur/Fed Syst Change 1.1 Gateway end" 201
+		fail
+
+mission "EVN crön scheduler 161: Common Aur/Fed Syst Change 1 Neirt"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 161"
+		not "EVN crön pending 161"
+		and
+			not "EVN bit 6030"
+			not "EVN bit 6031"
+			not "EVN bit 333"
+		random < 50
+	on offer
+		set "EVN crön pending 161"
+		event "EVN crön 161: Common Aur/Fed Syst Change 1 Neirt" 210
+		event "EVN crön 161: Common Aur/Fed Syst Change 1 Neirt end" 231
+		fail
+
+mission "EVN crön scheduler 160: Rebel Cloak - fail (mass produce)"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 160"
+		not "EVN crön pending 160"
+		and
+			has "EVN bit 752"
+			not "EVN bit 753"
+		random < 100
+	on offer
+		set "EVN crön pending 160"
+		event "EVN crön 160: Rebel Cloak - fail (mass produce)" 365
+		event "EVN crön 160: Rebel Cloak - fail (mass produce) end" 365
+		fail
+
+mission "EVN crön scheduler 159: Rebel Cloak - success (mass produce)"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 159"
+		not "EVN crön pending 159"
+		and
+			has "EVN bit 751"
+			not "EVN bit 752"
+			not "EVN bit 753"
+		random < 100
+	on offer
+		set "EVN crön pending 159"
+		event "EVN crön 159: Rebel Cloak - success (mass produce)" 120
+		event "EVN crön 159: Rebel Cloak - success (mass produce) end" 120
+		fail
+
+mission "EVN crön scheduler 157: Chrome Valk Upgrade"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 157"
+		not "EVN crön pending 157"
+		not "EVN bit 4000"
+		random < 100
+	on offer
+		set "EVN crön pending 157"
+		event "EVN crön 157: Chrome Valk Upgrade" 250
+		event "EVN crön 157: Chrome Valk Upgrade end" 250
+		fail
+
+mission "EVN crön scheduler 155: Rebel Hypergate Close-Down"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 155"
+		not "EVN crön pending 155"
+		and
+			has "EVN bit 152"
+			not "EVN bit 153"
+		random < 100
+	on offer
+		set "EVN crön pending 155"
+		event "EVN crön 155: Rebel Hypergate Close-Down" 243
+		event "EVN crön 155: Rebel Hypergate Close-Down end" 243
+		fail
+
+mission "EVN crön scheduler 154: Rebel Hypergate Availability"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 154"
+		not "EVN crön pending 154"
+		and
+			has "EVN bit 130"
+			not "EVN bit 152"
+		random < 50
+	on offer
+		set "EVN crön pending 154"
+		event "EVN crön 154: Rebel Hypergate Availability" 100
+		event "EVN crön 154: Rebel Hypergate Availability end" 100
+		fail
+
+mission "EVN crön scheduler 153: Non-Polaris start variant"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 153"
+		not "EVN crön pending 153"
+		and
+			has "EVN bit 512"
+			not "EVN bit 513"
+		random < 100
+	on offer
+		set "EVN crön pending 153"
+		event "EVN crön 153: Non-Polaris start variant" 120
+		event "EVN crön 153: Non-Polaris start variant end" 120
+		fail
+
+mission "EVN crön scheduler 152: Polaris Cloak Weapons"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 152"
+		not "EVN crön pending 152"
+		and
+			has "EVN bit 326"
+			not "EVN bit 327"
+		random < 100
+	on offer
+		set "EVN crön pending 152"
+		event "EVN crön 152: Polaris Cloak Weapons" 120
+		event "EVN crön 152: Polaris Cloak Weapons end" 165
+		fail
+
+mission "EVN crön scheduler 151: Polaris Multi-Jump"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 151"
+		not "EVN crön pending 151"
+		and
+			has "EVN bit 325"
+			not "EVN bit 326"
+		random < 100
+	on offer
+		set "EVN crön pending 151"
+		event "EVN crön 151: Polaris Multi-Jump" 90
+		event "EVN crön 151: Polaris Multi-Jump end" 135
+		fail
+
+mission "EVN crön scheduler 150: Polaris Fast-Jump2"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 150"
+		not "EVN crön pending 150"
+		and
+			has "EVN bit 324"
+			not "EVN bit 325"
+		random < 100
+	on offer
+		set "EVN crön pending 150"
+		event "EVN crön 150: Polaris Fast-Jump2" 100
+		event "EVN crön 150: Polaris Fast-Jump2 end" 100
+		fail
+
+mission "EVN crön scheduler 149: Polaris Fast-Jump"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 149"
+		not "EVN crön pending 149"
+		and
+			has "EVN bit 322"
+			not "EVN bit 324"
+		random < 100
+	on offer
+		set "EVN crön pending 149"
+		event "EVN crön 149: Polaris Fast-Jump" 90
+		event "EVN crön 149: Polaris Fast-Jump end" 90
+		fail
+
+mission "EVN crön scheduler 148: Polaris Cloak general v1.1.2"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 148"
+		not "EVN crön pending 148"
+		and
+			has "EVN bit 1308"
+			not "EVN bit 1309"
+		random < 100
+	on offer
+		set "EVN crön pending 148"
+		event "EVN crön 148: Polaris Cloak general v1.1.2" 90
+		event "EVN crön 148: Polaris Cloak general v1.1.2 end" 90
+		fail
+
+mission "EVN crön scheduler 147: Polaris Cloak general v1.1.1"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 147"
+		not "EVN crön pending 147"
+		and
+			has "EVN bit 1307"
+			not "EVN bit 1308"
+		random < 100
+	on offer
+		set "EVN crön pending 147"
+		event "EVN crön 147: Polaris Cloak general v1.1.1" 90
+		event "EVN crön 147: Polaris Cloak general v1.1.1 end" 90
+		fail
+
+mission "EVN crön scheduler 146: Polaris Cloak general v1.1"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 146"
+		not "EVN crön pending 146"
+		and
+			has "EVN bit 1306"
+			not "EVN bit 1307"
+		random < 100
+	on offer
+		set "EVN crön pending 146"
+		event "EVN crön 146: Polaris Cloak general v1.1" 565
+		event "EVN crön 146: Polaris Cloak general v1.1 end" 595
+		fail
+
+mission "EVN crön scheduler 145: Polaris Cloak general v1.0"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 145"
+		not "EVN crön pending 145"
+		and
+			has "EVN bit 279"
+			not "EVN bit 1306"
+		random < 100
+	on offer
+		set "EVN crön pending 145"
+		event "EVN crön 145: Polaris Cloak general v1.0" 180
+		event "EVN crön 145: Polaris Cloak general v1.0 end" 210
+		fail
+
+mission "EVN crön scheduler 144: Polaris Cloaking Device v2.0"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 144"
+		not "EVN crön pending 144"
+		and
+			has "EVN bit 280"
+			not "EVN bit 1301"
+		random < 100
+	on offer
+		set "EVN crön pending 144"
+		event "EVN crön 144: Polaris Cloaking Device v2.0" 120
+		event "EVN crön 144: Polaris Cloaking Device v2.0 end" 150
+		fail
+
+mission "EVN crön scheduler 143: Polaris Cloaking Device v1.1.3"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 143"
+		not "EVN crön pending 143"
+		and
+			has "EVN bit 1304"
+			not "EVN bit 1305"
+		random < 100
+	on offer
+		set "EVN crön pending 143"
+		event "EVN crön 143: Polaris Cloaking Device v1.1.3" 50
+		event "EVN crön 143: Polaris Cloaking Device v1.1.3 end" 50
+		fail
+
+mission "EVN crön scheduler 142: Polaris Cloaking Device v1.1.2"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 142"
+		not "EVN crön pending 142"
+		and
+			has "EVN bit 1303"
+			not "EVN bit 1304"
+		random < 100
+	on offer
+		set "EVN crön pending 142"
+		event "EVN crön 142: Polaris Cloaking Device v1.1.2" 50
+		event "EVN crön 142: Polaris Cloaking Device v1.1.2 end" 50
+		fail
+
+mission "EVN crön scheduler 141: Polaris Cloaking Device v1.1.1"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 141"
+		not "EVN crön pending 141"
+		and
+			has "EVN bit 1302"
+			not "EVN bit 1303"
+		random < 100
+	on offer
+		set "EVN crön pending 141"
+		event "EVN crön 141: Polaris Cloaking Device v1.1.1" 50
+		event "EVN crön 141: Polaris Cloaking Device v1.1.1 end" 50
+		fail
+
+mission "EVN crön scheduler 140: Polaris Cloaking Device v1.1"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 140"
+		not "EVN crön pending 140"
+		and
+			has "EVN bit 1301"
+			not "EVN bit 1302"
+		random < 100
+	on offer
+		set "EVN crön pending 140"
+		event "EVN crön 140: Polaris Cloaking Device v1.1" 120
+		event "EVN crön 140: Polaris Cloaking Device v1.1 end" 150
+		fail
+
+mission "EVN crön scheduler 139: Polaris Recombination crön"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 139"
+		not "EVN crön pending 139"
+		or
+			and
+				has "EVN bit 321"
+				not "EVN bit 284"
+			and
+				has "EVN bit 1300"
+				not "EVN bit 284"
+		random < 100
+	on offer
+		set "EVN crön pending 139"
+		event "EVN crön 139: Polaris Recombination crön" 15
+		event "EVN crön 139: Polaris Recombination crön end" 15
+		fail
+
+mission "EVN crön scheduler 138: Polaris Cloaking Device v1.0.1"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 138"
+		not "EVN crön pending 138"
+		and
+			has "EVN bit 321"
+			not "EVN bit 1301"
+		random < 100
+	on offer
+		set "EVN crön pending 138"
+		event "EVN crön 138: Polaris Cloaking Device v1.0.1" 50
+		event "EVN crön 138: Polaris Cloaking Device v1.0.1 end" 50
+		fail
+
+mission "EVN crön scheduler 137: Polaris Cloaking Device v1.0"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 137"
+		not "EVN crön pending 137"
+		and
+			has "EVN bit 319"
+			not "EVN bit 320"
+		random < 100
+	on offer
+		set "EVN crön pending 137"
+		event "EVN crön 137: Polaris Cloaking Device v1.0" 50
+		event "EVN crön 137: Polaris Cloaking Device v1.0 end" 50
+		fail
+
+mission "EVN crön scheduler 136: Terraforming misn 8"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 136"
+		not "EVN crön pending 136"
+		and
+			has "EVN bit 23"
+			not "EVN bit 41"
+		random < 40
+	on offer
+		set "EVN crön pending 136"
+		event "EVN crön 136: Terraforming misn 8" 50
+		event "EVN crön 136: Terraforming misn 8 end" 50
+		fail
+
+mission "EVN crön scheduler 135: Terraforming misn 7"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 135"
+		not "EVN crön pending 135"
+		and
+			has "EVN bit 22"
+			not "EVN bit 40"
+		random < 40
+	on offer
+		set "EVN crön pending 135"
+		event "EVN crön 135: Terraforming misn 7" 50
+		event "EVN crön 135: Terraforming misn 7 end" 50
+		fail
+
+mission "EVN crön scheduler 134: Terraforming misn 6"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 134"
+		not "EVN crön pending 134"
+		and
+			has "EVN bit 21"
+			not "EVN bit 39"
+		random < 40
+	on offer
+		set "EVN crön pending 134"
+		event "EVN crön 134: Terraforming misn 6" 50
+		event "EVN crön 134: Terraforming misn 6 end" 50
+		fail
+
+mission "EVN crön scheduler 133: Terraforming misn 5"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 133"
+		not "EVN crön pending 133"
+		and
+			has "EVN bit 20"
+			not "EVN bit 38"
+		random < 40
+	on offer
+		set "EVN crön pending 133"
+		event "EVN crön 133: Terraforming misn 5" 50
+		event "EVN crön 133: Terraforming misn 5 end" 50
+		fail
+
+mission "EVN crön scheduler 132: Terraforming misn 4"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 132"
+		not "EVN crön pending 132"
+		and
+			has "EVN bit 19"
+			not "EVN bit 37"
+		random < 40
+	on offer
+		set "EVN crön pending 132"
+		event "EVN crön 132: Terraforming misn 4" 50
+		event "EVN crön 132: Terraforming misn 4 end" 50
+		fail
+
+mission "EVN crön scheduler 131: Terraforming misn 3"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 131"
+		not "EVN crön pending 131"
+		and
+			has "EVN bit 18"
+			not "EVN bit 36"
+		random < 40
+	on offer
+		set "EVN crön pending 131"
+		event "EVN crön 131: Terraforming misn 3" 50
+		event "EVN crön 131: Terraforming misn 3 end" 50
+		fail
+
+mission "EVN crön scheduler 130: Terraforming misn 2"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 130"
+		not "EVN crön pending 130"
+		and
+			has "EVN bit 17"
+			not "EVN bit 35"
+		random < 40
+	on offer
+		set "EVN crön pending 130"
+		event "EVN crön 130: Terraforming misn 2" 50
+		event "EVN crön 130: Terraforming misn 2 end" 50
+		fail

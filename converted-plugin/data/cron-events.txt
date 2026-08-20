@@ -1,6 +1,1211 @@
-# EVN crön records with fixed dates and deterministic activation.
-# Control-bit-only crön records remain in source/cr_n.json for mission/event conversion.
-# EVN Random values below 100 are not emitted: ES has no fixed-date event probability.
+# EVN crön records converted to mission-triggered ES events.
+# ES has no independent daily cron hook; hidden landing missions approximate activation timing.
+# Date-constrained records remain source-only until an ES date-window condition is available.
 
-# Skipped EVN crön 128 "Wraith Change": EnableOn "b317 & !b1300" requires a mission trigger.
-# Skipped EVN crön 129 "Terraforming Start": Random 40 cannot map to a fixed ES event.
+# EVN crön 215: Random 100, PreHoldoff 30, Duration 0, PostHoldoff 0.
+event "EVN crön 215: Sigma Shipyards 4 cron"
+	set "EVN crön active 215"
+
+event "EVN crön 215: Sigma Shipyards 4 cron end"
+	set "EVN bit 48"
+	clear "EVN crön active 215"
+	clear "EVN crön pending 215"
+
+# EVN crön 214: Random 100, PreHoldoff 30, Duration 0, PostHoldoff 0.
+event "EVN crön 214: Sigma Shipyards 3 cron"
+	set "EVN crön active 214"
+
+event "EVN crön 214: Sigma Shipyards 3 cron end"
+	set "EVN bit 34"
+	clear "EVN crön active 214"
+	clear "EVN crön pending 214"
+
+# EVN crön 213: Random 100, PreHoldoff 1, Duration 0, PostHoldoff 0.
+event "EVN crön 213: Re-land on Merrol cron"
+	set "EVN crön active 213"
+	# EVN OnStart preserved: "9334"
+
+event "EVN crön 213: Re-land on Merrol cron end"
+	set "EVN bit 9334"
+	clear "EVN crön active 213"
+	clear "EVN crön pending 213"
+
+# EVN crön 233: Random 100, PreHoldoff 0, Duration 100, PostHoldoff 0.
+event "EVN crön 233: News: Player Defeats Bad Pirate Fleet"
+	set "EVN crön active 233"
+	set "EVN bit 8911"
+	# EVN IndNewsStr 15085 requires converted news text.
+	# EVN local news 1: government 128, string 15085.
+
+event "EVN crön 233: News: Player Defeats Bad Pirate Fleet end"
+	clear "EVN crön active 233"
+	clear "EVN crön pending 233"
+
+# EVN crön 232: Random 100, PreHoldoff 0, Duration 100, PostHoldoff 0.
+event "EVN crön 232: News: Rebs beat Feds"
+	set "EVN crön active 232"
+	set "EVN bit 8909"
+	# EVN IndNewsStr 15084 requires converted news text.
+	# EVN local news 1: government 130, string 15084.
+	# EVN local news 2: government 129, string 15084.
+
+event "EVN crön 232: News: Rebs beat Feds end"
+	clear "EVN crön active 232"
+	clear "EVN crön pending 232"
+
+# EVN crön 231: Random 100, PreHoldoff 0, Duration 100, PostHoldoff 0.
+event "EVN crön 231: News: Player discovers way to free Vell-os"
+	set "EVN crön active 231"
+	set "EVN bit 8907"
+	# EVN local news 1: government 130, string 15083.
+
+event "EVN crön 231: News: Player discovers way to free Vell-os end"
+	clear "EVN crön active 231"
+	clear "EVN crön pending 231"
+
+# EVN crön 230: Random 100, PreHoldoff 0, Duration 100, PostHoldoff 0.
+event "EVN crön 230: News: Feds Beat Pols"
+	set "EVN crön active 230"
+	set "EVN bit 8905"
+	# EVN IndNewsStr 15082 requires converted news text.
+	# EVN local news 1: government 128, string 15082.
+	# EVN local news 2: government 129, string 15082.
+	# EVN local news 3: government 130, string 15082.
+
+event "EVN crön 230: News: Feds Beat Pols end"
+	clear "EVN crön active 230"
+	clear "EVN crön pending 230"
+
+# EVN crön 229: Random 100, PreHoldoff 0, Duration 100, PostHoldoff 0.
+event "EVN crön 229: News: Assassinating Pol Leader"
+	set "EVN crön active 229"
+	set "EVN bit 8903"
+	# EVN local news 1: government 128, string 15080.
+	# EVN local news 2: government 130, string 15081.
+
+event "EVN crön 229: News: Assassinating Pol Leader end"
+	clear "EVN crön active 229"
+	clear "EVN crön pending 229"
+
+# EVN crön 228: Random 100, PreHoldoff 0, Duration 100, PostHoldoff 0.
+event "EVN crön 228: News: Feds Destroy Rebs"
+	set "EVN crön active 228"
+	set "EVN bit 8901"
+	# EVN IndNewsStr 15079 requires converted news text.
+	# EVN local news 1: government 128, string 15078.
+
+event "EVN crön 228: News: Feds Destroy Rebs end"
+	clear "EVN crön active 228"
+	clear "EVN crön pending 228"
+
+# EVN crön 227: Random 100, PreHoldoff 0, Duration 100, PostHoldoff 0.
+event "EVN crön 227: News: Rebs Liaise with Pols"
+	set "EVN crön active 227"
+	set "EVN bit 8899"
+	# EVN IndNewsStr 15077 requires converted news text.
+	# EVN local news 1: government 141, string 15077.
+	# EVN local news 2: government 130, string 15077.
+
+event "EVN crön 227: News: Rebs Liaise with Pols end"
+	clear "EVN crön active 227"
+	clear "EVN crön pending 227"
+
+# EVN crön 226: Random 100, PreHoldoff 0, Duration 100, PostHoldoff 0.
+event "EVN crön 226: News: Player Auroran Thurokiir"
+	set "EVN crön active 226"
+	set "EVN bit 8897"
+	# EVN IndNewsStr 15076 requires converted news text.
+	# EVN local news 1: government 129, string 15074.
+	# EVN local news 2: government 128, string 15075.
+
+event "EVN crön 226: News: Player Auroran Thurokiir end"
+	clear "EVN crön active 226"
+	clear "EVN crön pending 226"
+
+# EVN crön 225: Random 100, PreHoldoff 0, Duration 100, PostHoldoff 0.
+event "EVN crön 225: News: Player Heraan Thurokiir"
+	set "EVN crön active 225"
+	set "EVN bit 8895"
+	# EVN IndNewsStr 15073 requires converted news text.
+	# EVN local news 1: government 135, string 15070.
+	# EVN local news 2: government 129, string 15071.
+	# EVN local news 3: government 128, string 15072.
+
+event "EVN crön 225: News: Player Heraan Thurokiir end"
+	clear "EVN crön active 225"
+	clear "EVN crön pending 225"
+
+# EVN crön 224: Random 100, PreHoldoff 0, Duration 100, PostHoldoff 0.
+event "EVN crön 224: News: Auroran Champion"
+	set "EVN crön active 224"
+	set "EVN bit 8893"
+	# EVN local news 1: government 135, string 15068.
+	# EVN local news 2: government 129, string 15069.
+
+event "EVN crön 224: News: Auroran Champion end"
+	clear "EVN crön active 224"
+	clear "EVN crön pending 224"
+
+# EVN crön 223: Random 100, PreHoldoff 0, Duration 100, PostHoldoff 0.
+event "EVN crön 223: News: Pack disrupts shipping"
+	set "EVN crön active 223"
+	set "EVN bit 8891"
+	# EVN local news 1: government 135, string 15065.
+	# EVN local news 2: government 129, string 15066.
+	# EVN local news 3: government 128, string 15067.
+
+event "EVN crön 223: News: Pack disrupts shipping end"
+	clear "EVN crön active 223"
+	clear "EVN crön pending 223"
+
+# EVN crön 222: Random 100, PreHoldoff 0, Duration 365, PostHoldoff 0.
+event "EVN crön 222: Advanced Pirate news"
+	set "EVN crön active 222"
+	set "EVN bit 8889"
+	# EVN IndNewsStr 15064 requires converted news text.
+	# EVN local news 1: government 128, string 15060.
+	# EVN local news 2: government 129, string 15061.
+	# EVN local news 3: government 130, string 15062.
+	# EVN local news 4: government 141, string NaN.
+
+event "EVN crön 222: Advanced Pirate news end"
+	clear "EVN crön active 222"
+	clear "EVN crön pending 222"
+
+# EVN crön 221: Random 100, PreHoldoff 1, Duration 0, PostHoldoff 0.
+event "EVN crön 221: Generic misn delay cron"
+	set "EVN crön active 221"
+	# EVN Flags preserved: "0002"; continuous iteration requires dedicated ES logic.
+
+event "EVN crön 221: Generic misn delay cron end"
+	clear "EVN bit 6666"
+	clear "EVN crön active 221"
+	clear "EVN crön pending 221"
+
+# EVN crön 220: Random 100, PreHoldoff 120, Duration 0, PostHoldoff 0.
+event "EVN crön 220: Dechtakar Service Re-Availability cron"
+	set "EVN crön active 220"
+
+event "EVN crön 220: Dechtakar Service Re-Availability cron end"
+	set "EVN bit 5999"
+	clear "EVN crön active 220"
+	clear "EVN crön pending 220"
+
+# EVN crön 219: Random 100, PreHoldoff 183, Duration 0, PostHoldoff 0.
+event "EVN crön 219: First Auroran mission second chance"
+	set "EVN crön active 219"
+
+event "EVN crön 219: First Auroran mission second chance end"
+	set "EVN bit 3789"
+	clear "EVN crön active 219"
+	clear "EVN crön pending 219"
+
+# EVN crön 218: Random 100, PreHoldoff 270, Duration 0, PostHoldoff 0.
+event "EVN crön 218: Re-offer 'Launch Exploration Probe'"
+	set "EVN crön active 218"
+
+event "EVN crön 218: Re-offer 'Launch Exploration Probe' end"
+	clear "EVN bit 7780"
+	clear "EVN crön active 218"
+	clear "EVN crön pending 218"
+
+# EVN crön 217: Random 100, PreHoldoff 90, Duration 0, PostHoldoff 0.
+event "EVN crön 217: UN Shipping Intro non-persistance"
+	set "EVN crön active 217"
+
+event "EVN crön 217: UN Shipping Intro non-persistance end"
+	clear "EVN bit 8444"
+	clear "EVN crön active 217"
+	clear "EVN crön pending 217"
+
+# EVN crön 216: Random 100, PreHoldoff 28, Duration 0, PostHoldoff 0.
+event "EVN crön 216: Avoid too many starting misns cron 1"
+	set "EVN crön active 216"
+
+event "EVN crön 216: Avoid too many starting misns cron 1 end"
+	clear "EVN bit 8338"
+	clear "EVN crön active 216"
+	clear "EVN crön pending 216"
+
+# EVN crön 385: Random 100, PreHoldoff 0, Duration 730, PostHoldoff 0.
+event "EVN crön 385: Rebel Dragon + outfs cron"
+	set "EVN crön active 385"
+
+event "EVN crön 385: Rebel Dragon + outfs cron end"
+	set "EVN bit 179"
+	clear "EVN crön active 385"
+	clear "EVN crön pending 385"
+
+# EVN crön 384: Random 100, PreHoldoff 0, Duration 180, PostHoldoff 0.
+event "EVN crön 384: Thunderforge Appearance cron"
+	set "EVN crön active 384"
+
+event "EVN crön 384: Thunderforge Appearance cron end"
+	set "EVN bit 169"
+	clear "EVN crön active 384"
+	clear "EVN crön pending 384"
+
+# EVN crön 383: Random 100, PreHoldoff 0, Duration 90, PostHoldoff 0.
+event "EVN crön 383: Thunderforge Availability cron"
+	set "EVN crön active 383"
+
+event "EVN crön 383: Thunderforge Availability cron end"
+	set "EVN bit 167"
+	clear "EVN crön active 383"
+	clear "EVN crön pending 383"
+
+# EVN crön 382: Random 100, PreHoldoff 0, Duration 180, PostHoldoff 0.
+event "EVN crön 382: Menin Rebuild cron"
+	set "EVN crön active 382"
+
+event "EVN crön 382: Menin Rebuild cron end"
+	clear "EVN bit 170"
+	clear "EVN crön active 382"
+	clear "EVN crön pending 382"
+
+# EVN crön 381: Random 100, PreHoldoff 0, Duration 0, PostHoldoff 0.
+event "EVN crön 381: Vell-os Area Map cron"
+	set "EVN crön active 381"
+
+event "EVN crön 381: Vell-os Area Map cron end"
+	# EVN OnEnd preserved: "G342"
+	clear "EVN crön active 381"
+	clear "EVN crön pending 381"
+
+# EVN crön 380: Random 100, PreHoldoff 60, Duration 0, PostHoldoff 0.
+event "EVN crön 380: All Dampener and Repair Droid Availability"
+	set "EVN crön active 380"
+	set "EVN bit 446"
+
+event "EVN crön 380: All Dampener and Repair Droid Availability end"
+	clear "EVN crön active 380"
+	clear "EVN crön pending 380"
+
+# EVN crön 379: Random 100, PreHoldoff 30, Duration 0, PostHoldoff 0.
+event "EVN crön 379: Final Pirate Off-shoot availability"
+	set "EVN crön active 379"
+	set "EVN bit 444"
+
+event "EVN crön 379: Final Pirate Off-shoot availability end"
+	clear "EVN crön active 379"
+	clear "EVN crön pending 379"
+
+# EVN crön 378: Random 100, PreHoldoff 65, Duration 0, PostHoldoff 0.
+event "EVN crön 378: Pirate Off-Shoot outf availability"
+	set "EVN crön active 378"
+
+event "EVN crön 378: Pirate Off-Shoot outf availability end"
+	set "EVN bit 437"
+	clear "EVN crön active 378"
+	clear "EVN crön pending 378"
+
+# EVN crön 377: Random 100, PreHoldoff 1, Duration 0, PostHoldoff 0.
+event "EVN crön 377: Beat On Skinny cron"
+	set "EVN crön active 377"
+	set "EVN bit 438"
+
+event "EVN crön 377: Beat On Skinny cron end"
+	clear "EVN crön active 377"
+	clear "EVN crön pending 377"
+
+# EVN crön 376: Random 100, PreHoldoff 65, Duration 0, PostHoldoff 0.
+event "EVN crön 376: Pirate Off-Shoot outf availability"
+	set "EVN crön active 376"
+
+event "EVN crön 376: Pirate Off-Shoot outf availability end"
+	set "EVN bit 437"
+	clear "EVN crön active 376"
+	clear "EVN crön pending 376"
+
+# EVN crön 375: Random 100, PreHoldoff 10, Duration 0, PostHoldoff 0.
+event "EVN crön 375: Pirate Storyline Penultimate missionbit change"
+	set "EVN crön active 375"
+	set "EVN bit 610"
+
+event "EVN crön 375: Pirate Storyline Penultimate missionbit change end"
+	clear "EVN crön active 375"
+	clear "EVN crön pending 375"
+
+# EVN crön 374: Random 100, PreHoldoff 365, Duration 0, PostHoldoff 0.
+event "EVN crön 374: New Ireland Restore cron 1"
+	set "EVN crön active 374"
+	set "EVN bit 852"
+	# EVN IndNewsStr 15041 requires converted news text.
+
+event "EVN crön 374: New Ireland Restore cron 1 end"
+	clear "EVN crön active 374"
+	clear "EVN crön pending 374"
+
+# EVN crön 373: Random 100, PreHoldoff 365, Duration 0, PostHoldoff 0.
+event "EVN crön 373: New Ireland Restore cron 1"
+	set "EVN crön active 373"
+	set "EVN bit 851"
+	# EVN IndNewsStr 15041 requires converted news text.
+
+event "EVN crön 373: New Ireland Restore cron 1 end"
+	clear "EVN crön active 373"
+	clear "EVN crön pending 373"
+
+# Skipped EVN crön 292 "Carbon Fibre knock-off": EnableOn "b9015 & o377" is not a pure control-bit expression.
+# Skipped EVN crön 291 "Carbon Fibre knock-off": EnableOn "b9014 & o376" is not a pure control-bit expression.
+# Skipped EVN crön 290 "Carbon Fibre knock-off": EnableOn "b9013 & o360" is not a pure control-bit expression.
+# Skipped EVN crön 289 "Fission Reactor knock-off": EnableOn "b9012 & o359" is not a pure control-bit expression.
+# Skipped EVN crön 288 "Thorium Reactor knock-off": EnableOn "b9011 & o358" is not a pure control-bit expression.
+# EVN crön 278: Random 100, PreHoldoff 540, Duration 0, PostHoldoff 0.
+event "EVN crön 278: New Ireland re-habitation crön"
+	set "EVN crön active 278"
+	set "EVN bit 851"
+
+event "EVN crön 278: New Ireland re-habitation crön end"
+	clear "EVN crön active 278"
+	clear "EVN crön pending 278"
+
+# EVN crön 212: Random 100, PreHoldoff 0, Duration 70, PostHoldoff 0.
+event "EVN crön 212: BH Intro availability"
+	set "EVN crön active 212"
+
+event "EVN crön 212: BH Intro availability end"
+	clear "EVN bit 96"
+	clear "EVN crön active 212"
+	clear "EVN crön pending 212"
+
+# EVN crön 211: Random 100, PreHoldoff 250, Duration 0, PostHoldoff 0.
+event "EVN crön 211: Brass Loses Ground cron"
+	set "EVN crön active 211"
+
+event "EVN crön 211: Brass Loses Ground cron end"
+	set "EVN bit 6302"
+	clear "EVN crön active 211"
+	clear "EVN crön pending 211"
+
+# EVN crön 210: Random 100, PreHoldoff 100, Duration 50, PostHoldoff 0.
+event "EVN crön 210: Brass Improvement cron 1.1"
+	set "EVN crön active 210"
+	# EVN IndNewsStr 15040 requires converted news text.
+
+event "EVN crön 210: Brass Improvement cron 1.1 end"
+	set "EVN bit 6301"
+	clear "EVN crön active 210"
+	clear "EVN crön pending 210"
+
+# EVN crön 209: Random 75, PreHoldoff 100, Duration 50, PostHoldoff 0.
+event "EVN crön 209: Brass Improvement cron 1"
+	set "EVN crön active 209"
+	# EVN IndNewsStr 15039 requires converted news text.
+
+event "EVN crön 209: Brass Improvement cron 1 end"
+	set "EVN bit 6300"
+	clear "EVN crön active 209"
+	clear "EVN crön pending 209"
+
+# EVN crön 208: Random 100, PreHoldoff 0, Duration 60, PostHoldoff 0.
+event "EVN crön 208: Dominate cron"
+	set "EVN crön active 208"
+
+event "EVN crön 208: Dominate cron end"
+	clear "EVN bit 6206"
+	clear "EVN crön active 208"
+	clear "EVN crön pending 208"
+
+# EVN crön 207: Random 100, PreHoldoff 0, Duration 30, PostHoldoff 0.
+event "EVN crön 207: Dominate cron"
+	set "EVN crön active 207"
+
+event "EVN crön 207: Dominate cron end"
+	clear "EVN bit 6106"
+	clear "EVN crön active 207"
+	clear "EVN crön pending 207"
+
+# EVN crön 206: Random 100, PreHoldoff 0, Duration 180, PostHoldoff 0.
+event "EVN crön 206: W/Gse D cron"
+	set "EVN crön active 206"
+
+event "EVN crön 206: W/Gse D cron end"
+	clear "EVN bit 6205"
+	clear "EVN crön active 206"
+	clear "EVN crön pending 206"
+
+# EVN crön 205: Random 100, PreHoldoff 0, Duration 90, PostHoldoff 0.
+event "EVN crön 205: W/Gse Dominate cron"
+	set "EVN crön active 205"
+
+event "EVN crön 205: W/Gse Dominate cron end"
+	clear "EVN bit 6105"
+	clear "EVN crön active 205"
+	clear "EVN crön pending 205"
+
+# EVN crön 204: Random 100, PreHoldoff 0, Duration 90, PostHoldoff 0.
+event "EVN crön 204: Pir Dead cron"
+	set "EVN crön active 204"
+
+event "EVN crön 204: Pir Dead cron end"
+	clear "EVN bit 6204"
+	clear "EVN crön active 204"
+	clear "EVN crön pending 204"
+
+# EVN crön 203: Random 100, PreHoldoff 0, Duration 45, PostHoldoff 0.
+event "EVN crön 203: Pir Dominate cron"
+	set "EVN crön active 203"
+
+event "EVN crön 203: Pir Dominate cron end"
+	clear "EVN bit 6104"
+	clear "EVN crön active 203"
+	clear "EVN crön pending 203"
+
+# EVN crön 202: Random 100, PreHoldoff 0, Duration 240, PostHoldoff 0.
+event "EVN crön 202: Aur Dead cron"
+	set "EVN crön active 202"
+
+event "EVN crön 202: Aur Dead cron end"
+	clear "EVN bit 6203"
+	clear "EVN crön active 202"
+	clear "EVN crön pending 202"
+
+# EVN crön 201: Random 100, PreHoldoff 0, Duration 120, PostHoldoff 0.
+event "EVN crön 201: Aur Dominate cron"
+	set "EVN crön active 201"
+
+event "EVN crön 201: Aur Dominate cron end"
+	clear "EVN bit 6103"
+	clear "EVN crön active 201"
+	clear "EVN crön pending 201"
+
+# EVN crön 200: Random 100, PreHoldoff 0, Duration 360, PostHoldoff 0.
+event "EVN crön 200: Pol Dead cron"
+	set "EVN crön active 200"
+
+event "EVN crön 200: Pol Dead cron end"
+	clear "EVN bit 6202"
+	clear "EVN crön active 200"
+	clear "EVN crön pending 200"
+
+# EVN crön 199: Random 100, PreHoldoff 0, Duration 180, PostHoldoff 0.
+event "EVN crön 199: Pol Dominate cron"
+	set "EVN crön active 199"
+
+event "EVN crön 199: Pol Dominate cron end"
+	clear "EVN bit 6102"
+	clear "EVN crön active 199"
+	clear "EVN crön pending 199"
+
+# EVN crön 198: Random 100, PreHoldoff 0, Duration 120, PostHoldoff 0.
+event "EVN crön 198: Reb Dead cron"
+	set "EVN crön active 198"
+
+event "EVN crön 198: Reb Dead cron end"
+	clear "EVN bit 6201"
+	clear "EVN crön active 198"
+	clear "EVN crön pending 198"
+
+# EVN crön 197: Random 100, PreHoldoff 0, Duration 60, PostHoldoff 0.
+event "EVN crön 197: Reb Dominate cron"
+	set "EVN crön active 197"
+
+event "EVN crön 197: Reb Dominate cron end"
+	clear "EVN bit 6101"
+	clear "EVN crön active 197"
+	clear "EVN crön pending 197"
+
+# EVN crön 196: Random 100, PreHoldoff 0, Duration 180, PostHoldoff 0.
+event "EVN crön 196: Fed Dead cron"
+	set "EVN crön active 196"
+
+event "EVN crön 196: Fed Dead cron end"
+	clear "EVN bit 6200"
+	clear "EVN crön active 196"
+	clear "EVN crön pending 196"
+
+# EVN crön 195: Random 100, PreHoldoff 0, Duration 90, PostHoldoff 0.
+event "EVN crön 195: Fed Dominate cron"
+	set "EVN crön active 195"
+
+event "EVN crön 195: Fed Dominate cron end"
+	clear "EVN bit 6100"
+	clear "EVN crön active 195"
+	clear "EVN crön pending 195"
+
+# EVN crön 194: Random 80, PreHoldoff 500, Duration 30, PostHoldoff 0.
+event "EVN crön 194: RAGE Gunboat Appearance cron"
+	set "EVN crön active 194"
+	set "EVN bit 341"
+	# EVN local news 1: government 128, string 15038.
+
+event "EVN crön 194: RAGE Gunboat Appearance cron end"
+	clear "EVN crön active 194"
+	clear "EVN crön pending 194"
+
+# EVN crön 193: Random 50, PreHoldoff 0, Duration 20, PostHoldoff 0.
+event "EVN crön 193: Reb/Fed Syst Change 1 Aldebaran"
+	set "EVN crön active 193"
+	set "EVN bit 6034"
+	# EVN local news 1: government 128, string 15037.
+	# EVN local news 2: government 141, string 15059.
+
+event "EVN crön 193: Reb/Fed Syst Change 1 Aldebaran end"
+	clear "EVN bit 6034"
+	clear "EVN crön active 193"
+	clear "EVN crön pending 193"
+
+# EVN crön 192: Random 50, PreHoldoff 0, Duration 10, PostHoldoff 100.
+event "EVN crön 192: Reb/Fed Syst Change 1 Nesre Primus"
+	set "EVN crön active 192"
+	set "EVN bit 6033"
+	# EVN local news 1: government 128, string 15036.
+	# EVN local news 2: government 141, string 15058.
+
+event "EVN crön 192: Reb/Fed Syst Change 1 Nesre Primus end"
+	clear "EVN bit 6033"
+	clear "EVN crön active 192"
+
+event "EVN crön 192: Reb/Fed Syst Change 1 Nesre Primus cooldown"
+	clear "EVN crön pending 192"
+
+# EVN crön 191: Random 50, PreHoldoff 4, Duration 5, PostHoldoff 0.
+event "EVN crön 191: V Rare Aur/Fed Syst Change 11 Lalande"
+	set "EVN crön active 191"
+	set "EVN bit 6028"
+	# EVN IndNewsStr 15034 requires converted news text.
+
+event "EVN crön 191: V Rare Aur/Fed Syst Change 11 Lalande end"
+	clear "EVN bit 6028"
+	clear "EVN crön active 191"
+	clear "EVN crön pending 191"
+
+# EVN crön 190: Random 15, PreHoldoff 4, Duration 5, PostHoldoff 0.
+event "EVN crön 190: V Rare Aur/Fed Syst Change 10 Kania"
+	set "EVN crön active 190"
+	set "EVN bit 6027"
+	# EVN IndNewsStr 15033 requires converted news text.
+
+event "EVN crön 190: V Rare Aur/Fed Syst Change 10 Kania end"
+	clear "EVN bit 6027"
+	clear "EVN crön active 190"
+	clear "EVN crön pending 190"
+
+# EVN crön 189: Random 15, PreHoldoff 4, Duration 5, PostHoldoff 0.
+event "EVN crön 189: V Rare Aur/Fed Syst Change 9 Formalhaut"
+	set "EVN crön active 189"
+	set "EVN bit 6026"
+	# EVN IndNewsStr 15032 requires converted news text.
+
+event "EVN crön 189: V Rare Aur/Fed Syst Change 9 Formalhaut end"
+	clear "EVN bit 6026"
+	clear "EVN crön active 189"
+	clear "EVN crön pending 189"
+
+# EVN crön 188: Random 25, PreHoldoff 4, Duration 5, PostHoldoff 0.
+event "EVN crön 188: V Rare Aur/Fed Syst Change 8 Nesre Secundus"
+	set "EVN crön active 188"
+	set "EVN bit 6025"
+	# EVN local news 1: government 128, string 15031.
+	# EVN local news 2: government 129, string 15057.
+
+event "EVN crön 188: V Rare Aur/Fed Syst Change 8 Nesre Secundus end"
+	clear "EVN bit 6025"
+	clear "EVN crön active 188"
+	clear "EVN crön pending 188"
+
+# EVN crön 187: Random 20, PreHoldoff 4, Duration 5, PostHoldoff 0.
+event "EVN crön 187: V Rare Aur/Fed Syst Change 7 Sol"
+	set "EVN crön active 187"
+	set "EVN bit 6024"
+	# EVN local news 1: government 128, string 15030.
+	# EVN local news 2: government 129, string 15056.
+
+event "EVN crön 187: V Rare Aur/Fed Syst Change 7 Sol end"
+	clear "EVN bit 6024"
+	clear "EVN crön active 187"
+	clear "EVN crön pending 187"
+
+# EVN crön 186: Random 50, PreHoldoff 4, Duration 5, PostHoldoff 0.
+event "EVN crön 186: V Rare Aur/Fed Syst Change 6 SPC-1367"
+	set "EVN crön active 186"
+	set "EVN bit 6023"
+	# EVN local news 1: government 128, string 15029.
+	# EVN local news 2: government 129, string 15055.
+
+event "EVN crön 186: V Rare Aur/Fed Syst Change 6 SPC-1367 end"
+	clear "EVN bit 6023"
+	clear "EVN crön active 186"
+	clear "EVN crön pending 186"
+
+# EVN crön 185: Random 12, PreHoldoff 0, Duration 14, PostHoldoff 600.
+event "EVN crön 185: V Rare Aur/Fed Syst Change 5 Kerella"
+	set "EVN crön active 185"
+	set "EVN bit 6022"
+	# EVN local news 1: government 128, string 15028.
+	# EVN local news 2: government 129, string 15054.
+
+event "EVN crön 185: V Rare Aur/Fed Syst Change 5 Kerella end"
+	clear "EVN bit 6022"
+	clear "EVN crön active 185"
+
+event "EVN crön 185: V Rare Aur/Fed Syst Change 5 Kerella cooldown"
+	clear "EVN crön pending 185"
+
+# EVN crön 184: Random 12, PreHoldoff 0, Duration 14, PostHoldoff 550.
+event "EVN crön 184: V Rare Aur/Fed Syst Change 4 SPC-034"
+	set "EVN crön active 184"
+	set "EVN bit 6021"
+	# EVN local news 1: government 128, string 15027.
+	# EVN local news 2: government 129, string 15053.
+
+event "EVN crön 184: V Rare Aur/Fed Syst Change 4 SPC-034 end"
+	clear "EVN bit 6021"
+	clear "EVN crön active 184"
+
+event "EVN crön 184: V Rare Aur/Fed Syst Change 4 SPC-034 cooldown"
+	clear "EVN crön pending 184"
+
+# EVN crön 183: Random 25, PreHoldoff 4, Duration 5, PostHoldoff 0.
+event "EVN crön 183: V Rare Aur/Fed Syst Change 3 Heraan Cov"
+	set "EVN crön active 183"
+	set "EVN bit 6032"
+	# EVN local news 1: government 128, string 15026.
+	# EVN local news 2: government 129, string 15051.
+	# EVN local news 3: government 135, string 15052.
+
+event "EVN crön 183: V Rare Aur/Fed Syst Change 3 Heraan Cov end"
+	clear "EVN bit 6032"
+	clear "EVN crön active 183"
+	clear "EVN crön pending 183"
+
+# EVN crön 182: Random 50, PreHoldoff 4, Duration 5, PostHoldoff 0.
+event "EVN crön 182: V Rare Aur/Fed Syst Change 2 Inci"
+	set "EVN crön active 182"
+	set "EVN bit 6020"
+	# EVN local news 1: government 128, string 15025.
+	# EVN local news 2: government 129, string 15050.
+
+event "EVN crön 182: V Rare Aur/Fed Syst Change 2 Inci end"
+	clear "EVN bit 6020"
+	clear "EVN crön active 182"
+	clear "EVN crön pending 182"
+
+# EVN crön 181: Random 50, PreHoldoff 4, Duration 5, PostHoldoff 0.
+event "EVN crön 181: V Rare Aur/Fed Syst Change 1 Hope"
+	set "EVN crön active 181"
+	set "EVN bit 6019"
+	# EVN local news 1: government 128, string 15024.
+	# EVN local news 2: government 129, string 15049.
+
+event "EVN crön 181: V Rare Aur/Fed Syst Change 1 Hope end"
+	clear "EVN bit 6019"
+	clear "EVN crön active 181"
+	clear "EVN crön pending 181"
+
+# EVN crön 180: Random 50, PreHoldoff 4, Duration 10, PostHoldoff 0.
+event "EVN crön 180: Rare Aur/Fed Syst Change 9 Spica"
+	set "EVN crön active 180"
+	set "EVN bit 6018"
+	# EVN local news 1: government 128, string 15023.
+	# EVN local news 2: government 129, string 15048.
+
+event "EVN crön 180: Rare Aur/Fed Syst Change 9 Spica end"
+	clear "EVN bit 6018"
+	clear "EVN crön active 180"
+	clear "EVN crön pending 180"
+
+# EVN crön 179: Random 25, PreHoldoff 4, Duration 10, PostHoldoff 0.
+event "EVN crön 179: Rare Aur/Fed Syst Change 8 Narcissus"
+	set "EVN crön active 179"
+	set "EVN bit 6016"
+	# EVN IndNewsStr 15022 requires converted news text.
+
+event "EVN crön 179: Rare Aur/Fed Syst Change 8 Narcissus end"
+	clear "EVN bit 6016"
+	clear "EVN crön active 179"
+	clear "EVN crön pending 179"
+
+# EVN crön 178: Random 50, PreHoldoff 4, Duration 10, PostHoldoff 0.
+event "EVN crön 178: Rare Aur/Fed Syst Change 7 Biri"
+	set "EVN crön active 178"
+	set "EVN bit 6015"
+	# EVN local news 1: government 128, string 15021.
+	# EVN local news 2: government 129, string 15047.
+
+event "EVN crön 178: Rare Aur/Fed Syst Change 7 Biri end"
+	clear "EVN bit 6015"
+	clear "EVN crön active 178"
+	clear "EVN crön pending 178"
+
+# EVN crön 177: Random 100, PreHoldoff 4, Duration 10, PostHoldoff 0.
+event "EVN crön 177: Rare Aur/Fed Syst Change 6 Derlic"
+	set "EVN crön active 177"
+	set "EVN bit 6014"
+
+event "EVN crön 177: Rare Aur/Fed Syst Change 6 Derlic end"
+	clear "EVN bit 6014"
+	clear "EVN crön active 177"
+	clear "EVN crön pending 177"
+
+# EVN crön 176: Random 50, PreHoldoff 4, Duration 10, PostHoldoff 0.
+event "EVN crön 176: Rare Aur/Fed Syst Change 5 Creyt"
+	set "EVN crön active 176"
+	set "EVN bit 6013"
+	# EVN IndNewsStr 15020 requires converted news text.
+
+event "EVN crön 176: Rare Aur/Fed Syst Change 5 Creyt end"
+	clear "EVN bit 6013"
+	clear "EVN crön active 176"
+	clear "EVN crön pending 176"
+
+# EVN crön 175: Random 50, PreHoldoff 4, Duration 10, PostHoldoff 0.
+event "EVN crön 175: Rare Aur/Fed Syst Change 4 Sale"
+	set "EVN crön active 175"
+	set "EVN bit 6012"
+	# EVN IndNewsStr 15019 requires converted news text.
+
+event "EVN crön 175: Rare Aur/Fed Syst Change 4 Sale end"
+	clear "EVN bit 6012"
+	clear "EVN crön active 175"
+	clear "EVN crön pending 175"
+
+# EVN crön 174: Random 50, PreHoldoff 4, Duration 10, PostHoldoff 0.
+event "EVN crön 174: Rare Aur/Fed Syst Change 3 Aria"
+	set "EVN crön active 174"
+	set "EVN bit 6011"
+	# EVN local news 1: government 128, string 15018.
+	# EVN local news 2: government 129, string 15046.
+
+event "EVN crön 174: Rare Aur/Fed Syst Change 3 Aria end"
+	clear "EVN bit 6011"
+	clear "EVN crön active 174"
+	clear "EVN crön pending 174"
+
+# EVN crön 173: Random 50, PreHoldoff 4, Duration 10, PostHoldoff 0.
+event "EVN crön 173: Rare Aur/Fed Syst Change 2 Wittor"
+	set "EVN crön active 173"
+	set "EVN bit 6010"
+	# EVN local news 1: government 128, string 15017.
+
+event "EVN crön 173: Rare Aur/Fed Syst Change 2 Wittor end"
+	clear "EVN bit 6010"
+	clear "EVN crön active 173"
+	clear "EVN crön pending 173"
+
+# EVN crön 172: Random 100, PreHoldoff 0, Duration 10, PostHoldoff 0.
+event "EVN crön 172: Rare Aur/Fed Syst Change 1.2"
+	set "EVN crön active 172"
+	# EVN IndNewsStr 15035 requires converted news text.
+
+event "EVN crön 172: Rare Aur/Fed Syst Change 1.2 end"
+	clear "EVN bit 6009"
+	clear "EVN crön active 172"
+	clear "EVN crön pending 172"
+
+# EVN crön 171: Random 100, PreHoldoff 50, Duration 14, PostHoldoff 0.
+event "EVN crön 171: Rare Aur/Fed Syst Change 1.1"
+	set "EVN crön active 171"
+	# EVN IndNewsStr 15016 requires converted news text.
+
+event "EVN crön 171: Rare Aur/Fed Syst Change 1.1 end"
+	clear "EVN bit 6008"
+	clear "EVN crön active 171"
+	clear "EVN crön pending 171"
+
+# EVN crön 170: Random 50, PreHoldoff 4, Duration 10, PostHoldoff 0.
+event "EVN crön 170: Rare Aur/Fed Syst Change 1 Tichel or Uroa"
+	set "EVN crön active 170"
+	# EVN OnStart preserved: "R(b6008 b6009)"
+	# EVN local news 1: government 128, string 15035.
+	# EVN local news 2: government 129, string 15016.
+
+event "EVN crön 170: Rare Aur/Fed Syst Change 1 Tichel or Uroa end"
+	clear "EVN crön active 170"
+	clear "EVN crön pending 170"
+
+# EVN crön 169: Random 50, PreHoldoff 120, Duration 21, PostHoldoff 0.
+event "EVN crön 169: Common Aur/Fed Syst Change 2.3 SPC-050 & Unin"
+	set "EVN crön active 169"
+	set "EVN bit 6006"
+	set "EVN bit 6029"
+	# EVN local news 1: government 128, string 15015.
+	# EVN local news 2: government 129, string 15045.
+
+event "EVN crön 169: Common Aur/Fed Syst Change 2.3 SPC-050 & Unin end"
+	clear "EVN bit 6003"
+	clear "EVN bit 6029"
+	clear "EVN crön active 169"
+	clear "EVN crön pending 169"
+
+# EVN crön 168: Random 50, PreHoldoff 180, Duration 21, PostHoldoff 0.
+event "EVN crön 168: Common Aur/Fed Syst Change 2.2 Xante"
+	set "EVN crön active 168"
+	set "EVN bit 6007"
+	set "EVN bit 6029"
+	# EVN IndNewsStr 15014 requires converted news text.
+
+event "EVN crön 168: Common Aur/Fed Syst Change 2.2 Xante end"
+	clear "EVN bit 6007"
+	clear "EVN bit 6029"
+	clear "EVN crön active 168"
+	clear "EVN crön pending 168"
+
+# EVN crön 167: Random 50, PreHoldoff 180, Duration 21, PostHoldoff 0.
+event "EVN crön 167: Common Aur/Fed Syst Change 2.1 SPC-050"
+	set "EVN crön active 167"
+	set "EVN bit 6005"
+	set "EVN bit 6029"
+	# EVN local news 1: government 128, string 15013.
+	# EVN local news 2: government 129, string 15044.
+
+event "EVN crön 167: Common Aur/Fed Syst Change 2.1 SPC-050 end"
+	clear "EVN bit 6005"
+	clear "EVN bit 6029"
+	clear "EVN crön active 167"
+	clear "EVN crön pending 167"
+
+# EVN crön 166: Random 50, PreHoldoff 210, Duration 21, PostHoldoff 0.
+event "EVN crön 166: Common Aur/Fed Syst Change 2 Unin"
+	set "EVN crön active 166"
+	set "EVN bit 6004"
+	set "EVN bit 6029"
+	# EVN local news 1: government 128, string 15012.
+	# EVN local news 2: government 129, string 15043.
+
+event "EVN crön 166: Common Aur/Fed Syst Change 2 Unin end"
+	clear "EVN bit 6004"
+	clear "EVN bit 6029"
+	clear "EVN crön active 166"
+	clear "EVN crön pending 166"
+
+# EVN crön 165: Random 50, PreHoldoff 180, Duration 21, PostHoldoff 0.
+event "EVN crön 165: Common Aur/Fed Syst Change 1.4 Alphara & Gateway"
+	set "EVN crön active 165"
+	set "EVN bit 6017"
+	set "EVN bit 6030"
+	# EVN local news 1: government 128, string 15011.
+	# EVN local news 2: government 129, string 15042.
+
+event "EVN crön 165: Common Aur/Fed Syst Change 1.4 Alphara & Gateway end"
+	clear "EVN bit 6017"
+	clear "EVN bit 6030"
+	clear "EVN crön active 165"
+	clear "EVN crön pending 165"
+
+# EVN crön 164: Random 50, PreHoldoff 120, Duration 21, PostHoldoff 0.
+event "EVN crön 164: Common Aur/Fed Syst Change 1.3 Alphara"
+	set "EVN crön active 164"
+	set "EVN bit 6003"
+	set "EVN bit 6030"
+	# EVN IndNewsStr 15010 requires converted news text.
+
+event "EVN crön 164: Common Aur/Fed Syst Change 1.3 Alphara end"
+	clear "EVN bit 6003"
+	clear "EVN bit 6030"
+	clear "EVN crön active 164"
+	clear "EVN crön pending 164"
+
+# EVN crön 163: Random 50, PreHoldoff 150, Duration 21, PostHoldoff 0.
+event "EVN crön 163: Common Aur/Fed Syst Change 1.2 Vemap"
+	set "EVN crön active 163"
+	set "EVN bit 6002"
+	set "EVN bit 6030"
+	# EVN IndNewsStr 15009 requires converted news text.
+
+event "EVN crön 163: Common Aur/Fed Syst Change 1.2 Vemap end"
+	clear "EVN bit 6002"
+	clear "EVN bit 6030"
+	clear "EVN crön active 163"
+	clear "EVN crön pending 163"
+
+# EVN crön 162: Random 50, PreHoldoff 180, Duration 21, PostHoldoff 0.
+event "EVN crön 162: Common Aur/Fed Syst Change 1.1 Gateway"
+	set "EVN crön active 162"
+	set "EVN bit 6001"
+	set "EVN bit 6030"
+	# EVN IndNewsStr 15008 requires converted news text.
+
+event "EVN crön 162: Common Aur/Fed Syst Change 1.1 Gateway end"
+	clear "EVN bit 6001"
+	clear "EVN bit 6030"
+	clear "EVN crön active 162"
+	clear "EVN crön pending 162"
+
+# EVN crön 161: Random 50, PreHoldoff 210, Duration 21, PostHoldoff 0.
+event "EVN crön 161: Common Aur/Fed Syst Change 1 Neirt"
+	set "EVN crön active 161"
+	set "EVN bit 6000"
+	set "EVN bit 6030"
+	# EVN IndNewsStr 15007 requires converted news text.
+
+event "EVN crön 161: Common Aur/Fed Syst Change 1 Neirt end"
+	clear "EVN bit 6000"
+	clear "EVN bit 6030"
+	clear "EVN crön active 161"
+	clear "EVN crön pending 161"
+
+# EVN crön 160: Random 100, PreHoldoff 365, Duration 0, PostHoldoff 0.
+event "EVN crön 160: Rebel Cloak - fail (mass produce)"
+	set "EVN crön active 160"
+	set "EVN bit 753"
+
+event "EVN crön 160: Rebel Cloak - fail (mass produce) end"
+	clear "EVN crön active 160"
+	clear "EVN crön pending 160"
+
+# EVN crön 159: Random 100, PreHoldoff 120, Duration 0, PostHoldoff 0.
+event "EVN crön 159: Rebel Cloak - success (mass produce)"
+	set "EVN crön active 159"
+	set "EVN bit 753"
+
+event "EVN crön 159: Rebel Cloak - success (mass produce) end"
+	clear "EVN crön active 159"
+	clear "EVN crön pending 159"
+
+# Skipped EVN crön 158 "Rebel Cloaking Device": EnableOn "b199 & !(b750 | b749)b749)" is not a pure control-bit expression.
+# EVN crön 157: Random 100, PreHoldoff 250, Duration 0, PostHoldoff 0.
+event "EVN crön 157: Chrome Valk Upgrade"
+	set "EVN crön active 157"
+	# EVN local news 1: government 128, string 15006.
+
+event "EVN crön 157: Chrome Valk Upgrade end"
+	set "EVN bit 4000"
+	clear "EVN crön active 157"
+	clear "EVN crön pending 157"
+
+# Skipped EVN crön 156 "Auroran Drop Bear Mating Season": wildcard date window; ES date-window condition not available.
+# EVN crön 155: Random 100, PreHoldoff 243, Duration 0, PostHoldoff 0.
+event "EVN crön 155: Rebel Hypergate Close-Down"
+	set "EVN crön active 155"
+	set "EVN bit 153"
+
+event "EVN crön 155: Rebel Hypergate Close-Down end"
+	clear "EVN crön active 155"
+	clear "EVN crön pending 155"
+
+# EVN crön 154: Random 50, PreHoldoff 100, Duration 0, PostHoldoff 0.
+event "EVN crön 154: Rebel Hypergate Availability"
+	set "EVN crön active 154"
+	set "EVN bit 152"
+
+event "EVN crön 154: Rebel Hypergate Availability end"
+	clear "EVN crön active 154"
+	clear "EVN crön pending 154"
+
+# EVN crön 153: Random 100, PreHoldoff 120, Duration 0, PostHoldoff 0.
+event "EVN crön 153: Non-Polaris start variant"
+	set "EVN crön active 153"
+	set "EVN bit 513"
+
+event "EVN crön 153: Non-Polaris start variant end"
+	clear "EVN crön active 153"
+	clear "EVN crön pending 153"
+
+# EVN crön 152: Random 100, PreHoldoff 120, Duration 45, PostHoldoff 0.
+event "EVN crön 152: Polaris Cloak Weapons"
+	set "EVN crön active 152"
+	set "EVN bit 327"
+	# EVN local news 1: government 130, string 15004.
+
+event "EVN crön 152: Polaris Cloak Weapons end"
+	clear "EVN crön active 152"
+	clear "EVN crön pending 152"
+
+# EVN crön 151: Random 100, PreHoldoff 90, Duration 45, PostHoldoff 0.
+event "EVN crön 151: Polaris Multi-Jump"
+	set "EVN crön active 151"
+	set "EVN bit 326"
+	# EVN local news 1: government 130, string 15003.
+
+event "EVN crön 151: Polaris Multi-Jump end"
+	clear "EVN crön active 151"
+	clear "EVN crön pending 151"
+
+# EVN crön 150: Random 100, PreHoldoff 100, Duration 0, PostHoldoff 0.
+event "EVN crön 150: Polaris Fast-Jump2"
+	set "EVN crön active 150"
+	set "EVN bit 325"
+
+event "EVN crön 150: Polaris Fast-Jump2 end"
+	clear "EVN crön active 150"
+	clear "EVN crön pending 150"
+
+# EVN crön 149: Random 100, PreHoldoff 90, Duration 0, PostHoldoff 0.
+event "EVN crön 149: Polaris Fast-Jump"
+	set "EVN crön active 149"
+	set "EVN bit 324"
+
+event "EVN crön 149: Polaris Fast-Jump end"
+	clear "EVN crön active 149"
+	clear "EVN crön pending 149"
+
+# EVN crön 148: Random 100, PreHoldoff 90, Duration 0, PostHoldoff 0.
+event "EVN crön 148: Polaris Cloak general v1.1.2"
+	set "EVN crön active 148"
+	set "EVN bit 1309"
+
+event "EVN crön 148: Polaris Cloak general v1.1.2 end"
+	clear "EVN crön active 148"
+	clear "EVN crön pending 148"
+
+# EVN crön 147: Random 100, PreHoldoff 90, Duration 0, PostHoldoff 0.
+event "EVN crön 147: Polaris Cloak general v1.1.1"
+	set "EVN crön active 147"
+	set "EVN bit 1308"
+
+event "EVN crön 147: Polaris Cloak general v1.1.1 end"
+	clear "EVN crön active 147"
+	clear "EVN crön pending 147"
+
+# EVN crön 146: Random 100, PreHoldoff 565, Duration 30, PostHoldoff 0.
+event "EVN crön 146: Polaris Cloak general v1.1"
+	set "EVN crön active 146"
+	set "EVN bit 1307"
+	# EVN local news 1: government 130, string 15001.
+
+event "EVN crön 146: Polaris Cloak general v1.1 end"
+	clear "EVN crön active 146"
+	clear "EVN crön pending 146"
+
+# EVN crön 145: Random 100, PreHoldoff 180, Duration 30, PostHoldoff 0.
+event "EVN crön 145: Polaris Cloak general v1.0"
+	set "EVN crön active 145"
+	set "EVN bit 1306"
+	# EVN local news 1: government 130, string 15002.
+
+event "EVN crön 145: Polaris Cloak general v1.0 end"
+	clear "EVN crön active 145"
+	clear "EVN crön pending 145"
+
+# EVN crön 144: Random 100, PreHoldoff 120, Duration 30, PostHoldoff 0.
+event "EVN crön 144: Polaris Cloaking Device v2.0"
+	set "EVN crön active 144"
+	set "EVN bit 1301"
+	# EVN local news 1: government 130, string 15002.
+
+event "EVN crön 144: Polaris Cloaking Device v2.0 end"
+	clear "EVN crön active 144"
+	clear "EVN crön pending 144"
+
+# EVN crön 143: Random 100, PreHoldoff 50, Duration 0, PostHoldoff 0.
+event "EVN crön 143: Polaris Cloaking Device v1.1.3"
+	set "EVN crön active 143"
+	set "EVN bit 1305"
+
+event "EVN crön 143: Polaris Cloaking Device v1.1.3 end"
+	clear "EVN crön active 143"
+	clear "EVN crön pending 143"
+
+# EVN crön 142: Random 100, PreHoldoff 50, Duration 0, PostHoldoff 0.
+event "EVN crön 142: Polaris Cloaking Device v1.1.2"
+	set "EVN crön active 142"
+	set "EVN bit 1304"
+
+event "EVN crön 142: Polaris Cloaking Device v1.1.2 end"
+	clear "EVN crön active 142"
+	clear "EVN crön pending 142"
+
+# EVN crön 141: Random 100, PreHoldoff 50, Duration 0, PostHoldoff 0.
+event "EVN crön 141: Polaris Cloaking Device v1.1.1"
+	set "EVN crön active 141"
+	set "EVN bit 1303"
+
+event "EVN crön 141: Polaris Cloaking Device v1.1.1 end"
+	clear "EVN crön active 141"
+	clear "EVN crön pending 141"
+
+# EVN crön 140: Random 100, PreHoldoff 120, Duration 30, PostHoldoff 0.
+event "EVN crön 140: Polaris Cloaking Device v1.1"
+	set "EVN crön active 140"
+	set "EVN bit 1302"
+	# EVN local news 1: government 130, string 15001.
+
+event "EVN crön 140: Polaris Cloaking Device v1.1 end"
+	clear "EVN crön active 140"
+	clear "EVN crön pending 140"
+
+# EVN crön 139: Random 100, PreHoldoff 15, Duration 0, PostHoldoff 0.
+event "EVN crön 139: Polaris Recombination crön"
+	set "EVN crön active 139"
+	set "EVN bit 284"
+
+event "EVN crön 139: Polaris Recombination crön end"
+	clear "EVN crön active 139"
+	clear "EVN crön pending 139"
+
+# EVN crön 138: Random 100, PreHoldoff 50, Duration 0, PostHoldoff 0.
+event "EVN crön 138: Polaris Cloaking Device v1.0.1"
+	set "EVN crön active 138"
+	set "EVN bit 1301"
+
+event "EVN crön 138: Polaris Cloaking Device v1.0.1 end"
+	clear "EVN crön active 138"
+	clear "EVN crön pending 138"
+
+# EVN crön 137: Random 100, PreHoldoff 50, Duration 0, PostHoldoff 0.
+event "EVN crön 137: Polaris Cloaking Device v1.0"
+	set "EVN crön active 137"
+	set "EVN bit 320"
+	# EVN local news 1: government 130, string 15001.
+
+event "EVN crön 137: Polaris Cloaking Device v1.0 end"
+	clear "EVN crön active 137"
+	clear "EVN crön pending 137"
+
+# EVN crön 136: Random 40, PreHoldoff 50, Duration 0, PostHoldoff 0.
+event "EVN crön 136: Terraforming misn 8"
+	set "EVN crön active 136"
+	set "EVN bit 41"
+
+event "EVN crön 136: Terraforming misn 8 end"
+	clear "EVN crön active 136"
+	clear "EVN crön pending 136"
+
+# EVN crön 135: Random 40, PreHoldoff 50, Duration 0, PostHoldoff 0.
+event "EVN crön 135: Terraforming misn 7"
+	set "EVN crön active 135"
+	set "EVN bit 40"
+
+event "EVN crön 135: Terraforming misn 7 end"
+	clear "EVN crön active 135"
+	clear "EVN crön pending 135"
+
+# EVN crön 134: Random 40, PreHoldoff 50, Duration 0, PostHoldoff 0.
+event "EVN crön 134: Terraforming misn 6"
+	set "EVN crön active 134"
+	set "EVN bit 39"
+
+event "EVN crön 134: Terraforming misn 6 end"
+	clear "EVN crön active 134"
+	clear "EVN crön pending 134"
+
+# EVN crön 133: Random 40, PreHoldoff 50, Duration 0, PostHoldoff 0.
+event "EVN crön 133: Terraforming misn 5"
+	set "EVN crön active 133"
+	set "EVN bit 38"
+
+event "EVN crön 133: Terraforming misn 5 end"
+	clear "EVN crön active 133"
+	clear "EVN crön pending 133"
+
+# EVN crön 132: Random 40, PreHoldoff 50, Duration 0, PostHoldoff 0.
+event "EVN crön 132: Terraforming misn 4"
+	set "EVN crön active 132"
+	set "EVN bit 37"
+
+event "EVN crön 132: Terraforming misn 4 end"
+	clear "EVN crön active 132"
+	clear "EVN crön pending 132"
+
+# EVN crön 131: Random 40, PreHoldoff 50, Duration 0, PostHoldoff 0.
+event "EVN crön 131: Terraforming misn 3"
+	set "EVN crön active 131"
+	set "EVN bit 36"
+
+event "EVN crön 131: Terraforming misn 3 end"
+	clear "EVN crön active 131"
+	clear "EVN crön pending 131"
+
+# EVN crön 130: Random 40, PreHoldoff 50, Duration 0, PostHoldoff 0.
+event "EVN crön 130: Terraforming misn 2"
+	set "EVN crön active 130"
+	set "EVN bit 35"
+
+event "EVN crön 130: Terraforming misn 2 end"
+	clear "EVN crön active 130"
+	clear "EVN crön pending 130"
+
+# Skipped EVN crön 128 "Wraith Change": date 1 1 1183; ES date-window condition not available.
+# Skipped EVN crön 129 "Terraforming Start": date 1 1 1178; ES date-window condition not available.

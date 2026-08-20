@@ -30,7 +30,7 @@ Current ES conversion:
 - EVN murk mapped to ES system haze artwork. Sensor interference, visibility expressions, and decorative `nëbu` regions remain explicit source/attribute data because ES has no direct equivalents.
 - 18 simple missions and 39 conversations active. Complex mission branches remain preserved but inactive.
 - All 19 EVN `öops` disasters now emit ES system trade events plus hidden landing schedulers. EVN's daily frequency is approximated at landing because ES has no independent daily random-event hook; duration schedules a price reset.
-- `crön` conversion now classifies fixed-date, random, and control-bit records. `cron-events.txt` emits deterministic records only; current fixed records require random or `EnableOn` handling, so all 125 remain preserved for the mission/event pass.
+- 116 of 125 EVN `crön` records now emit ES events and hidden landing schedulers. `EnableOn` becomes an ES mission condition; `Random`, `PreHoldoff`, `Duration`, and `PostHoldoff` map to landing rolls and delayed events. Three date-constrained records and six non-pure condition records remain source-only; three complex action scripts remain explicit comments.
 - Startup menu override, `Endless Nova TC` metadata, EVN Trader start, and installed Windows test copy verified.
 
 Extracted images and sounds are intentionally excluded from Git for now. They remain local under `converted-plugin/images/` and `converted-plugin/sounds/`; `.gitignore` keeps them out of commits. The converter and asset scripts still support rebuilding them locally.
@@ -38,7 +38,7 @@ Extracted images and sounds are intentionally excluded from Git for now. They re
 ## Plans moving forward
 
 1. Validate `öops` event overlap, scheduler behavior, and price reset behavior in-game.
-2. Convert `crön` control-bit records through hidden ES missions, then add date-window, news, and state-change mappings.
+2. Add ES date-window and news mappings for the remaining `crön` records; replace landing-time approximations with a lower-overhead scheduler where possible.
 3. Expand mission conversion: branch choices, complex availability expressions, mission starts, abort/failure paths, cargo/person handling, and control-bit state transitions.
 4. Improve ship and weapon fidelity: loadouts, AI, turrets, ammunition, animations, explosions, sound links, and remaining parser warnings.
 5. Map remaining planet and system fields: landing restrictions, tribute thresholds, services, stellar weapons, dead/reanimated states, navigation defaults, and system visibility replacements.
@@ -105,7 +105,7 @@ Results:
 - `parsed-data/normalized.json`: NovaParse normalized gameplay data.
 - `parsed-data/summary.json`: resource counts.
 
-Conversion output: `converted-plugin/`. The root also contains `plugin.txt` metadata. The `data/` folder contains ES text for ships, outfits/weapons, planets, systems, shops, fleets, and an explosion placeholder. The `images/` folder contains raw extracted resources plus ES aliases under `ship/`, `planet/`, `outfit/`, and `projectile/`; `_menu/endless-nova-title@1x.png` (1024×477) and `_menu/endless-nova-title@2x.png` (2048×954) override the ES menu title and are resized from `_menu/title-source.png`. The `sounds/` folder contains converted WAV files named `evn-<id>.wav`. The `source/` folder contains JSON copies for every detected EVN resource type, including types with no direct ES equivalent. `conversion-manifest.json` records counts, mappings, and asset errors.
+Conversion output: `converted-plugin/`. The root also contains `plugin.txt` metadata. The `data/` folder contains ES text for ships, outfits/weapons, planets, systems, shops, fleets, `öops` disasters, `crön` events/schedulers, and an explosion placeholder. The `images/` folder contains raw extracted resources plus ES aliases under `ship/`, `planet/`, `outfit/`, and `projectile/`; `_menu/endless-nova-title@1x.png` (1024×477) and `_menu/endless-nova-title@2x.png` (2048×954) override the ES menu title and are resized from `_menu/title-source.png`. The `sounds/` folder contains converted WAV files named `evn-<id>.wav`. The `source/` folder contains JSON copies for every detected EVN resource type, including types with no direct ES equivalent. `conversion-manifest.json` records counts, mappings, and asset errors.
 
 The converter follows current Endless Sky data conventions for nested `attributes`, `outfits`, `weapon`, and `fleet` blocks. EVN control-bit expressions and availability rules remain preserved source data until dedicated ES mappings exist. Some EVN PICT resources use formats unsupported by `rsrcdump`; those are listed in `conversion-manifest.json` and do not block the usable assets.
 

@@ -1040,63 +1040,131 @@ function evnDate(data, prefix) {
   return day > 0 && month > 0 && year > 0 ? [day, month, year] : null;
 }
 
-function emitEventBitActions(lines, expression, indent) {
+function evnControlActions(expression) {
   const value = String(expression || "").trim();
-  if (!value) return true;
-  if (!/!?b\d+(?:\s*[&|]\s*!?b\d+)*$/.test(value)) return false;
-  emitEvnBitActions(lines, value, indent);
+  if (!value) return [];
+  if (!/^(?:!?b\d+)(?:\s*(?:[&|]|\s+)\s*(?:!?b\d+))*$/.test(value)) return null;
+  return value.match(/!?b\d+|\d+/g).map(token => ({
+    bit: token.replace(/^!?b/, ""),
+    negate: token.startsWith("!")
+  }));
+}
+
+function emitEventBitActions(lines, expression, indent) {
+  const actions = evnControlActions(expression);
+  if (actions === null) return false;
+  for (const action of actions) lines.push(`${indent}${action.negate ? "clear" : "set"} ${q(evnBitFlag(action.bit))}`);
   return true;
+}
+
+function cronHasDateConstraint(data) {
+  return ["FirstDay", "FirstMonth", "FirstYear", "LastDay", "LastMonth", "LastYear"]
+    .some(key => Number(data && data[key]) > 0);
 }
 
 function convertCronEvents() {
   const lines = [
-    "# EVN crön records with fixed dates and deterministic activation.",
-    "# Control-bit-only crön records remain in source/cr_n.json for mission/event conversion.",
-    "# EVN Random values below 100 are not emitted: ES has no fixed-date event probability.",
+    "# EVN crön records converted to mission-triggered ES events.",
+    "# ES has no independent daily cron hook; hidden landing missions approximate activation timing.",
+    "# Date-constrained records remain source-only until an ES date-window condition is available.",
+    ""
+  ];
+  const missionLines = [
+    "# Hidden schedulers for EVN crön records.",
+    "# EnableOn becomes an ES mission condition; PreHoldoff, Duration, and PostHoldoff become delayed events.",
     ""
   ];
   let emitted = 0;
-  let skippedRandom = 0;
-  let skippedControl = 0;
+  let scheduled = 0;
+  let skippedDate = 0;
   let skippedCondition = 0;
+  let unsupportedActions = 0;
   for (const record of referenceData["crön"] || []) {
     const data = record.data || {};
-    const startDate = evnDate(data, "First");
     const name = safeName(record.name, `EVN crön ${record.id}`);
-    if (!startDate) {
-      skippedControl++;
+    const startDate = evnDate(data, "First");
+    const dateConstraint = cronHasDateConstraint(data);
+    const enableOn = String(data.EnableOn || "").replace(/\0/g, "").trim();
+    const enableTree = parseEvnBitExpression(enableOn);
+    if (dateConstraint) {
+      skippedDate++;
+      const dateDescription = startDate ? `date ${startDate.join(" ")}` : "wildcard date window";
+      lines.push(`# Skipped EVN crön ${record.id} ${q(name)}: ${dateDescription}; ES date-window condition not available.`);
       continue;
     }
-    const random = Math.trunc(Number(data.Random) || 0);
-    if (random !== 100) {
-      skippedRandom++;
-      lines.push(`# Skipped EVN crön ${record.id} ${q(name)}: Random ${random} cannot map to a fixed ES event.`);
-      continue;
-    }
-    if (String(data.EnableOn || "").trim()) {
+    if (enableOn && !enableTree) {
       skippedCondition++;
-      lines.push(`# Skipped EVN crön ${record.id} ${q(name)}: EnableOn ${q(data.EnableOn)} requires a mission trigger.`);
+      lines.push(`# Skipped EVN crön ${record.id} ${q(name)}: EnableOn ${q(enableOn)} is not a pure control-bit expression.`);
       continue;
     }
-    const eventName = `EVN crön ${record.id}: ${name}`;
-    lines.push(`event ${q(eventName)}`);
-    lines.push(`\tdate ${startDate.join(" ")}`);
-    if (!emitEventBitActions(lines, data.OnStart, "\t")) lines.push(`\t# EVN OnStart preserved: ${q(data.OnStart)}`);
-    if (data.IndNewsStr && Number(data.IndNewsStr) >= 0) lines.push(`\t# EVN IndNewsStr ${Number(data.IndNewsStr)} requires converted news text.`);
-    lines.push("");
-    emitted++;
 
-    const endDate = evnDate(data, "Last");
-    if (endDate && String(data.OnEnd || "").trim()) {
-      const endName = `${eventName} end`;
-      lines.push(`event ${q(endName)}`);
-      lines.push(`\tdate ${endDate.join(" ")}`);
-      if (!emitEventBitActions(lines, data.OnEnd, "\t")) lines.push(`\t# EVN OnEnd preserved: ${q(data.OnEnd)}`);
+    const eventName = `EVN crön ${record.id}: ${name}`;
+    const endName = `${eventName} end`;
+    const cooldownName = `${eventName} cooldown`;
+    const activeFlag = `EVN crön active ${record.id}`;
+    const pendingFlag = `EVN crön pending ${record.id}`;
+    const random = Math.max(1, Math.min(100, Math.trunc(Number(data.Random) || 1)));
+    const preHoldoff = Math.max(0, Math.trunc(Number(data.PreHoldoff) || 0));
+    const duration = Math.max(0, Math.trunc(Number(data.Duration) || 0));
+    const postHoldoff = Math.max(0, Math.trunc(Number(data.PostHoldoff) || 0));
+    const endDelay = preHoldoff + duration;
+    const cooldownDelay = endDelay + postHoldoff;
+
+    lines.push(`# EVN crön ${record.id}: Random ${random}, PreHoldoff ${preHoldoff}, Duration ${duration}, PostHoldoff ${postHoldoff}.`);
+    lines.push(`event ${q(eventName)}`);
+    lines.push(`\tset ${q(activeFlag)}`);
+    if (!emitEventBitActions(lines, data.OnStart, "\t")) {
+      unsupportedActions++;
+      lines.push(`\t# EVN OnStart preserved: ${q(data.OnStart)}`);
+    }
+    if (String(data.Flags || "0000") !== "0000") lines.push(`\t# EVN Flags preserved: ${q(data.Flags)}; continuous iteration requires dedicated ES logic.`);
+    if (Number(data.IndNewsStr) > 0) lines.push(`\t# EVN IndNewsStr ${Number(data.IndNewsStr)} requires converted news text.`);
+    for (let index = 1; index <= 4; index++) {
+      const government = Number(data[`NewsGovt${index}`]);
+      const news = Number(data[`GovtNewsStr${index}`]);
+      if (government > 0 || news > 0) lines.push(`\t# EVN local news ${index}: government ${government}, string ${news}.`);
+    }
+    lines.push("");
+
+    lines.push(`event ${q(endName)}`);
+    if (!emitEventBitActions(lines, data.OnEnd, "\t")) {
+      unsupportedActions++;
+      lines.push(`\t# EVN OnEnd preserved: ${q(data.OnEnd)}`);
+    }
+    lines.push(`\tclear ${q(activeFlag)}`);
+    if (!postHoldoff) lines.push(`\tclear ${q(pendingFlag)}`);
+    lines.push("");
+    if (postHoldoff > 0) {
+      lines.push(`event ${q(cooldownName)}`);
+      lines.push(`\tclear ${q(pendingFlag)}`);
       lines.push("");
     }
+    emitted++;
+
+    missionLines.push(`mission ${q(`EVN crön scheduler ${record.id}: ${name}`)}`);
+    missionLines.push("\tinvisible");
+    missionLines.push("\tnon-blocking");
+    missionLines.push("\tlanding");
+    missionLines.push("\trepeat");
+    missionLines.push("\tto offer");
+    missionLines.push(`\t\tnot ${q(activeFlag)}`);
+    missionLines.push(`\t\tnot ${q(pendingFlag)}`);
+    if (enableOn && !emitEvnBitConditions(missionLines, enableOn, "\t\t")) {
+      skippedCondition++;
+      missionLines.push(`\t\t# EVN EnableOn preserved: ${q(enableOn)}`);
+    }
+    missionLines.push(`\t\trandom < ${random}`);
+    missionLines.push("\ton offer");
+    missionLines.push(`\t\tset ${q(pendingFlag)}`);
+    missionLines.push(`\t\tevent ${q(eventName)} ${preHoldoff}`);
+    missionLines.push(`\t\tevent ${q(endName)} ${endDelay}`);
+    if (postHoldoff > 0) missionLines.push(`\t\tevent ${q(cooldownName)} ${cooldownDelay}`);
+    missionLines.push("\t\tfail", "");
+    scheduled++;
   }
   write(path.join(output, "data", "cron-events.txt"), lines.join("\n"));
-  return { emitted, skippedRandom, skippedControl, skippedCondition };
+  write(path.join(output, "data", "cron-schedulers.txt"), missionLines.join("\n"));
+  return { emitted, scheduled, skippedDate, skippedCondition, unsupportedActions };
 }
 
 function convertDisasters() {
