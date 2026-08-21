@@ -210,6 +210,13 @@ def main():
         animation = item.get("animation", {}); image = animation.get("images", {}).get("baseImage", {})
         converted += alias("projectile", image.get("id"), item.get("name"))
     alias_stats["projectile"] = {"converted": converted, "total": len(weapon_items), "missing": len(weapon_items) - converted}
+    explosion_items = list(NORMALIZED.get("Explosion", {}).values())
+    converted = 0
+    for item in explosion_items:
+        animation = item.get("animation", {}); image = animation.get("images", {}).get("baseImage", {})
+        explosion_id = resource_id(item.get("id"))
+        converted += alias("effect", image.get("id"), f"endless_nova_explosion_{explosion_id}" if explosion_id is not None else None)
+    alias_stats["effect"] = {"converted": converted, "total": len(explosion_items), "missing": len(explosion_items) - converted}
     asset_manifest["aliases"] = alias_stats
     asset_manifest["pictExpected"] = sum(1 for resource in json.loads((ROOT / "burger-resources.json").read_text(encoding="utf-8"))["resources"] if resource["type"] == "PICT")
     asset_manifest["pictMissing"] = max(0, asset_manifest["pictExpected"] - len(pict_paths))

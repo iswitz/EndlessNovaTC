@@ -1,0 +1,181 @@
+# EVN bööm animations converted into ES effects with local EVN sound links.
+
+effect "Endless Nova Explosion 128"
+	sprite "effect/endless_nova_explosion_128"
+		"no repeat"
+		"frame rate" 15
+	sound "evn-202"
+	"lifetime" 16
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 129"
+	sprite "effect/endless_nova_explosion_129"
+		"no repeat"
+		"frame rate" 15
+	sound "evn-201"
+	"lifetime" 16
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 130"
+	sprite "effect/endless_nova_explosion_130"
+		"no repeat"
+		"frame rate" 15
+	sound "evn-200"
+	"lifetime" 20
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 131"
+	sprite "effect/endless_nova_explosion_131"
+		"no repeat"
+		"frame rate" 9
+	sound "evn-201"
+	"lifetime" 34
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 132"
+	sprite "effect/endless_nova_explosion_132"
+		"no repeat"
+		"frame rate" 15
+	sound "evn-202"
+	"lifetime" 16
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 133"
+	sprite "effect/endless_nova_explosion_133"
+		"no repeat"
+		"frame rate" 15
+	sound "evn-203"
+	"lifetime" 20
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 134"
+	sprite "effect/endless_nova_explosion_134"
+		"no repeat"
+		"frame rate" 15
+	sound "evn-201"
+	"lifetime" 16
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 135"
+	sprite "effect/endless_nova_explosion_135"
+		"no repeat"
+		"frame rate" 5
+	sound "evn-200"
+	"lifetime" 54
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 136"
+	sprite "effect/endless_nova_explosion_136"
+		"no repeat"
+		"frame rate" 15
+	sound "evn-202"
+	"lifetime" 16
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 137"
+	sprite "effect/endless_nova_explosion_137"
+		"no repeat"
+		"frame rate" 15
+	sound "evn-202"
+	"lifetime" 16
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 138"
+	sprite "effect/endless_nova_explosion_138"
+		"no repeat"
+		"frame rate" 15
+	sound "evn-201"
+	"lifetime" 16
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 139"
+	sprite "effect/endless_nova_explosion_139"
+		"no repeat"
+		"frame rate" 15
+	sound "evn-201"
+	"lifetime" 16
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 140"
+	sprite "effect/endless_nova_explosion_140"
+		"no repeat"
+		"frame rate" 15
+	sound "evn-202"
+	"lifetime" 16
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 141"
+	sprite "effect/endless_nova_explosion_141"
+		"no repeat"
+		"frame rate" 15
+	sound "evn-201"
+	"lifetime" 16
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4
+
+effect "Endless Nova Explosion 142"
+	sprite "effect/endless_nova_explosion_142"
+		"no repeat"
+		"frame rate" 8
+	sound "evn-214"
+	"lifetime" 34
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"random velocity" .2
+	"velocity scale" .4

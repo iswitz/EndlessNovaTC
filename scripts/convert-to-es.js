@@ -60,13 +60,17 @@ function normalizedOf(type, value) {
   const candidates = [value, id, id == null ? null : `nova:${id}`].filter(candidate => candidate != null);
   return normalized[type] && candidates.map(candidate => normalized[type][candidate]).find(Boolean);
 }
+function soundResourceId(soundIndex) {
+  const id = number(soundIndex, -1) + 200;
+  return burger.resources.some(item => item.type === "snd " && String(item.id) === String(id)) ? id : null;
+}
 function weaponSoundId(weaponId) {
   const resource = burger.resources.find(item => item.type === "wëap" && String(item.id) === String(refId(weaponId)));
   if (!resource) return null;
   const bytes = Buffer.from(resource.dataBase64, "base64");
   if (bytes.length < 20) return null;
   const value = bytes.readInt16BE(18);
-  return value === -1 ? null : value + 200;
+  return value === -1 ? null : soundResourceId(value);
 }
 function planetGovernmentName(planetId) {
   const resource = burger.resources.find(item => item.type === "spöb" && String(item.id) === String(refId(planetId)));
@@ -92,6 +96,10 @@ function referenceWeaponRecord(weaponId) {
 function referenceOutfitRecord(outfitId) {
   const target = String(refId(outfitId));
   return (referenceData["oütf"] || []).find(record => String(record.id) === target) || null;
+}
+function referenceExplosionRecord(explosionId) {
+  const target = String(refId(explosionId));
+  return (referenceData["bööm"] || []).find(record => String(record.id) === target) || null;
 }
 function ammoOutfitNameForWeapon(weaponId) {
   const target = String(refId(weaponId));
@@ -931,6 +939,11 @@ function appendShipHardpoints(lines, ship, raw) {
   if (carriedShip) lines.push(`\t# EVN fighter bay payload: ${q(carriedShip)}; ES bay category remains Fighter.`);
 }
 
+function explosionEffectName(explosionId) {
+  const explosion = normalizedOf("Explosion", explosionId);
+  return explosion ? `Endless Nova Explosion ${refId(explosion.id || explosionId)}` : null;
+}
+
 function convertShips() {
   const lines = ["# Generated from EV Nova shïp resources via NovaParse.", "# EVN exit points are emitted as ES hardpoints; sprite scale and orientation still require tuning.", ""];
   for (const ship of Object.values(normalized.Ship || {})) {
@@ -1000,6 +1013,15 @@ function convertShips() {
       for (const note of loadout.notes) lines.push(`\t# ${note}`);
     }
     appendShipHardpoints(lines, ship, raw);
+    const initialExplosion = explosionEffectName(ship.initialExplosion);
+    const finalExplosion = explosionEffectName(ship.finalExplosion);
+    if (initialExplosion) lines.push(`\texplode ${q(initialExplosion)} 1`);
+    else if (ship.initialExplosion) lines.push(`\t# EVN initial explosion ${q(ship.initialExplosion)} has no converted ES effect.`);
+    if (finalExplosion) add(lines, "final explode", finalExplosion);
+    else if (ship.finalExplosion) lines.push(`\t# EVN final explosion ${q(ship.finalExplosion)} has no converted ES effect.`);
+    if (number(ship.deathDelay, 0) > 0) {
+      lines.push(`\t# EVN DeathDelay ${number(ship.deathDelay)} seconds approximated by ES explode/final-explode effects.`);
+    }
     const flags = hexNumber(raw.Flags);
     const flags2 = hexNumber(raw.Flags2);
     const flags3 = hexNumber(raw.Flags3);
@@ -1233,8 +1255,37 @@ function convertSystems() {
 }
 
 function convertExplosions() {
-  const lines = ["# EVN bööm resources have no direct ES resource type.", "# See source/normalized/Explosion.json for preserved definitions.", ""];
-  write(path.join(output, "data", "explosions.txt"), lines.join("\n"));
+  const effects = ["# EVN bööm animations converted into ES effects with local EVN sound links.", ""];
+  const mappings = ["# EVN bööm to ES effect mappings.", "# Full normalized records remain in source/Explosion.json.", ""];
+  for (const explosion of Object.values(normalized.Explosion || {})) {
+    if (explosion.parseError) continue;
+    const id = refId(explosion.id);
+    const effectName = explosionEffectName(explosion.id);
+    if (!id || !effectName) continue;
+    const image = explosion.animation && explosion.animation.images && explosion.animation.images.baseImage;
+    const purpose = image && image.imagePurposes && image.imagePurposes.normal;
+    const frameCount = Math.max(1, Math.floor(number(purpose && purpose.length, 1)));
+    const rate = Math.max(0.1, number(explosion.rate, 1));
+    const raw = referenceExplosionRecord(explosion.id);
+    const rawData = raw && raw.data ? raw.data : {};
+    const soundId = soundResourceId(rawData.SoundIndex);
+    effects.push(`effect ${q(effectName)}`);
+    if (image && image.id) {
+      effects.push(`\tsprite ${q(`effect/endless_nova_explosion_${id}`)}`);
+      effects.push("\t\t\"no repeat\"");
+      effects.push(`\t\t\"frame rate\" ${Math.max(1, Math.round(15 * rate))}`);
+    }
+    if (soundId != null) effects.push(`\tsound ${q(`evn-${soundId}`)}`);
+    effects.push(`\t\"lifetime\" ${Math.max(1, Math.ceil(frameCount / rate))}`);
+    effects.push("\t\"random angle\" 360");
+    effects.push("\t\"random frame rate\" 5");
+    effects.push("\t\"random spin\" 2");
+    effects.push("\t\"random velocity\" .2");
+    effects.push("\t\"velocity scale\" .4", "");
+    mappings.push(`# ${id} ${q(explosion.name || `EVN explosion ${id}`)} -> ${q(effectName)}${soundId == null ? " (no EVN sound resource)" : ` using evn-${soundId}`}`);
+  }
+  write(path.join(output, "data", "effects.txt"), effects.join("\n"));
+  write(path.join(output, "data", "explosions.txt"), mappings.join("\n"));
 }
 
 function resizePng(sourcePath, destinationPath, width) {
