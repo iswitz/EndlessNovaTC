@@ -1,0 +1,29 @@
+# EVN STR# messages referenced by mission Q actions.
+# EVN message lists are reduced to their first recoverable string because ES messages have one text value.
+
+message "EVN message 25059"
+	text `Holographic recording complete. Return to P'ar Aed.`
+
+message "EVN message 25060"
+	text `Message broadcast complete. Return to P'ar Aed.`
+
+message "EVN message 25058"
+	text `Two Auroran vessels with Federation IFF detected.`
+
+message "EVN message 25046"
+	text `<PN>, you are no longer allowed to land here. Please move away.`
+
+message "EVN message 25048"
+	text `A mysterious force transports you to an unknown location...`
+
+message "EVN message 25075"
+	text `A large enough sensor sample has been taken. Return to P'aedt when ready.`
+
+message "EVN message 12000"
+	text `Sensors record anomolous ship presence... ship identified as Zephyr.`
+
+message "EVN message 25063"
+	text `Nil'kemorya Fleet Master: The Federation ships have been turned back. Thank you for your help.`
+
+message "EVN message 25065"
+	text `Auroran Traffic Control: Destroy that ship!`

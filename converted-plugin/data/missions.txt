@@ -70,6 +70,9 @@ mission "EVN: Return to Earth for Training; Vellos3"
 		never
 	# EVN availability preserved: "b351 & !(b352 | b4444)"
 	# EVN destination preserved: "128"
+	# EVN OnAccept preserved: "b424 b450"
+	# EVN OnSuccess preserved: "b352 K131 b44 G251 G205 S818"
+	# EVN OnAbort preserved: "!b424"
 
 mission "EVN: Infiltrate the Rebels; Vellos4"
 	invisible
@@ -77,6 +80,9 @@ mission "EVN: Infiltrate the Rebels; Vellos4"
 		never
 	# EVN availability preserved: "b352 & !b353"
 	# EVN destination preserved: "421"
+	# EVN OnAccept preserved: "k148 A818"
+	# EVN OnSuccess preserved: "b353 S783"
+	# EVN OnAbort preserved: "S818"
 
 mission "EVN: Escort Merchant to <RST>"
 	landing
@@ -153,6 +159,7 @@ mission "EVN: Refuel Trader"
 		never
 	# EVN availability preserved: "!b424"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "Q25057"
 
 mission "EVN: Rebel Food Drop; Vellos5"
 	landing
@@ -321,6 +328,7 @@ mission "EVN: Receive Instructions from Krane; Vellos8"
 		never
 	# EVN availability preserved: "b356 & !b510"
 	# EVN destination preserved: "128"
+	# EVN OnSuccess preserved: "b357 b510"
 
 mission "EVN: Rescue Rebel; Vellos8a"
 	invisible
@@ -328,6 +336,7 @@ mission "EVN: Rescue Rebel; Vellos8a"
 		never
 	# EVN availability preserved: "(b357 & b510) & !(b358 | b361)"
 	# EVN destination preserved: "138"
+	# EVN OnSuccess preserved: "b358"
 
 mission "EVN: Insert Bureau Agent; Vellos9"
 	landing
@@ -439,6 +448,7 @@ mission "EVN: Pick up Bis Andreya;Polaris4 CONTINUE"
 		never
 	# EVN availability preserved: "b277 & !(b512 | b5757)"
 	# EVN destination preserved: "137"
+	# EVN OnSuccess preserved: "b5757"
 
 mission "EVN: Go to P'ar Aed;Polaris5"
 	invisible
@@ -446,6 +456,7 @@ mission "EVN: Go to P'ar Aed;Polaris5"
 		never
 	# EVN availability preserved: "(b278 & !b315) & !(b279 | b316)"
 	# EVN destination preserved: "286"
+	# EVN OnSuccess preserved: "R(b279 b316)"
 
 mission "EVN: Take Sample;Polaris6a"
 	landing
@@ -499,7 +510,7 @@ mission "EVN: Explore Wraith Space;Polaris7a"
 		# EVN unsupported mission actions: "S837"
 		"reputation: Polaris" += -1
 		conversation "EVN dialogue 156 complete"
-		# EVN unsupported mission actions: "Q25059"
+		message "EVN message 25059"
 	on visit
 		conversation "EVN dialogue 156 drop"
 
@@ -534,7 +545,7 @@ mission "EVN: Broadcast Message;Polaris8a"
 		# EVN unsupported mission actions: "S838"
 		"reputation: Wraith" += 20
 		conversation "EVN dialogue 157 complete"
-		# EVN unsupported mission actions: "Q25060"
+		message "EVN message 25060"
 	on abort
 		# EVN unsupported mission actions: "S837"
 
@@ -602,6 +613,8 @@ mission "EVN: Scout Wraith Space;Polaris11a"
 		never
 	# EVN availability preserved: "(b284 & !b6137) & !(b285 | b6666)"
 	# EVN destination preserved: "421"
+	# EVN OnSuccess preserved: "b6137 S600 Q25076"
+	# EVN OnShipDone preserved: "842"
 
 mission "EVN: Meet With Rebels;Polaris12"
 	invisible
@@ -609,6 +622,8 @@ mission "EVN: Meet With Rebels;Polaris12"
 		never
 	# EVN availability preserved: "b285 & !(b286 | b6666)"
 	# EVN destination preserved: "421"
+	# EVN OnAccept preserved: "k148"
+	# EVN OnSuccess preserved: "b286"
 
 mission "EVN: Return to Kel'ar Iy;Polaris13"
 	landing
@@ -644,6 +659,8 @@ mission "EVN: Take Mu'Hari to Port Kane;Polaris14"
 		never
 	# EVN availability preserved: "b287 & !(b288 | b6666)"
 	# EVN destination preserved: "137"
+	# EVN OnAccept preserved: "K130"
+	# EVN OnSuccess preserved: "b288"
 
 mission "EVN: Return With Message;Polaris15"
 	landing
@@ -748,6 +765,7 @@ mission "EVN: ATTN: Ory'hara;Polaris18"
 		never
 	# EVN availability preserved: "b291 & !b292"
 	# EVN destination preserved: "139"
+	# EVN OnSuccess preserved: "b292"
 
 mission "EVN: Eamon's Answer;Polaris19"
 	landing
@@ -820,6 +838,7 @@ mission "EVN: Open Rebel Talks;Polaris21"
 		never
 	# EVN availability preserved: "b294 & !(b295 | b6666)"
 	# EVN destination preserved: "421"
+	# EVN OnSuccess preserved: "b295"
 
 mission "EVN: Return With Rebel Ambassador;Polaris22"
 	landing
@@ -854,6 +873,7 @@ mission "EVN: Head to Nil'ar Kemorya;Polaris23"
 		never
 	# EVN availability preserved: "b296 & !(b297 | b6666)"
 	# EVN destination preserved: "232"
+	# EVN OnSuccess preserved: "b297 b6666"
 
 mission "EVN: Defend Polaris Space;Polaris24"
 	invisible
@@ -861,6 +881,8 @@ mission "EVN: Defend Polaris Space;Polaris24"
 		never
 	# EVN availability preserved: "(b348 & b297) & !(b298 | b6666)"
 	# EVN destination preserved: "-4"
+	# EVN OnSuccess preserved: "b298 b6666"
+	# EVN OnShipDone preserved: "Q25061"
 
 mission "EVN: Defend Polaris Space;Polaris25"
 	invisible
@@ -868,6 +890,8 @@ mission "EVN: Defend Polaris Space;Polaris25"
 		never
 	# EVN availability preserved: "b298 & !(b299 | b6666)"
 	# EVN destination preserved: "-4"
+	# EVN OnSuccess preserved: "b299 b6666"
+	# EVN OnShipDone preserved: "Q25061"
 
 mission "EVN: Scout Auroran Space;Polaris26"
 	invisible
@@ -875,6 +899,7 @@ mission "EVN: Scout Auroran Space;Polaris26"
 		never
 	# EVN availability preserved: "b299 & !(b300 | b6666)"
 	# EVN destination preserved: "297"
+	# EVN OnSuccess preserved: "b300"
 
 mission "EVN: Meet With Rimertans;Polaris27"
 	invisible
@@ -882,6 +907,7 @@ mission "EVN: Meet With Rimertans;Polaris27"
 		never
 	# EVN availability preserved: "b300 & !b301"
 	# EVN destination preserved: "335"
+	# EVN OnSuccess preserved: "b301"
 
 mission "EVN: Meet With Heraan House;Polaris28 - Unregistered cutoff"
 	invisible
@@ -889,6 +915,7 @@ mission "EVN: Meet With Heraan House;Polaris28 - Unregistered cutoff"
 		never
 	# EVN availability preserved: "(P0 & b301) & !b302"
 	# EVN destination preserved: "360"
+	# EVN OnSuccess preserved: "b302"
 
 mission "EVN: Return To Mu'ar Haro;Polaris29"
 	landing
@@ -927,6 +954,7 @@ mission "EVN: Consult Vell-os;Polaris30"
 		never
 	# EVN availability preserved: "(b296 & !b4444) & !(b349 | b6666)"
 	# EVN destination preserved: "128"
+	# EVN OnSuccess preserved: "b349"
 
 mission "EVN: Return to P'ar Aed;Polaris31"
 	landing
@@ -988,7 +1016,8 @@ mission "EVN: Find Vellos;Polaris32"
 		payment 140000
 		set "EVN bit 347"
 		set "EVN bit 6666"
-		# EVN unsupported mission actions: "D339 A862 A863 A864 A865 A866 A867 A868 A869 A870 A871"
+		outfit ";Krypt mind attack" -1
+		# EVN unsupported mission actions: "A862 A863 A864 A865 A866 A867 A868 A869 A870 A871"
 		"reputation: Krypt" += 5
 		conversation "EVN dialogue 181 complete"
 	on visit
@@ -1078,6 +1107,9 @@ mission "EVN: Pass on Info;Polaris35"
 		never
 	# EVN availability preserved: "(P0 & b305) & !(b306 | b6666)"
 	# EVN destination preserved: "360"
+	# EVN OnAccept preserved: "b1100"
+	# EVN OnSuccess preserved: "b306"
+	# EVN OnAbort preserved: "!b1100"
 
 mission "EVN: Alert Rimertans;Polaris36"
 	invisible
@@ -1085,6 +1117,7 @@ mission "EVN: Alert Rimertans;Polaris36"
 		never
 	# EVN availability preserved: "(P0 & b306) & !b307"
 	# EVN destination preserved: "335"
+	# EVN OnSuccess preserved: "b307"
 
 mission "EVN: Observe Bureau;Polaris37"
 	invisible
@@ -1092,6 +1125,7 @@ mission "EVN: Observe Bureau;Polaris37"
 		never
 	# EVN availability preserved: "(P0 & b307) & !b308"
 	# EVN destination preserved: "360"
+	# EVN OnSuccess preserved: "b308"
 
 mission "EVN: Meet the Ruling Council;Polaris38"
 	invisible
@@ -1099,6 +1133,7 @@ mission "EVN: Meet the Ruling Council;Polaris38"
 		never
 	# EVN availability preserved: "(P0 & b308) & !b309"
 	# EVN destination preserved: "338"
+	# EVN OnSuccess preserved: "b309 b6031"
 
 mission "EVN: Return to Kel'ar Iy;Polaris39"
 	landing
@@ -1137,6 +1172,9 @@ mission "EVN: Find Krypt-tokh;Polaris40"
 		never
 	# EVN availability preserved: "(P0 & b310) & !(b311 | b6666)"
 	# EVN destination preserved: "407"
+	# EVN OnAccept preserved: "S872"
+	# EVN OnSuccess preserved: "b311 b330 S839 A872"
+	# EVN OnAbort preserved: "A872"
 
 mission "EVN: Ferry Mu'Randa;Polaris41"
 	landing
@@ -1174,6 +1212,9 @@ mission "EVN: Travel to Ar'Za Iusia;Polaris42"
 		never
 	# EVN availability preserved: "(P0 & b312) & !b313"
 	# EVN destination preserved: "254"
+	# EVN OnAccept preserved: "S872"
+	# EVN OnSuccess preserved: "b313 A872"
+	# EVN OnAbort preserved: "A872"
 
 mission "EVN: Head to Port Kane;Polaris43a"
 	invisible
@@ -1181,6 +1222,10 @@ mission "EVN: Head to Port Kane;Polaris43a"
 		never
 	# EVN availability preserved: "(P0 & b313) & !b314"
 	# EVN destination preserved: "137"
+	# EVN OnAccept preserved: "b315 S880 S881 G209"
+	# EVN OnRefuse preserved: "b314 S880 S881 S888 G209"
+	# EVN OnSuccess preserved: "b314 S882 S883"
+	# EVN OnAbort preserved: "!b315 A880 A881"
 
 mission "EVN: Rebel Insertion; Vellos10"
 	invisible
@@ -1188,6 +1233,7 @@ mission "EVN: Rebel Insertion; Vellos10"
 		never
 	# EVN availability preserved: "b359 & !b360"
 	# EVN destination preserved: "138"
+	# EVN OnSuccess preserved: "b360 S798"
 
 mission "EVN: Learn the Rules...; Vellos11"
 	invisible
@@ -1195,6 +1241,8 @@ mission "EVN: Learn the Rules...; Vellos11"
 		never
 	# EVN availability preserved: "b360 & !b423"
 	# EVN destination preserved: "138"
+	# EVN OnAccept preserved: "L131 K132 G206 D205 G338"
+	# EVN OnSuccess preserved: "b423 b6666"
 
 mission "EVN: Scout Moash Space; Vellos12"
 	landing
@@ -1226,6 +1274,8 @@ mission "EVN: Distract Moash House; Vellos13"
 		never
 	# EVN availability preserved: "b361 & !b362"
 	# EVN destination preserved: "138"
+	# EVN OnAccept preserved: "S905 S606"
+	# EVN OnSuccess preserved: "b362 A905 A606"
 
 mission "EVN: Learn About Vell-os; Vellos14"
 	landing
@@ -1243,8 +1293,17 @@ mission "EVN: Learn About Vell-os; Vellos14"
 		conversation "EVN dialogue 197 offer"
 	on accept
 		set "EVN bit 422"
+		clear "EVN rank 132"
+		set "EVN rank 133"
+		outfit "Flower Of Spring" 1
+		outfit "Distract Sensors" 1
+		outfit "Physical Sense" 1
+		outfit "Hostility Sense" 1
 		set "EVN bit 9812"
-		# EVN unsupported mission actions: "L132 K133 H381 G221 G249 g252 g253 T25040 L148 G207 D206"
+		clear "EVN rank 148"
+		outfit ";T3 Strength" 1
+		outfit ";T4 Strength" -1
+		# EVN unsupported mission actions: "H381 T25040"
 	on complete
 		payment 50000
 		"reputation: Vell-os" += 2
@@ -1261,6 +1320,7 @@ mission "EVN: Talk to Moash Elders; Vellos15"
 		never
 	# EVN availability preserved: "b362 & !b363"
 	# EVN destination preserved: "380"
+	# EVN OnSuccess preserved: "b363"
 
 mission "EVN: Return With Response; Vellos16"
 	landing
@@ -1357,6 +1417,10 @@ mission "EVN: Head to Sol;Tutorial 001"
 		never
 	# EVN availability preserved: "!(b9200 | b9215)"
 	# EVN destination preserved: "128"
+	# EVN OnAccept preserved: "b8339 X130"
+	# EVN OnRefuse preserved: "b9215"
+	# EVN OnSuccess preserved: "b9200"
+	# EVN OnAbort preserved: "!b8339"
 
 mission "EVN: Intro to Bounty Hunters Guild;Bounty Hunter1"
 	landing
@@ -1381,7 +1445,7 @@ mission "EVN: Intro to Bounty Hunters Guild;Bounty Hunter1"
 	on complete
 		payment 10000
 		set "EVN bit 0"
-		# EVN unsupported mission actions: "K146"
+		set "EVN rank 146"
 		"reputation: Federation" += 2
 		conversation "EVN dialogue 257 complete"
 		set "EVN bit 96"
@@ -1418,6 +1482,7 @@ mission "EVN: Auroran Negotiations;Bounty Hunter2"
 		never
 	# EVN availability preserved: "(b0 & !b424) & !(b1 | b511)"
 	# EVN destination preserved: "338"
+	# EVN OnSuccess preserved: "b1"
 
 mission "EVN: Return from Aurora;Bounty Hunter3"
 	landing
@@ -1475,6 +1540,10 @@ mission "EVN: Heraan Warrior Initiation;Bounty Hunter Auroran link"
 		never
 	# EVN availability preserved: "(b2 & !b511) & !(b9111 | b424)"
 	# EVN destination preserved: "360"
+	# EVN OnAccept preserved: "b511"
+	# EVN OnRefuse preserved: "b9111"
+	# EVN OnSuccess preserved: "b200 b44 k139 K151"
+	# EVN OnFailure preserved: "!b511 b9111"
 
 mission "EVN: Open Auroran Chapter House;Bounty Hunter4"
 	invisible
@@ -1482,6 +1551,7 @@ mission "EVN: Open Auroran Chapter House;Bounty Hunter4"
 		never
 	# EVN availability preserved: "b2 & !(b3 | b424)"
 	# EVN destination preserved: "338"
+	# EVN OnSuccess preserved: "b3"
 
 mission "EVN: First Auroran Bounty;Bounty Hunter5"
 	invisible
@@ -1489,6 +1559,7 @@ mission "EVN: First Auroran Bounty;Bounty Hunter5"
 		never
 	# EVN availability preserved: "b3 & !(b4 | b424)"
 	# EVN destination preserved: "318"
+	# EVN OnSuccess preserved: "b4"
 
 mission "EVN: First Auroran Bounty;Bounty Hunter6"
 	landing
@@ -1593,7 +1664,7 @@ mission "EVN: Meet the Polaris;Bounty Hunter7"
 	on offer
 		conversation "EVN dialogue 276 offer"
 	on accept
-		# EVN unsupported mission actions: "K150"
+		set "EVN rank 150"
 		conversation "EVN dialogue 276 load"
 	on complete
 		payment 50000
@@ -1703,6 +1774,7 @@ mission "EVN: Join the Rebels;Bounty Hunter Rebel link"
 		never
 	# EVN availability preserved: "(b8 & !b424) & !(b61 | b125)"
 	# EVN destination preserved: "421"
+	# EVN OnSuccess preserved: "b125 S783"
 
 mission "EVN: Rescue Tomak;Pirate Offshoot 001"
 	invisible
@@ -1710,6 +1782,9 @@ mission "EVN: Rescue Tomak;Pirate Offshoot 001"
 		never
 	# EVN availability preserved: "b651 & !b425"
 	# EVN destination preserved: "191"
+	# EVN OnAccept preserved: "b425 b426"
+	# EVN OnRefuse preserved: "b425"
+	# EVN OnAbort preserved: "!b425 !b426"
 
 mission "EVN: Deliver Instructions; Vellos17"
 	invisible
@@ -1717,6 +1792,7 @@ mission "EVN: Deliver Instructions; Vellos17"
 		never
 	# EVN availability preserved: "b364 & !(b365 | b6666)"
 	# EVN destination preserved: "138"
+	# EVN OnSuccess preserved: "b365 G222 b6666"
 
 mission "EVN: Deliver Further Instructions; Vellos18"
 	invisible
@@ -1724,6 +1800,7 @@ mission "EVN: Deliver Further Instructions; Vellos18"
 		never
 	# EVN availability preserved: "b365 & !(b366 | b6666)"
 	# EVN destination preserved: "138"
+	# EVN OnSuccess preserved: "b366 b6666"
 
 mission "EVN: Meet With Krane; Vellos19"
 	invisible
@@ -1731,6 +1808,8 @@ mission "EVN: Meet With Krane; Vellos19"
 		never
 	# EVN availability preserved: "b366 & !(b367 | b6666)"
 	# EVN destination preserved: "128"
+	# EVN OnAccept preserved: "L133 K134 H382 T25041 G209 D207"
+	# EVN OnSuccess preserved: "b367"
 
 mission "EVN: Find Mu'hari HQ; Vellos20"
 	landing
@@ -1838,7 +1917,8 @@ mission "EVN: Rebel Food Drop;Rebel1 from Bounty Hunter"
 		set "EVN bit 124"
 		set "EVN bit 512"
 		set "EVN bit 515"
-		# EVN unsupported mission actions: "k148 S819"
+		set "EVN rank 148"
+		# EVN unsupported mission actions: "S819"
 		"reputation: Rebellion" += 3
 		conversation "EVN dialogue 328 complete"
 	on visit
@@ -1904,7 +1984,8 @@ mission "EVN: Rebel Food Drop;Rebel1 from Fed"
 		set "EVN bit 126"
 		set "EVN bit 510"
 		set "EVN bit 512"
-		# EVN unsupported mission actions: "k148 S819"
+		set "EVN rank 148"
+		# EVN unsupported mission actions: "S819"
 		"reputation: Rebellion" += 3
 		conversation "EVN dialogue 330 complete"
 	on visit
@@ -2103,6 +2184,9 @@ mission "EVN: Intel Re-assignment;Rebel5"
 		never
 	# EVN availability preserved: "b129 & !b130"
 	# EVN destination preserved: "421"
+	# EVN OnAccept preserved: "A819"
+	# EVN OnSuccess preserved: "b130"
+	# EVN OnAbort preserved: "S819"
 
 mission "EVN: Answer Polaris Summons;Rebel6"
 	landing
@@ -2125,7 +2209,7 @@ mission "EVN: Answer Polaris Summons;Rebel6"
 	on offer
 		conversation "EVN dialogue 338 offer"
 	on accept
-		# EVN unsupported mission actions: "K137"
+		set "EVN rank 137"
 		conversation "EVN dialogue 338 load"
 	on complete
 		payment 50000
@@ -2345,7 +2429,7 @@ mission "EVN: Scout Aurora;Rebel I12"
 		set "EVN bit 137"
 		"reputation: Rebellion" += 5
 		conversation "EVN dialogue 344 complete"
-		# EVN unsupported mission actions: "Q25058"
+		message "EVN message 25058"
 
 mission "EVN: Scout Moash;Rebel I13"
 	landing
@@ -2387,6 +2471,7 @@ mission "EVN: Warn Wild Geese;Rebel I14"
 		never
 	# EVN availability preserved: "(P0 & b138) & !b139"
 	# EVN destination preserved: "139"
+	# EVN OnSuccess preserved: "b139"
 
 mission "EVN: Warn Heraan House;Rebel I15"
 	invisible
@@ -2394,6 +2479,9 @@ mission "EVN: Warn Heraan House;Rebel I15"
 		never
 	# EVN availability preserved: "(P0 & b139) & !b140"
 	# EVN destination preserved: "360"
+	# EVN OnAccept preserved: "b175"
+	# EVN OnSuccess preserved: "b140"
+	# EVN OnAbort preserved: "!b175"
 
 mission "EVN: Warn Dechtakars;Rebel I16"
 	invisible
@@ -2401,6 +2489,7 @@ mission "EVN: Warn Dechtakars;Rebel I16"
 		never
 	# EVN availability preserved: "(P0 & b140) & !b141"
 	# EVN destination preserved: "335"
+	# EVN OnSuccess preserved: "b141"
 
 mission "EVN: Return to Rebel II;Rebel I17"
 	landing
@@ -2496,6 +2585,7 @@ mission "EVN: Bring Krane to Trial;Rebel I20"
 		never
 	# EVN availability preserved: "(P0 & b144) & !b145"
 	# EVN destination preserved: "128"
+	# EVN OnSuccess preserved: "b145 b330"
 
 mission "EVN: Fetch Rebel Leaders;Rebel I21"
 	invisible
@@ -2503,6 +2593,7 @@ mission "EVN: Fetch Rebel Leaders;Rebel I21"
 		never
 	# EVN availability preserved: "(P0 & b145) & !b146"
 	# EVN destination preserved: "128"
+	# EVN OnSuccess preserved: "b146 b331 b8908"
 
 mission "EVN: Take Polaris Home;Rebel I22 LAST"
 	invisible
@@ -2510,6 +2601,7 @@ mission "EVN: Take Polaris Home;Rebel I22 LAST"
 		never
 	# EVN availability preserved: "(P0 & b146) & !b147"
 	# EVN destination preserved: "267"
+	# EVN OnSuccess preserved: "b147 b148 b332 b333 b334 b613 b9995 b9500 M472 Q25048"
 
 mission "EVN: Confirm Mu'hari; Vellos22"
 	landing
@@ -2539,6 +2631,8 @@ mission "EVN: Report to Krane; Vellos23 - Unregistered cutoff"
 		never
 	# EVN availability preserved: "(P0 & b370) & !(b371 | b6666)"
 	# EVN destination preserved: "138"
+	# EVN OnAccept preserved: "H383 G223 T25042 G225 G226 G226 G226"
+	# EVN OnSuccess preserved: "b371"
 
 mission "EVN: Report Mu'hari; Vellos24"
 	landing
@@ -2593,6 +2687,7 @@ mission "EVN: Take Mu'Randa Home;Rebel II27"
 		never
 	# EVN availability preserved: "(P0 & b180) & !b147"
 	# EVN destination preserved: "267"
+	# EVN OnSuccess preserved: "b147 b148 b332 b333 b334 b613 b9995 b9500 M472 Q25048"
 
 mission "EVN: Fetch Rebel Leaders;Rebel  II26"
 	invisible
@@ -2600,6 +2695,7 @@ mission "EVN: Fetch Rebel Leaders;Rebel  II26"
 		never
 	# EVN availability preserved: "(P0 & b181) & !b180"
 	# EVN destination preserved: "128"
+	# EVN OnSuccess preserved: "b180 b331 b8908"
 
 mission "EVN: Bring Krane to trial;Rebel II25"
 	invisible
@@ -2607,6 +2703,7 @@ mission "EVN: Bring Krane to trial;Rebel II25"
 		never
 	# EVN availability preserved: "(P0 & b182) & !b181"
 	# EVN destination preserved: "128"
+	# EVN OnSuccess preserved: "b181 b330"
 
 mission "EVN: Capture Commander Krane;Rebel  II24"
 	landing
@@ -2641,6 +2738,7 @@ mission "EVN: Capture Vell-os;Rebel II23"
 		never
 	# EVN availability preserved: "(P0 & b184) & !b183"
 	# EVN destination preserved: "270"
+	# EVN OnSuccess preserved: "b183"
 
 mission "EVN: Observe Polaris Experiment;Rebel II22"
 	invisible
@@ -2648,6 +2746,7 @@ mission "EVN: Observe Polaris Experiment;Rebel II22"
 		never
 	# EVN availability preserved: "(P0 & b185) & !b184"
 	# EVN destination preserved: "270"
+	# EVN OnSuccess preserved: "b184"
 
 mission "EVN: Talk to Polaris;Rebel II21"
 	invisible
@@ -2655,6 +2754,7 @@ mission "EVN: Talk to Polaris;Rebel II21"
 		never
 	# EVN availability preserved: "(P0 & b186) & !b185"
 	# EVN destination preserved: "254"
+	# EVN OnSuccess preserved: "b185"
 
 mission "EVN: Talk With Vell-os;Rebel II20"
 	landing
@@ -2687,6 +2787,7 @@ mission "EVN: Talk to Vell-os;Rebel II19"
 		never
 	# EVN availability preserved: "(P0 & b188) & !b187"
 	# EVN destination preserved: "128"
+	# EVN OnSuccess preserved: "b187"
 
 mission "EVN: Defend Rebel II;Rebel II18a"
 	landing
@@ -2780,6 +2881,7 @@ mission "EVN: Take People Home;Rebel II16"
 		never
 	# EVN availability preserved: "(P0 & b191) & !b190"
 	# EVN destination preserved: "139"
+	# EVN OnSuccess preserved: "b190"
 
 mission "EVN: Rescue Raczak;Rebel II15"
 	invisible
@@ -2787,6 +2889,7 @@ mission "EVN: Rescue Raczak;Rebel II15"
 		never
 	# EVN availability preserved: "(P0 & b192) & !b191"
 	# EVN destination preserved: "360"
+	# EVN OnSuccess preserved: "b191"
 
 mission "EVN: Drop by Heraan House;Rebel II14 - Unregistered cutoff"
 	invisible
@@ -2794,6 +2897,7 @@ mission "EVN: Drop by Heraan House;Rebel II14 - Unregistered cutoff"
 		never
 	# EVN availability preserved: "(P0 & b193) & !b192"
 	# EVN destination preserved: "360"
+	# EVN OnSuccess preserved: "b192 b44"
 
 mission "EVN: Attack Moash House;Rebel II13"
 	invisible
@@ -2801,6 +2905,9 @@ mission "EVN: Attack Moash House;Rebel II13"
 		never
 	# EVN availability preserved: "b194 & !b193"
 	# EVN destination preserved: "380"
+	# EVN OnAccept preserved: "b175"
+	# EVN OnSuccess preserved: "b193"
+	# EVN OnAbort preserved: "!b175"
 
 mission "EVN: Warn Heraan House;Rebel II12"
 	landing
@@ -2917,7 +3024,7 @@ mission "EVN: Scout Aurora;Rebel II9"
 		set "EVN bit 197"
 		"reputation: Rebellion" += 5
 		conversation "EVN dialogue 400 complete"
-		# EVN unsupported mission actions: "Q25058"
+		message "EVN message 25058"
 
 mission "EVN: Return Empty Handed;Rebel II8"
 	invisible
@@ -2925,6 +3032,7 @@ mission "EVN: Return Empty Handed;Rebel II8"
 		never
 	# EVN availability preserved: "b199 & !b502"
 	# EVN destination preserved: "421"
+	# EVN OnSuccess preserved: "b198 b502 b6666"
 
 mission "EVN: Report Mu'hari; Vellos25"
 	landing
@@ -2956,6 +3064,7 @@ mission "EVN: Liaise With Aurorans; Vellos26"
 		never
 	# EVN availability preserved: "(P0 & b372) & !b373"
 	# EVN destination preserved: "297"
+	# EVN OnSuccess preserved: "b373 b6031"
 
 mission "EVN: Invade Polaris Space; Vellos27"
 	invisible
@@ -2963,6 +3072,7 @@ mission "EVN: Invade Polaris Space; Vellos27"
 		never
 	# EVN availability preserved: "(P0 & b373) & !b374"
 	# EVN destination preserved: "254"
+	# EVN OnSuccess preserved: "b374 !b424 L134 K135 G224 G336 D209"
 
 mission "EVN: Speak With Llyrell; Vellos28"
 	invisible
@@ -2970,6 +3080,7 @@ mission "EVN: Speak With Llyrell; Vellos28"
 		never
 	# EVN availability preserved: "(P0 & b374) & !b375"
 	# EVN destination preserved: "128"
+	# EVN OnSuccess preserved: "b375"
 
 mission "EVN: Speak With Krypt; Vellos29"
 	invisible
@@ -2977,6 +3088,7 @@ mission "EVN: Speak With Krypt; Vellos29"
 		never
 	# EVN availability preserved: "(P0 & b375) & !b376"
 	# EVN destination preserved: "408"
+	# EVN OnSuccess preserved: "b376 S800"
 
 mission "EVN: Attack Bureau HQ; Vellos30"
 	invisible
@@ -2984,6 +3096,7 @@ mission "EVN: Attack Bureau HQ; Vellos30"
 		never
 	# EVN availability preserved: "(P0 & b376) & !b377"
 	# EVN destination preserved: "138"
+	# EVN OnSuccess preserved: "b377 L135 K136 G337 D336"
 
 mission "EVN: Take Llyrell to Korell; Vellos31 LAST"
 	invisible
@@ -2991,6 +3104,10 @@ mission "EVN: Take Llyrell to Korell; Vellos31 LAST"
 		never
 	# EVN availability preserved: "(P0 & b377) & !b330"
 	# EVN destination preserved: "407"
+	# EVN OnAccept preserved: "b148 S718"
+	# EVN OnSuccess preserved: "b330 !b90 b331 b332 b333 b334 b613 b9995 A718 b9500 M472 Q25048"
+	# EVN OnFailure preserved: "A718"
+	# EVN OnAbort preserved: "A718 !b148"
 
 mission "EVN: Federation Resupply;Fed1"
 	invisible
@@ -2998,6 +3115,11 @@ mission "EVN: Federation Resupply;Fed1"
 		never
 	# EVN availability preserved: "!(b511 | b515) & !((b50 | 467) | b6666)"
 	# EVN destination preserved: "136"
+	# EVN OnAccept preserved: "b511"
+	# EVN OnRefuse preserved: "b6666"
+	# EVN OnSuccess preserved: "b50 b512 b515 b518"
+	# EVN OnFailure preserved: "b467 !b511"
+	# EVN OnAbort preserved: "b467 !b511"
 
 mission "EVN: Federation Resupply;Fed2"
 	landing
@@ -3274,6 +3396,8 @@ mission "EVN: Bring in Political Dissident;Fed11 (Rebel link)"
 		never
 	# EVN availability preserved: "b59 & !b60"
 	# EVN destination preserved: "-1"
+	# EVN OnRefuse preserved: "G348"
+	# EVN OnSuccess preserved: "b60"
 
 mission "EVN: Bring in Fed Councilor;Fed12"
 	landing
@@ -3301,7 +3425,7 @@ mission "EVN: Bring in Fed Councilor;Fed12"
 		set "EVN bit 61"
 		set "EVN bit 510"
 		set "EVN bit 124"
-		# EVN unsupported mission actions: "K128"
+		set "EVN rank 128"
 		"reputation: Bureau" += 6
 		conversation "EVN dialogue 439 complete"
 	on visit
@@ -3317,6 +3441,8 @@ mission "EVN: Infiltrate the Rebels;Fed13 from Bounty Hunter"
 		never
 	# EVN availability preserved: "(b61 & (b8 | b500)) & !b62"
 	# EVN destination preserved: "421"
+	# EVN OnAccept preserved: "k148"
+	# EVN OnSuccess preserved: "b62 S783"
 
 mission "EVN: Rebel Food Drop;Fed14"
 	landing
@@ -3382,6 +3508,9 @@ mission "EVN: Infiltrate the Rebels;Fed13 from Fed"
 		never
 	# EVN availability preserved: "b61 & !(b8 | b62)"
 	# EVN destination preserved: "421"
+	# EVN OnAccept preserved: "k148"
+	# EVN OnRefuse preserved: "D188 G348"
+	# EVN OnSuccess preserved: "b62 b510 S783"
 
 mission "EVN: Rebel Equipment Drop;Fed15"
 	landing
@@ -3484,6 +3613,8 @@ mission "EVN: Receive Instructions from Krane;Fed17 from Fed"
 		never
 	# EVN availability preserved: "(b65 & !b66) & !(b8 | b500)6) & !(b8 | b500)"
 	# EVN destination preserved: "128"
+	# EVN OnRefuse preserved: "G348"
+	# EVN OnSuccess preserved: "b66"
 
 mission "EVN: Receive Instructions from Krane;Fed17 from Bounty Hunter"
 	landing
@@ -3523,6 +3654,7 @@ mission "EVN: Rescue Rebel;Fed18 (Rebel link - Regain your life)"
 		never
 	# EVN availability preserved: "(b66 & (b8 | b500)) & !b509"
 	# EVN destination preserved: "171"
+	# EVN OnSuccess preserved: "b509 b128"
 
 mission "EVN: Rescue Rebel;Fed19"
 	invisible
@@ -3530,6 +3662,7 @@ mission "EVN: Rescue Rebel;Fed19"
 		never
 	# EVN availability preserved: "b66 & !((b123 | b148) | b509)"
 	# EVN destination preserved: "138"
+	# EVN OnSuccess preserved: "b123"
 
 mission "EVN: Insert Bureau Agent;Fed20"
 	landing
@@ -3563,6 +3696,9 @@ mission "EVN: Rebel Insertion;Fed21"
 		never
 	# EVN availability preserved: "b66 & !(b67 | b509)"
 	# EVN destination preserved: "138"
+	# EVN OnAccept preserved: "A819"
+	# EVN OnSuccess preserved: "b67"
+	# EVN OnAbort preserved: "S819"
 
 mission "EVN: Scout Moash Space;Fed22"
 	landing
@@ -3585,7 +3721,7 @@ mission "EVN: Scout Moash Space;Fed22"
 	on offer
 		conversation "EVN dialogue 453 offer"
 	on accept
-		# EVN unsupported mission actions: "L148"
+		clear "EVN rank 148"
 		conversation "EVN dialogue 453 load"
 	on complete
 		payment 50000
@@ -3595,7 +3731,7 @@ mission "EVN: Scout Moash Space;Fed22"
 	on visit
 		conversation "EVN dialogue 453 drop"
 	on decline
-		# EVN unsupported mission actions: "G348"
+		outfit "Bureau Bomb Outfit" 1
 		conversation "EVN dialogue 453 decline"
 
 mission "EVN: Distract Moash House;Fed23"
@@ -3604,6 +3740,9 @@ mission "EVN: Distract Moash House;Fed23"
 		never
 	# EVN availability preserved: "b68 & !b69"
 	# EVN destination preserved: "138"
+	# EVN OnAccept preserved: "S606"
+	# EVN OnRefuse preserved: "G348"
+	# EVN OnSuccess preserved: "b69 A606"
 
 mission "EVN: Talk to Moash Elders;Fed24"
 	invisible
@@ -3611,6 +3750,8 @@ mission "EVN: Talk to Moash Elders;Fed24"
 		never
 	# EVN availability preserved: "b69 & !b70"
 	# EVN destination preserved: "380"
+	# EVN OnRefuse preserved: "G348"
+	# EVN OnSuccess preserved: "b70"
 
 mission "EVN: Return With Response;Fed25"
 	landing
@@ -3637,6 +3778,8 @@ mission "EVN: Deliver Instructions;Fed26"
 		never
 	# EVN availability preserved: "b71 & !(b72 | b6666)"
 	# EVN destination preserved: "138"
+	# EVN OnRefuse preserved: "G348"
+	# EVN OnSuccess preserved: "b72 b6666"
 
 mission "EVN: Deliver Further Instructions;Fed27"
 	invisible
@@ -3644,6 +3787,8 @@ mission "EVN: Deliver Further Instructions;Fed27"
 		never
 	# EVN availability preserved: "b72 & !(b73 | b6666)"
 	# EVN destination preserved: "138"
+	# EVN OnRefuse preserved: "G348"
+	# EVN OnSuccess preserved: "b73"
 
 mission "EVN: Re-Infiltrate Rebels;Fed28"
 	invisible
@@ -3651,6 +3796,9 @@ mission "EVN: Re-Infiltrate Rebels;Fed28"
 		never
 	# EVN availability preserved: "b73 & !b74"
 	# EVN destination preserved: "171"
+	# EVN OnAccept preserved: "k148"
+	# EVN OnRefuse preserved: "G348"
+	# EVN OnSuccess preserved: "b74"
 
 mission "EVN: Carry Rebel Message;Fed29"
 	invisible
@@ -3658,6 +3806,7 @@ mission "EVN: Carry Rebel Message;Fed29"
 		never
 	# EVN availability preserved: "b74 & !b75"
 	# EVN destination preserved: "134"
+	# EVN OnSuccess preserved: "b75"
 
 mission "EVN: Carry Reply;Fed30 - Unregistered cutoff"
 	landing
@@ -3694,6 +3843,7 @@ mission "EVN: Organize Meeting;Fed31"
 		never
 	# EVN availability preserved: "(P0 & b76) & !b77"
 	# EVN destination preserved: "134"
+	# EVN OnSuccess preserved: "b77"
 
 mission "EVN: Lead Attack on Rebels;Fed32"
 	invisible
@@ -3701,6 +3851,8 @@ mission "EVN: Lead Attack on Rebels;Fed32"
 		never
 	# EVN availability preserved: "(P0 & b77) & !b78"
 	# EVN destination preserved: "138"
+	# EVN OnAccept preserved: "L148 S607"
+	# EVN OnSuccess preserved: "b78 b148 b6031 b8900 A607"
 
 mission "EVN: Deliver Final Instructions;Fed33"
 	landing
@@ -3739,7 +3891,7 @@ mission "EVN: Deliver Final Instructions;Fed33"
 	on visit
 		conversation "EVN dialogue 464 drop"
 	on decline
-		# EVN unsupported mission actions: "G348"
+		outfit "Bureau Bomb Outfit" 1
 		conversation "EVN dialogue 464 decline"
 
 mission "EVN: Chat With Federation President;Fed34"
@@ -3748,6 +3900,8 @@ mission "EVN: Chat With Federation President;Fed34"
 		never
 	# EVN availability preserved: "(P0 & b79) & !b80"
 	# EVN destination preserved: "138"
+	# EVN OnRefuse preserved: "G348"
+	# EVN OnSuccess preserved: "b80 b90"
 
 mission "EVN: Polaris Diplomatic Mission;Fed35"
 	invisible
@@ -3755,6 +3909,9 @@ mission "EVN: Polaris Diplomatic Mission;Fed35"
 		never
 	# EVN availability preserved: "(P0 & b80) & !b81"
 	# EVN destination preserved: "254"
+	# EVN OnAccept preserved: "G211 K150"
+	# EVN OnRefuse preserved: "G348"
+	# EVN OnSuccess preserved: "b81"
 
 mission "EVN: Return With Polaris Proposal;Fed36"
 	invisible
@@ -3762,6 +3919,8 @@ mission "EVN: Return With Polaris Proposal;Fed36"
 		never
 	# EVN availability preserved: "(P0 & b81) & !b82"
 	# EVN destination preserved: "138"
+	# EVN OnRefuse preserved: "348"
+	# EVN OnSuccess preserved: "b82"
 
 mission "EVN: Scout Polaris Space;Fed37"
 	invisible
@@ -3769,6 +3928,9 @@ mission "EVN: Scout Polaris Space;Fed37"
 		never
 	# EVN availability preserved: "(P0 & b82) & !b83"
 	# EVN destination preserved: "256"
+	# EVN OnAccept preserved: "L128 K129"
+	# EVN OnRefuse preserved: "G348"
+	# EVN OnSuccess preserved: "b83"
 
 mission "EVN: Scout Polaris Space;Fed38"
 	landing
@@ -3792,7 +3954,7 @@ mission "EVN: Scout Polaris Space;Fed38"
 			not "EVN bit 84"
 		random < 100
 	on accept
-		# EVN unsupported mission actions: "Q25046"
+		message "EVN message 25046"
 	on complete
 		payment 100000
 		set "EVN bit 84"
@@ -3841,7 +4003,7 @@ mission "EVN: Fetch Polaris Leader;Fed39"
 	on visit
 		conversation "EVN dialogue 470 drop"
 	on decline
-		# EVN unsupported mission actions: "G348"
+		outfit "Bureau Bomb Outfit" 1
 		conversation "EVN dialogue 470 decline"
 
 mission "EVN: Meet Auroran Forces;Fed40"
@@ -3850,6 +4012,7 @@ mission "EVN: Meet Auroran Forces;Fed40"
 		never
 	# EVN availability preserved: "(P0 & b85) & !b86"
 	# EVN destination preserved: "297"
+	# EVN OnSuccess preserved: "b86"
 
 mission "EVN: Lead Auroran Forces;Fed41"
 	invisible
@@ -3857,6 +4020,7 @@ mission "EVN: Lead Auroran Forces;Fed41"
 		never
 	# EVN availability preserved: "(P0 & b86) & !b87"
 	# EVN destination preserved: "256"
+	# EVN OnSuccess preserved: "b87 S786"
 
 mission "EVN: Destroy Polaris Raven;Fed42"
 	invisible
@@ -3864,6 +4028,10 @@ mission "EVN: Destroy Polaris Raven;Fed42"
 		never
 	# EVN availability preserved: "(P0 & b87) & !(b88 | b1000)"
 	# EVN destination preserved: "138"
+	# EVN OnAccept preserved: "S795"
+	# EVN OnRefuse preserved: "G348"
+	# EVN OnSuccess preserved: "b88 b333 A795 b8904"
+	# EVN OnAbort preserved: "A795"
 
 mission "EVN: Take Krane to Earth;Fed43 LAST"
 	landing
@@ -3889,13 +4057,16 @@ mission "EVN: Take Krane to Earth;Fed43 LAST"
 		set "EVN bit 89"
 		set "EVN bit 9995"
 		set "EVN bit 9500"
-		# EVN unsupported mission actions: "M472 L129 K149 Q25048"
+		clear "EVN rank 129"
+		set "EVN rank 149"
+		message "EVN message 25048"
+		# EVN unsupported mission actions: "M472"
 		"reputation: Bureau" += 20
 		conversation "EVN dialogue 474 complete"
 	on visit
 		conversation "EVN dialogue 474 drop"
 	on decline
-		# EVN unsupported mission actions: "G348"
+		outfit "Bureau Bomb Outfit" 1
 		conversation "EVN dialogue 474 decline"
 
 mission "EVN: United Shipping Intro;United Shipping1"
@@ -3921,7 +4092,7 @@ mission "EVN: United Shipping Intro;United Shipping1"
 	on complete
 		payment 10000
 		set "EVN bit 9"
-		# EVN unsupported mission actions: "K145"
+		set "EVN rank 145"
 		"reputation: United Shipping" += 2
 		conversation "EVN dialogue 504 complete"
 	on decline
@@ -3984,6 +4155,9 @@ mission "EVN: Un. Shipping Delivery;United Shipping3"
 		never
 	# EVN availability preserved: "b10 & !(b12 | b424)"
 	# EVN destination preserved: "10001"
+	# EVN OnAccept preserved: "b14"
+	# EVN OnRefuse preserved: "b12"
+	# EVN OnSuccess preserved: "b11 b12"
 
 mission "EVN: Return With Samantha;United Shipping4"
 	landing
@@ -4351,15 +4525,15 @@ mission "EVN: Test Polaron Cannon;Gli-tech3"
 	on offer
 		conversation "EVN dialogue 551 offer"
 	on accept
-		# EVN unsupported mission actions: "G147"
+		outfit "Polaron Cannon" 1
 	on complete
 		payment 50000
 		set "EVN bit 27"
 		conversation "EVN dialogue 551 complete"
 	on fail
-		# EVN unsupported mission actions: "D147"
+		outfit "Polaron Cannon" -1
 	on abort
-		# EVN unsupported mission actions: "D147"
+		outfit "Polaron Cannon" -1
 
 mission "EVN: Test EW Missile;Gli-tech4"
 	landing
@@ -4383,16 +4557,31 @@ mission "EVN: Test EW Missile;Gli-tech4"
 		conversation "EVN dialogue 552 offer"
 	on accept
 		set "EVN bit 28"
-		# EVN unsupported mission actions: "G140 G141 G141 G141 G141 G141"
+		outfit "Etheric Wake Missile Launcher" 1
+		outfit "Etheric Wake Missile" 1
+		outfit "Etheric Wake Missile" 1
+		outfit "Etheric Wake Missile" 1
+		outfit "Etheric Wake Missile" 1
+		outfit "Etheric Wake Missile" 1
 	on complete
 		payment 50000
 		set "EVN bit 29"
 		conversation "EVN dialogue 552 complete"
 	on fail
-		# EVN unsupported mission actions: "D140 D141 D141 D141 D141 D141"
+		outfit "Etheric Wake Missile Launcher" -1
+		outfit "Etheric Wake Missile" -1
+		outfit "Etheric Wake Missile" -1
+		outfit "Etheric Wake Missile" -1
+		outfit "Etheric Wake Missile" -1
+		outfit "Etheric Wake Missile" -1
 	on abort
 		clear "EVN bit 28"
-		# EVN unsupported mission actions: "D140 D141 D141 D141 D141 D141"
+		outfit "Etheric Wake Missile Launcher" -1
+		outfit "Etheric Wake Missile" -1
+		outfit "Etheric Wake Missile" -1
+		outfit "Etheric Wake Missile" -1
+		outfit "Etheric Wake Missile" -1
+		outfit "Etheric Wake Missile" -1
 
 mission "EVN: Photograph Wraith Cannon;Gli-tech5"
 	landing
@@ -4447,16 +4636,38 @@ mission "EVN: Test Wraith Cannon;Gli-tech6"
 		conversation "EVN dialogue 554 offer"
 	on accept
 		set "EVN bit 31"
-		# EVN unsupported mission actions: "G254 G255 G255 G255 G255 G255 G255 G255 G255 G255 G255"
+		outfit "Wraith Cannon" 1
+		outfit "Wraithii" 1
+		outfit "Wraithii" 1
+		outfit "Wraithii" 1
+		outfit "Wraithii" 1
+		outfit "Wraithii" 1
+		outfit "Wraithii" 1
+		outfit "Wraithii" 1
+		outfit "Wraithii" 1
+		outfit "Wraithii" 1
+		outfit "Wraithii" 1
 	on complete
 		payment 50000
 		set "EVN bit 32"
 		conversation "EVN dialogue 554 complete"
 	on fail
-		# EVN unsupported mission actions: "D254 D255 D255 D255 D255 D255 D255"
+		outfit "Wraith Cannon" -1
+		outfit "Wraithii" -1
+		outfit "Wraithii" -1
+		outfit "Wraithii" -1
+		outfit "Wraithii" -1
+		outfit "Wraithii" -1
+		outfit "Wraithii" -1
 	on abort
 		clear "EVN bit 31"
-		# EVN unsupported mission actions: "D254 D255 D255 D255 D255 D255 D255"
+		outfit "Wraith Cannon" -1
+		outfit "Wraithii" -1
+		outfit "Wraithii" -1
+		outfit "Wraithii" -1
+		outfit "Wraithii" -1
+		outfit "Wraithii" -1
+		outfit "Wraithii" -1
 
 mission "EVN: Sigma Shipyards Delivery;Sigma1"
 	shipyard
@@ -4531,6 +4742,7 @@ mission "EVN: Rescue Rebel;Fed 18 (forced)"
 		never
 	# EVN availability preserved: "b3000 & !b123"
 	# EVN destination preserved: "138"
+	# EVN OnSuccess preserved: "b123"
 
 mission "EVN: Insert Bureau Agent;Fed 19 (forced)"
 	landing
@@ -4640,6 +4852,8 @@ mission "EVN: Rebel Insertion;Fed 20 (forced)"
 		never
 	# EVN availability preserved: "b3000 & !(b3001 | b3002)"
 	# EVN destination preserved: "138"
+	# EVN OnAccept preserved: "b509"
+	# EVN OnSuccess preserved: "R(b3001 b3002)"
 
 mission "EVN: Rescue Rebel;Fed 21 (Rebel link - Regain your life)"
 	invisible
@@ -4647,6 +4861,7 @@ mission "EVN: Rescue Rebel;Fed 21 (Rebel link - Regain your life)"
 		never
 	# EVN availability preserved: "b3002 & !b509"
 	# EVN destination preserved: "171"
+	# EVN OnSuccess preserved: "b509 b128 b126 b127 b129"
 
 mission "EVN: Pass on Message;Fed22 (forced)"
 	landing
@@ -4739,6 +4954,10 @@ mission "EVN: Steal Wraith Technology;Fed24 (forced)"
 		never
 	# EVN availability preserved: "b3004 & !(b3006 | b3007)"
 	# EVN destination preserved: "220"
+	# EVN OnRefuse preserved: "b3007 b148"
+	# EVN OnSuccess preserved: "b3006"
+	# EVN OnFailure preserved: "b3015"
+	# EVN OnAbort preserved: "b3007 b148"
 
 mission "EVN: Steal Wraith Technology;Fed25 (forced)"
 	landing
@@ -4784,6 +5003,9 @@ mission "EVN: A Parting Gift;Fed26 (forced) LAST"
 		never
 	# EVN availability preserved: "b3007 & !b3009"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "b3009 b3015"
+	# EVN OnAbort preserved: "b3009 !b3015"
+	# EVN OnShipDone preserved: "G348"
 
 mission "EVN: Test RAGE Gunboat;Gli-tech7 (if doing Fed)"
 	landing
@@ -4817,7 +5039,7 @@ mission "EVN: Test RAGE Gunboat;Gli-tech7 (if doing Fed)"
 		conversation "EVN dialogue 597 fail"
 	on decline
 		set "EVN bit 1000"
-		# EVN unsupported mission actions: "G348"
+		outfit "Bureau Bomb Outfit" 1
 		conversation "EVN dialogue 597 decline"
 
 mission "EVN: Make fast-jumping available;Polaris Spinoff1"
@@ -4826,6 +5048,8 @@ mission "EVN: Make fast-jumping available;Polaris Spinoff1"
 		never
 	# EVN availability preserved: "b320 & !b3721"
 	# EVN destination preserved: "137"
+	# EVN OnAccept preserved: "b3721"
+	# EVN OnAbort preserved: "!b3721"
 
 mission "EVN: Return to <RST>;Polaris Spinoff2"
 	landing
@@ -4852,6 +5076,8 @@ mission "EVN: Scout Wraith Space;Polaris11b"
 		never
 	# EVN availability preserved: "284 & !(b285 | b6666)"
 	# EVN destination preserved: "267"
+	# EVN OnSuccess preserved: "b285 b6666"
+	# EVN OnShipDone preserved: "842"
 
 mission "EVN: Observe Wraith;Polaris6b"
 	landing
@@ -4878,7 +5104,7 @@ mission "EVN: Observe Wraith;Polaris6b"
 		set "EVN bit 317"
 		"reputation: Wraith" += 10
 		conversation "EVN dialogue 601 complete"
-		# EVN unsupported mission actions: "Q25075"
+		message "EVN message 25075"
 
 mission "EVN: Take P'Jeena to Ver'a Se;Polaris7b"
 	landing
@@ -4926,7 +5152,7 @@ mission "EVN: Observe Cloak-Ship;Polaris8b"
 		set "EVN bit 319"
 		"reputation: Polaris" += 3
 		conversation "EVN dialogue 603 complete"
-		# EVN unsupported mission actions: "Q12000"
+		message "EVN message 12000"
 	on visit
 		conversation "EVN dialogue 603 drop"
 
@@ -4955,7 +5181,7 @@ mission "EVN: Observe Cloak-Ship;Polaris9b"
 		set "EVN bit 321"
 		"reputation: Polaris" += 3
 		conversation "EVN dialogue 604 complete"
-		# EVN unsupported mission actions: "Q12000"
+		message "EVN message 12000"
 
 mission "EVN: Report Incident to Rebels;Pirate 009b"
 	invisible
@@ -4963,6 +5189,8 @@ mission "EVN: Report Incident to Rebels;Pirate 009b"
 		never
 	# EVN availability preserved: "(P0 & b666) & !b608"
 	# EVN destination preserved: "421"
+	# EVN OnAccept preserved: "374 T25043"
+	# EVN OnSuccess preserved: "b608 S807"
 
 mission "EVN: Silent Mission;Distract Moash defenders"
 	invisible
@@ -4999,7 +5227,7 @@ mission "EVN: Steal Hypergate Codes;Rebel Sideline"
 	on complete
 		payment 25000
 		set "EVN bit 149"
-		# EVN unsupported mission actions: "k147"
+		set "EVN rank 147"
 		"reputation: Rebellion" += 3
 		conversation "EVN dialogue 608 complete"
 	on abort
@@ -5013,6 +5241,8 @@ mission "EVN: GOTCHA!! Auroran Drop Bear scores again..."
 		never
 	# EVN availability preserved: "(b42 & !b45) & !(b43 | b44)"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "b45"
+	# EVN OnAbort preserved: "!b45"
 
 mission "EVN: Infiltrate the Rebels;Fed13 from Rebel"
 	invisible
@@ -5020,6 +5250,8 @@ mission "EVN: Infiltrate the Rebels;Fed13 from Rebel"
 		never
 	# EVN availability preserved: "(b60 & b126) & !(b127 | b64)"
 	# EVN destination preserved: "171"
+	# EVN OnAccept preserved: "b500"
+	# EVN OnSuccess preserved: "b64b500"
 
 mission "EVN: Test Rebel Cloaking Device"
 	invisible
@@ -5027,6 +5259,10 @@ mission "EVN: Test Rebel Cloaking Device"
 		never
 	# EVN availability preserved: "b750 & !(b749 | b751)"
 	# EVN destination preserved: "-4"
+	# EVN OnAccept preserved: "G234"
+	# EVN OnRefuse preserved: "b751"
+	# EVN OnSuccess preserved: "b751"
+	# EVN OnFailure preserved: "b751 b752 D234 G347"
 
 mission "EVN: Destroy Polaris Cruiser;Fed46(if done GLi-tech)"
 	invisible
@@ -5034,6 +5270,8 @@ mission "EVN: Destroy Polaris Cruiser;Fed46(if done GLi-tech)"
 		never
 	# EVN availability preserved: "(b87 & b1000) & !b88"
 	# EVN destination preserved: "138"
+	# EVN OnRefuse preserved: "G348"
+	# EVN OnSuccess preserved: "b88"
 
 mission "EVN: Avoid Federation Secession Task-Force"
 	invisible
@@ -5041,6 +5279,12 @@ mission "EVN: Avoid Federation Secession Task-Force"
 		never
 	# EVN availability preserved: "b6100 & !b9812"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "G348 !b6100"
+	# EVN OnRefuse preserved: "G348 !b6100"
+	# EVN OnSuccess preserved: "G348 !b6100"
+	# EVN OnFailure preserved: "G348 !b6100"
+	# EVN OnAbort preserved: "G348 !b6100"
+	# EVN OnShipDone preserved: "b9812"
 
 mission "EVN: Avoid Federation Task Force"
 	invisible
@@ -5048,6 +5292,12 @@ mission "EVN: Avoid Federation Task Force"
 		never
 	# EVN availability preserved: "b6200 & !b9812"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "G348 !b6200"
+	# EVN OnRefuse preserved: "G348 !b6200"
+	# EVN OnSuccess preserved: "G348 !b6200"
+	# EVN OnFailure preserved: "G348 !b6200"
+	# EVN OnAbort preserved: "G348 !b6200"
+	# EVN OnShipDone preserved: "b9812"
 
 mission "EVN: Avoid Rebel Enforcement Squad"
 	invisible
@@ -5055,6 +5305,12 @@ mission "EVN: Avoid Rebel Enforcement Squad"
 		never
 	# EVN availability preserved: "b6101 & !b9812"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "!b6101"
+	# EVN OnRefuse preserved: "!b6101"
+	# EVN OnSuccess preserved: "!b6101"
+	# EVN OnFailure preserved: "!b6101"
+	# EVN OnAbort preserved: "!b6101"
+	# EVN OnShipDone preserved: "!b6101 b9812"
 
 mission "EVN: Avoid Nil'kemorya"
 	invisible
@@ -5062,6 +5318,12 @@ mission "EVN: Avoid Nil'kemorya"
 		never
 	# EVN availability preserved: "b6102 & !b9812"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "!b6102"
+	# EVN OnRefuse preserved: "!b6102"
+	# EVN OnSuccess preserved: "!b6102"
+	# EVN OnFailure preserved: "!b6102"
+	# EVN OnAbort preserved: "!b6102"
+	# EVN OnShipDone preserved: "!b6102 b9812"
 
 mission "EVN: Avoid Auroran Warriors"
 	invisible
@@ -5069,6 +5331,12 @@ mission "EVN: Avoid Auroran Warriors"
 		never
 	# EVN availability preserved: "b6103 & !b9812"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "!b6103"
+	# EVN OnRefuse preserved: "!b6103"
+	# EVN OnSuccess preserved: "!b6103"
+	# EVN OnFailure preserved: "!b6103"
+	# EVN OnAbort preserved: "!b6103"
+	# EVN OnShipDone preserved: "!b6103 b9812"
 
 mission "EVN: Avoid Pirates"
 	invisible
@@ -5076,6 +5344,12 @@ mission "EVN: Avoid Pirates"
 		never
 	# EVN availability preserved: "b6104 & !b9812"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "!b6104"
+	# EVN OnRefuse preserved: "!b6104"
+	# EVN OnSuccess preserved: "!b6104"
+	# EVN OnFailure preserved: "!b6104"
+	# EVN OnAbort preserved: "!b6104"
+	# EVN OnShipDone preserved: "!b6104 b9812"
 
 mission "EVN: Avoid Wild Rovers"
 	invisible
@@ -5083,6 +5357,12 @@ mission "EVN: Avoid Wild Rovers"
 		never
 	# EVN availability preserved: "b6105 & !b9812"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "!b6105"
+	# EVN OnRefuse preserved: "!b6105"
+	# EVN OnSuccess preserved: "!b6105"
+	# EVN OnFailure preserved: "!b6105"
+	# EVN OnAbort preserved: "!b6105"
+	# EVN OnShipDone preserved: "!b6105 b9812"
 
 mission "EVN: Avoid Bounty Hunters"
 	invisible
@@ -5090,6 +5370,12 @@ mission "EVN: Avoid Bounty Hunters"
 		never
 	# EVN availability preserved: "b6106 & !b9812"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "!b6106"
+	# EVN OnRefuse preserved: "!b6106"
+	# EVN OnSuccess preserved: "!b6106"
+	# EVN OnFailure preserved: "!b6106"
+	# EVN OnAbort preserved: "!b6106"
+	# EVN OnShipDone preserved: "!b6106 b9812"
 
 mission "EVN: Trade between Earth and Port Kane;Tutorial 002"
 	invisible
@@ -5097,6 +5383,10 @@ mission "EVN: Trade between Earth and Port Kane;Tutorial 002"
 		never
 	# EVN availability preserved: "b9200 & !(b9201 | b9215)"
 	# EVN destination preserved: "137"
+	# EVN OnAccept preserved: "X128"
+	# EVN OnRefuse preserved: "b9215 S758"
+	# EVN OnSuccess preserved: "b9201"
+	# EVN OnAbort preserved: "b9215 S758"
 
 mission "EVN: Trade between Port Kane and New England;Tutorial 003"
 	invisible
@@ -5104,6 +5394,10 @@ mission "EVN: Trade between Port Kane and New England;Tutorial 003"
 		never
 	# EVN availability preserved: "b9201 & !(b9202 | b9215)"
 	# EVN destination preserved: "138"
+	# EVN OnAccept preserved: "X162"
+	# EVN OnRefuse preserved: "b9215 S758"
+	# EVN OnSuccess preserved: "b9202"
+	# EVN OnAbort preserved: "b9215 S758"
 
 mission "EVN: Head Back to Earth;Tutorial 004"
 	invisible
@@ -5111,6 +5405,9 @@ mission "EVN: Head Back to Earth;Tutorial 004"
 		never
 	# EVN availability preserved: "b9202 & !(b9203 | b9215)"
 	# EVN destination preserved: "128"
+	# EVN OnRefuse preserved: "b9215 S758"
+	# EVN OnSuccess preserved: "b9203"
+	# EVN OnAbort preserved: "b9215 S758"
 
 mission "EVN: Head to Rauther;Tutorial 005"
 	invisible
@@ -5118,6 +5415,10 @@ mission "EVN: Head to Rauther;Tutorial 005"
 		never
 	# EVN availability preserved: "b9203 & !(b9204 | b9215)"
 	# EVN destination preserved: "191"
+	# EVN OnAccept preserved: "X166"
+	# EVN OnRefuse preserved: "b9215 S758"
+	# EVN OnSuccess preserved: "b9204"
+	# EVN OnAbort preserved: "b9215 S758"
 
 mission "EVN: Take Michaleen to New Ireland;Wild Geese 1"
 	invisible
@@ -5125,6 +5426,11 @@ mission "EVN: Take Michaleen to New Ireland;Wild Geese 1"
 		never
 	# EVN availability preserved: "!((b800 | b801) | b9111) & !((b511 | b515) | b6666)"
 	# EVN destination preserved: "139"
+	# EVN OnAccept preserved: "b511"
+	# EVN OnRefuse preserved: "b801 b6666"
+	# EVN OnSuccess preserved: "b800 b515 b518"
+	# EVN OnFailure preserved: "b801 !b511"
+	# EVN OnAbort preserved: "b801 !b511"
 
 mission "EVN: Take Michaleen to Sol;Wild Geese 2"
 	invisible
@@ -5132,6 +5438,9 @@ mission "EVN: Take Michaleen to Sol;Wild Geese 2"
 		never
 	# EVN availability preserved: "b800 & !(b802 | b803)"
 	# EVN destination preserved: "128"
+	# EVN OnRefuse preserved: "b803 !b511 !b515 !b518"
+	# EVN OnSuccess preserved: "b802 R(b804 b805)"
+	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
 
 mission "EVN: Return Michaleen's body to New Ireland;Wild Geese 3a"
 	invisible
@@ -5139,6 +5448,8 @@ mission "EVN: Return Michaleen's body to New Ireland;Wild Geese 3a"
 		never
 	# EVN availability preserved: "b804 & !(b806 | b803)"
 	# EVN destination preserved: "139"
+	# EVN OnSuccess preserved: "b806"
+	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
 
 mission "EVN: Destroy McGowan's Drug Factory;Wild Geese 4a"
 	invisible
@@ -5146,6 +5457,8 @@ mission "EVN: Destroy McGowan's Drug Factory;Wild Geese 4a"
 		never
 	# EVN availability preserved: "b806 & !(b807 | b803)"
 	# EVN destination preserved: "139"
+	# EVN OnSuccess preserved: "b807"
+	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
 
 mission "EVN: Deliver Explosives to Ryll;Wild Geese 5a"
 	landing
@@ -5193,6 +5506,10 @@ mission "EVN: Free Eiric;Wild Geese 6a"
 		never
 	# EVN availability preserved: "b808 & !(b809 | b803)"
 	# EVN destination preserved: "506"
+	# EVN OnRefuse preserved: "b803"
+	# EVN OnSuccess preserved: "b809 S811"
+	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
+	# EVN OnShipDone preserved: "b850"
 
 mission "EVN: Talk with Rebels;Wild Geese 7aI - link to Pirate storyline"
 	invisible
@@ -5200,6 +5517,8 @@ mission "EVN: Talk with Rebels;Wild Geese 7aI - link to Pirate storyline"
 		never
 	# EVN availability preserved: "b809 & !(b810 | b811)"
 	# EVN destination preserved: "421"
+	# EVN OnRefuse preserved: "b811 b6666"
+	# EVN OnSuccess preserved: "b810 !b515 S817"
 
 mission "EVN: Talk with Aurorans;Wild Geese 7aII - link to Auroran storyline"
 	invisible
@@ -5207,6 +5526,7 @@ mission "EVN: Talk with Aurorans;Wild Geese 7aII - link to Auroran storyline"
 		never
 	# EVN availability preserved: "b811 & !(b812 | b6666)"
 	# EVN destination preserved: "360"
+	# EVN OnSuccess preserved: "b812 S812 !b518"
 
 mission "EVN: Return to New Ireland with Michaleen;Wild Geese 3b"
 	invisible
@@ -5214,6 +5534,8 @@ mission "EVN: Return to New Ireland with Michaleen;Wild Geese 3b"
 		never
 	# EVN availability preserved: "b805 & !(b813 | b803)"
 	# EVN destination preserved: "139"
+	# EVN OnSuccess preserved: "b813"
+	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
 
 mission "EVN: Destroy McGowan's Drug Factory;Wild Geese 4b"
 	invisible
@@ -5221,6 +5543,8 @@ mission "EVN: Destroy McGowan's Drug Factory;Wild Geese 4b"
 		never
 	# EVN availability preserved: "b813 & !(b814 | b803)"
 	# EVN destination preserved: "139"
+	# EVN OnSuccess preserved: "b814"
+	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
 
 mission "EVN: Deliver Explosives to Ryll;Wild Geese 5b"
 	landing
@@ -5268,6 +5592,8 @@ mission "EVN: Take Peace-Proposal to McGowan;Wild Geese 6b"
 		never
 	# EVN availability preserved: "b815 & !((b816 | b817) | b803)"
 	# EVN destination preserved: "422"
+	# EVN OnSuccess preserved: "R(b816 b817)"
+	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
 
 mission "EVN: Return With McGowan's Acceptance;Wild Geese 7bI"
 	invisible
@@ -5275,6 +5601,8 @@ mission "EVN: Return With McGowan's Acceptance;Wild Geese 7bI"
 		never
 	# EVN availability preserved: "b816 & !(b803 | b818)"
 	# EVN destination preserved: "139"
+	# EVN OnSuccess preserved: "b818 !b511 !b515 !b518 K138"
+	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
 
 mission "EVN: Return With McGowan's Rejection;Wild Geese 7bII"
 	invisible
@@ -5282,6 +5610,8 @@ mission "EVN: Return With McGowan's Rejection;Wild Geese 7bII"
 		never
 	# EVN availability preserved: "b817 & !(b803 | b819)"
 	# EVN destination preserved: "139"
+	# EVN OnSuccess preserved: "b819"
+	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
 
 mission "EVN: Talk with Rebels;Wild Geese 8bII link to Pirate storyline"
 	invisible
@@ -5289,6 +5619,9 @@ mission "EVN: Talk with Rebels;Wild Geese 8bII link to Pirate storyline"
 		never
 	# EVN availability preserved: "b819 & !(b803 | b810)"
 	# EVN destination preserved: "421"
+	# EVN OnRefuse preserved: "b803"
+	# EVN OnSuccess preserved: "b810 !b515 S817"
+	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
 
 mission "EVN: Renew darts"
 	invisible
@@ -5296,6 +5629,7 @@ mission "EVN: Renew darts"
 		never
 	# EVN availability preserved: "b371 & !O226"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "G226 G226 G226"
 
 mission "EVN: Take Supplies to <RST>;Auroran 001"
 	landing
@@ -5471,6 +5805,9 @@ mission "EVN: Defeat Fellow Initiates;Auroran 005"
 		never
 	# EVN availability preserved: "(b204 & b511) & !(b205 | b250)"
 	# EVN destination preserved: "360"
+	# EVN OnRefuse preserved: "!b511 b250"
+	# EVN OnSuccess preserved: "b205"
+	# EVN OnAbort preserved: "!b511"
 
 mission "EVN: Head to <RST> to be Initiated;Auroran 006"
 	invisible
@@ -5478,6 +5815,7 @@ mission "EVN: Head to <RST> to be Initiated;Auroran 006"
 		never
 	# EVN availability preserved: "b205 & !b206"
 	# EVN destination preserved: "384"
+	# EVN OnSuccess preserved: "b206 K139 S789"
 
 mission "EVN: Receive Training from Karlaekaar;Auroran 007"
 	invisible
@@ -5485,6 +5823,7 @@ mission "EVN: Receive Training from Karlaekaar;Auroran 007"
 		never
 	# EVN availability preserved: "b206 & !b207"
 	# EVN destination preserved: "298"
+	# EVN OnSuccess preserved: "b207 b44 S788"
 
 mission "EVN: Find and Return with Bazara;Auroran 008"
 	landing
@@ -5531,6 +5870,10 @@ mission "EVN: Hunt Down Traitor;Auroran 009"
 		never
 	# EVN availability preserved: "b208 & !b212"
 	# EVN destination preserved: "360"
+	# EVN OnAccept preserved: "b209"
+	# EVN OnSuccess preserved: "b212"
+	# EVN OnAbort preserved: "!b209"
+	# EVN OnShipDone preserved: "S813"
 
 mission "EVN: Rumourmill - Moash Space;Auroran 009a"
 	invisible
@@ -5538,6 +5881,8 @@ mission "EVN: Rumourmill - Moash Space;Auroran 009a"
 		never
 	# EVN availability preserved: "b209 & !(b210 | b212)"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "b210"
+	# EVN OnAbort preserved: "b210"
 
 mission "EVN: Rumourmill - Fed Space;Auroran 009b"
 	invisible
@@ -5545,6 +5890,9 @@ mission "EVN: Rumourmill - Fed Space;Auroran 009b"
 		never
 	# EVN availability preserved: "b209 & !(b211 | b212)"
 	# EVN destination preserved: "138"
+	# EVN OnAccept preserved: "b211"
+	# EVN OnSuccess preserved: "S802"
+	# EVN OnAbort preserved: "!b211"
 
 mission "EVN: Find and Destroy Supply Fleet;Auroran 010"
 	invisible
@@ -5552,6 +5900,7 @@ mission "EVN: Find and Destroy Supply Fleet;Auroran 010"
 		never
 	# EVN availability preserved: "b212 & !b213"
 	# EVN destination preserved: "360"
+	# EVN OnSuccess preserved: "b213"
 
 mission "EVN: Cause Havoc for Dani;Auroran 011"
 	invisible
@@ -5559,6 +5908,10 @@ mission "EVN: Cause Havoc for Dani;Auroran 011"
 		never
 	# EVN availability preserved: "b213 & !b214"
 	# EVN destination preserved: "360"
+	# EVN OnAccept preserved: "S792"
+	# EVN OnSuccess preserved: "b214 A792"
+	# EVN OnAbort preserved: "A792"
+	# EVN OnShipDone preserved: "Q25052"
 
 mission "EVN: Start Dechtakars Service;Auroran 012"
 	invisible
@@ -5566,6 +5919,7 @@ mission "EVN: Start Dechtakars Service;Auroran 012"
 		never
 	# EVN availability preserved: "b214 & !b215"
 	# EVN destination preserved: "335"
+	# EVN OnSuccess preserved: "b215"
 
 mission "EVN: Destroy Pirate Menace;Auroran 012a"
 	landing
@@ -5698,6 +6052,8 @@ mission "EVN: Fight Duel for House Honor;Auroran 013"
 		never
 	# EVN availability preserved: "b219 & !b220"
 	# EVN destination preserved: "360"
+	# EVN OnSuccess preserved: "b220"
+	# EVN OnShipDone preserved: "b8892"
 
 mission "EVN: Make a Name for 'The Pack';Auroran 014"
 	invisible
@@ -5705,6 +6061,10 @@ mission "EVN: Make a Name for 'The Pack';Auroran 014"
 		never
 	# EVN availability preserved: "b220 & !b221"
 	# EVN destination preserved: "360"
+	# EVN OnAccept preserved: "K140 S803"
+	# EVN OnSuccess preserved: "b221 A803"
+	# EVN OnAbort preserved: "A803"
+	# EVN OnShipDone preserved: "Q25056 b8890"
 
 mission "EVN: Meet With Eiric;Auroran 015"
 	invisible
@@ -5712,6 +6072,7 @@ mission "EVN: Meet With Eiric;Auroran 015"
 		never
 	# EVN availability preserved: "b221 & !b222"
 	# EVN destination preserved: "157"
+	# EVN OnSuccess preserved: "b222"
 
 mission "EVN: Return to Heraan;Auroran 016"
 	invisible
@@ -5719,6 +6080,7 @@ mission "EVN: Return to Heraan;Auroran 016"
 		never
 	# EVN availability preserved: "b222 & !b223"
 	# EVN destination preserved: "360"
+	# EVN OnSuccess preserved: "b223"
 
 mission "EVN: Fight to be Thurokiir;Auroran 017"
 	invisible
@@ -5726,6 +6088,7 @@ mission "EVN: Fight to be Thurokiir;Auroran 017"
 		never
 	# EVN availability preserved: "b223 & !b224"
 	# EVN destination preserved: "360"
+	# EVN OnSuccess preserved: "b224 K141 b8894"
 
 mission "EVN: Meet With Hune;Auroran 018"
 	invisible
@@ -5733,6 +6096,7 @@ mission "EVN: Meet With Hune;Auroran 018"
 		never
 	# EVN availability preserved: "b224 & !b225"
 	# EVN destination preserved: "335"
+	# EVN OnSuccess preserved: "b225"
 
 mission "EVN: Observe Auroran Border;Auroran 019"
 	invisible
@@ -5740,6 +6104,9 @@ mission "EVN: Observe Auroran Border;Auroran 019"
 		never
 	# EVN availability preserved: "b225 & !b226"
 	# EVN destination preserved: "347"
+	# EVN OnAccept preserved: "b995"
+	# EVN OnSuccess preserved: "b226 S788"
+	# EVN OnAbort preserved: "!b995"
 
 mission "EVN: Defend Heraan Honor;Auroran 020 - Unregistered cutoff"
 	invisible
@@ -5747,6 +6114,7 @@ mission "EVN: Defend Heraan Honor;Auroran 020 - Unregistered cutoff"
 		never
 	# EVN availability preserved: "(p0 & b226) & !b227"
 	# EVN destination preserved: "338"
+	# EVN OnSuccess preserved: "b227 !b995"
 
 mission "EVN: Defend Heraan Space;Auroran 021"
 	invisible
@@ -5754,6 +6122,7 @@ mission "EVN: Defend Heraan Space;Auroran 021"
 		never
 	# EVN availability preserved: "(P0 & b227) & !b228"
 	# EVN destination preserved: "360"
+	# EVN OnSuccess preserved: "b228"
 
 mission "EVN: Duel with Moash Thurokiir;Auroran 022"
 	invisible
@@ -5761,6 +6130,7 @@ mission "EVN: Duel with Moash Thurokiir;Auroran 022"
 		never
 	# EVN availability preserved: "(P0 & b228) & !b229"
 	# EVN destination preserved: "338"
+	# EVN OnSuccess preserved: "b229 K142 b323 b8896"
 
 mission "EVN: Speak With Polaris;Auroran 023"
 	invisible
@@ -5768,6 +6138,7 @@ mission "EVN: Speak With Polaris;Auroran 023"
 		never
 	# EVN availability preserved: "(P0 & b229) & !b230"
 	# EVN destination preserved: "254"
+	# EVN OnSuccess preserved: "b230 S804"
 
 mission "EVN: Return to Aurora;Auroran 024"
 	invisible
@@ -5775,6 +6146,7 @@ mission "EVN: Return to Aurora;Auroran 024"
 		never
 	# EVN availability preserved: "(P0 & b230) & !b231"
 	# EVN destination preserved: "439"
+	# EVN OnSuccess preserved: "b231"
 
 mission "EVN: Meet with Mu'Randa;Auroran 025"
 	invisible
@@ -5782,6 +6154,7 @@ mission "EVN: Meet with Mu'Randa;Auroran 025"
 		never
 	# EVN availability preserved: "(P0 & b231) & !b232"
 	# EVN destination preserved: "232"
+	# EVN OnSuccess preserved: "b232"
 
 mission "EVN: Meet with Frandall;Auroran 026"
 	invisible
@@ -5789,6 +6162,7 @@ mission "EVN: Meet with Frandall;Auroran 026"
 		never
 	# EVN availability preserved: "(P0 & b232) & !b233"
 	# EVN destination preserved: "217"
+	# EVN OnSuccess preserved: "b233 S816"
 
 mission "EVN: Meet With Eamon Flannigan;Auroran 027"
 	invisible
@@ -5796,6 +6170,7 @@ mission "EVN: Meet With Eamon Flannigan;Auroran 027"
 		never
 	# EVN availability preserved: "(P0 & (b233 & !b800)) & !b234"
 	# EVN destination preserved: "139"
+	# EVN OnSuccess preserved: "b234 S790"
 
 mission "EVN: Assassinate Krane;Auroran 028"
 	invisible
@@ -5803,6 +6178,7 @@ mission "EVN: Assassinate Krane;Auroran 028"
 		never
 	# EVN availability preserved: "(P0 & b234) & !b235"
 	# EVN destination preserved: "-1"
+	# EVN OnShipDone preserved: "b235"
 
 mission "EVN: Return to Heraan;Auroran 029 LAST"
 	invisible
@@ -5810,6 +6186,9 @@ mission "EVN: Return to Heraan;Auroran 029 LAST"
 		never
 	# EVN availability preserved: "(P0 & b235) & !b236"
 	# EVN destination preserved: "431"
+	# EVN OnAccept preserved: "A685"
+	# EVN OnSuccess preserved: "b236 b332 b333 b334 b613 b9995 b9500 M472 Q25048"
+	# EVN OnAbort preserved: "S685"
 
 mission "EVN: Take Plans to Bazara;Auroran 003 - Wild Geese Link"
 	landing
@@ -5886,6 +6265,7 @@ mission "EVN: Take Terraforming Team to New Ireland"
 		never
 	# EVN availability preserved: "(b17 & b850) & (b221 & !(b237 | b851))"
 	# EVN destination preserved: "507"
+	# EVN OnSuccess preserved: "b237"
 
 mission "EVN: Meet With Eamon Flannigan;Auroran 027 - if done Wild Geese"
 	invisible
@@ -5893,6 +6273,7 @@ mission "EVN: Meet With Eamon Flannigan;Auroran 027 - if done Wild Geese"
 		never
 	# EVN availability preserved: "((P0 & b851) & (b233 & b800)) & !(b234 | b852)"
 	# EVN destination preserved: "507"
+	# EVN OnSuccess preserved: "b234 S790"
 
 mission "EVN: Take Plans to Bazara;Auroran 003 - Bounty Hunter Link"
 	landing
@@ -6012,6 +6393,11 @@ mission "EVN: Take Cargo to Misfire;Pirate 002"
 		never
 	# EVN availability preserved: "(b600 & b511) & !((b601 | b800) | b519)"
 	# EVN destination preserved: "157"
+	# EVN OnAccept preserved: "S879"
+	# EVN OnRefuse preserved: "!b511 b519"
+	# EVN OnSuccess preserved: "b601"
+	# EVN OnFailure preserved: "!b511 A879 b519"
+	# EVN OnAbort preserved: "!b511 A879 b519"
 
 mission "EVN: Take Cargo to SD3;Pirate 003"
 	landing
@@ -6076,7 +6462,7 @@ mission "EVN: Speak to Dace;Pirate 004"
 	on complete
 		payment 480000
 		set "EVN bit 603"
-		# EVN unsupported mission actions: "k143"
+		set "EVN rank 143"
 		conversation "EVN dialogue 696 complete"
 	on fail
 		clear "EVN bit 511"
@@ -6094,6 +6480,10 @@ mission "EVN: Meet With Rebels;Pirate 005"
 		never
 	# EVN availability preserved: "(b603 & b511) & !(b604 | b519)"
 	# EVN destination preserved: "421"
+	# EVN OnRefuse preserved: "!b511 b519"
+	# EVN OnSuccess preserved: "b604 S783"
+	# EVN OnFailure preserved: "!b511 b519"
+	# EVN OnAbort preserved: "!b511 b519"
 
 mission "EVN: Rebel Food Drop;Pirate 005A"
 	landing
@@ -6328,6 +6718,7 @@ mission "EVN: Pick Up Blind Charlie;Pirate 006"
 		never
 	# EVN availability preserved: "b604 & (b653 & !b605)"
 	# EVN destination preserved: "157"
+	# EVN OnSuccess preserved: "b605"
 
 mission "EVN: Pick Up Sven Fjordnham;Pirate 007 - Unregistered cutoff"
 	invisible
@@ -6335,6 +6726,7 @@ mission "EVN: Pick Up Sven Fjordnham;Pirate 007 - Unregistered cutoff"
 		never
 	# EVN availability preserved: "(P0 & b605) & !b606"
 	# EVN destination preserved: "199"
+	# EVN OnSuccess preserved: "b606 S805"
 
 mission "EVN: Pick Up Ferret and Dizzy;Pirate 008"
 	invisible
@@ -6342,6 +6734,7 @@ mission "EVN: Pick Up Ferret and Dizzy;Pirate 008"
 		never
 	# EVN availability preserved: "(P0 & b606) & !b607"
 	# EVN destination preserved: "167"
+	# EVN OnSuccess preserved: "b607 S806"
 
 mission "EVN: Investigate Incidents;Pirate 009a"
 	invisible
@@ -6349,6 +6742,8 @@ mission "EVN: Investigate Incidents;Pirate 009a"
 		never
 	# EVN availability preserved: "(P0 & b607) & !b666"
 	# EVN destination preserved: "193"
+	# EVN OnAccept preserved: "H374 T25043"
+	# EVN OnSuccess preserved: "b666S807"
 
 mission "EVN: Set and Launch Trap;Pirate 010"
 	invisible
@@ -6356,6 +6751,10 @@ mission "EVN: Set and Launch Trap;Pirate 010"
 		never
 	# EVN availability preserved: "(P0 & b608) & !(b609 | b838)"
 	# EVN destination preserved: "421"
+	# EVN OnAccept preserved: "S827 S808"
+	# EVN OnSuccess preserved: "b838 S842 b838S895"
+	# EVN OnAbort preserved: "A827 A808"
+	# EVN OnShipDone preserved: "S711 b8910"
 
 mission "EVN: Silent Mission for Extra special ships;Pirate 010A"
 	invisible
@@ -6370,6 +6769,10 @@ mission "EVN: Destroy McGowan;Pirate 011 LAST"
 		never
 	# EVN availability preserved: "(P0 & b610) & !(b611 | b6666)"
 	# EVN destination preserved: "422"
+	# EVN OnAccept preserved: "S713 A895"
+	# EVN OnSuccess preserved: "b611 b9995 b9500 M472 Q25048 A711 A713 A714 A715"
+	# EVN OnAbort preserved: "A713 A895"
+	# EVN OnShipDone preserved: "S711"
 
 mission "EVN: Silent Mission for Extra special ships;Pirate 011A"
 	invisible
@@ -6377,6 +6780,7 @@ mission "EVN: Silent Mission for Extra special ships;Pirate 011A"
 		never
 	# EVN availability preserved: "b610 & !b611"
 	# EVN destination preserved: "422"
+	# EVN OnShipDone preserved: "S714 S715"
 
 mission "EVN: Silent Mission for Extra special ships;Pirate 011B"
 	invisible
@@ -6437,6 +6841,8 @@ mission "EVN: Rescue Tomak;Pirate Offshoot 001b"
 		never
 	# EVN availability preserved: "b428"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "!b428 g262 A719"
+	# EVN OnAbort preserved: "428 S719"
 
 mission "EVN: Rescue Tomak;Pirate Offshoot 001a"
 	landing
@@ -6480,6 +6886,11 @@ mission "EVN: Pick Up Cargo;Pirate Offshoot 002"
 		never
 	# EVN availability preserved: "b429 & !(b430 | b431)"
 	# EVN destination preserved: "191"
+	# EVN OnAccept preserved: "S896"
+	# EVN OnRefuse preserved: "b430"
+	# EVN OnSuccess preserved: "b431"
+	# EVN OnFailure preserved: "b430"
+	# EVN OnAbort preserved: "b430"
 
 mission "EVN: Pick Up Cargo;Pirate Offshoot 002b"
 	invisible
@@ -6487,6 +6898,11 @@ mission "EVN: Pick Up Cargo;Pirate Offshoot 002b"
 		never
 	# EVN availability preserved: "b431 & !(b430 | b432)"
 	# EVN destination preserved: "421"
+	# EVN OnAccept preserved: "g147 g147"
+	# EVN OnRefuse preserved: "b430"
+	# EVN OnSuccess preserved: "b432"
+	# EVN OnFailure preserved: "b430"
+	# EVN OnAbort preserved: "b430"
 
 mission "EVN: Pick Up Engine Upgrades;Pirate Offshoot 003"
 	invisible
@@ -6494,6 +6910,10 @@ mission "EVN: Pick Up Engine Upgrades;Pirate Offshoot 003"
 		never
 	# EVN availability preserved: "b432 & !(b430 | b433)"
 	# EVN destination preserved: "163"
+	# EVN OnRefuse preserved: "b430"
+	# EVN OnSuccess preserved: "b433"
+	# EVN OnFailure preserved: "b430"
+	# EVN OnAbort preserved: "b430"
 
 mission "EVN: Beat On 'Daring' Dan McGraw;Pirate Offshoot 003b"
 	invisible
@@ -6501,6 +6921,10 @@ mission "EVN: Beat On 'Daring' Dan McGraw;Pirate Offshoot 003b"
 		never
 	# EVN availability preserved: "(b433 & !b435) & !(b430 | b434)"
 	# EVN destination preserved: "-1"
+	# EVN OnRefuse preserved: "b435"
+	# EVN OnFailure preserved: "b430"
+	# EVN OnAbort preserved: "b430"
+	# EVN OnShipDone preserved: "b434"
 
 mission "EVN: Return With Upgrades;Pirate Offshoot 003c"
 	invisible
@@ -6508,6 +6932,10 @@ mission "EVN: Return With Upgrades;Pirate Offshoot 003c"
 		never
 	# EVN availability preserved: "b434 & !(b430 | b436)"
 	# EVN destination preserved: "157"
+	# EVN OnAccept preserved: "g198 g199"
+	# EVN OnSuccess preserved: "b436 l143 k144"
+	# EVN OnFailure preserved: "b430"
+	# EVN OnAbort preserved: "b430"
 
 mission "EVN: Beat On Skinny;Pirate Offshoot 003bi"
 	invisible
@@ -6515,6 +6943,10 @@ mission "EVN: Beat On Skinny;Pirate Offshoot 003bi"
 		never
 	# EVN availability preserved: "b435 & !(b430 | b439)"
 	# EVN destination preserved: "157"
+	# EVN OnAccept preserved: "g198 g199"
+	# EVN OnSuccess preserved: "b439"
+	# EVN OnFailure preserved: "b430"
+	# EVN OnAbort preserved: "b430"
 
 mission "EVN: McGraw Family Revenge;Pirate Offshoot 003d"
 	invisible
@@ -6522,6 +6954,7 @@ mission "EVN: McGraw Family Revenge;Pirate Offshoot 003d"
 		never
 	# EVN availability preserved: "b436"
 	# EVN destination preserved: "-1"
+	# EVN OnShipDone preserved: "A727"
 
 mission "EVN: Pick Up Alloy from <DST>; Pirate Offshoot 004"
 	invisible
@@ -6529,6 +6962,10 @@ mission "EVN: Pick Up Alloy from <DST>; Pirate Offshoot 004"
 		never
 	# EVN availability preserved: "b439 & !(b440 | b441)"
 	# EVN destination preserved: "157"
+	# EVN OnRefuse preserved: "b440"
+	# EVN OnSuccess preserved: "b441"
+	# EVN OnFailure preserved: "b440"
+	# EVN OnAbort preserved: "b440"
 
 mission "EVN: Locate Ryan's Last Chance; Pirate Offshoot 004a"
 	invisible
@@ -6536,6 +6973,10 @@ mission "EVN: Locate Ryan's Last Chance; Pirate Offshoot 004a"
 		never
 	# EVN availability preserved: "b441 & !(b442 | b443)"
 	# EVN destination preserved: "157"
+	# EVN OnRefuse preserved: "b442"
+	# EVN OnSuccess preserved: "b443"
+	# EVN OnFailure preserved: "b442"
+	# EVN OnAbort preserved: "b442"
 
 mission "EVN: Rescue Dr Ralph's Family; Pirate Offshoot 004bi"
 	invisible
@@ -6543,6 +6984,11 @@ mission "EVN: Rescue Dr Ralph's Family; Pirate Offshoot 004bi"
 		never
 	# EVN availability preserved: "b444 & !(b445 | b681)"
 	# EVN destination preserved: "215"
+	# EVN OnAccept preserved: "g201 g437"
+	# EVN OnRefuse preserved: "b445"
+	# EVN OnSuccess preserved: "b681 S912"
+	# EVN OnFailure preserved: "b445"
+	# EVN OnAbort preserved: "b445"
 
 mission "EVN: Exotic Licence Forgery - Silent mission"
 	invisible
@@ -6567,6 +7013,10 @@ mission "EVN: Rescue Heraan Spy;Auroran Off-shoot 001"
 		never
 	# EVN availability preserved: "b213 & !(b220 | b154)"
 	# EVN destination preserved: "380"
+	# EVN OnRefuse preserved: "b154"
+	# EVN OnSuccess preserved: "b154 b155"
+	# EVN OnFailure preserved: "b154"
+	# EVN OnAbort preserved: "b154"
 
 mission "EVN: Rescue Heraan Spy;Auroran Off-shoot 001b"
 	invisible
@@ -6574,6 +7024,8 @@ mission "EVN: Rescue Heraan Spy;Auroran Off-shoot 001b"
 		never
 	# EVN availability preserved: "b155 & !b156"
 	# EVN destination preserved: "360"
+	# EVN OnAccept preserved: "Q25049"
+	# EVN OnSuccess preserved: "b156"
 
 mission "EVN: Steal Jamming Technology;Auroran Off-shoot 002"
 	invisible
@@ -6581,6 +7033,7 @@ mission "EVN: Steal Jamming Technology;Auroran Off-shoot 002"
 		never
 	# EVN availability preserved: "b156 & !(b157 | (b170 | b223))"
 	# EVN destination preserved: "360"
+	# EVN OnSuccess preserved: "b157 b170"
 
 mission "EVN: Destroy Moash Fleet;Auroran Off-shoot 003"
 	invisible
@@ -6588,6 +7041,9 @@ mission "EVN: Destroy Moash Fleet;Auroran Off-shoot 003"
 		never
 	# EVN availability preserved: "b157 & !(b158 | b223)"
 	# EVN destination preserved: "333"
+	# EVN OnAccept preserved: "G441 S738"
+	# EVN OnSuccess preserved: "b158 G442"
+	# EVN OnAbort preserved: "A738"
 
 mission "EVN: Silent Mission;Auroran Off-shoot 003b"
 	invisible
@@ -6601,6 +7057,9 @@ mission "EVN: Destroy Federation Fleet;Auroran Off-shoot 004"
 		never
 	# EVN availability preserved: "b158 & !(b159 | b223)"
 	# EVN destination preserved: "360"
+	# EVN OnAccept preserved: "S740"
+	# EVN OnSuccess preserved: "b159"
+	# EVN OnAbort preserved: "A740"
 
 mission "EVN: Silent Mission;Auroran Off-shoot 004b"
 	invisible
@@ -6614,6 +7073,10 @@ mission "EVN: Rescue Heraan Operatives;Auroran Off-shoot 005"
 		never
 	# EVN availability preserved: "b224 & !(b228 | b160)"
 	# EVN destination preserved: "360"
+	# EVN OnRefuse preserved: "b160"
+	# EVN OnSuccess preserved: "b160 b161"
+	# EVN OnFailure preserved: "b160"
+	# EVN OnAbort preserved: "b160"
 
 mission "EVN: Rescue Vell-os Slaves;Auroran Off-shoot 007"
 	invisible
@@ -6621,6 +7084,9 @@ mission "EVN: Rescue Vell-os Slaves;Auroran Off-shoot 007"
 		never
 	# EVN availability preserved: "b161 & !(b162 | b677)"
 	# EVN destination preserved: "177"
+	# EVN OnSuccess preserved: "b677743"
+	# EVN OnAbort preserved: "743"
+	# EVN OnShipDone preserved: "743"
 
 mission "EVN: Rescue Vell-os Slaves;Auroran Off-shoot 007b"
 	invisible
@@ -6628,6 +7094,7 @@ mission "EVN: Rescue Vell-os Slaves;Auroran Off-shoot 007b"
 		never
 	# EVN availability preserved: "b677 & !b162"
 	# EVN destination preserved: "354"
+	# EVN OnSuccess preserved: "b162"
 
 mission "EVN: Take Vell-os to Korell;Auroran Off-shoot 008"
 	invisible
@@ -6635,6 +7102,7 @@ mission "EVN: Take Vell-os to Korell;Auroran Off-shoot 008"
 		never
 	# EVN availability preserved: "b162 & !b163"
 	# EVN destination preserved: "407"
+	# EVN OnSuccess preserved: "b163"
 
 mission "EVN: Take Vell-os to Polaris;Auroran Off-shoot 009"
 	invisible
@@ -6642,6 +7110,7 @@ mission "EVN: Take Vell-os to Polaris;Auroran Off-shoot 009"
 		never
 	# EVN availability preserved: "b163 & !b164"
 	# EVN destination preserved: "220"
+	# EVN OnSuccess preserved: "b164"
 
 mission "EVN: Take Vell-os to Kel'ar Iy;Auroran Off-shoot 010"
 	invisible
@@ -6649,6 +7118,7 @@ mission "EVN: Take Vell-os to Kel'ar Iy;Auroran Off-shoot 010"
 		never
 	# EVN availability preserved: "b164 & !b165"
 	# EVN destination preserved: "254"
+	# EVN OnSuccess preserved: "b165 S814"
 
 mission "EVN: Start mission for Thunderforge cron;Auroran Off-shoot 011"
 	invisible
@@ -6656,6 +7126,7 @@ mission "EVN: Start mission for Thunderforge cron;Auroran Off-shoot 011"
 		never
 	# EVN availability preserved: "b165 & !b166"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "b166"
 
 mission "EVN: Thunderforge Availability;Auroran Off-shoot 012"
 	invisible
@@ -6663,6 +7134,8 @@ mission "EVN: Thunderforge Availability;Auroran Off-shoot 012"
 		never
 	# EVN availability preserved: "b167 & !b168"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "b168 H380 T25044"
+	# EVN OnRefuse preserved: "b168"
 
 mission "EVN: Silent Mission;Auroran 001b"
 	invisible
@@ -6694,6 +7167,8 @@ mission "EVN: Return to <RST>;Polaris 8bi"
 		never
 	# EVN availability preserved: "(b320 & b5759) & !b178"
 	# EVN destination preserved: "270"
+	# EVN OnAccept preserved: "b178"
+	# EVN OnAbort preserved: "!b178"
 
 mission "EVN: Shoot down Derelict;Tutorial 006"
 	invisible
@@ -6701,6 +7176,10 @@ mission "EVN: Shoot down Derelict;Tutorial 006"
 		never
 	# EVN availability preserved: "b9204 & !(b9205 | b9215)"
 	# EVN destination preserved: "157"
+	# EVN OnAccept preserved: "S755 b9208"
+	# EVN OnRefuse preserved: "b9215 S758"
+	# EVN OnSuccess preserved: "b9205 !b9208"
+	# EVN OnAbort preserved: "b9215 A755 S758 !b9208"
 
 mission "EVN: Silent Mission;Tutorial 006a"
 	invisible
@@ -6714,6 +7193,8 @@ mission "EVN: Return to Earth;Tutorial 007"
 		never
 	# EVN availability preserved: "b9205 & !(b9206 | b9215)"
 	# EVN destination preserved: "128"
+	# EVN OnSuccess preserved: "b9206"
+	# EVN OnAbort preserved: "b9215 S758"
 
 mission "EVN: Ferry Barry to <RST>;Tutorial 008"
 	invisible
@@ -6721,6 +7202,9 @@ mission "EVN: Ferry Barry to <RST>;Tutorial 008"
 		never
 	# EVN availability preserved: "b9206 & !(b9207 | b9215)"
 	# EVN destination preserved: "209"
+	# EVN OnAccept preserved: "X187"
+	# EVN OnSuccess preserved: "b9207 !b8339"
+	# EVN OnAbort preserved: "b9215 !b8339"
 
 mission "EVN: Take Barry to <RST>;Tutorial 009"
 	invisible
@@ -6728,6 +7212,9 @@ mission "EVN: Take Barry to <RST>;Tutorial 009"
 		never
 	# EVN availability preserved: "b9215 & !b9216"
 	# EVN destination preserved: "209"
+	# EVN OnAccept preserved: "X187"
+	# EVN OnSuccess preserved: "b9216 !b8339"
+	# EVN OnAbort preserved: "b9215 !b8339"
 
 mission "EVN: Duel;generic  Auroran"
 	invisible
@@ -6735,6 +7222,10 @@ mission "EVN: Duel;generic  Auroran"
 		never
 	# EVN availability preserved: "!(b352 | b289) & !(b192 | b206)"
 	# EVN destination preserved: "-4"
+	# EVN OnAccept preserved: "K153"
+	# EVN OnFailure preserved: "Q7999 L153"
+	# EVN OnAbort preserved: "L153"
+	# EVN OnShipDone preserved: "Q7998 L153"
 
 mission "EVN: Duel;generic  Moash"
 	invisible
@@ -6742,6 +7233,10 @@ mission "EVN: Duel;generic  Moash"
 		never
 	# EVN availability preserved: "!(b352 | b289) & !(b192 | b206)"
 	# EVN destination preserved: "-4"
+	# EVN OnAccept preserved: "K154"
+	# EVN OnFailure preserved: "Q7999 L154"
+	# EVN OnAbort preserved: "L154"
+	# EVN OnShipDone preserved: "Q7998 L154"
 
 mission "EVN: Duel;generic  Dani"
 	invisible
@@ -6749,6 +7244,10 @@ mission "EVN: Duel;generic  Dani"
 		never
 	# EVN availability preserved: "!(b352 | b289) & !(b192 | b206)"
 	# EVN destination preserved: "-4"
+	# EVN OnAccept preserved: "K157"
+	# EVN OnFailure preserved: "Q7999 L157"
+	# EVN OnAbort preserved: "L157"
+	# EVN OnShipDone preserved: "Q7998 L157"
 
 mission "EVN: Duel;generic  Vella"
 	invisible
@@ -6756,6 +7255,10 @@ mission "EVN: Duel;generic  Vella"
 		never
 	# EVN availability preserved: "!(b352 | b289) & !(b192 | b206)"
 	# EVN destination preserved: "-4"
+	# EVN OnAccept preserved: "K156"
+	# EVN OnFailure preserved: "Q7999 L156"
+	# EVN OnAbort preserved: "L156"
+	# EVN OnShipDone preserved: "Q7998 L156"
 
 mission "EVN: Duel;generic  Tekel"
 	invisible
@@ -6763,6 +7266,10 @@ mission "EVN: Duel;generic  Tekel"
 		never
 	# EVN availability preserved: "!(b352 | b289) & !(b192 | b206)"
 	# EVN destination preserved: "-4"
+	# EVN OnAccept preserved: "K155"
+	# EVN OnFailure preserved: "Q7997 L155"
+	# EVN OnAbort preserved: "L155"
+	# EVN OnShipDone preserved: "Q7996 L155"
 
 mission "EVN: Duel;generic  Heraan"
 	invisible
@@ -6770,6 +7277,10 @@ mission "EVN: Duel;generic  Heraan"
 		never
 	# EVN availability preserved: "!(b352 | b289) & !(b192 | b206)"
 	# EVN destination preserved: "-4"
+	# EVN OnAccept preserved: "K158"
+	# EVN OnFailure preserved: "Q7997 L158"
+	# EVN OnAbort preserved: "L158"
+	# EVN OnShipDone preserved: "Q7996 L158"
 
 mission "EVN: Rumor mission;Auroran 008b"
 	invisible
@@ -6777,12 +7288,14 @@ mission "EVN: Rumor mission;Auroran 008b"
 		never
 	# EVN availability preserved: "b6723 & !b6724"
 	# EVN destination preserved: "177"
+	# EVN OnSuccess preserved: "b6724 S802"
 
 mission "EVN: Vell-os 2 refusal Fed reaction"
 	invisible
 	to offer
 		never
 	# EVN destination preserved: "-1"
+	# EVN OnShipDone preserved: "A781"
 
 mission "EVN: Transport Mu'Randa;Polaris1 - Vell-os refusal"
 	landing
@@ -6860,6 +7373,7 @@ mission "EVN: Silent Hune Misn; Auroran generic"
 	to offer
 		never
 	# EVN destination preserved: "-1"
+	# EVN OnFailure preserved: "Q25053 b9666"
 
 mission "EVN: Pick Up Hune"
 	invisible
@@ -6867,6 +7381,8 @@ mission "EVN: Pick Up Hune"
 		never
 	# EVN availability preserved: "b9666"
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "!b9666"
+	# EVN OnAbort preserved: "b9666"
 
 mission "EVN: Silent Misn;fed42a"
 	invisible
@@ -6880,6 +7396,10 @@ mission "EVN: Redeem Yourself;Auroran Dechtakar Service re-start"
 		never
 	# EVN availability preserved: "b5999"
 	# EVN destination preserved: "335"
+	# EVN OnRefuse preserved: "!b5999"
+	# EVN OnSuccess preserved: "!b217 !b5999"
+	# EVN OnFailure preserved: "!b5999"
+	# EVN OnAbort preserved: "!b5999"
 
 mission "EVN: Talk to Fllyraen;Vellos 2 -> 3 link"
 	invisible
@@ -7146,6 +7666,9 @@ mission "EVN: Escort Temmin Shard;Special Klavs 03a"
 		never
 	# EVN availability preserved: "!(b7782 | b7783) & !(b511 | (b423 | b424))"
 	# EVN destination preserved: "167"
+	# EVN OnRefuse preserved: "b7782"
+	# EVN OnSuccess preserved: "b7783"
+	# EVN OnAbort preserved: "b7782"
 
 mission "EVN: Recover Stolen Art;Special Klavs 03b"
 	landing
@@ -7189,6 +7712,7 @@ mission "EVN: Recover Stolen Art;Special Klavs 03c (invisible)"
 	to offer
 		never
 	# EVN destination preserved: "190"
+	# EVN OnFailure preserved: "F832"
 
 mission "EVN: Go On Cunjo Hunt;Special Klavs 04a"
 	invisible
@@ -7196,6 +7720,10 @@ mission "EVN: Go On Cunjo Hunt;Special Klavs 04a"
 		never
 	# EVN availability preserved: "!(b7786 | (b423 | b424)) & !((b8338 | b8339) | b8340)"
 	# EVN destination preserved: "187"
+	# EVN OnAccept preserved: "b8338 b8340"
+	# EVN OnRefuse preserved: "b7786 b6666"
+	# EVN OnSuccess preserved: "b7787 b7786"
+	# EVN OnAbort preserved: "b7786 !b8338 !b8340"
 
 mission "EVN: Go On Cunjo Hunt;Special Klavs 04b"
 	landing
@@ -7248,6 +7776,10 @@ mission "EVN: Head to <RST>;Pirate 010a"
 		never
 	# EVN availability preserved: "P0 & (b608 & b838)) & !b609| b838)"
 	# EVN destination preserved: "419"
+	# EVN OnAccept preserved: "827 S808"
+	# EVN OnSuccess preserved: "b609 b6666 S895 A808"
+	# EVN OnAbort preserved: "A827 A808"
+	# EVN OnShipDone preserved: "711 b8910"
 
 mission "EVN: ATTN: <PN>;Polaris ActionMan 001"
 	invisible
@@ -7255,6 +7787,8 @@ mission "EVN: ATTN: <PN>;Polaris ActionMan 001"
 		never
 	# EVN availability preserved: "(b281 | b319) & !b5758"
 	# EVN destination preserved: "220"
+	# EVN OnSuccess preserved: "b5758"
+	# EVN OnShipDone preserved: "Q25062"
 
 mission "EVN: Defend <RST>;Polaris ActionMan 002"
 	landing
@@ -7281,7 +7815,7 @@ mission "EVN: Defend <RST>;Polaris ActionMan 002"
 		set "EVN bit 5759"
 		"reputation: Nil'kemorya" += 20
 		conversation "EVN dialogue 844 complete"
-		# EVN unsupported mission actions: "Q25063"
+		message "EVN message 25063"
 
 mission "EVN: Defend <RST>;Polaris ActionMan 002a"
 	landing
@@ -7308,7 +7842,7 @@ mission "EVN: Defend <RST>;Polaris ActionMan 002a"
 		payment 100000
 		"reputation: Nil'kemorya" += 5
 		conversation "EVN dialogue 845 complete"
-		# EVN unsupported mission actions: "Q25063"
+		message "EVN message 25063"
 
 mission "EVN: ATTN: Ory'hara;Polaris ActionMan 003"
 	landing
@@ -7335,7 +7869,7 @@ mission "EVN: ATTN: Ory'hara;Polaris ActionMan 003"
 		payment 100000
 		set "EVN bit 5760"
 		"reputation: Nil'kemorya" += 5
-		# EVN unsupported mission actions: "Q25063"
+		message "EVN message 25063"
 
 mission "EVN: Try to Get Back to <RST>;Polaris ActionMan 004"
 	landing
@@ -7358,7 +7892,8 @@ mission "EVN: Try to Get Back to <RST>;Polaris ActionMan 004"
 	on offer
 		conversation "EVN dialogue 847 offer"
 	on accept
-		# EVN unsupported mission actions: "S848 Q25065"
+		message "EVN message 25065"
+		# EVN unsupported mission actions: "S848"
 	on complete
 		payment 100000
 		set "EVN bit 5761"
@@ -7379,6 +7914,7 @@ mission "EVN: Eliminate Traitor;Vell-os ActionMan 001"
 		never
 	# EVN availability preserved: "(b424 & b422) & !b367"
 	# EVN destination preserved: "138"
+	# EVN OnSuccess preserved: "b5762"
 
 mission "EVN: Capture Traitor;Vell-os ActionMan 002"
 	invisible
@@ -7386,6 +7922,7 @@ mission "EVN: Capture Traitor;Vell-os ActionMan 002"
 		never
 	# EVN availability preserved: "(b422 & b5762) & b424"
 	# EVN destination preserved: "138"
+	# EVN OnSuccess preserved: "b5763"
 
 mission "EVN: Eliminate Traitor;Fed ActionMan 001"
 	landing
@@ -7415,6 +7952,7 @@ mission "EVN: Capture Traitor;Fed ActionMan 002"
 		never
 	# EVN availability preserved: "b73 & b5764"
 	# EVN destination preserved: "138"
+	# EVN OnSuccess preserved: "b5765"
 
 mission "EVN: Defend Rebel II;Rebel ActionMan 001"
 	landing
@@ -7540,6 +8078,8 @@ mission "EVN: Rumour misn;Rebel I9a"
 		never
 	# EVN availability preserved: "b5770"
 	# EVN destination preserved: "138"
+	# EVN OnAccept preserved: "!b5770"
+	# EVN OnAbort preserved: "b5770"
 
 mission "EVN: Please Register;Registration reminder"
 	invisible
@@ -7560,12 +8100,15 @@ mission "EVN: Krypt Mind Attack;Polaris 32a"
 	to offer
 		never
 	# EVN destination preserved: "408"
+	# EVN OnSuccess preserved: "D339 A863 A864 A865 A866"
+	# EVN OnShipDone preserved: "Q25068 G339 A863 A864 A865 A866 S867 S868 S869 S870 S871"
 
 mission "EVN: Krypt Mind Attack Exit;Polaris 32b"
 	invisible
 	to offer
 		never
 	# EVN destination preserved: "-1"
+	# EVN OnShipDone preserved: "Q25069 D339 A867 A868 A869 A870 A871 S862 S863 S864 S865 S866"
 
 mission "EVN: Generic Passenger Cargo Str# misn"
 	invisible
@@ -7579,6 +8122,10 @@ mission "EVN: Destroy Upstart Guild-Master;Pirate Blow-stuff-up"
 		never
 	# EVN availability preserved: "b611 & !b612"
 	# EVN destination preserved: "157"
+	# EVN OnAccept preserved: "S875"
+	# EVN OnSuccess preserved: "b612 A875"
+	# EVN OnAbort preserved: "A875"
+	# EVN OnShipDone preserved: "Q25071"
 
 mission "EVN: Silent Mission;Pirate Blow-stuff-up support"
 	invisible
@@ -7592,6 +8139,10 @@ mission "EVN: Destroy Upstart Guild-Master;Pirate Blow-stuff-up generic"
 		never
 	# EVN availability preserved: "b612"
 	# EVN destination preserved: "157"
+	# EVN OnAccept preserved: "S875"
+	# EVN OnSuccess preserved: "A875"
+	# EVN OnAbort preserved: "A875"
+	# EVN OnShipDone preserved: "Q25071"
 
 mission "EVN: Destroy Bureau Cell;Aur, Vell, Pol, Reb Blow-stuff-up"
 	invisible
@@ -7599,6 +8150,7 @@ mission "EVN: Destroy Bureau Cell;Aur, Vell, Pol, Reb Blow-stuff-up"
 		never
 	# EVN availability preserved: "b613"
 	# EVN destination preserved: "-1"
+	# EVN OnShipDone preserved: "Q25072 A877"
 
 mission "EVN: Put Down Uprising;Fed Blow-stuff-up"
 	invisible
@@ -7606,6 +8158,7 @@ mission "EVN: Put Down Uprising;Fed Blow-stuff-up"
 		never
 	# EVN availability preserved: "b89"
 	# EVN destination preserved: "-4"
+	# EVN OnShipDone preserved: "Q25074"
 
 mission "EVN: Pirate 002 silent money misn"
 	landing
@@ -7635,6 +8188,8 @@ mission "EVN: Head to Earth;Polaris44a"
 	to offer
 		never
 	# EVN destination preserved: "426"
+	# EVN OnSuccess preserved: "S885 S886 A883 A884"
+	# EVN OnShipDone preserved: "S884"
 
 mission "EVN: Fed Interception Fleet"
 	invisible
@@ -7647,6 +8202,7 @@ mission "EVN: Head to Aurora;Polaris45a"
 	to offer
 		never
 	# EVN destination preserved: "439"
+	# EVN OnSuccess preserved: "S887 A879 A880 A881"
 
 mission "EVN: Polaris Raven"
 	invisible
@@ -7659,18 +8215,23 @@ mission "EVN: Return to Ar'Za Iusia;Polaris 46"
 	to offer
 		never
 	# EVN destination preserved: "249"
+	# EVN OnSuccess preserved: "b148 b332 b333 b334 b335 b613 b9995 b9500 M472 Q25048"
 
 mission "EVN: Head to Neilha Memorial Station;Polaris43b"
 	invisible
 	to offer
 		never
 	# EVN destination preserved: "317"
+	# EVN OnSuccess preserved: "S889 S891"
+	# EVN OnShipDone preserved: "S884"
 
 mission "EVN: Head to Aurora;Polaris44b"
 	invisible
 	to offer
 		never
 	# EVN destination preserved: "439"
+	# EVN OnSuccess preserved: "S893 S894 A890 A891 A892"
+	# EVN OnShipDone preserved: "S890"
 
 mission "EVN: Auroran Interception Fleet"
 	invisible
@@ -7683,6 +8244,7 @@ mission "EVN: Head to Earth;Polaris45b"
 	to offer
 		never
 	# EVN destination preserved: "426"
+	# EVN OnSuccess preserved: "S887 A879 A880 A881"
 
 mission "EVN: Silent misn;last pirate misn link"
 	invisible
@@ -7702,6 +8264,10 @@ mission "EVN: Sigma Shipyards Delivery;Sigma3"
 		never
 	# EVN availability preserved: "(b34 & !(b46 | b47)) & !(b149 | b424)49)) & !(b6300 | b6302)"
 	# EVN destination preserved: "128"
+	# EVN OnRefuse preserved: "b46"
+	# EVN OnSuccess preserved: "b47"
+	# EVN OnFailure preserved: "b46"
+	# EVN OnAbort preserved: "b46"
 
 mission "EVN: Deliver New Hypergate Code;Sigma4"
 	invisible
@@ -7709,6 +8275,11 @@ mission "EVN: Deliver New Hypergate Code;Sigma4"
 		never
 	# EVN availability preserved: "(b48 & !b46) & !(b424 | b49)49)) & !(b6300 | b6302)"
 	# EVN destination preserved: "421"
+	# EVN OnAccept preserved: "k147 S899 S900"
+	# EVN OnRefuse preserved: "b46"
+	# EVN OnSuccess preserved: "b49 A899 A900"
+	# EVN OnFailure preserved: "b46 A899 A900"
+	# EVN OnAbort preserved: "b46 A899 A900"
 
 mission "EVN: Silent Ships misn;Sigma 4a"
 	invisible
@@ -7741,6 +8312,10 @@ mission "EVN: Go On Cunjo Hunt;Special Klavs 04a II"
 		never
 	# EVN availability preserved: "!(b7786 | (b423 | b424)) & !((b8338 | b8339) | b8340)"
 	# EVN destination preserved: "187"
+	# EVN OnAccept preserved: "b8338 b8340"
+	# EVN OnRefuse preserved: "b7786 b6666"
+	# EVN OnSuccess preserved: "b7786 b7878"
+	# EVN OnAbort preserved: "b7786 !b8338 !b8340"
 
 mission "EVN: Go On Cunjo Hunt;Special Klavs 04b II"
 	landing
@@ -7760,7 +8335,7 @@ mission "EVN: Go On Cunjo Hunt;Special Klavs 04b II"
 		payment 75000
 		set "EVN bit 7879"
 		set "EVN bit 7880"
-		# EVN unsupported mission actions: "K151"
+		set "EVN rank 151"
 		conversation "EVN dialogue 907 complete"
 	on abort
 		set "EVN bit 7879"
@@ -7770,12 +8345,17 @@ mission "EVN: Eamon Boarding misn"
 	to offer
 		never
 	# EVN destination preserved: "-1"
+	# EVN OnAccept preserved: "b801"
+	# EVN OnAbort preserved: "K152 L138"
 
 mission "EVN: Rescue Dr Ralph's Family; Pirate Offshoot 004bii"
 	invisible
 	to offer
 		never
 	# EVN destination preserved: "157"
+	# EVN OnSuccess preserved: "b445"
+	# EVN OnFailure preserved: "b445"
+	# EVN OnAbort preserved: "b445"
 
 mission "EVN: Silent Mission;Return to New England"
 	invisible
@@ -7809,7 +8389,7 @@ mission "EVN: Scout Aurora;Rebel I12 if b2 is set"
 		set "EVN bit 137"
 		"reputation: Rebellion" += 5
 		conversation "EVN dialogue 914 complete"
-		# EVN unsupported mission actions: "Q25058"
+		message "EVN message 25058"
 
 mission "EVN: Scout Aurora;Rebel II9 if b2 is set"
 	landing
@@ -7836,7 +8416,7 @@ mission "EVN: Scout Aurora;Rebel II9 if b2 is set"
 		set "EVN bit 197"
 		"reputation: Rebellion" += 5
 		conversation "EVN dialogue 915 complete"
-		# EVN unsupported mission actions: "Q25058"
+		message "EVN message 25058"
 
 conversation "EVN dialogue 128 complete"
 	`As a group of dockworkers unloads the shipment of <cargo> from your cargo bay you are a little surprised to see the traditional long hair and utilitarian jumpsuit of a Vell-os coming towards you. The nameless Vell-os looks at you oddly for a moment before smiling softly and walking away.`
@@ -7923,10 +8503,53 @@ conversation "EVN dialogue 149 drop"
 	`Your passenger thanks you for helping him out as he leaves, but you cannot help but wish that you had never met the man. You wonder what he will end up doing to these brave rebels in the name of the Bureau. You look over to see the muscular figure of Jay walking towards you. "Good work," he states cheerfully. "Come to my office, I have credit chip with your name on it."`
 
 conversation "EVN dialogue 150 offer"
-	`{b818 "You agree rapidly, more than happy to help out someone seeking a contract with Eamon. You abbreviate your normal pre-flight routine in order to get going as quickly as you can." "After agreeing to help her you ask about these 'Wild Geese'. \"They are very highly-trained mercenaries based on <destination>,\" she tells you in a hushed tone leaning forward. \"I can't talk about the nature of my business with them, but I can tell you that their skills and capabilities are impressive. \"Now,\" she continues brightly, \"when do we leave?\""}`
+	branch "EVN dialogue 150 offer branch 0 yes" "EVN dialogue 150 offer branch 0 no"
+		has "EVN bit 818"
+	label "EVN dialogue 150 offer branch 0 yes"
+	`You agree rapidly, more than happy to help out someone seeking a contract with Eamon. You abbreviate your normal pre-flight routine in order to get going as quickly as you can.`
+		goto "EVN dialogue 150 offer branch 0 end"
+	label "EVN dialogue 150 offer branch 0 no"
+	`After agreeing to help her you ask about these 'Wild Geese'. "They are very highly-trained mercenaries based on <destination>," she tells you in a hushed tone leaning forward. "I can't talk about the nature of my business with them, but I can tell you that their skills and capabilities are impressive. "Now," she continues brightly, "when do we leave?"`
+	label "EVN dialogue 150 offer branch 0 end"
 
 conversation "EVN dialogue 150 complete"
-	`Mu'Randa is met by [EVN b818: upon landing by Flannigan | otherwise: an enormously muscular man with almost horrific tattooing all over the exposed areas of his face and arms]. They greet each other in a lyrical language you cannot understand and shake hands in the fashion of warriors{b818 ". Flannigan then turns to you and, with a huge smile on his face, grabs you in a crushing bear-hug before both of you catch up on each others news. \"You've managed to hire yourself a fine pilot here,\" Flannigan beams, \"and a fine warrior to boot.\"" "."} {b818 "\"Look for me in the bar here,\" she says, in a very respectful tone, obviously impressed by Flannigans' praise." "\"Look for me in the bar here,\" she says after turning back to you."} "My business may take some time, but I will be needing further transport when I am finished." You nod in acknowledgment and watch the young lady walk off with [EVN b818: Flannigan | otherwise: the savagely tattooed giant of a man].`
+	`Mu'Randa is met by `
+	branch "EVN dialogue 150 complete branch 0 yes" "EVN dialogue 150 complete branch 0 no"
+		has "EVN bit 818"
+	label "EVN dialogue 150 complete branch 0 yes"
+	`upon landing by Flannigan`
+		goto "EVN dialogue 150 complete branch 0 end"
+	label "EVN dialogue 150 complete branch 0 no"
+	`an enormously muscular man with almost horrific tattooing all over the exposed areas of his face and arms`
+	label "EVN dialogue 150 complete branch 0 end"
+	`. They greet each other in a lyrical language you cannot understand and shake hands in the fashion of warriors`
+	branch "EVN dialogue 150 complete branch 1 yes" "EVN dialogue 150 complete branch 1 no"
+		has "EVN bit 818"
+	label "EVN dialogue 150 complete branch 1 yes"
+	`. Flannigan then turns to you and, with a huge smile on his face, grabs you in a crushing bear-hug before both of you catch up on each others news. "You've managed to hire yourself a fine pilot here," Flannigan beams, "and a fine warrior to boot."`
+		goto "EVN dialogue 150 complete branch 1 end"
+	label "EVN dialogue 150 complete branch 1 no"
+	`.`
+	label "EVN dialogue 150 complete branch 1 end"
+	` `
+	branch "EVN dialogue 150 complete branch 2 yes" "EVN dialogue 150 complete branch 2 no"
+		has "EVN bit 818"
+	label "EVN dialogue 150 complete branch 2 yes"
+	`"Look for me in the bar here," she says, in a very respectful tone, obviously impressed by Flannigans' praise.`
+		goto "EVN dialogue 150 complete branch 2 end"
+	label "EVN dialogue 150 complete branch 2 no"
+	`"Look for me in the bar here," she says after turning back to you.`
+	label "EVN dialogue 150 complete branch 2 end"
+	` "My business may take some time, but I will be needing further transport when I am finished." You nod in acknowledgment and watch the young lady walk off with `
+	branch "EVN dialogue 150 complete branch 3 yes" "EVN dialogue 150 complete branch 3 no"
+		has "EVN bit 818"
+	label "EVN dialogue 150 complete branch 3 yes"
+	`Flannigan`
+		goto "EVN dialogue 150 complete branch 3 end"
+	label "EVN dialogue 150 complete branch 3 no"
+	`the savagely tattooed giant of a man`
+	label "EVN dialogue 150 complete branch 3 end"
+	`.`
 
 conversation "EVN dialogue 151 offer"
 	`"If you can just get me to <destination> in the <system> system in one piece," she tells you freely, "and preferably without being scanned by anyone, that would be great. I'm sure you can understand that, as I am making dealings with forces that are not particularly well-liked within the Federation, I need to be a little circumspect. "Still," she continues with a smile, "it shouldn't be too difficult, especially for a talented pilot such as yourself. "So," she asks cheerfully, "how long until you are ready to leave?"`
@@ -8115,7 +8738,7 @@ conversation "EVN dialogue 195 load"
 	`This planet is a little different from the average Auroran planet you hear about in the Federation. Yes it is polluted, and yes there are an enormous number of poor people being oppressed by the warrior class, but the gaudiness, intricacy and sheer amount of adornment of the arcologies on this world surprises you. You guess that the Moash House, who seem to be running this place, are fairly well off financially. You also notice that there are an enormous number of the infamous Auroran warriors, wearing their colorfully savage tattoos, wandering about, many of them giving you menacing looks. In the few hours you spend wandering the arcology, you estimate that you have seen several thousand warriors doing little or nothing. This Moash House must have a fair sized military if it can afford to have so many warriors just sitting around. After several hours of exploring the arcology you decide that it is time to start your journey back to <destination> to make your report to Krane.`
 
 conversation "EVN dialogue 195 complete"
-	`Surprisingly you see the blonde hair of Commander Krane waiting for you as you exit your ship. "Things went well?" she asks by way of greeting and you nod, saying that it would probably be best if you and her could talk in private. "{G"I didn't know you telepaths felt that way,\" she laughs, fluttering her eyelashes" "This had better be important,\" she mutters"}. "Follow me." She takes you to the familiar empty-looking office. "So tell me what you saw," she casually commands. In response you quickly run over what you saw from beginning to end leaving nothing out. As you finish she looks both impressed and satisfied. "Good work!" she praises you sincerely. "You are more observant than I gave you credit for. We will have to make a couple of minor adjustments to our intel picture, but we should be able to keep to our timetable. "I have to pass on your intel to the proper people," she tells seriously, "but I don't want you wandering to far. Once I've gotten confirmation on a few things, I will need your services again. Keep an eye out in the bar."`
+	`Surprisingly you see the blonde hair of Commander Krane waiting for you as you exit your ship. "Things went well?" she asks by way of greeting and you nod, saying that it would probably be best if you and her could talk in private. "them. "Follow me." She takes you to the familiar empty-looking office. "So tell me what you saw," she casually commands. In response you quickly run over what you saw from beginning to end leaving nothing out. As you finish she looks both impressed and satisfied. "Good work!" she praises you sincerely. "You are more observant than I gave you credit for. We will have to make a couple of minor adjustments to our intel picture, but we should be able to keep to our timetable. "I have to pass on your intel to the proper people," she tells seriously, "but I don't want you wandering to far. Once I've gotten confirmation on a few things, I will need your services again. Keep an eye out in the bar."`
 
 conversation "EVN dialogue 197 offer"
 	`<now you will not need a pile of metal any longer nor will you need any of those computer systems these humans need to see the space around them you can fly as free as your mind can visualize> <go now to see fllyraen he will share with you our history and our dreams listen for you may be the one who lead us out of slavery you have it in you> With that Llyrell turns and walks away, and you are left trying to take in the enormous number of things he has shown you. Your mind almost feels tipsy with the overload. You walk away, unsure whether you feel ready to give away your faithful vessel and begin living your life as a purely mental being...`
@@ -8409,19 +9032,72 @@ conversation "EVN dialogue 342 complete"
 	`Upon landing you are greeted by Geoff. "What did you find?" he asks smiling. You quickly relay the events of your trip and he just as quickly loses his smile. "This is bad," he comments seriously. "But maybe we can turn it to our advantage. How long do you reckon it will take the Roughnecks until they are ready to begin operating independently inside Auroran space?" You tell him that they are ready to begin now, but if they are going to stick to the three month stockpile, then they probably still require possibly another two months. Geoff mulls that over for a moment. "Good work," he say finally. "Come by the bar soon, and I will have something for you. I think that it's too late to head it off, but we might yet manage to squeeze something out of it."`
 
 conversation "EVN dialogue 343 offer"
-	`"They are a mercenary outfit operating out of <destination> in the <system> system," he explains. "They are the main reason why the Federation has allowed <destination> to remain independent even though it is completely surrounded. Not that the Federation is above using them to shore up their defenses; they are currently being employed to man Spacedock VI.{b818 " He stops, looking a little annoyed as you start smiling. \"Something amusing?\" he asks after a moment, and you explain some of your history with the Wild Geese. \"Oh,\" he grins, looking a little sheepish, \"you won't have to hear the rest of the info on them then!\"" " \"Apparently there is some history between the leader of the Wild Geese, Eamon Flannigan, and Admiral Raczak,\" General Smart explains further, \"and Geoff believes that seeing that Admiral Raczak seems to be in charge of this invasion, the Wild Geese might be prepared to help us when the time comes for action."} "[EVN b818: Well then | otherwise: In essence]," he [EVN b818: concludes, smiling | otherwise: continues earnestly], "we want you to go down to <destination> in the <system> system to talk to Eamon Flannigan to find out what he wants in return for the aid of his forces in the coming troubles."`
+	`"They are a mercenary outfit operating out of <destination> in the <system> system," he explains. "They are the main reason why the Federation has allowed <destination> to remain independent even though it is completely surrounded. Not that the Federation is above using them to shore up their defenses; they are currently being employed to man Spacedock VI.`
+	branch "EVN dialogue 343 offer branch 0 yes" "EVN dialogue 343 offer branch 0 no"
+		has "EVN bit 818"
+	label "EVN dialogue 343 offer branch 0 yes"
+	` He stops, looking a little annoyed as you start smiling. "Something amusing?" he asks after a moment, and you explain some of your history with the Wild Geese. "Oh," he grins, looking a little sheepish, "you won't have to hear the rest of the info on them then!"`
+		goto "EVN dialogue 343 offer branch 0 end"
+	label "EVN dialogue 343 offer branch 0 no"
+	` "Apparently there is some history between the leader of the Wild Geese, Eamon Flannigan, and Admiral Raczak," General Smart explains further, "and Geoff believes that seeing that Admiral Raczak seems to be in charge of this invasion, the Wild Geese might be prepared to help us when the time comes for action.`
+	label "EVN dialogue 343 offer branch 0 end"
+	` "`
+	branch "EVN dialogue 343 offer branch 1 yes" "EVN dialogue 343 offer branch 1 no"
+		has "EVN bit 818"
+	label "EVN dialogue 343 offer branch 1 yes"
+	`Well then`
+		goto "EVN dialogue 343 offer branch 1 end"
+	label "EVN dialogue 343 offer branch 1 no"
+	`In essence`
+	label "EVN dialogue 343 offer branch 1 end"
+	`," he `
+	branch "EVN dialogue 343 offer branch 2 yes" "EVN dialogue 343 offer branch 2 no"
+		has "EVN bit 818"
+	label "EVN dialogue 343 offer branch 2 yes"
+	`concludes, smiling`
+		goto "EVN dialogue 343 offer branch 2 end"
+	label "EVN dialogue 343 offer branch 2 no"
+	`continues earnestly`
+	label "EVN dialogue 343 offer branch 2 end"
+	`, "we want you to go down to <destination> in the <system> system to talk to Eamon Flannigan to find out what he wants in return for the aid of his forces in the coming troubles."`
 
 conversation "EVN dialogue 343 load"
-	`You are greeted by {b818 "a smiling Flannigan. After several moments of catching up you explain to him" "a heavily muscled man with the savage tattoos of an Auroran warrior. He has some kind of stylized bird on his face that fascinates you in particular. He introduces himself as Eamon Flannigan. \"I know you by reputation, 'Ory-Hara',\" he states with a lilting accent. \"And if my speculations are correct you represent a certain group of people who intensely dislike the actions of a certain bureau and they want to know what I want in return for lending military aid.\" You nod, explaining"} the situation in detail while he listens carefully. "Raczak's involved, eh?" he says thoughtfully. "For that piece of information you can tell your superiors that I'll do it for free. It probably won't take you long as I believe that you know that man over there already." He points out Geoff Daniels sitting nearby who comes over smiling. "I think we've found out what we needed to," he says grinning at your confused expression. "Let's get out of here before he changes his mind."`
+	`You are greeted by `
+	branch "EVN dialogue 343 load branch 0 yes" "EVN dialogue 343 load branch 0 no"
+		has "EVN bit 818"
+	label "EVN dialogue 343 load branch 0 yes"
+	`a smiling Flannigan. After several moments of catching up you explain to him`
+		goto "EVN dialogue 343 load branch 0 end"
+	label "EVN dialogue 343 load branch 0 no"
+	`a heavily muscled man with the savage tattoos of an Auroran warrior. He has some kind of stylized bird on his face that fascinates you in particular. He introduces himself as Eamon Flannigan. "I know you by reputation, 'Ory-Hara'," he states with a lilting accent. "And if my speculations are correct you represent a certain group of people who intensely dislike the actions of a certain bureau and they want to know what I want in return for lending military aid." You nod, explaining`
+	label "EVN dialogue 343 load branch 0 end"
+	` the situation in detail while he listens carefully. "Raczak's involved, eh?" he says thoughtfully. "For that piece of information you can tell your superiors that I'll do it for free. It probably won't take you long as I believe that you know that man over there already." He points out Geoff Daniels sitting nearby who comes over smiling. "I think we've found out what we needed to," he says grinning at your confused expression. "Let's get out of here before he changes his mind."`
 
 conversation "EVN dialogue 343 complete"
 	`"In the meantime I had several chats with Mr. Flannigan," he smiles reminiscing. "He is a very astute man. Very few people in the universe are anywhere near as well informed about the events that go on throughout the galaxy. He does have a weakness about Raczak though. It goes back to an incident several years ago between the two of them where Raczak refused to admit that he had been saved by Flannigan and his men. Apparently that annoyed the hell out of the Wild Geese leader, and they have basically been at each others throats ever since. "I don't know how Raczak does it," he continues shaking his head in disbelief. "If I had irritated a man as capable as Eamon Flannigan I would be going out of my way to make it up to him somehow. "Good work out there," Geoff praises warmly as he snaps out of his reverie. "Keep stopping by the bar. It shouldn't be too long before I have something else for you."`
 
 conversation "EVN dialogue 343 drop"
-	`On the way back Geoff {b818 "tries to tell you some of Flannigan's history, but you laugh at him, telling him that he is an old friend of yours, and that you probably know more about him than he does. \"Oh yes,\" he murmurs quietly, \"I had forgotten that you have been knighted by them.\"" "explains that Eamon Flannigan is a very capable man. Apparently the man has been initiated as an Auroran warrior of the Heraan House, and the heron tattooed on his face symbolizes his mastery of their martial arts. \"Only three or four Heron masters are known to exist,\" he explains seriously."} He explains away his presence by saying that he knew you were going to be turning up sometime, so he got dropped off there and just waited.`
+	`On the way back Geoff `
+	branch "EVN dialogue 343 drop branch 0 yes" "EVN dialogue 343 drop branch 0 no"
+		has "EVN bit 818"
+	label "EVN dialogue 343 drop branch 0 yes"
+	`tries to tell you some of Flannigan's history, but you laugh at him, telling him that he is an old friend of yours, and that you probably know more about him than he does. "Oh yes," he murmurs quietly, "I had forgotten that you have been knighted by them."`
+		goto "EVN dialogue 343 drop branch 0 end"
+	label "EVN dialogue 343 drop branch 0 no"
+	`explains that Eamon Flannigan is a very capable man. Apparently the man has been initiated as an Auroran warrior of the Heraan House, and the heron tattooed on his face symbolizes his mastery of their martial arts. "Only three or four Heron masters are known to exist," he explains seriously.`
+	label "EVN dialogue 343 drop branch 0 end"
+	` He explains away his presence by saying that he knew you were going to be turning up sometime, so he got dropped off there and just waited.`
 
 conversation "EVN dialogue 344 offer"
-	`"{b10 "\"Seeing as you have actually opened a chapterhouse for the United Shipping corporation,\" Geoff muses, \"you should be familiar with the way the Aurorans do things. Good luck.\"" "Okay,\" Geoff continues, \"a little background so you know what you are getting yourself in for. \"Firstly,\" he begins earnestly, \"the Aurora system is several jumps south of the Tichel system. \"The Empire itself is more like a loose confederacy of five major houses,\" he explains, \"than a true Empire. It is ruled over by a Ruling Council made up of three representatives from each house and the Emperor, who comes from the 'first house', and he or she has the only veto vote. \"The first family changes from time to time,\" he continues dryly, \"and the current first house is the Moash house who have demonstrated that they are capable of underhanded dealings. \"However,\" he says, grinning, \"just because Moash is the first house doesn't mean that they are immune from attacks by the other houses. In fact far from it, the Moash house is probably attacked more often than any other house. In fact, such violent acts are an integral part of Auroran politics.\" He sits back still smiling. \"Doesn't it all sound like fun?\""}`
+	`"`
+	branch "EVN dialogue 344 offer branch 0 yes" "EVN dialogue 344 offer branch 0 no"
+		has "EVN bit 10"
+	label "EVN dialogue 344 offer branch 0 yes"
+	`"Seeing as you have actually opened a chapterhouse for the United Shipping corporation," Geoff muses, "you should be familiar with the way the Aurorans do things. Good luck."`
+		goto "EVN dialogue 344 offer branch 0 end"
+	label "EVN dialogue 344 offer branch 0 no"
+	`Okay," Geoff continues, "a little background so you know what you are getting yourself in for. "Firstly," he begins earnestly, "the Aurora system is several jumps south of the Tichel system. "The Empire itself is more like a loose confederacy of five major houses," he explains, "than a true Empire. It is ruled over by a Ruling Council made up of three representatives from each house and the Emperor, who comes from the 'first house', and he or she has the only veto vote. "The first family changes from time to time," he continues dryly, "and the current first house is the Moash house who have demonstrated that they are capable of underhanded dealings. "However," he says, grinning, "just because Moash is the first house doesn't mean that they are immune from attacks by the other houses. In fact far from it, the Moash house is probably attacked more often than any other house. In fact, such violent acts are an integral part of Auroran politics." He sits back still smiling. "Doesn't it all sound like fun?"`
+	label "EVN dialogue 344 offer branch 0 end"
 
 conversation "EVN dialogue 344 complete"
 	`"So what did you find?" asks Geoff after you step out of your ship. You relay the events of your trip and he raises his eyebrows when you mention the presence of the two vessels with Federation identifications in the Aurora system. "Are you sure?" he asks, surprised. You nod. "Can you tell me their designations?" You reply that the techies can probably do better than that once they analyze the data from the holo-scanner you took with you. "True," he agrees with a sheepish grin. "This incident has sparked my interest. I think that it will be very interesting to find out what is going on down there. It is not at all like Aurorans to impersonate the Federation. "Anyway," he continues brusquely, "stay close to the bar. I get the feeling that I will need your expertise again very soon."`
@@ -8532,7 +9208,15 @@ conversation "EVN dialogue 399 complete"
 	`Geoff greets you grimly as you step off your ship. "Did you find anything?" he asks hopefully. You nod and give a rundown on what you discovered. He looks at you for a long moment with narrowed eyes digesting the information you just gave him. "Well that is interesting!" he exclaims, his eyes widening suddenly. "They're going to sacrifice Raczak's entire force in order to start a war that the Federation can't win!" You look confused and ask him what he meant by his last statement. He tells you the conventional military wisdom states that the Federation simply does not have the resources to pacify something the size of the Auroran Empire. "Wait for me in the bar," Geoff says, suddenly impassive, "I'm going to have another mission for you within the hour."`
 
 conversation "EVN dialogue 400 offer"
-	`"{b10 "\"Seeing as you have actually opened a chapterhouse for the United Shipping corporation,\" Geoff muses, \"you should be familiar with the way the Aurorans do things. Good luck.\"" "Okay,\" Geoff continues, \"a little background so you know what you are getting yourself in for. \"Firstly,\" he begins earnestly, \"the Aurora system is several jumps south of the Tichel system. \"The Empire itself is more like a loose confederacy of five major houses,\" he explains, \"than a true Empire. It is ruled over by a Ruling Council made up of three representatives from each house and the Emperor, who comes from the 'first house', and he or she has the only veto vote. \"The first family changes from time to time,\" he continues dryly, \"and the current first house is the Moash house who have demonstrated that they are capable of underhanded dealings. \"However,\" he says, grinning, \"just because Moash is the first house doesn't mean that they are immune from attacks by the other houses. In fact far from it, the Moash house is probably attacked more often than any other house. In fact, such violent acts are an integral part of Auroran politics.\" He sits back still smiling. \"Doesn't it all sound like fun?\""}`
+	`"`
+	branch "EVN dialogue 400 offer branch 0 yes" "EVN dialogue 400 offer branch 0 no"
+		has "EVN bit 10"
+	label "EVN dialogue 400 offer branch 0 yes"
+	`"Seeing as you have actually opened a chapterhouse for the United Shipping corporation," Geoff muses, "you should be familiar with the way the Aurorans do things. Good luck."`
+		goto "EVN dialogue 400 offer branch 0 end"
+	label "EVN dialogue 400 offer branch 0 no"
+	`Okay," Geoff continues, "a little background so you know what you are getting yourself in for. "Firstly," he begins earnestly, "the Aurora system is several jumps south of the Tichel system. "The Empire itself is more like a loose confederacy of five major houses," he explains, "than a true Empire. It is ruled over by a Ruling Council made up of three representatives from each house and the Emperor, who comes from the 'first house', and he or she has the only veto vote. "The first family changes from time to time," he continues dryly, "and the current first house is the Moash house who have demonstrated that they are capable of underhanded dealings. "However," he says, grinning, "just because Moash is the first house doesn't mean that they are immune from attacks by the other houses. In fact far from it, the Moash house is probably attacked more often than any other house. In fact, such violent acts are an integral part of Auroran politics." He sits back still smiling. "Doesn't it all sound like fun?"`
+	label "EVN dialogue 400 offer branch 0 end"
 
 conversation "EVN dialogue 400 complete"
 	`"So what did you find?" asks Geoff after you step out of your ship. You relay the events of your trip and he raises his eyebrows when you mention the presence of the two vessels with Federation identifications in the Aurora system. "Are you sure?" he asks, surprised. You nod. "Can you tell me their designations?" You reply that the techies can probably do better than that once they analyze the data from your flight computer. "True," he agrees with a sheepish grin. "This incident has sparked my interest. I think that it will be very interesting to find out what is going on down there. It is not at all like Aurorans to impersonate the Federation. "Anyway," he continues brusquely, "stay close to the bar. I get the feeling that I will need your expertise again very soon."`
@@ -8739,7 +9423,7 @@ conversation "EVN dialogue 453 complete"
 	`"I have to pass on your intel to the proper people," she tells seriously, "but I don't want you wandering too far. Once I've gotten confirmation on a few things, I will need your services again. Keep an eye out in the bar. "By the way," she continues with a smile, "I have just authorized you access to certain types of Federation technology. It doesn't come cheap I'm afraid, but you will now be able to buy it. "I've been pushing for you to be allowed access to the better stuff," she explains apologetically, "but the military types don't like to give away what they view as their personal technology easily. "However if your work continues as it has," she informs you quietly, "I can guarantee that it won't be long until you will be granted access to everything in the Federation arsenal!"`
 
 conversation "EVN dialogue 453 drop"
-	`Surprisingly you see the blonde hair of Commander Krane waiting for you as you exit your ship. "Things went well?" she asks by way of greeting. You nod, saying that it would probably be best if you and her could talk in private. "{G"I didn't know you felt that way,\" she flutters her eyelashes before laughing. " "Alright then,\" she looks at you slightly quizzically,"} "Follow me." She takes you to the now familiar empty-looking office. "So tell me what you saw," she casually commands. You quickly run over what you saw from beginning to end leaving nothing out. As you finish she looks both impressed and satisfied. "Good work!" she praises you sincerely. "You are more observant than I gave you credit for. From your report we have to make a couple of minor adjustments to our intel picture, but nothing that should put us off our timetable."`
+	`Surprisingly you see the blonde hair of Commander Krane waiting for you as you exit your ship. "Things went well?" she asks by way of greeting. You nod, saying that it would probably be best if you and her could talk in private. "them "Follow me." She takes you to the now familiar empty-looking office. "So tell me what you saw," she casually commands. You quickly run over what you saw from beginning to end leaving nothing out. As you finish she looks both impressed and satisfied. "Good work!" she praises you sincerely. "You are more observant than I gave you credit for. From your report we have to make a couple of minor adjustments to our intel picture, but nothing that should put us off our timetable."`
 
 conversation "EVN dialogue 453 decline"
 	`"Oh well," sighs Krane quietly. "I'm not going to say I'm not a little disappointed in you, but I'm sure you have your reasons. I guess we'll have to find someone else instead. "Keep an eye out for me," she finishes, as she turns away, "I may need your services for something else soon..."`
@@ -8817,16 +9501,52 @@ conversation "EVN dialogue 517 offer"
 	`"Excellent!" she exclaims happily. "It's good to see that we can rely on you. "Anyway," she continues in a more moderate tone but still smiling, "it's going to be my job to act as a negotiator, but I need to get to <destination> in the <system> system. The pay is 50000 credits. "So," she asks with a grin, "when do we leave?"`
 
 conversation "EVN dialogue 517 complete"
-	`Upon arrival you are met by a group of Aurorans, a couple of whom are covered with [EVN b206: many battle tattoos | otherwise: savage tattoos] and who eye everybody [EVN b206: but their fellow warriors | otherwise: around them] with disdain. "I've already transferred the money into your account," Samantha tells you as she leaves your ship, "but don't go too far away. If I need your services again in the near future, and I may well need to, I'll look for you in the bar, but I'm not sure how long I'll be."`
+	`Upon arrival you are met by a group of Aurorans, a couple of whom are covered with `
+	branch "EVN dialogue 517 complete branch 0 yes" "EVN dialogue 517 complete branch 0 no"
+		has "EVN bit 206"
+	label "EVN dialogue 517 complete branch 0 yes"
+	`many battle tattoos`
+		goto "EVN dialogue 517 complete branch 0 end"
+	label "EVN dialogue 517 complete branch 0 no"
+	`savage tattoos`
+	label "EVN dialogue 517 complete branch 0 end"
+	` and who eye everybody `
+	branch "EVN dialogue 517 complete branch 1 yes" "EVN dialogue 517 complete branch 1 no"
+		has "EVN bit 206"
+	label "EVN dialogue 517 complete branch 1 yes"
+	`but their fellow warriors`
+		goto "EVN dialogue 517 complete branch 1 end"
+	label "EVN dialogue 517 complete branch 1 no"
+	`around them`
+	label "EVN dialogue 517 complete branch 1 end"
+	` with disdain. "I've already transferred the money into your account," Samantha tells you as she leaves your ship, "but don't go too far away. If I need your services again in the near future, and I may well need to, I'll look for you in the bar, but I'm not sure how long I'll be."`
 
 conversation "EVN dialogue 519 offer"
 	`"This should be relatively easy," Samantha tells you, "especially compared to your last mission. I just need to get back to <destination> in the <system> system to make my final report to the head office. Payment will be another 50000 credits. "I have no desire to stay any longer," she tells you quietly. "Living in a warrior culture is too much for me. If you're ready, I would like to leave now." You smile and tell her to come with you and together you head back to your ship.`
 
 conversation "EVN dialogue 519 complete"
-	`"Am I glad to be back in the Federation," she tells you, quietly happy. "No more hulking warriors treating me like a second class citizen, and no more negotiations with people who really don't give a damn whether I actually exist or not{b206 ".\" You politely ignore her somewhat ignorant view of the universe, telling yourself that she knows no better having been brought up in the Federation." "."} "Thank you very much for your help," she says, turning to face you. "Without you, this would have been a complete failure. I have been authorized by the head office to offer you not only the 50000 credits promised, but also a 50000 credit bonus. "Also," she tells you finally, "if you happen to end up down in the Auroran Empire again and need some cash, there will be United Shipping deliveries offered in their Mission BBS'."`
+	`"Am I glad to be back in the Federation," she tells you, quietly happy. "No more hulking warriors treating me like a second class citizen, and no more negotiations with people who really don't give a damn whether I actually exist or not`
+	branch "EVN dialogue 519 complete branch 0 yes" "EVN dialogue 519 complete branch 0 no"
+		has "EVN bit 206"
+	label "EVN dialogue 519 complete branch 0 yes"
+	`." You politely ignore her somewhat ignorant view of the universe, telling yourself that she knows no better having been brought up in the Federation.`
+		goto "EVN dialogue 519 complete branch 0 end"
+	label "EVN dialogue 519 complete branch 0 no"
+	`.`
+	label "EVN dialogue 519 complete branch 0 end"
+	` "Thank you very much for your help," she says, turning to face you. "Without you, this would have been a complete failure. I have been authorized by the head office to offer you not only the 50000 credits promised, but also a 50000 credit bonus. "Also," she tells you finally, "if you happen to end up down in the Auroran Empire again and need some cash, there will be United Shipping deliveries offered in their Mission BBS'."`
 
 conversation "EVN dialogue 520 complete"
-	`"Am I glad to be back in the Federation," she tells you, smiling sadly. "No more hulking warriors treating me like a second citizen, and no more negotiations with people who really don't give a damn whether I actually exist or not{b206 ".\" You politely ignore her somewhat ignorant view of the universe, telling yourself that she knows no better having been brought up in the Federation." "."} "Despite what happened I still want to thank you for your help," she says, turning to face you. "You couldn't have known what was going on, there is no way that we can blame you. It was just one of those things that occasionally happens in life. Anyway, I have authorized the transfer of 20000 credits into your account as promised. I'm sure I'll see you around <planet>."`
+	`"Am I glad to be back in the Federation," she tells you, smiling sadly. "No more hulking warriors treating me like a second citizen, and no more negotiations with people who really don't give a damn whether I actually exist or not`
+	branch "EVN dialogue 520 complete branch 0 yes" "EVN dialogue 520 complete branch 0 no"
+		has "EVN bit 206"
+	label "EVN dialogue 520 complete branch 0 yes"
+	`." You politely ignore her somewhat ignorant view of the universe, telling yourself that she knows no better having been brought up in the Federation.`
+		goto "EVN dialogue 520 complete branch 0 end"
+	label "EVN dialogue 520 complete branch 0 no"
+	`.`
+	label "EVN dialogue 520 complete branch 0 end"
+	` "Despite what happened I still want to thank you for your help," she says, turning to face you. "You couldn't have known what was going on, there is no way that we can blame you. It was just one of those things that occasionally happens in life. Anyway, I have authorized the transfer of 20000 credits into your account as promised. I'm sure I'll see you around <planet>."`
 
 conversation "EVN dialogue 521 load"
 	`You head down to the Deliveries Office to pick up your package and they give you a hand loading it onto your ship.`
@@ -9144,7 +9864,14 @@ conversation "EVN dialogue 667 load"
 	`After fighting your way through the heavier than expected pirate presence, you manage to touch down near the settlement camp to see many men and women, obviously with little martial experience, trying to hold out these treacherous dogs from their ramshackle homes. As soon as you and Hune enter the fray the battle turns. You both hit them with everything you have and the honorless dogs quickly give ground, and not one survives to reach the relative safety of space. "Thank you sirs," says the grateful leader of the colonists. "We thought that we were just about to die." "At least you chose to go down fighting," grunts Hune gruffly, obviously uncomfortable with the praise, and you grin at his discomfort. "But we would ask of you one favor," continues the settlement leader with some trepidation, "all our spacecraft have been destroyed by the Houseless pirates, and we need to pay our sponsors back on Dani by passing on some of the palladium we have managed to acquire. Could you help us?" You are about to snap that you are not merchants to be carrying around produce, but Hune places a restraining hand on your arms as the man shrinks from your obvious rage. "Of course we will," he intones quietly. "True warriors are tasked to protect all the citizens of the Empire from all dangers, be they combat or mercantile based." You have the grace to look ashamed and you immediately head back to your ship to begin loading.`
 
 conversation "EVN dialogue 667 complete"
-	`"Often the Mundokiir and Thurokiir will end up working together," Hune finishes, slightly slurring his words due to the copious quantities of Nibos beer you have both imbibed. "They do this to protect the House in every possible way. The warriors are their pawns to use to defend their House as best they can - some of them are more valuable than others, but ultimately they are just pieces of the house's defense." Somehow the thought that you are just a block in the defensive wall of the Heraan house fills you with pride. Your role may or may not be large, but without you, that wall would be harder to keep strong, and that makes your whole life worthwhile. "Anyway, " Hune mutters drunkenly, "we need to get back to Rimerta to receive any further missions that might be required of us.{b9666 "" " I'll see you back there.\" With that he drunkenly staggers off towards his ship."}`
+	`"Often the Mundokiir and Thurokiir will end up working together," Hune finishes, slightly slurring his words due to the copious quantities of Nibos beer you have both imbibed. "They do this to protect the House in every possible way. The warriors are their pawns to use to defend their House as best they can - some of them are more valuable than others, but ultimately they are just pieces of the house's defense." Somehow the thought that you are just a block in the defensive wall of the Heraan house fills you with pride. Your role may or may not be large, but without you, that wall would be harder to keep strong, and that makes your whole life worthwhile. "Anyway, " Hune mutters drunkenly, "we need to get back to Rimerta to receive any further missions that might be required of us.`
+	branch "EVN dialogue 667 complete branch 0 yes" "EVN dialogue 667 complete branch 0 no"
+		has "EVN bit 9666"
+	label "EVN dialogue 667 complete branch 0 yes"
+		goto "EVN dialogue 667 complete branch 0 end"
+	label "EVN dialogue 667 complete branch 0 no"
+	` I'll see you back there." With that he drunkenly staggers off towards his ship.`
+	label "EVN dialogue 667 complete branch 0 end"
 
 conversation "EVN dialogue 667 drop"
 	`The sponsors of the settlers are overgracious with their thanks. They entertain you with a breathtaking feast, and send the two of you off with a barrel of Nibos, an alcohol so strong it is forbidden on some colonies. However, Hune has been giving you some lessons in drinking... He tells you of all the different positions within the various Houses, as despite having been a warrior for some time now, you have spent most of your time wandering the galaxy in service to your House and have not had these things explained to you. "You have the elders of the Houses who act as a ruling body of advisers," he tells you, "and then you have the Thurokiir (obsidian heart, arbiter of reckoning) and the Mundokiir (heart of crushed garnet, the eye of fury). The easiest way to think of it is that the Mundokiir is the military head of the warriors of his or her house, in charge of protecting against any of the purely physical dangers. The Thurokiir on the other hand is the spiritual head of the warriors of his or her house, in charge of protecting against any of the more nefarious threats to their house, be they spiritual, threats to the house's honor, or even espionage and sabotage."`
@@ -9168,7 +9895,16 @@ conversation "EVN dialogue 669 complete"
 	`The next day you wake up lying beneath your ship, soaking wet and freezing, with Hune standing over you grinning with a bucket in his hands. You immediately leap to your feet and begin struggling with him, quickly pinning him to the ground and slapping him around the face as he laughs uncontrollably. You eventually let him up, and he embraces you as a them. "You have shown yourself worthy of being called a battle-them of the Dechtakars. You have discharged your duty, and it is time you returned to your House. I look forward to meeting you again in the future <planet>. I am sure your future will be filled with glory and honor. I have a feeling that we will meet again and do great things." With that he embraces you again, and with a wave, heads towards his ship, and you know in your bones that he is right. One day the two of you will change the course of the Empire somehow...`
 
 conversation "EVN dialogue 669 drop"
-	`The Wild Geese gaggle fought valiantly, as [EVN b800: as you expected | otherwise: can only be expected with such opponents], but you were finally {b800"able to defeat them" "triumphant"}. Hune saved your butt more than once with his fancy shooting, and you his. You celebrate with a little more of that Nibos. Throughout the night, the two of you{b800" solemnly " " "}salute the many, now departed, {b800"members of the Wild Geese" "valorous enemies"} you faced today, who fought with courage and skill. More than a few of the young warriors stationed here join the two of you, many openly praising the skill shown by the both of you. Even the young Moash warriors are complimentary. "I cannot wait until I discharge my service to the Empire," says one of the young Moashi, "so that I might test myself against the Heraan. If all of them are as capable as you, it will be a great challenge!" "I look forward to that day," you reply, surprised to find yourself thinking that not all the Moashi are that bad, and that you will be sorry to send this one to the Hall of Heroes.`
+	`The Wild Geese gaggle fought valiantly, as `
+	branch "EVN dialogue 669 drop branch 0 yes" "EVN dialogue 669 drop branch 0 no"
+		has "EVN bit 800"
+	label "EVN dialogue 669 drop branch 0 yes"
+	`as you expected`
+		goto "EVN dialogue 669 drop branch 0 end"
+	label "EVN dialogue 669 drop branch 0 no"
+	`can only be expected with such opponents`
+	label "EVN dialogue 669 drop branch 0 end"
+	`, but you were finally {b800"able to defeat them" "triumphant"}. Hune saved your butt more than once with his fancy shooting, and you his. You celebrate with a little more of that Nibos. Throughout the night, the two of you{b800" solemnly " " "}salute the many, now departed, {b800"members of the Wild Geese" "valorous enemies"} you faced today, who fought with courage and skill. More than a few of the young warriors stationed here join the two of you, many openly praising the skill shown by the both of you. Even the young Moash warriors are complimentary. "I cannot wait until I discharge my service to the Empire," says one of the young Moashi, "so that I might test myself against the Heraan. If all of them are as capable as you, it will be a great challenge!" "I look forward to that day," you reply, surprised to find yourself thinking that not all the Moashi are that bad, and that you will be sorry to send this one to the Hall of Heroes.`
 
 conversation "EVN dialogue 669 decline"
 	`Hune looks at you with a disappointed expression in his face. "I thought you were made of sterner stuff," he informs you quietly standing up. With that he walks away, his entire attitude showing his disdain for you.`
@@ -9189,7 +9925,16 @@ conversation "EVN dialogue 688 complete"
 	`The next day you wake up lying beneath your ship, soaking wet and freezing, with Hune standing over you grinning with a bucket in his hands. You immediately leap to your feet and begin struggling with him, quickly pinning him to the ground and slapping him around the face as he laughs uncontrollably. You eventually let him up, and he embraces you as a them. "You have shown yourself worthy of being called a battle-them of the Dechtakars. You have discharged your duty, and it is time you returned to your House. I look forward to meeting you again in the future <planet>. I am sure your future will be filled with glory and honor. I have a feeling that we will meet again and do great things." With that he embraces you again, and with a wave, heads towards his ship, and you know in your bones that he is right. One day the two of you will change the course of the Empire somehow...`
 
 conversation "EVN dialogue 688 drop"
-	`The Wild Geese gaggle fought valiantly, as [EVN b800: as you expected | otherwise: can only be expected with such opponents], but you were finally {b800"able to defeat them" "triumphant"}. Hune saved your butt more than once with his fancy shooting, and you his. You celebrate with a little more of that Nibos. Throughout the night, the two of you{b800" solemnly " " "}salute the many, now departed, {b800"members of the Wild Geese" "valorous enemies"} you faced today, who fought with courage and skill. More than a few of the young warriors stationed here join the two of you, many openly praising the skill shown by the both of you. Even the young Moash warriors are complimentary. "I cannot wait until I discharge my service to the Empire," says one of the young Moashi, "so that I might test myself against the Heraan. If all of them are as capable as you, it will be a great challenge!" "I look forward to that day," you reply, surprised to find yourself thinking that not all the Moashi are that bad, and that you will be sorry to send this one to the Hall of Heroes.`
+	`The Wild Geese gaggle fought valiantly, as `
+	branch "EVN dialogue 688 drop branch 0 yes" "EVN dialogue 688 drop branch 0 no"
+		has "EVN bit 800"
+	label "EVN dialogue 688 drop branch 0 yes"
+	`as you expected`
+		goto "EVN dialogue 688 drop branch 0 end"
+	label "EVN dialogue 688 drop branch 0 no"
+	`can only be expected with such opponents`
+	label "EVN dialogue 688 drop branch 0 end"
+	`, but you were finally {b800"able to defeat them" "triumphant"}. Hune saved your butt more than once with his fancy shooting, and you his. You celebrate with a little more of that Nibos. Throughout the night, the two of you{b800" solemnly " " "}salute the many, now departed, {b800"members of the Wild Geese" "valorous enemies"} you faced today, who fought with courage and skill. More than a few of the young warriors stationed here join the two of you, many openly praising the skill shown by the both of you. Even the young Moash warriors are complimentary. "I cannot wait until I discharge my service to the Empire," says one of the young Moashi, "so that I might test myself against the Heraan. If all of them are as capable as you, it will be a great challenge!" "I look forward to that day," you reply, surprised to find yourself thinking that not all the Moashi are that bad, and that you will be sorry to send this one to the Hall of Heroes.`
 
 conversation "EVN dialogue 688 decline"
 	`Hune looks at you with a disappointed expression in his face. "I thought you were made of sterner stuff," he informs you quietly standing up. With that he walks away, his entire attitude showing his disdain for you.`
@@ -9345,10 +10090,53 @@ conversation "EVN dialogue 720 complete"
 	`Frandall meets you and Tomak at the hatch, and other rebel operatives begin to examine the extent of the damage to your beloved <ship>. Frandall looks vaguely worried about the fact that the entire Federation population seemed to know about the shipment. He tells you that he is going to discuss the matter with the Rebel High Command. "I have a suspicion that we are going to get you to do something a little different for us next time we send you out." He shakes your hand, and walks away, calling out orders to his staff. Tomak thanks you quickly, before being whisked away by rebel staff for debriefing.`
 
 conversation "EVN dialogue 782 offer"
-	`{b818 "You agree rapidly, more than happy to help out someone seeking a contract with Eamon. You abbreviate your normal pre-flight routine in order to get going as quickly as you can." "After agreeing to help her you ask about these 'Wild Geese'. \"They are very highly-trained mercenaries based on <destination>,\" she tells you in a hushed tone leaning forward. \"I can't talk about the nature of my business with them, but I can tell you that their skills and capabilities are impressive. \"Now,\" she continues brightly, \"when do we leave?\""}`
+	branch "EVN dialogue 782 offer branch 0 yes" "EVN dialogue 782 offer branch 0 no"
+		has "EVN bit 818"
+	label "EVN dialogue 782 offer branch 0 yes"
+	`You agree rapidly, more than happy to help out someone seeking a contract with Eamon. You abbreviate your normal pre-flight routine in order to get going as quickly as you can.`
+		goto "EVN dialogue 782 offer branch 0 end"
+	label "EVN dialogue 782 offer branch 0 no"
+	`After agreeing to help her you ask about these 'Wild Geese'. "They are very highly-trained mercenaries based on <destination>," she tells you in a hushed tone leaning forward. "I can't talk about the nature of my business with them, but I can tell you that their skills and capabilities are impressive. "Now," she continues brightly, "when do we leave?"`
+	label "EVN dialogue 782 offer branch 0 end"
 
 conversation "EVN dialogue 782 complete"
-	`Mu'Randa is met by [EVN b818: upon landing by Flannigan | otherwise: an enormously muscular man with almost horrific tattooing all over the exposed areas of his face and arms]. They greet each other in a lyrical language you cannot understand and shake hands in the fashion of warriors{b818 ". Flannigan then turns to you and, with a huge smile on his face, grabs you in a crushing bear-hug before both of you catch up on each others news. \"You've managed to hire yourself a fine pilot here,\" Flannigan beams, \"and a fine warrior to boot.\"" "."} {b818 "\"Look for me in the bar here,\" she says, in a very respectful tone, obviously impressed by Flannigans' praise." "\"Look for me in the bar here,\" she says after turning back to you."} "My business may take some time, but I will be needing further transport when I am finished." You nod in acknowledgment and watch the young lady walk off with [EVN b818: Flannigan | otherwise: the savagely tattooed giant of a man].`
+	`Mu'Randa is met by `
+	branch "EVN dialogue 782 complete branch 0 yes" "EVN dialogue 782 complete branch 0 no"
+		has "EVN bit 818"
+	label "EVN dialogue 782 complete branch 0 yes"
+	`upon landing by Flannigan`
+		goto "EVN dialogue 782 complete branch 0 end"
+	label "EVN dialogue 782 complete branch 0 no"
+	`an enormously muscular man with almost horrific tattooing all over the exposed areas of his face and arms`
+	label "EVN dialogue 782 complete branch 0 end"
+	`. They greet each other in a lyrical language you cannot understand and shake hands in the fashion of warriors`
+	branch "EVN dialogue 782 complete branch 1 yes" "EVN dialogue 782 complete branch 1 no"
+		has "EVN bit 818"
+	label "EVN dialogue 782 complete branch 1 yes"
+	`. Flannigan then turns to you and, with a huge smile on his face, grabs you in a crushing bear-hug before both of you catch up on each others news. "You've managed to hire yourself a fine pilot here," Flannigan beams, "and a fine warrior to boot."`
+		goto "EVN dialogue 782 complete branch 1 end"
+	label "EVN dialogue 782 complete branch 1 no"
+	`.`
+	label "EVN dialogue 782 complete branch 1 end"
+	` `
+	branch "EVN dialogue 782 complete branch 2 yes" "EVN dialogue 782 complete branch 2 no"
+		has "EVN bit 818"
+	label "EVN dialogue 782 complete branch 2 yes"
+	`"Look for me in the bar here," she says, in a very respectful tone, obviously impressed by Flannigans' praise.`
+		goto "EVN dialogue 782 complete branch 2 end"
+	label "EVN dialogue 782 complete branch 2 no"
+	`"Look for me in the bar here," she says after turning back to you.`
+	label "EVN dialogue 782 complete branch 2 end"
+	` "My business may take some time, but I will be needing further transport when I am finished." You nod in acknowledgment and watch the young lady walk off with `
+	branch "EVN dialogue 782 complete branch 3 yes" "EVN dialogue 782 complete branch 3 no"
+		has "EVN bit 818"
+	label "EVN dialogue 782 complete branch 3 yes"
+	`Flannigan`
+		goto "EVN dialogue 782 complete branch 3 end"
+	label "EVN dialogue 782 complete branch 3 no"
+	`the savagely tattooed giant of a man`
+	label "EVN dialogue 782 complete branch 3 end"
+	`.`
 
 conversation "EVN dialogue 810 offer"
 	`As you nod in response to his question, he looks so proud as to almost burst. "You're a credit to your blood, young'un, d'ye know? If Morgan was here he'd..." Uncle Olaf trails off as he becomes lost in memory. "Well. You're here now; what am I to do with you? I suppose I'd better give you something to keep you occupied until I can make some better plans. Are ye up to taking care of some business for me? It's nothing arduous, just a shuttle run to the Sol system to pick up a cargo of data crystal replacements. Ye'll handle it for your old uncle?" he asks with that silly, beatific smile you remember from so long ago. "Of course, Uncle," you reply. He smiles again, and hugs your shoulders. "Good for you, Bonnie," he laughs, using the pet-name from your childhood. "Now, how's about a drink?" With that, you become pleasantly lost in talk until you have leave to start the cargo run.`
@@ -9429,7 +10217,16 @@ conversation "EVN dialogue 851 offer"
 	`This is a covert mission, so the Federation Navy may well try to interfere with your efforts. Try to avoid outright confrontation, but do not waver from the primary objective. The ship in question has been seen in and around this system and has been given the IFF code of 'traitor' on your scanner. Find it, destroy it and then make your way to <destination> in the <system> system for debriefing.`
 
 conversation "EVN dialogue 851 complete"
-	`You play back the recording of the traitor's destruction for the mid-level Bureau official who meets you in the docking bay. "Good work," he says, handing you a credit chip with a few credits on it. "That should cover your expenses. We will contact you again when we require your services." You [EVN b5764: nod and wonder how long you are going to be doing these seemingly endless series of tedious jobs. If the aim of the Bureau to bring all of humanity together wasn't so laudable, it almost wouldn't be worth it | otherwise: find yourself wondering again how you long this whole campaign will take. It seems that just yesterday you were a simple trader, and now you are an honored assassin, taking the lives of those who would keep humanity fragmented].`
+	`You play back the recording of the traitor's destruction for the mid-level Bureau official who meets you in the docking bay. "Good work," he says, handing you a credit chip with a few credits on it. "That should cover your expenses. We will contact you again when we require your services." You `
+	branch "EVN dialogue 851 complete branch 0 yes" "EVN dialogue 851 complete branch 0 no"
+		has "EVN bit 5764"
+	label "EVN dialogue 851 complete branch 0 yes"
+	`nod and wonder how long you are going to be doing these seemingly endless series of tedious jobs. If the aim of the Bureau to bring all of humanity together wasn't so laudable, it almost wouldn't be worth it`
+		goto "EVN dialogue 851 complete branch 0 end"
+	label "EVN dialogue 851 complete branch 0 no"
+	`find yourself wondering again how you long this whole campaign will take. It seems that just yesterday you were a simple trader, and now you are an honored assassin, taking the lives of those who would keep humanity fragmented`
+	label "EVN dialogue 851 complete branch 0 end"
+	`.`
 
 conversation "EVN dialogue 853 complete"
 	`You and your fellow survivors greet each other with gleeful bear-hugs and a lot of shouting. After you all celebrate each others' survival you head off to find the dockmaster to see if you are going to be recompensed for your services. He thanks you heartily when you enter his office and pays you all the princely sum of 100,000 credits each.`
@@ -9456,13 +10253,29 @@ conversation "EVN dialogue 907 complete"
 	`"Well," Charengo smiles, "here is your pay. Sorry about your injuries, but these things happen when you hunt Cunjo. The bastards just learn your patterns from successive hunts, some sort of race memory I guess. Anyway, hope I haven't put you off too much! Still, there are advantages to this. From now on, the story of your prowess will pass from person to person. It takes guts to take down a Cunjo on your own, let alone two. Before too long, you'll be known as a 'Cunjo Hunter.' Nice working with you." He hands you a chip and you both watch the men unload the equipment. The clients are meeting their families and friends, showing them the staged holos and waving their arms around, miming the 'awesome' shots that killed the dread beasts. Only the fourth client has any claim on the events he's describing, and you and Charengo laugh quietly to yourselves. Only a few short hours later all the equipment is unloaded and Charengo bids you goodbye. You don't think you'll ever go hunting Cunjo again, but at least you can say you have done it.`
 
 conversation "EVN dialogue 914 offer"
-	`"{b2 "\"Seeing as you have actually opened a chapterhouse for the Guild of Bounty Hunters,\" Geoff muses, \"you should be familiar with the way the Aurorans do things. Good luck.\"" "Okay,\" Geoff continues, \"a little background so you know what you are getting yourself in for. \"Firstly,\" he begins earnestly, \"the Aurora system is several jumps south of the Tichel system. \"The Empire itself is more like a loose confederacy of five major houses,\" he explains, \"than a true Empire. It is ruled over by a Ruling Council made up of three representatives from each house and the Emperor, who comes from the 'first house', and he or she has the only veto vote. \"The first family changes from time to time,\" he continues dryly, \"and the current first house is the Moash house who have demonstrated that they are capable of underhanded dealings. \"However,\" he says, grinning, \"just because Moash is the first house doesn't mean that they are immune from attacks by the other houses. In fact far from it, the Moash house is probably attacked more often than any other house. In fact, such violent acts are an integral part of Auroran politics.\" He sits back still smiling. \"Doesn't it all sound like fun?\""}`
+	`"`
+	branch "EVN dialogue 914 offer branch 0 yes" "EVN dialogue 914 offer branch 0 no"
+		has "EVN bit 2"
+	label "EVN dialogue 914 offer branch 0 yes"
+	`"Seeing as you have actually opened a chapterhouse for the Guild of Bounty Hunters," Geoff muses, "you should be familiar with the way the Aurorans do things. Good luck."`
+		goto "EVN dialogue 914 offer branch 0 end"
+	label "EVN dialogue 914 offer branch 0 no"
+	`Okay," Geoff continues, "a little background so you know what you are getting yourself in for. "Firstly," he begins earnestly, "the Aurora system is several jumps south of the Tichel system. "The Empire itself is more like a loose confederacy of five major houses," he explains, "than a true Empire. It is ruled over by a Ruling Council made up of three representatives from each house and the Emperor, who comes from the 'first house', and he or she has the only veto vote. "The first family changes from time to time," he continues dryly, "and the current first house is the Moash house who have demonstrated that they are capable of underhanded dealings. "However," he says, grinning, "just because Moash is the first house doesn't mean that they are immune from attacks by the other houses. In fact far from it, the Moash house is probably attacked more often than any other house. In fact, such violent acts are an integral part of Auroran politics." He sits back still smiling. "Doesn't it all sound like fun?"`
+	label "EVN dialogue 914 offer branch 0 end"
 
 conversation "EVN dialogue 914 complete"
 	`"So what did you find?" asks Geoff after you step out of your ship. You relay the events of your trip and he raises his eyebrows when you mention the presence of the two vessels with Federation identifications in the Aurora system. "Are you sure?" he asks, surprised. You nod. "Can you tell me their designations?" You reply that the techies can probably do better than that once they analyze the data from the holo-scanner you took with you. "True," he agrees with a sheepish grin. "This incident has sparked my interest. I think that it will be very interesting to find out what is going on down there. It is not at all like Aurorans to impersonate the Federation. "Anyway," he continues brusquely, "stay close to the bar. I get the feeling that I will need your expertise again very soon."`
 
 conversation "EVN dialogue 915 offer"
-	`"{b2 "\"Seeing as you have actually opened a chapterhouse for the Guild of Bounty Hunters,\" Geoff muses, \"you should be familiar with the way the Aurorans do things. Good luck.\"" "Okay,\" Geoff continues, \"a little background so you know what you are getting yourself in for. \"Firstly,\" he begins earnestly, \"the Aurora system is several jumps south of the Tichel system. \"The Empire itself is more like a loose confederacy of five major houses,\" he explains, \"than a true Empire. It is ruled over by a Ruling Council made up of three representatives from each house and the Emperor, who comes from the 'first house', and he or she has the only veto vote. \"The first family changes from time to time,\" he continues dryly, \"and the current first house is the Moash house who have demonstrated that they are capable of underhanded dealings. \"However,\" he says, grinning, \"just because Moash is the first house doesn't mean that they are immune from attacks by the other houses. In fact far from it, the Moash house is probably attacked more often than any other house. In fact, such violent acts are an integral part of Auroran politics.\" He sits back still smiling. \"Doesn't it all sound like fun?\""}`
+	`"`
+	branch "EVN dialogue 915 offer branch 0 yes" "EVN dialogue 915 offer branch 0 no"
+		has "EVN bit 2"
+	label "EVN dialogue 915 offer branch 0 yes"
+	`"Seeing as you have actually opened a chapterhouse for the Guild of Bounty Hunters," Geoff muses, "you should be familiar with the way the Aurorans do things. Good luck."`
+		goto "EVN dialogue 915 offer branch 0 end"
+	label "EVN dialogue 915 offer branch 0 no"
+	`Okay," Geoff continues, "a little background so you know what you are getting yourself in for. "Firstly," he begins earnestly, "the Aurora system is several jumps south of the Tichel system. "The Empire itself is more like a loose confederacy of five major houses," he explains, "than a true Empire. It is ruled over by a Ruling Council made up of three representatives from each house and the Emperor, who comes from the 'first house', and he or she has the only veto vote. "The first family changes from time to time," he continues dryly, "and the current first house is the Moash house who have demonstrated that they are capable of underhanded dealings. "However," he says, grinning, "just because Moash is the first house doesn't mean that they are immune from attacks by the other houses. In fact far from it, the Moash house is probably attacked more often than any other house. In fact, such violent acts are an integral part of Auroran politics." He sits back still smiling. "Doesn't it all sound like fun?"`
+	label "EVN dialogue 915 offer branch 0 end"
 
 conversation "EVN dialogue 915 complete"
 	`"So what did you find?" asks Geoff after you step out of your ship. You relay the events of your trip and he raises his eyebrows when you mention the presence of the two vessels with Federation identifications in the Aurora system. "Are you sure?" he asks, surprised. You nod. "Can you tell me their designations?" You reply that the techies can probably do better than that once they analyze the data from your flight computer. "True," he agrees with a sheepish grin. "This incident has sparked my interest. I think that it will be very interesting to find out what is going on down there. It is not at all like Aurorans to impersonate the Federation. "Anyway," he continues brusquely, "stay close to the bar. I get the feeling that I will need your expertise again very soon."`

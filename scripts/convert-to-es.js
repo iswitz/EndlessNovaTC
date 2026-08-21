@@ -450,9 +450,7 @@ function evnConversationText(id) {
   const text = evnTextResource(id);
   if (!text) return null;
   return text
-    .replace(/\{G\s*"[^"]+"\s+"[^"]+"\}/g, "them")
-    .replace(/\{([bBpP])(\d+)\s+"([^"]*)"\s+"([^"]*)"\}/g, (_, kind, bit, yes, no) =>
-      `[EVN ${kind.toLowerCase()}${bit}: ${yes} | otherwise: ${no}]`)
+    .replace(/\{!?G\s*"(?:\\.|[^"])*"\s+"(?:\\.|[^"])*"\}/g, "them")
     .replace(/<CQ>|<CT>/g, "<cargo>")
     .replace(/<RST>|<DST>/g, "<destination>")
     .replace(/<RSY>|<DSY>|<SN>/g, "<system>")
@@ -471,12 +469,21 @@ function evnBitActions(expression) {
   return matches.map(token => ({ bit: token.startsWith("!") ? token.slice(2) : token.slice(1), negate: token.startsWith("!") }));
 }
 function evnMissionActions(expression) {
-  const tokens = String(expression || "").replace(/\0/g, "").trim().split(/\s+/).filter(Boolean);
+  const value = String(expression || "").replace(/\0/g, "").trim();
+  const tokens = value.match(/R\([^)]*\)|\^!?[bB]\d+|!?[A-Za-z]\d+/g) || [];
   const supported = [];
   const unsupported = [];
+  const compact = value.replace(/\s+/g, "");
+  if (tokens.join("").replace(/\s+/g, "") !== compact && value) return { supported, unsupported: [value] };
   for (const token of tokens) {
-    if (/^!?b\d+$/i.test(token)) supported.push({ bit: token.slice(token.startsWith("!") ? 2 : 1), negate: token.startsWith("!") });
-    else unsupported.push(token);
+    const bit = token.match(/^(\^|!?)([bB])(\d+)$/);
+    const opcode = token.match(/^([A-Za-z])(\d+)$/);
+    if (bit) {
+      if (bit[1] === "^") unsupported.push(token);
+      else supported.push({ type: "bit", bit: bit[3], negate: bit[1] === "!" });
+    } else if (opcode && /^(G|D|F|K|L|Q|X)$/i.test(opcode[1])) {
+      supported.push({ type: opcode[1].toUpperCase(), id: Number(opcode[2]), token });
+    } else unsupported.push(token);
   }
   return { supported, unsupported };
 }
@@ -537,15 +544,51 @@ function emitEvnBitActions(lines, expression, indent) {
   for (const action of actions) lines.push(`${indent}${action.negate ? "clear" : "set"} ${q(evnBitFlag(action.bit))}`);
   return actions.length;
 }
-function emitEvnMissionActions(lines, expression, indent) {
+function evnMissionName(missionId) {
+  const reference = referenceMissions.find(item => String(item.id) === String(missionId));
+  return reference ? `EVN: ${safeName(reference.name, `EVN mission ${missionId}`)}` : null;
+}
+function evnMissionMessageName(messageId) { return `EVN message ${messageId}`; }
+function emitEvnMissionActions(lines, expression, indent, context = {}) {
   const actions = evnMissionActions(expression);
-  for (const action of actions.supported) lines.push(`${indent}${action.negate ? "clear" : "set"} ${q(evnBitFlag(action.bit))}`);
+  for (const action of actions.supported) {
+    if (action.type === "bit") {
+      lines.push(`${indent}${action.negate ? "clear" : "set"} ${q(evnBitFlag(action.bit))}`);
+      continue;
+    }
+    if (action.type === "G" || action.type === "D") {
+      lines.push(`${indent}outfit ${q(nameOf("Outfit", action.id))} ${action.type === "G" ? 1 : -1}`);
+      continue;
+    }
+    if (action.type === "F") {
+      const missionName = evnMissionName(action.id);
+      if (missionName) lines.push(`${indent}fail ${q(missionName)}`);
+      else actions.unsupported.push(`${action.token} (unknown mission)`);
+      continue;
+    }
+    if (action.type === "K" || action.type === "L") {
+      lines.push(`${indent}${action.type === "K" ? "set" : "clear"} ${q(`EVN rank ${action.id}`)}`);
+      continue;
+    }
+    if (action.type === "X") {
+      lines.push(`${indent}set ${q(`EVN explored system ${action.id}`)}`);
+      continue;
+    }
+    if (action.type === "Q") {
+      const messageName = evnMissionMessageName(action.id);
+      const messages = evnStringListResource(action.id).map(evnNewsText).filter(Boolean);
+      if (messages.length) {
+        if (context.messages && !context.messages.has(messageName)) context.messages.set(messageName, messages);
+        lines.push(`${indent}message ${q(messageName)}`);
+      } else actions.unsupported.push(`${action.token} (missing STR# resource)`);
+    }
+  }
   if (actions.unsupported.length) lines.push(`${indent}# EVN unsupported mission actions: ${q(actions.unsupported.join(" "))}`);
   return actions;
 }
 function parseEvnBitExpression(expression) {
   const compact = String(expression || "").replace(/\0/g, "").replace(/\s+/g, "");
-  const tokens = compact.match(/[bBpP]\d+|[oO]\d+|[!&|()]/g) || [];
+  const tokens = compact.match(/[bBpPeE]\d+|[oO]\d+|[!&|()]/g) || [];
   if (!tokens.length || tokens.join("") !== compact) return null;
   let index = 0;
   function primary() {
@@ -556,7 +599,7 @@ function parseEvnBitExpression(expression) {
       return value;
     }
     const token = tokens[index++];
-    if (!token || (!/^[bBpP]\d+$/.test(token) && !/^[oO]\d+$/.test(token))) throw new Error("invalid EVN bit expression");
+    if (!token || (!/^[bBpPeE]\d+$/.test(token) && !/^[oO]\d+$/.test(token))) throw new Error("invalid EVN bit expression");
     return { type: "test", token: token.toLowerCase() };
   }
   function unary() {
@@ -602,12 +645,13 @@ function evnBitDnf(node, inverted = false) {
   return terms;
 }
 function evnEvnTestFlag(token) {
-  const match = String(token || "").match(/^([bpo])(\d+)$/i);
+  const match = String(token || "").match(/^([bpoe])(\d+)$/i);
   if (!match) return `EVN test ${token}`;
   const kind = match[1].toLowerCase();
   const id = Number(match[2]);
   if (kind === "b") return evnBitFlag(id);
   if (kind === "p") return id === 0 ? "EVN registration" : `EVN pilot record ${id}`;
+  if (kind === "e") return `EVN explored system ${id}`;
   const outfit = normalizedOf("Outfit", id);
   return `outfit: ${safeName(outfit && outfit.name, `EVN outfit ${id}`)}`;
 }
@@ -1070,17 +1114,63 @@ function evnMissionAvailabilitySupported(expression) {
   return Boolean(terms && terms.length && terms.length <= 32 && terms.every(term => term.every(item => item.flag)));
 }
 
+function evnConversationUnescape(text) {
+  return String(text || "").replace(/\\"/g, '"').replace(/\\\\/g, "\\");
+}
+function evnConversationParts(text) {
+  const parts = [];
+  const pattern = /\{(!?)([bBpP])(\d*)\s+"((?:\\.|[^"])*)"(?:\s+"((?:\\.|[^"])*)")?\}/g;
+  let last = 0;
+  let match;
+  while ((match = pattern.exec(String(text || "")))) {
+    if (match.index > last) parts.push({ type: "text", text: String(text).slice(last, match.index) });
+    const kind = match[2].toLowerCase();
+    const id = match[3] ? Number(match[3]) : 0;
+    parts.push({
+      type: "branch",
+      flag: kind === "p" ? "EVN registration" : evnBitFlag(id),
+      negate: match[1] === "!",
+      yes: evnConversationUnescape(match[4]),
+      no: evnConversationUnescape(match[5] || "")
+    });
+    last = match.index + match[0].length;
+  }
+  if (last < String(text || "").length) parts.push({ type: "text", text: String(text).slice(last) });
+  return parts.length ? parts : [{ type: "text", text: String(text || "") }];
+}
+function emitEvnConversationParts(lines, parts, baseName, state = { next: 0 }) {
+  for (const part of parts) {
+    if (part.type === "text") {
+      if (part.text) lines.push(`\t\`${part.text}\``);
+      continue;
+    }
+    const branchId = `${baseName} branch ${state.next++}`;
+    const yesLabel = `${branchId} yes`;
+    const noLabel = `${branchId} no`;
+    const joinLabel = `${branchId} end`;
+    lines.push(`\tbranch ${q(yesLabel)} ${q(noLabel)}`, `\t\t${part.negate ? "not" : "has"} ${q(part.flag)}`);
+    lines.push(`\tlabel ${q(yesLabel)}`);
+    emitEvnConversationParts(lines, evnConversationParts(part.yes), baseName, state);
+    lines.push(`\t\tgoto ${q(joinLabel)}`);
+    lines.push(`\tlabel ${q(noLabel)}`);
+    emitEvnConversationParts(lines, evnConversationParts(part.no), baseName, state);
+    lines.push(`\tlabel ${q(joinLabel)}`);
+  }
+}
 function missionConversation(lines, conversations, missionId, suffix, text, prefix = "\t\t") {
   if (!text) return null;
   const name = `EVN dialogue ${missionId} ${suffix}`;
   lines.push(`${prefix}conversation ${q(name)}`);
-  conversations.push(`conversation ${q(name)}`, `\t\`${text}\``, "");
+  conversations.push(`conversation ${q(name)}`);
+  emitEvnConversationParts(conversations, evnConversationParts(text), name);
+  conversations.push("");
   return name;
 }
 
 function convertMissionStubs() {
   const lines = ["# EV Nova mission catalog.", "# Supported mission filters, control-bit expressions, waypoints, actions, and recoverable text are mapped to ES.", "# Unsupported EVN selectors and opcodes remain visible in inactive stubs or inline comments.", ""];
   const conversations = [];
+  const messages = new Map();
   const seen = new Set();
   let active = 0;
   let stubs = 0;
@@ -1136,12 +1226,12 @@ function convertMissionStubs() {
       const acceptActions = evnMissionActions(data && data.OnAccept);
       if (acceptActions.supported.length || acceptActions.unsupported.length || loadText) {
         lines.push("\ton accept");
-        emitEvnMissionActions(lines, data && data.OnAccept, "\t\t");
+        emitEvnMissionActions(lines, data && data.OnAccept, "\t\t", { messages });
         missionConversation(lines, conversations, mission.id, "load", loadText);
       }
       lines.push("\ton complete");
       lines.push(`\t\tpayment ${Math.max(1, Math.round(Number(data.PayVal)))}`);
-      emitEvnMissionActions(lines, data && data.OnSuccess, "\t\t");
+      emitEvnMissionActions(lines, data && data.OnSuccess, "\t\t", { messages });
       const compGovtId = Number(data && data.CompGovt);
       const compReward = Number(data && data.CompReward);
       const compGovt = resources["gövt"] && resources["gövt"][`nova:${compGovtId}`];
@@ -1153,7 +1243,7 @@ function convertMissionStubs() {
       }
       missionConversation(lines, conversations, mission.id, "ship-done", shipDoneText);
       const shipDoneActions = evnMissionActions(data && data.OnShipDone);
-      if (shipDoneActions.supported.length || shipDoneActions.unsupported.length) emitEvnMissionActions(lines, data && data.OnShipDone, "\t\t");
+      if (shipDoneActions.supported.length || shipDoneActions.unsupported.length) emitEvnMissionActions(lines, data && data.OnShipDone, "\t\t", { messages });
       if (dropText) {
         lines.push("\ton visit");
         missionConversation(lines, conversations, mission.id, "drop", dropText);
@@ -1162,19 +1252,19 @@ function convertMissionStubs() {
       const failureActions = evnMissionActions(data && data.OnFailure);
       if (failureActions.supported.length || failureActions.unsupported.length || failText) {
         lines.push("\ton fail");
-        emitEvnMissionActions(lines, data && data.OnFailure, "\t\t");
+        emitEvnMissionActions(lines, data && data.OnFailure, "\t\t", { messages });
         missionConversation(lines, conversations, mission.id, "fail", failText);
       }
       const abortActions = evnMissionActions(data && data.OnAbort);
       if (abortActions.supported.length || abortActions.unsupported.length) {
         lines.push("\ton abort");
-        emitEvnMissionActions(lines, data && data.OnAbort, "\t\t");
+        emitEvnMissionActions(lines, data && data.OnAbort, "\t\t", { messages });
       }
       const refuseText = evnConversationText(data && data.RefuseText);
       const refuseActions = evnMissionActions(data && data.OnRefuse);
       if (refuseText || refuseActions.supported.length || refuseActions.unsupported.length) {
         lines.push("\ton decline");
-        emitEvnMissionActions(lines, data && data.OnRefuse, "\t\t");
+        emitEvnMissionActions(lines, data && data.OnRefuse, "\t\t", { messages });
         missionConversation(lines, conversations, mission.id, "decline", refuseText);
       }
       lines.push("");
@@ -1187,10 +1277,23 @@ function convertMissionStubs() {
     lines.push("\t\tnever");
     if (data && data.AvailBits) lines.push(`\t# EVN availability preserved: ${q(String(data.AvailBits).replace(/\0/g, "").trim())}`);
     if (data && data.ReturnStel != null) lines.push(`\t# EVN destination preserved: ${q(String(data.ReturnStel))}`);
+    for (const field of ["OnAccept", "OnRefuse", "OnSuccess", "OnFailure", "OnAbort", "OnShipDone"]) {
+      const action = String(data && data[field] || "").replace(/\0/g, "").trim();
+      if (action) lines.push(`\t# EVN ${field} preserved: ${q(action)}`);
+    }
     lines.push("");
   }
   lines.push(...conversations);
   write(path.join(output, "data", "missions.txt"), lines.join("\n"));
+  if (messages.size) {
+    const messageLines = ["# EVN STR# messages referenced by mission Q actions.", "# EVN message lists are reduced to their first recoverable string because ES messages have one text value.", ""];
+    for (const [messageName, values] of messages) {
+      messageLines.push(`message ${q(messageName)}`, `\ttext ${esText(values[0])}`);
+      if (values.length > 1) messageLines.push(`\t# Additional EVN strings preserved in source: ${values.length - 1}`);
+      messageLines.push("");
+    }
+    write(path.join(output, "data", "mission-messages.txt"), messageLines.join("\n"));
+  }
   console.log(`missions { active: ${active}, stubs: ${stubs}, conversations: ${conversations.filter(line => line.startsWith("conversation ")).length} }`);
 }
 
