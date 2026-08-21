@@ -85,6 +85,22 @@ function referenceShipRecord(shipId) {
   const target = String(refId(shipId));
   return (referenceData["shïp"] || []).find(record => String(record.id) === target) || null;
 }
+function referenceWeaponRecord(weaponId) {
+  const target = String(refId(weaponId));
+  return (referenceData["wëap"] || []).find(record => String(record.id) === target) || null;
+}
+function referenceOutfitRecord(outfitId) {
+  const target = String(refId(outfitId));
+  return (referenceData["oütf"] || []).find(record => String(record.id) === target) || null;
+}
+function ammoOutfitNameForWeapon(weaponId) {
+  const target = String(refId(weaponId));
+  const record = (referenceData["oütf"] || []).find(item => {
+    const data = item.data || {};
+    return Number(data.ModType) === 3 && String(data.ModVal) === target;
+  });
+  return record ? nameOf("Outfit", `nova:${record.id}`) : null;
+}
 function hexNumber(value, fallback = 0) {
   const text = String(value == null ? "" : value).trim();
   if (!text) return fallback;
@@ -819,14 +835,16 @@ function convertShips() {
 }
 
 function convertOutfits() {
-  const lines = ["# Generated from EV Nova oütf and wëap resources.", "# EVN availability, mission bits, and government tech levels require later mapping.", ""];
-  const weapons = normalized.Weapon || {};
+  const lines = ["# Generated from EV Nova oütf and wëap resources.", "# EVN availability, mission bits, and government tech levels require later mapping.", "# Weapon damage and timing use raw EVN wëap fields; visual effects remain asset work.", ""];
   for (const outfit of Object.values(normalized.Outfit || {})) {
     if (outfit.parseError) continue;
     const name = safeName(outfit.name, `EVN outfit ${outfit.id}`);
+    const rawOutfit = referenceOutfitRecord(outfit.id);
+    const rawOutfitData = rawOutfit && rawOutfit.data ? rawOutfit.data : {};
+    const isAmmo = Number(rawOutfitData.ModType) === 3;
     const weaponRefs = Object.keys(outfit.weapons || {});
     const firstWeapon = weaponRefs.length ? normalizedOf("Weapon", weaponRefs[0]) : null;
-    const category = firstWeapon && firstWeapon.exitType === "turret" ? "Turrets" : weaponRefs.length ? "Guns" : "Systems";
+    const category = isAmmo ? "Ammunition" : firstWeapon && firstWeapon.exitType === "turret" ? "Turrets" : weaponRefs.length ? "Guns" : "Systems";
     const fields = [
       ["category", category],
       ["cost", number(outfit.price)],
@@ -843,23 +861,50 @@ function convertOutfits() {
       lines.push(`\t\t${q(licenseName(outfitTech))}`);
     }
     for (const [key, value] of fields) add(lines, key, value);
+    if (isAmmo) lines.push(`\t${q("ammo")} ${q(name)}`);
     for (const ref of weaponRefs) {
       const weapon = normalizedOf("Weapon", ref);
       if (!weapon || weapon.parseError) continue;
+      const rawWeapon = referenceWeaponRecord(weapon.id);
+      const raw = rawWeapon && rawWeapon.data ? rawWeapon.data : {};
+      const ammoName = ammoOutfitNameForWeapon(weapon.id);
+      const guidance = number(raw.Guidance, -1);
+      const ammoType = number(raw.AmmoType, -1);
+      const subCount = Math.max(0, Math.trunc(number(raw.SubCount, 0)));
+      const submunitionName = subCount > 0 && number(raw.SubType, -1) >= 0 ? ammoOutfitNameForWeapon(`nova:${raw.SubType}`) : null;
+      const damage = value => Math.max(0, number(value, 0));
       const weaponFields = [
         ["sprite", `projectile/${safeName(weapon.name, name).replace(/[^A-Za-z0-9]+/g, "_").toLowerCase()}`],
         ["sound", weaponSoundId(weapon.id) == null ? null : `evn-${weaponSoundId(weapon.id)}`],
-        ["inaccuracy", number(weapon.accuracy)],
-        ["velocity", number(weapon.shotSpeed) / 200],
-        ["lifetime", number(weapon.shotDuration)],
-        ["reload", number(weapon.fireRate) ? 60 / number(weapon.fireRate) : 0],
-      ["shield damage", number(weapon.damageType === "ion" ? 0 : weapon.physics && weapon.physics.shield)],
-      ["hull damage", number(weapon.physics && weapon.physics.armor)],
-        ["ion damage", number(weapon.physics && weapon.physics.ionization)],
+        ["inaccuracy", number(raw.Inaccuracy, number(weapon.accuracy))],
+        ["velocity", number(raw.Speed, number(weapon.shotSpeed)) / 200],
+        ["lifetime", number(raw.Count, number(weapon.shotDuration))],
+        ["reload", number(raw.Reload, number(weapon.fireRate) ? 60 / number(weapon.fireRate) : 0)],
+        ["shield damage", damage(raw.EnergyDmg)],
+        ["hull damage", damage(raw.MassDmg)],
+        ["ion damage", damage(raw.Ionization)],
+        ["blast radius", damage(raw.BlastRadius)],
+        ["hit force", number(raw.Impact, number(weapon.knockback))],
+        ["burst reload", number(raw.BurstCount, 0) > 0 ? number(raw.BurstReload) : null],
+        ["burst count", number(raw.BurstCount, 0) > 0 ? number(raw.BurstCount) : null],
+        ["missile strength", guidance === 1 && number(raw.Durability, 0) > 0 ? number(raw.Durability) : null],
+        ["ammo", ammoName],
+        ["firing fuel", ammoType <= -1000 ? Math.abs(ammoType + 1000) / 10 : null],
         ["turret turn", 1]
       ];
       lines.push(`\t${q("weapon")}`);
+      if (guidance === 1) lines.push(`\t\t${q("homing")}`);
+      if (submunitionName) lines.push(`\t\t${q("submunition")} ${q(submunitionName)} ${subCount}`);
+      if (subCount > 0 && !submunitionName) lines.push(`\t\t# EVN SubType ${number(raw.SubType, -1)} has no mapped ammo outfit.`);
+      if (ammoType >= 0 && !ammoName) lines.push(`\t\t# EVN AmmoType ${ammoType} has no mapped ammo outfit.`);
+      if (guidance === 0 || guidance === 3) lines.push(`\t\t# EVN beam Guidance ${guidance} requires ES beam visual tuning.`);
+      if (number(raw.ProxRadius, 0) > 0) lines.push(`\t\t# EVN ProxRadius ${number(raw.ProxRadius)} has no direct ES field.`);
       for (const [key, value] of weaponFields) add(lines, key, value, "\t\t");
+    }
+    if (firstWeapon) {
+      const ammoName = ammoOutfitNameForWeapon(firstWeapon.id);
+      const capacity = number(rawOutfitData.Max, 0);
+      if (ammoName && capacity > 0) add(lines, `${ammoName.toLowerCase()} capacity`, capacity);
     }
     add(lines, "description", outfit.desc || "");
     lines.push("");

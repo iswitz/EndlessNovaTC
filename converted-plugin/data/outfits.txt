@@ -1,5 +1,6 @@
 # Generated from EV Nova oütf and wëap resources.
 # EVN availability, mission bits, and government tech levels require later mapping.
+# Weapon damage and timing use raw EVN wëap fields; visual effects remain asset work.
 
 "outfit" "Light Blaster"
 	"plural" "Light Blasters"
@@ -12,15 +13,18 @@
 	"outfit space" -3
 	"gun ports" -1
 	"weapon"
+		# EVN ProxRadius 5 has no direct ES field.
 		"sprite" "projectile/light_blaster"
 		"sound" "evn-208"
 		"inaccuracy" 9
 		"velocity" 7.5
 		"lifetime" 13
-		"reload" 20
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 10
+		"shield damage" 4
+		"hull damage" 1
 		"ion damage" 0
+		"blast radius" 6
+		"hit force" 10
 		"turret turn" 1
 	"description" "The various versions of the Pyrogenesis Compound Blaster have been the standard defense armament for Federation ships for the past 300 years.  Utilizing a magnetic containment bottle to collect photon packets before release, the Compound Blaster is capable of generating a kinetic impulse disproportionately large for a weapon of its meager power requirements.  The version designed for small ships, the Light Compound Blaster is easily held by the smallest of fighters."
 
@@ -35,15 +39,18 @@
 	"outfit space" -8
 	"gun ports" -1
 	"weapon"
+		# EVN ProxRadius 5 has no direct ES field.
 		"sprite" "projectile/medium_blaster"
 		"sound" "evn-209"
 		"inaccuracy" 4
 		"velocity" 7
 		"lifetime" 25
-		"reload" 26.000000000000004
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 13
+		"shield damage" 10
+		"hull damage" 5
 		"ion damage" 0
+		"blast radius" 9
+		"hit force" 20
 		"turret turn" 1
 	"description" "Pyrogenesis' midrange product is the unimaginatively named Medium Blaster.  This variant is normally carried by capital ships only; the weight alone makes it difficult for anything smaller to mount it.  While it's slower and more bulky than its lesser sibling, the Medium Blaster is much more powerful.  The lack of a turret mechanism does drop the weight some. Requires: Heavy Weapons License{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ' '}"
 
@@ -58,15 +65,18 @@
 	"outfit space" -10
 	"turret mounts" -1
 	"weapon"
+		# EVN ProxRadius 5 has no direct ES field.
 		"sprite" "projectile/light_blaster_turret"
 		"sound" "evn-208"
 		"inaccuracy" 10
 		"velocity" 7.5
 		"lifetime" 15
-		"reload" 20
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 10
+		"shield damage" 4
+		"hull damage" 1
 		"ion damage" 0
+		"blast radius" 6
+		"hit force" 10
 		"turret turn" 1
 	"description" "The famous Light Blaster, but on a turret which Pyrogenesis copied from its younger rival Rauther.  The turret mechanism is very light and agile, making this an ideal anti-fighter weapon.  Again, this weapon is not able to be mounted on fighters, although independent traders may attempt to mount one on a largish freighter."
 
@@ -81,15 +91,18 @@
 	"outfit space" -25
 	"turret mounts" -1
 	"weapon"
+		# EVN ProxRadius 5 has no direct ES field.
 		"sprite" "projectile/medium_blaster_turret"
 		"sound" "evn-209"
 		"inaccuracy" 5
 		"velocity" 7
 		"lifetime" 30
-		"reload" 18
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 9
+		"shield damage" 10
+		"hull damage" 5
 		"ion damage" 0
+		"blast radius" 9
+		"hit force" 20
 		"turret turn" 1
 	"description" "The Medium Blaster really comes into its own when it becomes turreted.  Combined with sophisticated Glenn:Cyber targeting scopes, these weapons score easy hits on all but the smallest space vessels.  The Medium Blaster Turret does tend to lag a little on the faster capital ships.  The IDA Frigate mounts two of these batteries as standard. Requires: Heavy Weapons License{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
@@ -104,15 +117,18 @@
 	"outfit space" -45
 	"turret mounts" -1
 	"weapon"
+		# EVN ProxRadius 5 has no direct ES field.
 		"sprite" "projectile/heavy_blaster_turret"
 		"sound" "evn-206"
 		"inaccuracy" 5
 		"velocity" 6.5
 		"lifetime" 60
-		"reload" 40
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 20
+		"shield damage" 35
+		"hull damage" 13
 		"ion damage" 0
+		"blast radius" 12
+		"hit force" 40
 		"turret turn" 1
 	"description" "So big and slow that only a turret mechanism allows it to hit anything at all, the Heavy Blaster Turret is the grand-daddy of the Pyrogenesis line of directed energy firepower.  Mounted as standard on the E-60 Carrier, the pride of the Federation fleet, the Heavy Blaster chews through shields and armor alike.  The short range and slow speed of the enormous packets limit the effectiveness of this weapon at anything other than boarding range. Requires: Heavy Weapons {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
@@ -127,15 +143,20 @@
 	"outfit space" -20
 	"turret mounts" -1
 	"weapon"
+		# EVN ProxRadius 5 has no direct ES field.
 		"sprite" "projectile/quad_light_blaster_turret"
 		"sound" "evn-212"
 		"inaccuracy" 10
 		"velocity" 10
 		"lifetime" 12
-		"reload" 10
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 5
+		"shield damage" 4
+		"hull damage" 1
 		"ion damage" 0
+		"blast radius" 6
+		"hit force" 10
+		"burst reload" 20
+		"burst count" 4
 		"turret turn" 1
 	"description" "Comprised of quadruple Pyrogenesis Blaster Lasers on the most technically advanced turret they offer, the Quad Light Blaster system comes with a guarantee that it will dispose of your hostile fighter problems once and for all.  Shipboard gunners salivate at the thought of being permanently assigned to one of these beauties.  While the QLB System is heavy, as a point defence weapon system it automatically tracks, without any input from the bridge, incoming missiles and enemy fighter squadrons and pours a truly prodigious amount of fire into them, creating havoc. Requires: Heavy Weapons License, Protective Technologies {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
@@ -150,27 +171,35 @@
 	"outfit space" -5
 	"gun ports" -1
 	"weapon"
+		"homing"
+		# EVN ProxRadius 2 has no direct ES field.
 		"sprite" "projectile/ir_missile"
 		"sound" "evn-207"
 		"inaccuracy" 2
 		"velocity" 6.75
 		"lifetime" 100
-		"reload" 30
-		"shield damage" 0
-		"hull damage" 4
+		"reload" 15
+		"shield damage" 10
+		"hull damage" 20
 		"ion damage" 0
+		"blast radius" 10
+		"hit force" 50
+		"missile strength" 4
+		"ammo" "IR Missile"
 		"turret turn" 1
+	"ir missile capacity" 4
 	"description" "Kayel Solutions (KLSol) have won 'Best of Show' 26 years running for their clever adaptation of the Infrared Missile launcher.  Based on the launcher mounted by the F-29 Anaconda and the E-41 Destroyer, the KLSol version is a tightly integrated set of standardized components that can easily swap between a hundred different classes of ship with only a minor, dealer serviceable tweak of the software.  The KLSol IR Missile Launcher does produce a fair amount of heat for such a small unit, but it's easily compensated for. Requires: Missile Weapons License{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "IR Missile"
 	"plural" "IR Missiles"
 	licenses
 		"EVN Tech License 4"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 750
 	"thumbnail" "outfit/ir_missile"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "IR Missile"
 	"description" "The Infrared Missile uses the simplest of tracking systems to deliver its small payload.  It's not much to look at, but it's cheap and promiscuously available.  The weapon itself can be loaded into a number of aftermarket launchers, including several highly illegal handheld ones used by Rebellion Vacuum Soldiers. Requires: Missile Weapons License{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Radar Missile Launcher"
@@ -184,27 +213,35 @@
 	"outfit space" -7
 	"gun ports" -1
 	"weapon"
+		"homing"
+		# EVN ProxRadius 4 has no direct ES field.
 		"sprite" "projectile/radar_missile"
 		"sound" "evn-213"
 		"inaccuracy" 1
 		"velocity" 5.5
 		"lifetime" 110
-		"reload" 60
-		"shield damage" 0
-		"hull damage" 8
+		"reload" 30
+		"shield damage" 20
+		"hull damage" 40
 		"ion damage" 0
+		"blast radius" 20
+		"hit force" 65
+		"missile strength" 8
+		"ammo" "Radar Missile"
 		"turret turn" 1
+	"radar missile capacity" 3
 	"description" "GLiMMER, a band of propellerheads turned pro, created the first modern radar guided missile and launcher system way back in 2045 AD.  This design, produced under license by KLSol, is practically identical to that original design, albeit with KLSol's usual software driver genius.  You can mount this unit in any spacefaring vessel with enough expansion space to hold it.  There have even been some reports that it has been successfully incorporated into Auroran vessels! Requires: Missile Weapons License{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Radar Missile"
 	"plural" "Radar Missiles"
 	licenses
 		"EVN Tech License 5"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 1000
 	"thumbnail" "outfit/radar_missile"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Radar Missile"
 	"description" "Radar as a concept and as a useable weapons guidance system has been around since the middle of the twentieth century AD.  As humanity reached for the stars they brought their technology with them, and radar, which is not reliant on a medium for effectiveness, quickly became a necessary tool for guiding missiles.  This modern radar guided missile is a cheap GLiMMER knock-off. Requires: Missile Weapons License{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Gravimetric Missile Launcher"
@@ -218,27 +255,35 @@
 	"outfit space" -10
 	"gun ports" -1
 	"weapon"
+		"homing"
+		# EVN ProxRadius 8 has no direct ES field.
 		"sprite" "projectile/grav_missile"
 		"sound" "evn-203"
 		"inaccuracy" 3
 		"velocity" 5.5
 		"lifetime" 175
-		"reload" 90
-		"shield damage" 0
-		"hull damage" 12
+		"reload" 45
+		"shield damage" 40
+		"hull damage" 80
 		"ion damage" 0
+		"blast radius" 30
+		"hit force" 80
+		"missile strength" 12
+		"ammo" "Gravimetric Missile"
 		"turret turn" 1
+	"gravimetric missile capacity" 2
 	"description" "Gravimetric missiles require a very stable and well shielded position from which to get their bearings on a target.  The GLi-tech corporation ( which was formerly known as GLiMMER, before a 120 NC name change for legal purposes) makes and sells the only non-military implementation of the gravimetric missile system.  The monopoly market share that GLi-tech enjoys does not bode well for the price. Requires: Missile Weapons {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Gravimetric Missile"
 	"plural" "Gravimetric Missiles"
 	licenses
 		"EVN Tech License 115"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 1750
 	"thumbnail" "outfit/gravimetric_missile"
 	"mass" 1
 	"outfit space" -1
+	"ammo" "Gravimetric Missile"
 	"description" "Gravimetric missiles lock onto the mass signature of a target.  They cannot be jammed by any known means, and they carry the biggest payload of any missile on the open market.  They are also far and away the most expensive.  For those willing to pay the price, the Gravimetric missile will almost never miss its target, and will destroy smaller ships with one hit. Requires: Missile Weapons {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Etheric Wake Missile Launcher"
@@ -252,27 +297,35 @@
 	"outfit space" -7
 	"gun ports" -1
 	"weapon"
+		"homing"
+		# EVN ProxRadius 12 has no direct ES field.
 		"sprite" "projectile/ew_missile"
 		"sound" "evn-200"
 		"inaccuracy" 3
 		"velocity" 4.5
 		"lifetime" 130
-		"reload" 90
-		"shield damage" 0
-		"hull damage" 16
-		"ion damage" 0
+		"reload" 45
+		"shield damage" 40
+		"hull damage" 80
+		"ion damage" 2
+		"blast radius" 40
+		"hit force" 95
+		"missile strength" 16
+		"ammo" "Etheric Wake Missile"
 		"turret turn" 1
+	"etheric wake missile capacity" 2
 	"description" "The launcher for the new Etheric Wake missile is a streamlined unit perhaps as long as three fully grown men.  It contains ultra high-tech cybernetic connectors for the next generation of onboard ship computers, and damping field generators for the positron warhead that the evil-looking missile carries.  Cooling vents longer than baseball bats hiss and squeal as the EW missiles load into place inside it. Requires: Missile Weapons License"
 
 "outfit" "Etheric Wake Missile"
 	"plural" "Etheric Wake Missiles"
 	licenses
 		"EVN Tech License 113"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 2000
 	"thumbnail" "outfit/etheric_wake_missile"
 	"mass" 1
 	"outfit space" -1
+	"ammo" "Etheric Wake Missile"
 	"description" "Because of the unique graviton emissions of the Wraith, a new targetable fire-and-forget weapon had to be devised to combat them.  The Etheric Wake missile uses a little-known principle of subspace disturbance to track Wraith through their flight path by detecting their wash in space-time.  Since the Wraith and the Polaris both use Etheric Wave hyperdrives (although the Wraith version is much more sophisticated), it has been theorized that this weapon will work well versus Polaris jamming. Requires: Missile Weapons License"
 
 "outfit" "Raven Rocket Pod"
@@ -291,22 +344,27 @@
 		"inaccuracy" 1
 		"velocity" 7.5
 		"lifetime" 120
-		"reload" 30
-		"shield damage" 0
-		"hull damage" 55
+		"reload" 15
+		"shield damage" 8
+		"hull damage" 12
 		"ion damage" 0
+		"blast radius" 10
+		"hit force" 45
+		"ammo" "Raven Rocket"
 		"turret turn" 1
+	"raven rocket capacity" 6
 	"description" "An underslung rack for the self-loading Raven Rockets.  No guidance system is present; this is simply a holder for the rocket packs."
 
 "outfit" "Raven Rocket"
 	"plural" "Raven Rockets"
 	licenses
 		"EVN Tech License 3"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 100
 	"thumbnail" "outfit/raven_rocket"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Raven Rocket"
 	"description" "Raven Rockets are the simplest chemical explosive projectile you can get.  They are fast, but they have small payloads and are unguided.  Raven Rockets can be devastating when multiple launch systems are installed, and because they have no active targeting systems most 'Point Defense' systems cannot target them."
 
 "outfit" "Raven Rocket Turret"
@@ -320,15 +378,18 @@
 	"outfit space" -15
 	"gun ports" -1
 	"weapon"
+		# EVN AmmoType 10 has no mapped ammo outfit.
 		"sprite" "projectile/raven_turret"
 		"sound" "evn-217"
 		"inaccuracy" 2
 		"velocity" 6.5
 		"lifetime" 120
-		"reload" 40
-		"shield damage" 0
-		"hull damage" 5
+		"reload" 20
+		"shield damage" 6
+		"hull damage" 12
 		"ion damage" 0
+		"blast radius" 10
+		"hit force" 45
 		"turret turn" 1
 	"description" "The Raven Rocket turret mounts two unguided pods on a swivel base.  It comes with a fairly basic tie-in to your vessel's sensors which allows it to track targets.  You'll still need to maneuver fairly well to get the rockets to hit small targets, but these pods allow slower ships to use the Raven."
 
@@ -343,27 +404,33 @@
 	"outfit space" -3
 	"gun ports" -1
 	"weapon"
+		# EVN ProxRadius 30 has no direct ES field.
 		"sprite" "projectile/stellar_grnd_"
 		"sound" "evn-219"
 		"inaccuracy" 0
 		"velocity" 0
 		"lifetime" 90
-		"reload" 100
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 50
+		"shield damage" 15
+		"hull damage" 30
 		"ion damage" 0
+		"blast radius" 90
+		"hit force" 220
+		"ammo" "Stellar Grenade"
 		"turret turn" 1
+	"stellar grenade capacity" 3
 	"description" "This weapon is a small airlock mounted in the underside of a ship.  Simply place a grenade in the receptacle provided and then pull the lever.  The airlock will cycle, and then a mechanical arm-launch system will fling the projectile backwards.  The simplicity of the launcher is reflected by its bargain-basement price."
 
 "outfit" "Stellar Grenade"
 	"plural" "Stellar Grenades"
 	licenses
 		"EVN Tech License 3"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 100
 	"thumbnail" "outfit/stellar_grenade"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Stellar Grenade"
 	"description" "The Stellar Grenade is a device designed to throw pursuing ships off your tail.  Dropping a few of these little gems out the hatch will keep adversaries off your tail, or make them regret it if they follow you.  Bigger targets will be slowed a little."
 
 "outfit" "Polaron Cannon"
@@ -377,15 +444,22 @@
 	"outfit space" -25
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 0 requires ES beam visual tuning.
+		# EVN ProxRadius 3 has no direct ES field.
 		"sprite" "projectile/polaron_cannon"
 		"sound" "evn-210"
 		"inaccuracy" 2
 		"velocity" 0
 		"lifetime" 1
 		"reload" 0
-		"shield damage" 0
-		"hull damage" 0
+		"shield damage" 6
+		"hull damage" 2
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 10
+		"burst reload" 30
+		"burst count" 60
+		"firing fuel" 1
 		"turret turn" 1
 	"description" "Polarons are the new kid on the block in Direct Energy Weapon (DEW) systems.  Polarons pack a punch with little generation loss, although they are hard to control out of the barrel.  In some ways this cannon is rather like a Tesla coil in space, as it arcs rather than fires.  You will need to be close to other ships to use this weapon effectively.  The Polaron generation technology is very new, so it's also very expensive. Requires: Exotic Ships & Weapons License"
 
@@ -400,15 +474,22 @@
 	"outfit space" -25
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 3 requires ES beam visual tuning.
+		# EVN ProxRadius 1 has no direct ES field.
 		"sprite" "projectile/ion_cannon"
 		"sound" "evn-230"
 		"inaccuracy" 4
 		"velocity" 0
 		"lifetime" 1
 		"reload" 0
-		"shield damage" 0
-		"hull damage" 0
-		"ion damage" 0
+		"shield damage" 4
+		"hull damage" 2
+		"ion damage" 2
+		"blast radius" 0
+		"hit force" 20
+		"burst reload" 0
+		"burst count" 60
+		"firing fuel" 0.5
 		"turret turn" 1
 	"description" "The Rauther Power Industries Ion Particle Cannon is amongst the most powerful directed energy weapons in the known galaxy.  Mounted on a 360¡/270¡ firing platform, the weapons accuracy is unmatched, delivering incredibly destructive pulses of stripped helium nuclei, and its rotating phase excels in damaging shields and armor. The only major drawbacks of the Ion Cannon are its heavy power requirement and large mass. Requires: Exotic Ships & Weapons {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
@@ -428,10 +509,12 @@
 		"inaccuracy" 2
 		"velocity" 6
 		"lifetime" 50
-		"reload" 40
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 20
+		"shield damage" 5
+		"hull damage" 10
 		"ion damage" 0
+		"blast radius" 20
+		"hit force" 40
 		"turret turn" 1
 	"description" "The Fusion Pulse Cannon, like most Aurora technology, is both crude and brutal.  However, the weapon's stocky build and inefficient containment fields still provide a highly effective energy packet.  Perhaps the most interesting feature of the weapon is the fact that the fusion pulses leave the barrel of the weapon while still at meta-reactive temperatures.  It is for this reason that the FPC should not be fired at close range."
 
@@ -451,10 +534,12 @@
 		"inaccuracy" 4
 		"velocity" 5.5
 		"lifetime" 55
-		"reload" 30
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 15
+		"shield damage" 7
+		"hull damage" 14
 		"ion damage" 0
+		"blast radius" 20
+		"hit force" 40
 		"turret turn" 1
 	"description" "As the FPC is cheap and easy to build, the Auroran houses have opted to mount a turreted version of the cannon on almost all ships.  It's rare that you'll find even a freighter without the weapon, in either its forward-firing or its turreted versions.  The turret adds some tracking to the otherwise slow FPC blasts, but the overall design is very effective.  Just ask the Federation military commanders who have lost armadas to this chunky gun."
 
@@ -474,22 +559,27 @@
 		"inaccuracy" 0
 		"velocity" 9.25
 		"lifetime" 40
-		"reload" 30
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 15
+		"shield damage" 30
+		"hull damage" 40
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 40
+		"ammo" "Wraithii"
 		"turret turn" 1
+	"wraithii capacity" 4
 	"description" "Wraithii are tiny capsules of polarons contained in a mar-graviton field.  A Wraith Cannon fires these capsules via simple biomechanics, and the capsules burst on impact, releasing a powerful kinetic force.  These guns are mounted as standard on the Dragon, and can be retrofitted to most ships on the market.  The Nil'kemorya keep a careful eye on these weapons, however, and only the most favored of outsiders are ever allowed to buy them."
 
 "outfit" "Wraithii"
 	"plural" "Wraithiis"
 	licenses
 		"EVN Tech License 133"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 1000
 	"thumbnail" "outfit/wraithii"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Wraithii"
 	"description" "The polarons for Wraithii are harvested by deep-space mining scoops run by the Tre'pira.  These polarons are then shipped to P'aedt facilities for encapsulation in the mar-graviton field that will hold them until they impact at a speed of greater than 20 kilometers an hour.  Needless to say, the final packets are handled with kid gloves.  It is a testament to the Tre'pira and the P'aedt that no accidents with Wraithii have ever occurred."
 
 "outfit" "Capacitor Pulse Laser"
@@ -503,15 +593,22 @@
 	"outfit space" -40
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 0 requires ES beam visual tuning.
+		# EVN ProxRadius 2 has no direct ES field.
 		"sprite" "projectile/pulse_laser"
 		"sound" "evn-225"
 		"inaccuracy" 0
 		"velocity" 0
 		"lifetime" 15
-		"reload" 30
-		"shield damage" 0
-		"hull damage" 0
-		"ion damage" 0
+		"reload" 15
+		"shield damage" 16
+		"hull damage" 8
+		"ion damage" 4
+		"blast radius" 0
+		"hit force" 30
+		"burst reload" 15
+		"burst count" 15
+		"firing fuel" 25
 		"turret turn" 1
 	"description" "Perhaps the only weapon to require a ship to be built around it, the Capacitor Pulse Laser stores the energy created in Polaris fusion reactors to be discharged in a single beam lasting only a few short seconds.  For that short time, armor and shields may as well be wisps of smoke for all the good they will do against the fury of the most violent energy discharge mankind has yet created.  Arachnids and Scarabs are both built around CPL systems{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
@@ -526,15 +623,19 @@
 	"outfit space" -15
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 0 requires ES beam visual tuning.
+		# EVN ProxRadius 1 has no direct ES field.
 		"sprite" "projectile/biorelay_laser"
 		"sound" "evn-232"
 		"inaccuracy" 0
 		"velocity" 0
 		"lifetime" 1
 		"reload" 0
-		"shield damage" 0
-		"hull damage" 0
+		"shield damage" 8
+		"hull damage" 4
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 5
 		"turret turn" 1
 	"description" "The BioRelay is a thin laser beam weapon mounted in the framework of Striker and Manta vessels.  The BioRelay is a series of cellular storage capacitors that discharge linearly to provide a steady power curve for the beam.  As such, the heat generated from the laser body is minimal, which keeps the size down for the Manta and Striker, and yet packs a punch compared to packeted weapons such as the Federation blasters{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
@@ -549,27 +650,34 @@
 	"outfit space" -25
 	"gun ports" -1
 	"weapon"
+		"homing"
+		# EVN ProxRadius 10 has no direct ES field.
 		"sprite" "projectile/polaron_torp_"
 		"sound" "evn-211"
 		"inaccuracy" 0
 		"velocity" 6.5
 		"lifetime" 250
-		"reload" 160
-		"shield damage" 0
-		"hull damage" 0
-		"ion damage" 0
+		"reload" 80
+		"shield damage" 200
+		"hull damage" 200
+		"ion damage" 20
+		"blast radius" 20
+		"hit force" 200
+		"ammo" "Polaron Torpedo"
 		"turret turn" 1
+	"polaron torpedo capacity" 2
 	"description" "This launcher ties into a ship's main computer core (or neural network, in the case of Polaris ships).  It tracks a target ship, and then calculates the complex field generation parameters for the Polaron Flux Coils in the tube.  By varying the quantity, spin and charge of the newly generated polarons, the tube can give the polaron 'virtual structure' a good bead on a target before the preprogrammed field generator in the heart of the energy burst takes over{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Polaron Torpedo"
 	"plural" "Polaron Torpedos"
 	licenses
 		"EVN Tech License 9"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 2500
 	"thumbnail" "outfit/polaron_torpedo"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Polaron Torpedo"
 	"description" "Having no mass, the Polaron Torpedo is a masterpiece of non-corporeal engineering.  The charge and spin of the huge polaron virtual structure is set by the launcher at firing time.  The chaos mathematics of the field interaction is calculated by the neural net of the Polaris vessel, which makes sure that the field will collapse in such a way that it will steer toward the target from the tube.  A tiny field generator hovering in the middle of the torpedo modifies the field strengths to correct for mid-flight target variations, and provides the only part of the weapon system that has any mass whatsoever{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Viper Bay"
@@ -587,23 +695,28 @@
 		"sound" "evn-221"
 		"inaccuracy" 0
 		"velocity" 2
-		"lifetime" 0
-		"reload" 120
+		"lifetime" 30
+		"reload" 60
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Viper"
 		"turret turn" 1
+	"viper capacity" 2
 	"description" "A few days is all it takes to convert sections of your ship into a launchbay for Viper fighters.  The conversion comes complete with everything you'll need to refuel, re-arm and service a maximum force of four Vipers. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Viper"
 	"plural" "Vipers"
 	licenses
 		"EVN Tech License 6"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 100000
 	"thumbnail" "outfit/viper"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Viper"
 	"description" "With the rapid development of space flight, it was inevitable that sports (particularly racing) would come to fruition sooner rather than later.  Power Sled racing stood up to the challenge.  A few intrepid hot-rodders noticed that one particular sled, the Viper, took very well to a bit of extra weight in the form of armor and armament.  With a little engine tweaking, these modified Vipers, designated F-23, were selected by the Federation as the mainstay of their fighter wings. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Anaconda Bay"
@@ -621,23 +734,28 @@
 		"sound" "evn-221"
 		"inaccuracy" 0
 		"velocity" 1.75
-		"lifetime" 0
-		"reload" 140
+		"lifetime" 30
+		"reload" 70
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Anaconda"
 		"turret turn" 1
+	"anaconda capacity" 2
 	"description" "Anacondas can provide long-range intercept capability for a vessel.  This bay allows you to outfit a maximum of two of them. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Anaconda"
 	"plural" "Anacondas"
 	licenses
 		"EVN Tech License 6"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 150000
 	"thumbnail" "outfit/anaconda"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Anaconda"
 	"description" "The main problem with the Viper as a fighter craft is a complete lack of any form of explosive projectile.  A new variant that has the 'long distance kill' capacity, based on the Viper chassis, has been the Federation's choice of Space Superiority Fighter ever since.  Although this ship, named the Anaconda, suffers from a slightly slower acceleration and top speed than the Viper, its ability to destroy enemy fighters before that fighter can get within gun range more than compensates. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Firebird Bay"
@@ -655,23 +773,28 @@
 		"sound" "evn-201"
 		"inaccuracy" 0
 		"velocity" 1.75
-		"lifetime" 0
-		"reload" 126
+		"lifetime" 30
+		"reload" 63
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Firebird"
 		"turret turn" 1
+	"firebird capacity" 1
 	"description" "The Auroran shipwrights can install the electromag catapults for Firebird launching quite quickly.  The conversion also includes the appropriate Firebird housing facilities, allowing for a maximum of six of them{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Firebird"
 	"plural" "Firebirds"
 	licenses
 		"EVN Tech License 10"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 100000
 	"thumbnail" "outfit/firebird"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Firebird"
 	"description" "Firebirds are the main Auroran fighter.  Their engines are simple, to say the least.  Their task is to protect the Phoenix from attack by smaller fighters such as the Viper, while the Phoenix take on the heavier ships.  The Firebird is slower than the Viper, but not by enough to give the Viper a decisive edge.  Battles between the two often come down to individual skill.  Many a Federation/Auroran border skirmish has come to a halt while the two sides watch a Firebird/Viper dogfight between renowned pilots{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Phoenix Bay"
@@ -689,23 +812,28 @@
 		"sound" "evn-201"
 		"inaccuracy" 0
 		"velocity" 1.5
-		"lifetime" 0
-		"reload" 150
+		"lifetime" 30
+		"reload" 75
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Phoenix"
 		"turret turn" 1
+	"phoenix capacity" 1
 	"description" "Phoenix bays are noisy, smelly and generally fairly grimy.  If you can put up with this, you'll have some serious mobile firepower at your disposal, as the bay is capable of housing up to three of these vicious little fighters{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Phoenix"
 	"plural" "Phoenixs"
 	licenses
 		"EVN Tech License 10"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 150000
 	"thumbnail" "outfit/phoenix"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Phoenix"
 	"description" "The Phoenix is yet another example of the Auroran will to survive.  The Phoenix is slow and turns badly.  One would think that it would be target practice for enemy pilots.  It is, but it has one redeeming feature: it has almost as good armor plating as a Thunderhead.  They plough through fire corridors with impunity, and attack in groups to maximize firepower.  The Phoenix can wear a missile from an Anaconda, but a Viper will stay on its tail and pound it mercilessly.  Suffice to say that Phoenix pilots suffer the greatest rate of attrition of any group in the Auroran armed forces{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Thunderhead Bay"
@@ -723,23 +851,28 @@
 		"sound" "evn-220"
 		"inaccuracy" 0
 		"velocity" 0.75
-		"lifetime" 0
-		"reload" 250
+		"lifetime" 30
+		"reload" 125
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Thunderhead"
 		"turret turn" 1
+	"thunderhead capacity" 1
 	"description" "The schematics of this Thunderhead bay look impressive, but you're a bit unsure as to how you'll fit it to your current vessel, although adding the capability to launch as many as three Thunderheads from your ship could never hurt. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Thunderhead"
 	"plural" "Thunderheads"
 	licenses
 		"EVN Tech License 4"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 300000
 	"thumbnail" "outfit/thunderhead"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Thunderhead"
 	"description" "The Thunderhead is so named for its main weapon, the Thunderhead Lance.  The Lance is a solid beam of coherent laser light.  In some ways, the Thunderhead has the worst reputation of any fighting vessel in the Galaxy, not because of turn ratings or levels of firepower, but because this assault fighter is the weapon of choice of pirates, privateers and corsairs throughout known space.  It has enough armor to allow it to go up against large ships, and enough speed to allow it to catch most craft that try to flee. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Manta Bay"
@@ -757,23 +890,28 @@
 		"sound" "evn-229"
 		"inaccuracy" 0
 		"velocity" 2.5
-		"lifetime" 0
-		"reload" 90
+		"lifetime" 30
+		"reload" 45
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Manta"
 		"turret turn" 1
+	"manta capacity" 2
 	"description" "Mantas require food and water, as well as sunlight.  This bay provides for up to six of them with all of that, plus the required power taps for recharging all their BioRelay lasers{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Manta"
 	"plural" "Mantas"
 	licenses
 		"EVN Tech License 9"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 500000
 	"thumbnail" "outfit/manta"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Manta"
 	"description" "A pilot in the Nil'kemorya comes of age at 16.  It is then that he meets the Manta that will be his fighter and personal transport for as long as he lives, no matter how far he advances in rank.  Grown from a DNA sample taken from the pilot when he was initiated into the Nil'kemorya, the Manta will bond with him in a very personal way.  These fighters are not only swift and powerful, they are also the most 'alive' of the Polaris ships, having approximately the same level of sentience as smart dogs.  It incorporates a potent bio-organic laser into its nose as its only weapon{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Hail Chaingun"
@@ -793,21 +931,28 @@
 		"velocity" 9
 		"lifetime" 20
 		"reload" 0
-		"shield damage" 0
-		"hull damage" 0
+		"shield damage" 1
+		"hull damage" 4
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 10
+		"burst reload" 15
+		"burst count" 10
+		"ammo" "Chaingun Ammunition"
 		"turret turn" 1
+	"chaingun ammunition capacity" 8
 	"description" "'If it ain't broke, don't fix it,' is the old maxim, and the Hail Chaingun holds true to this time-honored principle.  A simple caseless round is loaded into one of the two gatling breaches, and liquid propellant is injected behind the shell.  The Hail has a cyclic rate of 3000 RPM, and has enough ammo on board for an extended firefight{b424 '. You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' '.'}"
 
 "outfit" "Chaingun Ammunition"
 	"plural" "Chaingun Ammunitions"
 	licenses
 		"EVN Tech License 10"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 20
 	"thumbnail" "outfit/chaingun_ammunition"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Chaingun Ammunition"
 	"description" "Simple caseless rounds have been around for longer than most historians can remember, and the production of them is so old-tech as to be almost a backyard occurrence throughout most of Known Space.  The Aurorans in particular produce enormous amounts of it in order to fuel their almost constant war efforts (whether it be against the Federation or amongst themselves){b424 '. You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' '.'}"
 
 "outfit" "100mm Fixed Railgun"
@@ -826,10 +971,12 @@
 		"inaccuracy" 1
 		"velocity" 10
 		"lifetime" 110
-		"reload" 50
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 25
+		"shield damage" 10
+		"hull damage" 20
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 40
 		"turret turn" 1
 	"description" "Railguns are simple enough in concept; get a pellet made from a highly conductive, but dense metal (something cheap, like copper or gold), and place it between two rails (one a cathode, the other an anode).  Charge the rails with a homopolar generator, and there you have it: one super-high-speed metal pellet.  First developed by Sir Marcus Oliphant as a scientific instrument in the twentieth century AD, the railgun is now standard armament on all Auroran capital ships.  This version fires 100mm pellets."
 
@@ -849,10 +996,12 @@
 		"inaccuracy" 2
 		"velocity" 8.65
 		"lifetime" 115
-		"reload" 50
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 25
+		"shield damage" 10
+		"hull damage" 30
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 80
 		"turret turn" 1
 	"description" "A slightly larger version of the 100mm railgun, this weapon requires a much larger generator, and a power supply to match.  The 150mm pellets are made from a copper/cadmium mix, and are drop-forged with care by Auroran weaponsmiths{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
@@ -872,10 +1021,12 @@
 		"inaccuracy" 3
 		"velocity" 7.4
 		"lifetime" 120
-		"reload" 90
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 45
+		"shield damage" 10
+		"hull damage" 40
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 120
 		"turret turn" 1
 	"description" "The mother of all railguns.  Firing a 200mm copper/cadmium pellet, this railgun looks like nothing less than a deck gun from an ancient Earth ocean-going warship.  The electrode rails get so scored during battle that they must be replaced at every landfall.  Luckily the rails are very cheap and easy to manufacture.  Some have even been constructed of old armor plates in times of emergency{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
@@ -895,10 +1046,12 @@
 		"inaccuracy" 3
 		"velocity" 8.7
 		"lifetime" 100
-		"reload" 70
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 35
+		"shield damage" 12
+		"hull damage" 15
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 40
 		"turret turn" 1
 	"description" "While railguns are normally fixed-position weapons, something turreted was required for the immense Auroran Carrier.  Thus the evergreen 100mm railgun was mounted on a Storm Chaingun swivel mount.  The combo has proved quite successful, with several other fighting ships being retrofitted with similar guns{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
@@ -913,27 +1066,35 @@
 	"outfit space" -20
 	"gun ports" -1
 	"weapon"
+		"homing"
+		# EVN ProxRadius 5 has no direct ES field.
 		"sprite" "projectile/emp_torp_"
 		"sound" "evn-227"
 		"inaccuracy" 3
 		"velocity" 3.75
 		"lifetime" 180
-		"reload" 200
-		"shield damage" 0
-		"hull damage" 25
-		"ion damage" 0
+		"reload" 100
+		"shield damage" 340
+		"hull damage" 10
+		"ion damage" 100
+		"blast radius" 100
+		"hit force" 250
+		"missile strength" 25
+		"ammo" "EMP Torpedo"
 		"turret turn" 1
+	"emp torpedo capacity" 3
 	"description" "EMP weapons have not changed much since the first days of nuclear power.  This tube fires torpedos carrying an EMP weapon with a yield of a gigaton or more of TNT.  EMP weapons, as with all nuclear-type weapons, are generally the province of pirates and military dictators, as their use has been severely limited by all civilized people{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "EMP Torpedo"
 	"plural" "EMP Torpedos"
 	licenses
 		"EVN Tech License 16"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 5000
 	"thumbnail" "outfit/emp_torpedo"
 	"mass" 4
 	"outfit space" -4
+	"ammo" "EMP Torpedo"
 	"description" "The EMP Torpedo was constructed from stolen Federation technology.  It is an awesome weapon, with only two real uses: mass destruction and ionization.  The Pirate Carrier carries four EMP torps as a blockade running tool; simply fire the weapon at the opposing line, and wait for them to scatter like sheep.  Not to be detonated at close range{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Fusion Reactor"
@@ -1365,15 +1526,20 @@
 	"outfit space" -25
 	"gun ports" -1
 	"weapon"
+		# EVN AmmoType 27 has no mapped ammo outfit.
 		"sprite" "projectile/storm_chaingun"
 		"sound" "evn-223"
 		"inaccuracy" 20
 		"velocity" 6
 		"lifetime" 15
-		"reload" 8
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 4
+		"shield damage" 2
+		"hull damage" 3
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 10
+		"burst reload" 10
+		"burst count" 3
 		"turret turn" 1
 	"description" "The Storm is a sacred weather pattern in Auroran culture.  Symbolizing the power and fury of the hordes of Auroran warriors, many warriors have a thundercloud as a death tattoo, indicating that they will die in the fury of a mass offensive.  The Storm Chaingun reflects the Auroran philosophy of overwhelming the enemy with numbers; the Storm is effectively four Hails on a turret, and, as a point defence weapon system, is used to destroy incoming fighters and missiles with often devastating effect, and without requiring any command input from the bridge{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
@@ -1393,10 +1559,12 @@
 		"inaccuracy" 5
 		"velocity" 4.5
 		"lifetime" 55
-		"reload" 10
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 5
+		"shield damage" 8
+		"hull damage" 16
 		"ion damage" 0
+		"blast radius" 20
+		"hit force" 40
 		"turret turn" 1
 	"description" "When the Heraan family were constructing the first Abomination gunboats, they discovered quite quickly that standard Fusion Pulse Cannons mounted on Abominations were unable to hit fast moving targets, due to the poor turning speed of the craft.  So was born the Fusion Pulse Turret (and later the battery version)."
 
@@ -1411,15 +1579,19 @@
 	"outfit space" -8
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 0 requires ES beam visual tuning.
+		# EVN ProxRadius 3 has no direct ES field.
 		"sprite" "projectile/thunderhead_lance"
 		"sound" "evn-224"
 		"inaccuracy" 2
 		"velocity" 0
 		"lifetime" 10
-		"reload" 20
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 10
+		"shield damage" 6
+		"hull damage" 6
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 50
 		"turret turn" 1
 	"description" "Thunderheads are built around this stocky beam unit.  The Lance is a simple laser; nothing more, nothing less.  It is a very highly charged weapon, but it is effective only at short range.  As the best way to use a Lance is to almost ram the ship in question, it is a favored weapon of the Wild Geese, who consider it a divine gift. Requires: Heavy Weapons {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
@@ -1438,23 +1610,28 @@
 		"sound" "evn-226"
 		"inaccuracy" 0
 		"velocity" 1.25
-		"lifetime" 0
-		"reload" 60
+		"lifetime" 25
+		"reload" 30
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Pirate Viper"
 		"turret turn" 1
+	"pirate viper capacity" 4
 	"description" "Pirates know about violence, and the threat of violence.  They also know about hounding individual ships in packs.  However, they also value speed, and the Pirate Viper Bay launches them far faster than any other type of bay outside of Polaris Space, allowing them to swarm over their foes with frightening rapidity.  So despite only being able to house a maximum of four Pirate Vipers, many pirates vessels have at least one.  With one of these bays on board, you'll have a fast pack at your disposal at all times{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Pirate Viper"
 	"plural" "Pirate Vipers"
 	licenses
 		"EVN Tech License 12"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 200000
 	"thumbnail" "outfit/pirate_viper"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Pirate Viper"
 	"description" "As soon as Comara released the Viper frame on the general market, a few shiploads of frames were bought up by notorious pirate shipwright Olaf Greyshoulders.  He and his crew have totally refitted the shell, and the familiar shape of its advanced armor plating hides a wealth of minor and major improvements to the basic idea.  But, as with all Greyshoulders upgrades, there is a hefty price to pay for the improved model.  It's up to you to decide whether it's worth it{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Turreted BioRelay Laser"
@@ -1468,15 +1645,19 @@
 	"outfit space" -25
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 3 requires ES beam visual tuning.
+		# EVN ProxRadius 1 has no direct ES field.
 		"sprite" "projectile/turreted_pulse_biorelay_laser"
 		"sound" "evn-232"
 		"inaccuracy" 0
 		"velocity" 0
 		"lifetime" 1
 		"reload" 0
-		"shield damage" 0
-		"hull damage" 0
+		"shield damage" 8
+		"hull damage" 4
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 10
 		"turret turn" 1
 	"description" "The TBRL is a special variant of the Polaris BioRelay Laser.  It is mounted on the Polaris Dragon as a primary weapon.  This weapon is used rather than the more powerful pulse laser, so as to limit the potential damage were a Dragon to fall into unfriendly hands; a good scientist can unravel much from a working sample of an enemy weapon{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
@@ -1491,15 +1672,20 @@
 	"outfit space" 0
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 0 requires ES beam visual tuning.
+		# EVN ProxRadius 1 has no direct ES field.
 		"sprite" "projectile/flower_of_spring"
 		"sound" "evn-231"
 		"inaccuracy" 0
 		"velocity" 0
 		"lifetime" 1
 		"reload" 0
-		"shield damage" 0
-		"hull damage" 0
+		"shield damage" 4
+		"hull damage" 4
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" -5
+		"firing fuel" 2
 		"turret turn" 1
 	"description" "The Vell-os name their weapons after the telepathic weaves used to turn their telepathic abilities into physical energy.  Thus this weapon is called the Flower Of Spring because the weave works from the ground up and includes patterns much like that of a flower."
 
@@ -1514,15 +1700,20 @@
 	"outfit space" 0
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 3 requires ES beam visual tuning.
+		# EVN ProxRadius 2 has no direct ES field.
 		"sprite" "projectile/summer_bloom"
 		"sound" "evn-233"
 		"inaccuracy" 0
 		"velocity" 0
 		"lifetime" 1
 		"reload" 0
-		"shield damage" 0
-		"hull damage" 0
+		"shield damage" 6
+		"hull damage" 6
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 5
+		"firing fuel" 2
 		"turret turn" 1
 	"description" "The Summer Bloom is the magenta beam that is incorporated into the form of the Arrow.  A T2 Vell-os can maintain power to this weapon almost indefinitely, and the stopping power of a Bloom is stunning for such a small beam."
 
@@ -1537,15 +1728,20 @@
 	"outfit space" 0
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 3 requires ES beam visual tuning.
+		# EVN ProxRadius 3 has no direct ES field.
 		"sprite" "projectile/autumn_petal"
 		"sound" "evn-234"
 		"inaccuracy" 0
 		"velocity" 0
 		"lifetime" 1
 		"reload" 0
-		"shield damage" 0
-		"hull damage" 0
-		"ion damage" 0
+		"shield damage" 8
+		"hull damage" 8
+		"ion damage" 1
+		"blast radius" 0
+		"hit force" 10
+		"firing fuel" 5
 		"turret turn" 1
 	"description" "This instrument of destruction is an integral part of the makeup of a Vell-os Javelin.  The color of early autumn kirastei petals on Vell-os worlds, the Autumn Petal has an excellent sustained fire rate, and long range.  Only T1's have been known to be able to create the weave required for this weapon."
 
@@ -1560,15 +1756,20 @@
 	"outfit space" 0
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 0 requires ES beam visual tuning.
+		# EVN ProxRadius 4 has no direct ES field.
 		"sprite" "projectile/winter_tempest"
 		"sound" "evn-235"
 		"inaccuracy" 0
 		"velocity" 0
 		"lifetime" 1
 		"reload" 0
-		"shield damage" 0
-		"hull damage" 0
-		"ion damage" 0
+		"shield damage" 12
+		"hull damage" 12
+		"ion damage" 2
+		"blast radius" 0
+		"hit force" 15
+		"firing fuel" 15
 		"turret turn" 1
 	"description" "Winter Tempest is a name spoken in dark corners by the Vell-os people.  The storm-colored arc of light has only once been used in anger.  Even then it took a T1 working at focusing the power of twenty T2's to get it to work.  It has been theorized by Vell-os scientists that a T0 would have the potential to create this beam by himself."
 
@@ -1586,23 +1787,28 @@
 		"sprite" "projectile/create_dart"
 		"inaccuracy" 0
 		"velocity" 2.5
-		"lifetime" 0
-		"reload" 80
+		"lifetime" 30
+		"reload" 40
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Dart"
 		"turret turn" 1
+	"dart capacity" 1
 	"description" "As your telepathic power swells, you learn a great deal more about how to project your consciousness out upon the universe.  Now, if you choose to prepare yourself correctly by selecting this ability, you can project small parts of your mind into Dart-like receptacles which will act as you command them."
 
 "outfit" "Dart"
 	"plural" "Darts"
 	licenses
 		"EVN Tech License 9999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 0
 	"thumbnail" "outfit/dart"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Dart"
 	"description" "As part of gaining the ability to project small parts of your consciousness out onto the universe, you must prepare yourself for it by deliberately setting apart portions of your telepathic energy by selecting this option."
 
 "outfit" "Marine Platoon"
@@ -1638,15 +1844,18 @@
 	"outfit space" -30
 	"gun ports" -1
 	"weapon"
+		# EVN SubType 229 has no mapped ammo outfit.
 		"sprite" "projectile/nanites"
 		"sound" "evn-228"
 		"inaccuracy" 180
 		"velocity" 6.25
 		"lifetime" 15
-		"reload" 40
-		"shield damage" 0
-		"hull damage" 0
-		"ion damage" 0
+		"reload" 20
+		"shield damage" 100
+		"hull damage" 100
+		"ion damage" 50
+		"blast radius" 0
+		"hit force" 0
 		"turret turn" 1
 	"description" "Krypt has no weapons; why should she have?  As far as she is concerned, she is the only life-form in the universe.  Krypt is, however, very curious.  She will send out colonies of nanites from her roving spheres to explore strange asteroids and other phenomena.  These colonies will latch on to material in space, and start exploring the composition.  This has a devastating effect on ships."
 
@@ -1661,15 +1870,19 @@
 	"outfit space" -15
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 0 requires ES beam visual tuning.
+		# EVN ProxRadius 3 has no direct ES field.
 		"sprite" "projectile/solar_lance"
 		"sound" "evn-218"
 		"inaccuracy" 5
 		"velocity" 0
 		"lifetime" 1
 		"reload" 0
-		"shield damage" 0
-		"hull damage" 0
-		"ion damage" 0
+		"shield damage" 6
+		"hull damage" 6
+		"ion damage" 1
+		"blast radius" 0
+		"hit force" 10
 		"turret turn" 1
 	"description" "The Solar Lance is the defensive mechanism of the Hyperioids.  A Hyperioid can generate a significant charge by rotating its pods around its body at a high rate of speed.  The Solar Lance uses this charge to propel photons out of the Hyperioid's feeding orifice.  The resulting beam weapon is very dangerous; contact should be avoided at all costs."
 
@@ -1684,15 +1897,21 @@
 	"outfit space" -10
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 0 requires ES beam visual tuning.
+		# EVN ProxRadius 2 has no direct ES field.
 		"sprite" "projectile/wraith_graviton_beam_adult_"
 		"sound" "evn-204"
 		"inaccuracy" 0
 		"velocity" 0
 		"lifetime" 20
-		"reload" 30
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 15
+		"shield damage" 12
+		"hull damage" 6
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 10
+		"burst reload" 45
+		"burst count" 1
 		"turret turn" 1
 	"description" "The Wraith have evolved a focused graviton beam as a territorial display, and as a weapon in mating rituals.  As the Wraith evolved into an intelligent species, their beams became defensive weapons as well.  The highly focused gravitons cause severe damage to unshielded vessels.  Armor plates of lesser ships have been known to simply shear off under the force."
 
@@ -1707,15 +1926,21 @@
 	"outfit space" -8
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 0 requires ES beam visual tuning.
+		# EVN ProxRadius 2 has no direct ES field.
 		"sprite" "projectile/wraith_graviton_beam_youth_"
 		"sound" "evn-204"
 		"inaccuracy" 1
 		"velocity" 0
 		"lifetime" 15
-		"reload" 40
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 20
+		"shield damage" 8
+		"hull damage" 4
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 8
+		"burst reload" 45
+		"burst count" 1
 		"turret turn" 1
 	"description" "Despite not being as powerful as that of an adult Wraith, the graviton beam produced by young Wraith is still a formidable weapon.  It gives pause to smaller ships, and can inflict serious damage on larger ships if unchecked."
 
@@ -1730,15 +1955,21 @@
 	"outfit space" -5
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 0 requires ES beam visual tuning.
+		# EVN ProxRadius 1 has no direct ES field.
 		"sprite" "projectile/wraith_graviton_beam_child_"
 		"sound" "evn-204"
 		"inaccuracy" 2
 		"velocity" 0
 		"lifetime" 25
-		"reload" 20
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 10
+		"shield damage" 4
+		"hull damage" 2
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 4
+		"burst reload" 45
+		"burst count" 1
 		"turret turn" 1
 	"description" "The children of the Wraith use their underdeveloped beams to divert the courses of small meteors in games of skill and dexterity.  They're not much good for anything else."
 
@@ -1973,15 +2204,18 @@
 	"outfit space" -10
 	"gun ports" -1
 	"weapon"
+		# EVN AmmoType 17 has no mapped ammo outfit.
 		"sprite" "projectile/wraithii"
 		"sound" "evn-222"
 		"inaccuracy" 0
 		"velocity" 9.25
 		"lifetime" 40
-		"reload" 30
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 15
+		"shield damage" 30
+		"hull damage" 40
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 40
 		"turret turn" 1
 	"description" "Wraithii are tiny capsules of polarons contained in a mar-graviton field.  A Wraith Cannon fires these capsules via simple biomechanics, and the capsules burst on impact, releasing a powerful kinetic force.  These guns are mounted as standard on the Dragon, a Polaris vessel, but can be retrofitted to most ships on the market.  Ever since this technology was stolen from the Polaris in a daring raid, Federation scientists, while capable of duplicating the technology, have been having problems understanding it..."
 
@@ -1989,11 +2223,12 @@
 	"plural" "Wraithiis"
 	licenses
 		"EVN Tech License 113"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 2500
 	"thumbnail" "outfit/wraithii"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Wraithii"
 	"description" "The polarons for Wraithii are harvested by deep-space mining scoops manned usually by hard-core prospectors.  These polarons are then shipped to military installations for encapsulation in the mar-graviton field (a type of field that Federation scientists are still struggling to understand) that will hold them until they impact at a speed of greater than 20 kilometers an hour.  Needless to say, the final packets are handled with kid gloves.  It is a testament to the safety protocols put in place by the Bureau that only a few minor accidents have ever occurred since they stole the plans for this weapon from the Polaris..."
 
 "outfit" "Battery Pack"
@@ -2161,15 +2396,18 @@
 	"outfit space" -3
 	"gun ports" -1
 	"weapon"
+		# EVN ProxRadius 5 has no direct ES field.
 		"sprite" "projectile/mining_blaster"
 		"sound" "evn-208"
 		"inaccuracy" 0
 		"velocity" 5
 		"lifetime" 12
-		"reload" 40
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 20
+		"shield damage" 2
+		"hull damage" 2
 		"ion damage" 0
+		"blast radius" 6
+		"hit force" 5
 		"turret turn" 1
 	"description" "When mankind first began exploring space, one of the many things they were looking for was new sources of raw materials, and the asteroids of many systems proved to hold a relative bonanza of near-pure metals and minerals.  The Pyrogenesis Asteroid Mining Laser is the tool of choice to break up passing asteroids and to get at the contained metals.  Over the past millennia, the basic design has changed only minimally, but it still remains popular with asteroid prospectors the galaxy over."
 
@@ -2239,27 +2477,35 @@
 	"outfit space" -28
 	"gun ports" -1
 	"weapon"
+		"homing"
+		"submunition" "Polaron Torpedo" 5
+		# EVN ProxRadius 10 has no direct ES field.
 		"sprite" "projectile/polaron_multi_torp_"
 		"sound" "evn-211"
 		"inaccuracy" 0
 		"velocity" 6.5
 		"lifetime" 20
-		"reload" 160
-		"shield damage" 0
-		"hull damage" 0
-		"ion damage" 0
+		"reload" 80
+		"shield damage" 200
+		"hull damage" 200
+		"ion damage" 20
+		"blast radius" 20
+		"hit force" 200
+		"ammo" "Polaron Multi-Torpedo;fire whilst cloaked"
 		"turret turn" 1
+	"polaron multi-torpedo;fire whilst cloaked capacity" 2
 	"description" "Like the simpler Polaron Torpedo Tube, this launcher ties into a ship's main computer core (or neural network, in the case of Polaris ships).  It tracks nearby hostile ships, and then calculates the complex field generation parameters for the Polaron Flux Coils in the tube.  By varying the quantity, spin and charge of the newly generated polarons, the tube can give the polaron 'virtual structure' allowing it to replicate itself into five separate copies that begin tracking the local hostile ships{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Polaron Multi-Torpedo"
 	"plural" "Polaron Multi-Torpedos"
 	licenses
 		"EVN Tech License 9"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 3000
 	"thumbnail" "outfit/polaron_multi_torpedo"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Polaron Multi-Torpedo"
 	"description" "The Polaron Multi-Torpedo takes non-corporeal engineering to the extreme.  The charge and spin of the huge polaron virtual structure is set by the launcher at firing time, much like the simpler Polaron Torpedoes.  However, in the case of the Multi-Torpedo, the chaos mathematics of the field interaction allows the neural net of the Polaris vessel to create virtual sub-structures that get activated shortly after launch, creating five simple Torpedoes all capable of attacking different targets{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Wraith Cannon;fire whilst cloaked"
@@ -2273,15 +2519,18 @@
 	"outfit space" -10
 	"gun ports" -1
 	"weapon"
+		# EVN AmmoType 17 has no mapped ammo outfit.
 		"sprite" "projectile/wraithii"
 		"sound" "evn-222"
 		"inaccuracy" 0
 		"velocity" 9.25
 		"lifetime" 40
-		"reload" 30
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 15
+		"shield damage" 30
+		"hull damage" 40
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 40
 		"turret turn" 1
 	"description" "Wraithii are tiny capsules of polarons contained in a mar-graviton field.  A Wraith Cannon fires these capsules via simple biomechanics, and the capsules burst on impact, releasing a powerful kinetic force.  These guns are mounted as standard on the Dragon, and can be retrofitted to most ships on the market.  And now that they have been modified to allow them to shoot while the parent ship is cloaked, they are even more effective.  The Nil'kemorya keep a careful eye on these weapons, however, and only the most favored of outsiders are ever allowed to buy them."
 
@@ -2289,11 +2538,12 @@
 	"plural" "Wraithii;fire whilst cloakeds"
 	licenses
 		"EVN Tech License 9"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 1050
 	"thumbnail" "outfit/wraithii_fire_whilst_cloaked"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Wraithii;fire whilst cloaked"
 	"description" "The polarons for Wraithii are harvested by deep-space mining scoops run by the Tre'pira.  These polarons are then shipped to P'aedt facilities for encapsulation in the mar-graviton field that will hold them until they impact at a speed of greater than 20 kilometers an hour.  Needless to say, the final packets are handled with kid gloves.  It is a testament to the Tre'pira and the P'aedt that no accidents with Wraithii have ever occurred."
 
 "outfit" "Polaron Torpedo Tube;fire whilst cloaked"
@@ -2307,15 +2557,20 @@
 	"outfit space" -27
 	"gun ports" -1
 	"weapon"
+		"homing"
+		# EVN AmmoType 20 has no mapped ammo outfit.
+		# EVN ProxRadius 10 has no direct ES field.
 		"sprite" "projectile/polaron_torp_"
 		"sound" "evn-211"
 		"inaccuracy" 0
 		"velocity" 6.5
 		"lifetime" 300
-		"reload" 160
-		"shield damage" 0
-		"hull damage" 0
-		"ion damage" 0
+		"reload" 80
+		"shield damage" 200
+		"hull damage" 200
+		"ion damage" 20
+		"blast radius" 20
+		"hit force" 200
 		"turret turn" 1
 	"description" "This launcher ties into a ship's main computer core (or neural network, in the case of Polaris ships).  It tracks a target ship, and then calculates the complex field generation parameters for the Polaron Flux Coils in the tube.  By varying the quantity, spin and charge of the newly generated polarons, the tube can give the polaron 'virtual structure' a good bead on a target before the preprogrammed field generator in the heart of the energy burst takes over.  And with a few relatively minor adjustments, it is now possible to use this weapon while the parent ship is cloaked{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
@@ -2323,11 +2578,12 @@
 	"plural" "Polaron Torpedo;fire whilst cloakeds"
 	licenses
 		"EVN Tech License 9"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 2600
 	"thumbnail" "outfit/polaron_torpedo_fire_whilst_cloaked"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Polaron Torpedo;fire whilst cloaked"
 	"description" "Having no mass, the Polaron Torpedo is a masterpiece of non-corporeal engineering.  The charge and spin of the huge polaron virtual structure is set by the launcher at firing time.  The chaos mathematics of the field interaction is calculated by the neural net of the Polaris vessel, which makes sure that the field will collapse in such a way that it will steer toward the target from the tube.  A tiny field generator hovering in the middle of the torpedo modifies the field strengths to correct for mid-flight target variations{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Polaron Multi-Torpedo Tube;fire whilst cloaked"
@@ -2341,15 +2597,21 @@
 	"outfit space" -30
 	"gun ports" -1
 	"weapon"
+		"homing"
+		"submunition" "Polaron Torpedo" 5
+		# EVN AmmoType 54 has no mapped ammo outfit.
+		# EVN ProxRadius 10 has no direct ES field.
 		"sprite" "projectile/polaron_multi_torp_"
 		"sound" "evn-211"
 		"inaccuracy" 0
 		"velocity" 6.5
 		"lifetime" 20
-		"reload" 160
-		"shield damage" 0
-		"hull damage" 0
-		"ion damage" 0
+		"reload" 80
+		"shield damage" 200
+		"hull damage" 200
+		"ion damage" 20
+		"blast radius" 20
+		"hit force" 200
 		"turret turn" 1
 	"description" "Like the simpler Polaron Torpedo Tube, this launcher ties into a ship's main computer core (or neural network, in the case of Polaris ships).  It tracks nearby hostile ships, and then calculates the complex field generation parameters for the Polaron Flux Coils in the tube.  By varying the quantity, spin and charge of the newly generated polarons, the tube can give the polaron 'virtual structure' allowing it to replicate itself into five separate copies that begin tracking the local hostile ships.  And, again like the simpler version, the Multi-Torpedo Tube is also now capable of being fired while cloaked{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
@@ -2357,11 +2619,12 @@
 	"plural" "Polaron Multi-Torpedo;fire whilst cloakeds"
 	licenses
 		"EVN Tech License 9"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 3200
 	"thumbnail" "outfit/polaron_multi_torpedo_fire_whilst_cloaked"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Polaron Multi-Torpedo;fire whilst cloaked"
 	"description" "The Polaron Multi-Torpedo takes non-corporeal engineering to the extreme.  The charge and spin of the huge polaron virtual structure is set by the launcher at firing time, much like the simpler Polaron Torpedoes.  However, in the case of the Multi-Torpedo, the chaos mathematics of the field interaction allows the neural net of the Polaris vessel to create virtual sub-structures that get activated shortly after launch, creating five simple Torpedoes all capable of attacking different targets{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Pirate Thunderhead Bay"
@@ -2379,23 +2642,28 @@
 		"sound" "evn-220"
 		"inaccuracy" 0
 		"velocity" 0.75
-		"lifetime" 0
-		"reload" 250
+		"lifetime" 30
+		"reload" 125
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Pirate Thunderhead"
 		"turret turn" 1
+	"pirate thunderhead capacity" 2
 	"description" "The schematics for this Pirate Thunderhead bay look both impressive and practical, but you're a bit unsure as to how you'll fit it to your current vessel, although having the ability to launch three Pirate Thunderheads at your foes could never hurt{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Pirate Thunderhead"
 	"plural" "Pirate Thunderheads"
 	licenses
 		"EVN Tech License 12"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 400000
 	"thumbnail" "outfit/pirate_thunderhead"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Pirate Thunderhead"
 	"description" "The Pirate Thunderhead, like its civilian cousin, is so named for its main weapon, the Thunderhead Lance.  Upgraded beyond even the deadly capabilities of the basic Thunderhead, this pirate version has enough armor to allow it to go up against even the largest ships, and enough speed to allow it to stay with most craft that try to flee{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Firebird Bay"
@@ -2413,23 +2681,28 @@
 		"sound" "evn-201"
 		"inaccuracy" 0
 		"velocity" 1.75
-		"lifetime" 0
-		"reload" 124
+		"lifetime" 30
+		"reload" 62
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Firebird"
 		"turret turn" 1
+	"firebird capacity" 3
 	"description" "The Auroran shipwrights can install the electromag catapults for Firebird launching quite quickly.  The conversion also includes the appropriate Firebird housing facilities, allowing for a maximum of six of them{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Firebird"
 	"plural" "Firebirds"
 	licenses
 		"EVN Tech License 999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 120000
 	"thumbnail" "outfit/firebird"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Firebird"
 	"description" "Firebirds are the main Auroran fighter.  Their engines are simple, to say the least.  Their task is to protect the Phoenix from attack by smaller fighters such as the Viper, while the Phoenix take on the heavier ships.  The Firebird is slower than the Viper, but not by enough to give the Viper a decisive edge.  Battles between the two often come down to individual skill.  Many a Federation/Auroran border skirmish has come to a halt while the two sides watch a Firebird/Viper dogfight between renowned pilots{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Firebird Bay"
@@ -2447,23 +2720,28 @@
 		"sound" "evn-201"
 		"inaccuracy" 0
 		"velocity" 1.75
-		"lifetime" 0
-		"reload" 124
+		"lifetime" 30
+		"reload" 62
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Firebird"
 		"turret turn" 1
+	"firebird capacity" 3
 	"description" "The Auroran shipwrights can install the electromag catapults for Firebird launching quite quickly.  The conversion also includes the appropriate Firebird housing facilities, allowing for a maximum of six of them{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Firebird"
 	"plural" "Firebirds"
 	licenses
 		"EVN Tech License 999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 120000
 	"thumbnail" "outfit/firebird"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Firebird"
 	"description" "Firebirds are the main Auroran fighter.  Their engines are simple, to say the least.  Their task is to protect the Phoenix from attack by smaller fighters such as the Viper, while the Phoenix take on the heavier ships.  The Firebird is slower than the Viper, but not by enough to give the Viper a decisive edge.  Battles between the two often come down to individual skill.  Many a Federation/Auroran border skirmish has come to a halt while the two sides watch a Firebird/Viper dogfight between renowned pilots{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Phoenix Bay"
@@ -2481,23 +2759,28 @@
 		"sound" "evn-201"
 		"inaccuracy" 0
 		"velocity" 1.5
-		"lifetime" 0
-		"reload" 150
+		"lifetime" 30
+		"reload" 75
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Phoenix"
 		"turret turn" 1
+	"phoenix capacity" 2
 	"description" "Phoenix bays are noisy, smelly and generally fairly grimy.  If you can put up with this, you'll have some serious mobile firepower at your disposal, as the bay is capable of housing up to three of these vicious little fighters{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Phoenix"
 	"plural" "Phoenixs"
 	licenses
 		"EVN Tech License 999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 150000
 	"thumbnail" "outfit/phoenix"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Phoenix"
 	"description" "The Phoenix is yet another example of the Auroran will to survive.  The Phoenix is slow and turns badly.  One would think that it would be target practice for enemy pilots.  It is, but it has one redeeming feature: it has almost as good armor plating as a Thunderhead.  They plough through fire corridors with impunity, and attack in groups to maximize firepower.  The Phoenix can wear a missile from an Anaconda, but a Viper will stay on its tail and pound it mercilessly.  Suffice to say that Phoenix pilots suffer the greatest rate of attrition of any group in the Auroran armed forces{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Phoenix Bay"
@@ -2515,23 +2798,28 @@
 		"sound" "evn-201"
 		"inaccuracy" 0
 		"velocity" 1.5
-		"lifetime" 0
-		"reload" 150
+		"lifetime" 30
+		"reload" 75
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Phoenix"
 		"turret turn" 1
+	"phoenix capacity" 2
 	"description" "Phoenix bays are noisy, smelly and generally fairly grimy.  If you can put up with this, you'll have some serious mobile firepower at your disposal, as the bay is capable of housing up to three of these vicious little fighters{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Phoenix"
 	"plural" "Phoenixs"
 	licenses
 		"EVN Tech License 999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 150000
 	"thumbnail" "outfit/phoenix"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Phoenix"
 	"description" "The Phoenix is yet another example of the Auroran will to survive.  The Phoenix is slow and turns badly.  One would think that it would be target practice for enemy pilots.  It is, but it has one redeeming feature: it has almost as good armor plating as a Thunderhead.  They plough through fire corridors with impunity, and attack in groups to maximize firepower.  The Phoenix can wear a missile from an Anaconda, but a Viper will stay on its tail and pound it mercilessly.  Suffice to say that Phoenix pilots suffer the greatest rate of attrition of any group in the Auroran armed forces{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Pirate Viper Bay"
@@ -2549,23 +2837,28 @@
 		"sound" "evn-226"
 		"inaccuracy" 0
 		"velocity" 1.25
-		"lifetime" 0
-		"reload" 60
+		"lifetime" 25
+		"reload" 30
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Pirate Viper"
 		"turret turn" 1
+	"pirate viper capacity" 2
 	"description" "Pirates know about violence, and the threat of violence.  They also know about hounding individual ships in packs.  However, they also value speed, and the Pirate Viper Bay launches them far faster than any other type of bay outside of Polaris Space, allowing them to swarm over their foes with frightening rapidity.  So despite only being able to house a maximum of two Pirate Vipers, many pirates vessels have at least one.  With one of these bays on board, you'll have a fast pack at your disposal at all times{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Pirate Viper"
 	"plural" "Pirate Vipers"
 	licenses
 		"EVN Tech License 999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 200000
 	"thumbnail" "outfit/pirate_viper"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Pirate Viper"
 	"description" "As soon as Comara released the Viper frame on the general market, a few shiploads of frames were bought up by notorious pirate shipwright Olaf Greyshoulders.  He and his crew have totally refitted the shell, and the familiar shape of its advanced armor plating hides a wealth of minor and major improvements to the basic idea.  But, as with all Greyshoulders upgrades, there is a hefty price to pay for the improved model.  It's up to you to decide whether it's worth it{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Pirate Viper Bay"
@@ -2583,23 +2876,28 @@
 		"sound" "evn-226"
 		"inaccuracy" 0
 		"velocity" 1.25
-		"lifetime" 0
-		"reload" 60
+		"lifetime" 25
+		"reload" 30
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Pirate Viper"
 		"turret turn" 1
+	"pirate viper capacity" 2
 	"description" "Pirates know about violence, and the threat of violence.  They also know about hounding individual ships in packs.  However, they also value speed, and the Pirate Viper Bay launches them far faster than any other type of bay outside of Polaris Space, allowing them to swarm over their foes with frightening rapidity.  So despite only being able to house a maximum of two Pirate Vipers, many pirates vessels have at least one.  With one of these bays on board, you'll have a fast pack at your disposal at all times{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Pirate Viper"
 	"plural" "Pirate Vipers"
 	licenses
 		"EVN Tech License 999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 200000
 	"thumbnail" "outfit/pirate_viper"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Pirate Viper"
 	"description" "As soon as Comara released the Viper frame on the general market, a few shiploads of frames were bought up by notorious pirate shipwright Olaf Greyshoulders.  He and his crew have totally refitted the shell, and the familiar shape of its advanced armor plating hides a wealth of minor and major improvements to the basic idea.  But, as with all Greyshoulders upgrades, there is a hefty price to pay for the improved model.  It's up to you to decide whether it's worth it{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Rebel Viper Bay"
@@ -2617,23 +2915,28 @@
 		"sound" "evn-221"
 		"inaccuracy" 0
 		"velocity" 2
-		"lifetime" 0
-		"reload" 110.00000000000001
+		"lifetime" 30
+		"reload" 55
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Rebel Viper"
 		"turret turn" 1
+	"rebel viper capacity" 2
 	"description" "Mr. Donald Chick and his engineers have spent years trying to adapt the enormous fighter bays so that they can be fitted into the relatively small ships that the Rebels have managed to get their hands on.  With it, you will be able to hold and launch up to four of the upgraded Rebel Vipers.  As far as adaptive engineering solutions go, this one certainly stands up well..."
 
 "outfit" "Rebel Viper"
 	"plural" "Rebel Vipers"
 	licenses
 		"EVN Tech License 15"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 200000
 	"thumbnail" "outfit/rebel_viper"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Rebel Viper"
 	"description" "When General (ret) Cade 'Sundown' Smart defected to the Rebellion, he brought with him plans for all Federation vessels, and also intelligence on many ships used by other governments.  With this in hand, Donald Chick and his engineers set to work building and upgrading existing ships.  The resulting variant of the Viper is virtually unmatched anywhere in space."
 
 "outfit" "Rebel Viper Bay"
@@ -2651,23 +2954,28 @@
 		"sound" "evn-221"
 		"inaccuracy" 0
 		"velocity" 2
-		"lifetime" 0
-		"reload" 110.00000000000001
+		"lifetime" 30
+		"reload" 55
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Rebel Viper"
 		"turret turn" 1
+	"rebel viper capacity" 2
 	"description" "Mr. Donald Chick and his engineers have spent years trying to adapt the enormous fighter bays so that they can be fitted into the relatively small ships that the Rebels have managed to get their hands on.  With it, you will be able to hold and launch up to four of the upgraded Rebel Vipers.  As far as adaptive engineering solutions go, this one certainly stands up well..."
 
 "outfit" "Rebel Viper"
 	"plural" "Rebel Vipers"
 	licenses
 		"EVN Tech License 999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 200000
 	"thumbnail" "outfit/rebel_viper"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Rebel Viper"
 	"description" "When General (ret) Cade 'Sundown' Smart defected to the Rebellion, he brought with him plans for all Federation vessels, and also intelligence on many ships used by other governments.  With this in hand, Donald Chick and his engineers set to work building and upgrading existing ships.  The resulting variant of the Viper is virtually unmatched anywhere in space."
 
 "outfit" "Rebel Viper Bay"
@@ -2685,23 +2993,28 @@
 		"sound" "evn-221"
 		"inaccuracy" 0
 		"velocity" 2
-		"lifetime" 0
-		"reload" 110.00000000000001
+		"lifetime" 30
+		"reload" 55
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Rebel Viper"
 		"turret turn" 1
+	"rebel viper capacity" 2
 	"description" "Mr. Donald Chick and his engineers have spent years trying to adapt the enormous fighter bays so that they can be fitted into the relatively small ships that the Rebels have managed to get their hands on.  With it, you will be able to hold and launch up to four of the upgraded Rebel Vipers.  As far as adaptive engineering solutions go, this one certainly stands up well..."
 
 "outfit" "Rebel Viper"
 	"plural" "Rebel Vipers"
 	licenses
 		"EVN Tech License 999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 200000
 	"thumbnail" "outfit/rebel_viper"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Rebel Viper"
 	"description" "When General (ret) Cade 'Sundown' Smart defected to the Rebellion, he brought with him plans for all Federation vessels, and also intelligence on many ships used by other governments.  With this in hand, Donald Chick and his engineers set to work building and upgrading existing ships.  The resulting variant of the Viper is virtually unmatched anywhere in space."
 
 "outfit" "Rebel Viper Bay"
@@ -2719,23 +3032,28 @@
 		"sound" "evn-221"
 		"inaccuracy" 0
 		"velocity" 2
-		"lifetime" 0
-		"reload" 110.00000000000001
+		"lifetime" 30
+		"reload" 55
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Rebel Viper"
 		"turret turn" 1
+	"rebel viper capacity" 2
 	"description" "Mr. Donald Chick and his engineers have spent years trying to adapt the enormous fighter bays so that they can be fitted into the relatively small ships that the Rebels have managed to get their hands on.  With it, you will be able to hold and launch up to four of the upgraded Rebel Vipers.  As far as adaptive engineering solutions go, this one certainly stands up well..."
 
 "outfit" "Rebel Viper"
 	"plural" "Rebel Vipers"
 	licenses
 		"EVN Tech License 999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 200000
 	"thumbnail" "outfit/rebel_viper"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Rebel Viper"
 	"description" "When General (ret) Cade 'Sundown' Smart defected to the Rebellion, he brought with him plans for all Federation vessels, and also intelligence on many ships used by other governments.  With this in hand, Donald Chick and his engineers set to work building and upgrading existing ships.  The resulting variant of the Viper is virtually unmatched anywhere in space."
 
 "outfit" "Viper Bay"
@@ -2753,23 +3071,28 @@
 		"sound" "evn-221"
 		"inaccuracy" 0
 		"velocity" 2
-		"lifetime" 0
-		"reload" 120
+		"lifetime" 30
+		"reload" 60
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Viper"
 		"turret turn" 1
+	"viper capacity" 2
 	"description" "A few days is all it takes to convert sections of your ship into a launchbay for Viper fighters.  The conversion comes complete with everything you'll need to refuel, re-arm and service a maximum force of four Vipers. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Viper"
 	"plural" "Vipers"
 	licenses
 		"EVN Tech License 999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 150000
 	"thumbnail" "outfit/viper"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Viper"
 	"description" "With the rapid development of space flight, it was inevitable that sports (particularly racing) would come to fruition sooner rather than later.  Power Sled racing stood up to the challenge.  A few intrepid hot-rodders noticed that one particular sled, the Viper, took very well to a bit of extra weight in the form of armor and armament.  With a little engine tweaking, these modified Vipers, designated F-23, were selected by the Federation as the mainstay of their fighter wings. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Viper Bay"
@@ -2787,23 +3110,28 @@
 		"sound" "evn-221"
 		"inaccuracy" 0
 		"velocity" 2
-		"lifetime" 0
-		"reload" 120
+		"lifetime" 30
+		"reload" 60
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Viper"
 		"turret turn" 1
+	"viper capacity" 2
 	"description" "A few days is all it takes to convert sections of your ship into a launchbay for Viper fighters.  The conversion comes complete with everything you'll need to refuel, re-arm and service a maximum force of four Vipers. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Viper"
 	"plural" "Vipers"
 	licenses
 		"EVN Tech License 999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 150000
 	"thumbnail" "outfit/viper"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Viper"
 	"description" "With the rapid development of space flight, it was inevitable that sports (particularly racing) would come to fruition sooner rather than later.  Power Sled racing stood up to the challenge.  A few intrepid hot-rodders noticed that one particular sled, the Viper, took very well to a bit of extra weight in the form of armor and armament.  With a little engine tweaking, these modified Vipers, designated F-23, were selected by the Federation as the mainstay of their fighter wings. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Anaconda Bay"
@@ -2821,23 +3149,28 @@
 		"sound" "evn-221"
 		"inaccuracy" 0
 		"velocity" 1.75
-		"lifetime" 0
-		"reload" 140
+		"lifetime" 30
+		"reload" 70
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Anaconda"
 		"turret turn" 1
+	"anaconda capacity" 2
 	"description" "Anacondas can provide long-range intercept capability for a vessel.  This bay allows you to outfit a maximum of two of them. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Anaconda"
 	"plural" "Anacondas"
 	licenses
 		"EVN Tech License 999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 200000
 	"thumbnail" "outfit/anaconda"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Anaconda"
 	"description" "The main problem with the Viper as a fighter craft is a complete lack of any form of explosive projectile.  A new variant that has the 'long distance kill' capacity, based on the Viper chassis, has been the Federation's choice of Space Superiority Fighter ever since.  Although this ship, named the Anaconda, suffers from a slightly slower acceleration and top speed than the Viper, its ability to destroy enemy fighters before that fighter can get within gun range more than compensates. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Anaconda Bay"
@@ -2855,23 +3188,28 @@
 		"sound" "evn-221"
 		"inaccuracy" 0
 		"velocity" 1.75
-		"lifetime" 0
-		"reload" 140
+		"lifetime" 30
+		"reload" 70
 		"shield damage" 0
 		"hull damage" 0
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 0
+		"ammo" "Anaconda"
 		"turret turn" 1
+	"anaconda capacity" 2
 	"description" "Anacondas can provide long-range intercept capability for a vessel.  This bay allows you to outfit a maximum of two of them. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Anaconda"
 	"plural" "Anacondas"
 	licenses
 		"EVN Tech License 999"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 200000
 	"thumbnail" "outfit/anaconda"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Anaconda"
 	"description" "The main problem with the Viper as a fighter craft is a complete lack of any form of explosive projectile.  A new variant that has the 'long distance kill' capacity, based on the Viper chassis, has been the Federation's choice of Space Superiority Fighter ever since.  Although this ship, named the Anaconda, suffers from a slightly slower acceleration and top speed than the Viper, its ability to destroy enemy fighters before that fighter can get within gun range more than compensates. Requires: Fighter Bay {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Chrome Valk Upgrade"
@@ -2951,15 +3289,18 @@
 	"outfit space" -10
 	"gun ports" -1
 	"weapon"
+		# EVN ProxRadius 5 has no direct ES field.
 		"sprite" "projectile/medium_blaster"
 		"sound" "evn-209"
 		"inaccuracy" 4
 		"velocity" 7
 		"lifetime" 25
-		"reload" 26.000000000000004
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 13
+		"shield damage" 10
+		"hull damage" 5
 		"ion damage" 0
+		"blast radius" 9
+		"hit force" 20
 		"turret turn" 1
 	"description" "Pyrogenesis' midrange product is the unimaginatively named Medium Blaster.  This variant is normally carried by capital ships only; the weight alone makes it difficult for anything smaller to mount it.  While it's slower and more bulky than its lesser sibling, the Medium Blaster is much more powerful.  The lack of a turret mechanism does drop the weight some.  And you can buy it here without a license, but you had better be wary of Federation scans..{b424 '. You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' '.'}"
 
@@ -2974,15 +3315,18 @@
 	"outfit space" -30
 	"turret mounts" -1
 	"weapon"
+		# EVN ProxRadius 5 has no direct ES field.
 		"sprite" "projectile/medium_blaster_turret"
 		"sound" "evn-209"
 		"inaccuracy" 5
 		"velocity" 7
 		"lifetime" 30
-		"reload" 18
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 9
+		"shield damage" 10
+		"hull damage" 5
 		"ion damage" 0
+		"blast radius" 9
+		"hit force" 20
 		"turret turn" 1
 	"description" "The Medium Blaster really comes into its own when it becomes turreted.  Combined with sophisticated Glenn:Cyber targeting scopes, these weapons score easy hits on all but the smallest space vessels.  The Medium Blaster Turret does tend to lag a little on the faster capital ships.  The IDA Frigate mounted two of these batteries as standard.  And you can buy it here without a license, but you had better be wary of Federation scans..{b424 '. You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' '.'}"
 
@@ -2997,15 +3341,18 @@
 	"outfit space" -60
 	"turret mounts" -1
 	"weapon"
+		# EVN ProxRadius 5 has no direct ES field.
 		"sprite" "projectile/heavy_blaster_turret"
 		"sound" "evn-206"
 		"inaccuracy" 5
 		"velocity" 6.5
 		"lifetime" 60
-		"reload" 40
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 20
+		"shield damage" 35
+		"hull damage" 13
 		"ion damage" 0
+		"blast radius" 12
+		"hit force" 40
 		"turret turn" 1
 	"description" "So big and slow that only a turret mechanism allows it to hit anything at all, the Heavy Blaster Turret is the grand-daddy of the Pyrogenesis line of directed energy firepower.  Mounted as standard on the E-60 Carrier, the pride of the Federation fleet, the Heavy Blaster chews through shields and armor alike.  The short range and slow speed of the enormous packets limit the effectiveness of this weapon at anything other than boarding range.  And you can buy it here without a license, but you had better be wary of Federation scans..."
 
@@ -3020,15 +3367,20 @@
 	"outfit space" -20
 	"turret mounts" -1
 	"weapon"
+		# EVN ProxRadius 5 has no direct ES field.
 		"sprite" "projectile/quad_light_blaster_turret"
 		"sound" "evn-212"
 		"inaccuracy" 10
 		"velocity" 10
 		"lifetime" 12
-		"reload" 10
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 5
+		"shield damage" 4
+		"hull damage" 1
 		"ion damage" 0
+		"blast radius" 6
+		"hit force" 10
+		"burst reload" 20
+		"burst count" 4
 		"turret turn" 1
 	"description" "Comprised of quadruple Pyrogenesis Light Blasters on the most technically advanced turret they offer, the Quad Light Blaster system comes with a guarantee that it will dispose of your hostile fighter problems once and for all.  Shipboard gunners salivate at the thought of being permanently assigned to one of these beauties.  While the QLB System is heavy, it pours a truly prodigious amount of fire into enemy fighter squadrons, and creates havoc in the ranks of even the most disciplined fighter wings.  And you can buy it here without a license, but you had better be wary of Federation scans..."
 
@@ -3043,27 +3395,35 @@
 	"outfit space" -5
 	"gun ports" -1
 	"weapon"
+		"homing"
+		# EVN ProxRadius 2 has no direct ES field.
 		"sprite" "projectile/ir_missile"
 		"sound" "evn-207"
 		"inaccuracy" 2
 		"velocity" 6.75
 		"lifetime" 100
-		"reload" 30
-		"shield damage" 0
-		"hull damage" 4
+		"reload" 15
+		"shield damage" 10
+		"hull damage" 20
 		"ion damage" 0
+		"blast radius" 10
+		"hit force" 50
+		"missile strength" 4
+		"ammo" "IR Missile"
 		"turret turn" 1
+	"ir missile capacity" 4
 	"description" "Kayel Solutions (KLSol) have won 'Best of Show' 26 years running for their clever adaptation of the Infrared Missile launcher.  Based on the launcher mounted by the F-29 Anaconda and the E-41 Destroyer, the KLSol version is a tightly integrated set of standardized components that can easily swap between a hundred different classes of ship with only a minor, dealer serviceable tweak of the software.  The KLSol IR Missile Launcher does produce a fair amount of heat for such a small unit, but it's easily compensated for.  And you can buy it here without a license, but you had better be wary of Federation scans..{b424 '. You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' '.'}"
 
 "outfit" "Illegal IR Missile"
 	"plural" "Illegal IR Missiles"
 	licenses
 		"EVN Tech License 42"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 650
 	"thumbnail" "outfit/illegal_ir_missile"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Illegal IR Missile"
 	"description" "The Infrared Missile uses the simplest of tracking systems to deliver its small payload.  It's not much to look at, but it's cheap and promiscuously available.  The weapon itself can be loaded into a number of aftermarket launchers, including several highly illegal handheld ones used by Rebellion Vacuum Soldiers.  And you can buy it here without a license, but you had better be wary of Federation scans..{b424 '. You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' '.'}"
 
 "outfit" "Illegal Radar Missile Launcher"
@@ -3077,27 +3437,35 @@
 	"outfit space" -7
 	"gun ports" -1
 	"weapon"
+		"homing"
+		# EVN ProxRadius 4 has no direct ES field.
 		"sprite" "projectile/radar_missile"
 		"sound" "evn-213"
 		"inaccuracy" 1
 		"velocity" 5.5
 		"lifetime" 110
-		"reload" 60
-		"shield damage" 0
-		"hull damage" 8
+		"reload" 30
+		"shield damage" 20
+		"hull damage" 40
 		"ion damage" 0
+		"blast radius" 20
+		"hit force" 65
+		"missile strength" 8
+		"ammo" "Radar Missile"
 		"turret turn" 1
+	"radar missile capacity" 3
 	"description" "GLiMMER, a band of propellerheads turned pro, created the first modern radar guided missile and launcher system way back in 2045 AD.  This design, produced under license by KLSol, is practically identical to that original design, albeit with KLSol's usual software driver genius.  You can mount this unit in any spacefaring vessel with enough expansion space to hold it.  There have even been some reports that it has been successfully incorporated into Auroran vessels!  And you can buy it here without a license, but you had better be wary of Federation scans..{b424 '. You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' '.'}"
 
 "outfit" "Illegal Radar Missile"
 	"plural" "Illegal Radar Missiles"
 	licenses
 		"EVN Tech License 42"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 800
 	"thumbnail" "outfit/illegal_radar_missile"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Illegal Radar Missile"
 	"description" "Radar as a concept and as a useable weapons guidance system has been around since the middle of the twentieth century AD.  As humanity reached for the stars they brought their technology with them, and radar, which is not reliant on a medium for effectiveness, quickly became a necessary tool for guiding missiles.  This modern radar guided missile is a cheap GLiMMER knock-off.  And you can buy it here without a license, but you had better be wary of Federation scans..{b424 '. You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' '.'}"
 
 "outfit" "Disabling Fusion Pulse Turret"
@@ -3116,10 +3484,12 @@
 		"inaccuracy" 5
 		"velocity" 4.5
 		"lifetime" 55
-		"reload" 44
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 22
+		"shield damage" 8
+		"hull damage" 16
 		"ion damage" 0
+		"blast radius" 20
+		"hit force" 40
 		"turret turn" 1
 	"description" "As the FPC is cheap and easy to build the Auroran houses have opted to mount a turreted version of the cannon on almost all ships.  This particular version has been designed to specifically disable yet not destroy any targeted ships.  Auroran warriors use this weapon as their weapon of choice in their many and varied duels, and some even mount it as their standard battle weapon, claiming that they only wish to defeat their opponents, not destroy them."
 
@@ -3134,15 +3504,21 @@
 	"outfit space" -7
 	"gun ports" -1
 	"weapon"
+		"homing"
+		# EVN AmmoType 7 has no mapped ammo outfit.
+		# EVN ProxRadius 4 has no direct ES field.
 		"sprite" "projectile/radar_missile"
 		"sound" "evn-213"
 		"inaccuracy" 1
 		"velocity" 5.5
 		"lifetime" 110
-		"reload" 60
-		"shield damage" 0
-		"hull damage" 8
+		"reload" 30
+		"shield damage" 20
+		"hull damage" 40
 		"ion damage" 0
+		"blast radius" 20
+		"hit force" 650
+		"missile strength" 8
 		"turret turn" 1
 	"description" "Many Auroran warriors have taken the basic GLiMMER radar missile launchers and modified them to launch the modified disable-only radar missiles they use in their many space-based duels.  The only main difference is a slightly wider bore so that the extra sensors required to sense ship activity can fit."
 
@@ -3150,11 +3526,12 @@
 	"plural" "Disabling Radar Missiles"
 	licenses
 		"EVN Tech License 11"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 1250
 	"thumbnail" "outfit/disabling_radar_missile"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Disabling Radar Missile"
 	"description" "To allow them to conduct space-based, yet non-lethal duels, the Aurorans have been forced to add some fairly sophisticated sensory equipment to their radar missiles.  The result is a missile with a slightly greater diameter than the basic radar missile design that allows warriors to fight to the utmost of their ability without fear of utterly destroying their opponents."
 
 "outfit" "User modified Ionic Particle Cannon"
@@ -3168,15 +3545,22 @@
 	"outfit space" -25
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 3 requires ES beam visual tuning.
+		# EVN ProxRadius 1 has no direct ES field.
 		"sprite" "projectile/ion_cannon_non_weapon_glow"
 		"sound" "evn-230"
 		"inaccuracy" 4
 		"velocity" 0
 		"lifetime" 1
 		"reload" 0
-		"shield damage" 0
-		"hull damage" 0
-		"ion damage" 0
+		"shield damage" 4
+		"hull damage" 2
+		"ion damage" 2
+		"blast radius" 0
+		"hit force" 20
+		"burst reload" 0
+		"burst count" 60
+		"firing fuel" 0
 		"turret turn" 1
 	"description" "The Rauther Power Industries Ion Particle Cannon is amongst the most powerful directed energy weapons in the known galaxy.  Mounted on a 360¡/270¡ firing platform, the weapons' accuracy is unmatched, delivering incredibly destructive pulses of charged helium nuclei. This particular version looks like it's a few decades old, and has been tinkered with and repaired by a number of different owners.  A few backyard tinkerers, and even one major weapon corporations seem interested in buying it, but only so they can pull it apart and have a look at what's been done to it."
 
@@ -3191,15 +3575,22 @@
 	"outfit space" -25
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 3 requires ES beam visual tuning.
+		# EVN ProxRadius 1 has no direct ES field.
 		"sprite" "projectile/ion_cannon"
 		"sound" "evn-230"
 		"inaccuracy" 4
 		"velocity" 0
 		"lifetime" 1
 		"reload" 0
-		"shield damage" 0
-		"hull damage" 0
-		"ion damage" 0
+		"shield damage" 4
+		"hull damage" 2
+		"ion damage" 2
+		"blast radius" 0
+		"hit force" 20
+		"burst reload" 0
+		"burst count" 60
+		"firing fuel" 0.5
 		"turret turn" 1
 	"description" "The Rauther Power Industries Ion Particle Cannon is amongst the most powerful directed energy weapons in the known galaxy.  Mounted on a 360¡/270¡ firing platform, the weapons accuracy is unmatched, delivering incredibly destructive pulses of charged helium nuclei. The weapon's rotating phase excels in damaging shields and armor. The weapon's only major drawbacks are its heavy power requirement and large mass.  And you can buy it here without a license, but you had better be wary of Federation scans..{b424 '. You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' '.'}"
 
@@ -3322,15 +3713,18 @@
 	"outfit space" -10
 	"gun ports" -1
 	"weapon"
+		# EVN AmmoType 17 has no mapped ammo outfit.
 		"sprite" "projectile/wraithii"
 		"sound" "evn-222"
 		"inaccuracy" 0
 		"velocity" 9.25
 		"lifetime" 40
-		"reload" 30
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 15
+		"shield damage" 30
+		"hull damage" 40
 		"ion damage" 0
+		"blast radius" 0
+		"hit force" 40
 		"turret turn" 1
 	"description" "Wraithii are tiny capsules of polarons contained in a mar-graviton field.  A Wraith Cannon fires these capsules via simple biomechanics, and the capsules burst on impact, releasing a powerful kinetic force.  These guns are mounted as standard on the Dragon, and can be retrofitted to most ships on the market.  Only in recent times have the Polaris even allowed this item, which they consider to be low-tech, to be used by the Rebellion, and even then there were stringent controls placed upon them."
 
@@ -3338,11 +3732,12 @@
 	"plural" "Wraithiis"
 	licenses
 		"EVN Tech License 15"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 2500
 	"thumbnail" "outfit/wraithii"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Wraithii"
 	"description" "The polarons for Wraithii are harvested by deep-space mining scoops run by the Polaris worker caste.  These polarons are then shipped to P'aedt facilities for encapsulation in the mar-graviton field that will hold them until they impact at a speed of greater than 20 kilometers an hour.  Needless to say, the final packets are handled with kid gloves.  It is a testament to the capabilities of the Polaris that no accidents have ever occurred since they began shipping these weapons to the Rebellion."
 
 "outfit" "Rebel Cloaking Device - illegal"
@@ -3532,27 +3927,35 @@
 	"outfit space" -10
 	"gun ports" -1
 	"weapon"
+		"homing"
+		# EVN ProxRadius 25 has no direct ES field.
 		"sprite" "projectile/hellhound_missile"
 		"sound" "evn-227"
 		"inaccuracy" 1
 		"velocity" 5
 		"lifetime" 160
-		"reload" 70
-		"shield damage" 0
-		"hull damage" 12
-		"ion damage" 0
+		"reload" 35
+		"shield damage" 35
+		"hull damage" 70
+		"ion damage" 20
+		"blast radius" 145
+		"hit force" 100
+		"missile strength" 12
+		"ammo" "Hellhound Missile"
 		"turret turn" 1
+	"hellhound missile capacity" 3
 	"description" "In recent times the Federation has been trying to come up with something new between the radar missile and the nuclear torpedo.  The end result has been this beauty.  Hellhound missiles scare every ship captain who is unfortunate enough to be anywhere near the business end of this devastating weapon.  This launcher gives you the capability to hurl these hellish thunderbolts at your enemies, something they will never forget. Requires: Missile Weapons {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Hellhound Missile"
 	"plural" "Hellhound Missiles"
 	licenses
 		"EVN Tech License 115"
-	"category" "Systems"
+	"category" "Ammunition"
 	"cost" 1500
 	"thumbnail" "outfit/hellhound_missile"
 	"mass" 0
 	"outfit space" 0
+	"ammo" "Hellhound Missile"
 	"description" "Without a doubt, this is one of the most devastating missiles out there.  Although technically radar-guided, it will burn through most forms of radar jamming, making it nearly impossible to shake, and it lasts just a little too long before detonating.  With an excellent turn rate and a hefty payload, the hellhound missile is an excellent addition to any arsenal. Requires: Missile Weapons {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Repair Droids"
@@ -3577,15 +3980,18 @@
 	"outfit space" -2
 	"gun ports" -1
 	"weapon"
+		# EVN ProxRadius 4 has no direct ES field.
 		"sprite" "projectile/light_cannon"
 		"sound" "evn-208"
 		"inaccuracy" 4
 		"velocity" 10
 		"lifetime" 15
-		"reload" 14
-		"shield damage" 0
-		"hull damage" 0
+		"reload" 7
+		"shield damage" 2
+		"hull damage" 2
 		"ion damage" 0
+		"blast radius" 4
+		"hit force" 8
 		"turret turn" 1
 	"description" "When they were developing the Lightning Heavy Fighter, Rauther discovered that the traditional Light Blaster just didn't suit the ship's basic load-out.  So they went away and tinkered with the design somewhat, and they came up with a weapon they called the Light Cannon.  It isn't quite as powerful as the Light Blaster, but it fires faster, its shots reach a little further, and it takes up a little less space as well.  Every Lightning to roll off their production line has three of them.  Not all pilots like them, because they are twice as expensive as the ubiquitous Blaster, but most agree they are a somewhat better product..."
 
@@ -3611,15 +4017,19 @@
 	"outfit space" 0
 	"gun ports" -1
 	"weapon"
+		# EVN beam Guidance 0 requires ES beam visual tuning.
+		# EVN ProxRadius 3 has no direct ES field.
 		"sprite" "projectile/triphammer"
 		"sound" "evn-210"
 		"inaccuracy" 0
 		"velocity" 0
 		"lifetime" 2
-		"reload" 40
+		"reload" 20
 		"shield damage" 0
-		"hull damage" 0
-		"ion damage" 0
+		"hull damage" 20
+		"ion damage" 5
+		"blast radius" 0
+		"hit force" 10
 		"turret turn" 1
 	"description" "The Auroran Thunderforge is the pinnacle of current Auroran science.  It combines many diverse elements with a distinctive Auroran flavour, and nothing typifies this more than the Triphammer.  Thanks largely to Vell-os intervention, the Triphammer combines Vell-os energy principals with typical Auroran brutish  technology.  The cannon fires a cadmium telluride pellet which vaporizes during its flight.  The particles left in its wake create a conduit for the real action to follow.  The particle trail is a perfect channel to conduct an obscene amount of metaphasic energy, which arcs into the target with predictably devastating results.  The Thunderforge itself was built as a suitable weapons platform for these mighty guns, and would be immeasurably weakened by their removal; they form an integral part of the ship's structure."
 

@@ -27,6 +27,7 @@ Current ES conversion:
 - Ship, outfit, weapon, planet, system, government, fleet, shop, mission, conversation, start, and menu interface data emitted under `converted-plugin/data/`.
 - EVN government colors, reputation, allies, enemies, dock flags, tech levels, SpecialTech shops, commodity flags, asteroid fields, traffic fleets, reinforcement fleets, tribute, and defense fleets mapped into ES syntax.
 - EVN ship `Cost`, `Crew`, and `Fuel` fields now map to ES ship attributes for all 288 converted ships.
+- EVN weapon `MassDmg`, `EnergyDmg`, `Ionization`, `Reload`, `Count`, `Impact`, `BlastRadius`, burst fields, homing, missile strength, firing fuel, ammo links, and mapped submunitions now emit ES weapon attributes. EVN proximity fuses and beam visual behavior remain explicit comments.
 - EVN `DefCount` wave encoding converted to total ES tribute-fleet spawns. ES has no direct equivalent for EVN wave timing.
 - EVN `spöb` station and uninhabited flags now map to ES planet attributes. EVN landing-state, deadly-stellar, and persistent-destroyed flags remain explicit only when present because ES has no direct equivalent.
 - EVN murk mapped to ES system haze artwork. Sensor interference, visibility expressions, and decorative `nëbu` regions remain explicit source/attribute data because ES has no direct equivalents.
