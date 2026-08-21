@@ -1,6 +1,6 @@
 # EVN crön records converted to mission-triggered ES events.
 # ES has no independent daily cron hook; hidden landing missions approximate activation timing.
-# Date-constrained records remain source-only until an ES date-window condition is available.
+# EVN date windows map to ES month/day/year conditions in scheduler missions.
 
 # EVN crön 215: Random 100, PreHoldoff 30, Duration 0, PostHoldoff 0.
 event "EVN crön 215: Sigma Shipyards 4 cron"
@@ -1324,7 +1324,22 @@ event "EVN crön 157: Chrome Valk Upgrade end"
 	clear "EVN crön active 157"
 	clear "EVN crön pending 157"
 
-# Skipped EVN crön 156 "Auroran Drop Bear Mating Season": wildcard date window; ES date-window condition not available.
+# EVN crön 156: Random 100, PreHoldoff 0, Duration 105, PostHoldoff 0.
+# EVN date window: 1/9/* through 30/12/*.
+event "EVN crön 156: Auroran Drop Bear Mating Season"
+	set "EVN crön active 156"
+	set "EVN bit 42"
+	news "EVN crön 156 news 15005 government 129"
+		location
+			government "Auroran Empire"
+
+event "EVN crön 156: Auroran Drop Bear Mating Season end"
+	clear "EVN bit 42"
+	news "EVN crön 156 news 15005 government 129"
+		remove location
+	clear "EVN crön active 156"
+	clear "EVN crön pending 156"
+
 # EVN crön 155: Random 100, PreHoldoff 243, Duration 0, PostHoldoff 0.
 event "EVN crön 155: Rebel Hypergate Close-Down"
 	set "EVN crön active 155"
@@ -1594,5 +1609,27 @@ event "EVN crön 130: Terraforming misn 2 end"
 	clear "EVN crön active 130"
 	clear "EVN crön pending 130"
 
-# Skipped EVN crön 128 "Wraith Change": date 1 1 1183; ES date-window condition not available.
-# Skipped EVN crön 129 "Terraforming Start": date 1 1 1178; ES date-window condition not available.
+# EVN crön 128: Random 100, PreHoldoff 200, Duration 90, PostHoldoff 0.
+# EVN date window: 1/1/1183 through 31/12/1200.
+event "EVN crön 128: Wraith Change"
+	set "EVN crön active 128"
+	set "EVN bit 1300"
+	news "EVN crön 128 news 15000 government 130"
+		location
+			government "Polaris"
+
+event "EVN crön 128: Wraith Change end"
+	news "EVN crön 128 news 15000 government 130"
+		remove location
+	clear "EVN crön active 128"
+	clear "EVN crön pending 128"
+
+# EVN crön 129: Random 40, PreHoldoff 0, Duration 0, PostHoldoff 0.
+# EVN date window: 1/1/1178 through 1/1/1179.
+event "EVN crön 129: Terraforming Start"
+	set "EVN crön active 129"
+
+event "EVN crön 129: Terraforming Start end"
+	set "EVN bit 9998"
+	clear "EVN crön active 129"
+	clear "EVN crön pending 129"

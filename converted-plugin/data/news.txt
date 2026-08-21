@@ -732,6 +732,17 @@ news "EVN crön 157 news 15006 government 128"
 		word
 			`Sigma Shipyard engineers can now upgrade the standard Starbridge into the far more capable Starbridge C, most commonly known as the Chrome Valkyrie.`
 
+news "EVN crön 156 news 15005 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Auroran officials humourously warn tourists to keep an eye out above their heads as it is the mating season of the Auroran Drop Bears.`
+			`From Auroran Bureau of Statistics: Attacks by Auroran Drop Bears in the last ten years - 24017; Deaths due to these attacks - 1349.`
+			`Local authorities warn with a smile that increased Auroran Drop Bear activity has been observed in the area.`
+			`Local expert informs tourist that the best way to avoid being a victim of the Auroran Drop Bear is to watch for overhanging trees and walls.`
+
 news "EVN crön 152 news 15004 government 130"
 	name
 		word
@@ -787,3 +798,13 @@ news "EVN crön 137 news 15001 government 130"
 	message
 		word
 			`The Ver'ash and the P'aedt working together on Ver'a Se have improved the cloaking device so that ships are no longer required to drop their shields when they cloak.`
+
+news "EVN crön 128 news 15000 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`The Polaris have recently opened diplomatic discussions with the Wraith ending two centuries of hostility.`
+			`The cessation of hostilities between the Wraith and the Polaris has led to enormous advances in the field of astro-xenobiology.`
+			`The Polaris have begun exploring parts of Wraith space in an effort to come to a greater understanding of the lives of these space-based life-forms.`

@@ -1628,6 +1628,32 @@ mission "EVN crön scheduler 157: Chrome Valk Upgrade"
 		event "EVN crön 157: Chrome Valk Upgrade end" 250
 		fail
 
+mission "EVN crön scheduler 156: Auroran Drop Bear Mating Season"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 156"
+		not "EVN crön pending 156"
+		or
+			and
+				month == 9
+				day >= 1
+			and
+				month > 9
+				month < 12
+			and
+				month == 12
+				day <= 30
+		not "EVN bit 42"
+		random < 100
+	on offer
+		set "EVN crön pending 156"
+		event "EVN crön 156: Auroran Drop Bear Mating Season" 0
+		event "EVN crön 156: Auroran Drop Bear Mating Season end" 105
+		fail
+
 mission "EVN crön scheduler 155: Rebel Hypergate Close-Down"
 	invisible
 	non-blocking
@@ -2098,4 +2124,73 @@ mission "EVN crön scheduler 130: Terraforming misn 2"
 		set "EVN crön pending 130"
 		event "EVN crön 130: Terraforming misn 2" 50
 		event "EVN crön 130: Terraforming misn 2 end" 50
+		fail
+
+mission "EVN crön scheduler 128: Wraith Change"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 128"
+		not "EVN crön pending 128"
+		or
+			and
+				year == 1183
+				month == 1
+				day >= 1
+			and
+				year == 1183
+				month > 1
+			and
+				year > 1183
+				year < 1200
+			and
+				year == 1200
+				month == 12
+				day <= 31
+			and
+				year == 1200
+				month < 12
+		and
+			has "EVN bit 317"
+			not "EVN bit 1300"
+		random < 100
+	on offer
+		set "EVN crön pending 128"
+		event "EVN crön 128: Wraith Change" 200
+		event "EVN crön 128: Wraith Change end" 290
+		fail
+
+mission "EVN crön scheduler 129: Terraforming Start"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 129"
+		not "EVN crön pending 129"
+		or
+			and
+				year == 1178
+				month == 1
+				day >= 1
+			and
+				year == 1178
+				month > 1
+			and
+				year == 1179
+				month == 1
+				day <= 1
+			and
+				year == 1179
+				month < 1
+		or
+			not "EVN bit 17"
+			not "EVN bit 9998"
+		random < 40
+	on offer
+		set "EVN crön pending 129"
+		event "EVN crön 129: Terraforming Start" 0
+		event "EVN crön 129: Terraforming Start end" 0
 		fail

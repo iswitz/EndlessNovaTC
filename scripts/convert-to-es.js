@@ -935,6 +935,11 @@ function convertStarts() {
   if (!system) return;
   const firstPlanet = Array.isArray(system.planets) ? system.planets.map(ref => normalizedOf("Planet", ref)).find(Boolean) : null;
   const shipName = normalizedOf("Ship", shipId);
+  const referenceCharacter = (referenceData["chär"] || []).find(item => String(item.id) === String(character.id));
+  const referenceStart = referenceCharacter && referenceCharacter.data ? referenceCharacter.data : {};
+  const startDay = Math.max(1, Math.min(31, Math.trunc(Number(referenceStart.StartDay) || 1)));
+  const startMonth = Math.max(1, Math.min(12, Math.trunc(Number(referenceStart.StartMonth) || 1)));
+  const startYear = Math.max(1, Math.trunc(Number(referenceStart.StartYear) || 3020));
   const startId = "evn-trader";
   const conversationName = "EVN start trader";
   const lines = ["# EVN chär character template converted to an ES start.", "", `start ${q(startId)}`];
@@ -942,7 +947,7 @@ function convertStarts() {
   lines.push(`\tdescription ${q(`EV Nova character template: ${safeName(character.name, "Trader")}.`)}`);
   lines.push(`\tsystem ${q(safeName(system.name, "Kania"))}`);
   if (firstPlanet) lines.push(`\tplanet ${q(safeName(firstPlanet.name, "Port Kane"))}`);
-  lines.push("\tdate 1 1 3020");
+  lines.push(`\tdate ${startDay} ${startMonth} ${startYear}`);
   lines.push(`\tconversation ${q(conversationName)}`);
   lines.push("\taccount", `\t\tcredits ${Math.max(0, cash)}`, "\t\tscore 0");
   lines.push("\tset \"license: Pilot's\"", `\tset ${q("start: EVN trader")}`, "");
@@ -1091,10 +1096,119 @@ function convertMissionStubs() {
 }
 
 function evnDate(data, prefix) {
-  const day = Math.trunc(Number(data && data[`${prefix}Day`]) || 0);
-  const month = Math.trunc(Number(data && data[`${prefix}Month`]) || 0);
-  const year = Math.trunc(Number(data && data[`${prefix}Year`]) || 0);
-  return day > 0 && month > 0 && year > 0 ? [day, month, year] : null;
+  return ["Day", "Month", "Year"].map(field => {
+    const value = Math.trunc(Number(data && data[`${prefix}${field}`]));
+    return Number.isFinite(value) && value > 0 ? value : null;
+  });
+}
+
+function evnDateDescription(data) {
+  const format = values => values.map(value => value == null ? "*" : value).join("/");
+  return `${format(evnDate(data, "First"))} through ${format(evnDate(data, "Last"))}`;
+}
+
+function evnDateTerm(year, conditions) {
+  const term = [];
+  if (year != null) term.push({ field: "year", op: "==", value: year });
+  return term.concat(conditions);
+}
+
+function evnDateMonthDayTerms(first, last) {
+  const firstMonth = first[1] == null ? 1 : first[1];
+  const firstDay = first[0] == null ? 1 : first[0];
+  const lastMonth = last[1] == null ? 12 : last[1];
+  const lastDay = last[0] == null ? 31 : last[0];
+  if (firstMonth < lastMonth) {
+    return [
+      [{ field: "month", op: "==", value: firstMonth }, { field: "day", op: ">=", value: firstDay }],
+      [{ field: "month", op: ">", value: firstMonth }, { field: "month", op: "<", value: lastMonth }],
+      [{ field: "month", op: "==", value: lastMonth }, { field: "day", op: "<=", value: lastDay }]
+    ];
+  }
+  if (firstMonth === lastMonth && firstDay <= lastDay) {
+    return [[
+      { field: "month", op: "==", value: firstMonth },
+      { field: "day", op: ">=", value: firstDay },
+      { field: "day", op: "<=", value: lastDay }
+    ]];
+  }
+  return [
+    [{ field: "month", op: "==", value: firstMonth }, { field: "day", op: ">=", value: firstDay }],
+    [{ field: "month", op: ">", value: firstMonth }],
+    [{ field: "month", op: "<", value: lastMonth }],
+    [{ field: "month", op: "==", value: lastMonth }, { field: "day", op: "<=", value: lastDay }]
+  ];
+}
+
+function evnDateConditionTerms(data) {
+  const first = evnDate(data, "First");
+  const last = evnDate(data, "Last");
+  const firstYear = first[2];
+  const lastYear = last[2];
+  if (firstYear == null && lastYear == null) {
+    return evnDateMonthDayTerms(first, last);
+  }
+  if (firstYear != null && lastYear != null && firstYear === lastYear) {
+    return evnDateMonthDayTerms(first, last).map(term => evnDateTerm(firstYear, term));
+  }
+  if (firstYear != null && lastYear != null && firstYear > lastYear) return null;
+  const terms = [];
+  if (firstYear != null) {
+    const firstMonth = first[1];
+    const firstDay = first[0];
+    if (firstMonth == null) terms.push(evnDateTerm(firstYear, []));
+    else if (firstDay == null) terms.push(evnDateTerm(firstYear, [{ field: "month", op: ">=", value: firstMonth }]));
+    else {
+      terms.push(evnDateTerm(firstYear, [
+        { field: "month", op: "==", value: firstMonth },
+        { field: "day", op: ">=", value: firstDay }
+      ]));
+      terms.push(evnDateTerm(firstYear, [{ field: "month", op: ">", value: firstMonth }]));
+    }
+  }
+  if (firstYear != null && lastYear != null && lastYear - firstYear > 1) {
+    terms.push([
+      { field: "year", op: ">", value: firstYear },
+      { field: "year", op: "<", value: lastYear }
+    ]);
+  } else if (firstYear != null && lastYear == null) {
+    terms.push([{ field: "year", op: ">", value: firstYear }]);
+  } else if (firstYear == null && lastYear != null) {
+    terms.push([{ field: "year", op: "<", value: lastYear }]);
+  }
+  if (lastYear != null) {
+    const lastMonth = last[1];
+    const lastDay = last[0];
+    if (lastMonth == null) terms.push(evnDateTerm(lastYear, []));
+    else if (lastDay == null) terms.push(evnDateTerm(lastYear, [{ field: "month", op: "<=", value: lastMonth }]));
+    else {
+      terms.push(evnDateTerm(lastYear, [
+        { field: "month", op: "==", value: lastMonth },
+        { field: "day", op: "<=", value: lastDay }
+      ]));
+      terms.push(evnDateTerm(lastYear, [{ field: "month", op: "<", value: lastMonth }]));
+    }
+  }
+  return terms.length ? terms : null;
+}
+
+function emitEvnDateConditions(lines, data, indent) {
+  const terms = evnDateConditionTerms(data);
+  if (!terms || terms.some(term => !term.length)) return false;
+  const condition = item => `${item.field} ${item.op} ${item.value}`;
+  const emitTerm = (term, prefix) => {
+    if (term.length === 1) lines.push(`${prefix}${condition(term[0])}`);
+    else {
+      lines.push(`${prefix}and`);
+      for (const item of term) lines.push(`${prefix}\t${condition(item)}`);
+    }
+  };
+  if (terms.length === 1) emitTerm(terms[0], indent);
+  else {
+    lines.push(`${indent}or`);
+    for (const term of terms) emitTerm(term, `${indent}\t`);
+  }
+  return true;
 }
 
 function evnControlActions(expression) {
@@ -1123,7 +1237,7 @@ function convertCronEvents() {
   const lines = [
     "# EVN crön records converted to mission-triggered ES events.",
     "# ES has no independent daily cron hook; hidden landing missions approximate activation timing.",
-    "# Date-constrained records remain source-only until an ES date-window condition is available.",
+    "# EVN date windows map to ES month/day/year conditions in scheduler missions.",
     ""
   ];
   const missionLines = [
@@ -1141,14 +1255,13 @@ function convertCronEvents() {
   for (const record of referenceData["crön"] || []) {
     const data = record.data || {};
     const name = safeName(record.name, `EVN crön ${record.id}`);
-    const startDate = evnDate(data, "First");
     const dateConstraint = cronHasDateConstraint(data);
+    const dateTerms = dateConstraint ? evnDateConditionTerms(data) : null;
     const enableOn = String(data.EnableOn || "").replace(/\0/g, "").trim();
     const enableTree = parseEvnBitExpression(enableOn);
-    if (dateConstraint) {
+    if (dateConstraint && !dateTerms) {
       skippedDate++;
-      const dateDescription = startDate ? `date ${startDate.join(" ")}` : "wildcard date window";
-      lines.push(`# Skipped EVN crön ${record.id} ${q(name)}: ${dateDescription}; ES date-window condition not available.`);
+      lines.push(`# Skipped EVN crön ${record.id} ${q(name)}: ${evnDateDescription(data)}; date window could not be represented.`);
       continue;
     }
     if (enableOn && !enableTree) {
@@ -1188,6 +1301,7 @@ function convertCronEvents() {
     }
 
     lines.push(`# EVN crön ${record.id}: Random ${random}, PreHoldoff ${preHoldoff}, Duration ${duration}, PostHoldoff ${postHoldoff}.`);
+    if (dateConstraint) lines.push(`# EVN date window: ${evnDateDescription(data)}.`);
     lines.push(`event ${q(eventName)}`);
     lines.push(`\tset ${q(activeFlag)}`);
     if (!emitEventBitActions(lines, data.OnStart, "\t")) {
@@ -1230,6 +1344,10 @@ function convertCronEvents() {
     missionLines.push("\tto offer");
     missionLines.push(`\t\tnot ${q(activeFlag)}`);
     missionLines.push(`\t\tnot ${q(pendingFlag)}`);
+    if (dateConstraint && !emitEvnDateConditions(missionLines, data, "\t\t")) {
+      skippedDate++;
+      missionLines.push(`\t\t# EVN date window preserved: ${q(evnDateDescription(data))}`);
+    }
     if (enableOn && !emitEvnBitConditions(missionLines, enableOn, "\t\t")) {
       skippedCondition++;
       missionLines.push(`\t\t# EVN EnableOn preserved: ${q(enableOn)}`);

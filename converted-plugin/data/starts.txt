@@ -5,7 +5,7 @@ start "evn-trader"
 	description "EV Nova character template: .Trader."
 	system "Kania"
 	planet "Port Kane"
-	date 1 1 3020
+	date 23 6 1177
 	conversation "EVN start trader"
 	account
 		credits 25000
