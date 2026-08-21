@@ -551,6 +551,40 @@ function evnMissionName(missionId) {
   return reference ? `EVN: ${safeName(reference.name, `EVN mission ${missionId}`)}` : null;
 }
 function evnMissionMessageName(messageId) { return `EVN message ${messageId}`; }
+function evnMissionCompletionReward(value) {
+  const pay = Math.trunc(Number(value));
+  if (!Number.isFinite(pay)) return { supported: false, payment: null, lines: [], note: "missing EVN PayVal" };
+  if (pay > 0) return { supported: true, payment: Math.max(1, pay), lines: [], note: null };
+  const absolute = Math.abs(pay);
+  let mode = null;
+  let governmentId = null;
+  if (absolute >= 10128 && absolute <= 10383) {
+    mode = "government";
+    governmentId = absolute - 10000;
+  } else if (absolute >= 20128 && absolute <= 20383) {
+    mode = "allies";
+    governmentId = absolute - 20000;
+  } else if (absolute >= 30128 && absolute <= 30383) {
+    mode = "classmates";
+    governmentId = absolute - 30000;
+  }
+  if (mode) {
+    const government = governmentName(governmentId);
+    if (!government) return { supported: false, payment: null, lines: [], note: `EVN PayVal ${pay} references missing government` };
+    const names = new Set([government]);
+    if (mode === "allies") for (const name of (referenceGovernmentRelations.get(government) || { allies: new Set() }).allies) names.add(name);
+    if (mode === "classmates") for (const name of evnGovernmentClassmates(governmentId)) names.add(name);
+    return {
+      supported: true,
+      payment: null,
+      lines: [...names].sort().map(name => `\t\t${q(`reputation: ${name}`)} = 0`),
+      note: `EVN PayVal ${pay} clean-record reward approximated as ES reputation reset for ${mode}`
+    };
+  }
+  if (absolute >= 40001 && absolute <= 40099) return { supported: false, payment: null, lines: [], note: `EVN PayVal ${pay} removes a percentage of credits; no ES equivalent` };
+  if (pay <= -50000) return { supported: false, payment: null, lines: [], note: `EVN PayVal ${pay} removes credits at mission start; no ES equivalent` };
+  return { supported: false, payment: null, lines: [], note: `EVN PayVal ${pay} has no tested ES equivalent` };
+}
 function emitEvnMissionActions(lines, expression, indent, context = {}) {
   const actions = evnMissionActions(expression);
   for (const action of actions.supported) {
@@ -1287,7 +1321,8 @@ function convertMissionStubs() {
     const source = evnMissionStellarFilter(data && data.AvailStel, "source");
     const availability = String(data && data.AvailBits || "").replace(/\0/g, "").trim();
     const shipType = evnMissionShipTypeCondition(data && data.AvailShipTyp);
-    const activeMission = data && Number(data.PayVal) > 0 && destination.supported && source.supported && evnMissionAvailabilitySupported(availability);
+    const completionReward = evnMissionCompletionReward(data && data.PayVal);
+    const activeMission = data && completionReward.supported && destination.supported && source.supported && evnMissionAvailabilitySupported(availability);
     if (activeMission) {
       active++;
       lines.push(`mission ${q(name)}`);
@@ -1303,6 +1338,7 @@ function convertMissionStubs() {
       if (destination.note) lines.push(`\t# ${destination.note}`);
       if (travel.note && travel.exact) lines.push(`\t# ${travel.note}`);
       if (shipType.note) lines.push(`\t# ${shipType.note}`);
+      if (completionReward.note) lines.push(`\t# ${completionReward.note}`);
       const flags = hexNumber(data.Flags);
       if (flags & 0x0400) lines.push("\tinvisible");
       if (flags & 0x0004) lines.push("\t# EVN cannot-refuse flag preserved; ES decline remains available");
@@ -1342,7 +1378,8 @@ function convertMissionStubs() {
         missionConversation(lines, conversations, mission.id, "load", loadText);
       }
       lines.push("\ton complete");
-      lines.push(`\t\tpayment ${Math.max(1, Math.round(Number(data.PayVal)))}`);
+      if (completionReward.payment != null) lines.push(`\t\tpayment ${completionReward.payment}`);
+      lines.push(...completionReward.lines);
       emitEvnMissionActions(lines, data && data.OnSuccess, "\t\t", { messages });
       const compGovtId = Number(data && data.CompGovt);
       const compReward = Number(data && data.CompReward);
@@ -1391,6 +1428,7 @@ function convertMissionStubs() {
     lines.push("\tto offer");
     lines.push("\t\tnever");
     if (data && data.AvailBits) lines.push(`\t# EVN availability preserved: ${q(String(data.AvailBits).replace(/\0/g, "").trim())}`);
+    if (data && data.PayVal != null) lines.push(`\t# EVN completion reward preserved: ${q(String(data.PayVal))}`);
     if (data && data.AvailRecord) lines.push(`\t# EVN legal-record gate preserved: ${q(String(data.AvailRecord))}`);
     if (data && data.AvailShipTyp) lines.push(`\t# EVN ship-type gate preserved: ${q(String(data.AvailShipTyp))}`);
     if (data && data.AvailLoc != null) lines.push(`\t# EVN offer location preserved: ${q(String(data.AvailLoc))}`);
