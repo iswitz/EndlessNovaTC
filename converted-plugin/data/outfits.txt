@@ -396,7 +396,6 @@
 	"gun ports" -1
 	# EVN outfit Flags "0000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
-		# EVN AmmoType 10 has no mapped ammo outfit.
 		"sprite" "projectile/raven_turret"
 		"sound" "evn-217"
 		"inaccuracy" 2
@@ -408,7 +407,9 @@
 		"ion damage" 0
 		"blast radius" 10
 		"hit force" 45
+		"ammo" "Raven Rocket"
 		"turret turn" 1
+	"raven rocket capacity" 4
 	"description" "The Raven Rocket turret mounts two unguided pods on a swivel base.  It comes with a fairly basic tie-in to your vessel's sensors which allows it to track targets.  You'll still need to maneuver fairly well to get the rockets to hit small targets, but these pods allow slower ships to use the Raven."
 
 "outfit" "Stellar Grenade Launcher"
@@ -1576,7 +1577,6 @@
 	"weapon capacity" -25
 	"turret mounts" -1
 	"weapon"
-		# EVN AmmoType 27 has no mapped ammo outfit.
 		"sprite" "projectile/storm_chaingun"
 		"sound" "evn-223"
 		"inaccuracy" 20
@@ -1590,7 +1590,9 @@
 		"hit force" 10
 		"burst reload" 10
 		"burst count" 3
+		"ammo" "Chaingun Ammunition"
 		"turret turn" 1
+	"chaingun ammunition capacity" 4
 	"description" "The Storm is a sacred weather pattern in Auroran culture.  Symbolizing the power and fury of the hordes of Auroran warriors, many warriors have a thundercloud as a death tattoo, indicating that they will die in the fury of a mass offensive.  The Storm Chaingun reflects the Auroran philosophy of overwhelming the enemy with numbers; the Storm is effectively four Hails on a turret, and, as a point defence weapon system, is used to destroy incoming fighters and missiles with often devastating effect, and without requiring any command input from the bridge{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}{b424 ' You stare at this item, and the others around it, for several long, sad moments, knowing that you may never be able to buy any of them ever again.' ''}"
 
 "outfit" "Fusion Pulse Battery"
@@ -2273,7 +2275,6 @@
 	"gun ports" -1
 	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
-		# EVN AmmoType 17 has no mapped ammo outfit.
 		"sprite" "projectile/wraithii"
 		"sound" "evn-222"
 		"inaccuracy" 0
@@ -2285,7 +2286,9 @@
 		"ion damage" 0
 		"blast radius" 0
 		"hit force" 40
+		"ammo" "Wraithii"
 		"turret turn" 1
+	"wraithii capacity" 4
 	"description" "Wraithii are tiny capsules of polarons contained in a mar-graviton field.  A Wraith Cannon fires these capsules via simple biomechanics, and the capsules burst on impact, releasing a powerful kinetic force.  These guns are mounted as standard on the Dragon, a Polaris vessel, but can be retrofitted to most ships on the market.  Ever since this technology was stolen from the Polaris in a daring raid, Federation scientists, while capable of duplicating the technology, have been having problems understanding it..."
 
 "outfit" "Wraithii"
@@ -2593,7 +2596,6 @@
 	"gun ports" -1
 	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
-		# EVN AmmoType 17 has no mapped ammo outfit.
 		"sprite" "projectile/wraithii"
 		"sound" "evn-222"
 		"inaccuracy" 0
@@ -2605,7 +2607,9 @@
 		"ion damage" 0
 		"blast radius" 0
 		"hit force" 40
+		"ammo" "Wraithii"
 		"turret turn" 1
+	"wraithii capacity" 2
 	"description" "Wraithii are tiny capsules of polarons contained in a mar-graviton field.  A Wraith Cannon fires these capsules via simple biomechanics, and the capsules burst on impact, releasing a powerful kinetic force.  These guns are mounted as standard on the Dragon, and can be retrofitted to most ships on the market.  And now that they have been modified to allow them to shoot while the parent ship is cloaked, they are even more effective.  The Nil'kemorya keep a careful eye on these weapons, however, and only the most favored of outsiders are ever allowed to buy them."
 
 "outfit" "Wraithii;fire whilst cloaked"
@@ -2634,7 +2638,6 @@
 	# EVN outfit Flags "5000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
-		# EVN AmmoType 20 has no mapped ammo outfit.
 		# EVN ProxRadius 10 has no direct ES field.
 		"sprite" "projectile/polaron_torp_"
 		"sound" "evn-211"
@@ -2647,7 +2650,9 @@
 		"ion damage" 20
 		"blast radius" 20
 		"hit force" 200
+		"ammo" "Polaron Torpedo"
 		"turret turn" 1
+	"polaron torpedo capacity" 2
 	"description" "This launcher ties into a ship's main computer core (or neural network, in the case of Polaris ships).  It tracks a target ship, and then calculates the complex field generation parameters for the Polaron Flux Coils in the tube.  By varying the quantity, spin and charge of the newly generated polarons, the tube can give the polaron 'virtual structure' a good bead on a target before the preprogrammed field generator in the heart of the energy burst takes over.  And with a few relatively minor adjustments, it is now possible to use this weapon while the parent ship is cloaked{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Polaron Torpedo;fire whilst cloaked"
@@ -2677,7 +2682,6 @@
 	"weapon"
 		"homing"
 		"submunition" "Polaron Torpedo" 5
-		# EVN AmmoType 54 has no mapped ammo outfit.
 		# EVN ProxRadius 10 has no direct ES field.
 		"sprite" "projectile/polaron_multi_torp_"
 		"sound" "evn-211"
@@ -2690,7 +2694,9 @@
 		"ion damage" 20
 		"blast radius" 20
 		"hit force" 200
+		"ammo" "Polaron Multi-Torpedo;fire whilst cloaked"
 		"turret turn" 1
+	"polaron multi-torpedo;fire whilst cloaked capacity" 2
 	"description" "Like the simpler Polaron Torpedo Tube, this launcher ties into a ship's main computer core (or neural network, in the case of Polaris ships).  It tracks nearby hostile ships, and then calculates the complex field generation parameters for the Polaron Flux Coils in the tube.  By varying the quantity, spin and charge of the newly generated polarons, the tube can give the polaron 'virtual structure' allowing it to replicate itself into five separate copies that begin tracking the local hostile ships.  And, again like the simpler version, the Multi-Torpedo Tube is also now capable of being fired while cloaked{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "outfit" "Polaron Multi-Torpedo;fire whilst cloaked"
@@ -3624,7 +3630,6 @@
 	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
-		# EVN AmmoType 7 has no mapped ammo outfit.
 		# EVN ProxRadius 4 has no direct ES field.
 		"sprite" "projectile/radar_missile"
 		"sound" "evn-213"
@@ -3638,7 +3643,9 @@
 		"blast radius" 20
 		"hit force" 650
 		"missile strength" 8
+		"ammo" "Radar Missile"
 		"turret turn" 1
+	"radar missile capacity" 3
 	"description" "Many Auroran warriors have taken the basic GLiMMER radar missile launchers and modified them to launch the modified disable-only radar missiles they use in their many space-based duels.  The only main difference is a slightly wider bore so that the extra sensors required to sense ship activity can fit."
 
 "outfit" "Disabling Radar Missile"
@@ -3836,7 +3843,6 @@
 	"gun ports" -1
 	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
-		# EVN AmmoType 17 has no mapped ammo outfit.
 		"sprite" "projectile/wraithii"
 		"sound" "evn-222"
 		"inaccuracy" 0
@@ -3848,7 +3854,9 @@
 		"ion damage" 0
 		"blast radius" 0
 		"hit force" 40
+		"ammo" "Wraithii"
 		"turret turn" 1
+	"wraithii capacity" 4
 	"description" "Wraithii are tiny capsules of polarons contained in a mar-graviton field.  A Wraith Cannon fires these capsules via simple biomechanics, and the capsules burst on impact, releasing a powerful kinetic force.  These guns are mounted as standard on the Dragon, and can be retrofitted to most ships on the market.  Only in recent times have the Polaris even allowed this item, which they consider to be low-tech, to be used by the Rebellion, and even then there were stringent controls placed upon them."
 
 "outfit" "Wraithii"

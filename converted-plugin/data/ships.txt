@@ -237,10 +237,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
-		"Civilian Radar Jammer" 1
 		"Medium Blaster" 2
 		"Radar Missile Launcher" 1
+		"Civilian IR Jammer" 1
+		"Civilian Radar Jammer" 1
+		"Radar Missile" 10
 	gun 0 15
 	gun 0 15
 	gun 0 15
@@ -342,6 +343,7 @@
 	outfits
 		"Light Cannon" 3
 		"IR Missile Launcher" 1
+		"IR Missile" 5
 	gun 0 6
 	gun 12 6
 	gun -12 6
@@ -443,10 +445,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
 		"Medium Blaster" 1
 		"Light Blaster" 2
 		"Raven Rocket Pod" 1
+		"Civilian IR Jammer" 1
+		"Raven Rocket" 50
 	gun 0 10
 	gun 0 10
 	gun 0 10
@@ -497,9 +500,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Hail Chaingun" 2
 		"IR Missile Launcher" 1
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 100
+		"IR Missile" 10
 	gun 0 7
 	gun 0 7
 	gun 0 7
@@ -550,8 +555,8 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Fusion Pulse Turret" 1
+		"Auroran IR Jammer" 1
 	gun 39 17
 	gun -39 17
 	gun 39 17
@@ -602,9 +607,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
 		"Medium Blaster Turret" 2
 		"Raven Rocket Turret" 1
+		"Military IR Jammer" 1
+		"Raven Rocket" 100
 	gun 0 42
 	gun 0 36
 	gun 0 42
@@ -655,13 +661,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
-		"Civilian IR Jammer" 1
 		"Medium Blaster Turret" 2
 		"IR Missile Launcher" 4
 		"Light Blaster" 2
 		"Quad Light Blaster Turret" 2
 		"Medium Blaster" 2
+		"Military IR Jammer" 1
+		"Civilian IR Jammer" 1
+		"IR Missile" 80
 	gun 19 5
 	gun -19 5
 	gun 19 5
@@ -712,10 +719,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Afterburner" 1
-		"Military IR Jammer" 1
 		"Medium Blaster" 5
 		"Raven Rocket Pod" 4
+		"Afterburner" 1
+		"Military IR Jammer" 1
+		"Raven Rocket" 60
 	gun 0 18
 	gun 0 18
 	gun 0 18
@@ -766,15 +774,18 @@
 		"fighter bays" 4
 
 	outfits
-		"Thorium Reactor" 1
-		"Afterburner" 1
-		"Military IR Jammer" 1
-		"Military Radar Jammer" 1
 		"Heavy Blaster Turret" 2
 		"Radar Missile Launcher" 2
 		"Viper Bay" 1
 		"Anaconda Bay" 1
 		"Quad Light Blaster Turret" 2
+		"Thorium Reactor" 1
+		"Afterburner" 1
+		"Military IR Jammer" 1
+		"Military Radar Jammer" 1
+		"Radar Missile" 90
+	# EVN carried-ship payload 4 for weapon 149 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 150 retained in source data; ES fighter bays use category Fighter.
 	gun 20 -2
 	gun -20 -2
 	gun 20 -2
@@ -825,8 +836,8 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
 		"Light Blaster" 3
+		"Military IR Jammer" 1
 	gun 6 -2
 	gun -6 -2
 	gun 6 -2
@@ -868,9 +879,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
 		"Light Blaster" 2
 		"IR Missile Launcher" 2
+		"Military IR Jammer" 1
+		"IR Missile" 6
 	gun 6 -1
 	gun -6 -1
 	gun 6 -1
@@ -913,10 +925,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"Ionic Particle Cannon" 8
 		"EMP Torpedo Tube" 1
 		"IR Missile Launcher" 2
+		"Pirate Jammer" 1
+		"EMP Torpedo" 8
+		"IR Missile" 20
 	gun 0 0
 	gun 30 0
 	gun 0 0
@@ -955,11 +969,13 @@
 		"fighter bays" 4
 
 	outfits
-		"Pirate Jammer" 1
 		"Quad Light Blaster Turret" 2
 		"Pirate Viper Bay" 4
 		"EMP Torpedo Tube" 1
 		"150mm Fixed Railgun" 4
+		"Pirate Jammer" 1
+		"EMP Torpedo" 4
+	# EVN carried-ship payload 4 for weapon 169 retained in source data; ES fighter bays use category Fighter.
 	gun 18 21
 	gun 0 16
 	gun -18 21
@@ -1011,10 +1027,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"Medium Blaster" 2
 		"Light Blaster" 2
 		"Radar Missile Launcher" 1
+		"Pirate Jammer" 1
+		"Radar Missile" 12
 	gun 0 10
 	gun 0 10
 	gun 0 10
@@ -1068,6 +1085,7 @@
 		"Medium Blaster" 2
 		"Light Blaster" 2
 		"Raven Rocket Pod" 2
+		"Raven Rocket" 80
 	gun 4 15
 	gun -4 15
 	gun 4 15
@@ -1121,6 +1139,8 @@
 		"Hail Chaingun" 2
 		"Light Blaster" 2
 		"Raven Rocket Pod" 1
+		"Chaingun Ammunition" 800
+		"Raven Rocket" 15
 	gun 2 20
 	gun -2 20
 	gun 2 20
@@ -1171,9 +1191,9 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"150mm Fixed Railgun" 2
 		"Fusion Pulse Turret" 1
+		"Pirate Jammer" 1
 	gun 27 30
 	gun -27 30
 	gun 27 30
@@ -1224,9 +1244,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Fusion Pulse Battery" 2
 		"Radar Missile Launcher" 4
+		"Auroran IR Jammer" 1
+		"Radar Missile" 30
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -1277,13 +1298,16 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
-		"Military Radar Jammer" 1
 		"100mm Turreted Railgun" 2
 		"Storm Chaingun" 2
 		"Firebird Bay" 1
 		"Phoenix Bay" 1
 		"Fusion Pulse Turret" 2
+		"Auroran IR Jammer" 1
+		"Military Radar Jammer" 1
+		"Chaingun Ammunition" 1000
+	# EVN carried-ship payload 6 for weapon 151 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 3 for weapon 152 retained in source data; ES fighter bays use category Fighter.
 	gun 14 -15
 	gun -14 -15
 	gun 14 -15
@@ -1331,12 +1355,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"200mm Fixed Railgun" 4
 		"100mm Fixed Railgun" 2
 		"Storm Chaingun" 2
 		"IR Missile Launcher" 4
 		"Fusion Pulse Battery" 2
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 1500
+		"IR Missile" 40
 	gun 0 56
 	gun 0 56
 	gun 0 56
@@ -1387,6 +1413,7 @@
 
 	outfits
 		"Hail Chaingun" 2
+		"Chaingun Ammunition" 50
 	gun 1 9
 	gun -1 9
 	gun 1 9
@@ -1428,9 +1455,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Fusion Pulse Cannon" 2
 		"Radar Missile Launcher" 2
+		"Auroran IR Jammer" 1
+		"Radar Missile" 10
 	gun 2 9
 	gun -2 9
 	gun 3 9
@@ -1474,6 +1502,7 @@
 	outfits
 		"Thunderhead Lance" 2
 		"Radar Missile Launcher" 2
+		"Radar Missile" 10
 	gun 7 9
 	gun 0 9
 	gun -7 9
@@ -1524,10 +1553,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Fusion Reactor" 1
-		"Nil'kemorya Jammer" 1
 		"Capacitor Pulse Laser" 1
 		"Polaron Torpedo Tube" 1
+		"Fusion Reactor" 1
+		"Nil'kemorya Jammer" 1
+		"Polaron Torpedo" 15
 	gun 0 -3
 	gun 0 -3
 	gun 0 -3
@@ -1580,6 +1610,7 @@
 	outfits
 		"Wraith Cannon" 1
 		"Turreted BioRelay Laser" 1
+		"Wraithii" 20
 	gun 13 2
 	gun -13 2
 	gun 13 2
@@ -1713,11 +1744,13 @@
 		"fighter bays" 4
 
 	outfits
-		"Matter/Antimatter Reactor" 1
-		"Nil'kemorya Jammer" 1
 		"Capacitor Pulse Laser" 2
 		"Manta Bay" 1
 		"Polaron Torpedo Tube" 2
+		"Matter/Antimatter Reactor" 1
+		"Nil'kemorya Jammer" 1
+		"Polaron Torpedo" 30
+	# EVN carried-ship payload 4 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 35 7
 	gun -35 7
 	gun 35 7
@@ -1769,9 +1802,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Nil'kemorya Jammer" 1
 		"BioRelay Laser" 2
 		"Wraith Cannon" 1
+		"Nil'kemorya Jammer" 1
+		"Wraithii" 30
 	gun 9 5
 	gun -9 5
 	gun 9 5
@@ -1822,11 +1856,13 @@
 		"fighter bays" 4
 
 	outfits
-		"Nil'kemorya Jammer" 1
-		"Sensor Boost" 1
 		"Capacitor Pulse Laser" 3
 		"Polaron Multi-Torpedo Tube" 2
 		"Manta Bay" 2
+		"Nil'kemorya Jammer" 1
+		"Sensor Boost" 1
+		"Polaron Multi-Torpedo;fire whilst cloaked" 40
+	# EVN carried-ship payload 8 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 0 16
 	gun 0 16
 	gun 0 16
@@ -1870,11 +1906,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
-		"Civilian Radar Jammer" 1
 		"Medium Blaster" 3
 		"Light Blaster" 2
 		"Radar Missile Launcher" 2
+		"Civilian IR Jammer" 1
+		"Civilian Radar Jammer" 1
+		"Radar Missile" 20
 	gun 14 0
 	gun -14 0
 	gun 14 0
@@ -2012,9 +2049,9 @@
 		"fighter bays" 0
 
 	outfits
+		"WGB (A)" 1
 		"Wraith Cloaking Device" 1
 		"Wraith Fast Jump" 1
-		"WGB (A)" 1
 	gun 0 12
 	gun 0 12
 	gun 0 12
@@ -2064,8 +2101,8 @@
 		"fighter bays" 0
 
 	outfits
-		"Wraith Cloaking Device" 1
 		"WGB (Y)" 1
+		"Wraith Cloaking Device" 1
 	gun 0 20
 	gun 0 20
 	gun 0 20
@@ -2104,6 +2141,7 @@
 
 	outfits
 		"WGB (C)" 1
+	# EVN AmmoLoad 61 for weapon 168 has no matching ammo outfit.
 	gun 0 20
 	gun 0 20
 	gun 0 20
@@ -2180,12 +2218,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Afterburner" 1
-		"Military IR Jammer" 1
-		"Military Radar Jammer" 1
 		"Fusion Pulse Cannon" 2
 		"Wraith Cannon" 2
 		"Etheric Wake Missile Launcher" 1
+		"Afterburner" 1
+		"Military IR Jammer" 1
+		"Military Radar Jammer" 1
+		"Wraithii" 40
+		"Etheric Wake Missile" 5
 	gun 12 3
 	gun -12 3
 	gun 12 3
@@ -2236,9 +2276,9 @@
 		"fighter bays" 0
 
 	outfits
+		"Flower Of Spring" 1
 		"Physical Sense" 1
 		"Hostility Sense" 1
-		"Flower Of Spring" 1
 	gun 0 3
 	gun 0 3
 	gun 0 3
@@ -2289,11 +2329,11 @@
 		"fighter bays" 0
 
 	outfits
+		"Summer Bloom" 1
+		"Flower Of Spring" 1
 		"Distract Sensors" 1
 		"Physical Sense" 1
 		"Hostility Sense" 1
-		"Summer Bloom" 1
-		"Flower Of Spring" 1
 	gun 0 12
 	gun 0 12
 	gun 0 12
@@ -2344,13 +2384,14 @@
 		"fighter bays" 4
 
 	outfits
-		"Distract Sensors" 1
-		"Physical Sense" 1
-		"Hostility Sense" 1
 		"Autumn Petal" 1
 		"Create Dart" 1
 		"Summer Bloom" 1
 		"Flower Of Spring" 1
+		"Distract Sensors" 1
+		"Physical Sense" 1
+		"Hostility Sense" 1
+	# EVN carried-ship payload 3 for weapon 175 retained in source data; ES fighter bays use category Fighter.
 	gun 0 20
 	gun 0 20
 	gun 0 20
@@ -2478,12 +2519,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
-		"Afterburner" 1
 		"Medium Blaster" 3
 		"Gravimetric Missile Launcher" 2
 		"Light Blaster Turret" 1
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Afterburner" 1
+		"Gravimetric Missile" 15
 	gun 10 0
 	gun -10 0
 	gun 10 0
@@ -2534,11 +2576,12 @@
 		"fighter bays" 0
 
 	outfits
+		"Medium Blaster" 3
+		"Raven Rocket Pod" 2
 		"Afterburner" 1
 		"Rebel IR Jammer" 1
 		"Rebel Radar Jammer" 1
-		"Medium Blaster" 3
-		"Raven Rocket Pod" 2
+		"Raven Rocket" 80
 	gun 4 17
 	gun -4 17
 	gun 4 17
@@ -2589,11 +2632,12 @@
 		"fighter bays" 0
 
 	outfits
+		"Wraith Cannon" 2
+		"BioRelay Laser" 1
 		"Rebel IR Jammer" 1
 		"Rebel Radar Jammer" 1
 		"Afterburner" 1
-		"Wraith Cannon" 2
-		"BioRelay Laser" 1
+		"Wraithii" 60
 	gun 12 2
 	gun -12 2
 	gun 12 2
@@ -2644,12 +2688,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
 		"Quad Light Blaster Turret" 2
 		"Gravimetric Missile Launcher" 2
 		"Medium Blaster" 4
 		"Raven Rocket Turret" 2
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Gravimetric Missile" 30
+		"Raven Rocket" 90
 	gun 15 5
 	gun -15 5
 	gun 15 5
@@ -2733,11 +2779,12 @@
 		"fighter bays" 0
 
 	outfits
+		"Wraith Cannon" 2
+		"BioRelay Laser" 1
 		"Afterburner" 1
 		"Rebel IR Jammer" 1
 		"Rebel Radar Jammer" 1
-		"Wraith Cannon" 2
-		"BioRelay Laser" 1
+		"Wraithii" 60
 	gun 12 2
 	gun -12 2
 	gun 12 2
@@ -2784,12 +2831,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
 		"Quad Light Blaster Turret" 2
 		"Gravimetric Missile Launcher" 2
 		"Medium Blaster" 4
 		"Raven Rocket Turret" 2
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Gravimetric Missile" 30
+		"Raven Rocket" 90
 	gun 15 5
 	gun -15 5
 	gun 15 5
@@ -2890,11 +2939,12 @@
 		"fighter bays" 0
 
 	outfits
+		"BioRelay Laser" 2
+		"Wraith Cannon" 1
 		"Nil'kemorya Jammer" 1
 		"Fusion Reactor" 1
 		"Cloaking Organ;Polaris v1.0" 1
-		"BioRelay Laser" 2
-		"Wraith Cannon" 1
+		"Wraithii" 30
 	gun 0 19
 	gun 0 19
 	gun 0 19
@@ -2945,10 +2995,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Afterburner" 1
-		"Military IR Jammer" 1
 		"Light Cannon" 2
 		"Raven Rocket Pod" 1
+		"Afterburner" 1
+		"Military IR Jammer" 1
+		"Raven Rocket" 20
 	gun 5 9
 	gun 5 9
 	gun 5 9
@@ -3000,6 +3051,7 @@
 	outfits
 		"Light Blaster" 2
 		"IR Missile Launcher" 1
+		"IR Missile" 4
 	gun 3 10
 	gun -3 10
 	gun 3 10
@@ -3129,6 +3181,7 @@
 		"Light Cannon" 4
 		"IR Missile Launcher" 2
 		"Thunderhead Lance" 1
+		"IR Missile" 5
 	gun 0 13
 	gun 12 6
 	gun -12 6
@@ -3324,10 +3377,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
-		"Civilian Radar Jammer" 1
 		"Light Blaster" 3
 		"Radar Missile Launcher" 2
+		"Civilian IR Jammer" 1
+		"Civilian Radar Jammer" 1
+		"Radar Missile" 25
 	gun 0 15
 	gun 0 15
 	gun 0 15
@@ -3378,11 +3432,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
-		"Civilian Radar Jammer" 1
 		"Light Cannon" 4
 		"IR Missile Launcher" 3
 		"Medium Blaster Turret" 2
+		"Civilian IR Jammer" 1
+		"Civilian Radar Jammer" 1
+		"IR Missile" 18
 	gun 0 15
 	gun 0 15
 	gun 0 15
@@ -3433,12 +3488,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
-		"Civilian Radar Jammer" 1
 		"Light Blaster" 4
 		"Gravimetric Missile Launcher" 2
 		"Medium Blaster" 2
 		"Medium Blaster Turret" 3
+		"Civilian IR Jammer" 1
+		"Civilian Radar Jammer" 1
+		"Gravimetric Missile" 8
 	gun 0 15
 	gun 0 15
 	gun 0 15
@@ -3489,11 +3545,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
-		"Civilian Radar Jammer" 1
 		"Light Cannon" 3
 		"Raven Rocket Pod" 3
 		"Hellhound Missile Launcher" 2
+		"Civilian IR Jammer" 1
+		"Civilian Radar Jammer" 1
+		"Raven Rocket" 40
+		"Hellhound Missile" 20
 	gun 0 15
 	gun 0 15
 	gun 0 15
@@ -3544,10 +3602,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
-		"Civilian Radar Jammer" 1
 		"Heavy Blaster Turret" 2
 		"Hellhound Missile Launcher" 1
+		"Civilian IR Jammer" 1
+		"Civilian Radar Jammer" 1
+		"Hellhound Missile" 10
 	gun 0 15
 	gun 0 15
 	gun 0 15
@@ -3804,10 +3863,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Hail Chaingun" 2
 		"IR Missile Launcher" 2
 		"Fusion Pulse Cannon" 2
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 75
+		"IR Missile" 20
 	gun 0 7
 	gun 0 7
 	gun 0 7
@@ -3858,9 +3919,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Hail Chaingun" 4
 		"IR Missile Launcher" 4
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 80
+		"IR Missile" 40
 	gun 0 7
 	gun 0 7
 	gun 0 7
@@ -3911,10 +3974,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"150mm Fixed Railgun" 2
 		"Raven Rocket Pod" 4
 		"Fusion Pulse Cannon" 2
+		"Auroran IR Jammer" 1
+		"Raven Rocket" 60
 	gun 0 7
 	gun 0 7
 	gun 0 7
@@ -3965,8 +4029,9 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Hail Chaingun" 3
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 75
 	gun 0 7
 	gun 0 7
 	gun 0 7
@@ -4017,8 +4082,8 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Fusion Pulse Turret" 3
+		"Auroran IR Jammer" 1
 	gun 39 17
 	gun -39 17
 	gun 39 17
@@ -4069,10 +4134,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"200mm Fixed Railgun" 2
 		"100mm Turreted Railgun" 1
 		"Raven Rocket Turret" 2
+		"Auroran IR Jammer" 1
+		"Raven Rocket" 20
 	gun 39 17
 	gun -39 17
 	gun 39 17
@@ -4123,9 +4189,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"100mm Turreted Railgun" 2
 		"Raven Rocket Turret" 2
+		"Auroran IR Jammer" 1
+		"Raven Rocket" 30
 	gun 39 17
 	gun -39 17
 	gun 39 17
@@ -4176,12 +4243,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
-		"Civilian IR Jammer" 1
 		"Light Blaster Turret" 2
 		"Raven Rocket Turret" 4
 		"Fusion Pulse Cannon" 2
 		"Quad Light Blaster Turret" 4
+		"Military IR Jammer" 1
+		"Civilian IR Jammer" 1
+		"Raven Rocket" 40
 	gun 19 5
 	gun -19 5
 	gun 19 5
@@ -4232,13 +4300,15 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
-		"Civilian IR Jammer" 1
 		"Heavy Blaster Turret" 3
 		"Radar Missile Launcher" 4
 		"Raven Rocket Turret" 2
 		"Quad Light Blaster Turret" 1
 		"Medium Blaster" 2
+		"Military IR Jammer" 1
+		"Civilian IR Jammer" 1
+		"Radar Missile" 40
+		"Raven Rocket" 20
 	gun 19 5
 	gun -19 5
 	gun 19 5
@@ -4289,13 +4359,15 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
-		"Civilian IR Jammer" 1
 		"Heavy Blaster Turret" 2
 		"EMP Torpedo Tube" 2
 		"Medium Blaster" 2
 		"Quad Light Blaster Turret" 2
 		"Hellhound Missile Launcher" 2
+		"Military IR Jammer" 1
+		"Civilian IR Jammer" 1
+		"EMP Torpedo" 10
+		"Hellhound Missile" 20
 	gun 19 5
 	gun -19 5
 	gun 19 5
@@ -4346,12 +4418,13 @@
 		"fighter bays" 4
 
 	outfits
-		"Military IR Jammer" 1
-		"Civilian IR Jammer" 1
 		"Heavy Blaster Turret" 2
 		"Viper Bay" 1
 		"Medium Blaster" 2
 		"Quad Light Blaster Turret" 2
+		"Military IR Jammer" 1
+		"Civilian IR Jammer" 1
+	# EVN carried-ship payload 3 for weapon 149 retained in source data; ES fighter bays use category Fighter.
 	gun 19 5
 	gun -19 5
 	gun 19 5
@@ -4403,10 +4476,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Afterburner" 1
-		"Military IR Jammer" 1
 		"Fusion Pulse Cannon" 3
 		"Raven Rocket Turret" 2
+		"Afterburner" 1
+		"Military IR Jammer" 1
+		"Raven Rocket" 20
 	gun 0 18
 	gun 0 18
 	gun 0 18
@@ -4457,10 +4531,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Afterburner" 1
-		"Military IR Jammer" 1
 		"Medium Blaster Turret" 3
 		"Ionic Particle Cannon" 2
+		"Afterburner" 1
+		"Military IR Jammer" 1
 	gun 0 18
 	gun 0 18
 	gun 0 18
@@ -4511,13 +4585,15 @@
 		"fighter bays" 0
 
 	outfits
-		"Afterburner" 1
-		"Military IR Jammer" 1
 		"Light Blaster Turret" 2
 		"Raven Rocket Pod" 2
 		"Quad Light Blaster Turret" 1
 		"Light Cannon" 2
 		"Hellhound Missile Launcher" 2
+		"Afterburner" 1
+		"Military IR Jammer" 1
+		"Raven Rocket" 20
+		"Hellhound Missile" 10
 	gun 0 18
 	gun 0 18
 	gun 0 18
@@ -4568,15 +4644,17 @@
 		"fighter bays" 4
 
 	outfits
-		"Thorium Reactor" 1
-		"Afterburner" 1
-		"Military IR Jammer" 1
-		"Military Radar Jammer" 1
 		"Heavy Blaster Turret" 4
 		"Ionic Particle Cannon" 2
 		"Viper Bay" 1
 		"Anaconda Bay" 1
 		"Quad Light Blaster Turret" 2
+		"Thorium Reactor" 1
+		"Afterburner" 1
+		"Military IR Jammer" 1
+		"Military Radar Jammer" 1
+	# EVN carried-ship payload 4 for weapon 149 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 150 retained in source data; ES fighter bays use category Fighter.
 	gun 20 -2
 	gun -20 -2
 	gun 20 -2
@@ -4628,16 +4706,20 @@
 		"fighter bays" 4
 
 	outfits
-		"Thorium Reactor" 1
-		"Afterburner" 1
-		"Military IR Jammer" 1
-		"Military Radar Jammer" 1
 		"Heavy Blaster Turret" 2
 		"EMP Torpedo Tube" 2
 		"Viper Bay" 1
 		"Anaconda Bay" 1
 		"Quad Light Blaster Turret" 2
 		"Hellhound Missile Launcher" 2
+		"Thorium Reactor" 1
+		"Afterburner" 1
+		"Military IR Jammer" 1
+		"Military Radar Jammer" 1
+		"EMP Torpedo" 20
+		"Hellhound Missile" 40
+	# EVN carried-ship payload 4 for weapon 149 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 150 retained in source data; ES fighter bays use category Fighter.
 	gun 20 -2
 	gun -20 -2
 	gun 20 -2
@@ -4689,10 +4771,6 @@
 		"fighter bays" 4
 
 	outfits
-		"Thorium Reactor" 1
-		"Afterburner" 1
-		"Military IR Jammer" 1
-		"Military Radar Jammer" 1
 		"Heavy Blaster Turret" 2
 		"Thunderhead Bay" 1
 		"Viper Bay" 1
@@ -4701,6 +4779,16 @@
 		"Viper Bay" 1
 		"Anaconda Bay" 1
 		"Hellhound Missile Launcher" 2
+		"Thorium Reactor" 1
+		"Afterburner" 1
+		"Military IR Jammer" 1
+		"Military Radar Jammer" 1
+		"Hellhound Missile" 20
+	# EVN carried-ship payload 2 for weapon 153 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 3 for weapon 149 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 178 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 177 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 180 retained in source data; ES fighter bays use category Fighter.
 	gun 20 -2
 	gun -20 -2
 	gun 20 -2
@@ -4752,15 +4840,18 @@
 		"fighter bays" 4
 
 	outfits
-		"Thorium Reactor" 1
-		"Afterburner" 1
-		"Military IR Jammer" 1
-		"Military Radar Jammer" 1
 		"Heavy Blaster Turret" 2
 		"Raven Rocket Turret" 2
 		"Viper Bay" 2
 		"Anaconda Bay" 2
 		"Quad Light Blaster Turret" 2
+		"Thorium Reactor" 1
+		"Afterburner" 1
+		"Military IR Jammer" 1
+		"Military Radar Jammer" 1
+		"Raven Rocket" 150
+	# EVN carried-ship payload 4 for weapon 149 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 150 retained in source data; ES fighter bays use category Fighter.
 	gun 20 -2
 	gun -20 -2
 	gun 20 -2
@@ -4812,10 +4903,6 @@
 		"fighter bays" 4
 
 	outfits
-		"Thorium Reactor" 1
-		"Afterburner" 1
-		"Military IR Jammer" 1
-		"Military Radar Jammer" 1
 		"Heavy Blaster Turret" 2
 		"Fusion Pulse Cannon" 2
 		"Viper Bay" 1
@@ -4824,6 +4911,15 @@
 		"Viper Bay" 1
 		"Anaconda Bay" 1
 		"Viper Bay" 1
+		"Thorium Reactor" 1
+		"Afterburner" 1
+		"Military IR Jammer" 1
+		"Military Radar Jammer" 1
+	# EVN carried-ship payload 2 for weapon 149 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 150 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 177 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 178 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 179 retained in source data; ES fighter bays use category Fighter.
 	gun 20 -2
 	gun -20 -2
 	gun 20 -2
@@ -4874,9 +4970,9 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
 		"Light Cannon" 2
 		"Medium Blaster" 1
+		"Military IR Jammer" 1
 	gun 6 -2
 	gun -6 -2
 	gun 6 -2
@@ -4918,8 +5014,9 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
 		"Hail Chaingun" 3
+		"Military IR Jammer" 1
+		"Chaingun Ammunition" 65
 	gun 6 -2
 	gun -6 -2
 	gun 6 -2
@@ -4961,9 +5058,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
 		"Light Cannon" 3
 		"Raven Rocket Pod" 3
+		"Military IR Jammer" 1
+		"Raven Rocket" 18
 	gun 6 -1
 	gun -6 -1
 	gun 6 -1
@@ -5005,9 +5103,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
 		"Fusion Pulse Cannon" 3
 		"Radar Missile Launcher" 2
+		"Military IR Jammer" 1
+		"Radar Missile" 12
 	gun 6 -1
 	gun -6 -1
 	gun 6 -1
@@ -5050,11 +5149,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"Light Blaster Turret" 3
 		"Raven Rocket Turret" 3
 		"Quad Light Blaster Turret" 3
 		"Medium Blaster" 8
+		"Pirate Jammer" 1
+		"Raven Rocket" 90
 	gun 0 0
 	gun 30 0
 	gun 0 0
@@ -5093,10 +5193,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"Ionic Particle Cannon" 8
 		"EMP Torpedo Tube" 1
 		"Storm Chaingun" 2
+		"Pirate Jammer" 1
+		"EMP Torpedo" 8
+		"Chaingun Ammunition" 400
 	gun 0 0
 	gun 30 0
 	gun 0 0
@@ -5135,10 +5237,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"Ionic Particle Cannon" 8
 		"EMP Torpedo Tube" 2
 		"200mm Fixed Railgun" 2
+		"Pirate Jammer" 1
+		"EMP Torpedo" 10
 	gun 0 0
 	gun 30 0
 	gun 0 0
@@ -5177,11 +5280,12 @@
 		"fighter bays" 4
 
 	outfits
-		"Pirate Jammer" 1
 		"Ionic Particle Cannon" 6
 		"Pirate Viper Bay" 1
 		"200mm Fixed Railgun" 2
 		"Quad Light Blaster Turret" 2
+		"Pirate Jammer" 1
+	# EVN carried-ship payload 2 for weapon 169 retained in source data; ES fighter bays use category Fighter.
 	bay "Fighter" 0 0
 	bay "Fighter" 30 0
 	bay "Fighter" 0 0
@@ -5221,10 +5325,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"Fusion Pulse Cannon" 3
 		"Light Blaster" 3
 		"Radar Missile Launcher" 2
+		"Pirate Jammer" 1
+		"Radar Missile" 20
 	gun 0 10
 	gun 0 10
 	gun 0 10
@@ -5275,10 +5380,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"Medium Blaster" 2
 		"Hail Chaingun" 4
 		"Raven Rocket Pod" 2
+		"Pirate Jammer" 1
+		"Chaingun Ammunition" 100
+		"Raven Rocket" 50
 	gun 0 10
 	gun 0 10
 	gun 0 10
@@ -5329,10 +5436,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"Hail Chaingun" 3
 		"Light Cannon" 3
 		"Raven Rocket Pod" 2
+		"Pirate Jammer" 1
+		"Chaingun Ammunition" 90
+		"Raven Rocket" 30
 	gun 0 10
 	gun 0 10
 	gun 0 10
@@ -5383,11 +5492,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"Ionic Particle Cannon" 2
 		"Light Blaster" 2
 		"EMP Torpedo Tube" 1
 		"Hellhound Missile Launcher" 1
+		"Pirate Jammer" 1
+		"EMP Torpedo" 3
+		"Hellhound Missile" 5
 	gun 0 10
 	gun 0 10
 	gun 0 10
@@ -5438,10 +5549,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"Fusion Pulse Cannon" 3
 		"Hail Chaingun" 3
 		"Radar Missile Launcher" 2
+		"Pirate Jammer" 1
+		"Chaingun Ammunition" 80
+		"Radar Missile" 20
 	gun 0 10
 	gun 0 10
 	gun 0 10
@@ -5492,10 +5605,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"Fusion Pulse Turret" 2
 		"Raven Rocket Pod" 2
 		"100mm Fixed Railgun" 2
+		"Pirate Jammer" 1
+		"Raven Rocket" 30
 	gun 27 30
 	gun -27 30
 	gun 27 30
@@ -5546,10 +5660,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"Hail Chaingun" 4
 		"Raven Rocket Pod" 2
 		"Heavy Blaster Turret" 3
+		"Pirate Jammer" 1
+		"Chaingun Ammunition" 125
+		"Raven Rocket" 30
 	gun 27 30
 	gun -27 30
 	gun 27 30
@@ -5600,10 +5716,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"User modified Ionic Particle Cannon" 4
 		"Quad Light Blaster Turret" 3
 		"EMP Torpedo Tube" 2
+		"Pirate Jammer" 1
+		"EMP Torpedo" 4
 	gun 27 30
 	gun -27 30
 	gun 27 30
@@ -5654,10 +5771,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"100mm Fixed Railgun" 3
 		"Radar Missile Launcher" 4
 		"Storm Chaingun" 2
+		"Auroran IR Jammer" 1
+		"Radar Missile" 20
+		"Chaingun Ammunition" 400
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -5708,10 +5827,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Fusion Pulse Cannon" 3
 		"Radar Missile Launcher" 4
 		"100mm Turreted Railgun" 2
+		"Auroran IR Jammer" 1
+		"Radar Missile" 20
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -5762,10 +5882,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Hail Chaingun" 3
 		"Raven Rocket Pod" 2
 		"Storm Chaingun" 2
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 60
+		"Raven Rocket" 20
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -5816,9 +5938,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Fusion Pulse Battery" 2
 		"Radar Missile Launcher" 2
+		"Auroran IR Jammer" 1
+		"Radar Missile" 10
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -5869,9 +5992,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Fusion Pulse Battery" 2
 		"Radar Missile Launcher" 3
+		"Auroran IR Jammer" 1
+		"Radar Missile" 15
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -5922,9 +6046,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Fusion Pulse Battery" 2
 		"Radar Missile Launcher" 4
+		"Auroran IR Jammer" 1
+		"Radar Missile" 20
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -5975,9 +6100,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Fusion Pulse Battery" 2
 		"Radar Missile Launcher" 4
+		"Auroran IR Jammer" 1
+		"Radar Missile" 30
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -6028,10 +6154,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Fusion Pulse Battery" 3
 		"Radar Missile Launcher" 5
 		"Storm Chaingun" 2
+		"Auroran IR Jammer" 1
+		"Radar Missile" 25
+		"Chaingun Ammunition" 200
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -6082,11 +6210,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"200mm Fixed Railgun" 6
 		"Fusion Pulse Battery" 2
 		"Storm Chaingun" 4
 		"IR Missile Launcher" 3
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 1500
+		"IR Missile" 30
 	gun 0 56
 	gun 0 56
 	gun 0 56
@@ -6137,11 +6267,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"200mm Fixed Railgun" 4
 		"Hail Chaingun" 2
 		"Storm Chaingun" 4
 		"IR Missile Launcher" 4
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 1600
+		"IR Missile" 40
 	gun 0 56
 	gun 0 56
 	gun 0 56
@@ -6192,11 +6324,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"200mm Fixed Railgun" 6
 		"100mm Turreted Railgun" 2
 		"Storm Chaingun" 2
 		"Raven Rocket Turret" 6
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 800
+		"Raven Rocket" 60
 	gun 0 56
 	gun 0 56
 	gun 0 56
@@ -6247,11 +6381,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"100mm Fixed Railgun" 4
 		"Hail Chaingun" 4
 		"Storm Chaingun" 2
 		"Raven Rocket Turret" 4
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 800
+		"Raven Rocket" 40
 	gun 0 56
 	gun 0 56
 	gun 0 56
@@ -6302,12 +6438,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"200mm Fixed Railgun" 3
 		"100mm Fixed Railgun" 2
 		"Storm Chaingun" 1
 		"IR Missile Launcher" 3
 		"Fusion Pulse Battery" 2
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 200
+		"IR Missile" 40
 	gun 0 56
 	gun 0 56
 	gun 0 56
@@ -6358,12 +6496,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"200mm Fixed Railgun" 4
 		"100mm Fixed Railgun" 2
 		"Storm Chaingun" 1
 		"IR Missile Launcher" 3
 		"Fusion Pulse Battery" 1
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 400
+		"IR Missile" 40
 	gun 0 56
 	gun 0 56
 	gun 0 56
@@ -6414,12 +6554,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"200mm Fixed Railgun" 4
 		"100mm Fixed Railgun" 2
 		"Storm Chaingun" 1
 		"IR Missile Launcher" 4
 		"Fusion Pulse Battery" 1
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 500
+		"IR Missile" 40
 	gun 0 56
 	gun 0 56
 	gun 0 56
@@ -6470,12 +6612,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"200mm Fixed Railgun" 4
 		"100mm Fixed Railgun" 2
 		"Storm Chaingun" 2
 		"IR Missile Launcher" 4
 		"Fusion Pulse Battery" 2
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 800
+		"IR Missile" 40
 	gun 0 56
 	gun 0 56
 	gun 0 56
@@ -6526,12 +6670,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"200mm Fixed Railgun" 5
 		"100mm Fixed Railgun" 2
 		"Storm Chaingun" 3
 		"IR Missile Launcher" 5
 		"Fusion Pulse Battery" 2
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 1500
+		"IR Missile" 40
 	gun 0 56
 	gun 0 56
 	gun 0 56
@@ -6582,9 +6728,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Cloaking Organ;Polaris v1.0" 1
 		"BioRelay Laser" 1
 		"Wraith Cannon" 1
+		"Cloaking Organ;Polaris v1.0" 1
+		"Wraithii" 15
 	gun 0 19
 	gun 0 19
 	gun 0 19
@@ -6635,9 +6782,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Cloaking Organ;Polaris v1.0" 1
 		"BioRelay Laser" 1
 		"Wraith Cannon" 1
+		"Cloaking Organ;Polaris v1.0" 1
+		"Wraithii" 15
 	gun 0 19
 	gun 0 19
 	gun 0 19
@@ -6688,9 +6836,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Cloaking Organ;Polaris v1.1" 1
 		"BioRelay Laser" 1
 		"Wraith Cannon" 1
+		"Cloaking Organ;Polaris v1.1" 1
+		"Wraithii" 15
 	gun 0 19
 	gun 0 19
 	gun 0 19
@@ -6741,11 +6890,12 @@
 		"fighter bays" 0
 
 	outfits
+		"Capacitor Pulse Laser" 1
+		"Polaron Torpedo Tube" 1
 		"Fusion Reactor" 1
 		"Nil'kemorya Jammer" 1
 		"Cloaking Organ;Polaris v1.1" 1
-		"Capacitor Pulse Laser" 1
-		"Polaron Torpedo Tube" 1
+		"Polaron Torpedo" 15
 	gun 0 -3
 	gun 0 -3
 	gun 0 -3
@@ -6796,9 +6946,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Cloaking Organ;Polaris v1.0" 1
 		"Wraith Cannon" 1
 		"Turreted BioRelay Laser" 1
+		"Cloaking Organ;Polaris v1.0" 1
+		"Wraithii" 20
 	gun 13 2
 	gun -13 2
 	gun 13 2
@@ -6849,12 +7000,14 @@
 		"fighter bays" 4
 
 	outfits
-		"Matter/Antimatter Reactor" 1
-		"Nil'kemorya Jammer" 1
-		"Cloaking Organ;Polaris v1.0" 1
 		"Capacitor Pulse Laser" 2
 		"Manta Bay" 1
 		"Polaron Torpedo Tube" 2
+		"Matter/Antimatter Reactor" 1
+		"Nil'kemorya Jammer" 1
+		"Cloaking Organ;Polaris v1.0" 1
+		"Polaron Torpedo" 30
+	# EVN carried-ship payload 4 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 35 7
 	gun -35 7
 	gun 35 7
@@ -6906,10 +7059,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Nil'kemorya Jammer" 1
-		"Cloaking Organ;Polaris v1.1" 1
 		"BioRelay Laser" 2
 		"Wraith Cannon" 1
+		"Nil'kemorya Jammer" 1
+		"Cloaking Organ;Polaris v1.1" 1
+		"Wraithii" 30
 	gun 9 5
 	gun -9 5
 	gun 9 5
@@ -6960,12 +7114,14 @@
 		"fighter bays" 4
 
 	outfits
-		"Nil'kemorya Jammer" 1
-		"Sensor Boost" 1
-		"Cloaking Organ;Polaris v1.0" 1
 		"Capacitor Pulse Laser" 2
 		"Polaron Multi-Torpedo Tube" 2
 		"Manta Bay" 2
+		"Nil'kemorya Jammer" 1
+		"Sensor Boost" 1
+		"Cloaking Organ;Polaris v1.0" 1
+		"Polaron Multi-Torpedo;fire whilst cloaked" 40
+	# EVN carried-ship payload 8 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 0 16
 	gun 0 16
 	gun 0 16
@@ -7009,11 +7165,13 @@
 		"fighter bays" 4
 
 	outfits
-		"Nil'kemorya Jammer" 1
-		"Sensor Boost" 1
 		"Capacitor Pulse Laser" 2
 		"Polaron Multi-Torpedo Tube" 2
 		"Manta Bay" 2
+		"Nil'kemorya Jammer" 1
+		"Sensor Boost" 1
+		"Polaron Multi-Torpedo;fire whilst cloaked" 40
+	# EVN carried-ship payload 8 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 0 16
 	gun 0 16
 	gun 0 16
@@ -7057,12 +7215,14 @@
 		"fighter bays" 4
 
 	outfits
-		"Nil'kemorya Jammer" 1
-		"Sensor Boost" 1
-		"Cloaking Organ;Polaris v1.1" 1
 		"Capacitor Pulse Laser" 2
 		"Polaron Multi-Torpedo Tube" 2
 		"Manta Bay" 2
+		"Nil'kemorya Jammer" 1
+		"Sensor Boost" 1
+		"Cloaking Organ;Polaris v1.1" 1
+		"Polaron Multi-Torpedo;fire whilst cloaked" 40
+	# EVN carried-ship payload 8 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 0 16
 	gun 0 16
 	gun 0 16
@@ -7106,10 +7266,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Cloaking Organ;Polaris v1.1" 1
-		"Tunnelling Organ" 1
 		"BioRelay Laser" 1
 		"Wraith Cannon;fire whilst cloaked" 1
+		"Cloaking Organ;Polaris v1.1" 1
+		"Tunnelling Organ" 1
+		"Wraithii" 15
 	gun 0 19
 	gun 0 19
 	gun 0 19
@@ -7160,12 +7321,13 @@
 		"fighter bays" 0
 
 	outfits
+		"Capacitor Pulse Laser" 1
+		"Polaron Torpedo Tube;fire whilst cloaked" 1
 		"Fusion Reactor" 1
 		"Nil'kemorya Jammer" 1
 		"Cloaking Organ;Polaris v1.1" 1
 		"Tunnelling Organ" 1
-		"Capacitor Pulse Laser" 1
-		"Polaron Torpedo Tube;fire whilst cloaked" 1
+		"Polaron Torpedo" 15
 	gun 0 -3
 	gun 0 -3
 	gun 0 -3
@@ -7250,10 +7412,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Cloaking Organ;Polaris v1.1" 1
-		"Tunnelling Organ" 1
 		"Wraith Cannon;fire whilst cloaked" 1
 		"Turreted BioRelay Laser" 1
+		"Cloaking Organ;Polaris v1.1" 1
+		"Tunnelling Organ" 1
+		"Wraithii" 20
 	gun 13 2
 	gun -13 2
 	gun 13 2
@@ -7304,13 +7467,15 @@
 		"fighter bays" 4
 
 	outfits
+		"Capacitor Pulse Laser" 2
+		"Manta Bay" 1
+		"Polaron Torpedo Tube;fire whilst cloaked" 2
 		"Matter/Antimatter Reactor" 1
 		"Nil'kemorya Jammer" 1
 		"Tunnelling Organ" 1
 		"Cloaking Organ;Polaris v1.1" 1
-		"Capacitor Pulse Laser" 2
-		"Manta Bay" 1
-		"Polaron Torpedo Tube;fire whilst cloaked" 2
+		"Polaron Torpedo" 30
+	# EVN carried-ship payload 4 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 35 7
 	gun -35 7
 	gun 35 7
@@ -7362,11 +7527,12 @@
 		"fighter bays" 0
 
 	outfits
+		"BioRelay Laser" 2
+		"Wraith Cannon;fire whilst cloaked" 1
 		"Nil'kemorya Jammer" 1
 		"Tunnelling Organ" 1
 		"Cloaking Organ;Polaris v1.1" 1
-		"BioRelay Laser" 2
-		"Wraith Cannon;fire whilst cloaked" 1
+		"Wraithii" 30
 	gun 9 5
 	gun -9 5
 	gun 9 5
@@ -7417,13 +7583,15 @@
 		"fighter bays" 4
 
 	outfits
+		"Capacitor Pulse Laser" 2
+		"Polaron Multi-Torpedo Tube;fire whilst cloaked" 2
+		"Manta Bay" 2
 		"Nil'kemorya Jammer" 1
 		"Sensor Boost" 1
 		"Tunnelling Organ" 1
 		"Cloaking Organ;Polaris v1.1" 1
-		"Capacitor Pulse Laser" 2
-		"Polaron Multi-Torpedo Tube;fire whilst cloaked" 2
-		"Manta Bay" 2
+		"Polaron Multi-Torpedo;fire whilst cloaked" 40
+	# EVN carried-ship payload 8 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 0 16
 	gun 0 16
 	gun 0 16
@@ -7502,6 +7670,7 @@
 	outfits
 		"Light Cannon" 4
 		"Radar Missile Launcher" 2
+		"Radar Missile" 10
 	gun 0 6
 	gun 12 6
 	gun -12 6
@@ -7554,6 +7723,7 @@
 		"Thunderhead Lance" 2
 		"Radar Missile Launcher" 2
 		"Fusion Pulse Cannon" 1
+		"Radar Missile" 10
 	gun 9 9
 	gun 0 9
 	gun -9 9
@@ -7607,6 +7777,7 @@
 		"Wraith Cannon" 2
 		"Medium Blaster" 1
 		"100mm Fixed Railgun" 1
+		"Wraithii" 40
 	gun 7 9
 	gun 0 9
 	gun -7 9
@@ -7658,6 +7829,7 @@
 	outfits
 		"Light Cannon" 3
 		"IR Missile Launcher" 2
+		"IR Missile" 10
 	gun 0 6
 	gun 12 6
 	gun -12 6
@@ -7710,6 +7882,7 @@
 		"Light Cannon" 2
 		"Radar Missile Launcher" 2
 		"Medium Blaster" 1
+		"Radar Missile" 8
 	gun 0 6
 	gun 12 6
 	gun -12 6
@@ -7760,12 +7933,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
 		"Medium Blaster" 2
 		"Light Blaster" 3
 		"Raven Rocket Pod" 4
 		"Quad Light Blaster Turret" 1
 		"Hellhound Missile Launcher" 1
+		"Civilian IR Jammer" 1
+		"Raven Rocket" 40
+		"Hellhound Missile" 10
 	gun 0 10
 	gun 0 10
 	gun 0 10
@@ -7816,10 +7991,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
 		"Hail Chaingun" 2
 		"Light Cannon" 2
 		"Raven Rocket Pod" 1
+		"Civilian IR Jammer" 1
+		"Chaingun Ammunition" 35
+		"Raven Rocket" 50
 	gun 0 10
 	gun 0 10
 	gun 0 10
@@ -7870,9 +8047,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
 		"Light Blaster" 4
 		"Raven Rocket Pod" 2
+		"Civilian IR Jammer" 1
+		"Raven Rocket" 40
 	gun 0 10
 	gun 0 10
 	gun 0 10
@@ -7923,10 +8101,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
 		"Medium Blaster Turret" 4
 		"Raven Rocket Turret" 4
 		"Light Blaster" 4
+		"Military IR Jammer" 1
+		"Raven Rocket" 100
 	gun 0 42
 	gun 0 36
 	gun 0 42
@@ -7977,11 +8156,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
 		"Heavy Blaster Turret" 3
 		"Radar Missile Launcher" 2
 		"200mm Fixed Railgun" 2
 		"Quad Light Blaster Turret" 1
+		"Military IR Jammer" 1
+		"Radar Missile" 80
 	gun 0 42
 	gun 0 36
 	gun 0 42
@@ -8032,11 +8212,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Military IR Jammer" 1
 		"Heavy Blaster Turret" 2
 		"Radar Missile Launcher" 3
 		"200mm Fixed Railgun" 4
 		"Quad Light Blaster Turret" 2
+		"Military IR Jammer" 1
+		"Radar Missile" 90
 	gun 0 42
 	gun 0 36
 	gun 0 42
@@ -8087,7 +8268,6 @@
 		"fighter bays" 4
 
 	outfits
-		"Pirate Jammer" 1
 		"Quad Light Blaster Turret" 2
 		"Pirate Viper Bay" 2
 		"EMP Torpedo Tube" 1
@@ -8096,6 +8276,12 @@
 		"Radar Missile Launcher" 2
 		"Pirate Viper Bay" 1
 		"Pirate Viper Bay" 1
+		"Pirate Jammer" 1
+		"EMP Torpedo" 4
+		"Radar Missile" 30
+	# EVN carried-ship payload 2 for weapon 169 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 190 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 191 retained in source data; ES fighter bays use category Fighter.
 	gun 18 21
 	gun 0 16
 	gun -18 21
@@ -8147,7 +8333,6 @@
 		"fighter bays" 4
 
 	outfits
-		"Pirate Jammer" 1
 		"Quad Light Blaster Turret" 2
 		"Pirate Viper Bay" 2
 		"EMP Torpedo Tube" 1
@@ -8156,6 +8341,12 @@
 		"200mm Fixed Railgun" 4
 		"Pirate Viper Bay" 1
 		"Pirate Viper Bay" 1
+		"Pirate Jammer" 1
+		"EMP Torpedo" 4
+	# EVN carried-ship payload 2 for weapon 169 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 176 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 190 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 191 retained in source data; ES fighter bays use category Fighter.
 	gun 18 21
 	gun 0 16
 	gun -18 21
@@ -8207,7 +8398,6 @@
 		"fighter bays" 4
 
 	outfits
-		"Pirate Jammer" 1
 		"Quad Light Blaster Turret" 2
 		"Pirate Viper Bay" 3
 		"EMP Torpedo Tube" 2
@@ -8216,6 +8406,12 @@
 		"Pirate Thunderhead Bay" 2
 		"Pirate Viper Bay" 2
 		"Pirate Viper Bay" 2
+		"Pirate Jammer" 1
+		"EMP Torpedo" 20
+	# EVN carried-ship payload 3 for weapon 169 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 176 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 190 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 191 retained in source data; ES fighter bays use category Fighter.
 	gun 18 21
 	gun 0 16
 	gun -18 21
@@ -8270,6 +8466,7 @@
 		"Medium Blaster" 2
 		"Light Blaster" 4
 		"Raven Rocket Pod" 2
+		"Raven Rocket" 40
 	gun 4 15
 	gun -4 15
 	gun 4 15
@@ -8325,6 +8522,7 @@
 		"Raven Rocket Pod" 2
 		"100mm Fixed Railgun" 2
 		"Fusion Pulse Battery" 2
+		"Raven Rocket" 80
 	gun 4 15
 	gun -4 15
 	gun 4 15
@@ -8378,6 +8576,7 @@
 		"Medium Blaster" 4
 		"Light Blaster" 2
 		"Radar Missile Launcher" 4
+		"Radar Missile" 80
 	gun 4 15
 	gun -4 15
 	gun 4 15
@@ -8433,6 +8632,8 @@
 		"Radar Missile Launcher" 4
 		"100mm Turreted Railgun" 2
 		"Hellhound Missile Launcher" 1
+		"Radar Missile" 80
+		"Hellhound Missile" 10
 	gun 4 15
 	gun -4 15
 	gun 4 15
@@ -8487,6 +8688,8 @@
 		"Light Blaster" 2
 		"Radar Missile Launcher" 2
 		"100mm Turreted Railgun" 2
+		"Chaingun Ammunition" 150
+		"Radar Missile" 40
 	gun 2 20
 	gun -2 20
 	gun 2 20
@@ -8541,6 +8744,8 @@
 		"Medium Blaster" 2
 		"Radar Missile Launcher" 2
 		"Storm Chaingun" 2
+		"Radar Missile" 40
+		"Chaingun Ammunition" 1000
 	gun 2 20
 	gun -2 20
 	gun 2 20
@@ -8595,6 +8800,8 @@
 		"Light Blaster" 2
 		"Radar Missile Launcher" 2
 		"Storm Chaingun" 2
+		"Chaingun Ammunition" 950
+		"Radar Missile" 40
 	gun 2 20
 	gun -2 20
 	gun 2 20
@@ -8645,8 +8852,6 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
-		"Auroran Radar Jammer" 1
 		"100mm Turreted Railgun" 2
 		"Storm Chaingun" 4
 		"Firebird Bay" 1
@@ -8655,6 +8860,13 @@
 		"150mm Fixed Railgun" 2
 		"Phoenix Bay" 1
 		"Phoenix Bay" 1
+		"Auroran IR Jammer" 1
+		"Auroran Radar Jammer" 1
+		"Chaingun Ammunition" 1000
+	# EVN carried-ship payload 6 for weapon 151 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 152 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 188 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 189 retained in source data; ES fighter bays use category Fighter.
 	gun 14 -15
 	gun -14 -15
 	gun 14 -15
@@ -8702,14 +8914,17 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
-		"Auroran Radar Jammer" 1
 		"100mm Turreted Railgun" 2
 		"Storm Chaingun" 4
 		"Firebird Bay" 1
 		"150mm Fixed Railgun" 2
 		"200mm Fixed Railgun" 2
 		"Phoenix Bay" 1
+		"Auroran IR Jammer" 1
+		"Auroran Radar Jammer" 1
+		"Chaingun Ammunition" 1000
+	# EVN carried-ship payload 5 for weapon 151 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 189 retained in source data; ES fighter bays use category Fighter.
 	gun 14 -15
 	gun -14 -15
 	gun 14 -15
@@ -8757,8 +8972,6 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
-		"Auroran Radar Jammer" 1
 		"100mm Turreted Railgun" 3
 		"Storm Chaingun" 4
 		"Thunderhead Bay" 2
@@ -8767,6 +8980,14 @@
 		"Firebird Bay" 2
 		"Firebird Bay" 1
 		"Firebird Bay" 1
+		"Auroran IR Jammer" 1
+		"Auroran Radar Jammer" 1
+		"Chaingun Ammunition" 1000
+	# EVN carried-ship payload 2 for weapon 153 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 152 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 151 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 186 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 187 retained in source data; ES fighter bays use category Fighter.
 	gun 14 -15
 	gun -14 -15
 	gun 14 -15
@@ -8814,13 +9035,16 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
-		"Auroran Radar Jammer" 1
 		"100mm Fixed Railgun" 2
 		"Storm Chaingun" 1
 		"Firebird Bay" 1
 		"Phoenix Bay" 1
 		"Fusion Pulse Turret" 2
+		"Auroran IR Jammer" 1
+		"Auroran Radar Jammer" 1
+		"Chaingun Ammunition" 400
+	# EVN carried-ship payload 4 for weapon 151 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 152 retained in source data; ES fighter bays use category Fighter.
 	gun 14 -15
 	gun -14 -15
 	gun 14 -15
@@ -8868,13 +9092,16 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
-		"Auroran Radar Jammer" 1
 		"100mm Fixed Railgun" 2
 		"Storm Chaingun" 1
 		"Firebird Bay" 1
 		"Phoenix Bay" 1
 		"Fusion Pulse Turret" 2
+		"Auroran IR Jammer" 1
+		"Auroran Radar Jammer" 1
+		"Chaingun Ammunition" 500
+	# EVN carried-ship payload 5 for weapon 151 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 3 for weapon 152 retained in source data; ES fighter bays use category Fighter.
 	gun 14 -15
 	gun -14 -15
 	gun 14 -15
@@ -8922,13 +9149,16 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
-		"Auroran Radar Jammer" 1
 		"100mm Turreted Railgun" 2
 		"Storm Chaingun" 2
 		"Firebird Bay" 1
 		"Phoenix Bay" 1
 		"Fusion Pulse Turret" 2
+		"Auroran IR Jammer" 1
+		"Auroran Radar Jammer" 1
+		"Chaingun Ammunition" 1000
+	# EVN carried-ship payload 6 for weapon 151 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 3 for weapon 152 retained in source data; ES fighter bays use category Fighter.
 	gun 14 -15
 	gun -14 -15
 	gun 14 -15
@@ -8976,14 +9206,17 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
-		"Auroran Radar Jammer" 1
 		"100mm Turreted Railgun" 2
 		"Storm Chaingun" 2
 		"Firebird Bay" 1
 		"Phoenix Bay" 1
 		"Fusion Pulse Turret" 2
 		"150mm Fixed Railgun" 2
+		"Auroran IR Jammer" 1
+		"Auroran Radar Jammer" 1
+		"Chaingun Ammunition" 1000
+	# EVN carried-ship payload 6 for weapon 151 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 3 for weapon 152 retained in source data; ES fighter bays use category Fighter.
 	gun 14 -15
 	gun -14 -15
 	gun 14 -15
@@ -9031,8 +9264,6 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
-		"Auroran Radar Jammer" 1
 		"100mm Turreted Railgun" 6
 		"Storm Chaingun" 4
 		"Firebird Bay" 2
@@ -9041,6 +9272,15 @@
 		"Firebird Bay" 2
 		"Phoenix Bay" 1
 		"Phoenix Bay" 1
+		"Auroran IR Jammer" 1
+		"Auroran Radar Jammer" 1
+		"Chaingun Ammunition" 1000
+	# EVN carried-ship payload 2 for weapon 151 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 152 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 186 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 187 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 188 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 189 retained in source data; ES fighter bays use category Fighter.
 	gun 14 -15
 	gun -14 -15
 	gun 14 -15
@@ -9087,8 +9327,9 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Hail Chaingun" 3
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 75
 	gun 1 9
 	gun -1 9
 	gun 1 9
@@ -9130,9 +9371,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Hail Chaingun" 1
 		"Fusion Pulse Cannon" 2
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 30
 	gun 1 9
 	gun -1 9
 	gun 1 9
@@ -9174,9 +9416,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Fusion Pulse Cannon" 3
 		"Radar Missile Launcher" 3
+		"Auroran IR Jammer" 1
+		"Radar Missile" 15
 	gun 2 9
 	gun -2 9
 	gun 3 9
@@ -9218,10 +9461,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Hail Chaingun" 2
 		"Radar Missile Launcher" 3
 		"100mm Fixed Railgun" 1
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 35
+		"Radar Missile" 30
 	gun 2 9
 	gun -2 9
 	gun 3 9
@@ -9266,6 +9511,7 @@
 		"Thunderhead Lance" 2
 		"Radar Missile Launcher" 4
 		"Medium Blaster" 1
+		"Radar Missile" 32
 	gun 7 9
 	gun 0 9
 	gun -7 9
@@ -9317,6 +9563,7 @@
 	outfits
 		"Thunderhead Lance" 2
 		"Radar Missile Launcher" 2
+		"Radar Missile" 10
 	gun 7 9
 	gun 0 9
 	gun -7 9
@@ -9369,6 +9616,7 @@
 		"Ionic Particle Cannon" 2
 		"Radar Missile Launcher" 4
 		"Medium Blaster" 1
+		"Radar Missile" 32
 	gun 7 9
 	gun 0 9
 	gun -7 9
@@ -9419,11 +9667,13 @@
 		"fighter bays" 4
 
 	outfits
-		"Nil'kemorya Jammer" 1
-		"Sensor Boost" 1
 		"Capacitor Pulse Laser" 4
 		"Polaron Multi-Torpedo Tube" 4
 		"Manta Bay" 4
+		"Nil'kemorya Jammer" 1
+		"Sensor Boost" 1
+		"Polaron Multi-Torpedo;fire whilst cloaked" 80
+	# EVN carried-ship payload 8 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 0 16
 	gun 0 16
 	gun 0 16
@@ -9467,10 +9717,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Fusion Reactor" 1
-		"Nil'kemorya Jammer" 1
 		"Capacitor Pulse Laser" 2
 		"Polaron Torpedo Tube" 2
+		"Fusion Reactor" 1
+		"Nil'kemorya Jammer" 1
+		"Polaron Torpedo" 30
 	gun 0 -3
 	gun 0 -3
 	gun 0 -3
@@ -9521,9 +9772,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Polaris Jammer" 1
 		"Wraith Cannon" 1
 		"Turreted BioRelay Laser" 1
+		"Polaris Jammer" 1
+		"Wraithii" 30
 	gun 13 2
 	gun -13 2
 	gun 13 2
@@ -9574,9 +9826,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Polaris Jammer" 1
 		"Wraith Cannon" 3
 		"Turreted BioRelay Laser" 2
+		"Polaris Jammer" 1
+		"Wraithii" 90
 	gun 13 2
 	gun -13 2
 	gun 13 2
@@ -9626,8 +9879,8 @@
 		"fighter bays" 0
 
 	outfits
-		"Nil'kemorya Jammer" 1
 		"BioRelay Laser" 1
+		"Nil'kemorya Jammer" 1
 	gun 0 7
 	gun 0 7
 	gun 0 7
@@ -9677,9 +9930,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Nil'kemorya Jammer" 1
 		"BioRelay Laser" 2
 		"Wraith Cannon" 1
+		"Nil'kemorya Jammer" 1
+		"Wraithii" 15
 	gun 0 7
 	gun 0 7
 	gun 0 7
@@ -9730,11 +9984,13 @@
 		"fighter bays" 4
 
 	outfits
-		"Matter/Antimatter Reactor" 1
-		"Nil'kemorya Jammer" 1
 		"Capacitor Pulse Laser" 2
 		"Manta Bay" 2
 		"Polaron Torpedo Tube" 4
+		"Matter/Antimatter Reactor" 1
+		"Nil'kemorya Jammer" 1
+		"Polaron Torpedo" 60
+	# EVN carried-ship payload 4 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 35 7
 	gun -35 7
 	gun 35 7
@@ -9786,10 +10042,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Nil'kemorya Jammer" 1
 		"BioRelay Laser" 2
 		"Wraith Cannon" 2
 		"Turreted BioRelay Laser" 1
+		"Nil'kemorya Jammer" 1
+		"Wraithii" 60
 	gun 9 5
 	gun -9 5
 	gun 9 5
@@ -9836,9 +10093,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Nil'kemorya Jammer" 1
 		"BioRelay Laser" 1
 		"Wraith Cannon" 1
+		"Nil'kemorya Jammer" 1
+		"Wraithii" 15
 	gun 9 5
 	gun -9 5
 	gun 9 5
@@ -9885,11 +10143,12 @@
 		"fighter bays" 0
 
 	outfits
+		"Capacitor Pulse Laser" 2
+		"Polaron Torpedo Tube" 2
 		"Fusion Reactor" 1
 		"Nil'kemorya Jammer" 1
 		"Cloaking Organ;Polaris v1.1" 1
-		"Capacitor Pulse Laser" 2
-		"Polaron Torpedo Tube" 2
+		"Polaron Torpedo" 30
 	gun 0 -3
 	gun 0 -3
 	gun 0 -3
@@ -9940,10 +10199,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Polaris Jammer" 1
-		"Cloaking Organ;Polaris v1.0" 1
 		"Wraith Cannon" 3
 		"Turreted BioRelay Laser" 2
+		"Polaris Jammer" 1
+		"Cloaking Organ;Polaris v1.0" 1
+		"Wraithii" 90
 	gun 13 2
 	gun -13 2
 	gun 13 2
@@ -9994,11 +10254,13 @@
 		"fighter bays" 4
 
 	outfits
-		"Matter/Antimatter Reactor" 1
-		"Nil'kemorya Jammer" 1
 		"Capacitor Pulse Laser" 2
 		"Manta Bay" 2
 		"Polaron Torpedo Tube" 4
+		"Matter/Antimatter Reactor" 1
+		"Nil'kemorya Jammer" 1
+		"Polaron Torpedo" 60
+	# EVN carried-ship payload 4 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 35 7
 	gun -35 7
 	gun 35 7
@@ -10050,11 +10312,12 @@
 		"fighter bays" 0
 
 	outfits
-		"Nil'kemorya Jammer" 1
-		"Cloaking Organ;Polaris v1.1" 1
 		"BioRelay Laser" 2
 		"Wraith Cannon" 2
 		"Turreted BioRelay Laser" 1
+		"Nil'kemorya Jammer" 1
+		"Cloaking Organ;Polaris v1.1" 1
+		"Wraithii" 60
 	gun 9 5
 	gun -9 5
 	gun 9 5
@@ -10105,12 +10368,14 @@
 		"fighter bays" 4
 
 	outfits
-		"Nil'kemorya Jammer" 1
-		"Sensor Boost" 1
-		"Cloaking Organ;Polaris v1.0" 1
 		"Capacitor Pulse Laser" 4
 		"Polaron Multi-Torpedo Tube" 4
 		"Manta Bay" 4
+		"Nil'kemorya Jammer" 1
+		"Sensor Boost" 1
+		"Cloaking Organ;Polaris v1.0" 1
+		"Polaron Multi-Torpedo;fire whilst cloaked" 80
+	# EVN carried-ship payload 8 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 0 16
 	gun 0 16
 	gun 0 16
@@ -10154,11 +10419,13 @@
 		"fighter bays" 4
 
 	outfits
-		"Nil'kemorya Jammer" 1
-		"Sensor Boost" 1
 		"Capacitor Pulse Laser" 4
 		"Polaron Multi-Torpedo Tube" 4
 		"Manta Bay" 4
+		"Nil'kemorya Jammer" 1
+		"Sensor Boost" 1
+		"Polaron Multi-Torpedo;fire whilst cloaked" 80
+	# EVN carried-ship payload 8 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 0 16
 	gun 0 16
 	gun 0 16
@@ -10202,12 +10469,14 @@
 		"fighter bays" 4
 
 	outfits
-		"Nil'kemorya Jammer" 1
-		"Sensor Boost" 1
-		"Cloaking Organ;Polaris v1.1" 1
 		"Capacitor Pulse Laser" 4
 		"Polaron Multi-Torpedo Tube" 4
 		"Manta Bay" 4
+		"Nil'kemorya Jammer" 1
+		"Sensor Boost" 1
+		"Cloaking Organ;Polaris v1.1" 1
+		"Polaron Multi-Torpedo;fire whilst cloaked" 80
+	# EVN carried-ship payload 8 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 0 16
 	gun 0 16
 	gun 0 16
@@ -10251,12 +10520,13 @@
 		"fighter bays" 0
 
 	outfits
+		"Capacitor Pulse Laser" 2
+		"Polaron Torpedo Tube;fire whilst cloaked" 2
 		"Fusion Reactor" 1
 		"Nil'kemorya Jammer" 1
 		"Cloaking Organ;Polaris v1.1" 1
 		"Tunnelling Organ" 1
-		"Capacitor Pulse Laser" 2
-		"Polaron Torpedo Tube;fire whilst cloaked" 2
+		"Polaron Torpedo" 30
 	gun 0 -3
 	gun 0 -3
 	gun 0 -3
@@ -10307,11 +10577,12 @@
 		"fighter bays" 0
 
 	outfits
+		"Wraith Cannon;fire whilst cloaked" 3
+		"Turreted BioRelay Laser" 2
 		"Polaris Jammer" 1
 		"Cloaking Organ;Polaris v1.1" 1
 		"Tunnelling Organ" 1
-		"Wraith Cannon;fire whilst cloaked" 3
-		"Turreted BioRelay Laser" 2
+		"Wraithii" 90
 	gun 13 2
 	gun -13 2
 	gun 13 2
@@ -10362,13 +10633,15 @@
 		"fighter bays" 4
 
 	outfits
+		"Capacitor Pulse Laser" 2
+		"Manta Bay" 2
+		"Polaron Torpedo Tube;fire whilst cloaked" 4
 		"Matter/Antimatter Reactor" 1
 		"Nil'kemorya Jammer" 1
 		"Tunnelling Organ" 1
 		"Cloaking Organ;Polaris v1.1" 1
-		"Capacitor Pulse Laser" 2
-		"Manta Bay" 2
-		"Polaron Torpedo Tube;fire whilst cloaked" 4
+		"Polaron Torpedo" 60
+	# EVN carried-ship payload 4 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 35 7
 	gun -35 7
 	gun 35 7
@@ -10420,12 +10693,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Nil'kemorya Jammer" 1
-		"Tunnelling Organ" 1
-		"Cloaking Organ;Polaris v1.1" 1
 		"BioRelay Laser" 2
 		"Wraith Cannon;fire whilst cloaked" 2
 		"Turreted BioRelay Laser" 1
+		"Nil'kemorya Jammer" 1
+		"Tunnelling Organ" 1
+		"Cloaking Organ;Polaris v1.1" 1
+		"Wraithii" 60
 	gun 9 5
 	gun -9 5
 	gun 9 5
@@ -10476,13 +10750,15 @@
 		"fighter bays" 4
 
 	outfits
+		"Capacitor Pulse Laser" 4
+		"Polaron Multi-Torpedo Tube;fire whilst cloaked" 4
+		"Manta Bay" 4
 		"Nil'kemorya Jammer" 1
 		"Sensor Boost" 1
 		"Tunnelling Organ" 1
 		"Cloaking Organ;Polaris v1.1" 1
-		"Capacitor Pulse Laser" 4
-		"Polaron Multi-Torpedo Tube;fire whilst cloaked" 4
-		"Manta Bay" 4
+		"Polaron Multi-Torpedo;fire whilst cloaked" 80
+	# EVN carried-ship payload 8 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 0 16
 	gun 0 16
 	gun 0 16
@@ -10526,12 +10802,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
-		"Civilian Radar Jammer" 1
 		"100mm Fixed Railgun" 2
 		"Radar Missile Launcher" 3
 		"Light Blaster" 4
 		"Quad Light Blaster Turret" 2
+		"Civilian IR Jammer" 1
+		"Civilian Radar Jammer" 1
+		"Radar Missile" 24
 	gun 14 0
 	gun -14 0
 	gun 14 0
@@ -10582,13 +10859,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
-		"Civilian Radar Jammer" 1
 		"200mm Fixed Railgun" 2
 		"Radar Missile Launcher" 2
 		"Light Blaster" 2
 		"Medium Blaster" 2
 		"Quad Light Blaster Turret" 1
+		"Civilian IR Jammer" 1
+		"Civilian Radar Jammer" 1
+		"Radar Missile" 40
 	gun 14 0
 	gun -14 0
 	gun 14 0
@@ -10640,6 +10918,7 @@
 	outfits
 		"Light Cannon" 3
 		"IR Missile Launcher" 2
+		"IR Missile" 10
 	gun 5 4
 	gun -5 4
 	gun 5 4
@@ -10683,6 +10962,7 @@
 	outfits
 		"Thunderhead Lance" 1
 		"Raven Rocket Pod" 2
+		"Raven Rocket" 12
 	gun 5 4
 	gun -5 4
 	gun 5 4
@@ -10726,6 +11006,7 @@
 	outfits
 		"Light Blaster" 2
 		"Raven Rocket Pod" 2
+		"Raven Rocket" 10
 	gun 0 9
 	gun 0 9
 	gun 0 9
@@ -10773,6 +11054,8 @@
 	outfits
 		"Hail Chaingun" 2
 		"Raven Rocket Pod" 2
+		"Chaingun Ammunition" 50
+		"Raven Rocket" 12
 	gun 0 9
 	gun 0 9
 	gun 0 9
@@ -10821,6 +11104,7 @@
 		"Light Cannon" 2
 		"Medium Blaster" 1
 		"Raven Rocket Pod" 2
+		"Raven Rocket" 12
 	gun 9 0
 	gun -9 0
 	gun 9 0
@@ -10865,6 +11149,8 @@
 		"Light Cannon" 3
 		"Raven Rocket Pod" 2
 		"Radar Missile Launcher" 2
+		"Raven Rocket" 10
+		"Radar Missile" 8
 	gun 9 0
 	gun -9 0
 	gun 9 0
@@ -10909,6 +11195,7 @@
 		"Medium Blaster" 2
 		"Thunderhead Lance" 1
 		"Radar Missile Launcher" 2
+		"Radar Missile" 10
 	gun 9 0
 	gun -9 0
 	gun 9 0
@@ -10951,12 +11238,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
-		"Afterburner" 1
 		"Medium Blaster" 4
 		"Gravimetric Missile Launcher" 3
 		"Light Blaster Turret" 2
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Afterburner" 1
+		"Gravimetric Missile" 24
 	gun 10 0
 	gun -10 0
 	gun 10 0
@@ -11007,12 +11295,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
-		"Afterburner" 1
 		"100mm Fixed Railgun" 2
 		"Gravimetric Missile Launcher" 4
 		"Light Blaster Turret" 2
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Afterburner" 1
+		"Gravimetric Missile" 40
 	gun 10 0
 	gun -10 0
 	gun 10 0
@@ -11063,14 +11352,16 @@
 		"fighter bays" 0
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
-		"Afterburner" 1
 		"200mm Fixed Railgun" 2
 		"Medium Blaster" 3
 		"Radar Missile Launcher" 2
 		"Quad Light Blaster Turret" 1
 		"Hellhound Missile Launcher" 1
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Afterburner" 1
+		"Radar Missile" 20
+		"Hellhound Missile" 20
 	gun 10 0
 	gun -10 0
 	gun 10 0
@@ -11121,14 +11412,16 @@
 		"fighter bays" 0
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
-		"Afterburner" 1
 		"200mm Fixed Railgun" 2
 		"Medium Blaster" 2
 		"Quad Light Blaster Turret" 1
 		"Wraith Cannon" 1
 		"Hellhound Missile Launcher" 1
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Afterburner" 1
+		"Wraithii" 20
+		"Hellhound Missile" 30
 	gun 10 0
 	gun -10 0
 	gun 10 0
@@ -11179,12 +11472,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Afterburner" 1
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
 		"Medium Blaster" 3
 		"Raven Rocket Pod" 2
 		"Light Cannon" 2
+		"Afterburner" 1
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Raven Rocket" 80
 	gun 4 17
 	gun -4 17
 	gun 4 17
@@ -11235,12 +11529,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Afterburner" 1
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
 		"100mm Fixed Railgun" 2
 		"Radar Missile Launcher" 2
 		"Medium Blaster" 2
+		"Afterburner" 1
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Radar Missile" 80
 	gun 4 17
 	gun -4 17
 	gun 4 17
@@ -11291,15 +11586,17 @@
 		"fighter bays" 0
 
 	outfits
-		"Afterburner" 1
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
 		"200mm Fixed Railgun" 1
 		"100mm Fixed Railgun" 2
 		"Medium Blaster" 2
 		"Quad Light Blaster Turret" 2
 		"Wraith Cannon" 2
 		"Hellhound Missile Launcher" 1
+		"Afterburner" 1
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Wraithii" 30
+		"Hellhound Missile" 10
 	gun 4 17
 	gun -4 17
 	gun 4 17
@@ -11350,9 +11647,6 @@
 		"fighter bays" 4
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
-		"Afterburner" 1
 		"Wraith Cannon" 2
 		"BioRelay Laser" 1
 		"200mm Fixed Railgun" 2
@@ -11360,6 +11654,14 @@
 		"Rebel Viper Bay" 1
 		"Rebel Viper Bay" 1
 		"Rebel Viper Bay" 1
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Afterburner" 1
+		"Wraithii" 80
+	# EVN carried-ship payload 1 for weapon 192 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 193 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 194 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 195 retained in source data; ES fighter bays use category Fighter.
 	gun 12 2
 	gun -12 2
 	gun 12 2
@@ -11407,8 +11709,6 @@
 		"fighter bays" 0
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
 		"Quad Light Blaster Turret" 2
 		"Gravimetric Missile Launcher" 2
 		"Medium Blaster" 4
@@ -11416,6 +11716,11 @@
 		"Heavy Blaster Turret" 1
 		"200mm Fixed Railgun" 2
 		"Hellhound Missile Launcher" 2
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Gravimetric Missile" 20
+		"Raven Rocket" 60
+		"Hellhound Missile" 30
 	gun 15 5
 	gun -15 5
 	gun 15 5
@@ -11466,8 +11771,6 @@
 		"fighter bays" 0
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
 		"Quad Light Blaster Turret" 3
 		"Gravimetric Missile Launcher" 2
 		"Medium Blaster" 2
@@ -11476,6 +11779,11 @@
 		"200mm Fixed Railgun" 2
 		"Light Blaster" 1
 		"Wraith Cannon" 1
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Gravimetric Missile" 30
+		"Raven Rocket" 90
+		"Wraithii" 20
 	gun 15 5
 	gun -15 5
 	gun 15 5
@@ -11526,8 +11834,6 @@
 		"fighter bays" 4
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
 		"Quad Light Blaster Turret" 2
 		"Gravimetric Missile Launcher" 2
 		"Medium Blaster" 4
@@ -11536,6 +11842,14 @@
 		"Rebel Viper Bay" 1
 		"Rebel Viper Bay" 1
 		"Rebel Viper Bay" 1
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Gravimetric Missile" 30
+		"Raven Rocket" 90
+	# EVN carried-ship payload 2 for weapon 192 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 193 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 194 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 195 retained in source data; ES fighter bays use category Fighter.
 	gun 15 5
 	gun -15 5
 	gun 15 5
@@ -11587,10 +11901,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Afterburner" 1
-		"Military IR Jammer" 1
 		"Light Cannon" 3
 		"Raven Rocket Pod" 1
+		"Afterburner" 1
+		"Military IR Jammer" 1
+		"Raven Rocket" 10
 	gun 5 9
 	gun 5 9
 	gun 5 9
@@ -11643,6 +11958,7 @@
 		"Light Cannon" 2
 		"Radar Missile Launcher" 2
 		"Thunderhead Lance" 1
+		"Radar Missile" 10
 	gun 7 9
 	gun 0 9
 	gun -7 9
@@ -11695,6 +12011,7 @@
 		"Light Cannon" 2
 		"Wraith Cannon" 2
 		"Thunderhead Lance" 1
+		"Wraithii" 40
 	gun 7 9
 	gun 0 9
 	gun -7 9
@@ -11747,6 +12064,7 @@
 		"Thunderhead Lance" 2
 		"Radar Missile Launcher" 2
 		"100mm Fixed Railgun" 1
+		"Radar Missile" 20
 	gun 9 9
 	gun 0 9
 	gun -9 9
@@ -11797,13 +12115,15 @@
 		"fighter bays" 0
 
 	outfits
+		"Wraith Cannon" 2
+		"BioRelay Laser" 1
+		"Hellhound Missile Launcher" 2
 		"Rebel IR Jammer" 1
 		"Rebel Radar Jammer" 1
 		"Afterburner" 1
 		"Rebel Cloaking Device - legal" 1
-		"Wraith Cannon" 2
-		"BioRelay Laser" 1
-		"Hellhound Missile Launcher" 2
+		"Wraithii" 60
+		"Hellhound Missile" 20
 	gun 12 2
 	gun -12 2
 	gun 12 2
@@ -11850,12 +12170,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
 		"Quad Light Blaster Turret" 2
 		"Gravimetric Missile Launcher" 2
 		"Medium Blaster" 4
 		"Raven Rocket Turret" 2
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Gravimetric Missile" 30
+		"Raven Rocket" 90
 	gun 15 5
 	gun -15 5
 	gun 15 5
@@ -11906,10 +12228,6 @@
 		"fighter bays" 4
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
-		"Afterburner" 1
-		"Rebel Cloaking Device - legal" 1
 		"Wraith Cannon" 2
 		"BioRelay Laser" 1
 		"200mm Fixed Railgun" 2
@@ -11917,6 +12235,15 @@
 		"Rebel Viper Bay" 1
 		"Rebel Viper Bay" 1
 		"Rebel Viper Bay" 1
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Afterburner" 1
+		"Rebel Cloaking Device - legal" 1
+		"Wraithii" 80
+	# EVN carried-ship payload 1 for weapon 192 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 193 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 194 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 195 retained in source data; ES fighter bays use category Fighter.
 	gun 12 2
 	gun -12 2
 	gun 12 2
@@ -11964,9 +12291,6 @@
 		"fighter bays" 0
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
-		"Rebel Cloaking Device - legal" 1
 		"Quad Light Blaster Turret" 2
 		"Gravimetric Missile Launcher" 2
 		"Medium Blaster" 4
@@ -11974,6 +12298,12 @@
 		"Heavy Blaster Turret" 1
 		"200mm Fixed Railgun" 2
 		"Hellhound Missile Launcher" 2
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Rebel Cloaking Device - legal" 1
+		"Gravimetric Missile" 20
+		"Raven Rocket" 60
+		"Hellhound Missile" 30
 	gun 15 5
 	gun -15 5
 	gun 15 5
@@ -12024,9 +12354,6 @@
 		"fighter bays" 0
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
-		"Rebel Cloaking Device - legal" 1
 		"Quad Light Blaster Turret" 3
 		"Gravimetric Missile Launcher" 2
 		"Medium Blaster" 2
@@ -12035,6 +12362,12 @@
 		"200mm Fixed Railgun" 2
 		"Light Cannon" 1
 		"Wraith Cannon" 1
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Rebel Cloaking Device - legal" 1
+		"Gravimetric Missile" 30
+		"Raven Rocket" 90
+		"Wraithii" 20
 	gun 15 5
 	gun -15 5
 	gun 15 5
@@ -12085,9 +12418,6 @@
 		"fighter bays" 4
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
-		"Rebel Cloaking Device - legal" 1
 		"Quad Light Blaster Turret" 2
 		"Gravimetric Missile Launcher" 2
 		"Medium Blaster" 4
@@ -12096,6 +12426,15 @@
 		"Rebel Viper Bay" 1
 		"Rebel Viper Bay" 1
 		"Rebel Viper Bay" 1
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Rebel Cloaking Device - legal" 1
+		"Gravimetric Missile" 30
+		"Raven Rocket" 90
+	# EVN carried-ship payload 2 for weapon 192 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 193 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 194 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 195 retained in source data; ES fighter bays use category Fighter.
 	gun 15 5
 	gun -15 5
 	gun 15 5
@@ -12184,10 +12523,10 @@
 		"fighter bays" 0
 
 	outfits
+		"Light Blaster" 1
 		"Gravimetric Sensors" 1
 		"IFF Decoder" 1
 		"Auto-recharger" 1
-		"Light Blaster" 1
 	gun 3 10
 	gun -3 10
 	gun 3 10
@@ -12263,11 +12602,11 @@
 		"fighter bays" 0
 
 	outfits
+		"Light Cannon" 2
 		"Gravimetric Sensors" 1
 		"IFF Decoder" 1
 		"Auto-recharger" 1
 		"Battery Pack" 1
-		"Light Cannon" 2
 	gun 3 14
 	gun -3 14
 	gun 3 14
@@ -12353,6 +12692,8 @@
 		"fighter bays" 0
 
 	outfits
+		"Medium Blaster Turret" 2
+		"Medium Blaster" 2
 		"Gravimetric Sensors" 1
 		"IFF Decoder" 1
 		"Auto-recharger" 1
@@ -12361,8 +12702,6 @@
 		"Carbon Fiber" 3
 		"Protective Technologies License" 1
 		"Heavy Weapons License" 1
-		"Medium Blaster Turret" 2
-		"Medium Blaster" 2
 	gun 7 10
 	gun -7 10
 	gun 7 10
@@ -12411,6 +12750,7 @@
 	outfits
 		"Medium Blaster" 2
 		"Radar Missile Launcher" 1
+		"Radar Missile" 6
 	gun 0 15
 	gun 0 15
 	gun 0 15
@@ -12461,6 +12801,10 @@
 		"fighter bays" 0
 
 	outfits
+		"Medium Blaster" 4
+		"Radar Missile Launcher" 1
+		"Light Blaster Turret" 1
+		"Medium Blaster Turret" 1
 		"Civilian IR Jammer" 1
 		"Civilian Radar Jammer" 1
 		"Gravimetric Sensors" 1
@@ -12469,10 +12813,7 @@
 		"Carbon Fiber" 3
 		"Afterburner" 1
 		"Battery Pack" 2
-		"Medium Blaster" 4
-		"Radar Missile Launcher" 1
-		"Light Blaster Turret" 1
-		"Medium Blaster Turret" 1
+		"Radar Missile" 10
 	gun 0 15
 	gun 0 15
 	gun 0 15
@@ -12571,13 +12912,13 @@
 		"fighter bays" 0
 
 	outfits
+		"Medium Blaster" 2
 		"Carbon Fiber" 3
 		"Gravimetric Sensors" 1
 		"IFF Decoder" 1
 		"Afterburner" 1
 		"Solar Panels" 2
 		"Battery Pack" 3
-		"Medium Blaster" 2
 	gun 0 4
 	gun 6 6
 	gun -6 6
@@ -12679,14 +13020,15 @@
 		"fighter bays" 0
 
 	outfits
+		"Medium Blaster" 3
+		"Light Cannon" 2
+		"Raven Rocket Pod" 2
 		"Civilian IR Jammer" 1
 		"Civilian Radar Jammer" 1
 		"Gravimetric Sensors" 1
 		"IFF Decoder" 1
 		"Carbon Fiber" 3
-		"Medium Blaster" 3
-		"Light Cannon" 2
-		"Raven Rocket Pod" 2
+		"Raven Rocket" 60
 	gun 0 10
 	gun 0 10
 	gun 0 10
@@ -12737,12 +13079,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Afterburner" 1
-		"Military IR Jammer" 1
-		"Military Radar Jammer" 1
 		"Fusion Pulse Turret" 2
 		"Wraith Cannon" 2
 		"Etheric Wake Missile Launcher" 1
+		"Afterburner" 1
+		"Military IR Jammer" 1
+		"Military Radar Jammer" 1
+		"Wraithii" 40
+		"Etheric Wake Missile" 5
 	gun 12 3
 	gun -12 3
 	gun 12 3
@@ -12793,10 +13137,6 @@
 		"fighter bays" 4
 
 	outfits
-		"Pirate Jammer" 1
-		"Exotic Ships & Weapons License" 1
-		"Solar Panels" 2
-		"Marine Platoon" 2
 		"Quad Light Blaster Turret" 2
 		"Pirate Viper Bay" 4
 		"EMP Torpedo Tube" 2
@@ -12804,6 +13144,14 @@
 		"Hellhound Missile Launcher" 3
 		"Heavy Blaster Turret" 4
 		"Pirate Thunderhead Bay" 2
+		"Pirate Jammer" 1
+		"Exotic Ships & Weapons License" 1
+		"Solar Panels" 2
+		"Marine Platoon" 2
+		"EMP Torpedo" 8
+		"Hellhound Missile" 21
+	# EVN carried-ship payload 4 for weapon 169 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 176 retained in source data; ES fighter bays use category Fighter.
 	gun 18 21
 	gun 0 16
 	gun -18 21
@@ -12855,11 +13203,12 @@
 		"fighter bays" 0
 
 	outfits
+		"BioRelay Laser" 2
+		"Wraith Cannon" 1
 		"Nil'kemorya Jammer" 1
 		"Fusion Reactor" 1
 		"Cloaking Organ;Polaris v1.0" 1
-		"BioRelay Laser" 2
-		"Wraith Cannon" 1
+		"Wraithii" 30
 	gun 0 19
 	gun 0 19
 	gun 0 19
@@ -12910,11 +13259,12 @@
 		"fighter bays" 0
 
 	outfits
+		"BioRelay Laser" 2
+		"Wraith Cannon" 1
 		"Nil'kemorya Jammer" 1
 		"Fusion Reactor" 1
 		"Cloaking Organ;Polaris v1.0" 1
-		"BioRelay Laser" 2
-		"Wraith Cannon" 1
+		"Wraithii" 30
 	gun 0 19
 	gun 0 19
 	gun 0 19
@@ -12968,6 +13318,7 @@
 		"Medium Blaster" 2
 		"Medium Blaster Turret" 2
 		"Raven Rocket Turret" 2
+		"Raven Rocket" 20
 	gun 7 10
 	gun -7 10
 	gun 7 10
@@ -13019,6 +13370,8 @@
 		"Fusion Pulse Turret" 2
 		"Pirate Viper Bay" 1
 		"Thunderhead Lance" 1
+		"Hellhound Missile" 10
+	# EVN carried-ship payload 2 for weapon 169 retained in source data; ES fighter bays use category Fighter.
 	gun -27 8
 	gun 27 8
 	gun -27 8
@@ -13069,8 +13422,8 @@
 		"fighter bays" 0
 
 	outfits
-		"Asteroid Scoop" 1
 		"Asteroid Mining Laser" 4
+		"Asteroid Scoop" 1
 	gun 2 7
 	gun -2 7
 	gun -2 7
@@ -13109,12 +13462,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Radar Missile Launcher" 2
 		"Storm Chaingun" 2
 		"Fusion Pulse Battery" 4
 		"150mm Fixed Railgun" 4
 		"TripHammer" 4
+		"Auroran IR Jammer" 1
+		"Radar Missile" 200
+		"Chaingun Ammunition" 2000
 	gun 2 -25
 	gun -2 -25
 	gun 2 -32
@@ -13315,9 +13670,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Disabling Fusion Pulse Turret" 2
 		"Disabling Radar Missile Launcher" 4
+		"Auroran IR Jammer" 1
+		"Radar Missile" 30
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -13368,9 +13724,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Disabling Fusion Pulse Turret" 2
 		"Disabling Radar Missile Launcher" 2
+		"Auroran IR Jammer" 1
+		"Radar Missile" 10
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -13421,9 +13778,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Disabling Fusion Pulse Turret" 2
 		"Disabling Radar Missile Launcher" 3
+		"Auroran IR Jammer" 1
+		"Radar Missile" 15
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -13474,9 +13832,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Disabling Fusion Pulse Turret" 2
 		"Disabling Radar Missile Launcher" 4
+		"Auroran IR Jammer" 1
+		"Radar Missile" 20
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -13527,9 +13886,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Disabling Fusion Pulse Turret" 2
 		"Disabling Radar Missile Launcher" 4
+		"Auroran IR Jammer" 1
+		"Radar Missile" 20
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -13580,9 +13940,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Disabling Fusion Pulse Turret" 3
 		"Disabling Radar Missile Launcher" 5
+		"Auroran IR Jammer" 1
+		"Radar Missile" 40
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -13633,9 +13994,10 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Disabling Fusion Pulse Turret" 2
 		"Disabling Radar Missile Launcher" 2
+		"Auroran IR Jammer" 1
+		"Radar Missile" 10
 	gun 2 9
 	gun -2 9
 	gun 3 9
@@ -13820,11 +14182,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"Fusion Pulse Battery" 3
 		"Radar Missile Launcher" 5
 		"Storm Chaingun" 2
 		"Hail Chaingun" 5
+		"Auroran IR Jammer" 1
+		"Radar Missile" 25
+		"Chaingun Ammunition" 700
 	gun 7 11
 	gun -7 11
 	gun 7 11
@@ -13875,8 +14239,6 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
-		"Military Radar Jammer" 1
 		"200mm Fixed Railgun" 6
 		"Storm Chaingun" 4
 		"Firebird Bay" 2
@@ -13885,6 +14247,15 @@
 		"Firebird Bay" 2
 		"Phoenix Bay" 1
 		"Phoenix Bay" 1
+		"Auroran IR Jammer" 1
+		"Military Radar Jammer" 1
+		"Chaingun Ammunition" 1000
+	# EVN carried-ship payload 2 for weapon 151 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 152 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 186 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 2 for weapon 187 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 188 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 189 retained in source data; ES fighter bays use category Fighter.
 	gun 14 -15
 	gun -14 -15
 	gun 14 -15
@@ -13932,12 +14303,14 @@
 		"fighter bays" 0
 
 	outfits
-		"Auroran IR Jammer" 1
 		"200mm Fixed Railgun" 3
 		"100mm Fixed Railgun" 2
 		"Storm Chaingun" 1
 		"IR Missile Launcher" 3
 		"Fusion Pulse Battery" 2
+		"Auroran IR Jammer" 1
+		"Chaingun Ammunition" 200
+		"IR Missile" 40
 	gun 0 56
 	gun 0 56
 	gun 0 56
@@ -13988,10 +14361,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
-		"Civilian Radar Jammer" 1
 		"Medium Blaster" 2
 		"Radar Missile Launcher" 1
+		"Civilian IR Jammer" 1
+		"Civilian Radar Jammer" 1
+		"Radar Missile" 10
 	gun 0 15
 	gun 0 15
 	gun 0 15
@@ -14042,10 +14416,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Civilian IR Jammer" 1
 		"Medium Blaster" 1
 		"Light Blaster" 2
 		"Raven Rocket Pod" 1
+		"Civilian IR Jammer" 1
+		"Raven Rocket" 50
 	gun 0 10
 	gun 0 10
 	gun 0 10
@@ -14096,10 +14471,11 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"Medium Blaster" 2
 		"Light Blaster" 2
 		"Radar Missile Launcher" 1
+		"Pirate Jammer" 1
+		"Radar Missile" 12
 	gun 0 10
 	gun 0 10
 	gun 0 10
@@ -14153,6 +14529,7 @@
 		"Medium Blaster" 2
 		"Light Blaster" 2
 		"Raven Rocket Pod" 2
+		"Raven Rocket" 80
 	gun 4 15
 	gun -4 15
 	gun 4 15
@@ -14206,6 +14583,8 @@
 		"Hail Chaingun" 2
 		"Light Blaster" 2
 		"Raven Rocket Pod" 1
+		"Chaingun Ammunition" 800
+		"Raven Rocket" 15
 	gun 2 20
 	gun -2 20
 	gun 2 20
@@ -14256,9 +14635,9 @@
 		"fighter bays" 0
 
 	outfits
-		"Pirate Jammer" 1
 		"150mm Fixed Railgun" 2
 		"Fusion Pulse Turret" 1
+		"Pirate Jammer" 1
 	gun 27 30
 	gun -27 30
 	gun 27 30
@@ -14351,10 +14730,6 @@
 		"fighter bays" 4
 
 	outfits
-		"Rebel IR Jammer" 1
-		"Rebel Radar Jammer" 1
-		"Afterburner" 1
-		"Rebel Cloaking Device - legal" 1
 		"Wraith Cannon" 2
 		"BioRelay Laser" 1
 		"200mm Fixed Railgun" 2
@@ -14362,6 +14737,15 @@
 		"Rebel Viper Bay" 1
 		"Rebel Viper Bay" 1
 		"Rebel Viper Bay" 1
+		"Rebel IR Jammer" 1
+		"Rebel Radar Jammer" 1
+		"Afterburner" 1
+		"Rebel Cloaking Device - legal" 1
+		"Wraithii" 80
+	# EVN carried-ship payload 1 for weapon 192 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 193 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 194 retained in source data; ES fighter bays use category Fighter.
+	# EVN carried-ship payload 1 for weapon 195 retained in source data; ES fighter bays use category Fighter.
 	gun 12 2
 	gun -12 2
 	gun 12 2
@@ -14409,12 +14793,14 @@
 		"fighter bays" 4
 
 	outfits
-		"Nil'kemorya Jammer" 1
-		"Sensor Boost" 1
-		"Tunnelling Organ" 1
 		"Capacitor Pulse Laser" 4
 		"Polaron Multi-Torpedo Tube;fire whilst cloaked" 4
 		"Manta Bay" 4
+		"Nil'kemorya Jammer" 1
+		"Sensor Boost" 1
+		"Tunnelling Organ" 1
+		"Polaron Multi-Torpedo;fire whilst cloaked" 80
+	# EVN carried-ship payload 8 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 0 16
 	gun 0 16
 	gun 0 16
@@ -14458,13 +14844,15 @@
 		"fighter bays" 4
 
 	outfits
+		"Capacitor Pulse Laser" 2
+		"Manta Bay" 2
+		"Polaron Torpedo Tube;fire whilst cloaked" 4
 		"Matter/Antimatter Reactor" 1
 		"Nil'kemorya Jammer" 1
 		"Tunnelling Organ" 1
 		"Cloaking Organ;Polaris v1.1" 1
-		"Capacitor Pulse Laser" 2
-		"Manta Bay" 2
-		"Polaron Torpedo Tube;fire whilst cloaked" 4
+		"Polaron Torpedo" 60
+	# EVN carried-ship payload 4 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 35 7
 	gun -35 7
 	gun 35 7
@@ -14516,12 +14904,13 @@
 		"fighter bays" 0
 
 	outfits
+		"Capacitor Pulse Laser" 2
+		"Polaron Torpedo Tube;fire whilst cloaked" 2
 		"Fusion Reactor" 1
 		"Nil'kemorya Jammer" 1
 		"Cloaking Organ;Polaris v1.1" 1
 		"Tunnelling Organ" 1
-		"Capacitor Pulse Laser" 2
-		"Polaron Torpedo Tube;fire whilst cloaked" 2
+		"Polaron Torpedo" 30
 	gun 0 -3
 	gun 0 -3
 	gun 0 -3
@@ -14572,11 +14961,12 @@
 		"fighter bays" 0
 
 	outfits
+		"Wraith Cannon;fire whilst cloaked" 3
+		"Turreted BioRelay Laser" 2
 		"Polaris Jammer" 1
 		"Cloaking Organ;Polaris v1.1" 1
 		"Tunnelling Organ" 1
-		"Wraith Cannon;fire whilst cloaked" 3
-		"Turreted BioRelay Laser" 2
+		"Wraithii" 90
 	gun 13 2
 	gun -13 2
 	gun 13 2
@@ -14627,12 +15017,13 @@
 		"fighter bays" 0
 
 	outfits
-		"Nil'kemorya Jammer" 1
-		"Tunnelling Organ" 1
-		"Cloaking Organ;Polaris v1.1" 1
 		"BioRelay Laser" 2
 		"Wraith Cannon;fire whilst cloaked" 2
 		"Turreted BioRelay Laser" 1
+		"Nil'kemorya Jammer" 1
+		"Tunnelling Organ" 1
+		"Cloaking Organ;Polaris v1.1" 1
+		"Wraithii" 60
 	gun 9 5
 	gun -9 5
 	gun 9 5
@@ -14683,13 +15074,15 @@
 		"fighter bays" 4
 
 	outfits
+		"Capacitor Pulse Laser" 4
+		"Polaron Multi-Torpedo Tube;fire whilst cloaked" 4
+		"Manta Bay" 4
 		"Nil'kemorya Jammer" 1
 		"Sensor Boost" 1
 		"Tunnelling Organ" 1
 		"Cloaking Organ;Polaris v1.1" 1
-		"Capacitor Pulse Laser" 4
-		"Polaron Multi-Torpedo Tube;fire whilst cloaked" 4
-		"Manta Bay" 4
+		"Polaron Multi-Torpedo;fire whilst cloaked" 80
+	# EVN carried-ship payload 8 for weapon 154 retained in source data; ES fighter bays use category Fighter.
 	gun 0 16
 	gun 0 16
 	gun 0 16
@@ -14733,13 +15126,15 @@
 		"fighter bays" 4
 
 	outfits
-		"Military IR Jammer" 1
 		"Quad Light Blaster Turret" 1
 		"Gravimetric Missile Launcher" 2
 		"Rebel Viper Bay" 1
 		"Heavy Blaster Turret" 2
 		"Medium Blaster" 2
 		"Light Cannon" 4
+		"Military IR Jammer" 1
+		"Gravimetric Missile" 60
+	# EVN carried-ship payload 4 for weapon 192 retained in source data; ES fighter bays use category Fighter.
 	gun 0 42
 	gun 0 36
 	gun 0 42
@@ -14791,7 +15186,6 @@
 		"fighter bays" 4
 
 	outfits
-		"Military IR Jammer" 1
 		"Quad Light Blaster Turret" 2
 		"Gravimetric Missile Launcher" 2
 		"Rebel Viper Bay" 2
@@ -14799,6 +15193,9 @@
 		"Medium Blaster" 2
 		"Light Cannon" 4
 		"100mm Fixed Railgun" 2
+		"Military IR Jammer" 1
+		"Gravimetric Missile" 60
+	# EVN carried-ship payload 8 for weapon 192 retained in source data; ES fighter bays use category Fighter.
 	gun 0 42
 	gun 0 36
 	gun 0 42
@@ -14850,7 +15247,6 @@
 		"fighter bays" 4
 
 	outfits
-		"Military IR Jammer" 1
 		"Quad Light Blaster Turret" 2
 		"Gravimetric Missile Launcher" 2
 		"Rebel Viper Bay" 2
@@ -14859,6 +15255,9 @@
 		"Light Cannon" 4
 		"100mm Fixed Railgun" 2
 		"BioRelay Laser" 2
+		"Military IR Jammer" 1
+		"Gravimetric Missile" 60
+	# EVN carried-ship payload 8 for weapon 192 retained in source data; ES fighter bays use category Fighter.
 	gun 0 42
 	gun 0 36
 	gun 0 42

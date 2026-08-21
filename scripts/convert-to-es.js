@@ -95,9 +95,19 @@ function referenceOutfitRecord(outfitId) {
 }
 function ammoOutfitNameForWeapon(weaponId) {
   const target = String(refId(weaponId));
+  const weapon = referenceWeaponRecord(weaponId);
+  const ammoType = weapon && weapon.data ? number(weapon.data.AmmoType, -1) : -1;
+  const compatibleWeaponIds = new Set([target]);
+  if (ammoType >= 0) {
+    for (const candidate of referenceData["wëap"] || []) {
+      if (number(candidate.data && candidate.data.AmmoType, -1) === ammoType) {
+        compatibleWeaponIds.add(String(candidate.id));
+      }
+    }
+  }
   const record = (referenceData["oütf"] || []).find(item => {
     const data = item.data || {};
-    return Number(data.ModType) === 3 && String(data.ModVal) === target;
+    return Number(data.ModType) === 3 && compatibleWeaponIds.has(String(data.ModVal));
   });
   return record ? nameOf("Outfit", `nova:${record.id}`) : null;
 }
@@ -759,11 +769,90 @@ function activeExitPoints(points) {
   return Array.isArray(points) ? points.filter(point => Array.isArray(point) && point.length >= 2 && point.some(value => number(value) !== 0)) : [];
 }
 
+function rawShipWeaponSlots(raw) {
+  const slots = [];
+  for (const suffix of ["", "2"]) {
+    const types = Array.isArray(raw[`WeapType${suffix}`]) ? raw[`WeapType${suffix}`] : [];
+    const counts = Array.isArray(raw[`WeapCount${suffix}`]) ? raw[`WeapCount${suffix}`] : [];
+    const ammoLoads = Array.isArray(raw[`AmmoLoad${suffix}`]) ? raw[`AmmoLoad${suffix}`] : [];
+    for (let index = 0; index < types.length; index++) {
+      const weaponId = number(types[index], -1);
+      const count = Math.max(0, Math.floor(number(counts[index], 0)));
+      if (weaponId >= 128 && count > 0) {
+        slots.push({ weaponId, count, ammo: number(ammoLoads[index], 0) });
+      }
+    }
+  }
+  return slots;
+}
+
 function rawShipWeaponIds(raw) {
-  return ["WeapType", "WeapType2"]
-    .flatMap(field => Array.isArray(raw[field]) ? raw[field] : [])
-    .map(value => number(value, -1))
-    .filter(value => value >= 128);
+  return rawShipWeaponSlots(raw).map(slot => slot.weaponId);
+}
+
+function weaponOutfitRefForShip(ship, weaponId) {
+  const target = String(refId(weaponId));
+  const local = Object.keys(ship.outfits || {}).find(ref => {
+    const outfit = normalizedOf("Outfit", ref);
+    return outfit && Object.keys(outfit.weapons || {}).some(id => String(refId(id)) === target);
+  });
+  if (local) return local;
+  const global = Object.entries(normalized.Outfit || {}).find(([, outfit]) =>
+    Object.keys(outfit.weapons || {}).some(id => String(refId(id)) === target)
+  );
+  return global ? global[0] : null;
+}
+
+function stockShipLoadout(ship, raw) {
+  const outfitCounts = new Map();
+  const matchedWeaponRefs = new Set();
+  const ammoCounts = new Map();
+  const notes = [];
+  const addOutfit = (ref, quantity) => {
+    const count = Math.max(0, Math.floor(number(quantity, 0)));
+    if (!ref || count <= 0) return;
+    outfitCounts.set(ref, (outfitCounts.get(ref) || 0) + count);
+  };
+  const addAmmo = (name, quantity) => {
+    const count = Math.max(0, Math.floor(number(quantity, 0)));
+    if (!name || count <= 0) return;
+    ammoCounts.set(name, (ammoCounts.get(name) || 0) + count);
+  };
+
+  for (const slot of rawShipWeaponSlots(raw)) {
+    const weaponRef = `nova:${slot.weaponId}`;
+    const outfitRef = weaponOutfitRefForShip(ship, slot.weaponId);
+    if (outfitRef) {
+      addOutfit(outfitRef, slot.count);
+      matchedWeaponRefs.add(outfitRef);
+    } else {
+      notes.push(`EVN stock weapon ${slot.weaponId} has no matching outfit.`);
+    }
+
+    if (slot.ammo <= 0) continue;
+    const weapon = referenceWeaponRecord(weaponRef);
+    const weaponData = weapon && weapon.data ? weapon.data : {};
+    if (number(weaponData.Guidance, -1) === 99) {
+      notes.push(`EVN carried-ship payload ${slot.ammo} for weapon ${slot.weaponId} retained in source data; ES fighter bays use category Fighter.`);
+      continue;
+    }
+    const ammoName = ammoOutfitNameForWeapon(slot.weaponId);
+    if (ammoName) addAmmo(ammoName, slot.ammo);
+    else notes.push(`EVN AmmoLoad ${slot.ammo} for weapon ${slot.weaponId} has no matching ammo outfit.`);
+  }
+
+  for (const [ref, quantity] of Object.entries(ship.outfits || {})) {
+    const outfit = normalizedOf("Outfit", ref);
+    const isWeapon = outfit && Object.keys(outfit.weapons || {}).length > 0;
+    if (isWeapon && matchedWeaponRefs.has(ref)) continue;
+    addOutfit(ref, quantity);
+  }
+
+  return {
+    outfits: [...outfitCounts.entries()],
+    ammo: [...ammoCounts.entries()],
+    notes
+  };
 }
 
 function fighterBayShipName(raw) {
@@ -855,9 +944,10 @@ function convertShips() {
     ]) add(lines, key, value, "\t\t");
     lines.push("");
     if (ship.outfits) {
+      const loadout = stockShipLoadout(ship, raw);
       let remaining = Math.max(0, number(p.freeMass));
       const fitted = [];
-      for (const [ref, quantity] of Object.entries(ship.outfits)) {
+      for (const [ref, quantity] of loadout.outfits) {
         const outfit = normalizedOf("Outfit", ref);
         const count = Math.max(0, Math.floor(number(quantity, 1)));
         const cost = Math.max(0, number(outfit && outfit.physics && outfit.physics.freeMass));
@@ -871,6 +961,10 @@ function convertShips() {
       for (const [ref, quantity] of fitted) {
         lines.push(`\t\t${q(nameOf("Outfit", ref))} ${quantity}`);
       }
+      for (const [name, quantity] of loadout.ammo) {
+        lines.push(`\t\t${q(name)} ${quantity}`);
+      }
+      for (const note of loadout.notes) lines.push(`\t# ${note}`);
     }
     appendShipHardpoints(lines, ship, raw);
     const flags = hexNumber(raw.Flags);
