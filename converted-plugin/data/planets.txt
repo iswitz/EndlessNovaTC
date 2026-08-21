@@ -17,18 +17,22 @@
 
 "planet" "Reflex-ion"
 	"landscape" "land/reflex_ion"
+	attributes "uninhabited"
 	"spaceport" "Reflex-ion is a planetologist's dream, a world that looks destined to become an M-class planet which is in its early stages of formation.  Of course this world is still uninhabitable, but the University of Misfire maintains a small research station here to study of the processes that go into the creation of an M-class planet."
 	tribute 196
 	"description" "Reflex-ion is a planetologist's dream, a world that looks destined to become an M-class planet which is in its early stages of formation.  Of course this world is still uninhabitable, but the University of Misfire maintains a small research station here to study of the processes that go into the creation of an M-class planet."
 
 "planet" "HG-Aldebaran"
 	"landscape" "land/hg_aldebaran"
+	attributes "station" "uninhabited"
 
 "planet" "HG-Vega"
 	"landscape" "land/hg_vega"
+	attributes "station" "uninhabited"
 
 "planet" "UHP-0164"
 	"landscape" "land/uhp_0164"
+	attributes "uninhabited"
 	"spaceport" "One of many metallic moons scattered across the galaxy.  No air, few resources and no nightclubs.  Nice place to retire."
 	tribute 153
 	"description" "One of many metallic moons scattered across the galaxy.  No air, few resources and no nightclubs.  Nice place to retire."
@@ -36,6 +40,7 @@
 "planet" "Spacedock II"
 	"landscape" "land/spacedock_ii"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "Spacedock II is the headquarters for the Federation Navy's logistics department.  The base is also utilized as a secondary repair and outfitting facility with the shipyards on the Kane Band around Earth being primary.  Materials and parts produced on Viking below are shipped up and assembled on base.  However, the primary purpose of this base is to provide a home for the people who have to keep track of the Federation military on a day-to-day basis.  An occasional Auroran skirmish keeps the pilots and gunners of Spacedock II on their toes, as the Auroran commanders see Spacedock II as a potential 'weak point' along the Federation border."
 	outfitter "EVN Outfits 7"
 	outfitter "EVN Outfits Spacedock II 133"
@@ -58,6 +63,7 @@
 
 "planet" "UHP-0474"
 	"landscape" "land/uhp_0474"
+	attributes "uninhabited"
 	"spaceport" "UHP-0474 was used to test the first generation of biogenic weapons that the Federation produced.  The planet was then sterilized by the use of super-high-yield protonic weapons.  The background radiation will make this planet uninhabitable for tens of thousands of years."
 	tribute 145
 	"description" "UHP-0474 was used to test the first generation of biogenic weapons that the Federation produced.  The planet was then sterilized by the use of super-high-yield protonic weapons.  The background radiation will make this planet uninhabitable for tens of thousands of years."
@@ -65,6 +71,7 @@
 "planet" "Spacedock III"
 	"landscape" "land/spacedock_iii"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "Spacedock III is smack-bang in the middle of one of the largest areas of ionic interference in the known galaxy.  To make matters worse, it's on the vital southern border that the Federation shares with the Auroran Empire.  Spacedock III has seen an enormous amount of action in the years since it was commissioned, and has recently been upgraded to hold the latest station-class blaster cannons.  Ingress and egress from the station are much more difficult than is normal for this model of Federation Battlestation, due to the ion storms that regularly sweep this area of space, and also because of security procedures designed to weed out Auroran infiltrators."
 	outfitter "EVN Outfits 7"
 	outfitter "EVN Outfits Spacedock III 136"
@@ -76,6 +83,7 @@
 "planet" "Port Kane"
 	"landscape" "land/port_kane"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "Named for the legendary woman behind the design of the Hypergate system, Omata Kane, Port Kane was the hub of all traffic to the galactic west of the old Colonial Council.  The Polaris now control much of the area to the east of the Federation that used to be in the hands of the Colonial Council, due to the slow withdrawal of the Council into the core worlds during the collapse.  Port Kane now occupies the vital intersection between the Auroran Empire, the Polaris and the Federation.  What little trade and diplomacy is conducted between these three governments occurs here.  Port Kane also holds the dubious distinction of being the furthest Primary system from the Federation core worlds.  It is something of a backwater, but it's cosmopolitan enough to have good port services, full of decent outfitters.  It's also the gateway to many a 'specialist' transaction, if you know where to look."
 	outfitter "EVN Outfits 4"
 	outfitter "EVN Outfits Port Kane 137"
@@ -123,6 +131,7 @@
 
 "planet" "Neo New York"
 	"landscape" "land/neo_new_york"
+	attributes "uninhabited"
 	"spaceport" "Neo New York was a flourishing Colonial Council colony until the crettic plague destroyed all life here.  The atmosphere is a now a poisonous shell of its former self, containing mostly methane and variants thereof.  Some remnants of the plague virus survive on the methane and sulphur compounds.  You can feel the heat through your bio-suit, and the sludge squishes under your feet as you walk through the deserted streets of the spaceport.  There is nothing of worth here, and even if there was it would never pass through your ship's biofilters."
 	tribute 188
 	"description" "Neo New York was a flourishing Colonial Council colony until the crettic plague destroyed all life here.  The atmosphere is a now a poisonous shell of its former self, containing mostly methane and variants thereof.  Some remnants of the plague virus survive on the methane and sulphur compounds.  You can feel the heat through your bio-suit, and the sludge squishes under your feet as you walk through the deserted streets of the spaceport.  There is nothing of worth here, and even if there was it would never pass through your ship's biofilters."
@@ -130,6 +139,7 @@
 "planet" "Spacedock IV"
 	"landscape" "land/spacedock_iv"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "Spacedock IV is the gateway to New Babylon.  Most passenger ferries destined for the Nesre Primus system dock here instead of the blue-green planet below.  Inter-orbital shuttles and cargo drones account for 90% of the traffic to and from Spacedock IV and New Babylon, and merchants usually have their head offices here rather than groundside.  The spaceport itself is very well maintained, but it is obviously an old station, one of the first of the Federation style to be built.  Regularly upgraded, it performs a vital role in housing the military barracks for this sector, supplying patrols for the outlying systems in an attempt to weed out pirates and rebel insurgents."
 	outfitter "EVN Outfits 4"
 	outfitter "EVN Outfits Spacedock IV 142"
@@ -215,6 +225,7 @@
 "planet" "Spacedock V"
 	"landscape" "land/spacedock_v"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "SD5's primary task is to supply and maintain a large Federation armada under the command of Admiral Raczak. Surviving a tour of duty in Raczak's Roughnecks almost always ensures an operational command posting elsewhere.  The Roughnecks have a long and proud tradition of producing the hardest and most capable veterans of any combat unit, due to the near-continuous action that the armada sees. It is hardly worthy of note that the Roughnecks have the greatest attrition rate of any operational Federation unit.  There seems to be a bone of contention between Admiral Raczak and the Wild Geese stationed on SD6, but only the closest associates of the Admiral seem to ken the reason why.  However, historians have noted that Raczak's report following the Battle of Kerella doesn't paint the mercenaries in a good light."
 	outfitter "EVN Outfits 7"
 	outfitter "EVN Outfits Spacedock V 150"
@@ -243,10 +254,12 @@
 
 "planet" "Tau III"
 	"landscape" "land/tau_iii"
+	attributes "uninhabited"
 
 "planet" "Spacedock VI"
 	"landscape" "land/spacedock_vi"
 	"government" "Wild Geese"
+	attributes "station"
 	"spaceport" "Spacedock 6 is the home-away-from-home of New Ireland's most successful export: the Wild Geese.  This mercenary unit has been stationed on SD6 for many years now as a memorial to the largest fleet engagement of recent history.  An Auroran armada engaged a Federation task-force led by then-Commander Raczak,  which was nearly wiped out but for the timely intervention of a small group of Wild Geese, who all but single-handedly neutralized the Auroran threat, but at massive cost to themselves; of the twelve ships committed to the battle, only two managed to limp back to SD6.  The commander of the Wild Geese was quoted as saying 'Today, we saved Raczak's reputation, and truly does he owe all future glories to us.'  This has been a long-standing bone of contention between the group and the Admiral, which has almost led to open conflict."
 	outfitter "EVN Outfits 5"
 	outfitter "EVN Outfits Spacedock VI 154"
@@ -267,6 +280,7 @@
 "planet" "Sirrusa"
 	"landscape" "land/sirrusa"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "Once a thriving ore-refining station, the decline of Sirrusa has mirrored that of Trusa, the planet it orbits.  As the mineral deposits dried up, the need for an ore-refining station disappeared as well, and the inhabitants left for more economically viable climes.  In an effort to turn this station into something vaguely profitable, the few remaining 'old salts' have opened the old outfits area and will take anything off your hands.  They do not actually have anything to sell, but they flog off some of the scrap they get their hands on to various scrap dealers, and have even managed to make a bit of money by selling interesting bits of equipment to large weapons corporation so they can pull them apart to see how they work.  If you have anything that you just want to get rid of, feel free to try and sell it to them."
 	outfitter "EVN Outfits 0"
 	outfitter "EVN Outfits Sirrusa 156"
@@ -302,6 +316,7 @@
 
 "planet" "Jupiter"
 	"landscape" "land/jupiter"
+	attributes "uninhabited"
 
 "planet" "Europa"
 	"landscape" "land/europa"
@@ -312,6 +327,7 @@
 "planet" "Pyrogenesis I"
 	"landscape" "land/pyrogenesis_i"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "This sky mining station, owned by the independent weapons manufacturer Pyrogenesis, mines some rare gases from the upper reaches of Nesre Secundus IV which will be used in the production of their exotic weaponry.  The chemicals used in the creation of blaster 'bolts' are easily produced from the upper atmosphere of the gas giant, and Pyrogenesis requires a constant supply of these gases."
 	tribute 5000
 		fleet "EVN Dude 150 Slyvilian Defence Scum" 120
@@ -320,6 +336,7 @@
 
 "planet" "Alt"
 	"landscape" "land/alt"
+	attributes "uninhabited"
 	"spaceport" "Due to interference from the high concentrations of helium and xenon, as well as the highly mountainous terrain, Alt is used by many pirates as a way of losing Federation pursuit before heading out of Federation controlled space for the relative safety of the lawless region of space to the Galactic North."
 	tribute 135
 	"description" "Due to interference from the high concentrations of helium and xenon, as well as the highly mountainous terrain, Alt is used by many pirates as a way of losing Federation pursuit before heading out of Federation controlled space for the relative safety of the lawless region of space to the Galactic North."
@@ -366,6 +383,7 @@
 
 "planet" "Boral I"
 	"landscape" "land/boral_i"
+	attributes "station"
 	"spaceport" "Boral I is the headquarters of Boral Mining Corp.  It is here that all the noble gases harvested from Fermia's atmosphere by the small army of prospectors employed by the company are processed and refined.  So far Boral has survived in the fiercely competitive universe of commerce by staying small enough that they remain beneath the notice of any of the larger, more professional mining companies."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Boral I 167"
@@ -376,9 +394,11 @@
 
 "planet" "Capella I"
 	"landscape" "land/capella_i"
+	attributes "uninhabited"
 
 "planet" "Aldebaran VII"
 	"landscape" "land/aldebaran_vii"
+	attributes "uninhabited"
 
 "planet" "Haven"
 	"landscape" "land/haven"
@@ -401,15 +421,18 @@
 
 "planet" "Spica"
 	"landscape" "land/spica"
+	attributes "uninhabited"
 	"spaceport" "Spica is an uninviting world that has a thick methane atmosphere.  As you look out across the liquid ammonia pools and see the frozen metal caps of the mountains, you wonder how long it will be before the Federation strip-mines this planet."
 	tribute 144
 	"description" "Spica is an uninviting world that has a thick methane atmosphere.  As you look out across the liquid ammonia pools and see the frozen metal caps of the mountains, you wonder how long it will be before the Federation strip-mines this planet."
 
 "planet" "UHP-1001"
 	"landscape" "land/uhp_1001"
+	attributes "uninhabited"
 
 "planet" "UHP-1002"
 	"landscape" "land/uhp_1002"
+	attributes "uninhabited"
 	"spaceport" "Chlorine gas whips past the visor of your biosuit as you clamber over rocks made of silicates and metals.  You seriously hope you don't accidentally puncture your suit."
 	tribute 147
 	"description" "Chlorine gas whips past the visor of your biosuit as you clamber over rocks made of silicates and metals.  You seriously hope you don't accidentally puncture your suit."
@@ -425,6 +448,7 @@
 
 "planet" "Nesre Secundus IV"
 	"landscape" "land/nesre_secundus_iv"
+	attributes "uninhabited"
 
 "planet" "Syracuse"
 	"landscape" "land/syracuse"
@@ -439,6 +463,7 @@
 
 "planet" "HG-Kon"
 	"landscape" "land/hg_kon"
+	attributes "station" "uninhabited"
 
 "planet" "Tidal"
 	"landscape" "land/tidal"
@@ -451,6 +476,7 @@
 
 "planet" "LV-2063"
 	"landscape" "land/lv_2063"
+	attributes "uninhabited"
 
 "planet" "Skye"
 	"landscape" "land/skye"
@@ -477,6 +503,7 @@
 
 "planet" "Pan"
 	"landscape" "land/pan"
+	attributes "uninhabited"
 	"spaceport" "While Pan looks beautiful from the air, anyone who's been unfortunate enough to spend a night here unprotected will tell you that it's the Devil's own ball of rock.  Pan plays home to a vigorously competitive ecosystem, and the carnivores here are fast, silent and extremely strong.  Did we mention sharp teeth?  Lots of teeth.  Suffice to say, be well armed when landing here, and leave your deflectors up."
 	tribute 157
 	"description" "While Pan looks beautiful from the air, anyone who's been unfortunate enough to spend a night here unprotected will tell you that it's the Devil's own ball of rock.  Pan plays home to a vigorously competitive ecosystem, and the carnivores here are fast, silent and extremely strong.  Did we mention sharp teeth?  Lots of teeth.  Suffice to say, be well armed when landing here, and leave your deflectors up."
@@ -484,6 +511,7 @@
 "planet" "Spacedock I"
 	"landscape" "land/spacedock_i"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "The Federation battlestation Spacedock I is the main border trading post between the Federation and the galactic south.  Auroran traders don't often come here without an escort, though, and tensions are obvious throughout the station as Auroran warriors and Federation soldiers brush shoulders in the corridors of this military outpost.  Under the command of Capt. Hab Scale, SD I has repelled many incursion attempts. It will continue to do so 'while a single man remains alive to man the guns,' he says."
 	outfitter "EVN Outfits 7"
 	outfitter "EVN Outfits Spacedock I 184"
@@ -507,12 +535,14 @@
 
 "planet" "Chronos"
 	"landscape" "land/chronos"
+	attributes "uninhabited"
 	"spaceport" "From Chronos' watery surface you are afforded a fine view of the rising planet of Greenwich, and Chronos' sister moon Hourglass.  Chronos is, as yet, uninhabited due to its thin atmosphere (which requires a breathmask for comfort).  More than a few traders come here to refresh their tired spirits."
 	tribute 161
 	"description" "From Chronos' watery surface you are afforded a fine view of the rising planet of Greenwich, and Chronos' sister moon Hourglass.  Chronos is, as yet, uninhabited due to its thin atmosphere (which requires a breathmask for comfort).  More than a few traders come here to refresh their tired spirits."
 
 "planet" "Hourglass"
 	"landscape" "land/hourglass"
+	attributes "uninhabited"
 	"spaceport" "Hourglass is presently under Federation quarantine, as a hostile species known as the Cunjo was introduced here by Auroran raiders, along with some of the small, oddly geometric native trees it feeds on.  Every so often some foolhardy Aurorans come here in a primitive initiation rite, or to 'test their strength,' as they call it.  Of course, most don't leave."
 	tribute 161
 	"description" "Hourglass is presently under Federation quarantine, as a hostile species known as the Cunjo was introduced here by Auroran raiders, along with some of the small, oddly geometric native trees it feeds on.  Every so often some foolhardy Aurorans come here in a primitive initiation rite, or to 'test their strength,' as they call it.  Of course, most don't leave."
@@ -537,6 +567,7 @@
 
 "planet" "LPAD"
 	"landscape" "land/lpad"
+	attributes "station" "uninhabited"
 	"spaceport" "LPAD was a propulsion research lab in the days before ion drives were perfected for sublight travel.  According to rumor, researchers on this station actually came up with a remarkable new design for sublight travel that would reduce fuel requirements to a twentieth of the current value.  However, Pyrogenesis swiftly executed a hostile takeover of Tidbinbilla Inc and quietly terminated the project, for fear of having their revenues for raw gas mining slashed.  LPAD still has backup power, but anything of any great worth has long since been removed by Pyrogenesis Corp."
 	tribute 165
 	"description" "LPAD was a propulsion research lab in the days before ion drives were perfected for sublight travel.  According to rumor, researchers on this station actually came up with a remarkable new design for sublight travel that would reduce fuel requirements to a twentieth of the current value.  However, Pyrogenesis swiftly executed a hostile takeover of Tidbinbilla Inc and quietly terminated the project, for fear of having their revenues for raw gas mining slashed.  LPAD still has backup power, but anything of any great worth has long since been removed by Pyrogenesis Corp."
@@ -554,6 +585,7 @@
 
 "planet" "Rautherian Prime"
 	"landscape" "land/rautherian_prime"
+	attributes "uninhabited"
 
 "planet" "Outcast"
 	"landscape" "land/outcast"
@@ -600,6 +632,7 @@
 
 "planet" "UHP-23155"
 	"landscape" "land/uhp_23155"
+	attributes "uninhabited"
 
 "planet" "Hearth"
 	"landscape" "land/hearth"
@@ -673,9 +706,11 @@
 
 "planet" "Beacon"
 	"landscape" "land/beacon"
+	attributes "uninhabited"
 
 "planet" "Keystone"
 	"landscape" "land/keystone"
+	attributes "uninhabited"
 
 "planet" "Moonview"
 	"landscape" "land/moonview"
@@ -817,6 +852,7 @@
 "planet" "Nil'a Mjolnir"
 	"landscape" "land/nil_a_mjolnir"
 	"government" "Nil'kemorya"
+	attributes "station"
 	"spaceport" "During the brief war with the Colonial Council, the Polaris were saved by the timely intervention of the Vell-os, and also through the actions of one of the Council's cyborg-soldiers.  Little is known about that man, other than part of his unit designation - Mjolnir.  Apparently, he destroyed a piece of new technology that would have ensured victory over the Polaris.  It is worthy of note that he is the only non-Polaris soldier to be remembered by the Polaris warrior-caste with respect, although none of them seem to be prepared to tell you exactly why."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits Nil'a Mjolnir 220"
@@ -828,6 +864,7 @@
 "planet" "Nil'a He"
 	"landscape" "land/nil_a_he"
 	"government" "Nil'kemorya"
+	attributes "station"
 	"spaceport" "He, meaning 'one' in the Polaris language, signifies this as an important station.  Standing on the border of Polaris space, facing hostilities from both the Federation and the Wraith, the members of the warrior caste, which is named 'Nil'kemorya' in the Polaris tongue, who are housed here seem to have an almost preternatural stillness about them.  Although they treat you with absolute respect, you cannot help feeling more than a little frightened."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits Nil'a He 221"
@@ -839,6 +876,7 @@
 "planet" "Nil'a Se"
 	"landscape" "land/nil_a_se"
 	"government" "Nil'kemorya"
+	attributes "station"
 	"spaceport" "The Nil'kemorya, as the warrior caste is named, have built a station here as a bulwark against any Federation-backed incursions.  The Polaris, and specifically the Nil'kemorya, have always found that their greatest threats have always originated from Sol, humanity's homeworld.  Having been on the receiving end of many Federation plots, they view anybody associated with the Federation with great suspicion."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits Nil'a Se 222"
@@ -859,6 +897,7 @@
 "planet" "P'a He"
 	"landscape" "land/p_a_he"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "The scientist caste, known as the 'P'aedt', have established a station in orbit around P'ar Karo in order to study the unique electromagnetic bursts radiating from it.  Their first challenge will be to work with the 'Ver'ash', the name given to the engineer/healer caste, to produce a new way of modulating current Polaris shield technology so that they can take a ship down to the planet's surface without the radiation frying all its instruments and killing everyone on board."
 	tribute 211
 		fleet "EVN Dude 137 Small Polaris" 120
@@ -867,10 +906,12 @@
 
 "planet" "P'ar Karo"
 	"landscape" "land/p_ar_karo"
+	attributes "uninhabited"
 
 "planet" "Nil'a Ro"
 	"landscape" "land/nil_a_ro"
 	"government" "Nil'kemorya"
+	attributes "station"
 	"spaceport" "The Nil'kemorya are the only inhabitants of this station.  As a rule, the Nil'kemorya have a stillness and a seriousness of aspect about them that you have only ever seen amongst the most elite and battle-hardened soldiers elsewhere.  You quickly come to the realization that they are all exceptionally capable, even compared to those soldiers considered 'exceptional' elsewhere."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits Nil'a Ro 226"
@@ -900,6 +941,7 @@
 "planet" "Tre'a He"
 	"landscape" "land/tre_a_he"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "More like a floating mountain than a sky-station, Tre'a He is maintained by the 'Tre'pira', the name given to the worker caste, so that they can harvest the rare gases that are present in the ionosphere of Tre'ar Aeberl.  These rare gases are later used as a catalyst in the process by which the Polaris 'grow' the biological portions of their ships."
 	tribute 213
 		fleet "EVN Dude 137 Small Polaris" 120
@@ -917,6 +959,7 @@
 
 "planet" "HG-Murasaki"
 	"landscape" "land/hg_murasaki"
+	attributes "station" "uninhabited"
 
 "planet" "Nil'ar Kemorya"
 	"landscape" "land/nil_ar_kemorya"
@@ -933,6 +976,7 @@
 
 "planet" "Z'heaj"
 	"landscape" "land/z_heaj"
+	attributes "uninhabited"
 	"spaceport" "Despite being a perfectly suitable world for colonization, Z'heaj remains uninhabited.  A planet of wide, sweeping plains and vast herds of wild animals, it has an air of ancient Earth, before human civilization.  The reason for its lack of settlement, especially considering its proximity to the center of Polaris space, remains unclear."
 	tribute 220
 	"description" "Despite being a perfectly suitable world for colonization, Z'heaj remains uninhabited.  A planet of wide, sweeping plains and vast herds of wild animals, it has an air of ancient Earth, before human civilization.  The reason for its lack of settlement, especially considering its proximity to the center of Polaris space, remains unclear."
@@ -940,6 +984,7 @@
 "planet" "Tre'ar Helonis"
 	"landscape" "land/tre_ar_helonis"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "This is one of the many wonders discovered by the original Polaris expedition as they explored their way through space.  Tre'ar Helonis, as the ringworld came to be called, stunned and amazed the scientists of that expedition, and has continued to baffle Polaris science ever since.  The sheer volume of matter required to build this obviously artificial construction dwarfs all human constructions throughout history.  Other than housing a large scientific community, the majority of the vast ringworld that is settled by the Polaris is devoted to agriculture.  This feeds nearly the entire Polaris people, although over 99% of the ringworld still remains uninhabited."
 	outfitter "EVN Outfits 2"
 	outfitter "EVN Outfits Tre'ar Helonis 234"
@@ -951,17 +996,21 @@
 "planet" "Kel'a He"
 	"landscape" "land/kel_a_he"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "Kel'a Se"
 	"landscape" "land/kel_a_se"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "Kel'a Ro"
 	"landscape" "land/kel_a_ro"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "Z'precti He"
 	"landscape" "land/z_precti_he"
+	attributes "uninhabited"
 	"spaceport" "A small moon with no real resources or interesting features to speak of.  A thin yet still breathable atmosphere surrounds Z'precti He.  No life exists on this moon, as the last microbial life-forms became extinct approximately 3 billion years ago.  Z'precti He has not been settled because the Polaris people do not yet require the space, and there is no other reason to settle here."
 	tribute 222
 	"description" "A small moon with no real resources or interesting features to speak of.  A thin yet still breathable atmosphere surrounds Z'precti He.  No life exists on this moon, as the last microbial life-forms became extinct approximately 3 billion years ago.  Z'precti He has not been settled because the Polaris people do not yet require the space, and there is no other reason to settle here."
@@ -1024,6 +1073,7 @@
 "planet" "Tre'a Se"
 	"landscape" "land/tre_a_se"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "The Tre'pira, the worker caste, working with the Ver'ash, the healer/engineer caste, build and grow many ship parts on this station in order to repair the more common types of damage to Nil'kemorya ships.  This then takes the pressure off Ver'ar Sho in the Ver'ashan system, so that they only have to deal with the more seriously damaged warrior caste ships."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits Tre'a Se 244"
@@ -1046,6 +1096,7 @@
 "planet" "Ar'Bis Routak"
 	"landscape" "land/ar_bis_routak"
 	"government" "Polaris"
+	attributes "uninhabited"
 	"spaceport" "Ar'Bis Routak has a thin but quite breathable atmosphere.  The Polaris named this planet after their first leader, Bis Routak, who led the Polaris expedition for their entire sixteen-year sojourn. He died four days after they landed on Kel'ar Iy, where they made their home. He held the Polaris together against all odds, and through often seemingly insurmountable difficulties, so in remembrance of his leadership, all Polaris leaders are given the prefix 'Bis' upon taking the mantle of command."
 	tribute 230
 		fleet "EVN Dude 138 Large Polaris" 120
@@ -1055,6 +1106,7 @@
 "planet" "Ar'Bis Valalo"
 	"landscape" "land/ar_bis_valalo"
 	"government" "Polaris"
+	attributes "uninhabited"
 	"spaceport" "This planet is named after Bis Valalo, the leader of the Polaris who decided to encourage the Polaris people to become members of castes, in order to pool their common knowledge and talents and advance knowledge more effectively.  Oddly, the planet the Polaris have chosen as a memorial is dark and brooding, yet still beautiful in its own way."
 	tribute 231
 		fleet "EVN Dude 138 Large Polaris" 120
@@ -1075,6 +1127,7 @@
 "planet" "Ar'Za Iusia"
 	"landscape" "land/ar_za_iusia"
 	"government" "Nil'kemorya"
+	attributes "uninhabited"
 	"spaceport" "Over four centuries ago, the P'aedt had a disagreement with the Ver'ash over who should have rights to a particular system.  After decades of wrangling, the Tre'pira came in to adjudicate, but unfortunately both sides disliked the settlement and rejected it.  In response, the heads of the Ver'ash and the P'aedt were assassinated by a member of the Tre'pira, and suddenly there was civil war.  Iusia, the head of the Nil'kemorya, after agonizing for three days, led the warrior caste in a decisive campaign that incapacitated the warring castes and so ended the first and only Polaris civil war. In doing so, he broke his own spirit.  After restoring order, Iusia came to this planet to die.  Out of respect for the only man who has ever stopped the Polaris from destroying themselves, the Nil'kemorya give their leaders the title Iuso, which means 'disciple of Iusia', as they view this man with reverence above all others."
 	tribute 233
 		fleet "EVN Dude 138 Large Polaris" 120
@@ -1084,10 +1137,12 @@
 "planet" "Kel'a Ca"
 	"landscape" "land/kel_a_ca"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "Kel'a Do"
 	"landscape" "land/kel_a_do"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "Ver'ar Noriout"
 	"landscape" "land/ver_ar_noriout"
@@ -1103,6 +1158,7 @@
 "planet" "Tre'ar Aljo"
 	"landscape" "land/tre_ar_aljo"
 	"government" "Polaris"
+	attributes "uninhabited"
 	"spaceport" "Tre'ar Aljo is a large moon that falls under the influence of the Tre'pira, because it could at some stage be mined for some of its fairly extensive deposits of minerals.  However, the Polaris do not yet need to make use of these resources, and so far they have refused to disturb its stark beauty."
 	tribute 236
 	"description" "Tre'ar Aljo is a large moon that falls under the influence of the Tre'pira, because it could at some stage be mined for some of its fairly extensive deposits of minerals.  However, the Polaris do not yet need to make use of these resources, and so far they have refused to disturb its stark beauty."
@@ -1122,10 +1178,12 @@
 
 "planet" "Anario"
 	"landscape" "land/anario"
+	attributes "uninhabited"
 
 "planet" "Nil'a Ca"
 	"landscape" "land/nil_a_ca"
 	"government" "Nil'kemorya"
+	attributes "station"
 	"spaceport" "The Nil'kemorya maintain their war headquarters here.  The warriors on this station hold themselves ready to deal with any large-scale threat to the sovereignty of the Polaris.  The only time this base has been put to its maximum use was during the first and only Polaris Civil War, when Iusia, the leader of the Nil'kemorya at the time, led the warrior caste in a seven-day campaign which crippled the capacity of the warring castes to make war on each other. The battle leader of the warrior caste, titled Iuso, meaning 'disciple of Iusia', resides here."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits Nil'a Ca 256"
@@ -1159,6 +1217,7 @@
 "planet" "Ar'Bis Usoca"
 	"landscape" "land/ar_bis_usoca"
 	"government" "Polaris"
+	attributes "uninhabited"
 	"spaceport" "A world named for Bis Usoca, the leader who defied the old Colonial Council.  This world is a stunningly beautiful world, and yet remains completely uninhabited as a symbol of the lonely existence she chose for the Polaris.  Every time a new leader is chosen by the Polaris Ruling Council, that person must spend one month alone on this planet to remind them of the seriousness of their position.  No other Polaris ever land on this world."
 	tribute 241
 		fleet "EVN Dude 138 Large Polaris" 120
@@ -1186,6 +1245,7 @@
 "planet" "Tre'a Ro"
 	"landscape" "land/tre_a_ro"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "The Tre'pira built this station originally as a trade center for Tre'ar Pira, and while it still performs that function, as Polaris society expanded, the worker caste expanded also.  Now its primary function is to act as a logistical headquarters for the movement of the many thousands of Tre'pira shipments throughout Polaris space.  The leaders of the Tre'pira all reside here."
 	tribute 242
 		fleet "EVN Dude 137 Small Polaris" 120
@@ -1204,6 +1264,7 @@
 "planet" "A'j He"
 	"landscape" "land/a_j_he"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "Nil'ar Peset"
 	"landscape" "land/nil_ar_peset"
@@ -1221,6 +1282,7 @@
 "planet" "Nil'a Do"
 	"landscape" "land/nil_a_do"
 	"government" "Nil'kemorya"
+	attributes "station"
 	"spaceport" "This Nil'kemorya battlestation, while completely operational, is used mostly as a training aid for the teaching of the young prospective warriors being trained on the world below.  It is from here that all Nil'kemorya for the last five centuries have received their first space familiarization and combat lessons."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits Nil'a Do 266"
@@ -1245,6 +1307,7 @@
 "planet" "Ver'a He"
 	"landscape" "land/ver_a_he"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "Ver'a He is the space-bound campus of the college of Ver'ash.  This is where the young healer/engineering caste students come to be taught some of the different applications of their knowledge in a space-based environment.  It is also the location of the advanced learning center for Ver'ash students who have passed the age of twelve.  From here they journey throughout Polaris space under a tutor, learning the practical side of Ver'ash work, until the age of sixteen whereupon they become full members of the Ver'ash."
 	shipyard "EVN Ships 1"
 	shipyard "EVN Ships Ver'a He 268"
@@ -1267,6 +1330,7 @@
 "planet" "Ver'a Se"
 	"landscape" "land/ver_a_se"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "Ver'a Se is the most prestigious research facility run by the Ver'ash anywhere in Polaris space.  Over half of all advances in medicine, ship 'growth', ship repair and design in the two centuries since the station was built have come from here.  Only the best and the brightest of the Ver'ash are invited to work here.  Other than Ver'ash members, the station also houses a handful of P'aedt, the scientist caste, and one or two Mu'hari, the 'casteless' caste."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits Ver'a Se 270"
@@ -1278,6 +1342,7 @@
 "planet" "A'j Se"
 	"landscape" "land/a_j_se"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "Tre'ar Petak"
 	"landscape" "land/tre_ar_petak"
@@ -1300,6 +1365,7 @@
 "planet" "Tre'a Ca"
 	"landscape" "land/tre_a_ca"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "Tre'a Ca is a trading post set up to support the enormous hydrogen sky-mining operation on the gas giant below.  It is here that the hydrogen is processed for transport to the various parts of Polaris space that require it.  The Tre'pira on the station run a smooth operation that ensures that all necessary hydrogen supplies are delivered ahead of time."
 	tribute 249
 		fleet "EVN Dude 137 Small Polaris" 120
@@ -1309,6 +1375,7 @@
 "planet" "P'a Ro"
 	"landscape" "land/p_a_ro"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "The scientist caste maintains a research station here that primarily looks at the effects of various types of weaponry and space hazards on biological ship design.  The P'aedt have invited a significant number of Ver'ash to observe and help them with their experiments, as they know more about the biological ships than anyone else."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits P'a Ro 275"
@@ -1320,21 +1387,26 @@
 "planet" "K'a Vi"
 	"landscape" "land/k_a_vi"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "K'a Ni"
 	"landscape" "land/k_a_ni"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "A'j Ro"
 	"landscape" "land/a_j_ro"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "Tre'an Olep"
 	"landscape" "land/tre_an_olep"
+	attributes "uninhabited"
 
 "planet" "Tre'a Do"
 	"landscape" "land/tre_a_do"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "This Tre'pira-run station is used to absorb and funnel the unique radiations emanating from the neutron star named Tre'an Olep.  These radiations are then used to alter the crystalline structure of pre-fabricated metal ship frames.  The end result is a much stronger and more flexible material."
 	tribute 254
 		fleet "EVN Dude 137 Small Polaris" 120
@@ -1344,6 +1416,7 @@
 "planet" "Ar'za Diti"
 	"landscape" "land/ar_za_diti"
 	"government" "Polaris"
+	attributes "uninhabited"
 	"spaceport" "Ar'za Diti is a moon named for Ambassador Arditi from the Colonial Council.  He was the ambassador who decided to enter Polaris space, despite repeated warnings that any entry into their space would be viewed as an invasion.  The resulting incident caused the Colonial Council to go to war against the Polaris, and then the Vell-os, and ultimately led to the disintegration of the Colonial Council and the centuries-long dark age that followed."
 	tribute 255
 	"description" "Ar'za Diti is a moon named for Ambassador Arditi from the Colonial Council.  He was the ambassador who decided to enter Polaris space, despite repeated warnings that any entry into their space would be viewed as an invasion.  The resulting incident caused the Colonial Council to go to war against the Polaris, and then the Vell-os, and ultimately led to the disintegration of the Colonial Council and the centuries-long dark age that followed."
@@ -1360,6 +1433,7 @@
 "planet" "K'a Ya"
 	"landscape" "land/k_a_ya"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "Nil'ar Riai"
 	"landscape" "land/nil_ar_riai"
@@ -1377,6 +1451,7 @@
 "planet" "Nil'a Vi"
 	"landscape" "land/nil_a_vi"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "This station, which is in orbit around Nil'ar Riai, is used in the continual training of the potential young warriors housed there.  It is also where the young prospective members of the Nil'kemorya spend six months working with the Ver'ash, helping to repair any damaged ships, and healing the wounded."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits Nil'a Vi 285"
@@ -1399,6 +1474,7 @@
 "planet" "A'j Ca"
 	"landscape" "land/a_j_ca"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "Ver'ar Plas"
 	"landscape" "land/ver_ar_plas"
@@ -1416,6 +1492,7 @@
 "planet" "Ver'a Ca"
 	"landscape" "land/ver_a_ca"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "This station is used as an emergency medical facility for those warriors who are badly injured during Wraith attacks in the Nil'nesa system.  They also have constructed shipyards to receive those ships that are too heavily damaged to land on the planet below.  Many young potential Ver'ash are sent here to observe and work on real battlefield casualties."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits Ver'a Ca 289"
@@ -1438,6 +1515,7 @@
 "planet" "Tre'a Vi"
 	"landscape" "land/tre_a_vi"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "This station, in orbit around Tre'ar Erma, uses the methane gathered on the planet's surface to create organic compounds which are then used to outfit the interior of Polaris ships.  Many of the objects created here in the most recent of Polaris stations have started to decorate the interiors of ships throughout Polaris space."
 	tribute 262
 		fleet "EVN Dude 137 Small Polaris" 120
@@ -1447,6 +1525,7 @@
 "planet" "Nil'a Ni"
 	"landscape" "land/nil_a_ni"
 	"government" "Nil'kemorya"
+	attributes "station"
 	"spaceport" "This station is manned by the Nil'kemorya to fend off incursions by Wraith herds into Polaris space.  They receive constant action as the tribes frequently take hostile action after wandering into Polaris territory.  This station has the distinction of having the most deaths per year of any warrior caste station, mainly due to its distance from any Ver'ash facility and the unforgiving nature of the Wraith."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits Nil'a Ni 292"
@@ -1469,10 +1548,12 @@
 "planet" "A'j Do"
 	"landscape" "land/a_j_do"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "Nil'a Ya"
 	"landscape" "land/nil_a_ya"
 	"government" "Nil'kemorya"
+	attributes "station"
 	"spaceport" "The Nil'kemorya, as the warrior caste is named, have built a station here as a bulwark against any incursions from the Auroran Empire.  The Nil'kemorya have gained a great deal of respect for the warrior ethic of the Aurorans, and more than once they have been surprised by the level of skill achieved by a civilization as low in technology as the Aurorans."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits Nil'a Ya 295"
@@ -1484,10 +1565,12 @@
 "planet" "Kel'a Ya"
 	"landscape" "land/kel_a_ya"
 	"government" "Polaris"
+	attributes "station" "uninhabited"
 
 "planet" "Cunjo"
 	"landscape" "land/cunjo"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "Named for the predators from Cunja Loff in the Tocc system, this station was built to keep an eye on the mysterious Polaris.  Many young warriors set off from here to earn battle honors, and also to seek the coveted purple battle tattoo; it can only be earned in battle against the Polaris, as there is no more formidable opponent.  Even surviving such an encounter shows skill, if not necessarily courage. This system falls under the control of the Auroran central government, as opposed to one of the Five Houses.  Throughout all of 'Auroran Space', there are remarkably few systems that are governed by the central seat. The Five Houses do not allow it, for the seat is always held by one of them.  They all know that if the First House became too strong, then they would be incapable of wresting power from it at some later stage."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Cunjo 297"
@@ -1510,6 +1593,7 @@
 "planet" "Holpa Station"
 	"landscape" "land/holpa_station"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "The scientists of the Auroran Empire have managed to construct a research station, despite the lack of funding and respect given to scientists by Aurorans.  They are trying to investigate the cause for the unique radiation signature coming from the Holpa Nebula.  Most young Aurorans are completely unaware of the station's existence, because the scientists fund it themselves, and it is of absolutely no military importance whatsoever."
 	"description" "The scientists of the Auroran Empire have managed to construct a research station, despite the lack of funding and respect given to scientists by Aurorans.  They are trying to investigate the cause for the unique radiation signature coming from the Holpa Nebula.  Most young Aurorans are completely unaware of the station's existence, because the scientists fund it themselves, and it is of absolutely no military importance whatsoever."
 
@@ -1521,6 +1605,7 @@
 
 "planet" "Cunja Loff"
 	"landscape" "land/cunja_loff"
+	attributes "uninhabited"
 	"spaceport" "This is the home world of the fearsome predator, the Cunjo.  This deadly animal rivals the Vrenna Ice-Lizard in ferocity, speed, and strength, but unlike the Ice-Lizard, they have no valuable pelt, and there is no economic reason to hunt these huge, aggressive, and cunning creatures.  Cunja Loff itself is an almost untouched paradise, with a wild, uncivilized feel to it.  Many young nobles from Tekel house attempt to prove themselves as warriors by coming here to bag themselves the head of a Cunjo, even though many hunters have not returned.  The hunting of a Cunjo, if done in groups of less than three, is worthy of a battle tattoo, and those who regularly come after the Cunjo find themselves covered with the brown tattoos that signify their prowess."
 	"description" "This is the home world of the fearsome predator, the Cunjo.  This deadly animal rivals the Vrenna Ice-Lizard in ferocity, speed, and strength, but unlike the Ice-Lizard, they have no valuable pelt, and there is no economic reason to hunt these huge, aggressive, and cunning creatures.  Cunja Loff itself is an almost untouched paradise, with a wild, uncivilized feel to it.  Many young nobles from Tekel house attempt to prove themselves as warriors by coming here to bag themselves the head of a Cunjo, even though many hunters have not returned.  The hunting of a Cunjo, if done in groups of less than three, is worthy of a battle tattoo, and those who regularly come after the Cunjo find themselves covered with the brown tattoos that signify their prowess."
 
@@ -1532,12 +1617,14 @@
 
 "planet" "Agrippa"
 	"landscape" "land/agrippa"
+	attributes "uninhabited"
 	"spaceport" "Tekel House warriors are brought to this barely habitable planet and abandoned for one week as a part of their initiation.  Agrippa is scoured by occasional sandstorms of such incredible size and ferocity that few initiates might hope to survive one.  Even if the wind remains low, the wide, expansive deserts bake all but the hardiest of initiates, and many still fall.  That is why, when the young warriors of the Tekel House return from their initiation, many take as their death tattoo a symbol of the blazing sun.  So many have done so that it has very nearly become the warrior symbol of the Tekel Family."
 	"description" "Tekel House warriors are brought to this barely habitable planet and abandoned for one week as a part of their initiation.  Agrippa is scoured by occasional sandstorms of such incredible size and ferocity that few initiates might hope to survive one.  Even if the wind remains low, the wide, expansive deserts bake all but the hardiest of initiates, and many still fall.  That is why, when the young warriors of the Tekel House return from their initiation, many take as their death tattoo a symbol of the blazing sun.  So many have done so that it has very nearly become the warrior symbol of the Tekel Family."
 
 "planet" "Fortitude"
 	"landscape" "land/fortitude"
 	"government" "Family Tekel"
+	attributes "station"
 	"spaceport" "This station is one of the two main bases for the Tekel House battle fleets and, like many battle-stations in the Empire, is named for one of the many desired qualities in a warrior.  The fleet stationed here is used mostly to blood young warriors by sending them into Polaris space to face a truly worthy enemy.  More warriors from the Tekel House have earned the respected purple battle tattoo from facing the Polaris in battle than from any other of the Five Families.  Nearly all moves into Polaris space are launched from here, and even though the warriors here acknowledge the higher level of technology and skill of the Polaris military, the number of Polaris-bound missions remains high."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Fortitude 304"
@@ -1568,6 +1655,7 @@
 "planet" "Tekel SS I"
 	"landscape" "land/tekel_ss_i"
 	"government" "Family Tekel"
+	attributes "station"
 	"spaceport" "This station orbits the planet Nickas to handle the flow of supplies in and out of the system.  The huge amounts of supplies used by the Tekel military ensure that this station is busy even during periods of relative inactivity.  Merchants always find that they are kept at the bottom of all the priority lists because of the lack of respect for their work in the eyes of the many fearsomely tattooed retired warriors that run the station."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Tekel SS I 307"
@@ -1579,12 +1667,14 @@
 "planet" "Fallen"
 	"landscape" "land/fallen"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "This system is the location of one of the few major battles between the Empire and the Polaris.  The Auroran fleet had been using Fallen as a staging post for a major incursion into Polaris space.  The Polaris hypered into the system and made a pre-emptive strike against the building Auroran forces.  It was only due to the glorious actions of the Tekel warriors that any part of the main body of the fleet escaped.  It is the only battle with the Polaris that has earned a special battle tattoo, the purple leaf, and there are only two old grizzled warriors remaining who still carry this tattoo.  Although the battle occurred over half a century ago, its repercussions linger today, in that no incursions of that size are planned into Polaris space.  Even the Aurorans, with their near-suicidal bravery, see no point in sending countless young warriors off to their deaths needlessly."
 	"description" "This system is the location of one of the few major battles between the Empire and the Polaris.  The Auroran fleet had been using Fallen as a staging post for a major incursion into Polaris space.  The Polaris hypered into the system and made a pre-emptive strike against the building Auroran forces.  It was only due to the glorious actions of the Tekel warriors that any part of the main body of the fleet escaped.  It is the only battle with the Polaris that has earned a special battle tattoo, the purple leaf, and there are only two old grizzled warriors remaining who still carry this tattoo.  Although the battle occurred over half a century ago, its repercussions linger today, in that no incursions of that size are planned into Polaris space.  Even the Aurorans, with their near-suicidal bravery, see no point in sending countless young warriors off to their deaths needlessly."
 
 "planet" "Resilience"
 	"landscape" "land/resilience"
 	"government" "Family Tekel"
+	attributes "station"
 	"spaceport" "This is the second of the two major bases for the Tekel battle fleets.  It is here that many of the young potential warriors find the tutors that will instruct them on the finer points of the warriors' code.  Many of the old and infirm warriors remain here to help raise young warriors to bring honor to Tekel House.  From here, the young aspirants journey to Agrippa in the Grip system to undergo their initiation as warriors.  This station also stands across the main path for any hostile fleets coming from the rest of the Empire, especially Dani space, and so is kept fairly active maintaining the security of the Tekel Family."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Resilience 309"
@@ -1608,6 +1698,7 @@
 "planet" "Gladius Shipyards"
 	"landscape" "land/gladius_shipyards"
 	"government" "Family Tekel"
+	attributes "station"
 	"spaceport" "While the surface of the planet below is used to manufacture all necessary ship parts, these huge orbital shipyards are used to build and repair everything in the Tekel House fleets.  This station is by far the busiest of all ports in Tekel space, as Auroran ships, due to the relatively low technology and the warlike nature of the Empire, are always coming in for repair.  All Tekel warriors have a soft spot in their heart for this place, as without these facilities many of them would have died soon after battle, lost in the vast blackness of space."
 	outfitter "EVN Outfits 4"
 	outfitter "EVN Outfits Gladius Shipyards 311"
@@ -1638,11 +1729,13 @@
 "planet" "Kymonth Station"
 	"landscape" "land/kymonth_station"
 	"government" "Family Tekel"
+	attributes "station"
 	"spaceport" "This is where most critical patients and battle-injured warriors are brought.  Many recovered warriors speak highly of the physicians and scientists in this place.  Their existence has given at least a little credence, in the eyes of the warriors, for the necessity of the institution on Romule in the Tekel Rom system.  The commanders of Kymonth Station ensure that only the hardest-working and most intelligent of the graduates are allowed to serve here."
 	"description" "This is where most critical patients and battle-injured warriors are brought.  Many recovered warriors speak highly of the physicians and scientists in this place.  Their existence has given at least a little credence, in the eyes of the warriors, for the necessity of the institution on Romule in the Tekel Rom system.  The commanders of Kymonth Station ensure that only the hardest-working and most intelligent of the graduates are allowed to serve here."
 
 "planet" "Kont"
 	"landscape" "land/kont"
+	attributes "uninhabited"
 	"spaceport" "This ringed world was discovered by the Aurorans nearly two centuries ago.  Upon learning of its existence, they decided to investigate it to see if any useful new technology could be gained from it.  However, the first group of scientists sent to investigate never returned.  Another team of scientists were sent, and they too disappeared.  After this, it was decided that these losses were pointless and no longer justified. No more teams were sent, and so the puzzle of Kont and its builders remains a mystery."
 	"description" "This ringed world was discovered by the Aurorans nearly two centuries ago.  Upon learning of its existence, they decided to investigate it to see if any useful new technology could be gained from it.  However, the first group of scientists sent to investigate never returned.  Another team of scientists were sent, and they too disappeared.  After this, it was decided that these losses were pointless and no longer justified. No more teams were sent, and so the puzzle of Kont and its builders remains a mystery."
 
@@ -1655,12 +1748,14 @@
 "planet" "Neilha Memorial Station"
 	"landscape" "land/neilha_memorial_station"
 	"government" "Family Tekel"
+	attributes "station"
 	"spaceport" "Named after the former Obsidian Heart, Arbiter of Reckoning of the Tekel House, this system was the scene of a great victory by the Tekel over the Dani.  Neilha lured the Dani battle fleet into the system before single-handedly engaging the entire fleet, thus holding them in place until the Tekel fleet was able to get into position.  His action enabled the Tekel House warriors to help themselves to a near-complete annihilation of the Dani fleet.  Unfortunately, Neilha was killed in the engagement.  Those Tekel warriors who survived wear a small dark crystal tattoo to show that they were involved in the battle, and to honor the passing of their Obsidian Heart, and his superhuman deeds."
 	"description" "Named after the former Obsidian Heart, Arbiter of Reckoning of the Tekel House, this system was the scene of a great victory by the Tekel over the Dani.  Neilha lured the Dani battle fleet into the system before single-handedly engaging the entire fleet, thus holding them in place until the Tekel fleet was able to get into position.  His action enabled the Tekel House warriors to help themselves to a near-complete annihilation of the Dani fleet.  Unfortunately, Neilha was killed in the engagement.  Those Tekel warriors who survived wear a small dark crystal tattoo to show that they were involved in the battle, and to honor the passing of their Obsidian Heart, and his superhuman deeds."
 
 "planet" "Houseless"
 	"landscape" "land/houseless"
 	"government" "Houseless Warriors"
+	attributes "station"
 	"spaceport" "Situated deep in the Rochak Dust Field, Kipa is one of this group of systems that play home to ronin warriors; warriors who have been cast out of their families for dishonorable actions.  These warriors occasionally attack along the trade routes close by.  On this small asteroid, which they have named Houseless, these warriors have a small base for refuelling and some basic repairs.  So far they have managed to avoid angering the Dani and Tekel families too much, and so they continue to plague this area.  Both these great houses claim that these systems fall inside the borders of the other, and that therefore it is not their problem.  In short, these pirates continue to operate freely."
 	outfitter "EVN Outfits 4"
 	outfitter "EVN Outfits Houseless 318"
@@ -1671,17 +1766,20 @@
 
 "planet" "Turalis"
 	"landscape" "land/turalis"
+	attributes "uninhabited"
 	"spaceport" "Turalis is a frozen wasteland of a world.  Temperatures on the surface never even rise close to freezing, but otherwise the world is habitable with a near perfect atmosphere.  Thus far it has escaped the notice of the vastly overpopulated Empire because of the resistance by Dani House warriors.  These warriors come to this untouched planet for silent contemplation and to fight the ritual duels that often spring up between them."
 	"description" "Turalis is a frozen wasteland of a world.  Temperatures on the surface never even rise close to freezing, but otherwise the world is habitable with a near perfect atmosphere.  Thus far it has escaped the notice of the vastly overpopulated Empire because of the resistance by Dani House warriors.  These warriors come to this untouched planet for silent contemplation and to fight the ritual duels that often spring up between them."
 
 "planet" "Dani LP I"
 	"landscape" "land/dani_lp_i"
 	"government" "Family Dani"
+	attributes "station"
 	"spaceport" "The Dani House maintains a listening post here, manned by a group of extremely dedicated warriors.  It is their duty to warn the Dani fleets of any incoming hostile attackers and then hold them off for as long as possible, to give their fellow warriors time to prepare.  It is an arduous position, but the honor earned is immense, and those who survive can wear their many battle tattoos with pride and are treated with respect by all."
 	"description" "The Dani House maintains a listening post here, manned by a group of extremely dedicated warriors.  It is their duty to warn the Dani fleets of any incoming hostile attackers and then hold them off for as long as possible, to give their fellow warriors time to prepare.  It is an arduous position, but the honor earned is immense, and those who survive can wear their many battle tattoos with pride and are treated with respect by all."
 
 "planet" "Valoria"
 	"landscape" "land/valoria"
+	attributes "uninhabited"
 	"spaceport" "Valoria is a desert world that is dotted with countless small oases.  The Dani use this world as a hunting field and as an initiation planet.  Potential Dani warriors are sent here for one month as an initiation.  Surviving on this world for a month, due to the many oases, would not be an incredibly difficult task if it were not for the introduced Cunjo, the most vicious predator found naturally inside the borders of the Empire.  The Cunjo hang around the oases in search of prey, which then makes the only habitable areas of this planet extremely dangerous.  Many of the young Dani warriors have two rows of savage teeth laser-etched across their chest as their death tattoo."
 	"description" "Valoria is a desert world that is dotted with countless small oases.  The Dani use this world as a hunting field and as an initiation planet.  Potential Dani warriors are sent here for one month as an initiation.  Surviving on this world for a month, due to the many oases, would not be an incredibly difficult task if it were not for the introduced Cunjo, the most vicious predator found naturally inside the borders of the Empire.  The Cunjo hang around the oases in search of prey, which then makes the only habitable areas of this planet extremely dangerous.  Many of the young Dani warriors have two rows of savage teeth laser-etched across their chest as their death tattoo."
 
@@ -1694,6 +1792,7 @@
 "planet" "Dani - Endurance"
 	"landscape" "land/dani_endurance"
 	"government" "Family Dani"
+	attributes "station"
 	"spaceport" "There are only two entry points into Dani space, and the Dani Kilik system straddles one of them.  This system is the route of choice used by the ronin warriors of the Rochak Dust Field and by warriors from the capital of the Empire to the West.  No major battles have been fought here since warriors from the Tekel House travelled for many weeks around the Southern tip of Dani space to get behind their lines ninety-six years ago. This relatively small expeditionary force managed to inflict enormous damage on many Dani facilities and destroy a large number of Dani warships before being forced to retreat.  Dani House now maintains a well-equipped and well-trained force here to ensure that they are never again taken by surprise.  "
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Dani - Endurance 323"
@@ -1735,6 +1834,7 @@
 "planet" "Forticus Shipyards"
 	"landscape" "land/forticus_shipyards"
 	"government" "Family Dani"
+	attributes "station"
 	"spaceport" "These enormous shipyards are a haven for all those whose ships have received damage during the many space battles that punctuate the life of the Dani warriors.  Veterans all seem to have a tale or two about how they were uncertain of their survival until they reached these facilities.  It is here that the assembly of new ships, and the repair of those that are damaged, occurs.  All of the parts are manufactured on the surface of the planet below, and are then brought up to the shipyards to be used."
 	outfitter "EVN Outfits 4"
 	outfitter "EVN Outfits Forticus Shipyards 327"
@@ -1760,6 +1860,7 @@
 "planet" "Dedication"
 	"landscape" "land/dedication"
 	"government" "Family Dani"
+	attributes "station"
 	"spaceport" "This system is the most heavily defended of all Dani House outposts.  Of the two routes into Dani space, this is the main one.  There are many incursions by warriors from both the Tekel and the Heraan Houses, and even the occasional raid by Federation scoutships snooping around well outside their borders.  Many young warriors that are stationed here journey North to show their skills by defeating the Federation soldiers.  Nearly all veterans of duty in this system have quite a few of the little blue battle tattoos that signify a successful engagement against the Federation."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Dedication 330"
@@ -1777,12 +1878,14 @@
 "planet" "Tekel LP"
 	"landscape" "land/tekel_lp"
 	"government" "Family Tekel"
+	attributes "station"
 	"spaceport" "The Tekel House maintains a listening post here, manned by a group of extremely dedicated warriors.  It is their duty to warn the Tekel fleets of any incoming hostile attackers and then hold them off for as long as possible, to give their fellow warriors time to prepare.  It is an arduous position, but the honor earned is immense, and those who survive can wear their many battle tattoos with pride and are treated with respect by all."
 	"description" "The Tekel House maintains a listening post here, manned by a group of extremely dedicated warriors.  It is their duty to warn the Tekel fleets of any incoming hostile attackers and then hold them off for as long as possible, to give their fellow warriors time to prepare.  It is an arduous position, but the honor earned is immense, and those who survive can wear their many battle tattoos with pride and are treated with respect by all."
 
 "planet" "Auroran LP I"
 	"landscape" "land/auroran_lp_i"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "This is one of the many Auroran 'Listening' Posts.  Here the forward battle-fleets of the Empire hold themselves ready to invade the Federation, or to be invaded.  Many young warriors crave a posting to these border stations as a chance to earn some honor and meet the Empire's oldest enemy.  No warrior leaves one of these posts without earning a great number of the small blue battle tattoos that signify successful engagements fought against the Federation."
 	"description" "This is one of the many Auroran 'Listening' Posts.  Here the forward battle-fleets of the Empire hold themselves ready to invade the Federation, or to be invaded.  Many young warriors crave a posting to these border stations as a chance to earn some honor and meet the Empire's oldest enemy.  No warrior leaves one of these posts without earning a great number of the small blue battle tattoos that signify successful engagements fought against the Federation."
 
@@ -1806,6 +1909,7 @@
 "planet" "Auroran LP II"
 	"landscape" "land/auroran_lp_ii"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "This station is not really a 'listening' post; it is really a forward staging area for the Empire's forces.  It is also from here that the juvenile potential warriors from Rimerta in the Pimen system begin their initiation as warriors.  From here they must travel to the border and survive two weeks in Federation space.  It is because of this that no warrior from any of the Five Houses will show any disrespect towards the Rimertan warriors, as their initiation trial is one that even the most experienced warriors elsewhere would find difficult to complete."
 	"description" "This station is not really a 'listening' post; it is really a forward staging area for the Empire's forces.  It is also from here that the juvenile potential warriors from Rimerta in the Pimen system begin their initiation as warriors.  From here they must travel to the border and survive two weeks in Federation space.  It is because of this that no warrior from any of the Five Houses will show any disrespect towards the Rimertan warriors, as their initiation trial is one that even the most experienced warriors elsewhere would find difficult to complete."
 
@@ -1831,6 +1935,7 @@
 "planet" "Philar"
 	"landscape" "land/philar"
 	"government" "Rimerta"
+	attributes "station"
 	"spaceport" "'Philar' translates as 'the last step', and the warriors stationed here, like those at its sister-station Pholar, have a grim outlook on life.  They stand ready to put themselves between the center of the Auroran Empire and its absolute destruction.  Only the most wily and battle-hardened of the houseless warriors from Rimerta in the Pimen system serve here.  Of all Auroran warriors, the 'Dechtakars', as the Rimertan warriors call themselves, know the Federation as well as any, and hate them the most."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Philar 339"
@@ -1844,6 +1949,7 @@
 "planet" "Pholar"
 	"landscape" "land/pholar"
 	"government" "Rimerta"
+	attributes "station"
 	"spaceport" "'Pholar' means 'the last wall'.  It is filled with warriors that carry an air of finality around with them.  They know that they are the last defense for the capital of the Empire, and they have all spent long periods on the border fighting the Federation, and know how strong they are.  The warriors all believe that the infighting between the Five Houses only serves the purposes of the Federation and weakens the Empire, making their job that much harder.  Still, they are proud of their posting, and would fight beyond death to fulfill their duty if they could."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Pholar 340"
@@ -1857,6 +1963,7 @@
 "planet" "Imperial Archives"
 	"landscape" "land/imperial_archives"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "On this immense station, all records from all over the Empire that are greater than two years old are stored.  Some three centuries of Auroran history is housed here, and its loss would be catastrophic.  The records that are less than two years old are kept on Aurora itself before being filed here by year and by subject.  Everything from major battles to minor skirmishes, to births, deaths and any news at all is recorded on this station."
 	"description" "On this immense station, all records from all over the Empire that are greater than two years old are stored.  Some three centuries of Auroran history is housed here, and its loss would be catastrophic.  The records that are less than two years old are kept on Aurora itself before being filed here by year and by subject.  Everything from major battles to minor skirmishes, to births, deaths and any news at all is recorded on this station."
 
@@ -1876,6 +1983,7 @@
 "planet" "Auroran LP III"
 	"landscape" "land/auroran_lp_iii"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "This is a forward assembly area for Auroran warriors to both protect the center of the Empire, and to launch forces to invade the Federation.  Nearly all young warriors spend some time at one of these stations, but only a few receive an extended posting to one.  Those that are sent here for any real length of time will have the opportunity to earn much honor and to sharpen their skills, as they are often sent as a ready reaction force to help out in the incessant border conflicts between the Empire and the Federation."
 	"description" "This is a forward assembly area for Auroran warriors to both protect the center of the Empire, and to launch forces to invade the Federation.  Nearly all young warriors spend some time at one of these stations, but only a few receive an extended posting to one.  Those that are sent here for any real length of time will have the opportunity to earn much honor and to sharpen their skills, as they are often sent as a ready reaction force to help out in the incessant border conflicts between the Empire and the Federation."
 
@@ -1894,12 +2002,14 @@
 "planet" "Auroran LP IV"
 	"landscape" "land/auroran_lp_iv"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "This small outpost stands across one of the main routes into the Empire from the Federation to provide an anchoring point for a fairly large battle fleet.  Warriors stationed here spend nearly as much time in Federation space fighting its soldiers as they do in Auroran space defending against the same.  It is one of the most honorable postings that any warrior can hope to be given in their career."
 	"description" "This small outpost stands across one of the main routes into the Empire from the Federation to provide an anchoring point for a fairly large battle fleet.  Warriors stationed here spend nearly as much time in Federation space fighting its soldiers as they do in Auroran space defending against the same.  It is one of the most honorable postings that any warrior can hope to be given in their career."
 
 "planet" "Auroran LP V"
 	"landscape" "land/auroran_lp_v"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "This is another forward observation and staging post on the border of the Federation and the Empire.  Because of the fearsome and suspicious natures of the aggressively tattooed Auroran warriors, very few merchants from either side wish to cross the border and be under the constant scrutiny thereafter of these dangerous men.  So while trade between the two nations is allowed, it is sporadic and is so heavily policed that most merchants are unwilling to take the risk or go to the trouble."
 	"description" "This is another forward observation and staging post on the border of the Federation and the Empire.  Because of the fearsome and suspicious natures of the aggressively tattooed Auroran warriors, very few merchants from either side wish to cross the border and be under the constant scrutiny thereafter of these dangerous men.  So while trade between the two nations is allowed, it is sporadic and is so heavily policed that most merchants are unwilling to take the risk or go to the trouble."
 
@@ -1918,12 +2028,14 @@
 "planet" "Heraan LP - 'Eyeya'"
 	"landscape" "land/heraan_lp_eyeya_"
 	"government" "Family Heraan"
+	attributes "station"
 	"spaceport" "This small Heraan outpost is an early warning station manned by fewer than fifty warriors.  It is named for the Thurokiir (as the Obsidian Heart of the House is known) who came up with the original defense concept for Heraan space.  The Mundokiir (as the general of the house is called) disagreed, and the Thurokiir came to this system to act as early warning to show that his plan was necessary.  After two months of maintaining his impassivity at the mocking derision of his fellow warriors, he espied a large Dani battle-fleet hypering in.  Not only did Eyeya warn the Mundokiir, he kept the Dani fleet busy for three hours by flying his personal fighter into the midst of the Dani formations and destroying a few key command ships.  When they finally defeated him, the Dani fleet departed knowing that they could not defeat the Heraan fleets in their own space if they were pre-warned and prepared for their arrival.  Nobody has since mocked Eyeya, his plan or his actions."
 	"description" "This small Heraan outpost is an early warning station manned by fewer than fifty warriors.  It is named for the Thurokiir (as the Obsidian Heart of the House is known) who came up with the original defense concept for Heraan space.  The Mundokiir (as the general of the house is called) disagreed, and the Thurokiir came to this system to act as early warning to show that his plan was necessary.  After two months of maintaining his impassivity at the mocking derision of his fellow warriors, he espied a large Dani battle-fleet hypering in.  Not only did Eyeya warn the Mundokiir, he kept the Dani fleet busy for three hours by flying his personal fighter into the midst of the Dani formations and destroying a few key command ships.  When they finally defeated him, the Dani fleet departed knowing that they could not defeat the Heraan fleets in their own space if they were pre-warned and prepared for their arrival.  Nobody has since mocked Eyeya, his plan or his actions."
 
 "planet" "Heraan LP - 'Heron'"
 	"landscape" "land/heraan_lp_heron_"
 	"government" "Family Heraan"
+	attributes "station"
 	"spaceport" "This lightly manned early warning post is named for the Heraan style of unarmed combat.  Over the centuries, the Heraan warriors have shown themselves to be nearly invincible in hand-to-hand confrontations.  Their style includes very powerful strikes and a subtle understanding of wrestling techniques.  Their method of fighting is called the Heron style because those who are acknowledged masters of this style by their fellow practitioners have a heron tattooed onto their faces.  At any one time, there are perhaps three or four Heron masters amongst the Heraan warrior population, and they are held in the highest respect by any who meet them."
 	"description" "This lightly manned early warning post is named for the Heraan style of unarmed combat.  Over the centuries, the Heraan warriors have shown themselves to be nearly invincible in hand-to-hand confrontations.  Their style includes very powerful strikes and a subtle understanding of wrestling techniques.  Their method of fighting is called the Heron style because those who are acknowledged masters of this style by their fellow practitioners have a heron tattooed onto their faces.  At any one time, there are perhaps three or four Heron masters amongst the Heraan warrior population, and they are held in the highest respect by any who meet them."
 
@@ -1941,12 +2053,14 @@
 "planet" "Heraan LP - 'Heraan'"
 	"landscape" "land/heraan_lp_heraan_"
 	"government" "Family Heraan"
+	attributes "station"
 	"spaceport" "This listening post is named for the Heraan House in remembrance of the deaths of the many thousands of warriors who died ensuring the escape of the House leaders through this system during the Great Moash Invasion two centuries ago.  Because of their sacrifice, the leadership of the Heraan Family survived and was able to travel through Federation space to lead a counterstrike against the Moash homeworld.  The result of this attack caused the Moash warriors to be recalled, allowing the Heraan House to resettle its own space."
 	"description" "This listening post is named for the Heraan House in remembrance of the deaths of the many thousands of warriors who died ensuring the escape of the House leaders through this system during the Great Moash Invasion two centuries ago.  Because of their sacrifice, the leadership of the Heraan Family survived and was able to travel through Federation space to lead a counterstrike against the Moash homeworld.  The result of this attack caused the Moash warriors to be recalled, allowing the Heraan House to resettle its own space."
 
 "planet" "Dominance"
 	"landscape" "land/dominance"
 	"government" "Family Heraan"
+	attributes "station"
 	"spaceport" "Dominance is the major military base of the Herran House.  Because of its relative closeness to the Empire's border with the Federation, the tens of thousands of warriors here are assisted by many young 'Dechtakars', as the warriors who are loyal to Aurora rather than the Five Families call themselves.  Because of this post, there are very tight ties between the Dechtakars and the Heraan House, and Heraan warriors who serve here carry the title 'Avarach' with pride. 'Avarach' translates into Basic as 'he who would die for his brothers from across space'."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Dominance 353"
@@ -1964,6 +2078,7 @@
 "planet" "Resilience"
 	"landscape" "land/resilience"
 	"government" "Family Heraan"
+	attributes "station"
 	"spaceport" "This battle-station was built to protect the hospitals on the surface of the planet it orbits.  The warriors stationed here go out to battle gladly, because they owe huge debts of gratitude to the people below for their efforts in healing their colleagues' battle wounds.  They also know that by protecting these miracle workers they are helping their fellow warriors survive.  So those stationed here are called 'Korasch' which means 'they who fight with a bright soul' for they go to battle with joy in their hearts and a smile upon their faces."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Resilience 355"
@@ -1981,6 +2096,7 @@
 "planet" "Mortosch"
 	"landscape" "land/mortosch"
 	"government" "Family Heraan"
+	attributes "station" "uninhabited"
 	"spaceport" "During the Great Moash Invasion two centuries ago, warriors from the Moash House came to this system after clearing the rest of Heraan space.  The warriors who were stationed here fought like demons and were able to hold off the battle-weary Moash fleets for many weeks.  The leaders of the Moash Family then decided to surround the system and to starve those redoubtable warriors rather than face them in open battle.  After the remnants of the Heraan House attacked Moash space, drawing their warriors home, they returned to find nothing but death.  The only warrior to have remained at his post had scratched the word 'Mortosch' into his station before he died.  'Mortosch' means 'I have stood before death for too long'.  This hulk is left completely empty in remembrance of those warriors who could not be defeated in battle, and as a reminder to young warriors of their mortality."
 	"description" "During the Great Moash Invasion two centuries ago, warriors from the Moash House came to this system after clearing the rest of Heraan space.  The warriors who were stationed here fought like demons and were able to hold off the battle-weary Moash fleets for many weeks.  The leaders of the Moash Family then decided to surround the system and to starve those redoubtable warriors rather than face them in open battle.  After the remnants of the Heraan House attacked Moash space, drawing their warriors home, they returned to find nothing but death.  The only warrior to have remained at his post had scratched the word 'Mortosch' into his station before he died.  'Mortosch' means 'I have stood before death for too long'.  This hulk is left completely empty in remembrance of those warriors who could not be defeated in battle, and as a reminder to young warriors of their mortality."
 
@@ -2012,6 +2128,7 @@
 "planet" "Resolution"
 	"landscape" "land/resolution"
 	"government" "Family Heraan"
+	attributes "station"
 	"spaceport" "This station is the headquarters for the Heraan Mundokiir, as the general of the Heraan forces is called, and is the anchoring point for one of the largest battle fleets in the Empire.  The warriors stationed here stay at a high level of readiness because of the proximity to the border of Heraan space, and the closeness of the Moash Family.  For they are located both to the East, where Moash have their own space, and to the West, where the space they hold as the First Family is located."
 	outfitter "EVN Outfits 5"
 	outfitter "EVN Outfits Resolution 361"
@@ -2036,12 +2153,14 @@
 "planet" "Etrusca"
 	"landscape" "land/etrusca"
 	"government" "Family Heraan"
+	attributes "station"
 	"spaceport" "This enormous Deimos Hulk Station is used to house an emergency hospital where critically injured warriors are taken if it is deemed that they cannot make the trip down to a planet.  Otherwise, they would be taken to Tranquility in the Heraan Malo system; many of Etrusca's staff come from there, bringing their experience and knowledge with them.  This station also serves as a training outpost for the medical students from the planet below, who come here to receive some 'on the job' training in real life conditions."
 	"description" "This enormous Deimos Hulk Station is used to house an emergency hospital where critically injured warriors are taken if it is deemed that they cannot make the trip down to a planet.  Otherwise, they would be taken to Tranquility in the Heraan Malo system; many of Etrusca's staff come from there, bringing their experience and knowledge with them.  This station also serves as a training outpost for the medical students from the planet below, who come here to receive some 'on the job' training in real life conditions."
 
 "planet" "Dauntless"
 	"landscape" "land/dauntless"
 	"government" "Family Heraan"
+	attributes "station"
 	"spaceport" "This station has the dubious honor of being the closest large Heraan outpost to Moash space in a direct line, and so the Heraan House maintains a battle fleet here so as to leave no cracks in their defense against any incursions, be they Moash or otherwise.  The warriors stationed here always remember in the backs of their minds that this is one of the two entry points into Heraan space used by the Moash forces during the Great Moash Invasion two centuries ago."
 	outfitter "EVN Outfits 4"
 	outfitter "EVN Outfits Dauntless 364"
@@ -2053,12 +2172,14 @@
 "planet" "Heraan LP - 'Arik'"
 	"landscape" "land/heraan_lp_arik_"
 	"government" "Family Heraan"
+	attributes "station"
 	"spaceport" "When the Heraan forces returned home after the Great Moash Invasion, many of the young warriors quite rightly accused the leaders of their house of bringing the invasion upon them through their incompetence.  A group of thirty young warriors openly stated that if the leaders did not step down, they would be killed.  The Thurokiir, as the arbiter of justice for the Heraan House is called, immediately challenged all of these warriors to a duel.  They all immediately attacked, and the skill he showed whilst contending against them is still a legend amongst masters of the Heron unarmed fighting style.  On that day, none of them could stand against him.  He then stood before the ruling council and said with a quiet dignity, 'A body cannot survive if its head is diseased.'  He then slit his own throat in shame.  His name was Arik."
 	"description" "When the Heraan forces returned home after the Great Moash Invasion, many of the young warriors quite rightly accused the leaders of their house of bringing the invasion upon them through their incompetence.  A group of thirty young warriors openly stated that if the leaders did not step down, they would be killed.  The Thurokiir, as the arbiter of justice for the Heraan House is called, immediately challenged all of these warriors to a duel.  They all immediately attacked, and the skill he showed whilst contending against them is still a legend amongst masters of the Heron unarmed fighting style.  On that day, none of them could stand against him.  He then stood before the ruling council and said with a quiet dignity, 'A body cannot survive if its head is diseased.'  He then slit his own throat in shame.  His name was Arik."
 
 "planet" "Moash LP I"
 	"landscape" "land/moash_lp_i"
 	"government" "Family Moash"
+	attributes "station"
 	"spaceport" "The Moash House maintains a small station manned by a small group of warriors here, in order to provide early warning to their battle fleets.  The main threats that the warriors of this station are looking for are an invading Heraan task force, or a possible Federation incursion into the Empire.  The warriors on this station all look a little bored, as they have seen no real action in or around this system for several years now."
 	"description" "The Moash House maintains a small station manned by a small group of warriors here, in order to provide early warning to their battle fleets.  The main threats that the warriors of this station are looking for are an invading Heraan task force, or a possible Federation incursion into the Empire.  The warriors on this station all look a little bored, as they have seen no real action in or around this system for several years now."
 
@@ -2076,10 +2197,12 @@
 
 "planet" "Okiia III"
 	"landscape" "land/okiia_iii"
+	attributes "uninhabited"
 
 "planet" "Alertness"
 	"landscape" "land/alertness"
 	"government" "Family Heraan"
+	attributes "station"
 	"spaceport" "This system and the Heraan Astra system were the two entry points used by Moash forces during the Great Moash Invasion of two centuries ago.  When the Heraan forces finally returned to Heraan space, the station here was rebuilt and given the name 'Alertness'.  The warriors who live and work out of this station remember the events during the invasion and take the station's name to heart, remaining ever vigilant."
 	outfitter "EVN Outfits 4"
 	outfitter "EVN Outfits Alertness 370"
@@ -2091,6 +2214,7 @@
 "planet" "Heraan LP - 'Irze'"
 	"landscape" "land/heraan_lp_irze_"
 	"government" "Family Heraan"
+	attributes "station"
 	"spaceport" "This small early warning post is named after a young Moash warrior who lived during the Great Moash invasion.  This warrior was one of the main reasons for the success of the Moash forces.  After passing his initiation at a very young age, he was not marked with a death tattoo, but instead journeyed to Heraan space and pretended to go through the training and trials necessary to become a Heraan warrior.  After succeeding, he became a junior assistant to the Heraan Ruling Council and proceeded to pass intelligence to the Moash forces during the war while also misleading the Heraan leaders.  Although he died in the conflict, he is regarded by warriors of both houses as an example of the dedication and discipline required to become a true warrior."
 	"description" "This small early warning post is named after a young Moash warrior who lived during the Great Moash invasion.  This warrior was one of the main reasons for the success of the Moash forces.  After passing his initiation at a very young age, he was not marked with a death tattoo, but instead journeyed to Heraan space and pretended to go through the training and trials necessary to become a Heraan warrior.  After succeeding, he became a junior assistant to the Heraan Ruling Council and proceeded to pass intelligence to the Moash forces during the war while also misleading the Heraan leaders.  Although he died in the conflict, he is regarded by warriors of both houses as an example of the dedication and discipline required to become a true warrior."
 
@@ -2103,6 +2227,7 @@
 "planet" "Moash LP II"
 	"landscape" "land/moash_lp_ii"
 	"government" "Family Moash"
+	attributes "station"
 	"spaceport" "Some fifty Moash warriors make their home here on this tiny early warning post.  They are all waiting for the day when the Heraan battle fleets hyper in to exact revenge for their humiliation during the Great Moash Invasion two hundred years ago.  Never before in the entire history of the Empire has a House managed to so completely vanquish another.  It was only due to the overconfidence of the Moash leaders at the time that the Heraan forces were able to attack behind their lines, forcing them relinquish their new conquests.  The warriors here know that even though two centuries have passed, the Heraan warriors have not forgotten those events, and will one day seek to even the ledger."
 	"description" "Some fifty Moash warriors make their home here on this tiny early warning post.  They are all waiting for the day when the Heraan battle fleets hyper in to exact revenge for their humiliation during the Great Moash Invasion two hundred years ago.  Never before in the entire history of the Empire has a House managed to so completely vanquish another.  It was only due to the overconfidence of the Moash leaders at the time that the Heraan forces were able to attack behind their lines, forcing them relinquish their new conquests.  The warriors here know that even though two centuries have passed, the Heraan warriors have not forgotten those events, and will one day seek to even the ledger."
 
@@ -2118,6 +2243,7 @@
 "planet" "Anex"
 	"landscape" "land/anex"
 	"government" "Family Moash"
+	attributes "station"
 	"spaceport" "Two hundred and fifty years ago, after having been attacked a few years earlier, Federation forces trying to send a warning to the Aurorans inadvertently passed through Moash space.  Anex, the Moash Mundokiir, (as the leader of the warriors is called) led a desperate counterattack against this surprise incursion.  As his small emergency taskforce of fighters crumbled under heavy fire, he abandoned tactical sense and attacked the center of the Federation formation.  After weaving his way through, his personal fighter was so badly damaged that it had no weapons or shields, and its guidance system was malfunctioning.  He managed to smash his craft directly into the bridge of the command ship, destroying the command staff of the Federation battle fleet and forcing the Federation forces to withdraw in disorder. This event, along with other Federation incursions, led the Five Families to join with the 'Auroran' family to form the Auroran Empire."
 	outfitter "EVN Outfits 4"
 	outfitter "EVN Outfits Anex 375"
@@ -2154,6 +2280,7 @@
 "planet" "Courageous"
 	"landscape" "land/courageous"
 	"government" "Family Moash"
+	attributes "station"
 	"spaceport" "This station was built to protect the pastoral jewel of a planet below.  The fleets here know that if Stlap were to fall to any of their rivals, the main source of income for the Moash House would be gone.  They also know that the Vella battle-fleets are aware of this, and that more than once they have probed this system to see how strong its defenses are.  Consequently, only the most desperate and deadly defenders are posted here."
 	outfitter "EVN Outfits 4"
 	outfitter "EVN Outfits Courageous 379"
@@ -2190,6 +2317,7 @@
 "planet" "Heraan - Endurance"
 	"landscape" "land/heraan_endurance"
 	"government" "Family Moash"
+	attributes "station"
 	"spaceport" "This system is the most likely route that invaders from the Heraan House might take.  Ever since the Great Moash Invasion of their space some two centuries ago, the Heraan warriors have been more than willing to harass Moash space, so the warriors stationed here are almost constantly being raided.  By the end of their stint here, if they survive, they are covered by the small red heron-shaped battle tattoos indicating successful engagements against the Heraan House."
 	outfitter "EVN Outfits 5"
 	outfitter "EVN Outfits Heraan - Endurance 382"
@@ -2201,6 +2329,7 @@
 "planet" "Moash LP III"
 	"landscape" "land/moash_lp_iii"
 	"government" "Family Moash"
+	attributes "station"
 	"spaceport" "This early warning post is placed along one of the routes into Moash space.  It is not the most common route taken, but it does allow the warriors on the Endurance station in the Moash Nek system a little preparation time.  The warriors here, while not overworked, still get enough action to keep them from becoming bored or complacent, and they have saved those stationed in Moash space from being surprised by more than one sneaky attack."
 	"description" "This early warning post is placed along one of the routes into Moash space.  It is not the most common route taken, but it does allow the warriors on the Endurance station in the Moash Nek system a little preparation time.  The warriors here, while not overworked, still get enough action to keep them from becoming bored or complacent, and they have saved those stationed in Moash space from being surprised by more than one sneaky attack."
 
@@ -2212,27 +2341,32 @@
 
 "planet" "Iris IV"
 	"landscape" "land/iris_iv"
+	attributes "uninhabited"
 
 "planet" "Moash LP IV"
 	"landscape" "land/moash_lp_iv"
 	"government" "Family Moash"
+	attributes "station"
 	"spaceport" "The warriors manning this listening post know that they have the perilous duty of providing early warning for the warriors protecting Stlap in the Moash Rep system.  If Stlap were to fall to the rivals of the Moash House, then one of its main sources of income would be lost.  Many times, the warriors here have spotted Vella House forces hypering in, and have engaged them in order to give the forces in orbit around Stlap time to prepare.  Warriors who survive their posting here end up wearing a great number of the small orange battle tattoos signifying successful engagements fought against warriors from the Vella House."
 	"description" "The warriors manning this listening post know that they have the perilous duty of providing early warning for the warriors protecting Stlap in the Moash Rep system.  If Stlap were to fall to the rivals of the Moash House, then one of its main sources of income would be lost.  Many times, the warriors here have spotted Vella House forces hypering in, and have engaged them in order to give the forces in orbit around Stlap time to prepare.  Warriors who survive their posting here end up wearing a great number of the small orange battle tattoos signifying successful engagements fought against warriors from the Vella House."
 
 "planet" "Moash LP V"
 	"landscape" "land/moash_lp_v"
 	"government" "Family Moash"
+	attributes "station"
 	"spaceport" "This early warning post is on the shortest route between Vella and Moash spaces.  Consequently, the warriors stationed here spend most of their lives fighting against the many probing task-forces sent by the Vella House, giving the warriors in the Moash Alala system time to prepare for any invasion.  This posting has the lowest survival rate of any Moash posting, but survival guarantees respect by members of the Moash House and from warriors from other houses."
 	"description" "This early warning post is on the shortest route between Vella and Moash spaces.  Consequently, the warriors stationed here spend most of their lives fighting against the many probing task-forces sent by the Vella House, giving the warriors in the Moash Alala system time to prepare for any invasion.  This posting has the lowest survival rate of any Moash posting, but survival guarantees respect by members of the Moash House and from warriors from other houses."
 
 "planet" "Arado"
 	"landscape" "land/arado"
+	attributes "uninhabited"
 	"spaceport" "This world has had the fearsome Cunjo introduced to make this tropical paradise a little more deadly.  The Cunjo, with its enormous survival capabilities, has conquered nearly the entire surface of this green planet.  Young potential warriors from the Vella House are sent here to survive for one month as their final initiation.  As a result, the death tattoos of many Vella warriors take the form of green leafy foliage with a pair of watchful eyes hidden amongst it."
 	"description" "This world has had the fearsome Cunjo introduced to make this tropical paradise a little more deadly.  The Cunjo, with its enormous survival capabilities, has conquered nearly the entire surface of this green planet.  Young potential warriors from the Vella House are sent here to survive for one month as their final initiation.  As a result, the death tattoos of many Vella warriors take the form of green leafy foliage with a pair of watchful eyes hidden amongst it."
 
 "planet" "Vardoth"
 	"landscape" "land/vardoth"
 	"government" "Family Vella"
+	attributes "station"
 	"spaceport" "The warriors stationed here spend their lives fending off the countless small incursions by Moash warriors, as this system is the closest Vella system to Moash space.  To keep the ledger even, these warriors also launch themselves across the intervening gap to harass the Moash forces inside their own borders.  The Vella warriors who live to see the end of their time here all carry a great number of the all-red battle tattoos that are awarded after successful engagements against the First Family.  The station is named for the Vella engineer who first designed the current configurations of Deimos Hulk Stations that are now used throughout Auroran space."
 	outfitter "EVN Outfits 4"
 	outfitter "EVN Outfits Vardoth 389"
@@ -2244,18 +2378,21 @@
 "planet" "Vella LP I"
 	"landscape" "land/vella_lp_i"
 	"government" "Family Vella"
+	attributes "station"
 	"spaceport" "This early warning post stands along one of the two main routes for interstellar traffic into Vella space from Moash space and the rest of the Empire.  Given the constant internal wrangling between all of the Five Families, stations like this have proved to be a necessary part of the defense plans of all the houses.  The use of these small listening posts has proven so successful that the Empire itself has also adopted their use as a part of its defenses."
 	"description" "This early warning post stands along one of the two main routes for interstellar traffic into Vella space from Moash space and the rest of the Empire.  Given the constant internal wrangling between all of the Five Families, stations like this have proved to be a necessary part of the defense plans of all the houses.  The use of these small listening posts has proven so successful that the Empire itself has also adopted their use as a part of its defenses."
 
 "planet" "Vella LP II"
 	"landscape" "land/vella_lp_ii"
 	"government" "Family Vella"
+	attributes "station"
 	"spaceport" "The warriors who staff this small early warning station spend their lives giving the warriors inside Vella space time to prepare to meet incoming hostile forces.  Of course, despite the fact that there are only fifty of them, the warriors here would never admit that they could not defeat any incoming force, regardless of size.  This means that the warriors who receive a posting here tend not to survive, but that those who do have obviously achieved a high level of skill at battle-craft, and have perhaps learned a little prudence.  Many of the Five Houses' leading warriors have served postings to places much like this one."
 	"description" "The warriors who staff this small early warning station spend their lives giving the warriors inside Vella space time to prepare to meet incoming hostile forces.  Of course, despite the fact that there are only fifty of them, the warriors here would never admit that they could not defeat any incoming force, regardless of size.  This means that the warriors who receive a posting here tend not to survive, but that those who do have obviously achieved a high level of skill at battle-craft, and have perhaps learned a little prudence.  Many of the Five Houses' leading warriors have served postings to places much like this one."
 
 "planet" "Redhead"
 	"landscape" "land/redhead"
 	"government" "Family Vella"
+	attributes "station"
 	"spaceport" "This enormous battle-station stands across one of the two main routes into Vella space from the East.  It is named for the most common hair color of the members of Vella House, which has been an odd characteristic of the inhabitants of the Vella region of Colonial Council space since it was settled nearly a millennium ago.  The warriors here spend a fair amount of time defending against the small probing task-forces of the Moash House, and returning the favor.  It is an interesting reflection on Auroran life that a major house can engage in openly hostile activity against the First Family and still be acknowledged as a legitimate authority."
 	outfitter "EVN Outfits 4"
 	outfitter "EVN Outfits Redhead 392"
@@ -2305,12 +2442,14 @@
 "planet" "Auroran LP VI"
 	"landscape" "land/auroran_lp_vi"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "This small station is perhaps the only Auroran listening post that is not actually a staging point for a large battle-fleet ready for action.  This station is only manned by a total of fifty, warriors who see very little action.  Now and then they have to escort a particularly devious Federation merchant out of Auroran space, but the last major skirmish against the Federation in this area of space occurred nearly two decades ago.  However, if history is any indication, the Federation is nearly due to for another attempt to invade through this area of space rather than trying to overwhelm the Aurorans at the normal battle fronts."
 	"description" "This small station is perhaps the only Auroran listening post that is not actually a staging point for a large battle-fleet ready for action.  This station is only manned by a total of fifty, warriors who see very little action.  Now and then they have to escort a particularly devious Federation merchant out of Auroran space, but the last major skirmish against the Federation in this area of space occurred nearly two decades ago.  However, if history is any indication, the Federation is nearly due to for another attempt to invade through this area of space rather than trying to overwhelm the Aurorans at the normal battle fronts."
 
 "planet" "Discipline"
 	"landscape" "land/discipline"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "This major military outpost is the furthest from the center of the Empire.  It was built in this little dead-end system to surprise any invasion forces that the Federation might try to sneak around the normal frontlines.  The warriors here spend most of their time training, so as not to lose their fighting edge during their mostly uneventful time here.  This force has been steadily building up over the last decade, in preparation for a possible major push into Federation space in the next ten years or so."
 	outfitter "EVN Outfits 5"
 	outfitter "EVN Outfits Discipline 397"
@@ -2322,6 +2461,7 @@
 "planet" "Vella LP III"
 	"landscape" "land/vella_lp_iii"
 	"government" "Family Vella"
+	attributes "station"
 	"spaceport" "The warriors at this early-warning station do not see a great deal of action, except for the occasional Moash patrol which tries to sneak around behind the major Vella defense points.  This posting is usually given to warriors who have served the Vella House long and honorably, as a rest between being given more demanding positions.  Those who serve here spend large portions of their lives training with and against each other, forever honing their fighting skills."
 	"description" "The warriors at this early-warning station do not see a great deal of action, except for the occasional Moash patrol which tries to sneak around behind the major Vella defense points.  This posting is usually given to warriors who have served the Vella House long and honorably, as a rest between being given more demanding positions.  Those who serve here spend large portions of their lives training with and against each other, forever honing their fighting skills."
 
@@ -2347,6 +2487,7 @@
 "planet" "Joccia"
 	"landscape" "land/joccia"
 	"government" "Family Vella"
+	attributes "station"
 	"spaceport" "This is a massive space hospital, and nearly all Vella warrior casualties are brought here.  The nurses and physicians who live here all spend many hours a day attempting to save the many critically injured warriors brought to them, and although the conditions are still a little primitive, they do amazingly well.  This station has only been in operation for less than a decade, but given the advanced nature of Vella medicine, it should soon be amongst the most advanced hospitals in the Empire."
 	"description" "This is a massive space hospital, and nearly all Vella warrior casualties are brought here.  The nurses and physicians who live here all spend many hours a day attempting to save the many critically injured warriors brought to them, and although the conditions are still a little primitive, they do amazingly well.  This station has only been in operation for less than a decade, but given the advanced nature of Vella medicine, it should soon be amongst the most advanced hospitals in the Empire."
 
@@ -2365,6 +2506,7 @@
 "planet" "Bolshevik"
 	"landscape" "land/bolshevik"
 	"government" "Family Vella"
+	attributes "station"
 	"spaceport" "Because of its infamous history, this Vella battle-station is titled after the name given to revolutionaries in an ancient, now forgotten language of Earth.  Nearly a century ago, the warriors stationed here became restless due to the boring nature of life on this station.  After repeated calls by many of them asking for a re-posting to anywhere else, the station as a whole revolted and declared itself independent of Vella rule.  Unfortunately for them, the warriors stationed elsewhere were more battle-hardened, and when they came to retake the station, not one of the revolutionaries was left alive.  Since then, the leaders of the Vella Family have decided to make this station into a training location for warriors between postings, and the surrounding space is filled with warriors practicing their skills."
 	outfitter "EVN Outfits 4"
 	outfitter "EVN Outfits Bolshevik 403"
@@ -2382,21 +2524,25 @@
 "planet" "Vella LP IV"
 	"landscape" "land/vella_lp_iv"
 	"government" "Family Vella"
+	attributes "station"
 	"spaceport" "Although officially this listening post is here to watch for Federation soldiers, the real reason for its existence is to keep an eye on the forces loyal to the First Family some two systems away.  Suspicious of the Auroran Central Government's decade-long buildup of forces in the Brak system, the leaders of the Vella House ordered this small early-warning station built here.  The warriors on this station stay on edge, for they know that if the enormous Auroran fleet does decide to move against the Vella, they will be very difficult to stop."
 	"description" "Although officially this listening post is here to watch for Federation soldiers, the real reason for its existence is to keep an eye on the forces loyal to the First Family some two systems away.  Suspicious of the Auroran Central Government's decade-long buildup of forces in the Brak system, the leaders of the Vella House ordered this small early-warning station built here.  The warriors on this station stay on edge, for they know that if the enormous Auroran fleet does decide to move against the Vella, they will be very difficult to stop."
 
 "planet" "Llyrithra"
 	"landscape" "land/llyrithra"
+	attributes "uninhabited"
 	"spaceport" "This world, while technically part of the Auroran Empire, is left empty out of respect for the now long gone Vell-os.  When the leaders of the Vell-os people surrendered to the forces of the Colonial Council nearly seven centuries ago, their worlds were razed into lifelessness, and those who would not become slaves were killed.  The Aurorans have recognized that the actions of the Vell-os have been affirmed even by Federation historians, and yet they are still kept as slaves by the Federation military.  The Auroran diplomats remind their Federation counterparts of this on the infrequent occasions when they meet, and hint that any settlement between the Empire and the Federation will have to include the release of all Vell-os slaves."
 	"description" "This world, while technically part of the Auroran Empire, is left empty out of respect for the now long gone Vell-os.  When the leaders of the Vell-os people surrendered to the forces of the Colonial Council nearly seven centuries ago, their worlds were razed into lifelessness, and those who would not become slaves were killed.  The Aurorans have recognized that the actions of the Vell-os have been affirmed even by Federation historians, and yet they are still kept as slaves by the Federation military.  The Auroran diplomats remind their Federation counterparts of this on the infrequent occasions when they meet, and hint that any settlement between the Empire and the Federation will have to include the release of all Vell-os slaves."
 
 "planet" "Korell"
 	"landscape" "land/korell"
+	attributes "uninhabited"
 	"spaceport" "There is something very odd about this planet.  In every other system in what used to be Vell-os space, there is only rubble and radiation.  It appears that the old Colonial Council must not have brought their destructive nuclear weapons here, but considering the fact that at the end of the Vell-os wars the Colonial Council was hell-bent on destroying all traces of the Vell-os civilization, you find it a little strange that they left an entire system untouched.  Even more odd is the fact that this system also happens to have a habitable planet in it, which you suppose would have made it a prime target for their weapons of mass destruction."
 	"description" "There is something very odd about this planet.  In every other system in what used to be Vell-os space, there is only rubble and radiation.  It appears that the old Colonial Council must not have brought their destructive nuclear weapons here, but considering the fact that at the end of the Vell-os wars the Colonial Council was hell-bent on destroying all traces of the Vell-os civilization, you find it a little strange that they left an entire system untouched.  Even more odd is the fact that this system also happens to have a habitable planet in it, which you suppose would have made it a prime target for their weapons of mass destruction."
 
 "planet" "Vellos"
 	"landscape" "land/vellos"
+	attributes "uninhabited"
 	"spaceport" "This planet is all that is left of what was once an advanced and beautiful civilization.  Very few records of the Vell-os before the Vell-os War have survived, but those that have show that this planet was a paradise world, with many beautiful buildings and parks.  The Vell-os that remain alive today say that in every city there were artistic and athletic festivals, and that these two pursuits were viewed as the most noble by all Vell-os.  Now only radioactive dust and one or two radiation-resistant microbial life-forms remain here.  You wish you could spend more time wandering around the ruins of this planet, but your bio-suit is already giving you warnings about the radiation."
 	"description" "This planet is all that is left of what was once an advanced and beautiful civilization.  Very few records of the Vell-os before the Vell-os War have survived, but those that have show that this planet was a paradise world, with many beautiful buildings and parks.  The Vell-os that remain alive today say that in every city there were artistic and athletic festivals, and that these two pursuits were viewed as the most noble by all Vell-os.  Now only radioactive dust and one or two radiation-resistant microbial life-forms remain here.  You wish you could spend more time wandering around the ruins of this planet, but your bio-suit is already giving you warnings about the radiation."
 
@@ -2414,9 +2560,11 @@
 
 "planet" "K-017a"
 	"landscape" "land/k_017a"
+	attributes "uninhabited"
 
 "planet" "K-016a"
 	"landscape" "land/k_016a"
+	attributes "uninhabited"
 
 "planet" "Pipeline"
 	"landscape" "land/pipeline"
@@ -2454,15 +2602,19 @@
 
 "planet" "K-003a"
 	"landscape" "land/k_003a"
+	attributes "uninhabited"
 
 "planet" "K-003b"
 	"landscape" "land/k_003b"
+	attributes "uninhabited"
 
 "planet" "K-003c"
 	"landscape" "land/k_003c"
+	attributes "uninhabited"
 
 "planet" "K-003d"
 	"landscape" "land/k_003d"
+	attributes "uninhabited"
 
 "planet" "Rebel I"
 	"landscape" "land/rebel_i"
@@ -2491,6 +2643,7 @@
 "planet" "Rebel II"
 	"landscape" "land/rebel_ii"
 	"government" "Rebellion"
+	attributes "station"
 	"spaceport" "This station is the forward operations base for the Rebellion.  It is here that all Rebel ships and agents are given their final mission briefs before entering Federation space.  It is one of the busiest ports in Known Space, which makes the secrecy of its location somewhat of a counter-intelligence coup against the Bureau of Internal Investigation.  This probably is a result of the handiwork of General Cade 'Sundown' Smart, who was the former head of the Federation military, and also Frandall (code-name), who was the former Head of Federation Intelligence before the Bureau took over that role.  These two, as founding members of the Rebellion, have spared no effort in looking after the military and intelligence sides of the Rebel operation."
 	outfitter "EVN Outfits 6"
 	outfitter "EVN Outfits Rebel II 421"
@@ -2504,6 +2657,7 @@
 "planet" "Harbor"
 	"landscape" "land/harbor"
 	"government" "Pirate"
+	attributes "station"
 	"spaceport" "This is the home of the 'Associated Guild of Free Traders'.  These 'merchants' are better known throughout the galaxy as pirates.  This is a surprisingly well-run station, but you should keep an eye out, as those who break the very strict code of conduct can find themselves in deep trouble very quickly.  One step outside the code, and you are fair game for everybody.  You are best off saying and doing nothing."
 	outfitter "EVN Outfits 6"
 	outfitter "EVN Outfits Harbor 422"
@@ -2553,6 +2707,7 @@
 "planet" "Pholar"
 	"landscape" "land/pholar"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "'Pholar' means 'the last wall'.  It is filled with warriors that carry an air of finality around with them.  They know that they are the last defense for the capital of the Empire, and they have all spent long periods on the border fighting the Federation, and know how strong they are.  The warriors all believe that the infighting between the Five Houses only serves the purposes of the Federation and weakens the Empire, making their job that much harder.  Still, they are proud of their posting, and would fight beyond death to fulfill their duty if they could."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Pholar 428"
@@ -2596,6 +2751,7 @@
 "planet" "Resolution"
 	"landscape" "land/resolution"
 	"government" "Family Heraan"
+	attributes "station"
 	"spaceport" "This station is the headquarters for the Heraan Mundokiir, as the general of the Heraan forces is called, and the anchoring point for one of the largest battle fleets in the Empire.  The warriors stationed here stay at a high level of readiness because of the proximity to the border of Heraan space, and the closeness of the Moash Family.  Ever since the Herran House replaced the Moash House as First Family, young Moash warriors have been more than a little eager to harass their hated successors, and more than one major attack has been launched."
 	outfitter "EVN Outfits 5"
 	outfitter "EVN Outfits Resolution 432"
@@ -2617,6 +2773,7 @@
 "planet" "Rebel II"
 	"landscape" "land/rebel_ii"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "This station was the forward operations base for the Rebels.  It was here that all Rebel ships and agents were given their final mission briefs before entering Federation space.  It was one of the busiest ports in Known Space, which made the secrecy of its location somewhat of a counter-intelligence coup against the Bureau of Internal Investigation. Nowadays it serves as a forward base of operations for the Federation attempts to quell the number of pirates that seem to be coming from the Galactic North of the Federation.  The men and women who serve here see a great deal of action due to their proximity to a nearby pirate base."
 	outfitter "EVN Outfits 5"
 	outfitter "EVN Outfits Rebel II 434"
@@ -2643,6 +2800,7 @@
 "planet" "Nil'a Ni"
 	"landscape" "land/nil_a_ni"
 	"government" "Nil'kemorya"
+	attributes "station"
 	"spaceport" "This station was manned by the Nil'kemorya to fend off incursions by Wraith herds into Polaris space.  They used to receive constant action, as the tribes frequently took hostile action after wandering into Polaris space.  This station had the distinction of having the most deaths per year of any warrior caste station, but now that the Wraith and the Polaris have sorted out their differences, only a token number of warriors remain."
 	outfitter "EVN Outfits 1"
 	outfitter "EVN Outfits Nil'a Ni 436"
@@ -2666,6 +2824,7 @@
 "planet" "Spacedock V"
 	"landscape" "land/spacedock_v"
 	"government" "Roughnecks"
+	attributes "station"
 	"spaceport" "SD5's primary task is to supply and maintain the large Federation armada under the command of Admiral Raczak. Surviving a tour of duty in Raczak's Roughnecks almost always ensures an operational command posting elsewhere.  The Roughnecks have a long and proud tradition of producing the hardest and most capable veterans of any combat unit, due to the near-continuous action that the armada sees. It is hardly worthy of note that the Roughnecks have the greatest attrition rate of any operational Federation unit.  Up until the recent events in Auroran space, there used to be some contention between Admiral Raczak and the Wild Geese stationed on SD6, but since then relations have mellowed considerably.  In fact, it almost seems like Admiral Raczak places more value on his relations with the Wild Geese than with Federation Naval High Command."
 	outfitter "EVN Outfits 5"
 	outfitter "EVN Outfits Spacedock V 438"
@@ -2690,6 +2849,7 @@
 "planet" "Philar"
 	"landscape" "land/philar"
 	"government" "Rimerta"
+	attributes "station"
 	"spaceport" "'Philar' translates as 'the last step', and the warriors stationed here, like those at its sister-station Pholar, have a grim outlook on life.  They stand ready to put themselves between the center of the Auroran Empire and its absolute destruction.  Only the most wily and battle-hardened of the houseless warriors from Rimerta in the Pimen system serve here.  Of all Auroran warriors, the 'Dechtakars', as the Rimertan warriors call themselves, know the Federation as well as any, and hate them the most."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Philar 440"
@@ -2725,6 +2885,7 @@
 
 "planet" "Resolution"
 	"landscape" "land/resolution"
+	attributes "station" "uninhabited"
 	"spaceport" "This station was formerly the headquarters for the Heraan Mundokiir, as the general of the Heraan forces was called, and was the anchoring point for one of the largest battle fleets in the Auroran Empire.  When they were defeated by the combined Moash and Federation fleets, this station was completely depopulated in a savage hand-to-hand fight.  In the end, despite the incredible abilities of the Heraan warriors, the Moash and Federation forces simply overwhelmed them.  Today, this station is completely empty, in mute testimony to the depth of the hate felt by the Moash warriors towards the Heraan House."
 	tribute 1000
 	"description" "This station was formerly the headquarters for the Heraan Mundokiir, as the general of the Heraan forces was called, and was the anchoring point for one of the largest battle fleets in the Auroran Empire.  When they were defeated by the combined Moash and Federation fleets, this station was completely depopulated in a savage hand-to-hand fight.  In the end, despite the incredible abilities of the Heraan warriors, the Moash and Federation forces simply overwhelmed them.  Today, this station is completely empty, in mute testimony to the depth of the hate felt by the Moash warriors towards the Heraan House."
@@ -2773,6 +2934,7 @@
 "planet" "Nil'a Mjolnir"
 	"landscape" "land/nil_a_mjolnir"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "During the brief war with the Colonial Council, the Polaris were saved by the timely intervention of the Vell-os, and also through the actions of one of the Council's cyborg-soldiers.  Little is known about that man, other than part of his unit designation - Mjolnir.  Apparently, he destroyed a piece of new technology that would have ensured victory over the Polaris.  It is worthy of note that he is the only non-Polaris soldier to have been remembered by the Polaris warrior-caste with respect, although with the destruction of the warrior caste, little more is known about the man."
 	outfitter "EVN Outfits 5"
 	outfitter "EVN Outfits Nil'a Mjolnir 450"
@@ -2784,6 +2946,7 @@
 "planet" "Nil'a He"
 	"landscape" "land/nil_a_he"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "He, meaning 'one' in the Polaris language, signifies that this used to be an important station.  It used to stand on the border of Polaris space, facing hostilities from both the Federation and the Wraith, which ensured that the members of the warrior caste, which was named 'Nil'kemorya' in the Polaris tongue, stationed here were kept busy."
 	outfitter "EVN Outfits 5"
 	outfitter "EVN Outfits Nil'a He 451"
@@ -2795,6 +2958,7 @@
 "planet" "Nil'a Se"
 	"landscape" "land/nil_a_se"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "The Nil'kemorya, as the Polaris warrior caste was named, built a station here as a bulwark against any Federation-backed incursions.  The Polaris, and specifically the Nil'kemorya, were always of the opinion that their greatest threats would originate from Sol, humanity's homeworld.  In light of recent events, they were proved to be correct."
 	outfitter "EVN Outfits 5"
 	outfitter "EVN Outfits Nil'a Se 452"
@@ -2815,6 +2979,7 @@
 "planet" "Nil'a Ro"
 	"landscape" "land/nil_a_ro"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "The Nil'kemorya were the only inhabitants of this station.  Ever since the Polaris War was concluded and the Federation destroyed the Nil'kemorya utterly, this station has been kept running by a few devoted Tre'pira, and a few intrepid Federation entrepreneurs."
 	outfitter "EVN Outfits 5"
 	outfitter "EVN Outfits Nil'a Ro 454"
@@ -2838,6 +3003,7 @@
 "planet" "Nil'a Ca"
 	"landscape" "land/nil_a_ca"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "The Nil'kemorya used to maintain their war headquarters here.  The warriors on this station held themselves ready to deal with any large-scale threat to the sovereignty of the Polaris.  The first time this base was put to its maximum use was during the Polaris Civil War, when Iusia, the leader of the Nil'kemorya at the time, led the warrior caste in a seven day campaign which crippled the capacity of the warring castes to make war on each other. The second was during the Polaris War, until Auroran forces from the Galactic South broke through the weakened Nil'kemorya lines in that quadrant and sacked this station."
 	outfitter "EVN Outfits 5"
 	outfitter "EVN Outfits Nil'a Ca 456"
@@ -2873,6 +3039,7 @@
 "planet" "Nil'a Do"
 	"landscape" "land/nil_a_do"
 	"government" "Federation"
+	attributes "station"
 	"spaceport" "This Nil'kemorya battle-station, when it was completely operational, was used mostly as a training aid for the teaching of the young prospective warriors being trained on the world below.  It was from here that all Nil'kemorya for the last five centuries of their existence received their first space familiarization and combat lessons."
 	outfitter "EVN Outfits 5"
 	outfitter "EVN Outfits Nil'a Do 459"
@@ -2896,6 +3063,7 @@
 "planet" "Nil'a Vi"
 	"landscape" "land/nil_a_vi"
 	"government" "Polaris"
+	attributes "station"
 	"spaceport" "This station, which is in orbit around Nil'ar Riai, was used in the continual training of the potential young warriors housed there.  It was also where the young prospective members of the Nil'kemorya spent six months working with the Ver'ash, helping to repair any damaged ships, and healing the wounded."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Nil'a Vi 461"
@@ -2907,6 +3075,7 @@
 "planet" "Nil'a Ni"
 	"landscape" "land/nil_a_ni"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "This station was manned by the Nil'kemorya to fend off incursions by Wraith herds into Polaris space.  They used to receive constant action as the tribes frequently took hostile action after wandering into Polaris space.  This station had the distinction of having the most deaths per year of any warrior caste station, mainly due to its distance from any Ver'ash facility and the unforgiving nature of the semi-intelligent Wraith."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Nil'a Ni 462"
@@ -2929,6 +3098,7 @@
 "planet" "Nil'a Ya"
 	"landscape" "land/nil_a_ya"
 	"government" "Auroran Empire"
+	attributes "station"
 	"spaceport" "The Nil'kemorya, as the warrior caste were named, built this station here as a bulwark against any incursions from the Auroran Empire.  The Nil'kemorya had gained a great deal of respect for the warrior ethic of the Aurorans, and more than once they were surprised by the level of skill achieved by a civilization as low in technology as the Aurorans."
 	outfitter "EVN Outfits 3"
 	outfitter "EVN Outfits Nil'a Ya 464"
@@ -2939,125 +3109,163 @@
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Vellos"
 	"landscape" "land/vellos"
+	attributes "uninhabited"
 	"spaceport" "As they departed, the Vell-os restored their former homeworld back to what it was like before they themselves came here.  You can still sense the psychic residue of their passing. As you wander around you find yourself marvelling at the simple beauties of this pleasant and temperate world."
 	"description" "As they departed, the Vell-os restored their former homeworld back to what it was like before they themselves came here.  You can still sense the psychic residue of their passing. As you wander around you find yourself marvelling at the simple beauties of this pleasant and temperate world."
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Korell"
 	"landscape" "land/korell"
+	attributes "uninhabited"
 	"spaceport" "The Krypt-tokh protected this system from the forces of the old Colonial Council by releasing part of their conscious minds into their nanites, creating a new life form that would become known in later centuries as the Krypt.  When the time came for the Vell-os to finally move beyond this physical universe, the Krypt-mind willingly gave back what the Krypt-tokh had given it, at the expense of losing several centuries of development."
 	"description" "The Krypt-tokh protected this system from the forces of the old Colonial Council by releasing part of their conscious minds into their nanites, creating a new life form that would become known in later centuries as the Krypt.  When the time came for the Vell-os to finally move beyond this physical universe, the Krypt-mind willingly gave back what the Krypt-tokh had given it, at the expense of losing several centuries of development."
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "HG-Bloodstone"
 	"landscape" "land/hg_bloodstone"
+	attributes "station" "uninhabited"
 	"description" "Over four centuries ago, the P'aedt had a disagreement with the Ver'ash over who should have rights to a particular system.  After decades of wrangling, the Tre'pira came in to adjudicate, but unfortunately both sides disliked the settlement and rejected it.  In response, the heads of the Ver'ash and the P'aedt were assassinated by a member of the Tre'pira, and suddenly there was civil war.  Iusia, the head of the Nil'kemorya, after agonizing for three days, led the warrior caste in a decisive campaign that incapacitated the warring castes and so ended the first and only Polaris civil war. In doing so he broke his own spirit.  After restoring order, Iusia came to this planet to die.  Out of respect for the only man who has ever stopped the Polaris from destroying themselves, the Nil'kemorya gave their leaders the title Iuso, which means 'disciple of Iusia', as they viewed this man with reverence above all others.  Until the day they were destroyed, the warrior caste did not allow any member of another caste to set foot on this planet."
 
 "planet" "Ar'Za Ory'hara"
 	"landscape" "land/ar_za_ory_hara"
+	attributes "uninhabited"
 	"spaceport" "The warriors who were patrolling this system when Ory'hara visited it the final time say that this planet simply came into existence at around the same time as Ory'hara vanished off their sensors. In their last official act while still nominally a government of their people, the Polaris Ruling Council named this planet Ar'Za Ory'hara as a memorial to the {G 'man' 'woman'} who guided them toward their destiny.  The Polaris and their descendants revere this {G 'man' 'woman'} above all others, which is odd when you realize that {G 'he' 'she'} was the one that suggested they take the action which led to their demise as a nation."
 	tribute 635
 	"description" "The warriors who were patrolling this system when Ory'hara visited it the final time say that this planet simply came into existence at around the same time as Ory'hara vanished off their sensors. In their last official act while still nominally a government of their people, the Polaris Ruling Council named this planet Ar'Za Ory'hara as a memorial to the {G 'man' 'woman'} who guided them toward their destiny.  The Polaris and their descendants revere this {G 'man' 'woman'} above all others, which is odd when you realize that {G 'he' 'she'} was the one that suggested they take the action which led to their demise as a nation."
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "HG-Centauri"
 	"landscape" "land/hg_centauri"
+	attributes "station" "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "Wormhole"
 	"landscape" "land/wormhole"
+	attributes "uninhabited"
 
 "planet" "HG-Enlightenment"
 	"landscape" "land/hg_enlightenment"
+	attributes "station" "uninhabited"
 
 "planet" "HG-Codehaven"
 	"landscape" "land/hg_codehaven"
+	attributes "station" "uninhabited"
 
 "planet" "HG-Rautherion"
 	"landscape" "land/hg_rautherion"
+	attributes "station" "uninhabited"
 
 "planet" "HG-Porto Rillia"
 	"landscape" "land/hg_porto_rillia"
+	attributes "station" "uninhabited"
 
 "planet" "HG-Outbound"
 	"landscape" "land/hg_outbound"
+	attributes "station" "uninhabited"
 
 "planet" "HG-Mjolnir"
 	"landscape" "land/hg_mjolnir"
+	attributes "station" "uninhabited"
 
 "planet" "HG-Nil'kemorya"
 	"landscape" "land/hg_nil_kemorya"
+	attributes "station" "uninhabited"
 
 "planet" "HG-Ver'ashan"
 	"landscape" "land/hg_ver_ashan"
+	attributes "station" "uninhabited"
 
 "planet" "HG-Kel'ariy"
 	"landscape" "land/hg_kel_ariy"
+	attributes "station" "uninhabited"
 
 "planet" "HG-Tre'pirana"
 	"landscape" "land/hg_tre_pirana"
+	attributes "station" "uninhabited"
 	"description" "Diva is right on the edge of civilized space.  It borders on both the Auroran Empire and the navigation hazards of the wastes of the Vell-os wars.  Currently under siege by Auroran forces who have recently taken ownership of the surrounding system, Diva has had to increase security measures to keep the Auroran warriors off the surface of this beautiful world.  It is precisely this sort of occurrence that keeps stopping people from flocking to Diva to take up more permanent residence."
 
 "planet" "Brass"
@@ -3093,6 +3301,7 @@
 "planet" "New Ireland"
 	"landscape" "land/new_ireland"
 	"government" "Wild Geese"
+	attributes "uninhabited"
 	"spaceport" "What only a few years ago was a world populated by an artistic, cultured, and hospitable people is now a barely habitable barren rock.  A casualty of the constant sniping between the Wild Geese and the Associated Guild of Free Traders, even now the former residents are busy trying to 'terraform' this world back to some of its former glory..."
 	"description" "What only a few years ago was a world populated by an artistic, cultured, and hospitable people is now a barely habitable barren rock.  A casualty of the constant sniping between the Wild Geese and the Associated Guild of Free Traders, even now the former residents are busy trying to 'terraform' this world back to some of its former glory..."
 
@@ -3118,6 +3327,7 @@
 
 "planet" "Wittor Prime"
 	"landscape" "land/wittor_prime"
+	attributes "uninhabited"
 
 "planet" "Menin"
 	"landscape" "land/menin"
@@ -3162,23 +3372,27 @@
 
 "planet" "Link"
 	"landscape" "land/link"
+	attributes "uninhabited"
 	"spaceport" "No matching dësc for spöb of id nova:514"
 	"description" "No matching dësc for spöb of id nova:514"
 
 "planet" "UHP-1002"
 	"landscape" "land/uhp_1002"
+	attributes "uninhabited"
 	"spaceport" "The still toxic atmosphere whips past the visor of your biosuit as you clamber over rocks of silicates and metals made slippery by the recently introduced blue-green algae.  You seriously hope you don't accidentally puncture your suit."
 	tribute 147
 	"description" "The still toxic atmosphere whips past the visor of your biosuit as you clamber over rocks of silicates and metals made slippery by the recently introduced blue-green algae.  You seriously hope you don't accidentally puncture your suit."
 
 "planet" "UHP-1002"
 	"landscape" "land/uhp_1002"
+	attributes "uninhabited"
 	"spaceport" "Whilst the air remains unbreathable, the planet before you is starting, with its blue-green algae and small amounts of plant life near the equator, you can almost feel the planet coming alive.  Nonetheless, you are still glad to be wearing your bio-suit when you check out the toxic levels of chlorine that still make up a significant portion of the atmosphere."
 	tribute 147
 	"description" "Whilst the air remains unbreathable, the planet before you is starting, with its blue-green algae and small amounts of plant life near the equator, you can almost feel the planet coming alive.  Nonetheless, you are still glad to be wearing your bio-suit when you check out the toxic levels of chlorine that still make up a significant portion of the atmosphere."
 
 "planet" "UHP-1002"
 	"landscape" "land/uhp_1002"
+	attributes "uninhabited"
 	"spaceport" "With the efforts of David Rengel and his team of terraformers, UHP-1002 has been transformed into a paradise planet with sweeping oceans surrounding a few major continents and sprawling archipelagos.  It has vast mountain ranges and is covered by enormous untouched forests.  While the atmosphere is still a little thin, and you find yourself gasping for air without much exertion, it is a joy to be able to run around without having to use any environmental gear on this pristine world."
 	tribute 147
 	"description" "With the efforts of David Rengel and his team of terraformers, UHP-1002 has been transformed into a paradise planet with sweeping oceans surrounding a few major continents and sprawling archipelagos.  It has vast mountain ranges and is covered by enormous untouched forests.  While the atmosphere is still a little thin, and you find yourself gasping for air without much exertion, it is a joy to be able to run around without having to use any environmental gear on this pristine world."
@@ -3186,6 +3400,7 @@
 "planet" "HG-V01"
 	"landscape" "land/hg_v01"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1400"
 	tribute 427
 	"description" "No matching dësc for spöb of id nova:1400"
@@ -3193,6 +3408,7 @@
 "planet" "HG-V02"
 	"landscape" "land/hg_v02"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1401"
 	tribute 425
 	"description" "No matching dësc for spöb of id nova:1401"
@@ -3200,6 +3416,7 @@
 "planet" "HG-V0a"
 	"landscape" "land/hg_v0a"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1402"
 	tribute 424
 	"description" "No matching dësc for spöb of id nova:1402"
@@ -3207,6 +3424,7 @@
 "planet" "HG-V0b"
 	"landscape" "land/hg_v0b"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1403"
 	tribute 414
 	"description" "No matching dësc for spöb of id nova:1403"
@@ -3214,6 +3432,7 @@
 "planet" "HG-Kania"
 	"landscape" "land/hg_kania"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1404"
 	tribute 128
 	"description" "No matching dësc for spöb of id nova:1404"
@@ -3221,6 +3440,7 @@
 "planet" "HG-Tichel"
 	"landscape" "land/hg_tichel"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1405"
 	tribute 129
 	"description" "No matching dësc for spöb of id nova:1405"
@@ -3228,6 +3448,7 @@
 "planet" "HG-Alphara"
 	"landscape" "land/hg_alphara"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1406"
 	tribute 131
 	"description" "No matching dësc for spöb of id nova:1406"
@@ -3235,6 +3456,7 @@
 "planet" "HG-Primus"
 	"landscape" "land/hg_primus"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1407"
 	tribute 132
 	"description" "No matching dësc for spöb of id nova:1407"
@@ -3242,6 +3464,7 @@
 "planet" "HG-Secundus"
 	"landscape" "land/hg_secundus"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1408"
 	tribute 133
 	"description" "No matching dësc for spöb of id nova:1408"
@@ -3249,6 +3472,7 @@
 "planet" "HG-Kerella"
 	"landscape" "land/hg_kerella"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1409"
 	tribute 134
 	"description" "No matching dësc for spöb of id nova:1409"
@@ -3256,6 +3480,7 @@
 "planet" "HG-Gateway"
 	"landscape" "land/hg_gateway"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1410"
 	tribute 159
 	"description" "No matching dësc for spöb of id nova:1410"
@@ -3263,6 +3488,7 @@
 "planet" "HG-S. Manchester"
 	"landscape" "land/hg_s_manchester"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1411"
 	tribute 198
 	"description" "No matching dësc for spöb of id nova:1411"
@@ -3270,6 +3496,7 @@
 "planet" "HG-Tekel"
 	"landscape" "land/hg_tekel"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1412"
 	tribute 282
 	"description" "No matching dësc for spöb of id nova:1412"
@@ -3277,6 +3504,7 @@
 "planet" "HG-Dani"
 	"landscape" "land/hg_dani"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1413"
 	tribute 298
 	"description" "No matching dësc for spöb of id nova:1413"
@@ -3284,6 +3512,7 @@
 "planet" "HG-Aurora"
 	"landscape" "land/hg_aurora"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1414"
 	tribute 315
 	"description" "No matching dësc for spöb of id nova:1414"
@@ -3291,6 +3520,7 @@
 "planet" "HG-Heraan"
 	"landscape" "land/hg_heraan"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1415"
 	tribute 344
 	"description" "No matching dësc for spöb of id nova:1415"
@@ -3298,6 +3528,7 @@
 "planet" "HG-Moash"
 	"landscape" "land/hg_moash"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1416"
 	tribute 366
 	"description" "No matching dësc for spöb of id nova:1416"
@@ -3305,6 +3536,7 @@
 "planet" "HG-Vella"
 	"landscape" "land/hg_vella"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1417"
 	tribute 395
 	"description" "No matching dësc for spöb of id nova:1417"
@@ -3312,12 +3544,14 @@
 "planet" "HG-Koria"
 	"landscape" "land/hg_koria"
 	"government" "Hypergate"
+	attributes "station"
 	"spaceport" "No matching dësc for spöb of id nova:1418"
 	tribute 483
 	"description" "No matching dësc for spöb of id nova:1418"
 
 "planet" "UHP-1001"
 	"landscape" "land/uhp_1001"
+	attributes "uninhabited"
 	"description" "No matching dësc for spöb of id nova:1419"
 
 "planet" "Nirvana"

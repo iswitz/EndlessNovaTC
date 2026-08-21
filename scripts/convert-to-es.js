@@ -885,8 +885,16 @@ function convertPlanets() {
     const raw = planetRawData(planet.id);
     lines.push(`${q("planet")} ${q(name)}`);
     add(lines, "landscape", `land/${name.replace(/[^A-Za-z0-9]+/g, "_").toLowerCase()}`);
-    add(lines, "government", planetGovernmentName(planet.id));
+    const government = planetGovernmentName(planet.id);
+    add(lines, "government", government);
+    const attributes = [];
+    if (raw && (raw.flags & 0x10)) attributes.push("station");
+    if (raw && (raw.flags & 0x20)) attributes.push("uninhabited");
+    if (attributes.length) lines.push(`\tattributes ${attributes.map(q).join(" ")}`);
     if (raw && (raw.flags & 0x1)) add(lines, "spaceport", planet.landingDesc || "");
+    if (raw && (raw.flags & 0x80)) lines.push("\t# EVN landing requires stellar destruction; ES has no direct landing-state equivalent.");
+    if (raw && (raw.flags2 & 0x0040)) lines.push("\t# EVN stellar starts destroyed; ES has no direct persistent destroyed-stellar state.");
+    if (raw && (raw.flags2 & 0x0100)) lines.push("\t# EVN stellar is deadly on contact; ES has no direct planet collision equivalent.");
     if (raw && (raw.flags & 0x4)) {
       lines.push(`\toutfitter ${q(serviceName("Outfits", raw.techLevel))}`);
       if (planetSpecialItems(planet, raw, "Outfits").length) lines.push(`\toutfitter ${q(specialServiceName("Outfits", planet))}`);
