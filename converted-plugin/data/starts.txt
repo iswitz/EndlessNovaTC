@@ -11,6 +11,7 @@ start "evn-trader"
 		credits 25000
 		score 0
 	set "license: Pilot's"
+	set "EVN registration"
 	set "start: EVN trader"
 
 conversation "EVN start trader"

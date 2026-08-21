@@ -485,11 +485,73 @@ event "EVN crön 373: New Ireland Restore cron 1 end"
 	clear "EVN crön active 373"
 	clear "EVN crön pending 373"
 
-# Skipped EVN crön 292 "Carbon Fibre knock-off": EnableOn "b9015 & o377" is not a pure control-bit expression.
-# Skipped EVN crön 291 "Carbon Fibre knock-off": EnableOn "b9014 & o376" is not a pure control-bit expression.
-# Skipped EVN crön 290 "Carbon Fibre knock-off": EnableOn "b9013 & o360" is not a pure control-bit expression.
-# Skipped EVN crön 289 "Fission Reactor knock-off": EnableOn "b9012 & o359" is not a pure control-bit expression.
-# Skipped EVN crön 288 "Thorium Reactor knock-off": EnableOn "b9011 & o358" is not a pure control-bit expression.
+# EVN crön 292: Random 60, PreHoldoff 30, Duration 0, PostHoldoff 2.
+event "EVN crön 292: Carbon Fibre knock-off"
+	set "EVN crön active 292"
+	# EVN OnStart preserved: "d377 g378"
+	# EVN Flags preserved: "0001"; continuous iteration requires dedicated ES logic.
+
+event "EVN crön 292: Carbon Fibre knock-off end"
+	clear "EVN bit 9015"
+	clear "EVN crön active 292"
+
+event "EVN crön 292: Carbon Fibre knock-off cooldown"
+	clear "EVN crön pending 292"
+
+# EVN crön 291: Random 85, PreHoldoff 60, Duration 0, PostHoldoff 2.
+event "EVN crön 291: Carbon Fibre knock-off"
+	set "EVN crön active 291"
+	# EVN OnStart preserved: "d376 g377"
+	# EVN Flags preserved: "0001"; continuous iteration requires dedicated ES logic.
+
+event "EVN crön 291: Carbon Fibre knock-off end"
+	clear "EVN bit 9014"
+	set "EVN bit 9015"
+	clear "EVN crön active 291"
+
+event "EVN crön 291: Carbon Fibre knock-off cooldown"
+	clear "EVN crön pending 291"
+
+# EVN crön 290: Random 95, PreHoldoff 80, Duration 0, PostHoldoff 2.
+event "EVN crön 290: Carbon Fibre knock-off"
+	set "EVN crön active 290"
+	# EVN OnStart preserved: "d360 g376"
+	# EVN Flags preserved: "0001"; continuous iteration requires dedicated ES logic.
+
+event "EVN crön 290: Carbon Fibre knock-off end"
+	clear "EVN bit 9013"
+	set "EVN bit 9014"
+	clear "EVN crön active 290"
+
+event "EVN crön 290: Carbon Fibre knock-off cooldown"
+	clear "EVN crön pending 290"
+
+# EVN crön 289: Random 60, PreHoldoff 240, Duration 0, PostHoldoff 2.
+event "EVN crön 289: Fission Reactor knock-off"
+	set "EVN crön active 289"
+	# EVN OnStart preserved: "d359 g375"
+	# EVN Flags preserved: "0001"; continuous iteration requires dedicated ES logic.
+
+event "EVN crön 289: Fission Reactor knock-off end"
+	clear "EVN bit 9012"
+	clear "EVN crön active 289"
+
+event "EVN crön 289: Fission Reactor knock-off cooldown"
+	clear "EVN crön pending 289"
+
+# EVN crön 288: Random 40, PreHoldoff 120, Duration 0, PostHoldoff 2.
+event "EVN crön 288: Thorium Reactor knock-off"
+	set "EVN crön active 288"
+	# EVN OnStart preserved: "d358 R(g374 g261)"
+	# EVN Flags preserved: "0001"; continuous iteration requires dedicated ES logic.
+
+event "EVN crön 288: Thorium Reactor knock-off end"
+	clear "EVN bit 9011"
+	clear "EVN crön active 288"
+
+event "EVN crön 288: Thorium Reactor knock-off cooldown"
+	clear "EVN crön pending 288"
+
 # EVN crön 278: Random 100, PreHoldoff 540, Duration 0, PostHoldoff 0.
 event "EVN crön 278: New Ireland re-habitation crön"
 	set "EVN crön active 278"

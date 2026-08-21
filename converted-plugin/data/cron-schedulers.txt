@@ -603,6 +603,101 @@ mission "EVN crön scheduler 373: New Ireland Restore cron 1"
 		event "EVN crön 373: New Ireland Restore cron 1 end" 365
 		fail
 
+mission "EVN crön scheduler 292: Carbon Fibre knock-off"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 292"
+		not "EVN crön pending 292"
+		and
+			has "EVN bit 9015"
+			has "outfit: Carbon Fiber - degraded"
+		random < 60
+	on offer
+		set "EVN crön pending 292"
+		event "EVN crön 292: Carbon Fibre knock-off" 30
+		event "EVN crön 292: Carbon Fibre knock-off end" 30
+		event "EVN crön 292: Carbon Fibre knock-off cooldown" 32
+		fail
+
+mission "EVN crön scheduler 291: Carbon Fibre knock-off"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 291"
+		not "EVN crön pending 291"
+		and
+			has "EVN bit 9014"
+			has "outfit: Carbon Fiber - degraded"
+		random < 85
+	on offer
+		set "EVN crön pending 291"
+		event "EVN crön 291: Carbon Fibre knock-off" 60
+		event "EVN crön 291: Carbon Fibre knock-off end" 60
+		event "EVN crön 291: Carbon Fibre knock-off cooldown" 62
+		fail
+
+mission "EVN crön scheduler 290: Carbon Fibre knock-off"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 290"
+		not "EVN crön pending 290"
+		and
+			has "EVN bit 9013"
+			has "outfit: Cheap Carbon Fiber"
+		random < 95
+	on offer
+		set "EVN crön pending 290"
+		event "EVN crön 290: Carbon Fibre knock-off" 80
+		event "EVN crön 290: Carbon Fibre knock-off end" 80
+		event "EVN crön 290: Carbon Fibre knock-off cooldown" 82
+		fail
+
+mission "EVN crön scheduler 289: Fission Reactor knock-off"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 289"
+		not "EVN crön pending 289"
+		and
+			has "EVN bit 9012"
+			has "outfit: Cheap Fission Reactor"
+		random < 60
+	on offer
+		set "EVN crön pending 289"
+		event "EVN crön 289: Fission Reactor knock-off" 240
+		event "EVN crön 289: Fission Reactor knock-off end" 240
+		event "EVN crön 289: Fission Reactor knock-off cooldown" 242
+		fail
+
+mission "EVN crön scheduler 288: Thorium Reactor knock-off"
+	invisible
+	non-blocking
+	landing
+	repeat
+	to offer
+		not "EVN crön active 288"
+		not "EVN crön pending 288"
+		and
+			has "EVN bit 9011"
+			has "outfit: Cheap Thorium Reactor"
+		random < 40
+	on offer
+		set "EVN crön pending 288"
+		event "EVN crön 288: Thorium Reactor knock-off" 120
+		event "EVN crön 288: Thorium Reactor knock-off end" 120
+		event "EVN crön 288: Thorium Reactor knock-off cooldown" 122
+		fail
+
 mission "EVN crön scheduler 278: New Ireland re-habitation crön"
 	invisible
 	non-blocking
