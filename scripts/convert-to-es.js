@@ -311,11 +311,26 @@ function generatedFleetName(kind, id) {
 }
 function evnDudePersonality(aiType) {
   switch (Number(aiType)) {
-    case 1: return ["timid"];
+    case 1: return ["timid", "coward"];
     case 2: return ["uninterested"];
     case 3: return ["heroic"];
-    case 4: return ["nemesis"];
+    case 4: return ["heroic", "surveillance"];
     default: return [];
+  }
+}
+function evnShipPersonality(raw) {
+  const flags2 = hexNumber(raw && raw.Flags2);
+  const flags3 = hexNumber(raw && raw.Flags3);
+  const personality = [];
+  if (flags2 & 0x0001) personality.push("swarming");
+  if (flags2 & 0x0080) personality.push("frugal");
+  if (flags3 & 0x0001) personality.push("mining");
+  if (flags3 & 0x0002) personality.push("harvests");
+  return personality;
+}
+function addPersonalities(target, values) {
+  for (const value of values) {
+    if (!target.includes(value)) target.push(value);
   }
 }
 function shipNameForFleet(shipId) {
@@ -334,11 +349,13 @@ function convertFleets() {
   for (const record of referenceDudes) {
     const data = record.data || {};
     const variants = new Map();
+    const shipIds = [];
     for (let index = 1; index <= 16; index++) {
       const shipName = shipNameForFleet(data[`ShipType${index}`]);
       const probability = Number(data[`Probability${index}`]);
       if (!shipName || !Number.isFinite(probability) || probability <= 0) continue;
       variants.set(shipName, (variants.get(shipName) || 0) + probability);
+      shipIds.push(data[`ShipType${index}`]);
     }
     if (!variants.size) continue;
     const name = generatedFleetName("düde", record.id);
@@ -347,7 +364,12 @@ function convertFleets() {
     const government = governmentName(data.Govt);
     if (government) lines.push(`\tgovernment ${q(government)}`);
     const personality = evnDudePersonality(data.AIType);
+    for (const shipId of shipIds) {
+      const ship = referenceShipRecord(shipId);
+      addPersonalities(personality, evnShipPersonality(ship && ship.data ? ship.data : {}));
+    }
     if (personality.length) lines.push(`\tpersonality ${personality.join(" ")}`);
+    lines.push(`\t# EVN dude AIType ${number(data.AIType, 0)} mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.`);
     for (const [shipName, probability] of [...variants.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))) {
       lines.push(`\tvariant ${Math.max(1, Math.round(probability))}`);
       lines.push(`\t\t${q(shipName)}`);
@@ -358,9 +380,11 @@ function convertFleets() {
   for (const record of referenceFleets) {
     const data = record.data || {};
     const ships = new Map();
+    const shipIds = [];
     const leadName = shipNameForFleet(data.LeadShipType);
     if (!leadName) continue;
     ships.set(leadName, 1);
+    shipIds.push(data.LeadShipType);
     const escortTypes = Array.isArray(data.EscortType) ? data.EscortType : [];
     const minimums = Array.isArray(data.Min) ? data.Min : [];
     const maximums = Array.isArray(data.Max) ? data.Max : [];
@@ -370,14 +394,23 @@ function convertFleets() {
       const minimum = Math.max(0, Number(minimums[index]) || 0);
       const maximum = Math.max(minimum, Number(maximums[index]) || 0);
       const count = Math.round((minimum + maximum) / 2);
-      if (count > 0) ships.set(shipName, (ships.get(shipName) || 0) + count);
+      if (count > 0) {
+        ships.set(shipName, (ships.get(shipName) || 0) + count);
+        shipIds.push(shipId);
+      }
     });
     const name = generatedFleetName("flët", record.id);
     if (!name) continue;
     lines.push(`fleet ${q(name)}`);
     const government = governmentName(data.Govt);
     if (government) lines.push(`\tgovernment ${q(government)}`);
-    lines.push("\tpersonality heroic");
+    const personality = ["heroic"];
+    for (const shipId of shipIds) {
+      const ship = referenceShipRecord(shipId);
+      addPersonalities(personality, evnShipPersonality(ship && ship.data ? ship.data : {}));
+    }
+    lines.push(`\tpersonality ${personality.join(" ")}`);
+    lines.push("\t# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.");
     lines.push("\tvariant");
     for (const [shipName, count] of ships) lines.push(`\t\t${q(shipName)}${count > 1 ? ` ${count}` : ""}`);
     lines.push("");
@@ -972,7 +1005,7 @@ function convertShips() {
     const flags3 = hexNumber(raw.Flags3);
     if (raw.InherentAI || raw.SkillVar || raw.PodCount || flags || flags2 || flags3) {
       lines.push(`\t# EVN AI/ship flags retained: InherentAI=${number(raw.InherentAI, 0)}, SkillVar=${number(raw.SkillVar, 0)}%, PodCount=${number(raw.PodCount, 0)}, Flags=${q(raw.Flags || "0000")}, Flags2=${q(raw.Flags2 || "0000")}, Flags3=${q(raw.Flags3 || "0000")}.`);
-      lines.push("\t# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.");
+      lines.push("\t# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.");
     }
     if (ship.desc) add(lines, "description", ship.desc);
     lines.push("");

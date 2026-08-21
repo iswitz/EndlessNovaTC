@@ -36,7 +36,7 @@
 	gun 3 10
 	gun -3 10
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=5%, PodCount=0, Flags="0120", Flags2="0088", Flags3="0300".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Sigma Shipyards first produced this simple in-system shuttle over two hundred years ago, and the basic keel design hasn't been changed since.  The shuttle has only enough power for three jumps, a single light blaster and a tiny shield generator; enough to protect against micrometeoroids but a few direct hits by even a light blaster will cause real problems for this craft."
 
 "ship" "Heavy Shuttle"
@@ -74,7 +74,7 @@
 	gun 3 14
 	gun -3 14
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=10%, PodCount=0, Flags="0120", Flags2="0088", Flags3="0300".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Based on the keel of the Sigma Shipyards Shuttle, the Heavy Shuttle is half again the length of the original model and has the capability for an extra hyperspace jump over that of the older design.  The simple jump engines limit the amount of extra cargo it can carry over and above what the older shuttle can, but that one extra jump is main reason the Heavy Shuttle has all but displaced the shuttle in most systems."
 
 "ship" "Cargo Drone"
@@ -107,7 +107,7 @@
 
 	outfits
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0124", Flags2="0099", Flags3="0300".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Cargo Drone is an inter-ship and in-system cargo transportation droid.  It has a very simple Lebowickz-Huffman neural net, little turning ability and absolutely no shields.  In war-torn systems these inoffensive craft are usually the first to be scrapped in a big firefight... not because they are deliberately targeted, but because one stray shot will total them."
 
 "ship" "Leviathan"
@@ -157,7 +157,7 @@
 	turret 0 70
 	turret 0 70
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0100", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Leviathan is probably the biggest ship you will ever see.  There are only a few hundred of these giant freighters in existence, for two reasons.  Firstly, only the biggest corporations could afford them, and secondly, the actual ship itself takes 20 years to build.  Most Leviathans are actually close to 600 years old.  Many were even active while the gate system was still operational, and have been handed down through the generations, from hereditary ship's master to ship's master.  Most were retrofitted with jump engines when the technology became available. Requires: Capital Ships {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Pegasus"
@@ -204,7 +204,7 @@
 	turret 5 -6
 	turret -5 -6
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0120", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "In the war against the Vell-os, many of the old cargo carriers were wrecked beyond repair, and the shipping houses whose livelihood depended on them faced financial ruin.  A solution was found by a young engineer named Eyeya Soyahc, who realized that a Leviathan was too big to be destroyed utterly.  Thus he organized teams to salvage the enormous cargo rings from the floating hulks.  These rings were repaired and retrofitted with engines.  The design was such a commercial success that it was adopted in its own right, and is now manufactured by many worlds. Requires: Capital Ships License"
 
 "ship" "Starbridge"
@@ -259,7 +259,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Starbridge is a relatively new concept in ship design, in a Federation where ancient traditions are the rule.  This vessel channels power straight from a Thorium Nuclear Furnace into its large impulse drives, bypassing life-support and even jump engines.  Ancillary power is then provided by turbines mounted behind the engines.  This design provides very accurate control of thrust, and great power in normal space.  The single drawback is that the turbines must be very strong, pushing the price up by a large margin. Requires: Heavy Weapons License, Missile Weapons License, Protective Technologies {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Star Liner"
@@ -309,7 +309,7 @@
 	turret 0 -10
 	turret 0 -10
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=10, Flags="0122", Flags2="0081", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Interstellar tourism took off when the Hypergate system was instituted (particularly from Earth, which benefits from quick and easy transport from surface to orbit via the Kane Band).  The mainstay of the industry is a fleet of vessels bearing a remarkable resemblance to the luxury liners of pre-Band times.  A typical complement of crew and passengers is about three hundred.  The ships themselves are speedy through hyperspace, and have mild shielding for protection against asteroids and to enable them to get close to some of the more spectacular phenomena. Requires: Capital Ships License"
 
 "ship" "Lightning"
@@ -361,7 +361,7 @@
 	turret 0 6
 	turret 2 6
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0122", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The galaxy is a dangerous place, and one cannot always rely on the authorities to be in the right place at the right time.  This being the case, many planetary governments have created small planetary defense militias, and the Rautherion Lightning is the backbone of such organizations.  It falls somewhere between a fighter and a gunboat, and is versatile enough to take on the many roles required of such a craft. Requires: Missile Weapons License"
 
 "ship" "Terrapin"
@@ -412,7 +412,7 @@
 	turret -6 6
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=15%, PodCount=0, Flags="0120", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The aptly named Terrapin is the mainstay of the Federation's small traders.  While ugly as sin, and about as fast as its namesake, the Terrapin carries one whole standard cargo pod segment.  This huge cargo capacity for such a small vessel makes it a ripe target for pirates and Auroran raiders.  They usually travel in 'gaggles' with hired escorts, but sometimes a lone trader on his last monetary legs will try to journey alone."
 
 "ship" "Valkyrie"
@@ -467,7 +467,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=20%, PodCount=0, Flags="0120", Flags2="0088", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Those in the know (particularly 'Hypergate Monthly') have described the Valkyrie as 'the last of the great gas guzzlers.'  This trim ship employs ancient liquid-fuelled reaction rockets instead of Thorium-based nuclear engines.  For all her ancient design, however, the Valkyrie still looks and moves like a top-of-the-line in-system sports racer.  Like the evergreen Porsche Starscreamer before her, the Valkyrie never quite seems to go out of style. Requires: Heavy Weapons License, Missile Weapons License"
 
 "ship" "Argosy"
@@ -522,7 +522,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=15%, PodCount=0, Flags="0120", Flags2="0088", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Heraan house have always held scientists and scholars in much higher regard than the rest of the Empire.  The fertile environment in which Heraan technicians work has produced this surprisingly trim vessel.  Built more along the lines of early Federation efforts, the Argosy packs many improvements on even the latest Federation efforts, and is a spritely performer.  It sports twin hyperdrive 'nacelles' that allow for more accurate FTL travel, and those selfsame nacelles can fold outward for excellent maneuverability in atmospheric flight."
 
 "ship" "Enterprise"
@@ -574,7 +574,7 @@
 	turret 39 17
 	turret -39 17
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=10%, PodCount=0, Flags="0121", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Enterprise is the backbone of all Auroran freight movement.  About half as wide as a Leviathan is long, the Enterprise carries a fraction of the cargo, and at much higher cost.  Nevertheless, the Enterprise has several advantages over the Leviathan and Pegasus, including integrated FPC weaponry (with room for much more), a higher sublight speed, and the ability (in time of strife) to be converted to a passable military ship{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "IDA Frigate"
@@ -628,7 +628,7 @@
 	turret 0 -30
 	turret 0 -30
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=5%, PodCount=0, Flags="0121", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The IDA Frigate was the mainstay of the Colonial Council line before the collapse of the Gate system, and instrumental in the defense of the core worlds against the Aurorans.  These ships were made to last; the spaceframe itself is compartmental and component-based, and, like the Leviathan, it is virtually indestructible.  Don't count on this protecting you on the bridge, though.  Bad shields, good armor and brutal Impact Drive Assemblies (hence IDA) are all trademarks of this keel. Requires: Capital Ships License, Capital Warships License, Heavy Weapons License, Missile Weapons {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Fed Destroyer"
@@ -686,7 +686,7 @@
 	turret 19 5
 	turret -19 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=1, Flags="4130", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Federation Destroyer was developed to cope with the defense of an ever-changing frontier.  Capable of quickly responding to an incursion and equipped with versatile weapons to meet a wide range of foes, the E-41 was dubbed the 'guard-dog' of the Federation.  Effective as a peace-keeper during the time of expansion, the E-41 is now nearly obsolete as a primary weapons platform. Requires: Heavy Weapons License, Missile Weapons License, Protective Technologies License, Capital Ships License, Naval {P30'Approval' 'Approval, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Fed Patrol Boat"
@@ -741,7 +741,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=0, Flags="0130", Flags2="008a", Flags3="0300".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The concept of a fast boat with more firepower than a fighter and more speed than a capital ship has been around for the last millennium.  The latest incarnation of this ideal is the Federation Patrol Boat.  Named for the patrol boats that guarded Australia and the Pacific islands during World War II and beyond, the patrol boat is packed with anti-fighter weaponry.  It's often used as a picket ship in fleet duty, or in its primary role as a patrol vessel in the outer territories. Requires: Missile Weapons License, Naval Approval"
 
 "ship" "Fed Carrier"
@@ -804,7 +804,7 @@
 	turret -20 -2
 	# EVN fighter bay payload: "Fed Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=1, Flags="4120", Flags2="0082", Flags3="0140".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The biggest war machine in Federation space, the Federation Carrier houses squadrons of fighters and can hold its own without its formidable escort.  Capable of long-range tactical power projection, the E-60 is effectively a mobile base, and is often used by Admirals and Commodores as a safe vantage point to gauge the ebb and flow of space battles.   It mounts heavy laser batteries along its top flight deck. Requires: Heavy Weapons License, Missile Weapons License, Fighter Bay License, Protective Technologies License, Capital Ships License, Naval {P30'Approval' 'Approval, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Fed Viper"
@@ -847,7 +847,7 @@
 	gun 0 6
 	gun 0 6
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=0, Flags="8130", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "With the rapid development of space flight, it was inevitable that sports (particularly racing) would come to fruition sooner rather than later.  Power Sled Racing stood up to the challenge.  A few intrepid hot-rodders noticed that one particular sled, the Viper, took very well to a bit of extra weight in the form of armor and armament.  With a little engine tweaking, these modified Vipers, designated F-23, were selected by the Federation as the mainstay of their fighter wings. Requires: Naval Approval"
 
 "ship" "Fed Anaconda"
@@ -892,7 +892,7 @@
 	gun 11 5
 	gun -11 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=0, Flags="8130", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The main problem with the Viper as a fighter craft is a complete lack of any form of explosive projectile.  A new variant that has the 'long distance kill' capacity, based on the Viper chassis, has been the Federation's choice of Space Superiority Fighter ever since.  Although this ship, named the Anaconda, suffers from a slightly slower acceleration and top speed than the Viper, its ability to destroy enemy fighters before that fighter can get within gun range more than compensates. Requires: Missile Weapons License, Naval Approval"
 
 "ship" "Manticore"
@@ -936,7 +936,7 @@
 	gun 0 0
 	gun -30 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0110", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Manticore is the most terrifying vessel that pirates have ever used.  Built from salvaged Leviathans (just don't ask where they got them from), the Manticore's primary offensive weapon is the 'Crown of Thorns', a ring of modified Rauther Ion Cannons.  This ring is fully independently targetable, and can easily disable large ships, while being accurate enough not to shred smaller vessels{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Pirate Carrier"
@@ -994,7 +994,7 @@
 	turret 0 25
 	# EVN fighter bay payload: "Pirate Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0120", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Hrunyir Greyshoulders, father of Olaf, crafted the Pirate Carrier 60 years ago as a tool to aid in the suppression of worlds for ransom.  This terrifying weapon mounts tubes for EMP torpedos, the most devastating explosive known (and banned by all space treaties, even between the Aurorans and the Federation).  Olaf started work on a second carrier 20 years ago, and it is now reaching completion.  He is still hunting for a buyer with enough cash and few enough scruples to buy it{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Pirate Starbridge"
@@ -1049,7 +1049,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=30%, PodCount=0, Flags="0120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Starbridge commonly in pirate service is relatively unaltered from its base design.  There are a few reasons for this, but the primary one is that the Starbridge makes an excellent pirate ship as it is!  Also, a good many... <ahem> 'privateers' were consulted about the vessel's design during the planning stage, and they feel that their comments have in some way helped shape this graceful keel.  Most Starbridges used by pirates haven't had their engines tweaked much, but they do have more powerful guns than normal{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Pirate Valkyrie"
@@ -1103,7 +1103,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0120", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Pirates and Valkyries have gone together almost since the Valkyrie was first released.  Somehow the hotrodded starship seems to embody the very idea of a swash-buckling corsair; so much so, in fact, that people who fly normal, unmodified Valkyries get a few sideglances from other spacelane users.  Pirates take great pride in maxing their 'Valks' out, and most Valkyries will sport afterburners and custom paintjobs, as well as radically altered shield grids.  This darkly menacing custom convert by Olaf Greyshoulders is no different."
 
 "ship" "Pirate Argosy"
@@ -1158,7 +1158,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=20%, PodCount=0, Flags="0121", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "How the advanced Heraan Argosy fell into the hands of pirate shipwrights is a matter of hot debate in some circles.  The story that the ship dealer spins for you maintains that the plans were snatched during a daring hit-and-run raid several years ago.  The truth of the matter is that Aurorans can be bribed, as can all humans throughout the galaxy.  Senginar Hmel, the noteworthy shipwright, has been brutal with the original design spec, and sadly much of the original beauty of the lines of this ship has been destroyed, performance boosts aside."
 
 "ship" "Pirate Enterprise"
@@ -1211,7 +1211,7 @@
 	turret 1 17
 	turret -1 17
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=15%, PodCount=0, Flags="0121", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Enterprise has been a favorite of pirates for a hundred years or more.  With a modular framework based so closely along the lines of the IDA Frigate (note the drive-train), the Enterprise is a joy to hotrod.  This model sports several improvements, including both Federation-style shielding and Auroran railguns.  Truly a must-have for the privateer on the move{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Abomination"
@@ -1265,7 +1265,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Abomination by name, abomination by nature.  The Auroran technicians created this monstrous gunship in response to the threat of the Federation Patrol Boat.  The Abomination mounts twin Fusion Pulse Batteries as its armament, which are more than sufficient to rip through the light hull of the Patrol Boat.  A severe lack of maneuverability makes it vulnerable to attack from capital ship sized weapons, though, which make short work of its armor.  Auroran pilots find the idea of honorable victory against huge odds very enticing, so the Abomination is very popular."
 
 "ship" "Aurora Carrier"
@@ -1322,7 +1322,7 @@
 	turret -10 50
 	# EVN fighter bay payload: "Firebird"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=3, Flags="0131", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "There is an Auroran legend about the creation of the first Carrier.  The Auroran lord who first conceived of such a mighty vessel gave these precepts to the shipwright for its creation:  'Make me a hand with which I might strike mine enemies!'  The keel for the vessel is so large that it has to be laid in a planet-based shipyard.  The ship itself is 1.2 km long, mounts deck-guns, and has bays for Firebirds and Phoenixes{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Aurora Cruiser"
@@ -1380,7 +1380,7 @@
 	turret 0 -35
 	turret 0 -35
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=5, Flags="4131", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Auroran people's first attempt to create a large war vessel is still their most successful.  The Aurora Cruiser mounts immense firepower in the form of 100mm and 200mm Railguns, a broadside of FPC batteries, and anti-fighter chainguns.  It does have somewhat weak artificial gravity, however, which is compensated for by a rotating living section.  It also has the most basic of thrust engines, which produce abysmal top speed and acceleration, even for a capital ship{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Firebird"
@@ -1423,7 +1423,7 @@
 	gun 5 -3
 	gun -5 -3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=0, Flags="8130", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Firebirds are the main Auroran fighter.  Their engines are simple, to say the least.  Their task is to protect the Phoenix from attack by smaller fighters such as the Viper, while the Phoenix take on the heavier ships.  The Firebird is slower than the Viper, but not by enough to give the Viper a decisive edge.  Battles between the two often come down to individual skill.  Many a Federation/Auroran border skirmish has come to a halt while the two sides watch a Firebird/Viper dogfight between renowned pilots."
 
 "ship" "Phoenix"
@@ -1468,7 +1468,7 @@
 	gun 9 0
 	gun -9 0
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=20%, PodCount=0, Flags="8130", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Phoenix is yet another example of the Auroran will to survive.  The Phoenix is slow and turns badly.  One would think that it would be target practice for enemy pilots.  It is, but it has one redeeming feature: it has almost as good armor plating as a Thunderhead.  They plough through fire corridors with impunity, and attack in groups to maximize firepower.  The Phoenix can wear a missile from an Anaconda, but a Viper will stay on its tail and pound it mercilessly.  Suffice to say that Phoenix pilots suffer the greatest rate of attrition of any group in the Auroran armed forces."
 
 "ship" "Thunderhead"
@@ -1520,7 +1520,7 @@
 	turret 0 -5
 	turret 0 -5
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=10%, PodCount=0, Flags="8120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Thunderhead is so named for its main weapon, the Thunderhead Lance.  The Lance is a solid beam of coherent laser light.  In some ways, the Thunderhead has the worst reputation of any fighting vessel in the Galaxy.  Not because of turn ratings or levels of firepower, but because this assault fighter is the weapon of choice of pirates, privateers and corsairs throughout known space.  It has enough armor to allow it to go up against large ships, and enough speed to allow it to catch most craft that try to flee. Requires: Heavy Weapons License, Missile Weapons License"
 
 "ship" "Arachnid"
@@ -1575,7 +1575,7 @@
 	turret 0 -3
 	turret 0 -3
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0050", Flags2="0081", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Like all Polaris vessels, the Arachnid starts out as a metal frame with internal components.  It is then suspended in a vat of amniotic fluid which begins to grow an organic shell around those components.  Eventually the two intermesh so well that it is difficult to pick the mechanical from the biological.  In battle, the Arachnid's main weapon is an organic-based Capacitor Pulse Laser that is grown during this phase and which runs from a fusion generator.  The generator itself is installed after other construction is complete, and Arachnids do not leave the shipyard without one{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Dragon"
@@ -1628,7 +1628,7 @@
 	turret 13 2
 	turret -13 2
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=0, Flags="0140", Flags2="0081", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Dragon is a strange ship by Polaris standards, but a much more conventional weapon than their other creations.  The Dragon's main biological component is the self-repairing skin that also acts as an etheric wave hyperdrive.  Apart from that, most of the ship is conventional, if somewhat high-tech.  It mounts twin wraithii cannon as its standard weapon, and has excellent speed and agility.  It is the only Polaris vessel sold to outsiders, and then only to trusted friends of the Polaris."
 
 "ship" "Cambrian"
@@ -1661,7 +1661,7 @@
 
 	outfits
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0000", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "This immense vessel is the Polaris counterpart to the Leviathan.  Plying its way through hyperspace via massive Etheric Wave hyper-engines (mounted as part of its bio-organic skin in its nose and tail), the Cambrian transfers huge amounts of raw materials for the construction of new worlds and the upkeep of old ones.  These ships are usually assigned to a particular caste for a period of twenty years or so before rotation, but these timetables are quite flexible, and reflect the Polaran distaste for inefficient bureaucracy."
 
 "ship" "Manta"
@@ -1711,7 +1711,7 @@
 	turret 0 7
 	turret 0 7
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=10%, PodCount=0, Flags="8050", Flags2="0081", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "A pilot in the Nil'kemorya comes of age at 16.  It is then that he meets the Manta that will be his fighter and personal transport for as long as he lives, no matter how far he advances in rank.  Grown from a DNA sample taken from the pilot when he was initiated into the Nil'kemorya, the Manta will bond with him in a very personal way.  These fighters are not only swift and powerful, they are also the most 'alive' of the Polaris ships, having approximately the same level of sentience as smart dogs.  It incorporates a potent bio-organic laser into its nose as its only weapon."
 
 "ship" "Scarab"
@@ -1769,7 +1769,7 @@
 	turret 0 0
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=0, Flags="0058", Flags2="0083", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The mighty Scarab is the last line of defense for the Polaris people.  Only a handful of the vessels have ever been constructed, and they mount the most devastating ordinance that the Polaris can produce.  Two pulse lasers provide short-range firepower, while a polaron emitter in the front mandibles fires a packet of coherent energy dubbed the Polaron Torpedo.  This ship is capable of taking on entire fleets by itself, and has done so on occasion.  However, there are pitifully few of these proud ships, and the defense of Polaris Space is a heavy burden on their shoulders{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Striker"
@@ -1823,7 +1823,7 @@
 	turret 6 -3
 	turret -6 -3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0050", Flags2="0083", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "When the Polaris first settled on Kel'ar Iy, they arrived in ancient Deimos-class spacehulks and a myriad of smaller ships.  They had no weapons, exhausted first-generation hyperdrives and generally little to recommend themselves.   As the Polaris' well-founded civilization granted them new technologies, they began building cybernetic ships which were a combination of mechanical and biological components.  The first ship to be built like this was the Striker.  It serves as a long range scout and as a first line of defense against intruders."
 
 "ship" "Raven"
@@ -1873,7 +1873,7 @@
 	bay "Fighter" 0 92
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="025c", Flags2="00c3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "This ship is a behemoth.  Sliding through the ether with an ease that belies its enormous bulk, the Polaris Raven is a vision of glory and terror. It dwarfs the massive Scarab in both size and firepower; it is, simply put, the most powerful weapon humanity has ever constructed.  The Raven utilizes twin Etheric Induction engines for sublight travel.  These devices simply suck the fabric of space-time in the front, and squirt it out the back.  If one of these engines should ever stop suddenly, the graviton effects would cause the momentary formation of a black hole{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Mod Starbridge"
@@ -1929,7 +1929,7 @@
 	turret 0 2
 	turret 0 2
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0134", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Starbridge was the state of the art when it was first released nearly two decades ago, but the latest version leaves it for dead.  Improved engines and turning capabilities, as well as vastly increased offensive and defensive systems, ensure that this ship is on the wish-list of nearly every freighter captain in the galaxy Requires: Heavy Weapons License, Missile Weapons {P30'License' 'License, REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Pirate Viper"
@@ -1971,7 +1971,7 @@
 	gun 0 5
 	gun 0 5
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=0, Flags="8120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "As soon as Comara released the Viper frame on the general market, a few shiploads of frames were bought up by notorious pirate shipwright Olaf Greyshoulders.  He and his crew have totally refitted the shell, and the familiar shape of its advanced armor plating hides a wealth of minor and major improvements to the basic idea.  But, as with all Greyshoulders upgrades, there is a hefty price to pay for the improved model.  It's up to you to decide whether it's worth it."
 
 "ship" "Viper"
@@ -2017,7 +2017,7 @@
 	gun 0 9
 	gun 0 9
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=40%, PodCount=0, Flags="8120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "With the rapid development of space flight, it was inevitable that sports (particularly racing) would come to fruition sooner rather than later.  Power Sled racing stood up to the challenge.  A few intrepid hot-rodders noticed that one particular sled, the Viper, took very well to a bit of extra weight in the form of armor and armament.  With a little engine tweaking, these modified Vipers, designated F-23, were selected by the Federation as the mainstay of their fighter wings.  This model is a civilian shell by Comara Racing."
 
 "ship" "Wraith (Adult)"
@@ -2069,7 +2069,7 @@
 	turret 0 12
 	turret 0 12
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0040", Flags2="5f61", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "In the final stage of Wraith growth, the shiny carapace goes completely black, and the mature Wraith takes its place in the clan as a respected elder.  The elder Wraith discuss many topics during their gathering trips into space and their time on their homeworld.  They are truly a race of philosophers, though some of their conclusions are quite alien to humans.  The adult Wraith will mate when they reach 200 years of age, and they live for up to 1000 years."
 
 "ship" "Wraith (Youth)"
@@ -2108,7 +2108,7 @@
 	gun 0 20
 	gun 0 20
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=0%, PodCount=0, Flags="0040", Flags2="5f41", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "When Wraith children are a little more grown, they are capable of running with the pack.  Young Wraith will serve as outliers for a convoy, and take great delight in 'buzzing' incoming ships with their younger brothers and sisters.  The adults can always keep them in line, though, and the youngsters quickly mature as they get better and better at gliding through the harshness of space, as opposed to their native Hot'A'Tanius."
 
 "ship" "Wraith (Child)"
@@ -2147,7 +2147,7 @@
 	gun 0 20
 	gun 0 20
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0040", Flags2="0041", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "A Wraith child is a playful being, full of life and spirit.  As with all Wraithkind, they love to frolic in the blackness of space, and they have an instinctive understanding of hyperspace.  Their method of propulsion is a much more refined version of the same etheric wave technology that drives most Polaris vessels.  Children of the Wraith will not stray far from their parents, and those same parents will fiercely defend their young from anyone cruel enough to attack such beautiful creatures."
 
 "ship" "Hyperioid"
@@ -2185,7 +2185,7 @@
 	gun 0 13
 	gun 0 13
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=0%, PodCount=0, Flags="0040", Flags2="00c0", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Hyperioid is a space-dwelling animal that feeds on the emissions from various types of stars.  Most of their bodies are actually energy projections, and the actual matter component of their bodies seems almost an evolutionary remnant.  They will migrate between stars after the death of a food source.  They can coast between stars for ¾ons in a low energy state, where their bodies revert to their ten tons or so of actual mass.  Hyperioids breed by a method of group construction, where many Hyperioids will add traits to a single new individual."
 
 "ship" "RAGE Gunboat"
@@ -2243,7 +2243,7 @@
 	turret 12 3
 	turret -12 3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0032", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "In an attempt to combat the Abomination and the Striker, Federation Scientists have developed the Reactive Armor General Equipment (RAGE) Gunboat.  The hyperbolic 'General Equipment' refers to the fact that the Gunboat mounts Auroran FPC technology, and stolen Polaris wraithii material.  The reactive armor plating is nearly impenetrable to lesser weapons, and the ship has outstanding speed and maneuverability for a vessel its size.  Only time will tell if it is enough to stand up to the might of the Aurora, or the technology of the Polaris. Requires: Heavy Weapons License, Missile Weapons License, Naval Approval"
 
 "ship" "Vell-os Dart"
@@ -2296,7 +2296,7 @@
 	turret 0 3
 	turret 0 3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=10%, PodCount=0, Flags="003c", Flags2="0079", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "When a Vell-os has completed his or her basic training in the psi arts, one of the first things they attempt to construct is the delicate Dart.  Like all Vell-os 'ships', she is actually a pure psychic barrier that protects the Vell-os pilot within.  It is perfectly formed for hyperspace travel (nearly matching the beautiful Wraith), and will remain intact as long as enough of the mental energy of the Vell-os remains."
 
 "ship" "Vell-os Arrow"
@@ -2351,7 +2351,7 @@
 	turret 0 12
 	turret 0 12
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="003c", Flags2="0079", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Arrow is an undertaking that has been known to be completed by a very skilled T3, but is more usually the in the purview of a T2.  It is a mental barrier of enormous proportions that affords the Vell-os pilot excellent physical protection.  The Arrow differs visibly from the Dart, in that it is significantly longer and more streamlined.  This is certainly a powerful vessel, but it is rarely seen in these dark times."
 
 "ship" "Vell-os Javelin"
@@ -2410,7 +2410,7 @@
 	turret 0 20
 	# EVN fighter bay payload: "Vell-os Dart"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="005c", Flags2="0072", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Javelin embodies the hopes and desires of all the Vell-os people.  A Javelin has been known to be created by very powerful T2's, but as a general rule, only T1's are capable of constructing one of these glorious works of art.  A completed Javelin pulsates with the enormous mental energy of the Vell-os pilot as it travels.  This mental construct is most often created by a Vell-os who is also capable of launching the devastating Autumn Petal attack and of disassociating their mind to create subsidiary vessels, making the Javelin one of the most powerful objects known to man.  Only a few Javelins exist now, as it is rare for a Vell-os to be allowed to construct one."
 
 "ship" "Krypt Pod"
@@ -2444,7 +2444,7 @@
 	outfits
 		"Nanites" 1
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0250", Flags2="0043", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Krypt has always been curious about the universe at large.  She created these nanite globes to explore her surrounds soon after she became conscious.  Any globe is a part of her body; she suffers its ill-treatment badly, and will respond to force with force.  Not that she truly understands that these strange asteroids that appear in her space actually contain living beings; she is unaware that other life exists."
 
 "ship" "Rebel Viper"
@@ -2486,7 +2486,7 @@
 	gun 4 9
 	gun -4 9
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=15%, PodCount=0, Flags="8130", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "With the rapid development of space flight, it was inevitable that sports (particularly racing) would come to fruition sooner rather than later.  Power Sled racing stood up to the challenge.  A few intrepid hot-rodders noticed that one particular sled, the Viper, took very well to a bit of extra weight in the form of armor and armament.  With a little engine tweaking, these modified Vipers, designated F-23, were selected by the Federation as the mainstay of their fighter wings.  This Viper was appropriated from Federation stocks on an unnamed supply world."
 
 "ship" "Rebel Starbridge"
@@ -2543,7 +2543,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=1, Flags="0130", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "As always, the controversial Starbridge finds service in areas other than its intended use in commerce.  The excellent (if expensive) Starbridge design has been adapted to the needs of the Rebellion by Donald Chick, ex-CEO of Sigma Shipyards.  It has been decades since Sir Donald has put his hand to a set of hydrospanners, but he has taken his small team of craftsmen and churned out the best variant of the Starbridge yet{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Rebel Valkyrie"
@@ -2599,7 +2599,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=1, Flags="0130", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Another of Donald Chick's efforts in starship redesign.  In his younger days, Sir Donald had an old T7 model Valkyrie that he hotrodded in his spare time.  Much of what went into that now legendary craft (the 'Lucalia' is still his personal ship) now provides the punch behind the next generation of Rebellion starships.  The updated Valkyrie breathes new life into the design, adapting some of the micro-furnace technology from the Starbridge for its engines.  Truly a triumph for Sir Donald and his crew."
 
 "ship" "Rebel Dragon"
@@ -2655,7 +2655,7 @@
 	turret 12 2
 	turret -12 2
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=1, Flags="0130", Flags2="0081", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Polaris have long been sympathetic to the Rebel cause, recognizing the essential rightness of their struggle.  Thus the Nil'kemorya have made the Dragon design available to the Rebellion ship technicians for adaptation to their purposes.  Many dangerous freight runs are required to haul the sludge tanks full of etheric wake biotech skin material through the frontier between Polaris and Rebel space, but the efforts of many fine free-trader captains have given the Rebellion a technical edge on the Federation... for now{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Rebel Destroyer"
@@ -2713,7 +2713,7 @@
 	turret 5 12
 	turret -5 12
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=2, Flags="4130", Flags2="0083", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "General 'Sundown' Smart has been pulling his hair out over the Rebellion's desperate lack of ships and manpower.  He and Frandall recently had a breakthrough when they masterminded the theft of thirty E-41s from mothballs in orbit at the wreckers at Spacedock II.  The ancient craft have proved difficult to improve, as such a large task is beyond Donald Chick and his small but dedicated group of shipwrights.  They have had to be satisfied with gross tweaks to power output and shield strength, and have given the task of general refits to maintenance personnel{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Sprite"
@@ -2746,7 +2746,7 @@
 
 	outfits
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0000", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "One of the Tre'pira's greatest achievements was the exquisite timing and scheduling control required for efficient use of the giant Cambrian.  There are times, however, when it's simply not feasible to divert a Cambrian from its course to pick up a rush job, or a small load of goods.  Thus the Sprite takes up the shortfall; going in where the Cambrian can't fit, getting the smaller loads of cargo, ferrying cargo from the huge freighters to stations and planets, and all the other little tasks that the Cambrians simply aren't suited to."
 
 "ship" "Rebel Dragon"
@@ -2798,7 +2798,7 @@
 	gun 0 35
 	gun 0 35
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=1, Flags="0130", Flags2="0081", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Polaris have long been sympathetic to the Rebel cause, recognizing the essential rightness of their struggle.  Thus the Nil'kemorya have made the Dragon design available to the Rebellion ship technicians for adaptation to their purposes.  Many dangerous freight runs are required to haul the sludge tanks full of etheric wake biotech skin material through the frontier between Polaris and Rebel space, but the efforts of many fine free-trader captains have given the Rebellion a technical edge on the Federation... for now{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Rebel Destroyer"
@@ -2856,7 +2856,7 @@
 	turret 5 12
 	turret -5 12
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=2, Flags="4130", Flags2="0083", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "General 'Sundown' Smart has been pulling his hair out over the Rebellion's desperate lack of ships and manpower.  He and Frandall recently had a breakthrough when they masterminded the theft of thirty E-41s from mothballs in orbit at the wreckers at Spacedock II.  The ancient craft have proved difficult to improve, as such a large task is beyond Donald Chick and his small but dedicated group of shipwrights.  They have had to be satisfied with gross tweaks to power output and shield strength, and have given the task of general refits to maintenance personnel{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Wraith (Adult)"
@@ -2906,7 +2906,7 @@
 	turret 0 12
 	turret 0 12
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0050", Flags2="5761", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "In the final stage of Wraith growth, the shiny carapace goes completely black, and the mature wraith takes it's place in the clan as a respected elder.  The elder Wraith discuss many topics during their gathering trips into space and their time on their homeworld.  They are truly a race of philosophers, though some of their conclusions are quite alien to humans.  The adult Wraith will mate when they reach 200 years of age, and they live for up to 1000 years."
 
 "ship" "Zephyr"
@@ -2962,7 +2962,7 @@
 	turret 4 4
 	turret -4 4
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0054", Flags2="5282", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Zephyr was originally designed specifically for use with the cloaking organ.  Naturally, such a design meshed well with the requirements of the Mu'hari to interact and fly amongst the peoples of other nations, so they added design specifications until the final version of the Zephyr was born.  It is a versatile little craft, falling somewhere between the categories of fighter, freighter and gunboat without falling short in any way."
 
 "ship" "Fed Scout Ship"
@@ -3017,7 +3017,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=4%, PodCount=0, Flags="0130", Flags2="0088", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Every successful military force in history has relied on accurate intelligence for their success.  So the Federation Navy has created the Scout Ship, capable of operating for long periods behind enemy lines without resupply so that if war does break out, they will be able to send these vessels far behind enemy lines to help with information gathering.  High-ranking strategists believe that this vessel may well prove invaluable in enabling the Federation Navy to defeat any all-out assault by the Auroran Empire. Requires: Missile Weapons License, Naval Approval"
 
 "ship" "Shuttle"
@@ -3057,7 +3057,7 @@
 	gun 3 10
 	gun -3 10
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=5%, PodCount=0, Flags="0100", Flags2="0088", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:188"
 
 "ship" "Heavy Shuttle"
@@ -3094,7 +3094,7 @@
 	gun 3 14
 	gun -3 14
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=10%, PodCount=0, Flags="0100", Flags2="0088", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:189"
 
 "ship" "Leviathan"
@@ -3146,7 +3146,7 @@
 	turret 0 70
 	turret 0 70
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=2, Flags="0100", Flags2="0080", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:190"
 
 "ship" "Lightning; Wild Geese"
@@ -3199,7 +3199,7 @@
 	turret 0 6
 	turret 2 6
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=10%, PodCount=0, Flags="0134", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "While the basic Rautherion Lightning is an excellent ship in its own right, the Wild Geese needed more.  They needed a ship capable of operating as a top rate fighter as well as having the firepower of a gunboat.  The vessel that came the closest was the Lightning, so the Wild Geese bought a production license from the Rautherion company and began improving on the basic design.  Before long, the Wild Geese version of the Lightning was born, and it was everything they could have hoped for. As an added bonus, the Wild Geese version is available without any requirements for a license.  However, to re-stock her missile tubes after you have depleted them you will have to acquire a license to purchase more."
 
 "ship" "Leviathan"
@@ -3250,7 +3250,7 @@
 	turret 0 70
 	turret 0 70
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=1, Flags="0100", Flags2="0080", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:192"
 
 "ship" "Pegasus"
@@ -3297,7 +3297,7 @@
 	turret 5 -6
 	turret -5 -6
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=1, Flags="0100", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:193"
 
 "ship" "Pegasus"
@@ -3344,7 +3344,7 @@
 	turret 5 -6
 	turret -5 -6
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0100", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:194"
 
 "ship" "Starbridge"
@@ -3399,7 +3399,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0140", Flags2="0088", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:195"
 
 "ship" "Starbridge"
@@ -3455,7 +3455,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0140", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:196"
 
 "ship" "Starbridge"
@@ -3512,7 +3512,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=1, Flags="0140", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:197"
 
 "ship" "Starbridge"
@@ -3569,7 +3569,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0140", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:198"
 
 "ship" "Starbridge"
@@ -3624,7 +3624,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0140", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:199"
 
 "ship" "Star Liner"
@@ -3674,7 +3674,7 @@
 	turret 0 -10
 	turret 0 -10
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=10, Flags="0102", Flags2="0081", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:200"
 
 "ship" "Star Liner"
@@ -3726,7 +3726,7 @@
 	turret 0 -10
 	turret 0 -10
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=10, Flags="0102", Flags2="0081", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:201"
 
 "ship" "Terrapin"
@@ -3778,7 +3778,7 @@
 	turret -6 6
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=15%, PodCount=1, Flags="0100", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:202"
 
 "ship" "Terrapin"
@@ -3830,7 +3830,7 @@
 	turret -6 6
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=15%, PodCount=0, Flags="0100", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:203"
 
 "ship" "Argosy"
@@ -3886,7 +3886,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=15%, PodCount=0, Flags="0141", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:204"
 
 "ship" "Argosy"
@@ -3941,7 +3941,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=15%, PodCount=0, Flags="0141", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:205"
 
 "ship" "Argosy"
@@ -3996,7 +3996,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=15%, PodCount=0, Flags="0141", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:206"
 
 "ship" "Argosy"
@@ -4049,7 +4049,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=15%, PodCount=0, Flags="0141", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:207"
 
 "ship" "Enterprise"
@@ -4101,7 +4101,7 @@
 	turret 39 17
 	turret -39 17
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=10%, PodCount=0, Flags="0151", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:208"
 
 "ship" "Enterprise"
@@ -4156,7 +4156,7 @@
 	turret 39 17
 	turret -39 17
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=10%, PodCount=0, Flags="0151", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:209"
 
 "ship" "Enterprise"
@@ -4210,7 +4210,7 @@
 	turret 39 17
 	turret -39 17
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=10%, PodCount=0, Flags="0151", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:210"
 
 "ship" "Fed Destroyer"
@@ -4267,7 +4267,7 @@
 	turret 19 5
 	turret -19 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=0, Flags="4130", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:211"
 
 "ship" "Fed Destroyer"
@@ -4326,7 +4326,7 @@
 	turret 19 5
 	turret -19 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=1, Flags="4120", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:212"
 
 "ship" "Fed Destroyer"
@@ -4385,7 +4385,7 @@
 	turret 19 5
 	turret -19 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=0, Flags="4120", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:213"
 
 "ship" "Fed Destroyer"
@@ -4443,7 +4443,7 @@
 	turret -19 5
 	# EVN fighter bay payload: "Fed Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=1, Flags="4120", Flags2="0002", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:214"
 
 "ship" "Fed Patrol Boat"
@@ -4498,7 +4498,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=0, Flags="0140", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:215"
 
 "ship" "Fed Patrol Boat"
@@ -4552,7 +4552,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=0, Flags="0140", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:216"
 
 "ship" "Fed Patrol Boat"
@@ -4611,7 +4611,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=0, Flags="0140", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:217"
 
 "ship" "Fed Carrier"
@@ -4673,7 +4673,7 @@
 	turret -20 -2
 	# EVN fighter bay payload: "Fed Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=1, Flags="4140", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:218"
 
 "ship" "Fed Carrier"
@@ -4738,7 +4738,7 @@
 	turret -20 -2
 	# EVN fighter bay payload: "Fed Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=1, Flags="4140", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:219"
 
 "ship" "Fed Carrier"
@@ -4807,7 +4807,7 @@
 	turret -20 -2
 	# EVN fighter bay payload: "Thunderhead"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=2, Flags="4140", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:220"
 
 "ship" "Fed Carrier"
@@ -4870,7 +4870,7 @@
 	turret -20 -2
 	# EVN fighter bay payload: "Fed Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=1, Flags="4140", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:221"
 
 "ship" "Fed Carrier"
@@ -4938,7 +4938,7 @@
 	turret -20 -2
 	# EVN fighter bay payload: "Fed Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="4150", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:222"
 
 "ship" "Fed Viper"
@@ -4982,7 +4982,7 @@
 	gun 0 6
 	gun 0 6
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=0, Flags="8120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:223"
 
 "ship" "Fed Viper"
@@ -5026,7 +5026,7 @@
 	gun 0 6
 	gun 0 6
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=0, Flags="8130", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:224"
 
 "ship" "Fed Anaconda"
@@ -5071,7 +5071,7 @@
 	gun 11 5
 	gun -11 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=0, Flags="8120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:225"
 
 "ship" "Fed Anaconda"
@@ -5116,7 +5116,7 @@
 	gun 11 5
 	gun -11 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=0, Flags="8130", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:226"
 
 "ship" "Manticore"
@@ -5160,7 +5160,7 @@
 	gun 0 0
 	gun -30 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0120", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:227"
 
 "ship" "Manticore"
@@ -5204,7 +5204,7 @@
 	gun 0 0
 	gun -30 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0120", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:228"
 
 "ship" "Manticore"
@@ -5247,7 +5247,7 @@
 	gun 0 0
 	gun -30 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0120", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:229"
 
 "ship" "Manticore"
@@ -5292,7 +5292,7 @@
 	bay "Fighter" -30 0
 	# EVN fighter bay payload: "Pirate Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0120", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:230"
 
 "ship" "Pirate Starbridge"
@@ -5347,7 +5347,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=30%, PodCount=0, Flags="0120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:231"
 
 "ship" "Pirate Starbridge"
@@ -5403,7 +5403,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=30%, PodCount=0, Flags="0120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:232"
 
 "ship" "Pirate Starbridge"
@@ -5459,7 +5459,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=30%, PodCount=0, Flags="0120", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:233"
 
 "ship" "Pirate Starbridge"
@@ -5516,7 +5516,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=30%, PodCount=0, Flags="0120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:234"
 
 "ship" "Pirate Starbridge"
@@ -5572,7 +5572,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=30%, PodCount=0, Flags="0120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:235"
 
 "ship" "Pirate Enterprise"
@@ -5627,7 +5627,7 @@
 	turret 1 17
 	turret -1 17
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=15%, PodCount=0, Flags="0121", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:236"
 
 "ship" "Pirate Enterprise"
@@ -5683,7 +5683,7 @@
 	turret 1 17
 	turret -1 17
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=15%, PodCount=0, Flags="0121", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:237"
 
 "ship" "Pirate Enterprise"
@@ -5738,7 +5738,7 @@
 	turret 1 17
 	turret -1 17
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=15%, PodCount=0, Flags="0121", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:238"
 
 "ship" "Abomination"
@@ -5794,7 +5794,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:239"
 
 "ship" "Abomination"
@@ -5849,7 +5849,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:240"
 
 "ship" "Abomination"
@@ -5905,7 +5905,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:241"
 
 "ship" "Abomination"
@@ -5959,7 +5959,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0121", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:242"
 
 "ship" "Abomination"
@@ -6013,7 +6013,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:243"
 
 "ship" "Abomination"
@@ -6067,7 +6067,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:244"
 
 "ship" "Abomination"
@@ -6121,7 +6121,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:245"
 
 "ship" "Abomination"
@@ -6177,7 +6177,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:246"
 
 "ship" "Aurora Cruiser"
@@ -6234,7 +6234,7 @@
 	turret 0 -35
 	turret 0 -35
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=3, Flags="4131", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:247"
 
 "ship" "Aurora Cruiser"
@@ -6291,7 +6291,7 @@
 	turret 0 -35
 	turret 0 -35
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=3, Flags="4131", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:248"
 
 "ship" "Aurora Cruiser"
@@ -6348,7 +6348,7 @@
 	turret 0 -35
 	turret 0 -35
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=3, Flags="4131", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:249"
 
 "ship" "Aurora Cruiser"
@@ -6405,7 +6405,7 @@
 	turret 0 -35
 	turret 0 -35
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=3, Flags="4131", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:250"
 
 "ship" "Aurora Cruiser"
@@ -6463,7 +6463,7 @@
 	turret 0 -35
 	turret 0 -35
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=2, Flags="4121", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:251"
 
 "ship" "Aurora Cruiser"
@@ -6521,7 +6521,7 @@
 	turret 0 -35
 	turret 0 -35
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=3, Flags="4131", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:252"
 
 "ship" "Aurora Cruiser"
@@ -6579,7 +6579,7 @@
 	turret 0 -35
 	turret 0 -35
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=4, Flags="4131", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:253"
 
 "ship" "Aurora Cruiser"
@@ -6637,7 +6637,7 @@
 	turret 0 -35
 	turret 0 -35
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=5, Flags="4131", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:254"
 
 "ship" "Aurora Cruiser"
@@ -6695,7 +6695,7 @@
 	turret 0 -35
 	turret 0 -35
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=5, Flags="4131", Flags2="0083", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:255"
 
 "ship" "Zephyr;Cloaking"
@@ -6749,7 +6749,7 @@
 	turret 4 4
 	turret -4 4
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0054", Flags2="5282", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Zephyr was originally designed specifically for use with the cloaking organ.  Naturally, such a design meshed well with the requirements of the Mu'hari to interact and fly amongst the peoples of other nations, so they added design specifications until the final version of the Zephyr was born.  It is a versatile little craft, falling somewhere between the categories of fighter, freighter and gunboat without falling short in any way."
 
 "ship" "Zephyr;Cloaking"
@@ -6803,7 +6803,7 @@
 	turret 4 4
 	turret -4 4
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0054", Flags2="5282", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Zephyr was originally designed specifically for use with the cloaking organ.  Naturally, such a design meshed well with the requirements of the Mu'hari to interact and fly amongst the peoples of other nations, so they added design specifications until the final version of the Zephyr was born.  It is a versatile little craft, falling somewhere between the categories of fighter, freighter and gunboat without falling short in any way."
 
 "ship" "Zephyr;Cloaking"
@@ -6857,7 +6857,7 @@
 	turret 4 4
 	turret -4 4
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0054", Flags2="5282", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Zephyr was originally designed specifically for use with the cloaking organ.  Naturally, such a design meshed well with the requirements of the Mu'hari to interact and fly amongst the peoples of other nations, so they added design specifications until the final version of the Zephyr was born.  It is a versatile little craft, falling somewhere between the categories of fighter, freighter and gunboat without falling short in any way."
 
 "ship" "Arachnid;Cloaking"
@@ -6913,7 +6913,7 @@
 	turret 0 -3
 	turret 0 -3
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0030", Flags2="5381", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Like all Polaris vessels, the Arachnid starts out as a metal frame with internal components.  It is then suspended in a vat of amniotic fluid which begins to grow an organic shell around those components.  Eventually the two intermesh so well that it is difficult to pick the mechanical from the biological.  In battle, the Arachnid's main weapon is an organic-based Capacitor Pulse Laser that is grown during this phase and which runs from a fusion generator.  The generator itself is installed after other construction is complete, and Arachnids do not leave the shipyard without one{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Dragon;Cloaking"
@@ -6967,7 +6967,7 @@
 	turret 13 2
 	turret -13 2
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=0, Flags="0122", Flags2="5381", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Dragon is a strange ship by Polaris standards, but a much more conventional weapon than their other creations.  The Dragon's main biological component is the self-repairing skin that also acts as an etheric wave hyperdrive.  Apart from that, most of the ship is conventional, if somewhat high-tech.  It mounts twin wraithii cannon as its standard weapon, and has excellent speed and agility.  It is the only Polaris vessel sold to outsiders, and then only to trusted friends of the Polaris."
 
 "ship" "Scarab;Cloaking"
@@ -7026,7 +7026,7 @@
 	turret 0 0
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0050", Flags2="5383", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The mighty Scarab is the last line of defense for the Polaris people.  Only a handful of the vessels have ever been constructed, and they mount the most devastating ordinance that the Polaris can produce.  Two pulse lasers provide short-range firepower, while a polaron emitter in the front mandibles fires a packet of coherent energy dubbed the Polaron Torpedo.  This ship is capable of taking on entire fleets by itself, and has done so on occasion.  However, there are pitifully few of these proud ships, and the defense of Polaris Space is a heavy burden on their shoulders{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Striker;Cloaking"
@@ -7081,7 +7081,7 @@
 	turret 6 -3
 	turret -6 -3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0030", Flags2="5383", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "When the Polaris first settled on Kel'ar Iy, they arrived in ancient Deimos-class spacehulks and a myriad of smaller ships.  They had no weapons, exhausted first-generation hyperdrives and generally little to recommend themselves.   As the Polaris' well-founded civilization granted them new technologies, they began building cybernetic ships which were a combination of mechanical and biological components.  The first ship to be built like this was the Striker.  It serves as a long range scout and as a first line of defense against intruders."
 
 "ship" "Raven;Cloaking"
@@ -7132,7 +7132,7 @@
 	bay "Fighter" 0 92
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="005c", Flags2="53c3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "This ship is a behemoth.  Sliding through the ether with an ease that belies its enormous bulk, the Polaris Raven is a vision of glory and terror. It dwarfs the massive Scarab in both size and firepower; it is, simply put, the most powerful weapon humanity has ever constructed.  The Raven utilizes twin Etheric Induction engines for sublight travel.  These devices simply suck the fabric of space-time in the front, and squirt it out the back.  If one of these engines should ever stop suddenly, the graviton effects would cause the momentary formation of a black hole{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Raven"
@@ -7182,7 +7182,7 @@
 	bay "Fighter" 0 92
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="005c", Flags2="00c3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:264"
 
 "ship" "Raven;Cloaking"
@@ -7233,7 +7233,7 @@
 	bay "Fighter" 0 92
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="005c", Flags2="53c3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:265"
 
 "ship" "Zephyr;Cloaking+fast jump"
@@ -7288,7 +7288,7 @@
 	turret 4 4
 	turret -4 4
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0054", Flags2="52a2", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Zephyr was originally designed specifically for use with the cloaking organ.  Naturally, such a design meshed well with the requirements of the Mu'hari to interact and fly amongst the peoples of other nations, so they added design specifications until the final version of the Zephyr was born.  It is a versatile little craft, falling somewhere between the categories of fighter, freighter and gunboat without falling short in any way."
 
 "ship" "Arachnid;Cloaking+fast jump"
@@ -7345,7 +7345,7 @@
 	turret 0 -3
 	turret 0 -3
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0034", Flags2="53a1", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Like all Polaris vessels, the Arachnid starts out as a metal frame with internal components.  It is then suspended in a vat of amniotic fluid which begins to grow an organic shell around those components.  Eventually the two intermesh so well that it is difficult to pick the mechanical from the biological.  In battle, the Arachnid's main weapon is an organic-based Capacitor Pulse Laser that is grown during this phase and which runs from a fusion generator.  The generator itself is installed after other construction is complete, and Arachnids do not leave the shipyard without one{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Cambrian;fast jump"
@@ -7379,7 +7379,7 @@
 	outfits
 		"Tunnelling Organ" 1
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0002", Flags2="00a0", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "This immense vessel is the Polaris counterpart to the Leviathan.  Plying its way through hyperspace via massive Etheric Wave hyper-engines (mounted as part of its bio-organic skin in its nose and tail), the Cambrian transfers huge amounts of raw materials for the construction of new worlds and the upkeep of old ones.  These ships are usually assigned to a particular caste for a period of twenty years or so before rotation, but these timetables are quite flexible, and reflect the Polaran distaste for inefficient bureaucracy."
 
 "ship" "Dragon;Cloaking+fast jump"
@@ -7434,7 +7434,7 @@
 	turret 13 2
 	turret -13 2
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=0, Flags="0120", Flags2="43a1", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Dragon is a strange ship by Polaris standards, but a much more conventional weapon than their other creations.  The Dragon's main biological component is the self-repairing skin that also acts as an etheric wave hyperdrive.  Apart from that, most of the ship is conventional, if somewhat high-tech.  It mounts twin wraithii cannon as its standard weapon, and has excellent speed and agility.  It is the only Polaris vessel sold to outsiders, and then only to trusted friends of the Polaris."
 
 "ship" "Scarab;Cloaking+fast jump"
@@ -7494,7 +7494,7 @@
 	turret 0 0
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0052", Flags2="53a3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The mighty Scarab is the last line of defense for the Polaris people.  Only a handful of the vessels have ever been constructed, and they mount the most devastating ordinance that the Polaris can produce.  Two pulse lasers provide short-range firepower, while a polaron emitter in the front mandibles fires a packet of coherent energy dubbed the Polaron Torpedo.  This ship is capable of taking on entire fleets by itself, and has done so on occasion.  However, there are pitifully few of these proud ships, and the defense of Polaris Space is a heavy burden on their shoulders{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Striker;Cloaking+fast jump"
@@ -7550,7 +7550,7 @@
 	turret 6 -3
 	turret -6 -3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0032", Flags2="53e3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "When the Polaris first settled on Kel'ar Iy, they arrived in ancient Deimos-class spacehulks and a myriad of smaller ships.  They had no weapons, exhausted first-generation hyperdrives and generally little to recommend themselves.   As the Polaris' well-founded civilization granted them new technologies, they began building cybernetic ships which were a combination of mechanical and biological components.  The first ship to be built like this was the Striker.  It serves as a long range scout and as a first line of defense against intruders."
 
 "ship" "Raven;Cloaking+fast jump"
@@ -7602,7 +7602,7 @@
 	bay "Fighter" 0 92
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="005c", Flags2="53e3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "This ship is a behemoth.  Sliding through the ether with an ease that belies its enormous bulk, the Polaris Raven is a vision of glory and terror. It dwarfs the massive Scarab in both size and firepower; it is, simply put, the most powerful weapon humanity has ever constructed.  The Raven utilizes twin Etheric Induction engines for sublight travel.  These devices simply suck the fabric of space-time in the front, and squirt it out the back.  If one of these engines should ever stop suddenly, the graviton effects would cause the momentary formation of a black hole{P30'.' '. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Sprite;fast jump"
@@ -7636,7 +7636,7 @@
 	outfits
 		"Tunnelling Organ" 1
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0000", Flags2="00a0", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "One of the Tre'pira's greatest achievements was the exquisite timing and scheduling control required for efficient use of the giant Cambrian.  There are times, however, when it's simply not feasible to divert a Cambrian from its course to pick up a rush job, or a small load of goods.  Thus the Sprite takes up the shortfall; going in where the Cambrian can't fit, getting the smaller loads of cargo, ferrying cargo from the huge freighters to stations and planets, and all the other little tasks that the Cambrians simply aren't suited to."
 
 "ship" "Rebel Lightning"
@@ -7688,7 +7688,7 @@
 	turret 0 6
 	turret 2 6
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0144", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The unusual design of the Rautherion Lightning was destined to have its inner working probed by the famous ship designer Donald Chick.  Due to the relative youth of the design, Donald has left it mostly untouched until the vehicles have had time to 'shake down,' preferring to augment rather than tweak.  Thus it is that this machine is mostly as you'll find it off the production line, bar a few standard upgrades added to 'round her out,' as Donald puts it."
 
 "ship" "Pirate Thunderhead"
@@ -7741,7 +7741,7 @@
 	turret 0 -3
 	turret 0 -3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=10%, PodCount=0, Flags="0120", Flags2="0089", Flags3="0300".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Never underestimate the abilities of pirates to hot up ships that are already way too overpowered.  The Pirate Thunderhead gets around the problem of trying to soup up its engines by simply adding one more.  Speed and acceleration both benefit from this procedure, and the Pirate Thunderhead is an awesome vessel.  Good value for money."
 
 "ship" "Rebel Thunderhead"
@@ -7795,7 +7795,7 @@
 	turret 0 -5
 	turret 0 -5
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=10%, PodCount=0, Flags="0122", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Once more Donald Chick has taken out his toolkit and hydrospanners to churn out a masterpiece of adaptive engineering.  The Rebel Thunderhead, another triumph, isn't far removed from its antecedents, but fixes a few of the more glaring defects.  While the engines have remained relatively unchanged, the Rebel Thunderhead features greater armor and shield protection for many of the more vital systems, making it a more useful craft for decisive strikes."
 
 "ship" "Lightning"
@@ -7847,7 +7847,7 @@
 	turret 0 6
 	turret 2 6
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0122", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:277"
 
 "ship" "Lightning"
@@ -7900,7 +7900,7 @@
 	turret 0 6
 	turret 2 6
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0122", Flags2="008b", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:278"
 
 "ship" "Valkyrie"
@@ -7958,7 +7958,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=20%, PodCount=0, Flags="0100", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:279"
 
 "ship" "Valkyrie"
@@ -8014,7 +8014,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=20%, PodCount=0, Flags="0100", Flags2="0088", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:280"
 
 "ship" "Valkyrie"
@@ -8068,7 +8068,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=20%, PodCount=0, Flags="0100", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:281"
 
 "ship" "IDA Frigate"
@@ -8123,7 +8123,7 @@
 	turret 0 -30
 	turret 0 -30
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=5%, PodCount=1, Flags="0121", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:282"
 
 "ship" "IDA Frigate"
@@ -8179,7 +8179,7 @@
 	turret 0 -30
 	turret 0 -30
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=5%, PodCount=1, Flags="0121", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:283"
 
 "ship" "IDA Frigate"
@@ -8235,7 +8235,7 @@
 	turret 0 -30
 	turret 0 -30
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=5%, PodCount=1, Flags="0121", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:284"
 
 "ship" "Pirate Carrier"
@@ -8300,7 +8300,7 @@
 	turret 0 25
 	# EVN fighter bay payload: "Pirate Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0120", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:285"
 
 "ship" "Pirate Carrier"
@@ -8365,7 +8365,7 @@
 	turret 0 25
 	# EVN fighter bay payload: "Pirate Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0120", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:286"
 
 "ship" "Pirate Carrier"
@@ -8430,7 +8430,7 @@
 	turret 0 25
 	# EVN fighter bay payload: "Pirate Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0120", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:287"
 
 "ship" "Pirate Valkyrie"
@@ -8484,7 +8484,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0120", Flags2="008a", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:288"
 
 "ship" "Pirate Valkyrie"
@@ -8540,7 +8540,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0120", Flags2="008a", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:289"
 
 "ship" "Pirate Valkyrie"
@@ -8594,7 +8594,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0120", Flags2="008a", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:290"
 
 "ship" "Pirate Valkyrie"
@@ -8651,7 +8651,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0120", Flags2="008a", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:291"
 
 "ship" "Pirate Argosy"
@@ -8707,7 +8707,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=20%, PodCount=0, Flags="0121", Flags2="008a", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:292"
 
 "ship" "Pirate Argosy"
@@ -8763,7 +8763,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=20%, PodCount=0, Flags="0121", Flags2="008a", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:293"
 
 "ship" "Pirate Argosy"
@@ -8819,7 +8819,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=20%, PodCount=0, Flags="0121", Flags2="008a", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:294"
 
 "ship" "Aurora Carrier"
@@ -8881,7 +8881,7 @@
 	turret -10 50
 	# EVN fighter bay payload: "Firebird"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=5, Flags="0131", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:295"
 
 "ship" "Aurora Carrier"
@@ -8939,7 +8939,7 @@
 	turret -10 50
 	# EVN fighter bay payload: "Firebird"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=5, Flags="0131", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:296"
 
 "ship" "Aurora Carrier"
@@ -9002,7 +9002,7 @@
 	turret -10 50
 	# EVN fighter bay payload: "Thunderhead"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=5, Flags="0131", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:297"
 
 "ship" "Aurora Carrier"
@@ -9059,7 +9059,7 @@
 	turret -10 50
 	# EVN fighter bay payload: "Firebird"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=3, Flags="0131", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:298"
 
 "ship" "Aurora Carrier"
@@ -9116,7 +9116,7 @@
 	turret -10 50
 	# EVN fighter bay payload: "Firebird"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=5, Flags="0131", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:299"
 
 "ship" "Aurora Carrier"
@@ -9173,7 +9173,7 @@
 	turret -10 50
 	# EVN fighter bay payload: "Firebird"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=7, Flags="0131", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:300"
 
 "ship" "Aurora Carrier"
@@ -9231,7 +9231,7 @@
 	turret -10 50
 	# EVN fighter bay payload: "Firebird"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=9, Flags="0131", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:301"
 
 "ship" "Aurora Carrier"
@@ -9295,7 +9295,7 @@
 	turret -10 50
 	# EVN fighter bay payload: "Firebird"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=10, Flags="0131", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:302"
 
 "ship" "Firebird"
@@ -9339,7 +9339,7 @@
 	gun 5 -3
 	gun -5 -3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=0, Flags="8130", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:303"
 
 "ship" "Firebird"
@@ -9384,7 +9384,7 @@
 	gun 5 -3
 	gun -5 -3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=0, Flags="8130", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:304"
 
 "ship" "Phoenix"
@@ -9429,7 +9429,7 @@
 	gun 9 0
 	gun -9 0
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=20%, PodCount=0, Flags="8130", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:305"
 
 "ship" "Phoenix"
@@ -9476,7 +9476,7 @@
 	gun 9 0
 	gun -9 0
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=20%, PodCount=0, Flags="8130", Flags2="008b", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:306"
 
 "ship" "Thunderhead"
@@ -9529,7 +9529,7 @@
 	turret 0 -5
 	turret 0 -5
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=10%, PodCount=0, Flags="8120", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:307"
 
 "ship" "Thunderhead"
@@ -9581,7 +9581,7 @@
 	turret 0 -5
 	turret 0 -5
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=10%, PodCount=0, Flags="8120", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:308"
 
 "ship" "Thunderhead"
@@ -9634,7 +9634,7 @@
 	turret 0 -5
 	turret 0 -5
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=10%, PodCount=0, Flags="8120", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:309"
 
 "ship" "Raven"
@@ -9684,7 +9684,7 @@
 	bay "Fighter" 0 92
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="025c", Flags2="00c3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:310"
 
 "ship" "Arachnid"
@@ -9739,7 +9739,7 @@
 	turret 0 -3
 	turret 0 -3
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0050", Flags2="0081", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:311"
 
 "ship" "Dragon"
@@ -9793,7 +9793,7 @@
 	turret 13 2
 	turret -13 2
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=5%, PodCount=0, Flags="0140", Flags2="0081", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:312"
 
 "ship" "Dragon"
@@ -9847,7 +9847,7 @@
 	turret 13 2
 	turret -13 2
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0140", Flags2="0081", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:313"
 
 "ship" "Manta"
@@ -9898,7 +9898,7 @@
 	turret 0 7
 	turret 0 7
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=10%, PodCount=0, Flags="8030", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:314"
 
 "ship" "Manta"
@@ -9951,7 +9951,7 @@
 	turret 0 7
 	turret 0 7
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=10%, PodCount=0, Flags="8050", Flags2="0081", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:315"
 
 "ship" "Scarab"
@@ -10009,7 +10009,7 @@
 	turret 0 0
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=0, Flags="0058", Flags2="0083", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:316"
 
 "ship" "Striker"
@@ -10060,7 +10060,7 @@
 	gun 0 17
 	gun 0 17
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0050", Flags2="0083", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:317"
 
 "ship" "Striker"
@@ -10110,7 +10110,7 @@
 	gun 0 17
 	gun 0 17
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=5%, PodCount=0, Flags="0050", Flags2="0083", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:318"
 
 "ship" "Arachnid;Cloaking"
@@ -10166,7 +10166,7 @@
 	turret 0 -3
 	turret 0 -3
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0030", Flags2="5381", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:319"
 
 "ship" "Dragon;Cloaking"
@@ -10221,7 +10221,7 @@
 	turret 13 2
 	turret -13 2
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0122", Flags2="5381", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:320"
 
 "ship" "Scarab;Cloaking"
@@ -10279,7 +10279,7 @@
 	turret 0 0
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0050", Flags2="5383", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:321"
 
 "ship" "Striker;Cloaking"
@@ -10335,7 +10335,7 @@
 	turret 6 -3
 	turret -6 -3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0030", Flags2="5383", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:322"
 
 "ship" "Raven;Cloaking"
@@ -10386,7 +10386,7 @@
 	bay "Fighter" 0 92
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="005c", Flags2="53c3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:323"
 
 "ship" "Raven"
@@ -10436,7 +10436,7 @@
 	bay "Fighter" 0 92
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="005c", Flags2="00c3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:324"
 
 "ship" "Raven;Cloaking"
@@ -10487,7 +10487,7 @@
 	bay "Fighter" 0 92
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="005c", Flags2="53c3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:325"
 
 "ship" "Arachnid;Cloaking+fast jump"
@@ -10544,7 +10544,7 @@
 	turret 0 -3
 	turret 0 -3
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0034", Flags2="53a1", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:326"
 
 "ship" "Dragon;Cloaking+fast jump"
@@ -10600,7 +10600,7 @@
 	turret 13 2
 	turret -13 2
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0120", Flags2="43a1", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:327"
 
 "ship" "Scarab;Cloaking+fast jump"
@@ -10660,7 +10660,7 @@
 	turret 0 0
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0052", Flags2="53a3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:328"
 
 "ship" "Striker;Cloaking+fast jump"
@@ -10717,7 +10717,7 @@
 	turret 6 -3
 	turret -6 -3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0032", Flags2="53e3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:329"
 
 "ship" "Raven;Cloaking+fast jump"
@@ -10769,7 +10769,7 @@
 	bay "Fighter" 0 92
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="005c", Flags2="53e3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:330"
 
 "ship" "Mod Starbridge"
@@ -10826,7 +10826,7 @@
 	turret 0 2
 	turret 0 2
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=1, Flags="0134", Flags2="008b", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:331"
 
 "ship" "Mod Starbridge"
@@ -10884,7 +10884,7 @@
 	turret 0 2
 	turret 0 2
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=1, Flags="0134", Flags2="008b", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:332"
 
 "ship" "Pirate Viper"
@@ -10928,7 +10928,7 @@
 	gun 0 5
 	gun 0 5
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=0, Flags="8120", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:333"
 
 "ship" "Pirate Viper"
@@ -10972,7 +10972,7 @@
 	gun 0 5
 	gun 0 5
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=0, Flags="8120", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:334"
 
 "ship" "Viper"
@@ -11020,7 +11020,7 @@
 	gun 0 9
 	gun 0 9
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=40%, PodCount=0, Flags="8120", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:335"
 
 "ship" "Viper"
@@ -11069,7 +11069,7 @@
 	gun 0 9
 	gun 0 9
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=40%, PodCount=0, Flags="8120", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:336"
 
 "ship" "Rebel Viper"
@@ -11114,7 +11114,7 @@
 	gun 4 9
 	gun -4 9
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=15%, PodCount=0, Flags="8130", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:337"
 
 "ship" "Rebel Viper"
@@ -11160,7 +11160,7 @@
 	gun 4 9
 	gun -4 9
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=15%, PodCount=0, Flags="8130", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:338"
 
 "ship" "Rebel Viper"
@@ -11205,7 +11205,7 @@
 	gun 4 9
 	gun -4 9
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=15%, PodCount=0, Flags="8130", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:339"
 
 "ship" "Rebel Starbridge"
@@ -11262,7 +11262,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=1, Flags="0130", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:340"
 
 "ship" "Rebel Starbridge"
@@ -11319,7 +11319,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=1, Flags="0130", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:341"
 
 "ship" "Rebel Starbridge"
@@ -11379,7 +11379,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=1, Flags="0130", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:342"
 
 "ship" "Rebel Starbridge"
@@ -11439,7 +11439,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=1, Flags="0130", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:343"
 
 "ship" "Rebel Valkyrie"
@@ -11496,7 +11496,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=1, Flags="0130", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:344"
 
 "ship" "Rebel Valkyrie"
@@ -11553,7 +11553,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=1, Flags="0130", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:345"
 
 "ship" "Rebel Valkyrie"
@@ -11614,7 +11614,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=1, Flags="0130", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:346"
 
 "ship" "Rebel Dragon"
@@ -11676,7 +11676,7 @@
 	bay "Fighter" 0 35
 	# EVN fighter bay payload: "Rebel Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=1, Flags="0130", Flags2="0081", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:347"
 
 "ship" "Rebel Destroyer"
@@ -11738,7 +11738,7 @@
 	turret 5 12
 	turret -5 12
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=2, Flags="4130", Flags2="0083", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:348"
 
 "ship" "Rebel Destroyer"
@@ -11801,7 +11801,7 @@
 	turret 5 12
 	turret -5 12
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=2, Flags="4130", Flags2="0083", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:349"
 
 "ship" "Rebel Destroyer"
@@ -11868,7 +11868,7 @@
 	turret -5 12
 	# EVN fighter bay payload: "Rebel Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=2, Flags="4130", Flags2="0083", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:350"
 
 "ship" "Fed Scout Ship"
@@ -11923,7 +11923,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=4%, PodCount=0, Flags="0130", Flags2="0088", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:351"
 
 "ship" "Rebel Thunderhead"
@@ -11976,7 +11976,7 @@
 	turret 0 -5
 	turret 0 -5
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0144", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:352"
 
 "ship" "Rebel Thunderhead"
@@ -12029,7 +12029,7 @@
 	turret 0 -5
 	turret 0 -5
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0144", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:353"
 
 "ship" "Pirate Thunderhead"
@@ -12082,7 +12082,7 @@
 	turret 0 -3
 	turret 0 -3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=10%, PodCount=0, Flags="0120", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:354"
 
 "ship" "Rebel Dragon"
@@ -12137,7 +12137,7 @@
 	gun 0 35
 	gun 0 35
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=1, Flags="0130", Flags2="4281", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:355"
 
 "ship" "Rebel Destroyer"
@@ -12195,7 +12195,7 @@
 	turret 5 12
 	turret -5 12
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=2, Flags="4130", Flags2="4283", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:356"
 
 "ship" "Rebel Dragon"
@@ -12258,7 +12258,7 @@
 	bay "Fighter" 0 35
 	# EVN fighter bay payload: "Rebel Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=1, Flags="0130", Flags2="4281", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:357"
 
 "ship" "Rebel Destroyer"
@@ -12321,7 +12321,7 @@
 	turret 5 12
 	turret -5 12
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=2, Flags="4130", Flags2="4283", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:358"
 
 "ship" "Rebel Destroyer"
@@ -12385,7 +12385,7 @@
 	turret 5 12
 	turret -5 12
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=2, Flags="4130", Flags2="4283", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:359"
 
 "ship" "Rebel Destroyer"
@@ -12453,7 +12453,7 @@
 	turret -5 12
 	# EVN fighter bay payload: "Rebel Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=5%, PodCount=2, Flags="4130", Flags2="4283", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:360"
 
 "ship" "Shuttle;Second-Hand - poor"
@@ -12491,7 +12491,7 @@
 	gun 3 10
 	gun -3 10
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=5%, PodCount=0, Flags="0100", Flags2="0088", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "This shuttle looks like it was one of the original versions of the shuttle brought out all those centuries ago.  The previous owner assures you that it is still as good as the day he bought it, but it looks like it's not far from being consigned to the junk heap.  Still, as you look over it you notice that there is nothing that is really that wrong with it. But since all the systems look like they have been patched up that many times, there can be no way they perform quite as well as the day the ship rolled off the production line. On the plus side, it is very cheap."
 
 "ship" "Shuttle;Second-Hand - upgraded"
@@ -12532,7 +12532,7 @@
 	gun 3 10
 	gun -3 10
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=5%, PodCount=0, Flags="0120", Flags2="0088", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "While this shuttle looks like it has been around the traps for a while, it looks well cared for and in very good condition.  The former owner assures you that he made sure that every time something broke down he got it fixed by the finest Federation outfitters so as to ensure that his ship remained at least as reliable as the day it rolled off the production line.  Add in all the minor upgrades it has, this little ship is very definitely a bargain. Included outfits: Gravimetric Sensors, IFF Decoder, Auto-recharger"
 
 "ship" "Heavy Shuttle;Second-Hand - poor"
@@ -12570,7 +12570,7 @@
 	gun 3 14
 	gun -3 14
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=10%, PodCount=0, Flags="0120", Flags2="0088", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "This particular heavy shuttle looks like it has been through more than its fair share of scrapes and only just managed to come through them in one piece.  In looking over it you see that most of its systems have been patched up one way or another, but that not much works as well as its basic specs say it should.  Still, the price being offered by the former owner is more than reasonable, and it does still run..."
 
 "ship" "Heavy Shuttle;Second-Hand - upgrade"
@@ -12612,7 +12612,7 @@
 	gun 3 14
 	gun -3 14
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=10%, PodCount=0, Flags="0120", Flags2="0088", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "This particular heavy shuttle looks like it has been through more than its fair share of scrapes and its owner looks like he knows his way around his ship.  He nods politely as you start looking over his ship, and you can see just how much care he has taken of it.  It is clean and well-kept, and with all the minor upgrades it is very much a good buy for its price.  As far as heavy shuttles go, this one would be a bargain buy. Included outfits: Gravimetric Sensors, IFF Decoder, Auto-recharger, Battery Pack."
 
 "ship" "Pegasus;Second-Hand - poor"
@@ -12659,7 +12659,7 @@
 	turret 5 -6
 	turret -5 -6
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0100", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "This particular Pegasus looks like it was one of the original models created from one of the Leviathans destroyed in the Vell-os War.  It looks like nearly every panel has been replaced at one stage or another in its long career.  Still, its carrying capacity is impressive, and the price is remarkably cheap, so if you are looking for a bulk-freighter with few pretensions, this vessel would be quite a good buy. Requires: Capital Ships License"
 
 "ship" "Pegasus;Second-Hand - upgraded"
@@ -12715,7 +12715,7 @@
 	turret 5 -6
 	turret -5 -6
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0120", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "This looks to be one of the more recently manufactured versions of the Pegasus.  A few well-repaired panels tell you that the ship and its captain have been through one or two hairy moments and performed capably.  Nearly every aspect of the ship has been upgraded at least slightly, and the price given the upgrades and the included licenses is hardly unreasonable. Included outfits: Gravimetric Sensors, IFF Decoder, Auto-recharger, Afterburner, Shield Recharger, Carbon Fiber, Protective Technologies License, Heavy Weapons License. Requires: Capital Ships License"
 
 "ship" "Starbridge;Second-Hand - poor"
@@ -12768,7 +12768,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "You cannot help but feel irritated at the brash attitude of the young captain of this ship.  He is obviously from a rich family and was given this ship as a gift without him having any real idea of how to take care of it.  Looking at the systems of the Starbridge, you guess that he ran it into the ground flitting across the galaxy whilst trying to impress his peers.  Still, he is offering it cheap, and everything seems to work, even if only just, so you are tempted. Requires: Heavy Weapons License, Missile Weapons License"
 
 "ship" "Starbridge;Second-Hand - upgraded"
@@ -12831,7 +12831,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "This starship captain strikes you as being both honest and competent.  And as you look over this vessel, you can see that he knows how to take care of a state-of-the-art ship like the Starbridge.  As you note how professionally his upgrades have been installed, you can tell that he has obviously taken a lot of care of his ship.  Admittedly, he is asking for a price well over what is normal for a Starbridge, but he is throwing in all his upgrades, so it is still a very good buy. Included outfits: Gravimetric Sensors, IFF Decoder, Auto-recharger, Civilian IR Jammer, Civilian Radar Jammer, 3 layers of Carbon Fiber, Afterburner, 2 Battery Packs. Requires: Heavy Weapons License, Missile Weapons License, Protective Technologies License"
 
 "ship" "Terrapin;Second-Hand - poor"
@@ -12880,7 +12880,7 @@
 	turret -6 6
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=15%, PodCount=0, Flags="0120", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "While all Terrapins are remarkably ugly, this one takes the cake.  You can see why its captain is trying to sell her; he looks even less capable than his ship.  Having said that, his price is cheap, and the cargo carrying capacity of his ship is as great as that of any other Terrapin.  Still, you cannot help but wonder if this ship will suddenly fall apart on you at some stage."
 
 "ship" "Terrapin;Second-Hand - upgraded"
@@ -12936,7 +12936,7 @@
 	turret -6 6
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=15%, PodCount=0, Flags="0120", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "As far as Terrapins go, this one seems to be about the best you could hope for.  Well-kept and nicely upgraded, it is certainly worth looking at.  While the price is higher than you would expect for a Terrapin, you do get a more capable ship than normal, so it is definitely worth considering... Included outfits: Gravimetric Sensors, IFF Decoder, Afterburner, 2 Solar Panels, 3 Battery Packs."
 
 "ship" "Valkyrie;Second-Hand - poor"
@@ -12987,7 +12987,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=20%, PodCount=0, Flags="0120", Flags2="0088", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Clearly this little 'gas-guzzler' has seen better days.  Years and years of hot-rodding have left this Valkyrie in fairly poor condition.  Everything works, but all in a haphazard and shoddy way that will probably decrease overall performance at least a little.  Add to that the fact that most of the weapons have been stripped off her, and this is a very poor example of a Valkyrie.  Still, the former owner is offering her for a bargain basement price, so it is definitely worth a look."
 
 "ship" "Valkyrie;Second-Hand - upgraded"
@@ -13046,7 +13046,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=20%, PodCount=0, Flags="0120", Flags2="0088", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Clearly this captain of this vessel knows his business.  This little 'gas-guzzler' is in as good a condition as it would have been the day it rolled off the production line.  Add in his offer to hand over all the outfits and the upgraded weapon systems that go with the ship, and even the slightly inflated price becomes very reasonable.  You find yourself to be more than a little tempted. Included outfits: Gravimetric Sensors, IFF Decoder, Afterburner, 3 layers of Carbon Fiber, Civilian IR Jammer, Civilian Radar Jammer Requires: Heavy Weapons License, Missile Weapons License, Protective Technologies License"
 
 "ship" "RAGE Gunboat"
@@ -13104,7 +13104,7 @@
 	turret 12 3
 	turret -12 3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0032", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:373"
 
 "ship" "Unrelenting"
@@ -13170,7 +13170,7 @@
 	turret 0 25
 	# EVN fighter bay payload: "Pirate Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0120", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:374"
 
 "ship" "Zephyr"
@@ -13226,7 +13226,7 @@
 	turret 4 4
 	turret -4 4
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0054", Flags2="5282", Flags3="0101".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:375"
 
 "ship" "Zephyr;Cloaking"
@@ -13282,7 +13282,7 @@
 	turret 4 4
 	turret -4 4
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0054", Flags2="5282", Flags3="0101".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:376"
 
 "ship" "Pegasus;rogue"
@@ -13332,7 +13332,7 @@
 	turret 5 -6
 	turret -5 -6
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0120", Flags2="0080", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:377"
 
 "ship" "Kestrel"
@@ -13390,7 +13390,7 @@
 	turret -9 -12
 	# EVN fighter bay payload: "Pirate Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=100%, PodCount=0, Flags="0108", Flags2="0080", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Only two examples of this dark and menacing ship are known to exist.  This one was discovered floating near a wormhole at the farthest end of known space, and was subsequently salvaged and reconditioned by a collector of exotic starships before being put up for sale.  The only other known Kestrel is privately owned. Leading scientists theorize that these mystery ships somehow entered our galaxy from a parallel dimension."
 
 "ship" "Asteroid Miner"
@@ -13429,7 +13429,7 @@
 	gun -2 7
 	gun 2 7
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=15%, PodCount=0, Flags="0120", Flags2="0080", Flags3="0103".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "Asteroid mining has been the staple method of gathering materials since the time of the construction of the Kane band.  Dr. Harbhajan Singh of the University of Mumbai first came up with a basic robotic craft designed to latch onto an asteroid and maneuver it close to a planet for processing. Today's Asteroid Miners are manned by a crew of six and are the backbone of the resource gathering efforts of the Federation and the Auroran Empire."
 
 "ship" "Aurora Thunderforge"
@@ -13487,7 +13487,7 @@
 	turret 11 -18
 	turret -11 -18
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=0, Flags="4131", Flags2="0082", Flags3="0140".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Auroran Battlecruiser represents the very latest thinking by the best minds of the Empire.  Prompted by Vell-os artisans, the shipwrights of the First Family have created a vehicle with which they hope the Auroran people will wreak their vengeance.  The Thunderforge class battlecruiser mounts four heavy FPC batteries, two Storm Chainguns, two radar missile launchers and four 150 mm railguns.  Yet even this incredible arsenal pales into insignificance when compared to the Thunderforge's primary weapon system, the TripHammer.  The TripHammer is a gattling pattern energy weapon of awesome power.  Inspired by the Vell-os, Auroran weaponsmiths attacked the creation of the guns with typical exuberance.  With all the Vell-os help, the Battlecruiser can hold its own against any ship in the known universe."
 
 "ship" "Vell-os Dart"
@@ -13537,7 +13537,7 @@
 	turret 0 3
 	turret 0 3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=10%, PodCount=0, Flags="003c", Flags2="00f9", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "When a Vellosian has completed his or her basic training in the psi arts, one of the first things they attempt to construct is the delicate Dart.  Like all Vellosian ships, she is actually a pure psychic barrier that protects the Vell-os pilot within.  It is perfectly formed for hyperspace travel (nearly matching the beautiful Wraith), and will remain intact as long as enough of the mental energy of the Vell-os remains."
 
 "ship" "Vell-os Arrow"
@@ -13587,7 +13587,7 @@
 	turret 0 12
 	turret 0 12
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="003c", Flags2="00f9", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Arrow is an undertaking that has been known to be completed by a very skilled T3, but is more usually the in the purview of a T2.  It is a mental barrier of enormous proportions that affords the Vell-os pilot excellent physical protection.  The Arrow differs visibly from the Dart, in that it is significantly longer and more streamlined.  This is certainly a powerful vessel, but it is rarely seen in these dark times."
 
 "ship" "Vell-os Javelin"
@@ -13637,7 +13637,7 @@
 	turret 0 20
 	turret 0 20
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="005c", Flags2="00f2", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The Javelin embodies the hopes and desires of all the Vell-os people.  A Javelin has been known to be created by very powerful T2's, but as a general rule, only T1's are capable of constructing one of these glorious works of art.  A completed Javelin pulsates with the enormous mental energy of the Vell-os pilot as it travels.  This mental construct is most often created by Vellosians who are also capable of launching the devastating Autumn Petal attack and of disassociating their minds to create subsidiary vessels, making the Javelin one of the most powerful objects known to man.  Only a few Javelins exist now, as it is rare for enough Vellosians to be allowed to construct one."
 
 "ship" "Abomination"
@@ -13691,7 +13691,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:384"
 
 "ship" "Abomination"
@@ -13745,7 +13745,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0121", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:385"
 
 "ship" "Abomination"
@@ -13799,7 +13799,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:386"
 
 "ship" "Abomination"
@@ -13853,7 +13853,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="0089", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:387"
 
 "ship" "Abomination"
@@ -13907,7 +13907,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="008a", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:388"
 
 "ship" "Abomination"
@@ -13961,7 +13961,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="008b", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:389"
 
 "ship" "Phoenix"
@@ -14007,7 +14007,7 @@
 	gun 9 0
 	gun -9 0
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=20%, PodCount=1, Flags="8130", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:390"
 
 "ship" "Shuttle;economy at work"
@@ -14045,7 +14045,7 @@
 	gun 3 10
 	gun -3 10
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=5%, PodCount=0, Flags="0120", Flags2="0088", Flags3="0302".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:391"
 
 "ship" "Heavy Shuttle;economy at work"
@@ -14083,7 +14083,7 @@
 	gun 3 14
 	gun -3 14
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=10%, PodCount=0, Flags="0120", Flags2="0088", Flags3="0302".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:392"
 
 "ship" "Cargo Drone;economy at work"
@@ -14116,7 +14116,7 @@
 
 	outfits
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0124", Flags2="0099", Flags3="0302".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:393"
 
 "ship" "Sprite"
@@ -14149,7 +14149,7 @@
 
 	outfits
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="0000", Flags2="0080", Flags3="0102".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:394"
 
 "ship" "Abomination;Hune"
@@ -14206,7 +14206,7 @@
 	turret 7 11
 	turret -7 11
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=1, Flags="0131", Flags2="008b", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:395"
 
 "ship" "Aurora Carrier;Karrod"
@@ -14270,7 +14270,7 @@
 	turret -10 50
 	# EVN fighter bay payload: "Firebird"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=10%, PodCount=10, Flags="0131", Flags2="0082", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:396"
 
 "ship" "Aurora Cruiser;Duradar"
@@ -14328,7 +14328,7 @@
 	turret 0 -35
 	turret 0 -35
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=2, Flags="4121", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:397"
 
 "ship" "Starbridge"
@@ -14383,7 +14383,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:398"
 
 "ship" "Valkyrie"
@@ -14438,7 +14438,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=20%, PodCount=0, Flags="0120", Flags2="0088", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:399"
 
 "ship" "Pirate Starbridge"
@@ -14493,7 +14493,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=30%, PodCount=0, Flags="0120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:400"
 
 "ship" "Pirate Valkyrie"
@@ -14547,7 +14547,7 @@
 	turret 0 5
 	turret 0 5
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=25%, PodCount=0, Flags="0120", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:401"
 
 "ship" "Pirate Argosy"
@@ -14602,7 +14602,7 @@
 	turret 0 0
 	turret 0 0
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=20%, PodCount=0, Flags="0121", Flags2="008a", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:402"
 
 "ship" "Pirate Enterprise"
@@ -14655,7 +14655,7 @@
 	turret 1 17
 	turret -1 17
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=15%, PodCount=0, Flags="0121", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:403"
 
 "ship" "Pirate Viper"
@@ -14697,7 +14697,7 @@
 	gun 0 5
 	gun 0 5
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=30%, PodCount=0, Flags="8120", Flags2="0089", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:404"
 
 "ship" "Rebel Dragon"
@@ -14760,7 +14760,7 @@
 	bay "Fighter" 0 35
 	# EVN fighter bay payload: "Rebel Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=1, Flags="0130", Flags2="4281", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:405"
 
 "ship" "Raven;Cloaking+fast jump"
@@ -14811,7 +14811,7 @@
 	bay "Fighter" 0 92
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="005c", Flags2="53e3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:406"
 
 "ship" "Scarab;Cloaking+fast jump"
@@ -14871,7 +14871,7 @@
 	turret 0 0
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0052", Flags2="53a3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:407"
 
 "ship" "Arachnid;Cloaking+fast jump"
@@ -14928,7 +14928,7 @@
 	turret 0 -3
 	turret 0 -3
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="0034", Flags2="53a1", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:408"
 
 "ship" "Dragon;Cloaking+fast jump"
@@ -14984,7 +14984,7 @@
 	turret 13 2
 	turret -13 2
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0120", Flags2="43a1", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:409"
 
 "ship" "Striker;Cloaking+fast jump"
@@ -15041,7 +15041,7 @@
 	turret 6 -3
 	turret -6 -3
 	# EVN AI/ship flags retained: InherentAI=4, SkillVar=5%, PodCount=0, Flags="0032", Flags2="53e3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:410"
 
 "ship" "Raven;Cloaking+fast jump+inertia"
@@ -15093,7 +15093,7 @@
 	bay "Fighter" 0 92
 	# EVN fighter bay payload: "Manta"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=3, SkillVar=0%, PodCount=0, Flags="005c", Flags2="53a3", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:411"
 
 "ship" "Rebel IDA Frigate"
@@ -15153,7 +15153,7 @@
 	turret 0 -30
 	# EVN fighter bay payload: "Rebel Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=5%, PodCount=0, Flags="0121", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "The IDA Frigate was the mainstay of the Colonial Council line before the collapse of the Gate system, and instrumental in the defense of the core worlds against the Aurorans.  These ships were made to last; the spaceframe itself is compartmental and component-based, and, like the Leviathan, it is virtually indestructible.  Once Donald Chick got his hands on it, he retrofitted it to be a fairly lethal weapons platform capable of projecting a fair amount of firepower deep into enemy {P30'territory.' 'territory. REQUIRES YOU TO REGISTER EV NOVA'}"
 
 "ship" "Rebel IDA Frigate"
@@ -15214,7 +15214,7 @@
 	turret 0 -30
 	# EVN fighter bay payload: "Rebel Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=5%, PodCount=0, Flags="0120", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:413"
 
 "ship" "Rebel IDA Frigate"
@@ -15276,7 +15276,7 @@
 	turret 0 -30
 	# EVN fighter bay payload: "Rebel Viper"; ES bay category remains Fighter.
 	# EVN AI/ship flags retained: InherentAI=2, SkillVar=5%, PodCount=0, Flags="0122", Flags2="0082", Flags3="0100".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:414"
 
 "ship" "Escape Pod"
@@ -15309,7 +15309,7 @@
 
 	outfits
 	# EVN AI/ship flags retained: InherentAI=1, SkillVar=0%, PodCount=0, Flags="8100", Flags2="0000", Flags3="0000".
-	# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.
+	# EVN InherentAI applies to escort behavior; generated EVN fleets map Dude AIType and selected ship behavior flags to ES personalities.
 	"description" "No matching dësc for shïp of id nova:895"
 
 shipyard "EVN Ships 1"

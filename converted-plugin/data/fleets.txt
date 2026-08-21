@@ -3,7 +3,8 @@
 
 fleet "EVN Dude 274 Big Rebels"
 	government "Rebellion"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 14
 		"Mod Starbridge"
 	variant 12
@@ -15,13 +16,15 @@ fleet "EVN Dude 274 Big Rebels"
 
 fleet "EVN Dude 273 RAGE Gunboat"
 	government "Bureau"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"RAGE Gunboat"
 
 fleet "EVN Dude 272 Small Polaris"
 	government "Nil'kemorya"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 50
 		"Striker;Cloaking+fast jump"
 	variant 30
@@ -31,19 +34,22 @@ fleet "EVN Dude 272 Small Polaris"
 
 fleet "EVN Dude 269 RAGE Gunboat"
 	government "Bureau"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"RAGE Gunboat"
 
 fleet "EVN Dude 268 Pirate Carrier"
 	government "Associated Guild of Free Traders"
-	personality timid
+	personality timid coward frugal
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Pirate Carrier"
 
 fleet "EVN Dude 267 Duellists"
 	government "Duellist"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 50
 		"Abomination"
 	variant 30
@@ -51,13 +57,15 @@ fleet "EVN Dude 267 Duellists"
 
 fleet "EVN Dude 266 Association"
 	government "Association of Free Traders"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Pirate Valkyrie"
 
 fleet "EVN Dude 263 Small Auroran Interceptor"
 	government "Auroran Empire"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Abomination"
 	variant 30
@@ -69,13 +77,15 @@ fleet "EVN Dude 263 Small Auroran Interceptor"
 
 fleet "EVN Dude 262 Big Rebels"
 	government "Rebellion"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Rebel Dragon"
 
 fleet "EVN Dude 261 Pirates - Advanced dude"
 	government "Pirate"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 25
 		"Pirate Viper"
 	variant 15
@@ -91,7 +101,8 @@ fleet "EVN Dude 261 Pirates - Advanced dude"
 
 fleet "EVN Dude 260 Marauders - Advanced dude"
 	government "Marauder"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 25
 		"Pirate Viper"
 	variant 15
@@ -107,37 +118,43 @@ fleet "EVN Dude 260 Marauders - Advanced dude"
 
 fleet "EVN Dude 257 Manticore"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Manticore"
 
 fleet "EVN Dude 256 Fed Patrol Boat"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Fed Patrol Boat"
 
 fleet "EVN Dude 255 Fed Destroyer"
 	government "Federation"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Fed Destroyer"
 
 fleet "EVN Dude 254 Auroran Cruiser"
 	government "Auroran Empire"
-	personality nemesis
+	personality heroic surveillance frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Aurora Cruiser"
 
 fleet "EVN Dude 252 Pirate Valkyrie"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Pirate Valkyrie"
 
 fleet "EVN Dude 249 Civilian shuttle craft"
 	government "Civvies"
-	personality timid
+	personality timid coward frugal harvests swarming
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 50
 		"Cargo Drone;economy at work"
 	variant 25
@@ -147,7 +164,8 @@ fleet "EVN Dude 249 Civilian shuttle craft"
 
 fleet "EVN Dude 248 Sigma shuttle craft"
 	government "Sigma Shipyards"
-	personality timid
+	personality timid coward frugal harvests swarming
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 50
 		"Cargo Drone;economy at work"
 	variant 25
@@ -157,37 +175,43 @@ fleet "EVN Dude 248 Sigma shuttle craft"
 
 fleet "EVN Dude 245 Leviathan"
 	government "Federation;hates Temmin Shard"
-	personality timid
+	personality timid coward frugal
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Leviathan"
 
 fleet "EVN Dude 243 Disabled Auroran Cruiser"
 	government "Derelicts"
-	personality timid
+	personality timid coward frugal
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Aurora Cruiser"
 
 fleet "EVN Dude 241 Large Heraan War Ships"
 	government "Family Heraan"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Aurora Carrier"
 
 fleet "EVN Dude 239 Duellists"
 	government "Duellist"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Abomination"
 
 fleet "EVN Dude 238 Tutorial Derelict"
 	government "Derelicts"
-	personality timid
+	personality timid coward swarming frugal
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Pirate Viper"
 
 fleet "EVN Dude 236 Small Auroran Interceptor"
 	government "Auroran Empire"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Abomination"
 	variant 30
@@ -199,7 +223,8 @@ fleet "EVN Dude 236 Small Auroran Interceptor"
 
 fleet "EVN Dude 234 Pirate"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 33
 		"Pirate Starbridge"
 	variant 30
@@ -209,13 +234,15 @@ fleet "EVN Dude 234 Pirate"
 
 fleet "EVN Dude 226 Krane"
 	government "Bureau"
-	personality uninterested
+	personality uninterested frugal
+	# EVN dude AIType 2 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Starbridge"
 
 fleet "EVN Dude 218 Slyvilian Defence Scum"
 	government "Bureau"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 39
 		"Valkyrie"
 	variant 29
@@ -225,13 +252,15 @@ fleet "EVN Dude 218 Slyvilian Defence Scum"
 
 fleet "EVN Dude 225 Merrick'Ahh"
 	government "Family Moash"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Aurora Carrier"
 
 fleet "EVN Dude 233 Rogue Pirates (mixed)"
 	government "Marauder"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 39
 		"Viper"
 	variant 21
@@ -245,7 +274,8 @@ fleet "EVN Dude 233 Rogue Pirates (mixed)"
 
 fleet "EVN Dude 237 Large Auroran War Ships"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 44
 		"Aurora Cruiser"
 	variant 25
@@ -255,13 +285,15 @@ fleet "EVN Dude 237 Large Auroran War Ships"
 
 fleet "EVN Dude 253 Pirate Starbridge"
 	government "Pirate"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Pirate Starbridge"
 
 fleet "EVN Dude 128 Lone Federation Ship"
 	government "Federation"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 20
 		"Fed Patrol Boat"
 	variant 20
@@ -275,19 +307,22 @@ fleet "EVN Dude 128 Lone Federation Ship"
 
 fleet "EVN Dude 209 Desperation..."
 	government "Pirate"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Manticore"
 
 fleet "EVN Dude 213 Starbridge"
 	government "Civvies"
-	personality timid
+	personality timid coward swarming frugal
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 65
 		"Starbridge"
 
 fleet "EVN Dude 228 Association"
 	government "Association of Free Traders"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 22
 		"Pirate Enterprise"
 	variant 17
@@ -299,7 +334,8 @@ fleet "EVN Dude 228 Association"
 
 fleet "EVN Dude 242 Large Dani War Ships"
 	government "Family Dani"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 45
 		"Abomination"
 	variant 40
@@ -309,7 +345,8 @@ fleet "EVN Dude 242 Large Dani War Ships"
 
 fleet "EVN Dude 130 Lone Big Federation Ship"
 	government "Federation"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 86
 		"Fed Destroyer"
 	variant 11
@@ -317,7 +354,8 @@ fleet "EVN Dude 130 Lone Big Federation Ship"
 
 fleet "EVN Dude 207 Small Houseless"
 	government "Houseless Warriors"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 20
 		"Firebird"
 	variant 20
@@ -329,13 +367,15 @@ fleet "EVN Dude 207 Small Houseless"
 
 fleet "EVN Dude 217 Trader"
 	government "Bureau"
-	personality nemesis
+	personality heroic surveillance frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"IDA Frigate"
 
 fleet "EVN Dude 227 Association - disabled"
 	government "Association of Free Traders"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 22
 		"Pirate Enterprise"
 	variant 17
@@ -347,7 +387,8 @@ fleet "EVN Dude 227 Association - disabled"
 
 fleet "EVN Dude 235 Auroran"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 50
 		"Abomination"
 	variant 15
@@ -359,7 +400,8 @@ fleet "EVN Dude 235 Auroran"
 
 fleet "EVN Dude 265 Pirates"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 22
 		"Pirate Enterprise"
 	variant 17
@@ -371,7 +413,8 @@ fleet "EVN Dude 265 Pirates"
 
 fleet "EVN Dude 131 Auroran"
 	government "Federation"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 50
 		"Abomination"
 	variant 15
@@ -383,7 +426,8 @@ fleet "EVN Dude 131 Auroran"
 
 fleet "EVN Dude 202 Pirate"
 	government "Associated Guild of Free Traders"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 20
 		"Pirate Starbridge"
 	variant 18
@@ -395,13 +439,15 @@ fleet "EVN Dude 202 Pirate"
 
 fleet "EVN Dude 208 Michaleen's Honourguard"
 	government "Wild Geese"
-	personality timid
+	personality timid coward swarming frugal
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 58
 		"Thunderhead"
 
 fleet "EVN Dude 216 Small Heraan Interceptor"
 	government "Family Heraan"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Abomination"
 	variant 30
@@ -413,37 +459,43 @@ fleet "EVN Dude 216 Small Heraan Interceptor"
 
 fleet "EVN Dude 219 Large Heraan War Ships"
 	government "Family Heraan"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Aurora Carrier"
 
 fleet "EVN Dude 224 Duellists"
 	government "Duellist"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Abomination"
 
 fleet "EVN Dude 250 Polaris Sprite shuttle"
 	government "Polaris"
-	personality timid
+	personality timid coward frugal harvests
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Sprite"
 
 fleet "EVN Dude 251 Abomination"
 	government "Auroran Empire"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Abomination"
 
 fleet "EVN Dude 264 Large Heraan War Ships"
 	government "Family Heraan"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Aurora Cruiser"
 
 fleet "EVN Dude 132 Lone idiot in terrapin"
 	government "Civvies"
-	personality uninterested
+	personality uninterested frugal mining harvests swarming
+	# EVN dude AIType 2 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 53
 		"Terrapin"
 	variant 17
@@ -457,7 +509,8 @@ fleet "EVN Dude 132 Lone idiot in terrapin"
 
 fleet "EVN Dude 199 United Shipping"
 	government "United Shipping"
-	personality uninterested
+	personality uninterested frugal swarming
+	# EVN dude AIType 2 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 24
 		"IDA Frigate"
 	variant 17
@@ -471,7 +524,8 @@ fleet "EVN Dude 199 United Shipping"
 
 fleet "EVN Dude 206 Houseless"
 	government "Houseless Warriors"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 30
 		"Argosy"
 	variant 20
@@ -481,19 +535,22 @@ fleet "EVN Dude 206 Houseless"
 
 fleet "EVN Dude 212 Valkyrie"
 	government "Civvies"
-	personality timid
+	personality timid coward frugal
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 65
 		"Valkyrie"
 
 fleet "EVN Dude 240 Initiates"
 	government "Duellist"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Phoenix"
 
 fleet "EVN Dude 133 Pirate"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 20
 		"Pirate Starbridge"
 	variant 18
@@ -505,7 +562,8 @@ fleet "EVN Dude 133 Pirate"
 
 fleet "EVN Dude 191 Large Auroran War Ships"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 41
 		"Abomination"
 	variant 30
@@ -515,7 +573,8 @@ fleet "EVN Dude 191 Large Auroran War Ships"
 
 fleet "EVN Dude 198 Small Pirates"
 	government "Pirate"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 22
 		"Pirate Viper"
 	variant 21
@@ -525,7 +584,8 @@ fleet "EVN Dude 198 Small Pirates"
 
 fleet "EVN Dude 203 Pirates"
 	government "Associated Guild of Free Traders"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 22
 		"Pirate Enterprise"
 	variant 17
@@ -537,13 +597,15 @@ fleet "EVN Dude 203 Pirates"
 
 fleet "EVN Dude 229 McGowan"
 	government "Associated Guild of Free Traders"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Pirate Carrier"
 
 fleet "EVN Dude 232 Rogue Pirates - Freighters"
 	government "Marauder"
-	personality nemesis
+	personality heroic surveillance frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 35
 		"Pegasus;rogue"
 	variant 35
@@ -553,7 +615,8 @@ fleet "EVN Dude 232 Rogue Pirates - Freighters"
 
 fleet "EVN Dude 129 Trader"
 	government "Civvies"
-	personality timid
+	personality timid coward frugal swarming
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 25
 		"Terrapin"
 	variant 18
@@ -565,19 +628,22 @@ fleet "EVN Dude 129 Trader"
 
 fleet "EVN Dude 187 Wraith (nice)"
 	government "Wraith"
-	personality uninterested
+	personality uninterested swarming
+	# EVN dude AIType 2 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Wraith (Adult)"
 
 fleet "EVN Dude 197 RAGE Gunboat"
 	government "Bureau"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"RAGE Gunboat"
 
 fleet "EVN Dude 222 Duellist"
 	government "Duellist"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 50
 		"Abomination"
 	variant 30
@@ -587,13 +653,15 @@ fleet "EVN Dude 222 Duellist"
 
 fleet "EVN Dude 223 The Pack"
 	government "Family Heraan"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Abomination"
 
 fleet "EVN Dude 134 Tough Trader"
 	government "Civvies"
-	personality uninterested
+	personality uninterested frugal swarming
+	# EVN dude AIType 2 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 15
 		"Pegasus"
 	variant 15
@@ -607,13 +675,15 @@ fleet "EVN Dude 134 Tough Trader"
 
 fleet "EVN Dude 186 Wraith (nasty)"
 	government "Wraith"
-	personality uninterested
+	personality uninterested swarming
+	# EVN dude AIType 2 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Wraith (Adult)"
 
 fleet "EVN Dude 195 Lone Federation Ship"
 	government "Federation"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 25
 		"Fed Patrol Boat"
 	variant 25
@@ -625,7 +695,8 @@ fleet "EVN Dude 195 Lone Federation Ship"
 
 fleet "EVN Dude 210 Pyrogenesis Skymining"
 	government "Pyrogenesis Skymining"
-	personality uninterested
+	personality uninterested frugal swarming
+	# EVN dude AIType 2 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 15
 		"Pegasus"
 	variant 10
@@ -641,7 +712,8 @@ fleet "EVN Dude 210 Pyrogenesis Skymining"
 
 fleet "EVN Dude 211 Sigma Shipyards"
 	government "Sigma Shipyards"
-	personality timid
+	personality timid coward frugal swarming
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 48
 		"Pegasus"
 	variant 39
@@ -651,19 +723,22 @@ fleet "EVN Dude 211 Sigma Shipyards"
 
 fleet "EVN Dude 220 Hune"
 	government "Rimerta"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Abomination;Hune"
 
 fleet "EVN Dude 221 Large Moash War Ships"
 	government "Family Moash"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Aurora Cruiser"
 
 fleet "EVN Dude 270 Shards"
 	government "Shards"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 25
 		"Rebel Dragon"
 	variant 20
@@ -681,13 +756,15 @@ fleet "EVN Dude 270 Shards"
 
 fleet "EVN Dude 271 Scarab"
 	government "Polaris"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Scarab;Cloaking+fast jump"
 
 fleet "EVN Dude 135 Lone Polaris Freighter"
 	government "Polaris"
-	personality timid
+	personality timid coward frugal
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 42
 		"Sprite"
 	variant 26
@@ -699,7 +776,8 @@ fleet "EVN Dude 135 Lone Polaris Freighter"
 
 fleet "EVN Dude 185 Auroran"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 50
 		"Abomination"
 	variant 15
@@ -711,13 +789,15 @@ fleet "EVN Dude 185 Auroran"
 
 fleet "EVN Dude 190 Krypt"
 	government "Krypt"
-	personality nemesis
+	personality heroic surveillance swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Krypt Pod"
 
 fleet "EVN Dude 205 Houseless"
 	government "Houseless Warriors"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 25
 		"Firebird"
 	variant 25
@@ -731,19 +811,22 @@ fleet "EVN Dude 205 Houseless"
 
 fleet "EVN Dude 258 Raczak"
 	government "Roughnecks"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Fed Carrier"
 
 fleet "EVN Dude 259 Lone idiot in terrapin"
 	government "Civvies"
-	personality uninterested
+	personality uninterested frugal
+	# EVN dude AIType 2 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Terrapin"
 
 fleet "EVN Dude 136 Lone Polaris"
 	government "Nil'kemorya"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 23
 		"Zephyr"
 	variant 23
@@ -759,25 +842,29 @@ fleet "EVN Dude 136 Lone Polaris"
 
 fleet "EVN Dude 182 Polaris cruiser"
 	government "Polaris"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Raven;Cloaking+fast jump"
 
 fleet "EVN Dude 183 RAGE Gunboat"
 	government "Federation"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"RAGE Gunboat"
 
 fleet "EVN Dude 196 Llyrell"
 	government "Vell-os"
-	personality nemesis
+	personality heroic surveillance
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Vell-os Javelin"
 
 fleet "EVN Dude 246 Lone Federation Ship"
 	government "Federation;hates Temmin Shard"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 20
 		"Fed Patrol Boat"
 	variant 20
@@ -791,7 +878,8 @@ fleet "EVN Dude 246 Lone Federation Ship"
 
 fleet "EVN Dude 247 Pyro shuttle craft"
 	government "Pyrogenesis Skymining"
-	personality timid
+	personality timid coward frugal harvests swarming
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 50
 		"Cargo Drone;economy at work"
 	variant 25
@@ -801,7 +889,8 @@ fleet "EVN Dude 247 Pyro shuttle craft"
 
 fleet "EVN Dude 138 Large Polaris"
 	government "Nil'kemorya"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 26
 		"Arachnid"
 	variant 26
@@ -819,7 +908,8 @@ fleet "EVN Dude 138 Large Polaris"
 
 fleet "EVN Dude 180 Lone Federation Ship"
 	government "Federation"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 25
 		"Fed Patrol Boat"
 	variant 25
@@ -831,13 +921,15 @@ fleet "EVN Dude 180 Lone Federation Ship"
 
 fleet "EVN Dude 181 Large Auroran War Ships"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 90
 		"Aurora Cruiser"
 
 fleet "EVN Dude 184 Large Auroran War Ships"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 45
 		"Aurora Cruiser"
 	variant 20
@@ -847,7 +939,8 @@ fleet "EVN Dude 184 Large Auroran War Ships"
 
 fleet "EVN Dude 194 Lone Big Federation Ship"
 	government "Federation"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 60
 		"Fed Destroyer"
 	variant 30
@@ -855,13 +948,15 @@ fleet "EVN Dude 194 Lone Big Federation Ship"
 
 fleet "EVN Dude 230 Leviathan - disabled"
 	government "Derelicts"
-	personality timid
+	personality timid coward frugal
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Leviathan"
 
 fleet "EVN Dude 231 Rogue Pirates (Fighters)"
 	government "Marauder"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 60
 		"Pirate Viper"
 	variant 40
@@ -869,13 +964,15 @@ fleet "EVN Dude 231 Rogue Pirates (Fighters)"
 
 fleet "EVN Dude 244 Temmin Shard"
 	government "Temmin Shard"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Mod Starbridge"
 
 fleet "EVN Dude 137 Small Polaris"
 	government "Nil'kemorya"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 25
 		"Manta"
 	variant 20
@@ -889,7 +986,8 @@ fleet "EVN Dude 137 Small Polaris"
 
 fleet "EVN Dude 175 Civilian"
 	government "Civvies"
-	personality timid
+	personality timid coward frugal swarming
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 30
 		"Lightning"
 	variant 13
@@ -901,19 +999,22 @@ fleet "EVN Dude 175 Civilian"
 
 fleet "EVN Dude 178 RAGE Gunboat"
 	government "Federation"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"RAGE Gunboat"
 
 fleet "EVN Dude 179 Federation Carrier"
 	government "Federation"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Fed Carrier"
 
 fleet "EVN Dude 193 Large Polaris"
 	government "Nil'kemorya"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 30
 		"Arachnid"
 	variant 30
@@ -925,7 +1026,8 @@ fleet "EVN Dude 193 Large Polaris"
 
 fleet "EVN Dude 204 Small Pirates"
 	government "Associated Guild of Free Traders"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 22
 		"Pirate Viper"
 	variant 21
@@ -935,19 +1037,22 @@ fleet "EVN Dude 204 Small Pirates"
 
 fleet "EVN Dude 214 Terrapin"
 	government "Civvies"
-	personality timid
+	personality timid coward frugal
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 65
 		"Terrapin"
 
 fleet "EVN Dude 215 Pegasus"
 	government "Civvies"
-	personality timid
+	personality timid coward frugal
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 65
 		"Pegasus"
 
 fleet "EVN Dude 139 Auroran (Fed chapter 1)"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 45
 		"Firebird"
 	variant 35
@@ -957,7 +1062,8 @@ fleet "EVN Dude 139 Auroran (Fed chapter 1)"
 
 fleet "EVN Dude 168 Mad Auroran Interceptor"
 	government "Auroran Empire"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Abomination"
 	variant 20
@@ -969,7 +1075,8 @@ fleet "EVN Dude 168 Mad Auroran Interceptor"
 
 fleet "EVN Dude 172 Pirates"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 22
 		"Pirate Enterprise"
 	variant 17
@@ -981,7 +1088,8 @@ fleet "EVN Dude 172 Pirates"
 
 fleet "EVN Dude 173 Lone Small Federation Ship"
 	government "Federation"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 25
 		"Fed Patrol Boat"
 	variant 25
@@ -991,7 +1099,8 @@ fleet "EVN Dude 173 Lone Small Federation Ship"
 
 fleet "EVN Dude 192 Small Auroran Interceptor"
 	government "Auroran Empire"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Abomination"
 	variant 20
@@ -1003,19 +1112,22 @@ fleet "EVN Dude 192 Small Auroran Interceptor"
 
 fleet "EVN Dude 200 Zephyr"
 	government "Mu'Hari"
-	personality nemesis
+	personality heroic surveillance frugal mining
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Zephyr"
 
 fleet "EVN Dude 201 Zephyr"
 	government "Mu'Hari"
-	personality nemesis
+	personality heroic surveillance frugal mining
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Zephyr;Cloaking"
 
 fleet "EVN Dude 140 Auroran (Fed end chap 1)"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 21
 		"Firebird"
 	variant 21
@@ -1027,7 +1139,8 @@ fleet "EVN Dude 140 Auroran (Fed end chap 1)"
 
 fleet "EVN Dude 165 Large Heraan War Ships"
 	government "Family Heraan"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 45
 		"Aurora Cruiser"
 	variant 25
@@ -1039,7 +1152,8 @@ fleet "EVN Dude 165 Large Heraan War Ships"
 
 fleet "EVN Dude 170 Rebels"
 	government "Rebellion"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 25
 		"Rebel Viper"
 	variant 12
@@ -1053,7 +1167,8 @@ fleet "EVN Dude 170 Rebels"
 
 fleet "EVN Dude 171 Big Rebels"
 	government "Rebellion"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 20
 		"Rebel IDA Frigate"
 	variant 16
@@ -1065,13 +1180,15 @@ fleet "EVN Dude 171 Big Rebels"
 
 fleet "EVN Dude 188 RAGE Gunboat"
 	government "Bureau"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"RAGE Gunboat"
 
 fleet "EVN Dude 189 Roughnecks"
 	government "Roughnecks"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 10
 		"Fed Destroyer"
 	variant 8
@@ -1079,7 +1196,8 @@ fleet "EVN Dude 189 Roughnecks"
 
 fleet "EVN Dude 141 Rebel (Fed chap2)"
 	government "Rebellion"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Rebel Viper"
 	variant 15
@@ -1093,7 +1211,8 @@ fleet "EVN Dude 141 Rebel (Fed chap2)"
 
 fleet "EVN Dude 163 Large Vella War Ships"
 	government "Family Vella"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 45
 		"Abomination"
 	variant 40
@@ -1103,7 +1222,8 @@ fleet "EVN Dude 163 Large Vella War Ships"
 
 fleet "EVN Dude 164 Large Dani War Ships"
 	government "Family Dani"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 45
 		"Abomination"
 	variant 40
@@ -1113,7 +1233,8 @@ fleet "EVN Dude 164 Large Dani War Ships"
 
 fleet "EVN Dude 169 Mad Auroran War Ships"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 35
 		"Aurora Cruiser"
 	variant 34
@@ -1123,13 +1244,15 @@ fleet "EVN Dude 169 Mad Auroran War Ships"
 
 fleet "EVN Dude 176 Big Rebels"
 	government "Rebellion"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Rebel Dragon"
 
 fleet "EVN Dude 177 Roughnecks"
 	government "Roughnecks"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 10
 		"Fed Destroyer"
 	variant 8
@@ -1137,7 +1260,8 @@ fleet "EVN Dude 177 Roughnecks"
 
 fleet "EVN Dude 142 Auroran Trader (small)"
 	government "Auroran Empire"
-	personality uninterested
+	personality uninterested frugal swarming
+	# EVN dude AIType 2 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Argosy"
 	variant 32
@@ -1145,7 +1269,8 @@ fleet "EVN Dude 142 Auroran Trader (small)"
 
 fleet "EVN Dude 162 Large Tekel War Ships"
 	government "Family Tekel"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 45
 		"Abomination"
 	variant 35
@@ -1155,7 +1280,8 @@ fleet "EVN Dude 162 Large Tekel War Ships"
 
 fleet "EVN Dude 166 Small Rimertan Interceptor"
 	government "Rimerta"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 35
 		"Phoenix"
 	variant 34
@@ -1167,7 +1293,8 @@ fleet "EVN Dude 166 Small Rimertan Interceptor"
 
 fleet "EVN Dude 167 Large Rimertan War Ships"
 	government "Rimerta"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Abomination"
 	variant 36
@@ -1177,7 +1304,8 @@ fleet "EVN Dude 167 Large Rimertan War Ships"
 
 fleet "EVN Dude 143 Wraith (nice)"
 	government "Wraith"
-	personality uninterested
+	personality uninterested swarming
+	# EVN dude AIType 2 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 45
 		"Wraith (Youth)"
 	variant 30
@@ -1187,7 +1315,8 @@ fleet "EVN Dude 143 Wraith (nice)"
 
 fleet "EVN Dude 160 Small Heraan Interceptor"
 	government "Family Heraan"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Abomination"
 	variant 30
@@ -1199,7 +1328,8 @@ fleet "EVN Dude 160 Small Heraan Interceptor"
 
 fleet "EVN Dude 161 Large Moash War Ships"
 	government "Family Moash"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 45
 		"Abomination"
 	variant 35
@@ -1209,7 +1339,8 @@ fleet "EVN Dude 161 Large Moash War Ships"
 
 fleet "EVN Dude 144 Wraith (nasty)"
 	government "Wraith"
-	personality nemesis
+	personality heroic surveillance swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 50
 		"Wraith (Youth)"
 	variant 40
@@ -1219,7 +1350,8 @@ fleet "EVN Dude 144 Wraith (nasty)"
 
 fleet "EVN Dude 156 Small Moash Interceptor"
 	government "Family Moash"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Abomination"
 	variant 30
@@ -1231,7 +1363,8 @@ fleet "EVN Dude 156 Small Moash Interceptor"
 
 fleet "EVN Dude 157 Small Tekel Interceptor"
 	government "Family Tekel"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Abomination"
 	variant 30
@@ -1243,7 +1376,8 @@ fleet "EVN Dude 157 Small Tekel Interceptor"
 
 fleet "EVN Dude 158 Small Vella Interceptor"
 	government "Family Vella"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Abomination"
 	variant 30
@@ -1257,7 +1391,8 @@ fleet "EVN Dude 158 Small Vella Interceptor"
 
 fleet "EVN Dude 159 Small Dani Interceptor"
 	government "Family Dani"
-	personality nemesis
+	personality heroic surveillance swarming frugal
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Abomination"
 	variant 30
@@ -1269,7 +1404,8 @@ fleet "EVN Dude 159 Small Dani Interceptor"
 
 fleet "EVN Dude 174 Civilian"
 	government "Civvies"
-	personality timid
+	personality timid coward frugal swarming
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 24
 		"Leviathan"
 	variant 24
@@ -1281,13 +1417,15 @@ fleet "EVN Dude 174 Civilian"
 
 fleet "EVN Dude 146 Krypt"
 	government "Krypt"
-	personality nemesis
+	personality heroic surveillance swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Krypt Pod"
 
 fleet "EVN Dude 152 Roughnecks"
 	government "Roughnecks"
-	personality heroic
+	personality heroic frugal
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 13
 		"Fed Destroyer"
 	variant 5
@@ -1295,7 +1433,8 @@ fleet "EVN Dude 152 Roughnecks"
 
 fleet "EVN Dude 153 Federation"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 26
 		"Fed Patrol Boat"
 	variant 20
@@ -1305,7 +1444,8 @@ fleet "EVN Dude 153 Federation"
 
 fleet "EVN Dude 154 Small Auroran Interceptor"
 	government "Auroran Empire"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 40
 		"Abomination"
 	variant 30
@@ -1317,7 +1457,8 @@ fleet "EVN Dude 154 Small Auroran Interceptor"
 
 fleet "EVN Dude 155 Large Auroran War Ships"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 42
 		"Abomination"
 	variant 38
@@ -1327,13 +1468,15 @@ fleet "EVN Dude 155 Large Auroran War Ships"
 
 fleet "EVN Dude 147 Hyperioid"
 	government "Hyperioid"
-	personality uninterested
+	personality uninterested frugal
+	# EVN dude AIType 2 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 100
 		"Hyperioid"
 
 fleet "EVN Dude 149 Rimertans"
 	government "Rimerta"
-	personality uninterested
+	personality uninterested swarming frugal
+	# EVN dude AIType 2 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 25
 		"Abomination"
 	variant 25
@@ -1344,7 +1487,8 @@ fleet "EVN Dude 149 Rimertans"
 		"Phoenix"
 
 fleet "EVN Dude 150 Slyvilian Defence Scum"
-	personality nemesis
+	personality heroic surveillance frugal swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 35
 		"Valkyrie"
 	variant 25
@@ -1354,7 +1498,8 @@ fleet "EVN Dude 150 Slyvilian Defence Scum"
 
 fleet "EVN Dude 151 Wild Geese"
 	government "Wild Geese"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN dude AIType 3 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 14
 		"Fed Viper"
 	variant 13
@@ -1368,7 +1513,8 @@ fleet "EVN Dude 151 Wild Geese"
 
 fleet "EVN Dude 145 Vell-os"
 	government "Vell-os"
-	personality nemesis
+	personality heroic surveillance swarming
+	# EVN dude AIType 4 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 70
 		"Vell-os Dart"
 	variant 20
@@ -1378,7 +1524,8 @@ fleet "EVN Dude 145 Vell-os"
 
 fleet "EVN Dude 148 Big traders"
 	government "Civvies"
-	personality timid
+	personality timid coward frugal swarming
+	# EVN dude AIType 1 mapped to ES personality; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant 45
 		"Pegasus"
 	variant 40
@@ -1388,19 +1535,22 @@ fleet "EVN Dude 148 Big traders"
 
 fleet "EVN Fleet 255 Hyperioids"
 	government "Hyperioid"
-	personality heroic
+	personality heroic frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Hyperioid" 3
 
 fleet "EVN Fleet 254 Hyperioids"
 	government "Hyperioid"
-	personality heroic
+	personality heroic frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Hyperioid" 3
 
 fleet "EVN Fleet 253 Vell-os Armada"
 	government "Federation"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Vell-os Javelin"
 		"Vell-os Arrow" 2
@@ -1408,7 +1558,8 @@ fleet "EVN Fleet 253 Vell-os Armada"
 
 fleet "EVN Fleet 252 Auroran Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Enterprise" 2
 		"Firebird" 3
@@ -1416,7 +1567,8 @@ fleet "EVN Fleet 252 Auroran Traders"
 
 fleet "EVN Fleet 251 Auroran Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Enterprise" 2
 		"Firebird" 3
@@ -1424,7 +1576,8 @@ fleet "EVN Fleet 251 Auroran Traders"
 
 fleet "EVN Fleet 250 Auroran Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Enterprise" 2
 		"Firebird" 3
@@ -1432,7 +1585,8 @@ fleet "EVN Fleet 250 Auroran Traders"
 
 fleet "EVN Fleet 249 Auroran Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Enterprise" 2
 		"Firebird" 3
@@ -1440,7 +1594,8 @@ fleet "EVN Fleet 249 Auroran Traders"
 
 fleet "EVN Fleet 248 Auroran Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Enterprise" 2
 		"Firebird" 3
@@ -1448,7 +1603,8 @@ fleet "EVN Fleet 248 Auroran Traders"
 
 fleet "EVN Fleet 247 Auroran Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Enterprise" 2
 		"Firebird" 3
@@ -1456,7 +1612,8 @@ fleet "EVN Fleet 247 Auroran Traders"
 
 fleet "EVN Fleet 246 Auroran Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Enterprise" 2
 		"Firebird" 3
@@ -1464,7 +1621,8 @@ fleet "EVN Fleet 246 Auroran Traders"
 
 fleet "EVN Fleet 245 Auroran Fleet"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Carrier"
 		"Aurora Cruiser" 2
@@ -1473,7 +1631,8 @@ fleet "EVN Fleet 245 Auroran Fleet"
 
 fleet "EVN Fleet 244 Auroran Fleet"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Carrier"
 		"Aurora Cruiser" 2
@@ -1482,7 +1641,8 @@ fleet "EVN Fleet 244 Auroran Fleet"
 
 fleet "EVN Fleet 243 Auroran Fleet"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Carrier"
 		"Aurora Cruiser" 2
@@ -1491,7 +1651,8 @@ fleet "EVN Fleet 243 Auroran Fleet"
 
 fleet "EVN Fleet 242 Auroran Task Force"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -1500,7 +1661,8 @@ fleet "EVN Fleet 242 Auroran Task Force"
 
 fleet "EVN Fleet 241 Auroran Task Force"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -1509,7 +1671,8 @@ fleet "EVN Fleet 241 Auroran Task Force"
 
 fleet "EVN Fleet 240 Auroran Task Force"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -1518,7 +1681,8 @@ fleet "EVN Fleet 240 Auroran Task Force"
 
 fleet "EVN Fleet 239 Auroran Task Force"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -1527,7 +1691,8 @@ fleet "EVN Fleet 239 Auroran Task Force"
 
 fleet "EVN Fleet 238 Auroran Task Force"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -1536,7 +1701,8 @@ fleet "EVN Fleet 238 Auroran Task Force"
 
 fleet "EVN Fleet 237 Auroran Task Force"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -1545,35 +1711,40 @@ fleet "EVN Fleet 237 Auroran Task Force"
 
 fleet "EVN Fleet 236 Pirates"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Pirate Valkyrie"
 		"Pirate Viper" 3
 
 fleet "EVN Fleet 235 Pirates"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Pirate Valkyrie"
 		"Pirate Viper" 3
 
 fleet "EVN Fleet 234 Pirates"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Pirate Valkyrie"
 		"Pirate Viper" 3
 
 fleet "EVN Fleet 233 Pirates"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Pirate Valkyrie"
 		"Pirate Viper" 3
 
 fleet "EVN Fleet 232 Little Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Heavy Shuttle"
 		"Shuttle" 2
@@ -1582,7 +1753,8 @@ fleet "EVN Fleet 232 Little Traders"
 
 fleet "EVN Fleet 231 Little Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Heavy Shuttle"
 		"Shuttle" 2
@@ -1591,7 +1763,8 @@ fleet "EVN Fleet 231 Little Traders"
 
 fleet "EVN Fleet 230 Little Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Heavy Shuttle"
 		"Shuttle" 2
@@ -1600,7 +1773,8 @@ fleet "EVN Fleet 230 Little Traders"
 
 fleet "EVN Fleet 229 Little Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Heavy Shuttle"
 		"Shuttle" 2
@@ -1609,7 +1783,8 @@ fleet "EVN Fleet 229 Little Traders"
 
 fleet "EVN Fleet 228 Little Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Heavy Shuttle"
 		"Shuttle" 2
@@ -1618,7 +1793,8 @@ fleet "EVN Fleet 228 Little Traders"
 
 fleet "EVN Fleet 227 Pirate Raiders"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Manticore"
 		"Pirate Valkyrie"
@@ -1627,7 +1803,8 @@ fleet "EVN Fleet 227 Pirate Raiders"
 
 fleet "EVN Fleet 226 Pirate Raiders"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Manticore"
 		"Pirate Valkyrie"
@@ -1636,28 +1813,32 @@ fleet "EVN Fleet 226 Pirate Raiders"
 
 fleet "EVN Fleet 225 Liner + Escorts"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Star Liner"
 		"Viper" 3
 
 fleet "EVN Fleet 224 Liner + Escorts"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Star Liner"
 		"Viper" 3
 
 fleet "EVN Fleet 223 Liner + Escorts"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Star Liner"
 		"Viper" 3
 
 fleet "EVN Fleet 222 Smaller Private Freighters"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Pegasus"
 		"Terrapin" 2
@@ -1665,7 +1846,8 @@ fleet "EVN Fleet 222 Smaller Private Freighters"
 
 fleet "EVN Fleet 221 Smaller Private Freighters"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Pegasus"
 		"Terrapin" 2
@@ -1673,7 +1855,8 @@ fleet "EVN Fleet 221 Smaller Private Freighters"
 
 fleet "EVN Fleet 220 Smaller Private Freighters"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Pegasus"
 		"Terrapin" 2
@@ -1681,7 +1864,8 @@ fleet "EVN Fleet 220 Smaller Private Freighters"
 
 fleet "EVN Fleet 219 Smaller Private Freighters"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Pegasus"
 		"Terrapin" 2
@@ -1689,7 +1873,8 @@ fleet "EVN Fleet 219 Smaller Private Freighters"
 
 fleet "EVN Fleet 218 Smaller Private Freighters"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Pegasus"
 		"Terrapin" 2
@@ -1697,7 +1882,8 @@ fleet "EVN Fleet 218 Smaller Private Freighters"
 
 fleet "EVN Fleet 217 Smaller Private Freighters"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Pegasus"
 		"Terrapin" 2
@@ -1705,21 +1891,24 @@ fleet "EVN Fleet 217 Smaller Private Freighters"
 
 fleet "EVN Fleet 216 Smaller Private Freighters"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Pegasus"
 		"Terrapin" 2
 		"Viper" 4
 
 fleet "EVN Fleet 215 Leviathan + Escorts"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Leviathan"
 		"IDA Frigate"
 		"Viper" 4
 
 fleet "EVN Fleet 214 Leviathan + Escorts"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Leviathan"
 		"IDA Frigate"
@@ -1727,63 +1916,72 @@ fleet "EVN Fleet 214 Leviathan + Escorts"
 
 fleet "EVN Fleet 213 Federation Carrier + Escorts"
 	government "Federation"
-	personality heroic
+	personality heroic frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Carrier"
 		"Fed Destroyer" 3
 
 fleet "EVN Fleet 212 Federation Carrier + Escorts"
 	government "Federation"
-	personality heroic
+	personality heroic frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Carrier"
 		"Fed Destroyer" 4
 
 fleet "EVN Fleet 211 Federation Carrier + Escorts"
 	government "Federation"
-	personality heroic
+	personality heroic frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Carrier"
 		"Fed Destroyer" 4
 
 fleet "EVN Fleet 210 Small Federation Fleet"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Destroyer"
 		"Fed Viper" 3
 
 fleet "EVN Fleet 209 Small Federation Fleet"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Destroyer"
 		"Fed Viper" 3
 
 fleet "EVN Fleet 208 Small Federation Fleet"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Destroyer"
 		"Fed Viper" 3
 
 fleet "EVN Fleet 207 Small Federation Fleet"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Destroyer"
 		"Fed Viper" 3
 
 fleet "EVN Fleet 206 Small Federation Fleet"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Destroyer"
 		"Fed Viper" 3
 
 fleet "EVN Fleet 205 Wraith Tribe (nice)"
 	government "Wraith"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Wraith (Adult)" 2
 		"Wraith (Youth)"
@@ -1791,7 +1989,8 @@ fleet "EVN Fleet 205 Wraith Tribe (nice)"
 
 fleet "EVN Fleet 204 Wraith Tribe (nice)"
 	government "Wraith"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Wraith (Adult)" 2
 		"Wraith (Youth)"
@@ -1799,7 +1998,8 @@ fleet "EVN Fleet 204 Wraith Tribe (nice)"
 
 fleet "EVN Fleet 203 Wraith Tribe (nasty)"
 	government "Wraith"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Wraith (Adult)" 2
 		"Wraith (Youth)"
@@ -1807,7 +2007,8 @@ fleet "EVN Fleet 203 Wraith Tribe (nasty)"
 
 fleet "EVN Fleet 202 Wraith Tribe (nasty)"
 	government "Wraith"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Wraith (Adult)" 2
 		"Wraith (Youth)"
@@ -1815,7 +2016,8 @@ fleet "EVN Fleet 202 Wraith Tribe (nasty)"
 
 fleet "EVN Fleet 201 Wraith Tribe (nice)"
 	government "Wraith"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Wraith (Adult)" 2
 		"Wraith (Youth)"
@@ -1823,7 +2025,8 @@ fleet "EVN Fleet 201 Wraith Tribe (nice)"
 
 fleet "EVN Fleet 200 Wraith Tribe (nice)"
 	government "Wraith"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Wraith (Adult)" 2
 		"Wraith (Youth)"
@@ -1831,7 +2034,8 @@ fleet "EVN Fleet 200 Wraith Tribe (nice)"
 
 fleet "EVN Fleet 199 Wraith Tribe (nasty)"
 	government "Wraith"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Wraith (Adult)" 2
 		"Wraith (Youth)"
@@ -1839,7 +2043,8 @@ fleet "EVN Fleet 199 Wraith Tribe (nasty)"
 
 fleet "EVN Fleet 198 Wraith Tribe (nasty)"
 	government "Wraith"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Wraith (Adult)" 2
 		"Wraith (Youth)"
@@ -1847,7 +2052,8 @@ fleet "EVN Fleet 198 Wraith Tribe (nasty)"
 
 fleet "EVN Fleet 197 Vellos"
 	government "Federation"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Vell-os Javelin"
 		"Vell-os Arrow"
@@ -1855,7 +2061,8 @@ fleet "EVN Fleet 197 Vellos"
 
 fleet "EVN Fleet 196 Vellos"
 	government "Federation"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Vell-os Javelin"
 		"Vell-os Arrow"
@@ -1863,7 +2070,8 @@ fleet "EVN Fleet 196 Vellos"
 
 fleet "EVN Fleet 195 Vellos"
 	government "Federation"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Vell-os Javelin"
 		"Vell-os Arrow"
@@ -1871,7 +2079,8 @@ fleet "EVN Fleet 195 Vellos"
 
 fleet "EVN Fleet 194 Fed +S. Vell"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Carrier"
 		"Fed Destroyer"
@@ -1881,7 +2090,8 @@ fleet "EVN Fleet 194 Fed +S. Vell"
 
 fleet "EVN Fleet 193 Fed +S. Vell"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Carrier"
 		"Fed Destroyer"
@@ -1891,7 +2101,8 @@ fleet "EVN Fleet 193 Fed +S. Vell"
 
 fleet "EVN Fleet 192 Fed +S. Vell"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Carrier"
 		"Fed Destroyer"
@@ -1901,7 +2112,8 @@ fleet "EVN Fleet 192 Fed +S. Vell"
 
 fleet "EVN Fleet 191 Fed +S. Vell"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Carrier"
 		"Fed Destroyer"
@@ -1911,7 +2123,8 @@ fleet "EVN Fleet 191 Fed +S. Vell"
 
 fleet "EVN Fleet 190 Fed +S. Vell"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Carrier"
 		"Fed Destroyer"
@@ -1921,7 +2134,8 @@ fleet "EVN Fleet 190 Fed +S. Vell"
 
 fleet "EVN Fleet 189 Fed +S. Vell"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Carrier"
 		"Fed Destroyer"
@@ -1931,154 +2145,176 @@ fleet "EVN Fleet 189 Fed +S. Vell"
 
 fleet "EVN Fleet 188 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 4
 		"Shuttle"
 
 fleet "EVN Fleet 187 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 4
 		"Shuttle"
 
 fleet "EVN Fleet 186 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 4
 		"Shuttle"
 
 fleet "EVN Fleet 185 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 4
 		"Shuttle"
 
 fleet "EVN Fleet 184 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 4
 		"Shuttle"
 
 fleet "EVN Fleet 183 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 4
 		"Shuttle"
 
 fleet "EVN Fleet 182 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 4
 		"Shuttle"
 
 fleet "EVN Fleet 181 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 4
 		"Shuttle"
 
 fleet "EVN Fleet 180 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 4
 		"Shuttle"
 
 fleet "EVN Fleet 179 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 4
 		"Shuttle"
 
 fleet "EVN Fleet 178 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 4
 		"Shuttle"
 
 fleet "EVN Fleet 177 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 4
 		"Shuttle"
 
 fleet "EVN Fleet 176 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 3
 		"Shuttle"
 
 fleet "EVN Fleet 175 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 3
 		"Shuttle"
 
 fleet "EVN Fleet 174 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 3
 		"Shuttle"
 
 fleet "EVN Fleet 173 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 3
 		"Shuttle"
 
 fleet "EVN Fleet 172 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 3
 		"Shuttle"
 
 fleet "EVN Fleet 171 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 3
 		"Shuttle"
 
 fleet "EVN Fleet 170 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 3
 		"Shuttle"
 
 fleet "EVN Fleet 169 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 3
 		"Shuttle"
 
 fleet "EVN Fleet 168 Cargo Drones"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Cargo Drone" 3
 		"Shuttle"
 
 fleet "EVN Fleet 167 Heraan Task Force"
 	government "Family Heraan"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -2087,7 +2323,8 @@ fleet "EVN Fleet 167 Heraan Task Force"
 
 fleet "EVN Fleet 166 Heraan Task Force"
 	government "Family Heraan"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -2096,7 +2333,8 @@ fleet "EVN Fleet 166 Heraan Task Force"
 
 fleet "EVN Fleet 165 Dani Task Force"
 	government "Family Dani"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -2105,7 +2343,8 @@ fleet "EVN Fleet 165 Dani Task Force"
 
 fleet "EVN Fleet 164 Tekel Task Force"
 	government "Family Tekel"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -2114,7 +2353,8 @@ fleet "EVN Fleet 164 Tekel Task Force"
 
 fleet "EVN Fleet 163 Moash Task Force"
 	government "Family Moash"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -2123,7 +2363,8 @@ fleet "EVN Fleet 163 Moash Task Force"
 
 fleet "EVN Fleet 162 Rimertan Task Force"
 	government "Rimerta"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -2132,7 +2373,8 @@ fleet "EVN Fleet 162 Rimertan Task Force"
 
 fleet "EVN Fleet 161 Rimertan Fleet"
 	government "Rimerta"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Carrier"
 		"Aurora Cruiser" 2
@@ -2141,7 +2383,8 @@ fleet "EVN Fleet 161 Rimertan Fleet"
 
 fleet "EVN Fleet 160 Heraan Fleet"
 	government "Family Heraan"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Carrier"
 		"Aurora Cruiser" 2
@@ -2150,7 +2393,8 @@ fleet "EVN Fleet 160 Heraan Fleet"
 
 fleet "EVN Fleet 159 Dani Fleet"
 	government "Family Dani"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Carrier"
 		"Aurora Cruiser" 2
@@ -2159,7 +2403,8 @@ fleet "EVN Fleet 159 Dani Fleet"
 
 fleet "EVN Fleet 158 Vella Fleet"
 	government "Family Vella"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Carrier"
 		"Aurora Cruiser" 2
@@ -2168,7 +2413,8 @@ fleet "EVN Fleet 158 Vella Fleet"
 
 fleet "EVN Fleet 157 Tekel Fleet"
 	government "Family Tekel"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Carrier"
 		"Aurora Cruiser" 2
@@ -2177,7 +2423,8 @@ fleet "EVN Fleet 157 Tekel Fleet"
 
 fleet "EVN Fleet 156 Heraan Task Force"
 	government "Family Heraan"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -2186,7 +2433,8 @@ fleet "EVN Fleet 156 Heraan Task Force"
 
 fleet "EVN Fleet 155 Dani Task Force"
 	government "Family Dani"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -2195,7 +2443,8 @@ fleet "EVN Fleet 155 Dani Task Force"
 
 fleet "EVN Fleet 154 Vella Task Force"
 	government "Family Vella"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -2204,7 +2453,8 @@ fleet "EVN Fleet 154 Vella Task Force"
 
 fleet "EVN Fleet 153 Tekel Task Force"
 	government "Family Tekel"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -2213,7 +2463,8 @@ fleet "EVN Fleet 153 Tekel Task Force"
 
 fleet "EVN Fleet 152 Moash Fleet"
 	government "Family Moash"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Carrier"
 		"Aurora Cruiser" 2
@@ -2222,7 +2473,8 @@ fleet "EVN Fleet 152 Moash Fleet"
 
 fleet "EVN Fleet 151 Moash Task Force"
 	government "Family Moash"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -2231,7 +2483,8 @@ fleet "EVN Fleet 151 Moash Task Force"
 
 fleet "EVN Fleet 150 Rebel Fleet"
 	government "Rebellion"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Rebel Destroyer" 2
 		"Rebel Dragon"
@@ -2240,7 +2493,8 @@ fleet "EVN Fleet 150 Rebel Fleet"
 
 fleet "EVN Fleet 149 Rebels"
 	government "Rebellion"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Rebel Destroyer"
 		"Rebel Starbridge"
@@ -2250,13 +2504,15 @@ fleet "EVN Fleet 149 Rebels"
 
 fleet "EVN Fleet 148 Hyperioids"
 	government "Hyperioid"
-	personality heroic
+	personality heroic frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Hyperioid" 3
 
 fleet "EVN Fleet 147 Wild Geese"
 	government "Wild Geese"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Mod Starbridge"
 		"Starbridge"
@@ -2266,7 +2522,8 @@ fleet "EVN Fleet 147 Wild Geese"
 
 fleet "EVN Fleet 146 Roughnecks"
 	government "Roughnecks"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Carrier" 2
 		"Fed Destroyer"
@@ -2275,7 +2532,8 @@ fleet "EVN Fleet 146 Roughnecks"
 
 fleet "EVN Fleet 145 Vell-os Armada"
 	government "Vell-os"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Vell-os Javelin"
 		"Vell-os Arrow"
@@ -2283,7 +2541,8 @@ fleet "EVN Fleet 145 Vell-os Armada"
 
 fleet "EVN Fleet 144 Wild Geese"
 	government "Wild Geese"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Mod Starbridge"
 		"Starbridge"
@@ -2293,7 +2552,8 @@ fleet "EVN Fleet 144 Wild Geese"
 
 fleet "EVN Fleet 143 Wraith Tribe (nasty)"
 	government "Wraith"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Wraith (Adult)" 2
 		"Wraith (Youth)" 2
@@ -2301,7 +2561,8 @@ fleet "EVN Fleet 143 Wraith Tribe (nasty)"
 
 fleet "EVN Fleet 142 Wraith Tribe (nice)"
 	government "Wraith"
-	personality heroic
+	personality heroic swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Wraith (Adult)" 2
 		"Wraith (Youth)"
@@ -2309,7 +2570,8 @@ fleet "EVN Fleet 142 Wraith Tribe (nice)"
 
 fleet "EVN Fleet 141 Auroran Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Enterprise" 2
 		"Firebird"
@@ -2317,7 +2579,8 @@ fleet "EVN Fleet 141 Auroran Traders"
 
 fleet "EVN Fleet 140 Kick-the-butt Polaris Serious Fleet"
 	government "Nil'kemorya"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Scarab"
 		"Arachnid"
@@ -2327,7 +2590,8 @@ fleet "EVN Fleet 140 Kick-the-butt Polaris Serious Fleet"
 
 fleet "EVN Fleet 139 Polaris Freighters + escorts"
 	government "Polaris"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Sprite" 3
 		"Cambrian"
@@ -2336,7 +2600,8 @@ fleet "EVN Fleet 139 Polaris Freighters + escorts"
 
 fleet "EVN Fleet 138 Small Polaris Fleet"
 	government "Nil'kemorya"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Arachnid"
 		"Manta"
@@ -2345,7 +2610,8 @@ fleet "EVN Fleet 138 Small Polaris Fleet"
 
 fleet "EVN Fleet 137 Auroran Fleet"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Carrier"
 		"Aurora Cruiser" 2
@@ -2354,7 +2620,8 @@ fleet "EVN Fleet 137 Auroran Fleet"
 
 fleet "EVN Fleet 136 Auroran Task Force"
 	government "Auroran Empire"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Aurora Cruiser"
 		"Abomination"
@@ -2363,7 +2630,8 @@ fleet "EVN Fleet 136 Auroran Task Force"
 
 fleet "EVN Fleet 135 Pirates"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Pirate Valkyrie"
 		"Pirate Viper" 3
@@ -2371,7 +2639,8 @@ fleet "EVN Fleet 135 Pirates"
 
 fleet "EVN Fleet 134 Pirate Raiders"
 	government "Pirate"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Manticore"
 		"Pirate Valkyrie"
@@ -2381,7 +2650,8 @@ fleet "EVN Fleet 134 Pirate Raiders"
 
 fleet "EVN Fleet 130 Leviathan + Escorts"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Leviathan"
 		"IDA Frigate"
@@ -2389,7 +2659,8 @@ fleet "EVN Fleet 130 Leviathan + Escorts"
 
 fleet "EVN Fleet 131 Smaller Private Freighters"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Pegasus"
 		"Terrapin" 2
@@ -2397,14 +2668,16 @@ fleet "EVN Fleet 131 Smaller Private Freighters"
 
 fleet "EVN Fleet 132 Liner + Escorts"
 	government "Civvies"
-	personality heroic
+	personality heroic swarming frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Star Liner"
 		"Viper" 3
 
 fleet "EVN Fleet 133 Little Traders"
 	government "Civvies"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Heavy Shuttle"
 		"Shuttle" 2
@@ -2413,14 +2686,16 @@ fleet "EVN Fleet 133 Little Traders"
 
 fleet "EVN Fleet 128 Small Federation Fleet"
 	government "Federation"
-	personality heroic
+	personality heroic frugal swarming
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Destroyer"
 		"Fed Viper" 2
 
 fleet "EVN Fleet 129 Federation Carrier + Escorts"
 	government "Federation"
-	personality heroic
+	personality heroic frugal
+	# EVN flët fleets use warship behavior; ship Flags2/Flags3 behavior flags are included where ES has a close equivalent.
 	variant
 		"Fed Carrier"
 		"Fed Destroyer" 2
