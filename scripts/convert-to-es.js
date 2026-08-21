@@ -32,6 +32,7 @@ const EVN_COMMODITIES = [
   { name: "Equipment", flags: [0x00000100, 0x00000200, 0x00000400], min: 330, max: 730 }
 ];
 const rawTechCache = new Map();
+const stringListCache = new Map();
 
 function mkdir(dir) { fs.mkdirSync(dir, { recursive: true }); }
 function write(file, text) { mkdir(path.dirname(file)); fs.writeFileSync(file, text.replace(/\s+$/, "") + "\n"); }
@@ -388,6 +389,62 @@ function evnTextResource(id) {
   const resource = burger.resources.find(item => item.type === "dësc" && Number(item.id) === value);
   if (!resource) return null;
   return Buffer.from(resource.dataBase64, "base64").toString("latin1").split("\0", 1)[0].trim();
+}
+function evnStringListResource(id) {
+  const value = Number(id);
+  if (!Number.isFinite(value) || value < 0) return [];
+  if (stringListCache.has(value)) return stringListCache.get(value);
+  const resource = burger.resources.find(item => item.type === "STR#" && Number(item.id) === value);
+  if (!resource) {
+    stringListCache.set(value, []);
+    return [];
+  }
+  const bytes = Buffer.from(resource.dataBase64, "base64");
+  if (bytes.length < 2) {
+    stringListCache.set(value, []);
+    return [];
+  }
+  const strings = [];
+  const count = bytes.readUInt16BE(0);
+  let offset = 2;
+  for (let index = 0; index < count && offset < bytes.length; index++) {
+    const length = bytes[offset++];
+    if (offset + length > bytes.length) break;
+    strings.push(bytes.subarray(offset, offset + length).toString("latin1"));
+    offset += length;
+  }
+  stringListCache.set(value, strings);
+  return strings;
+}
+function evnNewsText(value) {
+  return String(value || "")
+    .replace(/\r\n?|\n/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+function esText(value) {
+  return `\`${evnNewsText(value).replace(/`/g, "'")}\``;
+}
+function cronNewsEntries(data) {
+  const entries = [];
+  const seen = new Set();
+  const independent = Math.trunc(Number(data.IndNewsStr));
+  if (Number.isFinite(independent) && independent > 0) entries.push({ id: independent, scope: "independent", governmentId: null });
+  for (let index = 1; index <= 4; index++) {
+    const id = Math.trunc(Number(data[`GovtNewsStr${index}`]));
+    const governmentId = Math.trunc(Number(data[`NewsGovt${index}`]));
+    if (!Number.isFinite(id) || id <= 0) continue;
+    const key = `${id}:${governmentId}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    entries.push({ id, scope: "government", governmentId });
+  }
+  return entries;
+}
+function cronNewsName(recordId, entry) {
+  return entry.scope === "independent"
+    ? `EVN crön ${recordId} news ${entry.id} independent`
+    : `EVN crön ${recordId} news ${entry.id} government ${entry.governmentId}`;
 }
 function evnConversationText(id) {
   const text = evnTextResource(id);
@@ -1079,6 +1136,8 @@ function convertCronEvents() {
   let skippedDate = 0;
   let skippedCondition = 0;
   let unsupportedActions = 0;
+  let skippedNews = 0;
+  const newsDefinitions = new Map();
   for (const record of referenceData["crön"] || []) {
     const data = record.data || {};
     const name = safeName(record.name, `EVN crön ${record.id}`);
@@ -1109,6 +1168,24 @@ function convertCronEvents() {
     const postHoldoff = Math.max(0, Math.trunc(Number(data.PostHoldoff) || 0));
     const endDelay = preHoldoff + duration;
     const cooldownDelay = endDelay + postHoldoff;
+    const activeNews = [];
+    for (const entry of cronNewsEntries(data)) {
+      const messages = evnStringListResource(entry.id).map(evnNewsText).filter(Boolean);
+      if (!messages.length) {
+        skippedNews++;
+        lines.push(`# EVN crön ${record.id} news ${entry.id}: STR# resource unavailable or empty.`);
+        continue;
+      }
+      const government = entry.scope === "government" ? governmentName(entry.governmentId) : null;
+      if (entry.scope === "government" && !government) {
+        skippedNews++;
+        lines.push(`# EVN crön ${record.id} news ${entry.id}: government ${entry.governmentId} has no ES mapping.`);
+        continue;
+      }
+      const newsName = cronNewsName(record.id, entry);
+      newsDefinitions.set(newsName, { messages });
+      activeNews.push({ name: newsName, entry, government });
+    }
 
     lines.push(`# EVN crön ${record.id}: Random ${random}, PreHoldoff ${preHoldoff}, Duration ${duration}, PostHoldoff ${postHoldoff}.`);
     lines.push(`event ${q(eventName)}`);
@@ -1118,11 +1195,11 @@ function convertCronEvents() {
       lines.push(`\t# EVN OnStart preserved: ${q(data.OnStart)}`);
     }
     if (String(data.Flags || "0000") !== "0000") lines.push(`\t# EVN Flags preserved: ${q(data.Flags)}; continuous iteration requires dedicated ES logic.`);
-    if (Number(data.IndNewsStr) > 0) lines.push(`\t# EVN IndNewsStr ${Number(data.IndNewsStr)} requires converted news text.`);
-    for (let index = 1; index <= 4; index++) {
-      const government = Number(data[`NewsGovt${index}`]);
-      const news = Number(data[`GovtNewsStr${index}`]);
-      if (government > 0 || news > 0) lines.push(`\t# EVN local news ${index}: government ${government}, string ${news}.`);
+    for (const news of activeNews) {
+      lines.push(`\tnews ${q(news.name)}`);
+      lines.push("\t\tlocation");
+      if (news.entry.scope === "independent") lines.push(`\t\t\tnear ${q("Sol")} 100`);
+      else lines.push(`\t\t\tgovernment ${q(news.government)}`);
     }
     lines.push("");
 
@@ -1130,6 +1207,10 @@ function convertCronEvents() {
     if (!emitEventBitActions(lines, data.OnEnd, "\t")) {
       unsupportedActions++;
       lines.push(`\t# EVN OnEnd preserved: ${q(data.OnEnd)}`);
+    }
+    for (const news of activeNews) {
+      lines.push(`\tnews ${q(news.name)}`);
+      lines.push("\t\tremove location");
     }
     lines.push(`\tclear ${q(activeFlag)}`);
     if (!postHoldoff) lines.push(`\tclear ${q(pendingFlag)}`);
@@ -1162,9 +1243,23 @@ function convertCronEvents() {
     missionLines.push("\t\tfail", "");
     scheduled++;
   }
+  const newsLines = [
+    "# EVN STR# news strings converted to ES news definitions.",
+    "# Definitions stay inactive until crön start events add a location.",
+    "# Independent EVN news uses near Sol 100 as an ES approximation of global news.",
+    ""
+  ];
+  for (const [name, definition] of newsDefinitions) {
+    newsLines.push(`news ${q(name)}`);
+    newsLines.push("\tname", "\t\tword", `\t\t\t${q("EVN News")}`);
+    newsLines.push("\tmessage", "\t\tword");
+    for (const message of definition.messages) newsLines.push(`\t\t\t${esText(message)}`);
+    newsLines.push("");
+  }
   write(path.join(output, "data", "cron-events.txt"), lines.join("\n"));
   write(path.join(output, "data", "cron-schedulers.txt"), missionLines.join("\n"));
-  return { emitted, scheduled, skippedDate, skippedCondition, unsupportedActions };
+  write(path.join(output, "data", "news.txt"), newsLines.join("\n"));
+  return { emitted, scheduled, skippedDate, skippedCondition, unsupportedActions, news: newsDefinitions.size, skippedNews };
 }
 
 function convertDisasters() {

@@ -1,0 +1,789 @@
+# EVN STR# news strings converted to ES news definitions.
+# Definitions stay inactive until crön start events add a location.
+# Independent EVN news uses near Sol 100 as an ES approximation of global news.
+
+news "EVN crön 233 news 15085 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Criminal Watch: In a battle for supremacy, two pirate fleets met in the Aral system recently. Reports are sketchy, but total victory was achieved by one of them.`
+
+news "EVN crön 233 news 15085 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Criminal Watch: In a battle for supremacy, two pirate fleets met in the Aral system recently. Reports are sketchy, but total victory was achieved by one of them.`
+
+news "EVN crön 232 news 15084 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Federation News: With the discrediting of the Bureau of Internal Investigation, the leaders of the Rebellion have achieved their aims and rejoined mainstream Federation society.`
+
+news "EVN crön 232 news 15084 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Federation News: With the discrediting of the Bureau of Internal Investigation, the leaders of the Rebellion have achieved their aims and rejoined mainstream Federation society.`
+
+news "EVN crön 232 news 15084 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Federation News: With the discrediting of the Bureau of Internal Investigation, the leaders of the Rebellion have achieved their aims and rejoined mainstream Federation society.`
+
+news "EVN crön 231 news 15083 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Vell-os News: With the inspirational intervention of Ory'hara, a team of P'aedt and Ver'ash have discovered a way to allow a single Vell-os to be freed from the enslavement devices they are all fitted with.`
+
+news "EVN crön 230 news 15082 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Military News: In a series of savage battles, the Federation Navy, though stretched nearly to its breaking point, has managed to defeat the Polaris invasion in a final battle in the Tichel system.`
+
+news "EVN crön 230 news 15082 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Military News: In a series of savage battles, the Federation Navy, though stretched nearly to its breaking point, has managed to defeat the Polaris invasion in a final battle in the Tichel system.`
+
+news "EVN crön 230 news 15082 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Military News: In a series of savage battles, the Federation Navy, though stretched nearly to its breaking point, has managed to defeat the Polaris invasion in a final battle in the Tichel system.`
+
+news "EVN crön 230 news 15082 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Military News: In a series of savage battles, the Federation Navy, though stretched nearly to its breaking point, has managed to defeat the Polaris invasion in a final battle in the Tichel system.`
+
+news "EVN crön 229 news 15080 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Breaking News: In an unprecedented attack, the leader of the Polaris and the Federation Vice-President have been assassinated in an act of terrorism. War between the Polaris and the Federation seems imminent.`
+
+news "EVN crön 229 news 15081 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Breaking News: The leader of the Polaris, Bis Andreya, and the Federation Vice-President have been assassinated in a terrorist attack by the Bureau. War between the Polaris and the Federation seems imminent.`
+
+news "EVN crön 228 news 15079 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Federation News: The Federation Navy claims to have destroyed a major pirate organization (who claimed to be a political rebellion) based to the North of Federation space.`
+			`Federation News: The Federation claims to have the leaders of the self-titled 'Rebellion' in custody, although chances are they will only be found guilty of whatever the Bureau decides they will be guilty of.`
+
+news "EVN crön 228 news 15078 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Crime Watch: In a successful operation the Federation Navy destroyed a major pirate organization (who claimed to be a political rebellion) based to the North of Federation space.`
+			`Crime Watch: As a result of a successful operation to destroy a pirate cartel in the galactic North, the cartel leaders are being brought to justice.`
+
+news "EVN crön 227 news 15077 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Breaking News: After serious talks between the Rebel leaders and representatives of the Polaris Council, an agreement has been reached to allow the Rebellion access to a few pieces of advanced technology.`
+
+news "EVN crön 227 news 15077 government 141"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Breaking News: After serious talks between the Rebel leaders and representatives of the Polaris Council, an agreement has been reached to allow the Rebellion access to a few pieces of advanced technology.`
+
+news "EVN crön 227 news 15077 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Breaking News: After serious talks between the Rebel leaders and representatives of the Polaris Council, an agreement has been reached to allow the Rebellion access to a few pieces of advanced technology.`
+
+news "EVN crön 226 news 15076 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Auroran News: With the recent disgrace of the Moash House that resulted in the elevation of the Heraan, the noted warrior KarHallarn is now the Thurokiir of the First Family, and hence the Auroran Empire.`
+
+news "EVN crön 226 news 15074 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Empire News: With the recent disgrace of the Moash House that resulted in the elevation of the Heraan, the mighty KarHallarn is now the Thurokiir of the First Family, and hence the Auroran Empire.`
+
+news "EVN crön 226 news 15075 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Auroran News: As a result of sneaky manipulation, the well-known criminal KarHallarn, has assumed an office of considerable authority within the Leading House of the Auroran Empire.`
+
+news "EVN crön 225 news 15073 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Auroran News: The notable warrior KarHallarn has won the right to be Thurokiir of the Heraan House after the death of the former Thurokiir, Techerakh.`
+
+news "EVN crön 225 news 15070 government 135"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`House News: After the heroic death of Techerakh, a group of warriors fought to gain the right to fill the position. The mighty KarHallarn prevailed.`
+
+news "EVN crön 225 news 15071 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Political News: Following the death of Techerakh, the old Heraan Thurokiir, the well-known KarHallarn has been chosen to replace him.`
+
+news "EVN crön 225 news 15072 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Auroran News: The criminal KarHallarn has managed to wiggle into a position of authority in the command chain of one of the minor Auroran Houses.`
+
+news "EVN crön 224 news 15068 government 135"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`House News: The mighty KarHallarn has once again brought honor to the Heraan House by defeating warriors from all the other houses to be crowned 'Auroran Champion.'`
+
+news "EVN crön 224 news 15069 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Auroran News: The new Auroran Champion is the mighty KarHallarn of the Heraan House.`
+
+news "EVN crön 223 news 15065 government 135"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Military News: The newly formed 'Wolf Pack,' commanded by the mighty KarHallarn, have shown the universe the strength of the Heraan House by launching a devastating raid on Sol, the very heart of the Federation.`
+
+news "EVN crön 223 news 15066 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Military News: A new Heraani unit, commanded by the recently named KarHallarn, has launched a successful raid on Sol, the very heart of the Federation.`
+
+news "EVN crön 223 news 15067 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Military News: A unit of infiltrators, commanded by a traitor who goes by the moniker 'KarHallarn,' snuck past our outer defenses and launched a cowardly attack on merchant shipping in the Sol system.`
+
+news "EVN crön 222 news 15064 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Local News: Local merchant groups are very concerned about the recent increase in pirate activity in the area. It has already had a noticeable effect on commerce.`
+
+news "EVN crön 222 news 15060 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Crime report: A leaked document from the Federation Naval Crime Statistics Department (FNCSD) points to an alarming increase in pirate acivity in recent months.`
+
+news "EVN crön 222 news 15061 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Federation Watch: Apparently the Bureau has given pirate gangs a license to increase their activities and to travel through the Federation to attack Auroran shipping.`
+
+news "EVN crön 222 news 15062 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Federation Watch: Mu'hari working inside the Federation report that there have been some high-level talks between the Federation and various pirate groups. Within days, an increase in pirate activity was noted.`
+
+news "EVN crön 374 news 15041 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`General News: A group of terraformers from Nirvana Engineering Corporation have begun the process of returning New Ireland to a habitable state.`
+			`General News: New Ireland deemed fit for human habitation. Scientists say that it will still be some time before New Ireland is restored to its former state.`
+			`General News: Will the Wild Geese take over the government of New Ireland again in the near future? Perhaps so.`
+
+news "EVN crön 373 news 15041 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`General News: A group of terraformers from Nirvana Engineering Corporation have begun the process of returning New Ireland to a habitable state.`
+			`General News: New Ireland deemed fit for human habitation. Scientists say that it will still be some time before New Ireland is restored to its former state.`
+			`General News: Will the Wild Geese take over the government of New Ireland again in the near future? Perhaps so.`
+
+news "EVN crön 210 news 15040 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Political News: Finally a representative for Nova (formally known as Brass) sits on the Federation Council. Meet Councillor Geoff Daniels, elected by a landslide last month.`
+			`General News: The results of the referendum for a change of name for Brass show a 71% support rating for the new name 'Nova'.`
+			`General News: With the election of Councillor Daniels, it seems the economic recovery of 'Nova' is now complete. Corporations from across the galaxy are desperately competing for a piece of the new market.`
+
+news "EVN crön 209 news 15039 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`General News: A group of retired merchants, calling themselves the Somta group, have begun a campaign of reforms on Brass.`
+			`General News: Is Brass on the way to a recovery? It certainly looks that way thanks to the efforts of the Somta group.`
+			`General News: Will a representative of Brass soon take their seat on the Federation Council? A young man by the name of Geoff Daniels may well be the first to do so.`
+
+news "EVN crön 194 news 15038 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Kane Band: It appears that Federation scientists and engineers, working with their counterparts from the GLi-tech corporation, have created a new Federation gunboat called the 'RAGE'.`
+
+news "EVN crön 193 news 15037 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Current Events: Claiming to be members of a political 'rebellion', a number of pirates have looted and destroyed a number of Federation and merchant vessels in the Aldebaran system.`
+
+news "EVN crön 193 news 15059 government 141"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Current Events: The Bureau yesterday organized a Federation task force to attack some of our operatives in the Aldebaran system. Unfortunately, in escaping, our ships destroyed a number of Federation vessels.`
+
+news "EVN crön 192 news 15036 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News just to hand: In a cowardly raid, pirate vessels, claiming to be rebels, have ransacked a large number of Federation ships in the Nesre Primus system.`
+
+news "EVN crön 192 news 15058 government 141"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the front: A Rebel task force has extracted an endangered cell of informants from the Nesre Primus system. Unfortunately, they had to destroy a number of Federation vessels as they were leaving.`
+
+news "EVN crön 191 news 15034 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the border: After defeating the Federation forces in the Narcissus system, the Auroran raiders have followed up their victory by attacking Federation forces in the Lalande 21185 system.`
+
+news "EVN crön 190 news 15033 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: After outflanking Federation forces in the Tichel system, the Auroran raiders have attacked further Federation vessels, as well as merchant shipping, in the Kania system.`
+
+news "EVN crön 189 news 15032 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from Fomalhaut: After outflanking the Federation forces in the Tichel system, the Auroran raiders have attacked further Federation vessels, as well as merchant shipping, in the Fomalhaut system.`
+
+news "EVN crön 188 news 15031 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: After smashing through the Xante system, the Aurorans have moved into the Nesre Secundus system. It seems that Admiral Raczak has things well in hand.`
+
+news "EVN crön 188 news 15057 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: After outmaneuvering Federation forces in the Xante system, Auroran warriors moved on to the Nesre Secundus system, to test themselves against Admiral Raczak and his men.`
+
+news "EVN crön 187 news 15030 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from Sol: In an attempt to draw Federation forces away from the Tichel system, Auroran ships have launched a raid on Sol. Early reports say that the Federation forces have them contained.`
+
+news "EVN crön 187 news 15056 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation front: A task force of warriors have successfully raided the Sol system. The resulting withdrawal of forces from the Tichel system gave the warriors a huge advantage.`
+
+news "EVN crön 186 news 15029 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the border: After defeating the Auroran forces in the Narcissus system, the Federation task force has followed up on their victory and attacked the reserve Auroran fleet waiting in the SPC-1367 system.`
+
+news "EVN crön 186 news 15055 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: After sneaking past the patrols in the Narcissus system, the Federation launched a cowardly attack on the warriors in the SPC-1367 system, but have made little headway.`
+
+news "EVN crön 185 news 15028 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: An Auroran task force has come from neutral territory and raided Federation shipping in the Kerella system. Federation forces there are trying to contain them.`
+
+news "EVN crön 185 news 15054 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: An Auroran task force has struck behind enemy lines and destroyed and damaged Federation interests in the Kerella system.`
+
+news "EVN crön 184 news 15027 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: In response to Auroran raids, Federation ships have raided into neutral territory and attacked Auroran shipping in the SPC-034 system.`
+
+news "EVN crön 184 news 15053 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: Federation forces have begun attacking merchants and civilians in the SPC-034 system.`
+
+news "EVN crön 183 news 15026 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the border: After outflanking the Auroran forces in the Vemap system, Federation ships have raided Auroran holdings in the Heraan Cov system, but they appear to be meeting stiff resistance.`
+
+news "EVN crön 183 news 15051 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: After swarming over the Auroran forces in the Vemap system, the Federation launched raids into the Heraan Cov system, but thus far the Heraani are undefeated.`
+
+news "EVN crön 183 news 15052 government 135"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: After defeating the warriors in the Vemap system, Federation ships are now attacking Heraan holdings in the Heraan Cov system, but are in danger of being cut-off.`
+
+news "EVN crön 182 news 15025 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: After successful raids in the Sale and Wittor systems, Federation warships have continued on to harass Auroran shipping in the Inci system.`
+
+news "EVN crön 182 news 15050 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: After sneaking past the warriors in the Sale and Wittor systems, the Federation bandits have begun harassing merchants and civilians in the Inci system.`
+
+news "EVN crön 181 news 15024 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: Continuing their successful campaign, Federation ships have continued on, leaving the Aria system chasing the retreating Auroran forces to the Hope system.`
+
+news "EVN crön 181 news 15049 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: After their cowardly attack on the Aria system, the Federation dogs have moved into the Hope system, but have been met by the steely reserves stationed there.`
+
+news "EVN crön 180 news 15023 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the border: After being fought to a standstill in both the Alphara and Gateway systems, an Auroran task force snuck behind our front lines and attacked Federation forces in the Spica system.`
+
+news "EVN crön 180 news 15048 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: After fighting the Federation to a standstill in the Alphara and Gateway systems, a task force of warriors outflanked the enemy and successfully raided the Spica system.`
+
+news "EVN crön 179 news 15022 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the border: There have been reports of heavy clashes between Auroran and Federation forces in the Narcissus system. At this stage it appears that the battle is still hanging in the balance.`
+
+news "EVN crön 178 news 15021 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: In an attempt to force the Aurorans to withdraw from the Xante system, the Federation Navy launched a sneak attack behind Auroran lines in the Biri system.`
+
+news "EVN crön 178 news 15047 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: After laying waste to the Neirt system, the cowardly Federation forces have continued on to the Creyt system where they continue to battle against warriors there.`
+
+news "EVN crön 176 news 15020 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: After laying claim to the Neirt system, Federation forces have continued on to the Creyt system where they continue to battle against Auroran ships.`
+
+news "EVN crön 175 news 15019 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: While the bulk of the Federation attack fleet has remained in the Vemap system, a small task force was launched against Auroran interests in the Sale system.`
+
+news "EVN crön 174 news 15018 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: In their success in taking the Unin system Federation ships have continued on, engaging further Auroran forces in the Aria system.`
+
+news "EVN crön 174 news 15046 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: After their deceitful attack on the Unin system, Federation ships have moved on, attempting to engage the warriors stationed in the Aria system.`
+
+news "EVN crön 173 news 15017 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: Following their successes, Federation forces have chased the fleeing Auroran ships as far as the Wittor System.`
+
+news "EVN crön 172 news 15035 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the border: After quelling Auroran resistance in the Unin and SPC-050 systems, Federation forces have penetrated as far as the Uroa system chasing the fleeing Aurorans.`
+
+news "EVN crön 171 news 15016 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: Auroran ships have launched a surprise attack on the Tichel system this morning. Initial reports are sketchy, but it appears that the Federation Navy has been forced to regroup.`
+
+news "EVN crön 170 news 15035 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the border: After quelling Auroran resistance in the Unin and SPC-050 systems, Federation forces have penetrated as far as the Uroa system chasing the fleeing Aurorans.`
+
+news "EVN crön 170 news 15016 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: Auroran ships have launched a surprise attack on the Tichel system this morning. Initial reports are sketchy, but it appears that the Federation Navy has been forced to regroup.`
+
+news "EVN crön 169 news 15015 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the border: Responding to Auroran agression, the Federation launched simultaneous attacks on Auroran forces in the Unin and SPC-050 systems.`
+
+news "EVN crön 169 news 15045 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: The Federation launched a series of cowardly raids on the Unin and SPC-050 systems. Warriors there have been successful in slowing the Federation advance.`
+
+news "EVN crön 168 news 15014 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: Earlier today the Auroran Empire launched an attack on Federation forces patrolling the Xante system. Early reports say that few Federation vessels escaped.`
+
+news "EVN crön 167 news 15013 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the border: Responding to continued aggression, the Federation attacked an Auroran post in the SPC-050 system. Initial reports indicate a rout of Auroran forces in that system.`
+
+news "EVN crön 167 news 15044 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: The Federation launched another cowardly attack on the listening post in the SPC-050 system. The warriors fought bravely to slow the Federation advance.`
+
+news "EVN crön 166 news 15012 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the border: In response to countless raids, the Federation has attacked an Auroran post in the Unin system. Initial reports indicate a rout of Auroran forces in that system.`
+
+news "EVN crön 166 news 15043 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: Yesterday, the Federation launched a cowardly attack on the Auroran Listening Post in the Unin system. The warriors were forced to withdraw and call on reinforcements.`
+
+news "EVN crön 165 news 15011 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: Auroran ships have launched simultaneous attacks on both the Alphara and Gateway systems. Reports are sketchy, but the situation appears grim.`
+
+news "EVN crön 165 news 15042 government 129"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Federation border: Auroran warriors have launched simultaneous attacks on both the Alphara and Gateway systems. Reports are sketchy, but it appears that they are pushing back the Federation dogs.`
+
+news "EVN crön 164 news 15010 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: Auroran raiders have struck against the Federation outpost in the Alphara system, forcing the Federation fleet in that system to regroup in a nearby system.`
+
+news "EVN crön 163 news 15009 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: In response to Auroran raids, Federation ships have raided the Vemap system in an attempt to neutralise the Auroran launching point there.`
+
+news "EVN crön 162 news 15008 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: Auroran ships have launched an attack on the Federation station in the Gateway system. Reports are sketchy, but the station appears to have been disabled.`
+
+news "EVN crön 161 news 15007 independent"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`News from the Auroran/Federation border: In response to Auroran 'aggression', Federation ships have raided into neutral territory and laid claim to the Neirt system.`
+
+news "EVN crön 157 news 15006 government 128"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`Sigma Shipyard engineers can now upgrade the standard Starbridge into the far more capable Starbridge C, most commonly known as the Chrome Valkyrie.`
+
+news "EVN crön 152 news 15004 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`The Ver'ash and the P'aedt working together on Ver'a Se have adapted both Polaron and Wraithii technology so that they can be launched whilst the parent ship is cloaked.`
+
+news "EVN crön 151 news 15003 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`The Ver'ash and the P'aedt on Ver'a Se have grown an organ combines the capabilities of the Wraith with more traditional hyperspace manipulation techniques used by the Multi-Jump Organ.`
+
+news "EVN crön 146 news 15001 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`The Ver'ash and the P'aedt working together on Ver'a Se have improved the cloaking device so that ships are no longer required to drop their shields when they cloak.`
+
+news "EVN crön 145 news 15002 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`The Ver'ash and the P'aedt working together on Ver'a Se have grown an organ that replicates the cloaking capabilities of the Wraith.`
+
+news "EVN crön 144 news 15002 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`The Ver'ash and the P'aedt working together on Ver'a Se have grown an organ that replicates the cloaking capabilities of the Wraith.`
+
+news "EVN crön 140 news 15001 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`The Ver'ash and the P'aedt working together on Ver'a Se have improved the cloaking device so that ships are no longer required to drop their shields when they cloak.`
+
+news "EVN crön 137 news 15001 government 130"
+	name
+		word
+			"EVN News"
+	message
+		word
+			`The Ver'ash and the P'aedt working together on Ver'a Se have improved the cloaking device so that ships are no longer required to drop their shields when they cloak.`

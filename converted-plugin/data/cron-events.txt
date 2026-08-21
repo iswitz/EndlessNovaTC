@@ -34,10 +34,18 @@ event "EVN crön 213: Re-land on Merrol cron end"
 event "EVN crön 233: News: Player Defeats Bad Pirate Fleet"
 	set "EVN crön active 233"
 	set "EVN bit 8911"
-	# EVN IndNewsStr 15085 requires converted news text.
-	# EVN local news 1: government 128, string 15085.
+	news "EVN crön 233 news 15085 independent"
+		location
+			near "Sol" 100
+	news "EVN crön 233 news 15085 government 128"
+		location
+			government "Federation"
 
 event "EVN crön 233: News: Player Defeats Bad Pirate Fleet end"
+	news "EVN crön 233 news 15085 independent"
+		remove location
+	news "EVN crön 233 news 15085 government 128"
+		remove location
 	clear "EVN crön active 233"
 	clear "EVN crön pending 233"
 
@@ -45,11 +53,23 @@ event "EVN crön 233: News: Player Defeats Bad Pirate Fleet end"
 event "EVN crön 232: News: Rebs beat Feds"
 	set "EVN crön active 232"
 	set "EVN bit 8909"
-	# EVN IndNewsStr 15084 requires converted news text.
-	# EVN local news 1: government 130, string 15084.
-	# EVN local news 2: government 129, string 15084.
+	news "EVN crön 232 news 15084 independent"
+		location
+			near "Sol" 100
+	news "EVN crön 232 news 15084 government 130"
+		location
+			government "Polaris"
+	news "EVN crön 232 news 15084 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 232: News: Rebs beat Feds end"
+	news "EVN crön 232 news 15084 independent"
+		remove location
+	news "EVN crön 232 news 15084 government 130"
+		remove location
+	news "EVN crön 232 news 15084 government 129"
+		remove location
 	clear "EVN crön active 232"
 	clear "EVN crön pending 232"
 
@@ -57,9 +77,13 @@ event "EVN crön 232: News: Rebs beat Feds end"
 event "EVN crön 231: News: Player discovers way to free Vell-os"
 	set "EVN crön active 231"
 	set "EVN bit 8907"
-	# EVN local news 1: government 130, string 15083.
+	news "EVN crön 231 news 15083 government 130"
+		location
+			government "Polaris"
 
 event "EVN crön 231: News: Player discovers way to free Vell-os end"
+	news "EVN crön 231 news 15083 government 130"
+		remove location
 	clear "EVN crön active 231"
 	clear "EVN crön pending 231"
 
@@ -67,12 +91,28 @@ event "EVN crön 231: News: Player discovers way to free Vell-os end"
 event "EVN crön 230: News: Feds Beat Pols"
 	set "EVN crön active 230"
 	set "EVN bit 8905"
-	# EVN IndNewsStr 15082 requires converted news text.
-	# EVN local news 1: government 128, string 15082.
-	# EVN local news 2: government 129, string 15082.
-	# EVN local news 3: government 130, string 15082.
+	news "EVN crön 230 news 15082 independent"
+		location
+			near "Sol" 100
+	news "EVN crön 230 news 15082 government 128"
+		location
+			government "Federation"
+	news "EVN crön 230 news 15082 government 129"
+		location
+			government "Auroran Empire"
+	news "EVN crön 230 news 15082 government 130"
+		location
+			government "Polaris"
 
 event "EVN crön 230: News: Feds Beat Pols end"
+	news "EVN crön 230 news 15082 independent"
+		remove location
+	news "EVN crön 230 news 15082 government 128"
+		remove location
+	news "EVN crön 230 news 15082 government 129"
+		remove location
+	news "EVN crön 230 news 15082 government 130"
+		remove location
 	clear "EVN crön active 230"
 	clear "EVN crön pending 230"
 
@@ -80,10 +120,18 @@ event "EVN crön 230: News: Feds Beat Pols end"
 event "EVN crön 229: News: Assassinating Pol Leader"
 	set "EVN crön active 229"
 	set "EVN bit 8903"
-	# EVN local news 1: government 128, string 15080.
-	# EVN local news 2: government 130, string 15081.
+	news "EVN crön 229 news 15080 government 128"
+		location
+			government "Federation"
+	news "EVN crön 229 news 15081 government 130"
+		location
+			government "Polaris"
 
 event "EVN crön 229: News: Assassinating Pol Leader end"
+	news "EVN crön 229 news 15080 government 128"
+		remove location
+	news "EVN crön 229 news 15081 government 130"
+		remove location
 	clear "EVN crön active 229"
 	clear "EVN crön pending 229"
 
@@ -91,10 +139,18 @@ event "EVN crön 229: News: Assassinating Pol Leader end"
 event "EVN crön 228: News: Feds Destroy Rebs"
 	set "EVN crön active 228"
 	set "EVN bit 8901"
-	# EVN IndNewsStr 15079 requires converted news text.
-	# EVN local news 1: government 128, string 15078.
+	news "EVN crön 228 news 15079 independent"
+		location
+			near "Sol" 100
+	news "EVN crön 228 news 15078 government 128"
+		location
+			government "Federation"
 
 event "EVN crön 228: News: Feds Destroy Rebs end"
+	news "EVN crön 228 news 15079 independent"
+		remove location
+	news "EVN crön 228 news 15078 government 128"
+		remove location
 	clear "EVN crön active 228"
 	clear "EVN crön pending 228"
 
@@ -102,11 +158,23 @@ event "EVN crön 228: News: Feds Destroy Rebs end"
 event "EVN crön 227: News: Rebs Liaise with Pols"
 	set "EVN crön active 227"
 	set "EVN bit 8899"
-	# EVN IndNewsStr 15077 requires converted news text.
-	# EVN local news 1: government 141, string 15077.
-	# EVN local news 2: government 130, string 15077.
+	news "EVN crön 227 news 15077 independent"
+		location
+			near "Sol" 100
+	news "EVN crön 227 news 15077 government 141"
+		location
+			government "Rebellion"
+	news "EVN crön 227 news 15077 government 130"
+		location
+			government "Polaris"
 
 event "EVN crön 227: News: Rebs Liaise with Pols end"
+	news "EVN crön 227 news 15077 independent"
+		remove location
+	news "EVN crön 227 news 15077 government 141"
+		remove location
+	news "EVN crön 227 news 15077 government 130"
+		remove location
 	clear "EVN crön active 227"
 	clear "EVN crön pending 227"
 
@@ -114,11 +182,23 @@ event "EVN crön 227: News: Rebs Liaise with Pols end"
 event "EVN crön 226: News: Player Auroran Thurokiir"
 	set "EVN crön active 226"
 	set "EVN bit 8897"
-	# EVN IndNewsStr 15076 requires converted news text.
-	# EVN local news 1: government 129, string 15074.
-	# EVN local news 2: government 128, string 15075.
+	news "EVN crön 226 news 15076 independent"
+		location
+			near "Sol" 100
+	news "EVN crön 226 news 15074 government 129"
+		location
+			government "Auroran Empire"
+	news "EVN crön 226 news 15075 government 128"
+		location
+			government "Federation"
 
 event "EVN crön 226: News: Player Auroran Thurokiir end"
+	news "EVN crön 226 news 15076 independent"
+		remove location
+	news "EVN crön 226 news 15074 government 129"
+		remove location
+	news "EVN crön 226 news 15075 government 128"
+		remove location
 	clear "EVN crön active 226"
 	clear "EVN crön pending 226"
 
@@ -126,12 +206,28 @@ event "EVN crön 226: News: Player Auroran Thurokiir end"
 event "EVN crön 225: News: Player Heraan Thurokiir"
 	set "EVN crön active 225"
 	set "EVN bit 8895"
-	# EVN IndNewsStr 15073 requires converted news text.
-	# EVN local news 1: government 135, string 15070.
-	# EVN local news 2: government 129, string 15071.
-	# EVN local news 3: government 128, string 15072.
+	news "EVN crön 225 news 15073 independent"
+		location
+			near "Sol" 100
+	news "EVN crön 225 news 15070 government 135"
+		location
+			government "Family Heraan"
+	news "EVN crön 225 news 15071 government 129"
+		location
+			government "Auroran Empire"
+	news "EVN crön 225 news 15072 government 128"
+		location
+			government "Federation"
 
 event "EVN crön 225: News: Player Heraan Thurokiir end"
+	news "EVN crön 225 news 15073 independent"
+		remove location
+	news "EVN crön 225 news 15070 government 135"
+		remove location
+	news "EVN crön 225 news 15071 government 129"
+		remove location
+	news "EVN crön 225 news 15072 government 128"
+		remove location
 	clear "EVN crön active 225"
 	clear "EVN crön pending 225"
 
@@ -139,10 +235,18 @@ event "EVN crön 225: News: Player Heraan Thurokiir end"
 event "EVN crön 224: News: Auroran Champion"
 	set "EVN crön active 224"
 	set "EVN bit 8893"
-	# EVN local news 1: government 135, string 15068.
-	# EVN local news 2: government 129, string 15069.
+	news "EVN crön 224 news 15068 government 135"
+		location
+			government "Family Heraan"
+	news "EVN crön 224 news 15069 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 224: News: Auroran Champion end"
+	news "EVN crön 224 news 15068 government 135"
+		remove location
+	news "EVN crön 224 news 15069 government 129"
+		remove location
 	clear "EVN crön active 224"
 	clear "EVN crön pending 224"
 
@@ -150,11 +254,23 @@ event "EVN crön 224: News: Auroran Champion end"
 event "EVN crön 223: News: Pack disrupts shipping"
 	set "EVN crön active 223"
 	set "EVN bit 8891"
-	# EVN local news 1: government 135, string 15065.
-	# EVN local news 2: government 129, string 15066.
-	# EVN local news 3: government 128, string 15067.
+	news "EVN crön 223 news 15065 government 135"
+		location
+			government "Family Heraan"
+	news "EVN crön 223 news 15066 government 129"
+		location
+			government "Auroran Empire"
+	news "EVN crön 223 news 15067 government 128"
+		location
+			government "Federation"
 
 event "EVN crön 223: News: Pack disrupts shipping end"
+	news "EVN crön 223 news 15065 government 135"
+		remove location
+	news "EVN crön 223 news 15066 government 129"
+		remove location
+	news "EVN crön 223 news 15067 government 128"
+		remove location
 	clear "EVN crön active 223"
 	clear "EVN crön pending 223"
 
@@ -162,13 +278,28 @@ event "EVN crön 223: News: Pack disrupts shipping end"
 event "EVN crön 222: Advanced Pirate news"
 	set "EVN crön active 222"
 	set "EVN bit 8889"
-	# EVN IndNewsStr 15064 requires converted news text.
-	# EVN local news 1: government 128, string 15060.
-	# EVN local news 2: government 129, string 15061.
-	# EVN local news 3: government 130, string 15062.
-	# EVN local news 4: government 141, string NaN.
+	news "EVN crön 222 news 15064 independent"
+		location
+			near "Sol" 100
+	news "EVN crön 222 news 15060 government 128"
+		location
+			government "Federation"
+	news "EVN crön 222 news 15061 government 129"
+		location
+			government "Auroran Empire"
+	news "EVN crön 222 news 15062 government 130"
+		location
+			government "Polaris"
 
 event "EVN crön 222: Advanced Pirate news end"
+	news "EVN crön 222 news 15064 independent"
+		remove location
+	news "EVN crön 222 news 15060 government 128"
+		remove location
+	news "EVN crön 222 news 15061 government 129"
+		remove location
+	news "EVN crön 222 news 15062 government 130"
+		remove location
 	clear "EVN crön active 222"
 	clear "EVN crön pending 222"
 
@@ -330,9 +461,13 @@ event "EVN crön 375: Pirate Storyline Penultimate missionbit change end"
 event "EVN crön 374: New Ireland Restore cron 1"
 	set "EVN crön active 374"
 	set "EVN bit 852"
-	# EVN IndNewsStr 15041 requires converted news text.
+	news "EVN crön 374 news 15041 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 374: New Ireland Restore cron 1 end"
+	news "EVN crön 374 news 15041 independent"
+		remove location
 	clear "EVN crön active 374"
 	clear "EVN crön pending 374"
 
@@ -340,9 +475,13 @@ event "EVN crön 374: New Ireland Restore cron 1 end"
 event "EVN crön 373: New Ireland Restore cron 1"
 	set "EVN crön active 373"
 	set "EVN bit 851"
-	# EVN IndNewsStr 15041 requires converted news text.
+	news "EVN crön 373 news 15041 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 373: New Ireland Restore cron 1 end"
+	news "EVN crön 373 news 15041 independent"
+		remove location
 	clear "EVN crön active 373"
 	clear "EVN crön pending 373"
 
@@ -381,20 +520,28 @@ event "EVN crön 211: Brass Loses Ground cron end"
 # EVN crön 210: Random 100, PreHoldoff 100, Duration 50, PostHoldoff 0.
 event "EVN crön 210: Brass Improvement cron 1.1"
 	set "EVN crön active 210"
-	# EVN IndNewsStr 15040 requires converted news text.
+	news "EVN crön 210 news 15040 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 210: Brass Improvement cron 1.1 end"
 	set "EVN bit 6301"
+	news "EVN crön 210 news 15040 independent"
+		remove location
 	clear "EVN crön active 210"
 	clear "EVN crön pending 210"
 
 # EVN crön 209: Random 75, PreHoldoff 100, Duration 50, PostHoldoff 0.
 event "EVN crön 209: Brass Improvement cron 1"
 	set "EVN crön active 209"
-	# EVN IndNewsStr 15039 requires converted news text.
+	news "EVN crön 209 news 15039 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 209: Brass Improvement cron 1 end"
 	set "EVN bit 6300"
+	news "EVN crön 209 news 15039 independent"
+		remove location
 	clear "EVN crön active 209"
 	clear "EVN crön pending 209"
 
@@ -528,9 +675,13 @@ event "EVN crön 195: Fed Dominate cron end"
 event "EVN crön 194: RAGE Gunboat Appearance cron"
 	set "EVN crön active 194"
 	set "EVN bit 341"
-	# EVN local news 1: government 128, string 15038.
+	news "EVN crön 194 news 15038 government 128"
+		location
+			government "Federation"
 
 event "EVN crön 194: RAGE Gunboat Appearance cron end"
+	news "EVN crön 194 news 15038 government 128"
+		remove location
 	clear "EVN crön active 194"
 	clear "EVN crön pending 194"
 
@@ -538,11 +689,19 @@ event "EVN crön 194: RAGE Gunboat Appearance cron end"
 event "EVN crön 193: Reb/Fed Syst Change 1 Aldebaran"
 	set "EVN crön active 193"
 	set "EVN bit 6034"
-	# EVN local news 1: government 128, string 15037.
-	# EVN local news 2: government 141, string 15059.
+	news "EVN crön 193 news 15037 government 128"
+		location
+			government "Federation"
+	news "EVN crön 193 news 15059 government 141"
+		location
+			government "Rebellion"
 
 event "EVN crön 193: Reb/Fed Syst Change 1 Aldebaran end"
 	clear "EVN bit 6034"
+	news "EVN crön 193 news 15037 government 128"
+		remove location
+	news "EVN crön 193 news 15059 government 141"
+		remove location
 	clear "EVN crön active 193"
 	clear "EVN crön pending 193"
 
@@ -550,11 +709,19 @@ event "EVN crön 193: Reb/Fed Syst Change 1 Aldebaran end"
 event "EVN crön 192: Reb/Fed Syst Change 1 Nesre Primus"
 	set "EVN crön active 192"
 	set "EVN bit 6033"
-	# EVN local news 1: government 128, string 15036.
-	# EVN local news 2: government 141, string 15058.
+	news "EVN crön 192 news 15036 government 128"
+		location
+			government "Federation"
+	news "EVN crön 192 news 15058 government 141"
+		location
+			government "Rebellion"
 
 event "EVN crön 192: Reb/Fed Syst Change 1 Nesre Primus end"
 	clear "EVN bit 6033"
+	news "EVN crön 192 news 15036 government 128"
+		remove location
+	news "EVN crön 192 news 15058 government 141"
+		remove location
 	clear "EVN crön active 192"
 
 event "EVN crön 192: Reb/Fed Syst Change 1 Nesre Primus cooldown"
@@ -564,10 +731,14 @@ event "EVN crön 192: Reb/Fed Syst Change 1 Nesre Primus cooldown"
 event "EVN crön 191: V Rare Aur/Fed Syst Change 11 Lalande"
 	set "EVN crön active 191"
 	set "EVN bit 6028"
-	# EVN IndNewsStr 15034 requires converted news text.
+	news "EVN crön 191 news 15034 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 191: V Rare Aur/Fed Syst Change 11 Lalande end"
 	clear "EVN bit 6028"
+	news "EVN crön 191 news 15034 independent"
+		remove location
 	clear "EVN crön active 191"
 	clear "EVN crön pending 191"
 
@@ -575,10 +746,14 @@ event "EVN crön 191: V Rare Aur/Fed Syst Change 11 Lalande end"
 event "EVN crön 190: V Rare Aur/Fed Syst Change 10 Kania"
 	set "EVN crön active 190"
 	set "EVN bit 6027"
-	# EVN IndNewsStr 15033 requires converted news text.
+	news "EVN crön 190 news 15033 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 190: V Rare Aur/Fed Syst Change 10 Kania end"
 	clear "EVN bit 6027"
+	news "EVN crön 190 news 15033 independent"
+		remove location
 	clear "EVN crön active 190"
 	clear "EVN crön pending 190"
 
@@ -586,10 +761,14 @@ event "EVN crön 190: V Rare Aur/Fed Syst Change 10 Kania end"
 event "EVN crön 189: V Rare Aur/Fed Syst Change 9 Formalhaut"
 	set "EVN crön active 189"
 	set "EVN bit 6026"
-	# EVN IndNewsStr 15032 requires converted news text.
+	news "EVN crön 189 news 15032 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 189: V Rare Aur/Fed Syst Change 9 Formalhaut end"
 	clear "EVN bit 6026"
+	news "EVN crön 189 news 15032 independent"
+		remove location
 	clear "EVN crön active 189"
 	clear "EVN crön pending 189"
 
@@ -597,11 +776,19 @@ event "EVN crön 189: V Rare Aur/Fed Syst Change 9 Formalhaut end"
 event "EVN crön 188: V Rare Aur/Fed Syst Change 8 Nesre Secundus"
 	set "EVN crön active 188"
 	set "EVN bit 6025"
-	# EVN local news 1: government 128, string 15031.
-	# EVN local news 2: government 129, string 15057.
+	news "EVN crön 188 news 15031 government 128"
+		location
+			government "Federation"
+	news "EVN crön 188 news 15057 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 188: V Rare Aur/Fed Syst Change 8 Nesre Secundus end"
 	clear "EVN bit 6025"
+	news "EVN crön 188 news 15031 government 128"
+		remove location
+	news "EVN crön 188 news 15057 government 129"
+		remove location
 	clear "EVN crön active 188"
 	clear "EVN crön pending 188"
 
@@ -609,11 +796,19 @@ event "EVN crön 188: V Rare Aur/Fed Syst Change 8 Nesre Secundus end"
 event "EVN crön 187: V Rare Aur/Fed Syst Change 7 Sol"
 	set "EVN crön active 187"
 	set "EVN bit 6024"
-	# EVN local news 1: government 128, string 15030.
-	# EVN local news 2: government 129, string 15056.
+	news "EVN crön 187 news 15030 government 128"
+		location
+			government "Federation"
+	news "EVN crön 187 news 15056 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 187: V Rare Aur/Fed Syst Change 7 Sol end"
 	clear "EVN bit 6024"
+	news "EVN crön 187 news 15030 government 128"
+		remove location
+	news "EVN crön 187 news 15056 government 129"
+		remove location
 	clear "EVN crön active 187"
 	clear "EVN crön pending 187"
 
@@ -621,11 +816,19 @@ event "EVN crön 187: V Rare Aur/Fed Syst Change 7 Sol end"
 event "EVN crön 186: V Rare Aur/Fed Syst Change 6 SPC-1367"
 	set "EVN crön active 186"
 	set "EVN bit 6023"
-	# EVN local news 1: government 128, string 15029.
-	# EVN local news 2: government 129, string 15055.
+	news "EVN crön 186 news 15029 government 128"
+		location
+			government "Federation"
+	news "EVN crön 186 news 15055 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 186: V Rare Aur/Fed Syst Change 6 SPC-1367 end"
 	clear "EVN bit 6023"
+	news "EVN crön 186 news 15029 government 128"
+		remove location
+	news "EVN crön 186 news 15055 government 129"
+		remove location
 	clear "EVN crön active 186"
 	clear "EVN crön pending 186"
 
@@ -633,11 +836,19 @@ event "EVN crön 186: V Rare Aur/Fed Syst Change 6 SPC-1367 end"
 event "EVN crön 185: V Rare Aur/Fed Syst Change 5 Kerella"
 	set "EVN crön active 185"
 	set "EVN bit 6022"
-	# EVN local news 1: government 128, string 15028.
-	# EVN local news 2: government 129, string 15054.
+	news "EVN crön 185 news 15028 government 128"
+		location
+			government "Federation"
+	news "EVN crön 185 news 15054 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 185: V Rare Aur/Fed Syst Change 5 Kerella end"
 	clear "EVN bit 6022"
+	news "EVN crön 185 news 15028 government 128"
+		remove location
+	news "EVN crön 185 news 15054 government 129"
+		remove location
 	clear "EVN crön active 185"
 
 event "EVN crön 185: V Rare Aur/Fed Syst Change 5 Kerella cooldown"
@@ -647,11 +858,19 @@ event "EVN crön 185: V Rare Aur/Fed Syst Change 5 Kerella cooldown"
 event "EVN crön 184: V Rare Aur/Fed Syst Change 4 SPC-034"
 	set "EVN crön active 184"
 	set "EVN bit 6021"
-	# EVN local news 1: government 128, string 15027.
-	# EVN local news 2: government 129, string 15053.
+	news "EVN crön 184 news 15027 government 128"
+		location
+			government "Federation"
+	news "EVN crön 184 news 15053 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 184: V Rare Aur/Fed Syst Change 4 SPC-034 end"
 	clear "EVN bit 6021"
+	news "EVN crön 184 news 15027 government 128"
+		remove location
+	news "EVN crön 184 news 15053 government 129"
+		remove location
 	clear "EVN crön active 184"
 
 event "EVN crön 184: V Rare Aur/Fed Syst Change 4 SPC-034 cooldown"
@@ -661,12 +880,24 @@ event "EVN crön 184: V Rare Aur/Fed Syst Change 4 SPC-034 cooldown"
 event "EVN crön 183: V Rare Aur/Fed Syst Change 3 Heraan Cov"
 	set "EVN crön active 183"
 	set "EVN bit 6032"
-	# EVN local news 1: government 128, string 15026.
-	# EVN local news 2: government 129, string 15051.
-	# EVN local news 3: government 135, string 15052.
+	news "EVN crön 183 news 15026 government 128"
+		location
+			government "Federation"
+	news "EVN crön 183 news 15051 government 129"
+		location
+			government "Auroran Empire"
+	news "EVN crön 183 news 15052 government 135"
+		location
+			government "Family Heraan"
 
 event "EVN crön 183: V Rare Aur/Fed Syst Change 3 Heraan Cov end"
 	clear "EVN bit 6032"
+	news "EVN crön 183 news 15026 government 128"
+		remove location
+	news "EVN crön 183 news 15051 government 129"
+		remove location
+	news "EVN crön 183 news 15052 government 135"
+		remove location
 	clear "EVN crön active 183"
 	clear "EVN crön pending 183"
 
@@ -674,11 +905,19 @@ event "EVN crön 183: V Rare Aur/Fed Syst Change 3 Heraan Cov end"
 event "EVN crön 182: V Rare Aur/Fed Syst Change 2 Inci"
 	set "EVN crön active 182"
 	set "EVN bit 6020"
-	# EVN local news 1: government 128, string 15025.
-	# EVN local news 2: government 129, string 15050.
+	news "EVN crön 182 news 15025 government 128"
+		location
+			government "Federation"
+	news "EVN crön 182 news 15050 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 182: V Rare Aur/Fed Syst Change 2 Inci end"
 	clear "EVN bit 6020"
+	news "EVN crön 182 news 15025 government 128"
+		remove location
+	news "EVN crön 182 news 15050 government 129"
+		remove location
 	clear "EVN crön active 182"
 	clear "EVN crön pending 182"
 
@@ -686,11 +925,19 @@ event "EVN crön 182: V Rare Aur/Fed Syst Change 2 Inci end"
 event "EVN crön 181: V Rare Aur/Fed Syst Change 1 Hope"
 	set "EVN crön active 181"
 	set "EVN bit 6019"
-	# EVN local news 1: government 128, string 15024.
-	# EVN local news 2: government 129, string 15049.
+	news "EVN crön 181 news 15024 government 128"
+		location
+			government "Federation"
+	news "EVN crön 181 news 15049 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 181: V Rare Aur/Fed Syst Change 1 Hope end"
 	clear "EVN bit 6019"
+	news "EVN crön 181 news 15024 government 128"
+		remove location
+	news "EVN crön 181 news 15049 government 129"
+		remove location
 	clear "EVN crön active 181"
 	clear "EVN crön pending 181"
 
@@ -698,11 +945,19 @@ event "EVN crön 181: V Rare Aur/Fed Syst Change 1 Hope end"
 event "EVN crön 180: Rare Aur/Fed Syst Change 9 Spica"
 	set "EVN crön active 180"
 	set "EVN bit 6018"
-	# EVN local news 1: government 128, string 15023.
-	# EVN local news 2: government 129, string 15048.
+	news "EVN crön 180 news 15023 government 128"
+		location
+			government "Federation"
+	news "EVN crön 180 news 15048 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 180: Rare Aur/Fed Syst Change 9 Spica end"
 	clear "EVN bit 6018"
+	news "EVN crön 180 news 15023 government 128"
+		remove location
+	news "EVN crön 180 news 15048 government 129"
+		remove location
 	clear "EVN crön active 180"
 	clear "EVN crön pending 180"
 
@@ -710,10 +965,14 @@ event "EVN crön 180: Rare Aur/Fed Syst Change 9 Spica end"
 event "EVN crön 179: Rare Aur/Fed Syst Change 8 Narcissus"
 	set "EVN crön active 179"
 	set "EVN bit 6016"
-	# EVN IndNewsStr 15022 requires converted news text.
+	news "EVN crön 179 news 15022 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 179: Rare Aur/Fed Syst Change 8 Narcissus end"
 	clear "EVN bit 6016"
+	news "EVN crön 179 news 15022 independent"
+		remove location
 	clear "EVN crön active 179"
 	clear "EVN crön pending 179"
 
@@ -721,11 +980,19 @@ event "EVN crön 179: Rare Aur/Fed Syst Change 8 Narcissus end"
 event "EVN crön 178: Rare Aur/Fed Syst Change 7 Biri"
 	set "EVN crön active 178"
 	set "EVN bit 6015"
-	# EVN local news 1: government 128, string 15021.
-	# EVN local news 2: government 129, string 15047.
+	news "EVN crön 178 news 15021 government 128"
+		location
+			government "Federation"
+	news "EVN crön 178 news 15047 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 178: Rare Aur/Fed Syst Change 7 Biri end"
 	clear "EVN bit 6015"
+	news "EVN crön 178 news 15021 government 128"
+		remove location
+	news "EVN crön 178 news 15047 government 129"
+		remove location
 	clear "EVN crön active 178"
 	clear "EVN crön pending 178"
 
@@ -743,10 +1010,14 @@ event "EVN crön 177: Rare Aur/Fed Syst Change 6 Derlic end"
 event "EVN crön 176: Rare Aur/Fed Syst Change 5 Creyt"
 	set "EVN crön active 176"
 	set "EVN bit 6013"
-	# EVN IndNewsStr 15020 requires converted news text.
+	news "EVN crön 176 news 15020 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 176: Rare Aur/Fed Syst Change 5 Creyt end"
 	clear "EVN bit 6013"
+	news "EVN crön 176 news 15020 independent"
+		remove location
 	clear "EVN crön active 176"
 	clear "EVN crön pending 176"
 
@@ -754,10 +1025,14 @@ event "EVN crön 176: Rare Aur/Fed Syst Change 5 Creyt end"
 event "EVN crön 175: Rare Aur/Fed Syst Change 4 Sale"
 	set "EVN crön active 175"
 	set "EVN bit 6012"
-	# EVN IndNewsStr 15019 requires converted news text.
+	news "EVN crön 175 news 15019 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 175: Rare Aur/Fed Syst Change 4 Sale end"
 	clear "EVN bit 6012"
+	news "EVN crön 175 news 15019 independent"
+		remove location
 	clear "EVN crön active 175"
 	clear "EVN crön pending 175"
 
@@ -765,11 +1040,19 @@ event "EVN crön 175: Rare Aur/Fed Syst Change 4 Sale end"
 event "EVN crön 174: Rare Aur/Fed Syst Change 3 Aria"
 	set "EVN crön active 174"
 	set "EVN bit 6011"
-	# EVN local news 1: government 128, string 15018.
-	# EVN local news 2: government 129, string 15046.
+	news "EVN crön 174 news 15018 government 128"
+		location
+			government "Federation"
+	news "EVN crön 174 news 15046 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 174: Rare Aur/Fed Syst Change 3 Aria end"
 	clear "EVN bit 6011"
+	news "EVN crön 174 news 15018 government 128"
+		remove location
+	news "EVN crön 174 news 15046 government 129"
+		remove location
 	clear "EVN crön active 174"
 	clear "EVN crön pending 174"
 
@@ -777,30 +1060,42 @@ event "EVN crön 174: Rare Aur/Fed Syst Change 3 Aria end"
 event "EVN crön 173: Rare Aur/Fed Syst Change 2 Wittor"
 	set "EVN crön active 173"
 	set "EVN bit 6010"
-	# EVN local news 1: government 128, string 15017.
+	news "EVN crön 173 news 15017 government 128"
+		location
+			government "Federation"
 
 event "EVN crön 173: Rare Aur/Fed Syst Change 2 Wittor end"
 	clear "EVN bit 6010"
+	news "EVN crön 173 news 15017 government 128"
+		remove location
 	clear "EVN crön active 173"
 	clear "EVN crön pending 173"
 
 # EVN crön 172: Random 100, PreHoldoff 0, Duration 10, PostHoldoff 0.
 event "EVN crön 172: Rare Aur/Fed Syst Change 1.2"
 	set "EVN crön active 172"
-	# EVN IndNewsStr 15035 requires converted news text.
+	news "EVN crön 172 news 15035 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 172: Rare Aur/Fed Syst Change 1.2 end"
 	clear "EVN bit 6009"
+	news "EVN crön 172 news 15035 independent"
+		remove location
 	clear "EVN crön active 172"
 	clear "EVN crön pending 172"
 
 # EVN crön 171: Random 100, PreHoldoff 50, Duration 14, PostHoldoff 0.
 event "EVN crön 171: Rare Aur/Fed Syst Change 1.1"
 	set "EVN crön active 171"
-	# EVN IndNewsStr 15016 requires converted news text.
+	news "EVN crön 171 news 15016 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 171: Rare Aur/Fed Syst Change 1.1 end"
 	clear "EVN bit 6008"
+	news "EVN crön 171 news 15016 independent"
+		remove location
 	clear "EVN crön active 171"
 	clear "EVN crön pending 171"
 
@@ -808,10 +1103,18 @@ event "EVN crön 171: Rare Aur/Fed Syst Change 1.1 end"
 event "EVN crön 170: Rare Aur/Fed Syst Change 1 Tichel or Uroa"
 	set "EVN crön active 170"
 	# EVN OnStart preserved: "R(b6008 b6009)"
-	# EVN local news 1: government 128, string 15035.
-	# EVN local news 2: government 129, string 15016.
+	news "EVN crön 170 news 15035 government 128"
+		location
+			government "Federation"
+	news "EVN crön 170 news 15016 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 170: Rare Aur/Fed Syst Change 1 Tichel or Uroa end"
+	news "EVN crön 170 news 15035 government 128"
+		remove location
+	news "EVN crön 170 news 15016 government 129"
+		remove location
 	clear "EVN crön active 170"
 	clear "EVN crön pending 170"
 
@@ -820,12 +1123,20 @@ event "EVN crön 169: Common Aur/Fed Syst Change 2.3 SPC-050 & Unin"
 	set "EVN crön active 169"
 	set "EVN bit 6006"
 	set "EVN bit 6029"
-	# EVN local news 1: government 128, string 15015.
-	# EVN local news 2: government 129, string 15045.
+	news "EVN crön 169 news 15015 government 128"
+		location
+			government "Federation"
+	news "EVN crön 169 news 15045 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 169: Common Aur/Fed Syst Change 2.3 SPC-050 & Unin end"
 	clear "EVN bit 6003"
 	clear "EVN bit 6029"
+	news "EVN crön 169 news 15015 government 128"
+		remove location
+	news "EVN crön 169 news 15045 government 129"
+		remove location
 	clear "EVN crön active 169"
 	clear "EVN crön pending 169"
 
@@ -834,11 +1145,15 @@ event "EVN crön 168: Common Aur/Fed Syst Change 2.2 Xante"
 	set "EVN crön active 168"
 	set "EVN bit 6007"
 	set "EVN bit 6029"
-	# EVN IndNewsStr 15014 requires converted news text.
+	news "EVN crön 168 news 15014 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 168: Common Aur/Fed Syst Change 2.2 Xante end"
 	clear "EVN bit 6007"
 	clear "EVN bit 6029"
+	news "EVN crön 168 news 15014 independent"
+		remove location
 	clear "EVN crön active 168"
 	clear "EVN crön pending 168"
 
@@ -847,12 +1162,20 @@ event "EVN crön 167: Common Aur/Fed Syst Change 2.1 SPC-050"
 	set "EVN crön active 167"
 	set "EVN bit 6005"
 	set "EVN bit 6029"
-	# EVN local news 1: government 128, string 15013.
-	# EVN local news 2: government 129, string 15044.
+	news "EVN crön 167 news 15013 government 128"
+		location
+			government "Federation"
+	news "EVN crön 167 news 15044 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 167: Common Aur/Fed Syst Change 2.1 SPC-050 end"
 	clear "EVN bit 6005"
 	clear "EVN bit 6029"
+	news "EVN crön 167 news 15013 government 128"
+		remove location
+	news "EVN crön 167 news 15044 government 129"
+		remove location
 	clear "EVN crön active 167"
 	clear "EVN crön pending 167"
 
@@ -861,12 +1184,20 @@ event "EVN crön 166: Common Aur/Fed Syst Change 2 Unin"
 	set "EVN crön active 166"
 	set "EVN bit 6004"
 	set "EVN bit 6029"
-	# EVN local news 1: government 128, string 15012.
-	# EVN local news 2: government 129, string 15043.
+	news "EVN crön 166 news 15012 government 128"
+		location
+			government "Federation"
+	news "EVN crön 166 news 15043 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 166: Common Aur/Fed Syst Change 2 Unin end"
 	clear "EVN bit 6004"
 	clear "EVN bit 6029"
+	news "EVN crön 166 news 15012 government 128"
+		remove location
+	news "EVN crön 166 news 15043 government 129"
+		remove location
 	clear "EVN crön active 166"
 	clear "EVN crön pending 166"
 
@@ -875,12 +1206,20 @@ event "EVN crön 165: Common Aur/Fed Syst Change 1.4 Alphara & Gateway"
 	set "EVN crön active 165"
 	set "EVN bit 6017"
 	set "EVN bit 6030"
-	# EVN local news 1: government 128, string 15011.
-	# EVN local news 2: government 129, string 15042.
+	news "EVN crön 165 news 15011 government 128"
+		location
+			government "Federation"
+	news "EVN crön 165 news 15042 government 129"
+		location
+			government "Auroran Empire"
 
 event "EVN crön 165: Common Aur/Fed Syst Change 1.4 Alphara & Gateway end"
 	clear "EVN bit 6017"
 	clear "EVN bit 6030"
+	news "EVN crön 165 news 15011 government 128"
+		remove location
+	news "EVN crön 165 news 15042 government 129"
+		remove location
 	clear "EVN crön active 165"
 	clear "EVN crön pending 165"
 
@@ -889,11 +1228,15 @@ event "EVN crön 164: Common Aur/Fed Syst Change 1.3 Alphara"
 	set "EVN crön active 164"
 	set "EVN bit 6003"
 	set "EVN bit 6030"
-	# EVN IndNewsStr 15010 requires converted news text.
+	news "EVN crön 164 news 15010 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 164: Common Aur/Fed Syst Change 1.3 Alphara end"
 	clear "EVN bit 6003"
 	clear "EVN bit 6030"
+	news "EVN crön 164 news 15010 independent"
+		remove location
 	clear "EVN crön active 164"
 	clear "EVN crön pending 164"
 
@@ -902,11 +1245,15 @@ event "EVN crön 163: Common Aur/Fed Syst Change 1.2 Vemap"
 	set "EVN crön active 163"
 	set "EVN bit 6002"
 	set "EVN bit 6030"
-	# EVN IndNewsStr 15009 requires converted news text.
+	news "EVN crön 163 news 15009 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 163: Common Aur/Fed Syst Change 1.2 Vemap end"
 	clear "EVN bit 6002"
 	clear "EVN bit 6030"
+	news "EVN crön 163 news 15009 independent"
+		remove location
 	clear "EVN crön active 163"
 	clear "EVN crön pending 163"
 
@@ -915,11 +1262,15 @@ event "EVN crön 162: Common Aur/Fed Syst Change 1.1 Gateway"
 	set "EVN crön active 162"
 	set "EVN bit 6001"
 	set "EVN bit 6030"
-	# EVN IndNewsStr 15008 requires converted news text.
+	news "EVN crön 162 news 15008 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 162: Common Aur/Fed Syst Change 1.1 Gateway end"
 	clear "EVN bit 6001"
 	clear "EVN bit 6030"
+	news "EVN crön 162 news 15008 independent"
+		remove location
 	clear "EVN crön active 162"
 	clear "EVN crön pending 162"
 
@@ -928,11 +1279,15 @@ event "EVN crön 161: Common Aur/Fed Syst Change 1 Neirt"
 	set "EVN crön active 161"
 	set "EVN bit 6000"
 	set "EVN bit 6030"
-	# EVN IndNewsStr 15007 requires converted news text.
+	news "EVN crön 161 news 15007 independent"
+		location
+			near "Sol" 100
 
 event "EVN crön 161: Common Aur/Fed Syst Change 1 Neirt end"
 	clear "EVN bit 6000"
 	clear "EVN bit 6030"
+	news "EVN crön 161 news 15007 independent"
+		remove location
 	clear "EVN crön active 161"
 	clear "EVN crön pending 161"
 
@@ -958,10 +1313,14 @@ event "EVN crön 159: Rebel Cloak - success (mass produce) end"
 # EVN crön 157: Random 100, PreHoldoff 250, Duration 0, PostHoldoff 0.
 event "EVN crön 157: Chrome Valk Upgrade"
 	set "EVN crön active 157"
-	# EVN local news 1: government 128, string 15006.
+	news "EVN crön 157 news 15006 government 128"
+		location
+			government "Federation"
 
 event "EVN crön 157: Chrome Valk Upgrade end"
 	set "EVN bit 4000"
+	news "EVN crön 157 news 15006 government 128"
+		remove location
 	clear "EVN crön active 157"
 	clear "EVN crön pending 157"
 
@@ -997,9 +1356,13 @@ event "EVN crön 153: Non-Polaris start variant end"
 event "EVN crön 152: Polaris Cloak Weapons"
 	set "EVN crön active 152"
 	set "EVN bit 327"
-	# EVN local news 1: government 130, string 15004.
+	news "EVN crön 152 news 15004 government 130"
+		location
+			government "Polaris"
 
 event "EVN crön 152: Polaris Cloak Weapons end"
+	news "EVN crön 152 news 15004 government 130"
+		remove location
 	clear "EVN crön active 152"
 	clear "EVN crön pending 152"
 
@@ -1007,9 +1370,13 @@ event "EVN crön 152: Polaris Cloak Weapons end"
 event "EVN crön 151: Polaris Multi-Jump"
 	set "EVN crön active 151"
 	set "EVN bit 326"
-	# EVN local news 1: government 130, string 15003.
+	news "EVN crön 151 news 15003 government 130"
+		location
+			government "Polaris"
 
 event "EVN crön 151: Polaris Multi-Jump end"
+	news "EVN crön 151 news 15003 government 130"
+		remove location
 	clear "EVN crön active 151"
 	clear "EVN crön pending 151"
 
@@ -1053,9 +1420,13 @@ event "EVN crön 147: Polaris Cloak general v1.1.1 end"
 event "EVN crön 146: Polaris Cloak general v1.1"
 	set "EVN crön active 146"
 	set "EVN bit 1307"
-	# EVN local news 1: government 130, string 15001.
+	news "EVN crön 146 news 15001 government 130"
+		location
+			government "Polaris"
 
 event "EVN crön 146: Polaris Cloak general v1.1 end"
+	news "EVN crön 146 news 15001 government 130"
+		remove location
 	clear "EVN crön active 146"
 	clear "EVN crön pending 146"
 
@@ -1063,9 +1434,13 @@ event "EVN crön 146: Polaris Cloak general v1.1 end"
 event "EVN crön 145: Polaris Cloak general v1.0"
 	set "EVN crön active 145"
 	set "EVN bit 1306"
-	# EVN local news 1: government 130, string 15002.
+	news "EVN crön 145 news 15002 government 130"
+		location
+			government "Polaris"
 
 event "EVN crön 145: Polaris Cloak general v1.0 end"
+	news "EVN crön 145 news 15002 government 130"
+		remove location
 	clear "EVN crön active 145"
 	clear "EVN crön pending 145"
 
@@ -1073,9 +1448,13 @@ event "EVN crön 145: Polaris Cloak general v1.0 end"
 event "EVN crön 144: Polaris Cloaking Device v2.0"
 	set "EVN crön active 144"
 	set "EVN bit 1301"
-	# EVN local news 1: government 130, string 15002.
+	news "EVN crön 144 news 15002 government 130"
+		location
+			government "Polaris"
 
 event "EVN crön 144: Polaris Cloaking Device v2.0 end"
+	news "EVN crön 144 news 15002 government 130"
+		remove location
 	clear "EVN crön active 144"
 	clear "EVN crön pending 144"
 
@@ -1110,9 +1489,13 @@ event "EVN crön 141: Polaris Cloaking Device v1.1.1 end"
 event "EVN crön 140: Polaris Cloaking Device v1.1"
 	set "EVN crön active 140"
 	set "EVN bit 1302"
-	# EVN local news 1: government 130, string 15001.
+	news "EVN crön 140 news 15001 government 130"
+		location
+			government "Polaris"
 
 event "EVN crön 140: Polaris Cloaking Device v1.1 end"
+	news "EVN crön 140 news 15001 government 130"
+		remove location
 	clear "EVN crön active 140"
 	clear "EVN crön pending 140"
 
@@ -1138,9 +1521,13 @@ event "EVN crön 138: Polaris Cloaking Device v1.0.1 end"
 event "EVN crön 137: Polaris Cloaking Device v1.0"
 	set "EVN crön active 137"
 	set "EVN bit 320"
-	# EVN local news 1: government 130, string 15001.
+	news "EVN crön 137 news 15001 government 130"
+		location
+			government "Polaris"
 
 event "EVN crön 137: Polaris Cloaking Device v1.0 end"
+	news "EVN crön 137 news 15001 government 130"
+		remove location
 	clear "EVN crön active 137"
 	clear "EVN crön pending 137"
 
