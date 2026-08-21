@@ -3,7 +3,7 @@
 # Unsupported EVN selectors and opcodes remain visible in inactive stubs or inline comments.
 
 mission "EVN: Delivery to Earth; Vellos1"
-	landing
+	job
 	destination "Earth"
 	description "EV Nova contract: Delivery to Earth; Vellos1."
 	cargo "EVN random cargo" 5
@@ -27,8 +27,10 @@ mission "EVN: Delivery to Earth; Vellos1"
 mission "EVN: Visit Vell-os Homeworld; Vellos2"
 	landing
 	source "Earth"
-	waypoint "Vellos"
+	waypoint "Narcissus"
 	destination "Earth"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Visit Vell-os Homeworld; Vellos2."
 	to offer
 		and
@@ -69,6 +71,8 @@ mission "EVN: Return to Earth for Training; Vellos3"
 	to offer
 		never
 	# EVN availability preserved: "b351 & !(b352 | b4444)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "128"
 	# EVN OnAccept preserved: "b424 b450"
 	# EVN OnSuccess preserved: "b352 K131 b44 G251 G205 S818"
@@ -79,6 +83,8 @@ mission "EVN: Infiltrate the Rebels; Vellos4"
 	to offer
 		never
 	# EVN availability preserved: "b352 & !b353"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "421"
 	# EVN OnAccept preserved: "k148 A818"
 	# EVN OnSuccess preserved: "b353 S783"
@@ -88,6 +94,7 @@ mission "EVN: Escort Merchant to <RST>"
 	landing
 	destination
 		government "Auroran Empire"
+	# EVN AvailLoc 2 (offered from ship) approximated as landing
 	description "EV Nova contract: Escort Merchant to <RST>."
 	npc
 		government "Civvies"
@@ -106,12 +113,15 @@ mission "EVN: Derelict Decoy"
 	to offer
 		never
 	# EVN availability preserved: "!b424"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "2"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Passengers for <DST>"
 	landing
 	destination
 		government "Auroran Empire"
+	# EVN AvailLoc 2 (offered from ship) approximated as landing
 	description "EV Nova contract: Passengers for <DST>."
 	passengers 2
 	to offer
@@ -122,22 +132,38 @@ mission "EVN: Passengers for <DST>"
 		conversation "EVN dialogue 134 complete"
 
 mission "EVN: Rush Delivery to <DST>"
-	invisible
+	landing
+	# EVN AvailLoc 2 (offered from ship) approximated as landing
+	# EVN no specific return stellar; ES destination omitted
+	description "EV Nova contract: Rush Delivery to <DST>."
+	cargo "EVN random cargo" 10
+	deadline 18
 	to offer
-		never
-	# EVN availability preserved: "!b424"
-	# EVN destination preserved: "-1"
+		not "EVN bit 424"
+		random < 30
+	on complete
+		payment 30000
+	on visit
+		conversation "EVN dialogue 135 drop"
 
 mission "EVN: Delivery to <DST>"
-	invisible
+	landing
+	# EVN AvailLoc 2 (offered from ship) approximated as landing
+	# EVN no specific return stellar; ES destination omitted
+	description "EV Nova contract: Delivery to <DST>."
+	cargo "EVN random cargo" 10
 	to offer
-		never
-	# EVN availability preserved: "!b424"
-	# EVN destination preserved: "-1"
+		not "EVN bit 424"
+		random < 40
+	on complete
+		payment 75000
+	on visit
+		conversation "EVN dialogue 136 drop"
 
 mission "EVN: 25000 Credit Bounty"
 	landing
 	destination "Earth"
+	# EVN AvailLoc 2 (offered from ship) approximated as landing
 	description "EV Nova contract: 25000 Credit Bounty."
 	npc
 		government "Auroran Empire"
@@ -154,18 +180,33 @@ mission "EVN: 25000 Credit Bounty"
 		conversation "EVN dialogue 140 complete"
 
 mission "EVN: Refuel Trader"
+	landing
+	# EVN AvailLoc 2 (offered from ship) approximated as landing
+	# EVN no specific return stellar; ES destination omitted
 	invisible
+	# EVN CanAbort=0 preserved; ES abort semantics differ
+	# EVN Flags2 0x0002 pays on auto-abort; ES equivalent unavailable
+	description "EV Nova contract: Refuel Trader."
+	npc
+		government "Civvies"
+		personality heroic staying
+		ship "Valkyrie"
 	to offer
-		never
-	# EVN availability preserved: "!b424"
-	# EVN destination preserved: "-1"
-	# EVN OnAccept preserved: "Q25057"
+		not "EVN bit 424"
+		random < 100
+	on accept
+		message "EVN message 25057"
+	on complete
+		payment 2000
+		"reputation: Civvies" += 2
 
 mission "EVN: Rebel Food Drop; Vellos5"
 	landing
 	source "Merrol"
-	waypoint "Las Vegas"
+	waypoint "Nesre Primus"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Rebel Food Drop; Vellos5."
@@ -199,10 +240,11 @@ mission "EVN: Rebel Food Drop; Vellos5"
 		set "EVN bit 9334"
 
 mission "EVN: Regular Food Run; Vellos5a"
-	landing
+	job
 	source "Merrol"
-	waypoint "Las Vegas"
+	waypoint "Nesre Primus"
 	destination "Merrol"
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Regular Food Run; Vellos5a."
 	cargo "EVN cargo type 0" 10
@@ -228,8 +270,10 @@ mission "EVN: Regular Food Run; Vellos5a"
 mission "EVN: Rebel Equipment Drop; Vellos6"
 	landing
 	source "Merrol"
-	waypoint "Menin"
+	waypoint "Kerella"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Rebel Equipment Drop; Vellos6."
@@ -262,10 +306,11 @@ mission "EVN: Rebel Equipment Drop; Vellos6"
 		# EVN unsupported mission actions: "S819"
 
 mission "EVN: Regular Equipment Run; Vellos6a"
-	landing
+	job
 	source "Merrol"
-	waypoint "Menin"
+	waypoint "Kerella"
 	destination "Merrol"
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Regular Equipment Run; Vellos6a."
 	cargo "EVN cargo type 5" 10
@@ -293,6 +338,7 @@ mission "EVN: Rescue Agent; Vellos7"
 	landing
 	source "Merrol"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Rescue Agent; Vellos7."
@@ -327,6 +373,8 @@ mission "EVN: Receive Instructions from Krane; Vellos8"
 	to offer
 		never
 	# EVN availability preserved: "b356 & !b510"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "128"
 	# EVN OnSuccess preserved: "b357 b510"
 
@@ -335,6 +383,8 @@ mission "EVN: Rescue Rebel; Vellos8a"
 	to offer
 		never
 	# EVN availability preserved: "(b357 & b510) & !(b358 | b361)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "138"
 	# EVN OnSuccess preserved: "b358"
 
@@ -342,6 +392,7 @@ mission "EVN: Insert Bureau Agent; Vellos9"
 	landing
 	source "New England"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Insert Bureau Agent; Vellos9."
@@ -372,6 +423,7 @@ mission "EVN: Transport Mu'Randa;Polaris1"
 	source
 		government "Polaris"
 	destination "New Ireland"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Transport Mu'Randa;Polaris1."
 	cargo "EVN cargo type 29" 1
@@ -406,6 +458,7 @@ mission "EVN: Take Mu'Randa to Sol;Polaris2"
 	landing
 	source "New Ireland"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Take Mu'Randa to Sol;Polaris2."
 	cargo "EVN cargo type 29" 1
@@ -426,6 +479,7 @@ mission "EVN: See Vell-os Remains;Polaris3"
 	landing
 	source "Earth"
 	destination "Goliath"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: See Vell-os Remains;Polaris3."
 	cargo "EVN cargo type 29" 1
@@ -447,6 +501,8 @@ mission "EVN: Pick up Bis Andreya;Polaris4 CONTINUE"
 	to offer
 		never
 	# EVN availability preserved: "b277 & !(b512 | b5757)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "137"
 	# EVN OnSuccess preserved: "b5757"
 
@@ -455,6 +511,8 @@ mission "EVN: Go to P'ar Aed;Polaris5"
 	to offer
 		never
 	# EVN availability preserved: "(b278 & !b315) & !(b279 | b316)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "286"
 	# EVN OnSuccess preserved: "R(b279 b316)"
 
@@ -462,6 +520,7 @@ mission "EVN: Take Sample;Polaris6a"
 	landing
 	source "P'ar Aed"
 	destination "P'ar Aed"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Take Sample;Polaris6a."
 	cargo "EVN cargo type 31" 1
@@ -487,6 +546,7 @@ mission "EVN: Explore Wraith Space;Polaris7a"
 	landing
 	source "P'ar Aed"
 	destination "P'ar Aed"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Explore Wraith Space;Polaris7a."
 	cargo "EVN cargo type 21" 5
@@ -518,6 +578,7 @@ mission "EVN: Broadcast Message;Polaris8a"
 	landing
 	source "P'ar Aed"
 	destination "P'ar Aed"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Broadcast Message;Polaris8a."
 	cargo "EVN cargo type 21" 5
@@ -553,6 +614,7 @@ mission "EVN: Watch Wraith Talks;Polaris9a"
 	landing
 	source "Tre'ar Erma"
 	destination "Kel'ar Iy"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Watch Wraith Talks;Polaris9a."
 	cargo "EVN cargo type 29" 1
@@ -584,6 +646,7 @@ mission "EVN: Return From Talks;Polaris10a"
 	landing
 	source "Kel'ar Iy"
 	destination "Tre'ar Erma"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Return From Talks;Polaris10a."
@@ -612,6 +675,9 @@ mission "EVN: Scout Wraith Space;Polaris11a"
 	to offer
 		never
 	# EVN availability preserved: "(b284 & !b6137) & !(b285 | b6666)"
+	# EVN legal-record gate preserved: "10"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "421"
 	# EVN OnSuccess preserved: "b6137 S600 Q25076"
 	# EVN OnShipDone preserved: "842"
@@ -621,6 +687,8 @@ mission "EVN: Meet With Rebels;Polaris12"
 	to offer
 		never
 	# EVN availability preserved: "b285 & !(b286 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "421"
 	# EVN OnAccept preserved: "k148"
 	# EVN OnSuccess preserved: "b286"
@@ -629,6 +697,7 @@ mission "EVN: Return to Kel'ar Iy;Polaris13"
 	landing
 	source "Rebel II"
 	destination "Kel'ar Iy"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Return to Kel'ar Iy;Polaris13."
@@ -658,6 +727,9 @@ mission "EVN: Take Mu'Hari to Port Kane;Polaris14"
 	to offer
 		never
 	# EVN availability preserved: "b287 & !(b288 | b6666)"
+	# EVN legal-record gate preserved: "30"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "137"
 	# EVN OnAccept preserved: "K130"
 	# EVN OnSuccess preserved: "b288"
@@ -666,6 +738,7 @@ mission "EVN: Return With Message;Polaris15"
 	landing
 	source "Port Kane"
 	destination "Mu'ar Haro"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Return With Message;Polaris15."
@@ -694,7 +767,7 @@ mission "EVN: Return With Message;Polaris15"
 		conversation "EVN dialogue 164 complete"
 
 mission "EVN: ATTN: Ory'hara;Polaris16"
-	landing
+	job
 	source
 		government "Family Moash"
 	destination "Earth"
@@ -727,7 +800,7 @@ mission "EVN: ATTN: Ory'hara;Polaris16"
 		conversation "EVN dialogue 165 drop"
 
 mission "EVN: ATTN: Ory'hara;Polaris17"
-	landing
+	job
 	source
 		government "Family Moash"
 	destination "New Babylon"
@@ -764,6 +837,8 @@ mission "EVN: ATTN: Ory'hara;Polaris18"
 	to offer
 		never
 	# EVN availability preserved: "b291 & !b292"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "139"
 	# EVN OnSuccess preserved: "b292"
 
@@ -771,6 +846,7 @@ mission "EVN: Eamon's Answer;Polaris19"
 	landing
 	source "New Ireland"
 	destination "Mu'ar Haro"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Eamon's Answer;Polaris19."
@@ -796,7 +872,7 @@ mission "EVN: Eamon's Answer;Polaris19"
 		conversation "EVN dialogue 168 drop"
 
 mission "EVN: ATTN:Ory'hara;Polaris20"
-	landing
+	job
 	source
 		government "Family Moash"
 	destination "New England"
@@ -837,6 +913,8 @@ mission "EVN: Open Rebel Talks;Polaris21"
 	to offer
 		never
 	# EVN availability preserved: "b294 & !(b295 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "421"
 	# EVN OnSuccess preserved: "b295"
 
@@ -844,6 +922,7 @@ mission "EVN: Return With Rebel Ambassador;Polaris22"
 	landing
 	source "Rebel II"
 	destination "Kel'ar Iy"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Return With Rebel Ambassador;Polaris22."
@@ -872,6 +951,8 @@ mission "EVN: Head to Nil'ar Kemorya;Polaris23"
 	to offer
 		never
 	# EVN availability preserved: "b296 & !(b297 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "232"
 	# EVN OnSuccess preserved: "b297 b6666"
 
@@ -880,6 +961,8 @@ mission "EVN: Defend Polaris Space;Polaris24"
 	to offer
 		never
 	# EVN availability preserved: "(b348 & b297) & !(b298 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-4"
 	# EVN OnSuccess preserved: "b298 b6666"
 	# EVN OnShipDone preserved: "Q25061"
@@ -889,6 +972,8 @@ mission "EVN: Defend Polaris Space;Polaris25"
 	to offer
 		never
 	# EVN availability preserved: "b298 & !(b299 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-4"
 	# EVN OnSuccess preserved: "b299 b6666"
 	# EVN OnShipDone preserved: "Q25061"
@@ -898,6 +983,8 @@ mission "EVN: Scout Auroran Space;Polaris26"
 	to offer
 		never
 	# EVN availability preserved: "b299 & !(b300 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "297"
 	# EVN OnSuccess preserved: "b300"
 
@@ -906,6 +993,8 @@ mission "EVN: Meet With Rimertans;Polaris27"
 	to offer
 		never
 	# EVN availability preserved: "b300 & !b301"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "335"
 	# EVN OnSuccess preserved: "b301"
 
@@ -914,6 +1003,8 @@ mission "EVN: Meet With Heraan House;Polaris28 - Unregistered cutoff"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b301) & !b302"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnSuccess preserved: "b302"
 
@@ -921,6 +1012,7 @@ mission "EVN: Return To Mu'ar Haro;Polaris29"
 	landing
 	source "Heraan"
 	destination "Mu'ar Haro"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Return To Mu'ar Haro;Polaris29."
@@ -953,6 +1045,8 @@ mission "EVN: Consult Vell-os;Polaris30"
 	to offer
 		never
 	# EVN availability preserved: "(b296 & !b4444) & !(b349 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "128"
 	# EVN OnSuccess preserved: "b349"
 
@@ -960,6 +1054,7 @@ mission "EVN: Return to P'ar Aed;Polaris31"
 	landing
 	source "Earth"
 	destination "P'ar Aed"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Return to P'ar Aed;Polaris31."
@@ -990,8 +1085,10 @@ mission "EVN: Return to P'ar Aed;Polaris31"
 mission "EVN: Find Vellos;Polaris32"
 	landing
 	source "P'ar Aed"
-	waypoint "Vellos"
+	waypoint "Narcissus"
 	destination "P'ar Aed"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Find Vellos;Polaris32."
 	npc
@@ -1030,6 +1127,7 @@ mission "EVN: Observe Experiment;Polaris33"
 	source
 		government "Family Moash"
 	destination "Ver'a Se"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Observe Experiment;Polaris33."
 	cargo "EVN cargo type 29" 2
@@ -1062,8 +1160,10 @@ mission "EVN: Capture Vell-os;Polaris34"
 	landing
 	source
 		government "Family Moash"
-	waypoint "Earth"
+	waypoint "Tichel"
 	destination "Ver'a Se"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Capture Vell-os;Polaris34."
 	cargo "EVN cargo type 28" 1
@@ -1106,6 +1206,8 @@ mission "EVN: Pass on Info;Polaris35"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b305) & !(b306 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "360"
 	# EVN OnAccept preserved: "b1100"
 	# EVN OnSuccess preserved: "b306"
@@ -1116,6 +1218,8 @@ mission "EVN: Alert Rimertans;Polaris36"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b306) & !b307"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "335"
 	# EVN OnSuccess preserved: "b307"
 
@@ -1124,6 +1228,8 @@ mission "EVN: Observe Bureau;Polaris37"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b307) & !b308"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnSuccess preserved: "b308"
 
@@ -1132,6 +1238,8 @@ mission "EVN: Meet the Ruling Council;Polaris38"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b308) & !b309"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "338"
 	# EVN OnSuccess preserved: "b309 b6031"
 
@@ -1139,6 +1247,7 @@ mission "EVN: Return to Kel'ar Iy;Polaris39"
 	landing
 	source "Aurora"
 	destination "Kel'ar Iy"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Return to Kel'ar Iy;Polaris39."
@@ -1171,6 +1280,8 @@ mission "EVN: Find Krypt-tokh;Polaris40"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b310) & !(b311 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "407"
 	# EVN OnAccept preserved: "S872"
 	# EVN OnSuccess preserved: "b311 b330 S839 A872"
@@ -1180,6 +1291,7 @@ mission "EVN: Ferry Mu'Randa;Polaris41"
 	landing
 	source "Mu'ar Haro"
 	destination "Kel'ar Iy"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Ferry Mu'Randa;Polaris41."
@@ -1211,6 +1323,8 @@ mission "EVN: Travel to Ar'Za Iusia;Polaris42"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b312) & !b313"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "254"
 	# EVN OnAccept preserved: "S872"
 	# EVN OnSuccess preserved: "b313 A872"
@@ -1221,6 +1335,8 @@ mission "EVN: Head to Port Kane;Polaris43a"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b313) & !b314"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "137"
 	# EVN OnAccept preserved: "b315 S880 S881 G209"
 	# EVN OnRefuse preserved: "b314 S880 S881 S888 G209"
@@ -1232,6 +1348,8 @@ mission "EVN: Rebel Insertion; Vellos10"
 	to offer
 		never
 	# EVN availability preserved: "b359 & !b360"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "138"
 	# EVN OnSuccess preserved: "b360 S798"
 
@@ -1240,6 +1358,8 @@ mission "EVN: Learn the Rules...; Vellos11"
 	to offer
 		never
 	# EVN availability preserved: "b360 & !b423"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "138"
 	# EVN OnAccept preserved: "L131 K132 G206 D205 G338"
 	# EVN OnSuccess preserved: "b423 b6666"
@@ -1247,8 +1367,10 @@ mission "EVN: Learn the Rules...; Vellos11"
 mission "EVN: Scout Moash Space; Vellos12"
 	landing
 	source "New England"
-	waypoint "Moash"
+	waypoint "Biri"
 	destination "New England"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Scout Moash Space; Vellos12."
@@ -1273,6 +1395,8 @@ mission "EVN: Distract Moash House; Vellos13"
 	to offer
 		never
 	# EVN availability preserved: "b361 & !b362"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "138"
 	# EVN OnAccept preserved: "S905 S606"
 	# EVN OnSuccess preserved: "b362 A905 A606"
@@ -1281,6 +1405,7 @@ mission "EVN: Learn About Vell-os; Vellos14"
 	landing
 	source "Earth"
 	destination "New England"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Learn About Vell-os; Vellos14."
@@ -1319,6 +1444,8 @@ mission "EVN: Talk to Moash Elders; Vellos15"
 	to offer
 		never
 	# EVN availability preserved: "b362 & !b363"
+	# EVN ship-type gate preserved: "381"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "380"
 	# EVN OnSuccess preserved: "b363"
 
@@ -1326,10 +1453,12 @@ mission "EVN: Return With Response; Vellos16"
 	landing
 	source "Moash"
 	destination "New England"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Return With Response; Vellos16."
 	to offer
+		has "flagship model: Vell-os Dart"
 		and
 			has "EVN bit 363"
 			not "EVN bit 364"
@@ -1342,80 +1471,183 @@ mission "EVN: Return With Response; Vellos16"
 		conversation "EVN dialogue 199 complete"
 
 mission "EVN: Ferry Passengers to <DST>"
-	invisible
+	job
+	source
+		government "Auroran Empire"
+	# EVN no specific return stellar; ES destination omitted
+	description "EV Nova contract: Ferry Passengers to <DST>."
+	passengers 1
 	to offer
-		never
-	# EVN availability preserved: "!b424"
-	# EVN destination preserved: "-1"
+		not "EVN bit 424"
+		random < 60
+	on complete
+		payment 5000
+		conversation "EVN dialogue 200 complete"
 
 mission "EVN: Ferry a P'aedt to <DST>"
-	invisible
+	job
+	source
+		government "Family Moash"
+	# EVN no specific return stellar; ES destination omitted
+	description "EV Nova contract: Ferry a P'aedt to <DST>."
 	to offer
-		never
-	# EVN availability preserved: "b278 & !b424"
-	# EVN destination preserved: "-1"
+		"reputation: Family Moash" >= 1
+		# EVN AvailRecord 1 approximated with ES reputation for Family Moash
+		and
+			has "EVN bit 278"
+			not "EVN bit 424"
+		random < 66
+	on complete
+		payment 15000
+		"reputation: Polaris" += 2
+		conversation "EVN dialogue 206 complete"
 
 mission "EVN: Ferry a Ver'ash to <DST>"
-	invisible
+	job
+	source
+		government "Family Moash"
+	# EVN no specific return stellar; ES destination omitted
+	description "EV Nova contract: Ferry a Ver'ash to <DST>."
 	to offer
-		never
-	# EVN availability preserved: "b278 & !b424"
-	# EVN destination preserved: "-1"
+		"reputation: Family Moash" >= 1
+		# EVN AvailRecord 1 approximated with ES reputation for Family Moash
+		and
+			has "EVN bit 278"
+			not "EVN bit 424"
+		random < 94
+	on complete
+		payment 12500
+		"reputation: Polaris" += 2
+		conversation "EVN dialogue 207 complete"
 
 mission "EVN: Ferry a Tre'pira to <DST>"
-	invisible
+	job
+	source
+		government "Family Moash"
+	# EVN no specific return stellar; ES destination omitted
+	description "EV Nova contract: Ferry a Tre'pira to <DST>."
 	to offer
-		never
-	# EVN availability preserved: "b278 & !b424"
-	# EVN destination preserved: "-1"
+		"reputation: Family Moash" >= 1
+		# EVN AvailRecord 1 approximated with ES reputation for Family Moash
+		and
+			has "EVN bit 278"
+			not "EVN bit 424"
+		random < 100
+	on complete
+		payment 10000
+		"reputation: Polaris" += 2
+		conversation "EVN dialogue 208 complete"
 
 mission "EVN: Ferry a Kel'ariy to <DST>"
-	invisible
+	job
+	source
+		government "Family Moash"
+	# EVN no specific return stellar; ES destination omitted
+	description "EV Nova contract: Ferry a Kel'ariy to <DST>."
 	to offer
-		never
-	# EVN availability preserved: "b278 & !b424"
-	# EVN destination preserved: "-1"
+		"reputation: Family Moash" >= 4
+		# EVN AvailRecord 4 approximated with ES reputation for Family Moash
+		and
+			has "EVN bit 278"
+			not "EVN bit 424"
+		random < 42
+	on complete
+		payment 25000
+		"reputation: Polaris" += 3
+		conversation "EVN dialogue 209 complete"
 
 mission "EVN: Ferry a Mu'hari to <DST>"
-	invisible
+	job
+	source
+		government "Family Moash"
+	# EVN no specific return stellar; ES destination omitted
+	description "EV Nova contract: Ferry a Mu'hari to <DST>."
 	to offer
-		never
-	# EVN availability preserved: "b278 & !b424"
-	# EVN destination preserved: "-1"
+		"reputation: Family Moash" >= 2
+		# EVN AvailRecord 2 approximated with ES reputation for Family Moash
+		and
+			has "EVN bit 278"
+			not "EVN bit 424"
+		random < 18
+	on complete
+		payment 20000
+		"reputation: Polaris" += 2
+		conversation "EVN dialogue 210 complete"
 
 mission "EVN: Urgent Delivery to <DST>"
-	invisible
+	job
+	source
+		government "Auroran Empire"
+	# EVN no specific return stellar; ES destination omitted
+	description "EV Nova contract: Urgent Delivery to <DST>."
+	cargo "EVN random cargo" 40
+	deadline 18
 	to offer
-		never
-	# EVN availability preserved: "!b424"
-	# EVN destination preserved: "-1"
+		"combat rating" >= 2
+		"reputation: Auroran Empire" >= 4
+		# EVN AvailRecord 4 approximated with ES reputation for Auroran Empire
+		not "EVN bit 424"
+		random < 60
+	on complete
+		payment 60000
+		"reputation: Federation" += 1
+	on visit
+		conversation "EVN dialogue 222 drop"
 
 mission "EVN: Ferry Rebels to <DST>"
-	invisible
+	job
+	source "Rebel I"
+	waypoint "Uriall"
+	# EVN no specific return stellar; ES destination omitted
+	# EVN stellar waypoint reduced to its ES system
+	description "EV Nova contract: Ferry Rebels to <DST>."
 	to offer
-		never
-	# EVN availability preserved: "b127 & !b424"
-	# EVN destination preserved: "-1"
+		"reputation: Rebellion" >= 2
+		# EVN AvailRecord 2 approximated with ES reputation for Rebellion
+		and
+			has "EVN bit 127"
+			not "EVN bit 424"
+		random < 50
+	on complete
+		payment 5000
+		conversation "EVN dialogue 239 complete"
 
 mission "EVN: Ferry Rimertans to <DST>"
-	invisible
+	job
+	source
+		government "Auroran Empire"
+	# EVN no specific return stellar; ES destination omitted
+	description "EV Nova contract: Ferry Rimertans to <DST>."
 	to offer
-		never
-	# EVN availability preserved: "!b424"
-	# EVN destination preserved: "-1"
+		not "EVN bit 424"
+		random < 45
+	on complete
+		payment 5000
+		"reputation: Rebellion" += 1
+		conversation "EVN dialogue 243 complete"
 
 mission "EVN: Ferry WG Rep to <DST>"
-	invisible
+	job
+	source
+		government "Roughnecks"
+	# EVN no specific return stellar; ES destination omitted
+	description "EV Nova contract: Ferry WG Rep to <DST>."
 	to offer
-		never
-	# EVN availability preserved: "!b424"
-	# EVN destination preserved: "-1"
+		"combat rating" >= 2
+		not "EVN bit 424"
+		random < 70
+	on complete
+		payment 10000
+		"reputation: Wild Geese" += 1
+		conversation "EVN dialogue 246 complete"
 
 mission "EVN: Head to Sol;Tutorial 001"
 	invisible
 	to offer
 		never
 	# EVN availability preserved: "!(b9200 | b9215)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "128"
 	# EVN OnAccept preserved: "b8339 X130"
 	# EVN OnRefuse preserved: "b9215"
@@ -1427,6 +1659,7 @@ mission "EVN: Intro to Bounty Hunters Guild;Bounty Hunter1"
 	source
 		government "Auroran Empire"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Intro to Bounty Hunters Guild;Bounty Hunter1."
 	npc
 		government "Auroran Empire"
@@ -1434,6 +1667,8 @@ mission "EVN: Intro to Bounty Hunters Guild;Bounty Hunter1"
 		ship "Abomination"
 	to offer
 		"combat rating" >= 150
+		"reputation: Auroran Empire" >= 1
+		# EVN AvailRecord 1 approximated with ES reputation for Auroran Empire
 		and
 			not "EVN bit 0"
 			not "EVN bit 96"
@@ -1453,7 +1688,7 @@ mission "EVN: Intro to Bounty Hunters Guild;Bounty Hunter1"
 		set "EVN bit 6666"
 
 mission "EVN: 25000 Credit Bounty;Bounty Hunter1a"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "Earth"
@@ -1464,6 +1699,8 @@ mission "EVN: 25000 Credit Bounty;Bounty Hunter1a"
 		ship "Abomination"
 	to offer
 		"combat rating" >= 5
+		"reputation: Auroran Empire" >= 1
+		# EVN AvailRecord 1 approximated with ES reputation for Auroran Empire
 		and
 			has "EVN bit 0"
 			not "EVN bit 424"
@@ -1481,6 +1718,8 @@ mission "EVN: Auroran Negotiations;Bounty Hunter2"
 	to offer
 		never
 	# EVN availability preserved: "(b0 & !b424) & !(b1 | b511)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "338"
 	# EVN OnSuccess preserved: "b1"
 
@@ -1488,6 +1727,7 @@ mission "EVN: Return from Aurora;Bounty Hunter3"
 	landing
 	source "Aurora"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Return from Aurora;Bounty Hunter3."
 	passengers 2
 	to offer
@@ -1506,7 +1746,7 @@ mission "EVN: Return from Aurora;Bounty Hunter3"
 		conversation "EVN dialogue 263 complete"
 
 mission "EVN: 50000 Credit Bounty;Bounty Hunter3a"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "Earth"
@@ -1518,6 +1758,8 @@ mission "EVN: 50000 Credit Bounty;Bounty Hunter3a"
 		ship "Pirate Starbridge"
 	to offer
 		"combat rating" >= 100
+		"reputation: Auroran Empire" >= 1
+		# EVN AvailRecord 1 approximated with ES reputation for Auroran Empire
 		and
 			has "EVN bit 1"
 			not "EVN bit 424"
@@ -1539,6 +1781,8 @@ mission "EVN: Heraan Warrior Initiation;Bounty Hunter Auroran link"
 	to offer
 		never
 	# EVN availability preserved: "(b2 & !b511) & !(b9111 | b424)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnAccept preserved: "b511"
 	# EVN OnRefuse preserved: "b9111"
@@ -1550,6 +1794,8 @@ mission "EVN: Open Auroran Chapter House;Bounty Hunter4"
 	to offer
 		never
 	# EVN availability preserved: "b2 & !(b3 | b424)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "338"
 	# EVN OnSuccess preserved: "b3"
 
@@ -1558,6 +1804,8 @@ mission "EVN: First Auroran Bounty;Bounty Hunter5"
 	to offer
 		never
 	# EVN availability preserved: "b3 & !(b4 | b424)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "318"
 	# EVN OnSuccess preserved: "b4"
 
@@ -1565,6 +1813,7 @@ mission "EVN: First Auroran Bounty;Bounty Hunter6"
 	landing
 	source "Houseless"
 	destination "Aurora"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: First Auroran Bounty;Bounty Hunter6."
 	cargo "EVN cargo type 14" 1
@@ -1591,7 +1840,7 @@ mission "EVN: First Auroran Bounty;Bounty Hunter6"
 		conversation "EVN dialogue 269 drop"
 
 mission "EVN: 25000 Credit Bounty;Bounty Hunter6a"
-	landing
+	job
 	source
 		government "Polaris"
 	destination "Aurora"
@@ -1602,6 +1851,8 @@ mission "EVN: 25000 Credit Bounty;Bounty Hunter6a"
 		ship "Pirate Valkyrie"
 	to offer
 		"combat rating" >= 5
+		"reputation: Polaris" >= 1
+		# EVN AvailRecord 1 approximated with ES reputation for Polaris
 		and
 			has "EVN bit 5"
 			not "EVN bit 424"
@@ -1615,7 +1866,7 @@ mission "EVN: 25000 Credit Bounty;Bounty Hunter6a"
 		conversation "EVN dialogue 270 complete"
 
 mission "EVN: 50000 Credit Bounty;Bounty Hunter6b"
-	landing
+	job
 	source
 		government "Polaris"
 	destination "Aurora"
@@ -1627,6 +1878,8 @@ mission "EVN: 50000 Credit Bounty;Bounty Hunter6b"
 		ship "Pirate Starbridge"
 	to offer
 		"combat rating" >= 200
+		"reputation: Polaris" >= 1
+		# EVN AvailRecord 1 approximated with ES reputation for Polaris
 		and
 			has "EVN bit 5"
 			not "EVN bit 424"
@@ -1645,8 +1898,10 @@ mission "EVN: 50000 Credit Bounty;Bounty Hunter6b"
 
 mission "EVN: Meet the Polaris;Bounty Hunter7"
 	landing
-	waypoint "Kel'ar Iy"
+	waypoint "Tre'minor"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Meet the Polaris;Bounty Hunter7."
 	npc
 		government "Nil'kemorya"
@@ -1676,8 +1931,10 @@ mission "EVN: Meet the Polaris;Bounty Hunter7"
 
 mission "EVN: Remember the 2nd Rule;Bounty Hunter8"
 	landing
-	waypoint "Harbor"
+	waypoint "Estearll"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Remember the 2nd Rule;Bounty Hunter8."
 	cargo "EVN cargo type 14" 1
 	npc
@@ -1706,7 +1963,7 @@ mission "EVN: Remember the 2nd Rule;Bounty Hunter8"
 		conversation "EVN dialogue 277 drop"
 
 mission "EVN: 150000 Renegade Bounty;Bounty Hunter8a"
-	landing
+	job
 	destination "Earth"
 	description "EV Nova contract: 150000 Renegade Bounty;Bounty Hunter8a."
 	cargo "EVN cargo type 15" 5
@@ -1732,8 +1989,10 @@ mission "EVN: 150000 Renegade Bounty;Bounty Hunter8a"
 
 mission "EVN: Rebel Information;Bounty Hunter9"
 	landing
-	waypoint "Rebel II"
+	waypoint "Uriall"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Rebel Information;Bounty Hunter9."
 	cargo "EVN cargo type 16" 1
@@ -1773,6 +2032,8 @@ mission "EVN: Join the Rebels;Bounty Hunter Rebel link"
 	to offer
 		never
 	# EVN availability preserved: "(b8 & !b424) & !(b61 | b125)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "421"
 	# EVN OnSuccess preserved: "b125 S783"
 
@@ -1781,6 +2042,8 @@ mission "EVN: Rescue Tomak;Pirate Offshoot 001"
 	to offer
 		never
 	# EVN availability preserved: "b651 & !b425"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "191"
 	# EVN OnAccept preserved: "b425 b426"
 	# EVN OnRefuse preserved: "b425"
@@ -1791,6 +2054,8 @@ mission "EVN: Deliver Instructions; Vellos17"
 	to offer
 		never
 	# EVN availability preserved: "b364 & !(b365 | b6666)"
+	# EVN ship-type gate preserved: "381"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "138"
 	# EVN OnSuccess preserved: "b365 G222 b6666"
 
@@ -1799,6 +2064,8 @@ mission "EVN: Deliver Further Instructions; Vellos18"
 	to offer
 		never
 	# EVN availability preserved: "b365 & !(b366 | b6666)"
+	# EVN ship-type gate preserved: "381"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "138"
 	# EVN OnSuccess preserved: "b366 b6666"
 
@@ -1807,6 +2074,8 @@ mission "EVN: Meet With Krane; Vellos19"
 	to offer
 		never
 	# EVN availability preserved: "b366 & !(b367 | b6666)"
+	# EVN ship-type gate preserved: "381"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "128"
 	# EVN OnAccept preserved: "L133 K134 H382 T25041 G209 D207"
 	# EVN OnSuccess preserved: "b367"
@@ -1814,8 +2083,10 @@ mission "EVN: Meet With Krane; Vellos19"
 mission "EVN: Find Mu'hari HQ; Vellos20"
 	landing
 	source "Earth"
-	waypoint "Mu'ar Haro"
+	waypoint "Nil'kemorya"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Find Mu'hari HQ; Vellos20."
@@ -1846,8 +2117,10 @@ mission "EVN: Confirm Mu'hari; Vellos21"
 	landing
 	source
 		government "Auroran Empire"
-	waypoint "Earth"
+	waypoint "Tichel"
 	destination "New England"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Confirm Mu'hari; Vellos21."
@@ -1867,7 +2140,7 @@ mission "EVN: Confirm Mu'hari; Vellos21"
 		conversation "EVN dialogue 322 drop"
 
 mission "EVN: Confirm Mu'hari; Vellos21a"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "New England"
@@ -1891,8 +2164,10 @@ mission "EVN: Confirm Mu'hari; Vellos21a"
 mission "EVN: Rebel Food Drop;Rebel1 from Bounty Hunter"
 	landing
 	source "Merrol"
-	waypoint "Las Vegas"
+	waypoint "Nesre Primus"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Rebel Food Drop;Rebel1 from Bounty Hunter."
 	cargo "EVN cargo type 0" 10
 	npc
@@ -1931,10 +2206,11 @@ mission "EVN: Rebel Food Drop;Rebel1 from Bounty Hunter"
 		clear "EVN bit 511"
 
 mission "EVN: Regular Food Run;Rebel1a"
-	landing
+	job
 	source "Merrol"
-	waypoint "Las Vegas"
+	waypoint "Nesre Primus"
 	destination "Merrol"
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Regular Food Run;Rebel1a."
 	cargo "EVN cargo type 0" 10
 	npc
@@ -1959,8 +2235,10 @@ mission "EVN: Regular Food Run;Rebel1a"
 mission "EVN: Rebel Food Drop;Rebel1 from Fed"
 	landing
 	source "Merrol"
-	waypoint "Las Vegas"
+	waypoint "Nesre Primus"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Rebel Food Drop;Rebel1 from Fed."
 	cargo "EVN cargo type 0" 10
 	npc
@@ -1996,8 +2274,10 @@ mission "EVN: Rebel Food Drop;Rebel1 from Fed"
 mission "EVN: Rebel Equipment Drop;Rebel2"
 	landing
 	source "Merrol"
-	waypoint "Menin"
+	waypoint "Kerella"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Rebel Equipment Drop;Rebel2."
 	cargo "EVN cargo type 5" 15
 	npc
@@ -2030,10 +2310,11 @@ mission "EVN: Rebel Equipment Drop;Rebel2"
 		# EVN unsupported mission actions: "S819"
 
 mission "EVN: Regular Equipment Run;Rebel2a"
-	landing
+	job
 	source "Merrol"
-	waypoint "Menin"
+	waypoint "Kerella"
 	destination "Merrol"
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Regular Equipment Run;Rebel2a."
 	cargo "EVN cargo type 5" 15
 	npc
@@ -2061,6 +2342,7 @@ mission "EVN: Rescue Agent;Rebel3"
 	landing
 	source "Merrol"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Rescue Agent;Rebel3."
 	cargo "EVN cargo type 17" 1
 	npc
@@ -2093,7 +2375,7 @@ mission "EVN: Rescue Agent;Rebel3"
 		# EVN unsupported mission actions: "S819"
 
 mission "EVN: Rescue Rebel;Rebel3a"
-	landing
+	job
 	source "Merrol"
 	destination "Merrol"
 	description "EV Nova contract: Rescue Rebel;Rebel3a."
@@ -2124,6 +2406,7 @@ mission "EVN: Rebel Insertion;Rebel4"
 	landing
 	source "Merrol"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Rebel Insertion;Rebel4."
 	cargo "EVN cargo type 17" 1
 	npc
@@ -2153,7 +2436,7 @@ mission "EVN: Rebel Insertion;Rebel4"
 		# EVN unsupported mission actions: "S819"
 
 mission "EVN: Rebel Insertion;Rebel4a"
-	landing
+	job
 	source "Merrol"
 	destination "Merrol"
 	description "EV Nova contract: Rebel Insertion;Rebel4a."
@@ -2183,6 +2466,8 @@ mission "EVN: Intel Re-assignment;Rebel5"
 	to offer
 		never
 	# EVN availability preserved: "b129 & !b130"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "421"
 	# EVN OnAccept preserved: "A819"
 	# EVN OnSuccess preserved: "b130"
@@ -2191,8 +2476,10 @@ mission "EVN: Intel Re-assignment;Rebel5"
 mission "EVN: Answer Polaris Summons;Rebel6"
 	landing
 	source "Rebel II"
-	waypoint "Kel'ar Iy"
+	waypoint "Tre'minor"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Answer Polaris Summons;Rebel6."
 	cargo "EVN cargo type 20" 1
 	npc
@@ -2223,6 +2510,7 @@ mission "EVN: Take Mu'Randa Home;Rebel7 - split mission"
 	landing
 	source "Rebel II"
 	destination "Kel'ar Iy"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Take Mu'Randa Home;Rebel7 - split mission."
@@ -2259,8 +2547,10 @@ mission "EVN: Take Mu'Randa Home;Rebel7 - split mission"
 mission "EVN: Get Polaris Tech;Rebel I8"
 	landing
 	source "Kel'ar Iy"
-	waypoint "Ver'ar Shan"
+	waypoint "Bis'usoca"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: Get Polaris Tech;Rebel I8."
 	cargo "EVN cargo type 21" 5
@@ -2293,8 +2583,10 @@ mission "EVN: Get Polaris Tech;Rebel I8"
 mission "EVN: Test Polaris Tech;Rebel I9"
 	landing
 	source "Rebel II"
-	waypoint "New England"
+	waypoint "Nesre Primus"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Test Polaris Tech;Rebel I9."
 	npc
 		government "Civvies"
@@ -2332,8 +2624,10 @@ mission "EVN: Test Polaris Tech;Rebel I9"
 mission "EVN: Check Out Roughnecks;Rebel I10"
 	landing
 	source "Rebel II"
-	waypoint "Spacedock V"
+	waypoint "Altair"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Check Out Roughnecks;Rebel I10."
 	npc
 		government "Roughnecks"
@@ -2367,8 +2661,10 @@ mission "EVN: Check Out Roughnecks;Rebel I10"
 mission "EVN: Contact Wild Geese;Rebel I11 - Unregistered cutoff"
 	landing
 	source "Rebel II"
-	waypoint "New Ireland"
+	waypoint "Nesre Primus"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Contact Wild Geese;Rebel I11 - Unregistered cutoff."
 	passengers 1
 	npc
@@ -2407,6 +2703,7 @@ mission "EVN: Scout Aurora;Rebel I12"
 	landing
 	source "Rebel II"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Scout Aurora;Rebel I12."
 	cargo "EVN cargo type 21" 5
 	npc
@@ -2434,8 +2731,10 @@ mission "EVN: Scout Aurora;Rebel I12"
 mission "EVN: Scout Moash;Rebel I13"
 	landing
 	source "Rebel II"
-	waypoint "Moash"
+	waypoint "Biri"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Scout Moash;Rebel I13."
 	npc
 		government "Federation"
@@ -2470,6 +2769,8 @@ mission "EVN: Warn Wild Geese;Rebel I14"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b138) & !b139"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "139"
 	# EVN OnSuccess preserved: "b139"
 
@@ -2478,6 +2779,8 @@ mission "EVN: Warn Heraan House;Rebel I15"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b139) & !b140"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnAccept preserved: "b175"
 	# EVN OnSuccess preserved: "b140"
@@ -2488,14 +2791,18 @@ mission "EVN: Warn Dechtakars;Rebel I16"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b140) & !b141"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "335"
 	# EVN OnSuccess preserved: "b141"
 
 mission "EVN: Return to Rebel II;Rebel I17"
 	landing
 	source "Rimerta"
-	waypoint "New Ireland"
+	waypoint "Nesre Primus"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: Return to Rebel II;Rebel I17."
 	cargo "EVN cargo type 22" 1
@@ -2529,6 +2836,7 @@ mission "EVN: Capture Commander Krane;Rebel I18"
 	landing
 	source "Rebel II"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Capture Commander Krane;Rebel I18."
 	cargo "EVN cargo type 23" 1
 	npc
@@ -2555,8 +2863,10 @@ mission "EVN: Capture Commander Krane;Rebel I18"
 mission "EVN: Collect Polaris Telepaths;Rebel I19"
 	landing
 	source "Rebel II"
-	waypoint "Mu'ar Haro"
+	waypoint "Nil'kemorya"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Collect Polaris Telepaths;Rebel I19."
 	cargo "EVN cargo type 24" 2
 	npc
@@ -2584,6 +2894,8 @@ mission "EVN: Bring Krane to Trial;Rebel I20"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b144) & !b145"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "128"
 	# EVN OnSuccess preserved: "b145 b330"
 
@@ -2592,6 +2904,8 @@ mission "EVN: Fetch Rebel Leaders;Rebel I21"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b145) & !b146"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "128"
 	# EVN OnSuccess preserved: "b146 b331 b8908"
 
@@ -2600,11 +2914,13 @@ mission "EVN: Take Polaris Home;Rebel I22 LAST"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b146) & !b147"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "267"
 	# EVN OnSuccess preserved: "b147 b148 b332 b333 b334 b613 b9995 b9500 M472 Q25048"
 
 mission "EVN: Confirm Mu'hari; Vellos22"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "New England"
@@ -2630,6 +2946,8 @@ mission "EVN: Report to Krane; Vellos23 - Unregistered cutoff"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b370) & !(b371 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "138"
 	# EVN OnAccept preserved: "H383 G223 T25042 G225 G226 G226 G226"
 	# EVN OnSuccess preserved: "b371"
@@ -2638,6 +2956,7 @@ mission "EVN: Report Mu'hari; Vellos24"
 	landing
 	source "Sirius II"
 	destination "New England"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Report Mu'hari; Vellos24."
@@ -2661,6 +2980,7 @@ mission "EVN: Report Mu'hari; Vellos24a"
 	landing
 	source "Diva"
 	destination "New England"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Report Mu'hari; Vellos24a."
@@ -2686,6 +3006,8 @@ mission "EVN: Take Mu'Randa Home;Rebel II27"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b180) & !b147"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "267"
 	# EVN OnSuccess preserved: "b147 b148 b332 b333 b334 b613 b9995 b9500 M472 Q25048"
 
@@ -2694,6 +3016,8 @@ mission "EVN: Fetch Rebel Leaders;Rebel  II26"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b181) & !b180"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "128"
 	# EVN OnSuccess preserved: "b180 b331 b8908"
 
@@ -2702,6 +3026,8 @@ mission "EVN: Bring Krane to trial;Rebel II25"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b182) & !b181"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "128"
 	# EVN OnSuccess preserved: "b181 b330"
 
@@ -2709,6 +3035,7 @@ mission "EVN: Capture Commander Krane;Rebel  II24"
 	landing
 	source "Ver'a Se"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Capture Commander Krane;Rebel  II24."
 	cargo "EVN cargo type 23" 1
 	npc
@@ -2737,6 +3064,8 @@ mission "EVN: Capture Vell-os;Rebel II23"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b184) & !b183"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "270"
 	# EVN OnSuccess preserved: "b183"
 
@@ -2745,6 +3074,8 @@ mission "EVN: Observe Polaris Experiment;Rebel II22"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b185) & !b184"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "270"
 	# EVN OnSuccess preserved: "b184"
 
@@ -2753,6 +3084,8 @@ mission "EVN: Talk to Polaris;Rebel II21"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b186) & !b185"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "254"
 	# EVN OnSuccess preserved: "b185"
 
@@ -2760,6 +3093,7 @@ mission "EVN: Talk With Vell-os;Rebel II20"
 	landing
 	source "Earth"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: Talk With Vell-os;Rebel II20."
 	npc
@@ -2786,6 +3120,8 @@ mission "EVN: Talk to Vell-os;Rebel II19"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b188) & !b187"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "128"
 	# EVN OnSuccess preserved: "b187"
 
@@ -2793,6 +3129,7 @@ mission "EVN: Defend Rebel II;Rebel II18a"
 	landing
 	source "Rebel II"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: Defend Rebel II;Rebel II18a."
 	npc
@@ -2819,6 +3156,7 @@ mission "EVN: Defend Rebel II;Rebel II18"
 	landing
 	source "Rebel II"
 	destination "Rebel II"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Defend Rebel II;Rebel II18."
@@ -2849,6 +3187,7 @@ mission "EVN: Return to Rebel II;Rebel II17"
 	landing
 	source "New Ireland"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: Return to Rebel II;Rebel II17."
 	npc
@@ -2880,6 +3219,8 @@ mission "EVN: Take People Home;Rebel II16"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b191) & !b190"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "139"
 	# EVN OnSuccess preserved: "b190"
 
@@ -2888,6 +3229,8 @@ mission "EVN: Rescue Raczak;Rebel II15"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b192) & !b191"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnSuccess preserved: "b191"
 
@@ -2896,6 +3239,8 @@ mission "EVN: Drop by Heraan House;Rebel II14 - Unregistered cutoff"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b193) & !b192"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnSuccess preserved: "b192 b44"
 
@@ -2904,6 +3249,8 @@ mission "EVN: Attack Moash House;Rebel II13"
 	to offer
 		never
 	# EVN availability preserved: "b194 & !b193"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "380"
 	# EVN OnAccept preserved: "b175"
 	# EVN OnSuccess preserved: "b193"
@@ -2912,8 +3259,10 @@ mission "EVN: Attack Moash House;Rebel II13"
 mission "EVN: Warn Heraan House;Rebel II12"
 	landing
 	source "Rebel II"
-	waypoint "Heraan"
+	waypoint "Mackle"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Warn Heraan House;Rebel II12."
 	npc
 		government "Family Moash"
@@ -2941,8 +3290,10 @@ mission "EVN: Warn Heraan House;Rebel II12"
 mission "EVN: Check Out Roughnecks;Rebel II11"
 	landing
 	source "Rebel II"
-	waypoint "Spacedock V"
+	waypoint "Altair"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Check Out Roughnecks;Rebel II11."
 	npc
 		government "Roughnecks"
@@ -2972,8 +3323,10 @@ mission "EVN: Check Out Roughnecks;Rebel II11"
 mission "EVN: Scout Moash;Rebel II10"
 	landing
 	source "Rebel II"
-	waypoint "Moash"
+	waypoint "Biri"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Scout Moash;Rebel II10."
 	npc
 		government "Federation"
@@ -3003,6 +3356,7 @@ mission "EVN: Scout Aurora;Rebel II9"
 	landing
 	source "Rebel II"
 	destination "Rebel II"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	description "EV Nova contract: Scout Aurora;Rebel II9."
 	npc
 		government "Federation"
@@ -3031,6 +3385,8 @@ mission "EVN: Return Empty Handed;Rebel II8"
 	to offer
 		never
 	# EVN availability preserved: "b199 & !b502"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "421"
 	# EVN OnSuccess preserved: "b198 b502 b6666"
 
@@ -3039,6 +3395,7 @@ mission "EVN: Report Mu'hari; Vellos25"
 	source
 		government "Auroran Empire"
 	destination "New England"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Report Mu'hari; Vellos25."
@@ -3063,6 +3420,8 @@ mission "EVN: Liaise With Aurorans; Vellos26"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b372) & !b373"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "297"
 	# EVN OnSuccess preserved: "b373 b6031"
 
@@ -3071,6 +3430,8 @@ mission "EVN: Invade Polaris Space; Vellos27"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b373) & !b374"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "254"
 	# EVN OnSuccess preserved: "b374 !b424 L134 K135 G224 G336 D209"
 
@@ -3079,6 +3440,8 @@ mission "EVN: Speak With Llyrell; Vellos28"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b374) & !b375"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "128"
 	# EVN OnSuccess preserved: "b375"
 
@@ -3087,6 +3450,8 @@ mission "EVN: Speak With Krypt; Vellos29"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b375) & !b376"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "408"
 	# EVN OnSuccess preserved: "b376 S800"
 
@@ -3095,6 +3460,8 @@ mission "EVN: Attack Bureau HQ; Vellos30"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b376) & !b377"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "138"
 	# EVN OnSuccess preserved: "b377 L135 K136 G337 D336"
 
@@ -3103,6 +3470,8 @@ mission "EVN: Take Llyrell to Korell; Vellos31 LAST"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b377) & !b330"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "407"
 	# EVN OnAccept preserved: "b148 S718"
 	# EVN OnSuccess preserved: "b330 !b90 b331 b332 b333 b334 b613 b9995 A718 b9500 M472 Q25048"
@@ -3114,6 +3483,9 @@ mission "EVN: Federation Resupply;Fed1"
 	to offer
 		never
 	# EVN availability preserved: "!(b511 | b515) & !((b50 | 467) | b6666)"
+	# EVN legal-record gate preserved: "2"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "6"
 	# EVN destination preserved: "136"
 	# EVN OnAccept preserved: "b511"
 	# EVN OnRefuse preserved: "b6666"
@@ -3122,11 +3494,11 @@ mission "EVN: Federation Resupply;Fed1"
 	# EVN OnAbort preserved: "b467 !b511"
 
 mission "EVN: Federation Resupply;Fed2"
-	landing
+	outfitter
 	source "Spacedock III"
-	waypoint "Earth"
+	waypoint "Tichel"
 	destination "Spacedock II"
-	# EVN AvailLoc 6 (outfitter) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Federation Resupply;Fed2."
 	cargo "EVN cargo type 7" 20
 	npc
@@ -3153,11 +3525,11 @@ mission "EVN: Federation Resupply;Fed2"
 		conversation "EVN dialogue 429 drop"
 
 mission "EVN: Federation Resupply;Fed3"
-	landing
+	outfitter
 	source "Spacedock II"
-	waypoint "Earth"
+	waypoint "Tichel"
 	destination "Spacedock II"
-	# EVN AvailLoc 6 (outfitter) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Federation Resupply;Fed3."
 	cargo "EVN cargo type 7" 20
 	npc
@@ -3184,11 +3556,11 @@ mission "EVN: Federation Resupply;Fed3"
 		conversation "EVN dialogue 430 drop"
 
 mission "EVN: Federation Resupply;Fed4"
-	landing
+	outfitter
 	source "Spacedock II"
-	waypoint "Earth"
+	waypoint "Tichel"
 	destination "Spacedock III"
-	# EVN AvailLoc 6 (outfitter) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Federation Resupply;Fed4."
 	cargo "EVN cargo type 7" 20
 	npc
@@ -3216,11 +3588,11 @@ mission "EVN: Federation Resupply;Fed4"
 		conversation "EVN dialogue 431 drop"
 
 mission "EVN: Federation Resupply;Fed5"
-	landing
+	outfitter
 	source "Spacedock III"
-	waypoint "Earth"
+	waypoint "Tichel"
 	destination "Spacedock V"
-	# EVN AvailLoc 6 (outfitter) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Federation Resupply;Fed5."
 	cargo "EVN cargo type 7" 20
 	npc
@@ -3249,11 +3621,11 @@ mission "EVN: Federation Resupply;Fed5"
 		conversation "EVN dialogue 432 drop"
 
 mission "EVN: Federation Resupply;Fed6"
-	landing
+	outfitter
 	source "Spacedock V"
-	waypoint "Earth"
+	waypoint "Tichel"
 	destination "Spacedock II"
-	# EVN AvailLoc 6 (outfitter) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Federation Resupply;Fed6."
 	cargo "EVN cargo type 7" 20
 	npc
@@ -3286,6 +3658,7 @@ mission "EVN: Bring in Terrorist;Fed7"
 	landing
 	source "Earth"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Bring in Terrorist;Fed7."
 	cargo "EVN cargo type 8" 4
 	to offer
@@ -3309,6 +3682,7 @@ mission "EVN: Bring in Spy;Fed8"
 	landing
 	source "Earth"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Bring in Spy;Fed8."
 	cargo "EVN cargo type 9" 4
 	npc
@@ -3317,6 +3691,8 @@ mission "EVN: Bring in Spy;Fed8"
 		personality staying
 		ship "Rebel Viper"
 	to offer
+		"reputation: Federation" >= 3
+		# EVN AvailRecord 3 approximated with ES reputation for Federation
 		and
 			has "EVN bit 56"
 			not "EVN bit 57"
@@ -3337,6 +3713,7 @@ mission "EVN: Bring in Dissident;Fed9"
 	landing
 	source "Earth"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Bring in Dissident;Fed9."
 	cargo "EVN cargo type 9" 4
 	npc
@@ -3345,6 +3722,8 @@ mission "EVN: Bring in Dissident;Fed9"
 		personality staying
 		ship "Rebel Viper"
 	to offer
+		"reputation: Federation" >= 4
+		# EVN AvailRecord 4 approximated with ES reputation for Federation
 		and
 			has "EVN bit 57"
 			not "EVN bit 58"
@@ -3365,6 +3744,7 @@ mission "EVN: Bring in Political Dissident;Fed10"
 	landing
 	source "Earth"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Bring in Political Dissident;Fed10."
 	cargo "EVN cargo type 9" 4
 	npc
@@ -3374,6 +3754,8 @@ mission "EVN: Bring in Political Dissident;Fed10"
 		ship "Rebel Viper"
 		ship "Rebel Viper"
 	to offer
+		"reputation: Federation" >= 5
+		# EVN AvailRecord 5 approximated with ES reputation for Federation
 		and
 			has "EVN bit 58"
 			not "EVN bit 59"
@@ -3395,6 +3777,9 @@ mission "EVN: Bring in Political Dissident;Fed11 (Rebel link)"
 	to offer
 		never
 	# EVN availability preserved: "b59 & !b60"
+	# EVN legal-record gate preserved: "10"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "-1"
 	# EVN OnRefuse preserved: "G348"
 	# EVN OnSuccess preserved: "b60"
@@ -3403,6 +3788,7 @@ mission "EVN: Bring in Fed Councilor;Fed12"
 	landing
 	source "Port Kane"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Bring in Fed Councilor;Fed12."
 	cargo "EVN cargo type 9" 4
 	npc
@@ -3440,6 +3826,8 @@ mission "EVN: Infiltrate the Rebels;Fed13 from Bounty Hunter"
 	to offer
 		never
 	# EVN availability preserved: "(b61 & (b8 | b500)) & !b62"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "421"
 	# EVN OnAccept preserved: "k148"
 	# EVN OnSuccess preserved: "b62 S783"
@@ -3447,8 +3835,10 @@ mission "EVN: Infiltrate the Rebels;Fed13 from Bounty Hunter"
 mission "EVN: Rebel Food Drop;Fed14"
 	landing
 	source "Merrol"
-	waypoint "Las Vegas"
+	waypoint "Nesre Primus"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Rebel Food Drop;Fed14."
 	cargo "EVN cargo type 0" 10
@@ -3476,10 +3866,11 @@ mission "EVN: Rebel Food Drop;Fed14"
 		conversation "EVN dialogue 441 drop"
 
 mission "EVN: Regular Food Run;Fed14a"
-	landing
+	job
 	source "Merrol"
-	waypoint "Las Vegas"
+	waypoint "Nesre Primus"
 	destination "Merrol"
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Regular Food Run;Fed14a."
 	cargo "EVN cargo type 0" 10
@@ -3507,6 +3898,8 @@ mission "EVN: Infiltrate the Rebels;Fed13 from Fed"
 	to offer
 		never
 	# EVN availability preserved: "b61 & !(b8 | b62)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "421"
 	# EVN OnAccept preserved: "k148"
 	# EVN OnRefuse preserved: "D188 G348"
@@ -3515,8 +3908,10 @@ mission "EVN: Infiltrate the Rebels;Fed13 from Fed"
 mission "EVN: Rebel Equipment Drop;Fed15"
 	landing
 	source "Merrol"
-	waypoint "Menin"
+	waypoint "Kerella"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Rebel Equipment Drop;Fed15."
 	cargo "EVN cargo type 5" 15
@@ -3548,10 +3943,11 @@ mission "EVN: Rebel Equipment Drop;Fed15"
 		# EVN unsupported mission actions: "S819"
 
 mission "EVN: Regular Equipment Run;Fed15a"
-	landing
+	job
 	source "Merrol"
-	waypoint "Menin"
+	waypoint "Kerella"
 	destination "Merrol"
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Regular Equipment Run;Fed15a."
 	cargo "EVN cargo type 5" 15
@@ -3579,6 +3975,7 @@ mission "EVN: Rescue Agent;Fed16"
 	landing
 	source "Merrol"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Rescue Agent;Fed16."
 	cargo "EVN cargo type 17" 1
@@ -3612,6 +4009,8 @@ mission "EVN: Receive Instructions from Krane;Fed17 from Fed"
 	to offer
 		never
 	# EVN availability preserved: "(b65 & !b66) & !(b8 | b500)6) & !(b8 | b500)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "128"
 	# EVN OnRefuse preserved: "G348"
 	# EVN OnSuccess preserved: "b66"
@@ -3619,8 +4018,10 @@ mission "EVN: Receive Instructions from Krane;Fed17 from Fed"
 mission "EVN: Receive Instructions from Krane;Fed17 from Bounty Hunter"
 	landing
 	source "Earth"
-	waypoint "New England"
+	waypoint "Nesre Primus"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Receive Instructions from Krane;Fed17 from Bounty Hunter."
@@ -3653,6 +4054,8 @@ mission "EVN: Rescue Rebel;Fed18 (Rebel link - Regain your life)"
 	to offer
 		never
 	# EVN availability preserved: "(b66 & (b8 | b500)) & !b509"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "171"
 	# EVN OnSuccess preserved: "b509 b128"
 
@@ -3661,6 +4064,8 @@ mission "EVN: Rescue Rebel;Fed19"
 	to offer
 		never
 	# EVN availability preserved: "b66 & !((b123 | b148) | b509)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "138"
 	# EVN OnSuccess preserved: "b123"
 
@@ -3668,6 +4073,7 @@ mission "EVN: Insert Bureau Agent;Fed20"
 	landing
 	source "New England"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Insert Bureau Agent;Fed20."
@@ -3695,6 +4101,8 @@ mission "EVN: Rebel Insertion;Fed21"
 	to offer
 		never
 	# EVN availability preserved: "b66 & !(b67 | b509)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "138"
 	# EVN OnAccept preserved: "A819"
 	# EVN OnSuccess preserved: "b67"
@@ -3703,8 +4111,10 @@ mission "EVN: Rebel Insertion;Fed21"
 mission "EVN: Scout Moash Space;Fed22"
 	landing
 	source "New England"
-	waypoint "Moash"
+	waypoint "Biri"
 	destination "New England"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Scout Moash Space;Fed22."
 	npc
@@ -3739,6 +4149,8 @@ mission "EVN: Distract Moash House;Fed23"
 	to offer
 		never
 	# EVN availability preserved: "b68 & !b69"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "138"
 	# EVN OnAccept preserved: "S606"
 	# EVN OnRefuse preserved: "G348"
@@ -3749,6 +4161,8 @@ mission "EVN: Talk to Moash Elders;Fed24"
 	to offer
 		never
 	# EVN availability preserved: "b69 & !b70"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "380"
 	# EVN OnRefuse preserved: "G348"
 	# EVN OnSuccess preserved: "b70"
@@ -3757,6 +4171,7 @@ mission "EVN: Return With Response;Fed25"
 	landing
 	source "Moash"
 	destination "New England"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Return With Response;Fed25."
@@ -3777,6 +4192,8 @@ mission "EVN: Deliver Instructions;Fed26"
 	to offer
 		never
 	# EVN availability preserved: "b71 & !(b72 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "138"
 	# EVN OnRefuse preserved: "G348"
 	# EVN OnSuccess preserved: "b72 b6666"
@@ -3786,6 +4203,8 @@ mission "EVN: Deliver Further Instructions;Fed27"
 	to offer
 		never
 	# EVN availability preserved: "b72 & !(b73 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "138"
 	# EVN OnRefuse preserved: "G348"
 	# EVN OnSuccess preserved: "b73"
@@ -3795,6 +4214,8 @@ mission "EVN: Re-Infiltrate Rebels;Fed28"
 	to offer
 		never
 	# EVN availability preserved: "b73 & !b74"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "171"
 	# EVN OnAccept preserved: "k148"
 	# EVN OnRefuse preserved: "G348"
@@ -3805,6 +4226,8 @@ mission "EVN: Carry Rebel Message;Fed29"
 	to offer
 		never
 	# EVN availability preserved: "b74 & !b75"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "134"
 	# EVN OnSuccess preserved: "b75"
 
@@ -3812,6 +4235,7 @@ mission "EVN: Carry Reply;Fed30 - Unregistered cutoff"
 	landing
 	source "New Babylon"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Carry Reply;Fed30 - Unregistered cutoff."
@@ -3842,6 +4266,8 @@ mission "EVN: Organize Meeting;Fed31"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b76) & !b77"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "134"
 	# EVN OnSuccess preserved: "b77"
 
@@ -3850,6 +4276,8 @@ mission "EVN: Lead Attack on Rebels;Fed32"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b77) & !b78"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "138"
 	# EVN OnAccept preserved: "L148 S607"
 	# EVN OnSuccess preserved: "b78 b148 b6031 b8900 A607"
@@ -3858,8 +4286,10 @@ mission "EVN: Deliver Final Instructions;Fed33"
 	landing
 	source
 		government "Auroran Empire"
-	waypoint "Moash"
+	waypoint "Biri"
 	destination "New England"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Deliver Final Instructions;Fed33."
 	cargo "EVN cargo type 18" 1
@@ -3899,6 +4329,8 @@ mission "EVN: Chat With Federation President;Fed34"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b79) & !b80"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "138"
 	# EVN OnRefuse preserved: "G348"
 	# EVN OnSuccess preserved: "b80 b90"
@@ -3908,6 +4340,8 @@ mission "EVN: Polaris Diplomatic Mission;Fed35"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b80) & !b81"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "254"
 	# EVN OnAccept preserved: "G211 K150"
 	# EVN OnRefuse preserved: "G348"
@@ -3918,6 +4352,8 @@ mission "EVN: Return With Polaris Proposal;Fed36"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b81) & !b82"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "138"
 	# EVN OnRefuse preserved: "348"
 	# EVN OnSuccess preserved: "b82"
@@ -3927,6 +4363,8 @@ mission "EVN: Scout Polaris Space;Fed37"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b82) & !b83"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "256"
 	# EVN OnAccept preserved: "L128 K129"
 	# EVN OnRefuse preserved: "G348"
@@ -3935,8 +4373,10 @@ mission "EVN: Scout Polaris Space;Fed37"
 mission "EVN: Scout Polaris Space;Fed38"
 	landing
 	source "Nil'a Ca"
-	waypoint "Nil'ar Kemorya"
+	waypoint "Z'precti"
 	destination "New England"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Scout Polaris Space;Fed38."
@@ -3970,8 +4410,10 @@ mission "EVN: Fetch Polaris Leader;Fed39"
 	landing
 	source
 		government "Auroran Empire"
-	waypoint "Kel'ar Iy"
+	waypoint "Tre'minor"
 	destination "Earth"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Fetch Polaris Leader;Fed39."
 	cargo "EVN cargo type 30" 2
@@ -4011,6 +4453,8 @@ mission "EVN: Meet Auroran Forces;Fed40"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b85) & !b86"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "297"
 	# EVN OnSuccess preserved: "b86"
 
@@ -4019,6 +4463,8 @@ mission "EVN: Lead Auroran Forces;Fed41"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b86) & !b87"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "256"
 	# EVN OnSuccess preserved: "b87 S786"
 
@@ -4027,6 +4473,8 @@ mission "EVN: Destroy Polaris Raven;Fed42"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b87) & !(b88 | b1000)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "138"
 	# EVN OnAccept preserved: "S795"
 	# EVN OnRefuse preserved: "G348"
@@ -4037,6 +4485,7 @@ mission "EVN: Take Krane to Earth;Fed43 LAST"
 	landing
 	source "New England"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Take Krane to Earth;Fed43 LAST."
 	npc
@@ -4075,6 +4524,7 @@ mission "EVN: United Shipping Intro;United Shipping1"
 		government "Auroran Empire"
 	destination
 		government "Auroran Empire"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: United Shipping Intro;United Shipping1."
 	cargo "EVN cargo type 38" 2
 	to offer
@@ -4100,7 +4550,7 @@ mission "EVN: United Shipping Intro;United Shipping1"
 		set "EVN bit 6666"
 
 mission "EVN: Un. Shipping Delivery;United Shipping1a"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination
@@ -4125,6 +4575,7 @@ mission "EVN: Ferry United Shipping Negotiator;United Shipping2"
 	source
 		government "Auroran Empire"
 	destination "Aurora"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Ferry United Shipping Negotiator;United Shipping2."
 	passengers 1
 	npc
@@ -4133,6 +4584,8 @@ mission "EVN: Ferry United Shipping Negotiator;United Shipping2"
 		ship "Abomination"
 	to offer
 		"combat rating" >= 350
+		"reputation: Auroran Empire" >= 4
+		# EVN AvailRecord 4 approximated with ES reputation for Auroran Empire
 		and
 			has "EVN bit 9"
 			not "EVN bit 424"
@@ -4154,6 +4607,8 @@ mission "EVN: Un. Shipping Delivery;United Shipping3"
 	to offer
 		never
 	# EVN availability preserved: "b10 & !(b12 | b424)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "10001"
 	# EVN OnAccept preserved: "b14"
 	# EVN OnRefuse preserved: "b12"
@@ -4163,6 +4618,7 @@ mission "EVN: Return With Samantha;United Shipping4"
 	landing
 	source "Aurora"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Return With Samantha;United Shipping4."
 	cargo "EVN cargo type 79" 1
 	to offer
@@ -4185,6 +4641,7 @@ mission "EVN: Return With Samantha;United Shipping3a"
 	landing
 	source "Aurora"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Return With Samantha;United Shipping3a."
 	passengers 1
 	to offer
@@ -4200,7 +4657,7 @@ mission "EVN: Return With Samantha;United Shipping3a"
 		conversation "EVN dialogue 520 complete"
 
 mission "EVN: Un. Shipping Delivery;United Shipping4a"
-	landing
+	job
 	source
 		government "Polaris"
 	destination
@@ -4224,9 +4681,11 @@ mission "EVN: Un. Shipping Long Delivery;United Shipping4b"
 	landing
 	source
 		government "Auroran Empire"
-	waypoint "Helen"
+	waypoint "Sirius"
 	destination
 		government "Polaris"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Un. Shipping Long Delivery;United Shipping4b."
 	cargo "EVN cargo type 44" 2
 	deadline 50
@@ -4254,6 +4713,7 @@ mission "EVN: Take Terraforming Team to <RST>;Terraforming1"
 	source
 		government "Auroran Empire"
 	destination "Misfire"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Take Terraforming Team to <RST>;Terraforming1."
 	cargo "EVN cargo type 78" 10
 	to offer
@@ -4276,6 +4736,7 @@ mission "EVN: Equipment Delivery;Terraforming1a"
 	landing
 	source "Misfire"
 	destination "Misfire"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Equipment Delivery;Terraforming1a."
 	cargo "EVN cargo type 5" 10
 	to offer
@@ -4296,6 +4757,7 @@ mission "EVN: Take Team to <RST>;Terraforming2"
 	landing
 	source "Misfire"
 	destination "UHP-1002"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Take Team to <RST>;Terraforming2."
 	cargo "EVN cargo type 46" 15
 	to offer
@@ -4313,7 +4775,7 @@ mission "EVN: Take Team to <RST>;Terraforming2"
 		conversation "EVN dialogue 541 complete"
 
 mission "EVN: Equipment Delivery;Terraforming3"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "UHP-1002"
@@ -4334,7 +4796,7 @@ mission "EVN: Equipment Delivery;Terraforming3"
 		conversation "EVN dialogue 542 complete"
 
 mission "EVN: Equipment Delivery;Terraforming4"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "UHP-1002"
@@ -4355,7 +4817,7 @@ mission "EVN: Equipment Delivery;Terraforming4"
 		conversation "EVN dialogue 543 complete"
 
 mission "EVN: Equipment Delivery;Terraforming5"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "UHP-1002"
@@ -4376,7 +4838,7 @@ mission "EVN: Equipment Delivery;Terraforming5"
 		conversation "EVN dialogue 544 complete"
 
 mission "EVN: Equipment Delivery;Terraforming6"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "UHP-1002"
@@ -4397,7 +4859,7 @@ mission "EVN: Equipment Delivery;Terraforming6"
 		conversation "EVN dialogue 545 complete"
 
 mission "EVN: Equipment Delivery;Terraforming7"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "UHP-1002"
@@ -4418,7 +4880,7 @@ mission "EVN: Equipment Delivery;Terraforming7"
 		conversation "EVN dialogue 546 complete"
 
 mission "EVN: Transport Colonists;Terraforming8"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "Nirvana"
@@ -4445,7 +4907,7 @@ mission "EVN: Transport Colonists;Terraforming8"
 		clear "EVN bit 25"
 
 mission "EVN: Transport Colonists;Terraforming8a"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "Nirvana"
@@ -4463,15 +4925,16 @@ mission "EVN: Transport Colonists;Terraforming8a"
 		conversation "EVN dialogue 548 complete"
 
 mission "EVN: Gli-tech Delivery;Gli-tech1"
-	landing
+	outfitter
 	source "GLi-Tech-nia"
 	destination "GLi-Tech-nia"
-	# EVN AvailLoc 6 (outfitter) approximated as landing
 	description "EV Nova contract: Gli-tech Delivery;Gli-tech1."
 	cargo "EVN cargo type 48" 10
 	deadline 40
 	to offer
 		"combat rating" >= 50
+		"reputation: Federation" >= 1
+		# EVN AvailRecord 1 approximated with ES reputation for Federation
 		and
 			not "EVN bit 26"
 			not "EVN bit 424"
@@ -4486,7 +4949,7 @@ mission "EVN: Gli-tech Delivery;Gli-tech1"
 		conversation "EVN dialogue 549 complete"
 
 mission "EVN: Gli-tech Delivery;Gli-tech2"
-	landing
+	job
 	source "GLi-Tech-nia"
 	destination "GLi-Tech-nia"
 	description "EV Nova contract: Gli-tech Delivery;Gli-tech2."
@@ -4494,6 +4957,8 @@ mission "EVN: Gli-tech Delivery;Gli-tech2"
 	deadline 25
 	to offer
 		"combat rating" >= 2
+		"reputation: Federation" >= 2
+		# EVN AvailRecord 2 approximated with ES reputation for Federation
 		and
 			has "EVN bit 26"
 			not "EVN bit 424"
@@ -4505,10 +4970,9 @@ mission "EVN: Gli-tech Delivery;Gli-tech2"
 		conversation "EVN dialogue 550 complete"
 
 mission "EVN: Test Polaron Cannon;Gli-tech3"
-	landing
+	outfitter
 	source "GLi-Tech-nia"
 	destination "GLi-Tech-nia"
-	# EVN AvailLoc 6 (outfitter) approximated as landing
 	description "EV Nova contract: Test Polaron Cannon;Gli-tech3."
 	npc
 		government "Pirate"
@@ -4517,6 +4981,8 @@ mission "EVN: Test Polaron Cannon;Gli-tech3"
 		ship "Pirate Valkyrie"
 	to offer
 		"combat rating" >= 250
+		"reputation: Federation" >= 2
+		# EVN AvailRecord 2 approximated with ES reputation for Federation
 		and
 			has "EVN bit 26"
 			not "EVN bit 27"
@@ -4536,10 +5002,9 @@ mission "EVN: Test Polaron Cannon;Gli-tech3"
 		outfit "Polaron Cannon" -1
 
 mission "EVN: Test EW Missile;Gli-tech4"
-	landing
+	outfitter
 	source "GLi-Tech-nia"
 	destination "GLi-Tech-nia"
-	# EVN AvailLoc 6 (outfitter) approximated as landing
 	description "EV Nova contract: Test EW Missile;Gli-tech4."
 	npc
 		government "Pirate"
@@ -4548,6 +5013,8 @@ mission "EVN: Test EW Missile;Gli-tech4"
 		ship "Pirate Valkyrie"
 	to offer
 		"combat rating" >= 500
+		"reputation: Federation" >= 2
+		# EVN AvailRecord 2 approximated with ES reputation for Federation
 		and
 			has "EVN bit 27"
 			not "EVN bit 29"
@@ -4584,11 +5051,11 @@ mission "EVN: Test EW Missile;Gli-tech4"
 		outfit "Etheric Wake Missile" -1
 
 mission "EVN: Photograph Wraith Cannon;Gli-tech5"
-	landing
+	outfitter
 	source "GLi-Tech-nia"
-	waypoint "Nil'a Mjolnir"
+	waypoint "Tre'illica"
 	destination "GLi-Tech-nia"
-	# EVN AvailLoc 6 (outfitter) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Photograph Wraith Cannon;Gli-tech5."
 	cargo "EVN cargo type 49" 1
 	npc
@@ -4600,6 +5067,8 @@ mission "EVN: Photograph Wraith Cannon;Gli-tech5"
 		ship "Manta"
 	to offer
 		"combat rating" >= 2000
+		"reputation: Federation" >= 2
+		# EVN AvailRecord 2 approximated with ES reputation for Federation
 		and
 			has "EVN bit 29"
 			not "EVN bit 30"
@@ -4615,10 +5084,9 @@ mission "EVN: Photograph Wraith Cannon;Gli-tech5"
 		conversation "EVN dialogue 553 complete"
 
 mission "EVN: Test Wraith Cannon;Gli-tech6"
-	landing
+	outfitter
 	source "GLi-Tech-nia"
 	destination "GLi-Tech-nia"
-	# EVN AvailLoc 6 (outfitter) approximated as landing
 	description "EV Nova contract: Test Wraith Cannon;Gli-tech6."
 	npc
 		government "Pirate"
@@ -4627,6 +5095,8 @@ mission "EVN: Test Wraith Cannon;Gli-tech6"
 		ship "Pirate Valkyrie"
 	to offer
 		"combat rating" >= 3000
+		"reputation: Federation" >= 2
+		# EVN AvailRecord 2 approximated with ES reputation for Federation
 		and
 			has "EVN bit 30"
 			not "EVN bit 32"
@@ -4672,8 +5142,9 @@ mission "EVN: Test Wraith Cannon;Gli-tech6"
 mission "EVN: Sigma Shipyards Delivery;Sigma1"
 	shipyard
 	source "Earth"
-	waypoint "Kolan"
+	waypoint "Kania"
 	destination "Earth"
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Sigma Shipyards Delivery;Sigma1."
 	cargo "EVN cargo type 5" 10
 	to offer
@@ -4697,7 +5168,7 @@ mission "EVN: Sigma Shipyards Delivery;Sigma1"
 		conversation "EVN dialogue 555 drop"
 
 mission "EVN: Sigma Shipyards Delivery;Sigma2"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "Earth"
@@ -4720,6 +5191,8 @@ mission "EVN: Bulk Delivery;Sigma2a"
 	to offer
 		never
 	# EVN availability preserved: "4321"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "10000"
 
 mission "EVN: Large Bulk Delivery;Sigma2b"
@@ -4727,6 +5200,8 @@ mission "EVN: Large Bulk Delivery;Sigma2b"
 	to offer
 		never
 	# EVN availability preserved: "4321"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "10000"
 
 mission "EVN: Charter Flight;Sigma2c"
@@ -4734,6 +5209,8 @@ mission "EVN: Charter Flight;Sigma2c"
 	to offer
 		never
 	# EVN availability preserved: "4320"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "10000"
 
 mission "EVN: Rescue Rebel;Fed 18 (forced)"
@@ -4741,6 +5218,8 @@ mission "EVN: Rescue Rebel;Fed 18 (forced)"
 	to offer
 		never
 	# EVN availability preserved: "b3000 & !b123"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "138"
 	# EVN OnSuccess preserved: "b123"
 
@@ -4748,6 +5227,7 @@ mission "EVN: Insert Bureau Agent;Fed 19 (forced)"
 	landing
 	source "New England"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Insert Bureau Agent;Fed 19 (forced)."
@@ -4773,8 +5253,10 @@ mission "EVN: Insert Bureau Agent;Fed 19 (forced)"
 mission "EVN: Open Talks With United Shipping;United Shipping5"
 	landing
 	source "Tre'ar Pira"
-	waypoint "Earth"
+	waypoint "Tichel"
 	destination "Tre'ar Pira"
+	# EVN AvailLoc 4 (trading dialog) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Open Talks With United Shipping;United Shipping5."
 	npc
 		government "United Shipping"
@@ -4799,11 +5281,12 @@ mission "EVN: Open Talks With United Shipping;United Shipping5"
 		conversation "EVN dialogue 577 complete"
 
 mission "EVN: Un. Shipping Long Delivery;United Shipping6"
-	landing
+	job
 	source
 		government "Auroran Empire"
-	waypoint "Helen"
+	waypoint "Sirius"
 	destination "Tre'ar Zalom"
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Un. Shipping Long Delivery;United Shipping6."
 	cargo "EVN cargo type 44" 5
 	deadline 40
@@ -4825,7 +5308,7 @@ mission "EVN: Un. Shipping Long Delivery;United Shipping6"
 		clear "EVN bit 1501"
 
 mission "EVN: Un. Shipping Long Delivery;United Shipping6a"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "Tre'ar Zalom"
@@ -4851,6 +5334,8 @@ mission "EVN: Rebel Insertion;Fed 20 (forced)"
 	to offer
 		never
 	# EVN availability preserved: "b3000 & !(b3001 | b3002)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "138"
 	# EVN OnAccept preserved: "b509"
 	# EVN OnSuccess preserved: "R(b3001 b3002)"
@@ -4860,6 +5345,8 @@ mission "EVN: Rescue Rebel;Fed 21 (Rebel link - Regain your life)"
 	to offer
 		never
 	# EVN availability preserved: "b3002 & !b509"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "171"
 	# EVN OnSuccess preserved: "b509 b128 b126 b127 b129"
 
@@ -4868,6 +5355,7 @@ mission "EVN: Pass on Message;Fed22 (forced)"
 	source
 		government "Auroran Empire"
 	destination "Spacedock I"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Pass on Message;Fed22 (forced)."
@@ -4910,6 +5398,7 @@ mission "EVN: Pass on Message;Fed23 (forced)"
 	source
 		government "Auroran Empire"
 	destination "Spacedock I"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Pass on Message;Fed23 (forced)."
@@ -4953,6 +5442,8 @@ mission "EVN: Steal Wraith Technology;Fed24 (forced)"
 	to offer
 		never
 	# EVN availability preserved: "b3004 & !(b3006 | b3007)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "220"
 	# EVN OnRefuse preserved: "b3007 b148"
 	# EVN OnSuccess preserved: "b3006"
@@ -4960,10 +5451,9 @@ mission "EVN: Steal Wraith Technology;Fed24 (forced)"
 	# EVN OnAbort preserved: "b3007 b148"
 
 mission "EVN: Steal Wraith Technology;Fed25 (forced)"
-	landing
+	outfitter
 	source "Nil'a Mjolnir"
 	destination "New England"
-	# EVN AvailLoc 6 (outfitter) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Steal Wraith Technology;Fed25 (forced)."
@@ -5002,6 +5492,8 @@ mission "EVN: A Parting Gift;Fed26 (forced) LAST"
 	to offer
 		never
 	# EVN availability preserved: "b3007 & !b3009"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "b3009 b3015"
 	# EVN OnAbort preserved: "b3009 !b3015"
@@ -5011,6 +5503,7 @@ mission "EVN: Test RAGE Gunboat;Gli-tech7 (if doing Fed)"
 	landing
 	source "New England"
 	destination "New England"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Test RAGE Gunboat;Gli-tech7 (if doing Fed)."
 	npc
 		government "Bureau"
@@ -5020,6 +5513,8 @@ mission "EVN: Test RAGE Gunboat;Gli-tech7 (if doing Fed)"
 		ship "RAGE Gunboat"
 	to offer
 		"combat rating" >= 400
+		"reputation: Federation" >= 20
+		# EVN AvailRecord 20 approximated with ES reputation for Federation
 		and
 			has "EVN bit 80"
 			has "EVN bit 32"
@@ -5047,6 +5542,8 @@ mission "EVN: Make fast-jumping available;Polaris Spinoff1"
 	to offer
 		never
 	# EVN availability preserved: "b320 & !b3721"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "137"
 	# EVN OnAccept preserved: "b3721"
 	# EVN OnAbort preserved: "!b3721"
@@ -5055,6 +5552,7 @@ mission "EVN: Return to <RST>;Polaris Spinoff2"
 	landing
 	source "Port Kane"
 	destination "Ver'a Se"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Return to <RST>;Polaris Spinoff2."
@@ -5075,6 +5573,8 @@ mission "EVN: Scout Wraith Space;Polaris11b"
 	to offer
 		never
 	# EVN availability preserved: "284 & !(b285 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "267"
 	# EVN OnSuccess preserved: "b285 b6666"
 	# EVN OnShipDone preserved: "842"
@@ -5083,6 +5583,7 @@ mission "EVN: Observe Wraith;Polaris6b"
 	landing
 	source "P'ar Aed"
 	destination "P'ar Aed"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Observe Wraith;Polaris6b."
 	cargo "EVN cargo type 21" 8
@@ -5110,6 +5611,7 @@ mission "EVN: Take P'Jeena to Ver'a Se;Polaris7b"
 	landing
 	source "P'ar Aed"
 	destination "Ver'a Se"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Take P'Jeena to Ver'a Se;Polaris7b."
 	passengers 2
@@ -5131,6 +5633,7 @@ mission "EVN: Observe Cloak-Ship;Polaris8b"
 	landing
 	source "Ver'a Se"
 	destination "Ver'a Se"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Observe Cloak-Ship;Polaris8b."
 	cargo "EVN cargo type 21" 10
@@ -5160,6 +5663,7 @@ mission "EVN: Observe Cloak-Ship;Polaris9b"
 	landing
 	source "Ver'a Se"
 	destination "Ver'a Se"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Observe Cloak-Ship;Polaris9b."
 	cargo "EVN cargo type 21" 10
@@ -5188,6 +5692,8 @@ mission "EVN: Report Incident to Rebels;Pirate 009b"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b666) & !b608"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "421"
 	# EVN OnAccept preserved: "374 T25043"
 	# EVN OnSuccess preserved: "b608 S807"
@@ -5196,24 +5702,32 @@ mission "EVN: Silent Mission;Distract Moash defenders"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Silent Mission;Rebel defenders"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Steal Hypergate Codes;Rebel Sideline"
 	landing
 	source
 		government "Rimerta"
-	waypoint "Earth"
+	waypoint "Tichel"
 	destination "Rebel I"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Steal Hypergate Codes;Rebel Sideline."
 	to offer
 		"combat rating" >= 100
+		"reputation: Rimerta" >= 50
+		# EVN AvailRecord 50 approximated with ES reputation for Rimerta
 		and
 			has "EVN bit 152"
 			not "EVN bit 153"
@@ -5240,6 +5754,8 @@ mission "EVN: GOTCHA!! Auroran Drop Bear scores again..."
 	to offer
 		never
 	# EVN availability preserved: "(b42 & !b45) & !(b43 | b44)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "b45"
 	# EVN OnAbort preserved: "!b45"
@@ -5249,6 +5765,8 @@ mission "EVN: Infiltrate the Rebels;Fed13 from Rebel"
 	to offer
 		never
 	# EVN availability preserved: "(b60 & b126) & !(b127 | b64)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "171"
 	# EVN OnAccept preserved: "b500"
 	# EVN OnSuccess preserved: "b64b500"
@@ -5258,6 +5776,8 @@ mission "EVN: Test Rebel Cloaking Device"
 	to offer
 		never
 	# EVN availability preserved: "b750 & !(b749 | b751)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "-4"
 	# EVN OnAccept preserved: "G234"
 	# EVN OnRefuse preserved: "b751"
@@ -5269,6 +5789,8 @@ mission "EVN: Destroy Polaris Cruiser;Fed46(if done GLi-tech)"
 	to offer
 		never
 	# EVN availability preserved: "(b87 & b1000) & !b88"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "138"
 	# EVN OnRefuse preserved: "G348"
 	# EVN OnSuccess preserved: "b88"
@@ -5278,6 +5800,8 @@ mission "EVN: Avoid Federation Secession Task-Force"
 	to offer
 		never
 	# EVN availability preserved: "b6100 & !b9812"
+	# EVN ship-type gate preserved: "383"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "G348 !b6100"
 	# EVN OnRefuse preserved: "G348 !b6100"
@@ -5291,6 +5815,8 @@ mission "EVN: Avoid Federation Task Force"
 	to offer
 		never
 	# EVN availability preserved: "b6200 & !b9812"
+	# EVN ship-type gate preserved: "383"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "G348 !b6200"
 	# EVN OnRefuse preserved: "G348 !b6200"
@@ -5304,6 +5830,8 @@ mission "EVN: Avoid Rebel Enforcement Squad"
 	to offer
 		never
 	# EVN availability preserved: "b6101 & !b9812"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "!b6101"
 	# EVN OnRefuse preserved: "!b6101"
@@ -5317,6 +5845,8 @@ mission "EVN: Avoid Nil'kemorya"
 	to offer
 		never
 	# EVN availability preserved: "b6102 & !b9812"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "!b6102"
 	# EVN OnRefuse preserved: "!b6102"
@@ -5330,6 +5860,8 @@ mission "EVN: Avoid Auroran Warriors"
 	to offer
 		never
 	# EVN availability preserved: "b6103 & !b9812"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "!b6103"
 	# EVN OnRefuse preserved: "!b6103"
@@ -5343,6 +5875,8 @@ mission "EVN: Avoid Pirates"
 	to offer
 		never
 	# EVN availability preserved: "b6104 & !b9812"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "!b6104"
 	# EVN OnRefuse preserved: "!b6104"
@@ -5356,6 +5890,8 @@ mission "EVN: Avoid Wild Rovers"
 	to offer
 		never
 	# EVN availability preserved: "b6105 & !b9812"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "!b6105"
 	# EVN OnRefuse preserved: "!b6105"
@@ -5369,6 +5905,8 @@ mission "EVN: Avoid Bounty Hunters"
 	to offer
 		never
 	# EVN availability preserved: "b6106 & !b9812"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "!b6106"
 	# EVN OnRefuse preserved: "!b6106"
@@ -5382,6 +5920,8 @@ mission "EVN: Trade between Earth and Port Kane;Tutorial 002"
 	to offer
 		never
 	# EVN availability preserved: "b9200 & !(b9201 | b9215)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "4"
 	# EVN destination preserved: "137"
 	# EVN OnAccept preserved: "X128"
 	# EVN OnRefuse preserved: "b9215 S758"
@@ -5393,6 +5933,8 @@ mission "EVN: Trade between Port Kane and New England;Tutorial 003"
 	to offer
 		never
 	# EVN availability preserved: "b9201 & !(b9202 | b9215)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "4"
 	# EVN destination preserved: "138"
 	# EVN OnAccept preserved: "X162"
 	# EVN OnRefuse preserved: "b9215 S758"
@@ -5404,6 +5946,8 @@ mission "EVN: Head Back to Earth;Tutorial 004"
 	to offer
 		never
 	# EVN availability preserved: "b9202 & !(b9203 | b9215)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "4"
 	# EVN destination preserved: "128"
 	# EVN OnRefuse preserved: "b9215 S758"
 	# EVN OnSuccess preserved: "b9203"
@@ -5414,6 +5958,8 @@ mission "EVN: Head to Rauther;Tutorial 005"
 	to offer
 		never
 	# EVN availability preserved: "b9203 & !(b9204 | b9215)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "6"
 	# EVN destination preserved: "191"
 	# EVN OnAccept preserved: "X166"
 	# EVN OnRefuse preserved: "b9215 S758"
@@ -5425,6 +5971,8 @@ mission "EVN: Take Michaleen to New Ireland;Wild Geese 1"
 	to offer
 		never
 	# EVN availability preserved: "!((b800 | b801) | b9111) & !((b511 | b515) | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "139"
 	# EVN OnAccept preserved: "b511"
 	# EVN OnRefuse preserved: "b801 b6666"
@@ -5437,6 +5985,8 @@ mission "EVN: Take Michaleen to Sol;Wild Geese 2"
 	to offer
 		never
 	# EVN availability preserved: "b800 & !(b802 | b803)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "128"
 	# EVN OnRefuse preserved: "b803 !b511 !b515 !b518"
 	# EVN OnSuccess preserved: "b802 R(b804 b805)"
@@ -5447,6 +5997,8 @@ mission "EVN: Return Michaleen's body to New Ireland;Wild Geese 3a"
 	to offer
 		never
 	# EVN availability preserved: "b804 & !(b806 | b803)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "139"
 	# EVN OnSuccess preserved: "b806"
 	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
@@ -5456,6 +6008,8 @@ mission "EVN: Destroy McGowan's Drug Factory;Wild Geese 4a"
 	to offer
 		never
 	# EVN availability preserved: "b806 & !(b807 | b803)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "139"
 	# EVN OnSuccess preserved: "b807"
 	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
@@ -5463,8 +6017,10 @@ mission "EVN: Destroy McGowan's Drug Factory;Wild Geese 4a"
 mission "EVN: Deliver Explosives to Ryll;Wild Geese 5a"
 	landing
 	source "New Ireland"
-	waypoint "Ryll"
+	waypoint "Lalande 21185"
 	destination "New Ireland"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: Deliver Explosives to Ryll;Wild Geese 5a."
 	cargo "EVN cargo type 56" 10
@@ -5505,6 +6061,8 @@ mission "EVN: Free Eiric;Wild Geese 6a"
 	to offer
 		never
 	# EVN availability preserved: "b808 & !(b809 | b803)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "506"
 	# EVN OnRefuse preserved: "b803"
 	# EVN OnSuccess preserved: "b809 S811"
@@ -5516,6 +6074,8 @@ mission "EVN: Talk with Rebels;Wild Geese 7aI - link to Pirate storyline"
 	to offer
 		never
 	# EVN availability preserved: "b809 & !(b810 | b811)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "421"
 	# EVN OnRefuse preserved: "b811 b6666"
 	# EVN OnSuccess preserved: "b810 !b515 S817"
@@ -5525,6 +6085,8 @@ mission "EVN: Talk with Aurorans;Wild Geese 7aII - link to Auroran storyline"
 	to offer
 		never
 	# EVN availability preserved: "b811 & !(b812 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "360"
 	# EVN OnSuccess preserved: "b812 S812 !b518"
 
@@ -5533,6 +6095,8 @@ mission "EVN: Return to New Ireland with Michaleen;Wild Geese 3b"
 	to offer
 		never
 	# EVN availability preserved: "b805 & !(b813 | b803)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "139"
 	# EVN OnSuccess preserved: "b813"
 	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
@@ -5542,6 +6106,8 @@ mission "EVN: Destroy McGowan's Drug Factory;Wild Geese 4b"
 	to offer
 		never
 	# EVN availability preserved: "b813 & !(b814 | b803)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "139"
 	# EVN OnSuccess preserved: "b814"
 	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
@@ -5549,8 +6115,10 @@ mission "EVN: Destroy McGowan's Drug Factory;Wild Geese 4b"
 mission "EVN: Deliver Explosives to Ryll;Wild Geese 5b"
 	landing
 	source "New Ireland"
-	waypoint "Ryll"
+	waypoint "Lalande 21185"
 	destination "New Ireland"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: Deliver Explosives to Ryll;Wild Geese 5b."
 	cargo "EVN cargo type 56" 10
@@ -5591,6 +6159,8 @@ mission "EVN: Take Peace-Proposal to McGowan;Wild Geese 6b"
 	to offer
 		never
 	# EVN availability preserved: "b815 & !((b816 | b817) | b803)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "422"
 	# EVN OnSuccess preserved: "R(b816 b817)"
 	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
@@ -5600,6 +6170,8 @@ mission "EVN: Return With McGowan's Acceptance;Wild Geese 7bI"
 	to offer
 		never
 	# EVN availability preserved: "b816 & !(b803 | b818)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "139"
 	# EVN OnSuccess preserved: "b818 !b511 !b515 !b518 K138"
 	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
@@ -5609,6 +6181,8 @@ mission "EVN: Return With McGowan's Rejection;Wild Geese 7bII"
 	to offer
 		never
 	# EVN availability preserved: "b817 & !(b803 | b819)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "139"
 	# EVN OnSuccess preserved: "b819"
 	# EVN OnAbort preserved: "b803 !b511 !b515 !b518"
@@ -5618,6 +6192,8 @@ mission "EVN: Talk with Rebels;Wild Geese 8bII link to Pirate storyline"
 	to offer
 		never
 	# EVN availability preserved: "b819 & !(b803 | b810)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "421"
 	# EVN OnRefuse preserved: "b803"
 	# EVN OnSuccess preserved: "b810 !b515 S817"
@@ -5628,6 +6204,8 @@ mission "EVN: Renew darts"
 	to offer
 		never
 	# EVN availability preserved: "b371 & !O226"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "G226 G226 G226"
 
@@ -5636,7 +6214,7 @@ mission "EVN: Take Supplies to <RST>;Auroran 001"
 	source
 		not government "Family Heraan"
 	destination "Dominance"
-	# EVN non-government selector approximated as not government
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Take Supplies to <RST>;Auroran 001."
 	cargo "EVN cargo type 58" 10
 	npc
@@ -5684,6 +6262,7 @@ mission "EVN: Take Supplies to <RST>;Auroran 002"
 	landing
 	source "Codec"
 	destination "Dominance"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Take Supplies to <RST>;Auroran 002."
 	cargo "EVN cargo type 59" 10
 	npc
@@ -5729,6 +6308,7 @@ mission "EVN: Take Plans to Bazara;Auroran 003"
 	landing
 	source "Dominance"
 	destination "Skye"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Take Plans to Bazara;Auroran 003."
 	npc
 		government "Family Moash"
@@ -5763,6 +6343,7 @@ mission "EVN: Take Bazara to <RST>;Auroran 004"
 	landing
 	source "Skye"
 	destination "Dominance"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Take Bazara to <RST>;Auroran 004."
 	cargo "EVN cargo type 60" 10
 	npc
@@ -5804,6 +6385,8 @@ mission "EVN: Defeat Fellow Initiates;Auroran 005"
 	to offer
 		never
 	# EVN availability preserved: "(b204 & b511) & !(b205 | b250)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnRefuse preserved: "!b511 b250"
 	# EVN OnSuccess preserved: "b205"
@@ -5814,6 +6397,8 @@ mission "EVN: Head to <RST> to be Initiated;Auroran 006"
 	to offer
 		never
 	# EVN availability preserved: "b205 & !b206"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "384"
 	# EVN OnSuccess preserved: "b206 K139 S789"
 
@@ -5822,14 +6407,18 @@ mission "EVN: Receive Training from Karlaekaar;Auroran 007"
 	to offer
 		never
 	# EVN availability preserved: "b206 & !b207"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "298"
 	# EVN OnSuccess preserved: "b207 b44 S788"
 
 mission "EVN: Find and Return with Bazara;Auroran 008"
 	landing
 	source "Heraan"
-	waypoint "Syracuse"
+	waypoint "Archenar"
 	destination "Heraan"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Find and Return with Bazara;Auroran 008."
@@ -5869,6 +6458,8 @@ mission "EVN: Hunt Down Traitor;Auroran 009"
 	to offer
 		never
 	# EVN availability preserved: "b208 & !b212"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnAccept preserved: "b209"
 	# EVN OnSuccess preserved: "b212"
@@ -5880,6 +6471,8 @@ mission "EVN: Rumourmill - Moash Space;Auroran 009a"
 	to offer
 		never
 	# EVN availability preserved: "b209 & !(b210 | b212)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "b210"
 	# EVN OnAbort preserved: "b210"
@@ -5889,6 +6482,8 @@ mission "EVN: Rumourmill - Fed Space;Auroran 009b"
 	to offer
 		never
 	# EVN availability preserved: "b209 & !(b211 | b212)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "138"
 	# EVN OnAccept preserved: "b211"
 	# EVN OnSuccess preserved: "S802"
@@ -5899,6 +6494,8 @@ mission "EVN: Find and Destroy Supply Fleet;Auroran 010"
 	to offer
 		never
 	# EVN availability preserved: "b212 & !b213"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnSuccess preserved: "b213"
 
@@ -5907,6 +6504,8 @@ mission "EVN: Cause Havoc for Dani;Auroran 011"
 	to offer
 		never
 	# EVN availability preserved: "b213 & !b214"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnAccept preserved: "S792"
 	# EVN OnSuccess preserved: "b214 A792"
@@ -5918,14 +6517,18 @@ mission "EVN: Start Dechtakars Service;Auroran 012"
 	to offer
 		never
 	# EVN availability preserved: "b214 & !b215"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "335"
 	# EVN OnSuccess preserved: "b215"
 
 mission "EVN: Destroy Pirate Menace;Auroran 012a"
 	landing
 	source "Rimerta"
-	waypoint "Kont"
+	waypoint "Freya"
 	destination "Dani"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Destroy Pirate Menace;Auroran 012a."
 	cargo "EVN cargo type 63" 10
@@ -5971,6 +6574,7 @@ mission "EVN: Escort Moash Dignitary;Auroran 012b"
 	landing
 	source "Rimerta"
 	destination "Auroran LP I"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Escort Moash Dignitary;Auroran 012b."
 	npc
@@ -6003,6 +6607,7 @@ mission "EVN: Battle with Wild Geese;Auroran 012c"
 	landing
 	source "Rimerta"
 	destination "Auroran LP II"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Battle with Wild Geese;Auroran 012c."
 	npc
@@ -6051,6 +6656,8 @@ mission "EVN: Fight Duel for House Honor;Auroran 013"
 	to offer
 		never
 	# EVN availability preserved: "b219 & !b220"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnSuccess preserved: "b220"
 	# EVN OnShipDone preserved: "b8892"
@@ -6060,6 +6667,8 @@ mission "EVN: Make a Name for 'The Pack';Auroran 014"
 	to offer
 		never
 	# EVN availability preserved: "b220 & !b221"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnAccept preserved: "K140 S803"
 	# EVN OnSuccess preserved: "b221 A803"
@@ -6071,6 +6680,8 @@ mission "EVN: Meet With Eiric;Auroran 015"
 	to offer
 		never
 	# EVN availability preserved: "b221 & !b222"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "157"
 	# EVN OnSuccess preserved: "b222"
 
@@ -6079,6 +6690,8 @@ mission "EVN: Return to Heraan;Auroran 016"
 	to offer
 		never
 	# EVN availability preserved: "b222 & !b223"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "360"
 	# EVN OnSuccess preserved: "b223"
 
@@ -6087,6 +6700,8 @@ mission "EVN: Fight to be Thurokiir;Auroran 017"
 	to offer
 		never
 	# EVN availability preserved: "b223 & !b224"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnSuccess preserved: "b224 K141 b8894"
 
@@ -6095,6 +6710,8 @@ mission "EVN: Meet With Hune;Auroran 018"
 	to offer
 		never
 	# EVN availability preserved: "b224 & !b225"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "335"
 	# EVN OnSuccess preserved: "b225"
 
@@ -6103,6 +6720,8 @@ mission "EVN: Observe Auroran Border;Auroran 019"
 	to offer
 		never
 	# EVN availability preserved: "b225 & !b226"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "347"
 	# EVN OnAccept preserved: "b995"
 	# EVN OnSuccess preserved: "b226 S788"
@@ -6113,6 +6732,8 @@ mission "EVN: Defend Heraan Honor;Auroran 020 - Unregistered cutoff"
 	to offer
 		never
 	# EVN availability preserved: "(p0 & b226) & !b227"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "338"
 	# EVN OnSuccess preserved: "b227 !b995"
 
@@ -6121,6 +6742,8 @@ mission "EVN: Defend Heraan Space;Auroran 021"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b227) & !b228"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnSuccess preserved: "b228"
 
@@ -6129,6 +6752,8 @@ mission "EVN: Duel with Moash Thurokiir;Auroran 022"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b228) & !b229"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "338"
 	# EVN OnSuccess preserved: "b229 K142 b323 b8896"
 
@@ -6137,6 +6762,8 @@ mission "EVN: Speak With Polaris;Auroran 023"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b229) & !b230"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "254"
 	# EVN OnSuccess preserved: "b230 S804"
 
@@ -6145,6 +6772,8 @@ mission "EVN: Return to Aurora;Auroran 024"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b230) & !b231"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "439"
 	# EVN OnSuccess preserved: "b231"
 
@@ -6153,6 +6782,8 @@ mission "EVN: Meet with Mu'Randa;Auroran 025"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b231) & !b232"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "232"
 	# EVN OnSuccess preserved: "b232"
 
@@ -6161,6 +6792,8 @@ mission "EVN: Meet with Frandall;Auroran 026"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b232) & !b233"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "217"
 	# EVN OnSuccess preserved: "b233 S816"
 
@@ -6169,6 +6802,8 @@ mission "EVN: Meet With Eamon Flannigan;Auroran 027"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & (b233 & !b800)) & !b234"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "139"
 	# EVN OnSuccess preserved: "b234 S790"
 
@@ -6177,6 +6812,8 @@ mission "EVN: Assassinate Krane;Auroran 028"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b234) & !b235"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnShipDone preserved: "b235"
 
@@ -6185,6 +6822,8 @@ mission "EVN: Return to Heraan;Auroran 029 LAST"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b235) & !b236"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "431"
 	# EVN OnAccept preserved: "A685"
 	# EVN OnSuccess preserved: "b236 b332 b333 b334 b613 b9995 b9500 M472 Q25048"
@@ -6194,6 +6833,7 @@ mission "EVN: Take Plans to Bazara;Auroran 003 - Wild Geese Link"
 	landing
 	source "Dominance"
 	destination "Skye"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Take Plans to Bazara;Auroran 003 - Wild Geese Link."
 	npc
 		government "Family Moash"
@@ -6227,6 +6867,7 @@ mission "EVN: Battle with Wild Geese;Auroran 012c - if done Wild Geese"
 	landing
 	source "Rimerta"
 	destination "Auroran LP II"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Battle with Wild Geese;Auroran 012c - if done Wild Geese."
 	npc
@@ -6264,6 +6905,8 @@ mission "EVN: Take Terraforming Team to New Ireland"
 	to offer
 		never
 	# EVN availability preserved: "(b17 & b850) & (b221 & !(b237 | b851))"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "507"
 	# EVN OnSuccess preserved: "b237"
 
@@ -6272,6 +6915,8 @@ mission "EVN: Meet With Eamon Flannigan;Auroran 027 - if done Wild Geese"
 	to offer
 		never
 	# EVN availability preserved: "((P0 & b851) & (b233 & b800)) & !(b234 | b852)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "507"
 	# EVN OnSuccess preserved: "b234 S790"
 
@@ -6279,6 +6924,7 @@ mission "EVN: Take Plans to Bazara;Auroran 003 - Bounty Hunter Link"
 	landing
 	source "Heraan"
 	destination "Skye"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Take Plans to Bazara;Auroran 003 - Bounty Hunter Link."
 	npc
 		government "Family Moash"
@@ -6313,6 +6959,7 @@ mission "EVN: Take Bazara to <RST>;Auroran 004 From B/Hunter"
 	landing
 	source "Skye"
 	destination "Dominance"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Take Bazara to <RST>;Auroran 004 From B/Hunter."
 	cargo "EVN cargo type 60" 10
 	npc
@@ -6352,8 +6999,10 @@ mission "EVN: Take Bazara to <RST>;Auroran 004 From B/Hunter"
 mission "EVN: Pick Up Cargo From Sol;Pirate 001"
 	landing
 	source "Viking"
-	waypoint "Earth"
+	waypoint "Tichel"
 	destination "Viking"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Pick Up Cargo From Sol;Pirate 001."
 	cargo "EVN cargo type 65" 5
 	to offer
@@ -6392,6 +7041,8 @@ mission "EVN: Take Cargo to Misfire;Pirate 002"
 	to offer
 		never
 	# EVN availability preserved: "(b600 & b511) & !((b601 | b800) | b519)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "157"
 	# EVN OnAccept preserved: "S879"
 	# EVN OnRefuse preserved: "!b511 b519"
@@ -6402,8 +7053,10 @@ mission "EVN: Take Cargo to Misfire;Pirate 002"
 mission "EVN: Take Cargo to SD3;Pirate 003"
 	landing
 	source "Viking"
-	waypoint "Spacedock III"
+	waypoint "Tichel"
 	destination "Viking"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: Take Cargo to SD3;Pirate 003."
 	cargo "EVN cargo type 7" 5
@@ -6447,6 +7100,7 @@ mission "EVN: Speak to Dace;Pirate 004"
 	landing
 	source "Viking"
 	destination "Codec"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: Speak to Dace;Pirate 004."
 	to offer
@@ -6479,6 +7133,8 @@ mission "EVN: Meet With Rebels;Pirate 005"
 	to offer
 		never
 	# EVN availability preserved: "(b603 & b511) & !(b604 | b519)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "421"
 	# EVN OnRefuse preserved: "!b511 b519"
 	# EVN OnSuccess preserved: "b604 S783"
@@ -6488,8 +7144,10 @@ mission "EVN: Meet With Rebels;Pirate 005"
 mission "EVN: Rebel Food Drop;Pirate 005A"
 	landing
 	source "Merrol"
-	waypoint "Las Vegas"
+	waypoint "Nesre Primus"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Rebel Food Drop;Pirate 005A."
 	cargo "EVN cargo type 0" 15
 	npc
@@ -6516,10 +7174,11 @@ mission "EVN: Rebel Food Drop;Pirate 005A"
 		conversation "EVN dialogue 698 drop"
 
 mission "EVN: Regular Food Run;Pirate 005Ai"
-	landing
+	job
 	source "Merrol"
-	waypoint "Las Vegas"
+	waypoint "Nesre Primus"
 	destination "Merrol"
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Regular Food Run;Pirate 005Ai."
 	cargo "EVN cargo type 0" 10
 	npc
@@ -6542,8 +7201,10 @@ mission "EVN: Regular Food Run;Pirate 005Ai"
 mission "EVN: Rebel Equipment Drop;Pirate 005B"
 	landing
 	source "Merrol"
-	waypoint "Menin"
+	waypoint "Kerella"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Rebel Equipment Drop;Pirate 005B."
 	cargo "EVN cargo type 5" 15
 	npc
@@ -6574,10 +7235,11 @@ mission "EVN: Rebel Equipment Drop;Pirate 005B"
 		# EVN unsupported mission actions: "S819"
 
 mission "EVN: Regular Equipment Run;Pirate 005Bi"
-	landing
+	job
 	source "Merrol"
-	waypoint "Menin"
+	waypoint "Kerella"
 	destination "Merrol"
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Regular Equipment Run;Pirate 005Bi."
 	cargo "EVN cargo type 5" 15
 	npc
@@ -6602,6 +7264,7 @@ mission "EVN: Rescue Agent;Pirate 005C"
 	landing
 	source "Merrol"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Rescue Agent;Pirate 005C."
 	cargo "EVN cargo type 17" 1
 	npc
@@ -6632,7 +7295,7 @@ mission "EVN: Rescue Agent;Pirate 005C"
 		# EVN unsupported mission actions: "S819"
 
 mission "EVN: Rescue Rebel;Pirate 005Ci"
-	landing
+	job
 	source "Merrol"
 	destination "Merrol"
 	description "EV Nova contract: Rescue Rebel;Pirate 005Ci."
@@ -6661,6 +7324,7 @@ mission "EVN: Rebel Insertion;Pirate005D"
 	landing
 	source "Merrol"
 	destination "Merrol"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Rebel Insertion;Pirate005D."
 	cargo "EVN cargo type 17" 1
 	npc
@@ -6689,7 +7353,7 @@ mission "EVN: Rebel Insertion;Pirate005D"
 		# EVN unsupported mission actions: "S819"
 
 mission "EVN: Rebel Insertion;Pirate005Di"
-	landing
+	job
 	source "Merrol"
 	destination "Merrol"
 	description "EV Nova contract: Rebel Insertion;Pirate005Di."
@@ -6717,6 +7381,8 @@ mission "EVN: Pick Up Blind Charlie;Pirate 006"
 	to offer
 		never
 	# EVN availability preserved: "b604 & (b653 & !b605)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "157"
 	# EVN OnSuccess preserved: "b605"
 
@@ -6725,6 +7391,8 @@ mission "EVN: Pick Up Sven Fjordnham;Pirate 007 - Unregistered cutoff"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b605) & !b606"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "199"
 	# EVN OnSuccess preserved: "b606 S805"
 
@@ -6733,6 +7401,8 @@ mission "EVN: Pick Up Ferret and Dizzy;Pirate 008"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b606) & !b607"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "167"
 	# EVN OnSuccess preserved: "b607 S806"
 
@@ -6741,6 +7411,8 @@ mission "EVN: Investigate Incidents;Pirate 009a"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b607) & !b666"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "5"
 	# EVN destination preserved: "193"
 	# EVN OnAccept preserved: "H374 T25043"
 	# EVN OnSuccess preserved: "b666S807"
@@ -6750,6 +7422,8 @@ mission "EVN: Set and Launch Trap;Pirate 010"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b608) & !(b609 | b838)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "421"
 	# EVN OnAccept preserved: "S827 S808"
 	# EVN OnSuccess preserved: "b838 S842 b838S895"
@@ -6761,6 +7435,8 @@ mission "EVN: Silent Mission for Extra special ships;Pirate 010A"
 	to offer
 		never
 	# EVN availability preserved: "b608 & !b609"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "419"
 
 mission "EVN: Destroy McGowan;Pirate 011 LAST"
@@ -6768,6 +7444,8 @@ mission "EVN: Destroy McGowan;Pirate 011 LAST"
 	to offer
 		never
 	# EVN availability preserved: "(P0 & b610) & !(b611 | b6666)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "422"
 	# EVN OnAccept preserved: "S713 A895"
 	# EVN OnSuccess preserved: "b611 b9995 b9500 M472 Q25048 A711 A713 A714 A715"
@@ -6779,6 +7457,8 @@ mission "EVN: Silent Mission for Extra special ships;Pirate 011A"
 	to offer
 		never
 	# EVN availability preserved: "b610 & !b611"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "422"
 	# EVN OnShipDone preserved: "S714 S715"
 
@@ -6787,6 +7467,8 @@ mission "EVN: Silent Mission for Extra special ships;Pirate 011B"
 	to offer
 		never
 	# EVN availability preserved: "b610 & !b611"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "422"
 
 mission "EVN: Silent Mission for Extra special ships;Pirate 011C"
@@ -6794,12 +7476,15 @@ mission "EVN: Silent Mission for Extra special ships;Pirate 011C"
 	to offer
 		never
 	# EVN availability preserved: "b610 & !b611"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "422"
 
 mission "EVN: Take Bis Andreya to <RST>;Polaris4 CONTINUE"
 	landing
 	source "Port Kane"
 	destination "Nil'a Mjolnir"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Take Bis Andreya to <RST>;Polaris4 CONTINUE."
@@ -6833,6 +7518,8 @@ mission "EVN: Silent Mission;Vellos 31a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "407"
 
 mission "EVN: Rescue Tomak;Pirate Offshoot 001b"
@@ -6840,6 +7527,8 @@ mission "EVN: Rescue Tomak;Pirate Offshoot 001b"
 	to offer
 		never
 	# EVN availability preserved: "b428"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "!b428 g262 A719"
 	# EVN OnAbort preserved: "428 S719"
@@ -6848,6 +7537,7 @@ mission "EVN: Rescue Tomak;Pirate Offshoot 001a"
 	landing
 	source "Rauther"
 	destination "Rebel II"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: Rescue Tomak;Pirate Offshoot 001a."
 	cargo "EVN cargo type 66" 12
@@ -6885,6 +7575,8 @@ mission "EVN: Pick Up Cargo;Pirate Offshoot 002"
 	to offer
 		never
 	# EVN availability preserved: "b429 & !(b430 | b431)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "191"
 	# EVN OnAccept preserved: "S896"
 	# EVN OnRefuse preserved: "b430"
@@ -6897,6 +7589,8 @@ mission "EVN: Pick Up Cargo;Pirate Offshoot 002b"
 	to offer
 		never
 	# EVN availability preserved: "b431 & !(b430 | b432)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "421"
 	# EVN OnAccept preserved: "g147 g147"
 	# EVN OnRefuse preserved: "b430"
@@ -6909,6 +7603,8 @@ mission "EVN: Pick Up Engine Upgrades;Pirate Offshoot 003"
 	to offer
 		never
 	# EVN availability preserved: "b432 & !(b430 | b433)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "163"
 	# EVN OnRefuse preserved: "b430"
 	# EVN OnSuccess preserved: "b433"
@@ -6920,6 +7616,8 @@ mission "EVN: Beat On 'Daring' Dan McGraw;Pirate Offshoot 003b"
 	to offer
 		never
 	# EVN availability preserved: "(b433 & !b435) & !(b430 | b434)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnRefuse preserved: "b435"
 	# EVN OnFailure preserved: "b430"
@@ -6931,6 +7629,8 @@ mission "EVN: Return With Upgrades;Pirate Offshoot 003c"
 	to offer
 		never
 	# EVN availability preserved: "b434 & !(b430 | b436)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "157"
 	# EVN OnAccept preserved: "g198 g199"
 	# EVN OnSuccess preserved: "b436 l143 k144"
@@ -6942,6 +7642,8 @@ mission "EVN: Beat On Skinny;Pirate Offshoot 003bi"
 	to offer
 		never
 	# EVN availability preserved: "b435 & !(b430 | b439)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "157"
 	# EVN OnAccept preserved: "g198 g199"
 	# EVN OnSuccess preserved: "b439"
@@ -6953,6 +7655,8 @@ mission "EVN: McGraw Family Revenge;Pirate Offshoot 003d"
 	to offer
 		never
 	# EVN availability preserved: "b436"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnShipDone preserved: "A727"
 
@@ -6961,6 +7665,8 @@ mission "EVN: Pick Up Alloy from <DST>; Pirate Offshoot 004"
 	to offer
 		never
 	# EVN availability preserved: "b439 & !(b440 | b441)"
+	# EVN ship-type gate preserved: "374"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "157"
 	# EVN OnRefuse preserved: "b440"
 	# EVN OnSuccess preserved: "b441"
@@ -6972,6 +7678,8 @@ mission "EVN: Locate Ryan's Last Chance; Pirate Offshoot 004a"
 	to offer
 		never
 	# EVN availability preserved: "b441 & !(b442 | b443)"
+	# EVN ship-type gate preserved: "374"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "157"
 	# EVN OnRefuse preserved: "b442"
 	# EVN OnSuccess preserved: "b443"
@@ -6983,6 +7691,8 @@ mission "EVN: Rescue Dr Ralph's Family; Pirate Offshoot 004bi"
 	to offer
 		never
 	# EVN availability preserved: "b444 & !(b445 | b681)"
+	# EVN ship-type gate preserved: "374"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "215"
 	# EVN OnAccept preserved: "g201 g437"
 	# EVN OnRefuse preserved: "b445"
@@ -6994,16 +7704,18 @@ mission "EVN: Exotic Licence Forgery - Silent mission"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Silent Money Mission - for Deliver explosives to Ryll"
-	landing
+	job
 	destination "Ryll"
 	invisible
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Silent Money Mission - for Deliver explosives to Ryll."
 	to offer
-		random < 20
+		random < 100
 	on complete
 		payment 30000
 
@@ -7012,6 +7724,8 @@ mission "EVN: Rescue Heraan Spy;Auroran Off-shoot 001"
 	to offer
 		never
 	# EVN availability preserved: "b213 & !(b220 | b154)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "380"
 	# EVN OnRefuse preserved: "b154"
 	# EVN OnSuccess preserved: "b154 b155"
@@ -7023,6 +7737,8 @@ mission "EVN: Rescue Heraan Spy;Auroran Off-shoot 001b"
 	to offer
 		never
 	# EVN availability preserved: "b155 & !b156"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "360"
 	# EVN OnAccept preserved: "Q25049"
 	# EVN OnSuccess preserved: "b156"
@@ -7032,6 +7748,8 @@ mission "EVN: Steal Jamming Technology;Auroran Off-shoot 002"
 	to offer
 		never
 	# EVN availability preserved: "b156 & !(b157 | (b170 | b223))"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "360"
 	# EVN OnSuccess preserved: "b157 b170"
 
@@ -7040,6 +7758,8 @@ mission "EVN: Destroy Moash Fleet;Auroran Off-shoot 003"
 	to offer
 		never
 	# EVN availability preserved: "b157 & !(b158 | b223)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "333"
 	# EVN OnAccept preserved: "G441 S738"
 	# EVN OnSuccess preserved: "b158 G442"
@@ -7049,6 +7769,8 @@ mission "EVN: Silent Mission;Auroran Off-shoot 003b"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "333"
 
 mission "EVN: Destroy Federation Fleet;Auroran Off-shoot 004"
@@ -7056,6 +7778,8 @@ mission "EVN: Destroy Federation Fleet;Auroran Off-shoot 004"
 	to offer
 		never
 	# EVN availability preserved: "b158 & !(b159 | b223)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "360"
 	# EVN OnAccept preserved: "S740"
 	# EVN OnSuccess preserved: "b159"
@@ -7065,6 +7789,8 @@ mission "EVN: Silent Mission;Auroran Off-shoot 004b"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "360"
 
 mission "EVN: Rescue Heraan Operatives;Auroran Off-shoot 005"
@@ -7072,6 +7798,8 @@ mission "EVN: Rescue Heraan Operatives;Auroran Off-shoot 005"
 	to offer
 		never
 	# EVN availability preserved: "b224 & !(b228 | b160)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "360"
 	# EVN OnRefuse preserved: "b160"
 	# EVN OnSuccess preserved: "b160 b161"
@@ -7083,6 +7811,8 @@ mission "EVN: Rescue Vell-os Slaves;Auroran Off-shoot 007"
 	to offer
 		never
 	# EVN availability preserved: "b161 & !(b162 | b677)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "177"
 	# EVN OnSuccess preserved: "b677743"
 	# EVN OnAbort preserved: "743"
@@ -7093,6 +7823,8 @@ mission "EVN: Rescue Vell-os Slaves;Auroran Off-shoot 007b"
 	to offer
 		never
 	# EVN availability preserved: "b677 & !b162"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "354"
 	# EVN OnSuccess preserved: "b162"
 
@@ -7101,6 +7833,8 @@ mission "EVN: Take Vell-os to Korell;Auroran Off-shoot 008"
 	to offer
 		never
 	# EVN availability preserved: "b162 & !b163"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "407"
 	# EVN OnSuccess preserved: "b163"
 
@@ -7109,6 +7843,8 @@ mission "EVN: Take Vell-os to Polaris;Auroran Off-shoot 009"
 	to offer
 		never
 	# EVN availability preserved: "b163 & !b164"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "220"
 	# EVN OnSuccess preserved: "b164"
 
@@ -7117,6 +7853,8 @@ mission "EVN: Take Vell-os to Kel'ar Iy;Auroran Off-shoot 010"
 	to offer
 		never
 	# EVN availability preserved: "b164 & !b165"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "254"
 	# EVN OnSuccess preserved: "b165 S814"
 
@@ -7125,6 +7863,8 @@ mission "EVN: Start mission for Thunderforge cron;Auroran Off-shoot 011"
 	to offer
 		never
 	# EVN availability preserved: "b165 & !b166"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "b166"
 
@@ -7133,6 +7873,8 @@ mission "EVN: Thunderforge Availability;Auroran Off-shoot 012"
 	to offer
 		never
 	# EVN availability preserved: "b167 & !b168"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "b168 H380 T25044"
 	# EVN OnRefuse preserved: "b168"
@@ -7141,24 +7883,32 @@ mission "EVN: Silent Mission;Auroran 001b"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "353"
 
 mission "EVN: Silent Mission;Auroran 001c"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "353"
 
 mission "EVN: Silent Mission;Auroran 001d"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "353"
 
 mission "EVN: Silent Mission;Auroran 001e"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "353"
 
 mission "EVN: Return to <RST>;Polaris 8bi"
@@ -7166,6 +7916,8 @@ mission "EVN: Return to <RST>;Polaris 8bi"
 	to offer
 		never
 	# EVN availability preserved: "(b320 & b5759) & !b178"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "270"
 	# EVN OnAccept preserved: "b178"
 	# EVN OnAbort preserved: "!b178"
@@ -7175,6 +7927,8 @@ mission "EVN: Shoot down Derelict;Tutorial 006"
 	to offer
 		never
 	# EVN availability preserved: "b9204 & !(b9205 | b9215)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "157"
 	# EVN OnAccept preserved: "S755 b9208"
 	# EVN OnRefuse preserved: "b9215 S758"
@@ -7185,6 +7939,8 @@ mission "EVN: Silent Mission;Tutorial 006a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "157"
 
 mission "EVN: Return to Earth;Tutorial 007"
@@ -7192,6 +7948,8 @@ mission "EVN: Return to Earth;Tutorial 007"
 	to offer
 		never
 	# EVN availability preserved: "b9205 & !(b9206 | b9215)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "5"
 	# EVN destination preserved: "128"
 	# EVN OnSuccess preserved: "b9206"
 	# EVN OnAbort preserved: "b9215 S758"
@@ -7201,6 +7959,8 @@ mission "EVN: Ferry Barry to <RST>;Tutorial 008"
 	to offer
 		never
 	# EVN availability preserved: "b9206 & !(b9207 | b9215)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "209"
 	# EVN OnAccept preserved: "X187"
 	# EVN OnSuccess preserved: "b9207 !b8339"
@@ -7211,6 +7971,8 @@ mission "EVN: Take Barry to <RST>;Tutorial 009"
 	to offer
 		never
 	# EVN availability preserved: "b9215 & !b9216"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "209"
 	# EVN OnAccept preserved: "X187"
 	# EVN OnSuccess preserved: "b9216 !b8339"
@@ -7221,6 +7983,8 @@ mission "EVN: Duel;generic  Auroran"
 	to offer
 		never
 	# EVN availability preserved: "!(b352 | b289) & !(b192 | b206)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "-4"
 	# EVN OnAccept preserved: "K153"
 	# EVN OnFailure preserved: "Q7999 L153"
@@ -7232,6 +7996,8 @@ mission "EVN: Duel;generic  Moash"
 	to offer
 		never
 	# EVN availability preserved: "!(b352 | b289) & !(b192 | b206)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "-4"
 	# EVN OnAccept preserved: "K154"
 	# EVN OnFailure preserved: "Q7999 L154"
@@ -7243,6 +8009,8 @@ mission "EVN: Duel;generic  Dani"
 	to offer
 		never
 	# EVN availability preserved: "!(b352 | b289) & !(b192 | b206)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "-4"
 	# EVN OnAccept preserved: "K157"
 	# EVN OnFailure preserved: "Q7999 L157"
@@ -7254,6 +8022,8 @@ mission "EVN: Duel;generic  Vella"
 	to offer
 		never
 	# EVN availability preserved: "!(b352 | b289) & !(b192 | b206)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "-4"
 	# EVN OnAccept preserved: "K156"
 	# EVN OnFailure preserved: "Q7999 L156"
@@ -7265,6 +8035,8 @@ mission "EVN: Duel;generic  Tekel"
 	to offer
 		never
 	# EVN availability preserved: "!(b352 | b289) & !(b192 | b206)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "-4"
 	# EVN OnAccept preserved: "K155"
 	# EVN OnFailure preserved: "Q7997 L155"
@@ -7276,6 +8048,8 @@ mission "EVN: Duel;generic  Heraan"
 	to offer
 		never
 	# EVN availability preserved: "!(b352 | b289) & !(b192 | b206)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "-4"
 	# EVN OnAccept preserved: "K158"
 	# EVN OnFailure preserved: "Q7997 L158"
@@ -7287,6 +8061,8 @@ mission "EVN: Rumor mission;Auroran 008b"
 	to offer
 		never
 	# EVN availability preserved: "b6723 & !b6724"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "177"
 	# EVN OnSuccess preserved: "b6724 S802"
 
@@ -7294,6 +8070,8 @@ mission "EVN: Vell-os 2 refusal Fed reaction"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 	# EVN OnShipDone preserved: "A781"
 
@@ -7302,6 +8080,7 @@ mission "EVN: Transport Mu'Randa;Polaris1 - Vell-os refusal"
 	source
 		government "Polaris"
 	destination "New Ireland"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Transport Mu'Randa;Polaris1 - Vell-os refusal."
 	cargo "EVN cargo type 29" 1
@@ -7330,48 +8109,64 @@ mission "EVN: Meet With Merrol DockMaster"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "171"
 
 mission "EVN: Pick Up Supplies from <RST>;Auroran 001a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "215"
 
 mission "EVN: Report Back to Krane"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "128"
 
 mission "EVN: Meet With DockMaster"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "171"
 
 mission "EVN: Head to <RST>;Generic Auroran linking misn"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "360"
 
 mission "EVN: Silent Mission;Rebel I9a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Silent Mission;Auroran 011a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Silent Hune Misn; Auroran generic"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 	# EVN OnFailure preserved: "Q25053 b9666"
 
@@ -7380,6 +8175,8 @@ mission "EVN: Pick Up Hune"
 	to offer
 		never
 	# EVN availability preserved: "b9666"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "!b9666"
 	# EVN OnAbort preserved: "b9666"
@@ -7388,6 +8185,8 @@ mission "EVN: Silent Misn;fed42a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Redeem Yourself;Auroran Dechtakar Service re-start"
@@ -7395,6 +8194,8 @@ mission "EVN: Redeem Yourself;Auroran Dechtakar Service re-start"
 	to offer
 		never
 	# EVN availability preserved: "b5999"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "335"
 	# EVN OnRefuse preserved: "!b5999"
 	# EVN OnSuccess preserved: "!b217 !b5999"
@@ -7405,85 +8206,113 @@ mission "EVN: Talk to Fllyraen;Vellos 2 -> 3 link"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "138"
 
 mission "EVN: Report Back In;Vell-os 7 -> 8 link"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "128"
 
 mission "EVN: Report Back In;Vell-os 10 -> 11 link"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "128"
 
 mission "EVN: Head to <RST>;Vell-os 29 -> 30 link"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "217"
 
 mission "EVN: Find Kuron;Auroran 4 -> 5 link"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "360"
 
 mission "EVN: Invisible Return to Heraan"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "360"
 
 mission "EVN: The Pack invisible misn;Generic Auroran"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Head to <RST>; Auroran 23 -> 24 link"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "217"
 
 mission "EVN: Return to <RST> with Sven;pirate link"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "157"
 
 mission "EVN: Return to <RST> with Ferret and Dizzy;pirate link"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "157"
 
 mission "EVN: Set Up Trap;pirate link"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "193"
 
 mission "EVN: Silent misn;Pirate 010a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Silent Mission;Vell-os 20a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "128"
 
 mission "EVN: Pick Up Cargo From Sol;Pirate 001 from WG"
 	landing
 	source "Viking"
-	waypoint "Earth"
+	waypoint "Tichel"
 	destination "Viking"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Pick Up Cargo From Sol;Pirate 001 from WG."
 	cargo "EVN cargo type 65" 5
 	to offer
@@ -7514,48 +8343,64 @@ mission "EVN: Head to Misfire; Wild Geese link misn"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "211"
 
 mission "EVN: Head to <RST>;WG -> Auroran link"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "353"
 
 mission "EVN: Head to <RST>;Generic Auroran silent linking misn"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "360"
 
 mission "EVN: Take Datacubes Back to <RST>;link between Auroran offshoot 010 -> 011"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "360"
 
 mission "EVN: Meet with Your Uncle Olaf;WG -> Pirate link misn"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "157"
 
 mission "EVN: Drop By Kane Band Bar;Vell-os 3->4 link misn"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Drop By Merrol Bar;Rebel Reminder link"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Silent Mission;Pirate 010b"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Escort Rock Group;Special Klavs 01a"
@@ -7563,6 +8408,7 @@ mission "EVN: Escort Rock Group;Special Klavs 01a"
 	source
 		government "Auroran Empire"
 	destination "Cornwall"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Escort Rock Group;Special Klavs 01a."
 	cargo "EVN cargo type 74" 15
 	to offer
@@ -7593,6 +8439,7 @@ mission "EVN: Escort Rock Group;Special Klavs 01b"
 	landing
 	source "Cornwall"
 	destination "Syracuse"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: Escort Rock Group;Special Klavs 01b."
 	cargo "EVN cargo type 74" 15
@@ -7624,8 +8471,10 @@ mission "EVN: Launch Exploration Probe;Special Klavs 02"
 	landing
 	source
 		government "Auroran Empire"
-	waypoint "Kont"
+	waypoint "Freya"
 	destination "Earth"
+	# EVN AvailLoc 1 (bar) approximated as landing
+	# EVN stellar waypoint reduced to its ES system
 	description "EV Nova contract: Launch Exploration Probe;Special Klavs 02."
 	cargo "EVN cargo type 75" 5
 	npc
@@ -7665,6 +8514,8 @@ mission "EVN: Escort Temmin Shard;Special Klavs 03a"
 	to offer
 		never
 	# EVN availability preserved: "!(b7782 | b7783) & !(b511 | (b423 | b424))"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "167"
 	# EVN OnRefuse preserved: "b7782"
 	# EVN OnSuccess preserved: "b7783"
@@ -7674,6 +8525,7 @@ mission "EVN: Recover Stolen Art;Special Klavs 03b"
 	landing
 	source "Boral I"
 	destination "LPAD"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Recover Stolen Art;Special Klavs 03b."
 	cargo "EVN cargo type 76" 2
 	npc
@@ -7711,6 +8563,8 @@ mission "EVN: Recover Stolen Art;Special Klavs 03c (invisible)"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "190"
 	# EVN OnFailure preserved: "F832"
 
@@ -7719,6 +8573,8 @@ mission "EVN: Go On Cunjo Hunt;Special Klavs 04a"
 	to offer
 		never
 	# EVN availability preserved: "!(b7786 | (b423 | b424)) & !((b8338 | b8339) | b8340)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "187"
 	# EVN OnAccept preserved: "b8338 b8340"
 	# EVN OnRefuse preserved: "b7786 b6666"
@@ -7729,6 +8585,7 @@ mission "EVN: Go On Cunjo Hunt;Special Klavs 04b"
 	landing
 	source "Hourglass"
 	destination "Earth"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: Go On Cunjo Hunt;Special Klavs 04b."
 	passengers 2
@@ -7750,24 +8607,32 @@ mission "EVN: Find Mu'ar Haro"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "267"
 
 mission "EVN: Drop By P'ar Aed Bar"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Drop By Tre'ar Erma Bar"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Head Back to Mu'ar Haro"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "267"
 
 mission "EVN: Head to <RST>;Pirate 010a"
@@ -7775,6 +8640,8 @@ mission "EVN: Head to <RST>;Pirate 010a"
 	to offer
 		never
 	# EVN availability preserved: "P0 & (b608 & b838)) & !b609| b838)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "419"
 	# EVN OnAccept preserved: "827 S808"
 	# EVN OnSuccess preserved: "b609 b6666 S895 A808"
@@ -7786,6 +8653,8 @@ mission "EVN: ATTN: <PN>;Polaris ActionMan 001"
 	to offer
 		never
 	# EVN availability preserved: "(b281 | b319) & !b5758"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "220"
 	# EVN OnSuccess preserved: "b5758"
 	# EVN OnShipDone preserved: "Q25062"
@@ -7794,6 +8663,7 @@ mission "EVN: Defend <RST>;Polaris ActionMan 002"
 	landing
 	source "Nil'a Mjolnir"
 	destination "Nil'a Mjolnir"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Defend <RST>;Polaris ActionMan 002."
 	npc
@@ -7818,7 +8688,7 @@ mission "EVN: Defend <RST>;Polaris ActionMan 002"
 		message "EVN message 25063"
 
 mission "EVN: Defend <RST>;Polaris ActionMan 002a"
-	landing
+	job
 	source
 		government "Family Moash"
 	destination "Nil'a Mjolnir"
@@ -7845,7 +8715,7 @@ mission "EVN: Defend <RST>;Polaris ActionMan 002a"
 		message "EVN message 25063"
 
 mission "EVN: ATTN: Ory'hara;Polaris ActionMan 003"
-	landing
+	job
 	source
 		government "Family Moash"
 	destination "Fallen"
@@ -7875,6 +8745,7 @@ mission "EVN: Try to Get Back to <RST>;Polaris ActionMan 004"
 	landing
 	source "Fallen"
 	destination "Nil'a Ya"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Try to Get Back to <RST>;Polaris ActionMan 004."
@@ -7906,6 +8777,8 @@ mission "EVN: Silent Mission;Polaris ActionMan 004a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "295"
 
 mission "EVN: Eliminate Traitor;Vell-os ActionMan 001"
@@ -7913,6 +8786,8 @@ mission "EVN: Eliminate Traitor;Vell-os ActionMan 001"
 	to offer
 		never
 	# EVN availability preserved: "(b424 & b422) & !b367"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "138"
 	# EVN OnSuccess preserved: "b5762"
 
@@ -7921,11 +8796,13 @@ mission "EVN: Capture Traitor;Vell-os ActionMan 002"
 	to offer
 		never
 	# EVN availability preserved: "(b422 & b5762) & b424"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "138"
 	# EVN OnSuccess preserved: "b5763"
 
 mission "EVN: Eliminate Traitor;Fed ActionMan 001"
-	landing
+	job
 	source
 		government "Auroran Empire"
 	destination "New England"
@@ -7951,6 +8828,8 @@ mission "EVN: Capture Traitor;Fed ActionMan 002"
 	to offer
 		never
 	# EVN availability preserved: "b73 & b5764"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "138"
 	# EVN OnSuccess preserved: "b5765"
 
@@ -7958,6 +8837,7 @@ mission "EVN: Defend Rebel II;Rebel ActionMan 001"
 	landing
 	source "Rebel II"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Defend Rebel II;Rebel ActionMan 001."
@@ -7983,10 +8863,12 @@ mission "EVN: Silent Mission;Pol 034"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "270"
 
 mission "EVN: Defend Heraan Space;Auroran ActionMan 001"
-	landing
+	job
 	source
 		government "Vell-os"
 	destination
@@ -8011,7 +8893,7 @@ mission "EVN: Defend Heraan Space;Auroran ActionMan 001"
 		conversation "EVN dialogue 855 complete"
 
 mission "EVN: Defend Heraan Space;Auroran ActionMan 002"
-	landing
+	job
 	source
 		government "Vell-os"
 	destination
@@ -8036,7 +8918,7 @@ mission "EVN: Defend Heraan Space;Auroran ActionMan 002"
 		conversation "EVN dialogue 856 complete"
 
 mission "EVN: Lead Raid on Moash;Auroran ActionMan 003"
-	landing
+	job
 	source
 		government "Vell-os"
 	destination "Heraan"
@@ -8070,6 +8952,8 @@ mission "EVN: Silent Mission;Auroran ActionMan 003a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Rumour misn;Rebel I9a"
@@ -8077,6 +8961,8 @@ mission "EVN: Rumour misn;Rebel I9a"
 	to offer
 		never
 	# EVN availability preserved: "b5770"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "138"
 	# EVN OnAccept preserved: "!b5770"
 	# EVN OnAbort preserved: "b5770"
@@ -8086,6 +8972,8 @@ mission "EVN: Please Register;Registration reminder"
 	to offer
 		never
 	# EVN availability preserved: "b415 & !P0"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Head Back to Merrol"
@@ -8093,12 +8981,16 @@ mission "EVN: Head Back to Merrol"
 	to offer
 		never
 	# EVN availability preserved: "b9334"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "171"
 
 mission "EVN: Krypt Mind Attack;Polaris 32a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "408"
 	# EVN OnSuccess preserved: "D339 A863 A864 A865 A866"
 	# EVN OnShipDone preserved: "Q25068 G339 A863 A864 A865 A866 S867 S868 S869 S870 S871"
@@ -8107,6 +8999,8 @@ mission "EVN: Krypt Mind Attack Exit;Polaris 32b"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 	# EVN OnShipDone preserved: "Q25069 D339 A867 A868 A869 A870 A871 S862 S863 S864 S865 S866"
 
@@ -8114,6 +9008,8 @@ mission "EVN: Generic Passenger Cargo Str# misn"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Destroy Upstart Guild-Master;Pirate Blow-stuff-up"
@@ -8121,6 +9017,8 @@ mission "EVN: Destroy Upstart Guild-Master;Pirate Blow-stuff-up"
 	to offer
 		never
 	# EVN availability preserved: "b611 & !b612"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "157"
 	# EVN OnAccept preserved: "S875"
 	# EVN OnSuccess preserved: "b612 A875"
@@ -8131,6 +9029,8 @@ mission "EVN: Silent Mission;Pirate Blow-stuff-up support"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Destroy Upstart Guild-Master;Pirate Blow-stuff-up generic"
@@ -8138,6 +9038,8 @@ mission "EVN: Destroy Upstart Guild-Master;Pirate Blow-stuff-up generic"
 	to offer
 		never
 	# EVN availability preserved: "b612"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "157"
 	# EVN OnAccept preserved: "S875"
 	# EVN OnSuccess preserved: "A875"
@@ -8149,6 +9051,8 @@ mission "EVN: Destroy Bureau Cell;Aur, Vell, Pol, Reb Blow-stuff-up"
 	to offer
 		never
 	# EVN availability preserved: "b613"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 	# EVN OnShipDone preserved: "Q25072 A877"
 
@@ -8157,17 +9061,19 @@ mission "EVN: Put Down Uprising;Fed Blow-stuff-up"
 	to offer
 		never
 	# EVN availability preserved: "b89"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-4"
 	# EVN OnShipDone preserved: "Q25074"
 
 mission "EVN: Pirate 002 silent money misn"
-	landing
+	job
 	destination "Misfire"
 	invisible
 	# EVN CanAbort=0 preserved; ES abort semantics differ
 	description "EV Nova contract: Pirate 002 silent money misn."
 	to offer
-		random < 20
+		random < 100
 	on complete
 		payment 30000
 
@@ -8175,18 +9081,24 @@ mission "EVN: Polaris Scarabs"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Polaris Smaller Ships"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Head to Earth;Polaris44a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "426"
 	# EVN OnSuccess preserved: "S885 S886 A883 A884"
 	# EVN OnShipDone preserved: "S884"
@@ -8195,12 +9107,16 @@ mission "EVN: Fed Interception Fleet"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Head to Aurora;Polaris45a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "439"
 	# EVN OnSuccess preserved: "S887 A879 A880 A881"
 
@@ -8208,12 +9124,16 @@ mission "EVN: Polaris Raven"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "439"
 
 mission "EVN: Return to Ar'Za Iusia;Polaris 46"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "249"
 	# EVN OnSuccess preserved: "b148 b332 b333 b334 b335 b613 b9995 b9500 M472 Q25048"
 
@@ -8221,6 +9141,8 @@ mission "EVN: Head to Neilha Memorial Station;Polaris43b"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "317"
 	# EVN OnSuccess preserved: "S889 S891"
 	# EVN OnShipDone preserved: "S884"
@@ -8229,6 +9151,8 @@ mission "EVN: Head to Aurora;Polaris44b"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "439"
 	# EVN OnSuccess preserved: "S893 S894 A890 A891 A892"
 	# EVN OnShipDone preserved: "S890"
@@ -8237,12 +9161,16 @@ mission "EVN: Auroran Interception Fleet"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Head to Earth;Polaris45b"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "426"
 	# EVN OnSuccess preserved: "S887 A879 A880 A881"
 
@@ -8250,12 +9178,16 @@ mission "EVN: Silent misn;last pirate misn link"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Clean Fed Record;pirate offshoot"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Sigma Shipyards Delivery;Sigma3"
@@ -8263,6 +9195,8 @@ mission "EVN: Sigma Shipyards Delivery;Sigma3"
 	to offer
 		never
 	# EVN availability preserved: "(b34 & !(b46 | b47)) & !(b149 | b424)49)) & !(b6300 | b6302)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "5"
 	# EVN destination preserved: "128"
 	# EVN OnRefuse preserved: "b46"
 	# EVN OnSuccess preserved: "b47"
@@ -8274,6 +9208,8 @@ mission "EVN: Deliver New Hypergate Code;Sigma4"
 	to offer
 		never
 	# EVN availability preserved: "(b48 & !b46) & !(b424 | b49)49)) & !(b6300 | b6302)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "5"
 	# EVN destination preserved: "421"
 	# EVN OnAccept preserved: "k147 S899 S900"
 	# EVN OnRefuse preserved: "b46"
@@ -8285,12 +9221,16 @@ mission "EVN: Silent Ships misn;Sigma 4a"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Silent Ships misn;Sigma 4b"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "-1"
 
 mission "EVN: You Need to Register..."
@@ -8298,19 +9238,28 @@ mission "EVN: You Need to Register..."
 	to offer
 		never
 	# EVN availability preserved: "!P0 & (b301 | b135)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "3"
 	# EVN destination preserved: "-1"
 
 mission "EVN: Silent Mission;Vell-os Auroran pay player misn"
+	job
+	# EVN no specific return stellar; ES destination omitted
 	invisible
+	# EVN Flags2 0x0002 pays on auto-abort; ES equivalent unavailable
+	description "EV Nova contract: Silent Mission;Vell-os Auroran pay player misn."
 	to offer
-		never
-	# EVN destination preserved: "-1"
+		random < 100
+	on complete
+		payment 50000
 
 mission "EVN: Go On Cunjo Hunt;Special Klavs 04a II"
 	invisible
 	to offer
 		never
 	# EVN availability preserved: "!(b7786 | (b423 | b424)) & !((b8338 | b8339) | b8340)"
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "1"
 	# EVN destination preserved: "187"
 	# EVN OnAccept preserved: "b8338 b8340"
 	# EVN OnRefuse preserved: "b7786 b6666"
@@ -8321,6 +9270,7 @@ mission "EVN: Go On Cunjo Hunt;Special Klavs 04b II"
 	landing
 	source "Hourglass"
 	destination "Earth"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	# EVN cannot-refuse flag preserved; ES decline remains available
 	description "EV Nova contract: Go On Cunjo Hunt;Special Klavs 04b II."
 	passengers 2
@@ -8344,6 +9294,8 @@ mission "EVN: Eamon Boarding misn"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "2"
 	# EVN destination preserved: "-1"
 	# EVN OnAccept preserved: "b801"
 	# EVN OnAbort preserved: "K152 L138"
@@ -8352,6 +9304,8 @@ mission "EVN: Rescue Dr Ralph's Family; Pirate Offshoot 004bii"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "374"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "157"
 	# EVN OnSuccess preserved: "b445"
 	# EVN OnFailure preserved: "b445"
@@ -8361,12 +9315,15 @@ mission "EVN: Silent Mission;Return to New England"
 	invisible
 	to offer
 		never
+	# EVN ship-type gate preserved: "127"
+	# EVN offer location preserved: "0"
 	# EVN destination preserved: "138"
 
 mission "EVN: Scout Aurora;Rebel I12 if b2 is set"
 	landing
 	source "Rebel II"
 	destination "Rebel II"
+	# EVN AvailLoc 1 (bar) approximated as landing
 	description "EV Nova contract: Scout Aurora;Rebel I12 if b2 is set."
 	cargo "EVN cargo type 21" 5
 	npc
@@ -8395,6 +9352,7 @@ mission "EVN: Scout Aurora;Rebel II9 if b2 is set"
 	landing
 	source "Rebel II"
 	destination "Rebel II"
+	# EVN AvailLoc 3 (spaceport dialog) approximated as landing
 	description "EV Nova contract: Scout Aurora;Rebel II9 if b2 is set."
 	npc
 		government "Federation"
@@ -8438,6 +9396,12 @@ conversation "EVN dialogue 132 complete"
 
 conversation "EVN dialogue 134 complete"
 	`The merchant captain thanks you profusely once more, and pays you 75,000 credits in thanks, before joining the rest of his crew in attempting to raise the money for a new ship.`
+
+conversation "EVN dialogue 135 drop"
+	`A group of dockworkers unloads the shipment of <cargo> from your cargo bay.`
+
+conversation "EVN dialogue 136 drop"
+	`A group of dockworkers unloads the shipment of <cargo> from your cargo bay.`
 
 conversation "EVN dialogue 140 complete"
 	`You go through your post-landing routine and then walk to the Guild offices to collect you payment. The receptionist gives you a warm smile and transfers 22500 credits into your account.`
@@ -8751,6 +9715,36 @@ conversation "EVN dialogue 197 drop"
 
 conversation "EVN dialogue 199 complete"
 	`You are slightly surprised to sense the deceitful weavings of Commander Krane's mind awaiting you as you pilot your way down through New England's atmosphere. After dissolving your protective Dart-shaped shield you are greeted by the sight of her blonde hair and athletic figure. "So what did they say?" she asks quietly as she takes your arm and draws you out of earshot of the dock workers busily moving around the area. You give her a quick summary of the events of your trip and she looks pleased. "Good work!" her cheeks dimplthem as she smiles at you. "Our plans are proceeding nicely. I have a few things I have to take care of, so I will probably be a little out of contact for a while, but it shouldn't be too long before I need your services again. Keep an eye out in bars anywhere in the Federation. When I need you again, I'll find you."`
+
+conversation "EVN dialogue 200 complete"
+	`The passengers exit your ship after paying you the agreed upon fee.`
+
+conversation "EVN dialogue 206 complete"
+	`The blue-robed P'aedt thanks you and exits your ship after paying you the fee of 15,000 credits.`
+
+conversation "EVN dialogue 207 complete"
+	`The dark-green cloaked Ver'ash thanks you and exits your ship after paying you the fee of 12,500 credits.`
+
+conversation "EVN dialogue 208 complete"
+	`The white-robed Tre'pira thanks you and exits your ship after paying you the fee of 10,000 credits.`
+
+conversation "EVN dialogue 209 complete"
+	`The brown-cloaked Kel'ariy thanks you and exits your ship after paying you the fee of 25,000 credits.`
+
+conversation "EVN dialogue 210 complete"
+	`The black-robed Mu'hari bows and thanks you respectfully before disembarking from your ship after paying you the fee of 20,000 credits.`
+
+conversation "EVN dialogue 222 drop"
+	`A group of dockworkers unloads the shipment of <cargo> from your cargo bay.`
+
+conversation "EVN dialogue 239 complete"
+	`Your passengers are greeted by friends and family upon arrival. They quickly pay you the 5000 credits leaving you to ponder the general level of happiness of the rebels who live and work outside of Federation controlled space.`
+
+conversation "EVN dialogue 243 complete"
+	`Your passengers depart your ship after paying you the 5000 credits, and soon disappear into the masses filling the poor section of the spaceport.`
+
+conversation "EVN dialogue 246 complete"
+	`"Another day, another call for the Wild Geese," your passenger sighs in his musical accent. "Oh well, can't complain, it pays the bills." After paying you the agreed-upon fee, he wanders off in search of his contact.`
 
 conversation "EVN dialogue 257 offer"
 	`"Okay, here's the deal," Folstam continues. "The Guild is prepared to offer you membership, and a share of the reward if you can destroy an Auroran ship named the <system> that has been nosing around this system and its surrounds. The military is not prepared to spend the enormous resources required to locate this single ship so they have posted a bounty and that's where we come in. We're a little thin on the ground right now so we're offering the job to you. Simply put, if you want to get your share of the bounty and become a member of the Bounty Hunters Guild, you have to go out, find the <system> and destroy it. Then to collect your payment find the Guild offices on the Kane Band. "The actual bounty from the Federation government is 20000 credits, but the Guild will take fifty percent in a one-off membership fee. If you succeed they will give you clearance to access all the bounties through the Mission BBS' every time you land."`

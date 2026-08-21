@@ -21,6 +21,7 @@ const referencePath = path.join(__dirname, "..", "reference", "evntoes", "parsed
 const referenceData = fs.existsSync(referencePath) ? JSON.parse(fs.readFileSync(referencePath, "utf8")) : {};
 const referenceMissions = referenceData["mïsn"] || [];
 const referenceGovernments = referenceData["gövt"] || [];
+const referencePlanets = referenceData["spöb"] || [];
 const referenceDudes = referenceData["düde"] || [];
 const referenceFleets = referenceData["flët"] || [];
 const EVN_COMMODITIES = [
@@ -184,6 +185,7 @@ function governmentRelations(governments) {
   }
   return relations;
 }
+const referenceGovernmentRelations = governmentRelations(referenceGovernments);
 function systemAsteroidLines(raw) {
   const total = Math.max(0, Math.min(16, Math.round(Number(raw && raw.asteroids) || 0)));
   if (!total) return [];
@@ -1062,17 +1064,117 @@ function convertGovernments() {
   write(path.join(output, "data", "governments.txt"), lines.join("\n"));
 }
 
+function evnGovernmentClassmates(governmentId) {
+  const target = referenceGovernment(governmentId);
+  if (!target) return [];
+  const classes = new Set();
+  for (let index = 1; index <= 4; index++) {
+    const classId = Number(target.data && target.data[`Class${index}`]);
+    if (Number.isFinite(classId) && classId >= 0) classes.add(classId);
+  }
+  const names = new Set();
+  for (const government of referenceGovernments) {
+    const sharesClass = Array.from({ length: 4 }, (_, index) => Number(government.data && government.data[`Class${index + 1}`]))
+      .some(classId => classes.has(classId));
+    if (sharesClass) names.add(safeName(government.name, `EVN government ${government.id}`));
+  }
+  return [...names].sort();
+}
+
+function evnGovernmentSelectorNames(value, mode) {
+  const id = Math.trunc(Number(value));
+  const ranges = [
+    { start: 9999, end: 10255, mode: "government" },
+    { start: 15000, end: 15255, mode: "ally" },
+    { start: 20000, end: 20255, mode: "not-government" },
+    { start: 25000, end: 25255, mode: "enemy" },
+    { start: 30000, end: 30255, mode: "class" },
+    { start: 31000, end: 31255, mode: "not-class" }
+  ];
+  const range = ranges.find(candidate => id >= candidate.start && id <= candidate.end);
+  if (!range || (mode && range.mode !== mode)) return [];
+  const governmentId = 128 + id - range.start;
+  const government = governmentName(governmentId);
+  if (!government) return [];
+  if (range.mode === "government") return [government];
+  if (range.mode === "not-government") return [government];
+  if (range.mode === "ally") return [...(referenceGovernmentRelations.get(government) || { allies: new Set() }).allies].sort();
+  if (range.mode === "enemy") return [...(referenceGovernmentRelations.get(government) || { enemies: new Set() }).enemies].sort();
+  const classmates = evnGovernmentClassmates(governmentId);
+  return range.mode === "class" ? classmates : [government, ...classmates.filter(name => name !== government)];
+}
+
+function evnMissionRecordGovernment(value) {
+  const id = Math.trunc(Number(value));
+  if (!Number.isFinite(id)) return null;
+  if (id >= 128 && id <= 2175) {
+    const planet = referencePlanets.find(record => String(record.id) === String(id));
+    return planet && planet.data ? governmentName(planet.data.Govt) : null;
+  }
+  const names = evnGovernmentSelectorNames(id, "government");
+  return names.length === 1 ? names[0] : null;
+}
+
+function evnMissionRecordCondition(data) {
+  const record = Math.trunc(Number(data && data.AvailRecord));
+  if (!Number.isFinite(record) || record === 0) return { lines: [], note: null };
+  if (record <= -32000) return { lines: [], note: `EVN AvailRecord ${record} requires stellar domination; no ES equivalent` };
+  const government = evnMissionRecordGovernment(data && data.AvailStel);
+  if (!government) return { lines: [], note: `EVN AvailRecord ${record} preserved; source government is not statically knowable` };
+  const operator = record > 0 ? ">=" : "<=";
+  return {
+    lines: [`\t\t${q(`reputation: ${government}`)} ${operator} ${Math.abs(record)}`],
+    note: `EVN AvailRecord ${record} approximated with ES reputation for ${government}`
+  };
+}
+
+function evnMissionShipTypeCondition(value) {
+  const id = Math.trunc(Number(value));
+  if (!Number.isFinite(id) || id === 0 || id === 127 || id === -1) return { lines: [], note: null };
+  if (id >= 128 && id <= 895) {
+    const ship = normalizedOf("Ship", id);
+    if (!ship || !ship.name) return { lines: [], note: `EVN AvailShipTyp ${id} references missing ship` };
+    return { lines: [`\t\thas ${q(`flagship model: ${safeName(ship.name, `EVN ship ${id}`)}`)}`], note: null };
+  }
+  if (id >= 1128 && id <= 1895) {
+    const ship = normalizedOf("Ship", id - 1000);
+    if (!ship || !ship.name) return { lines: [], note: `EVN AvailShipTyp ${id} references missing excluded ship` };
+    return { lines: [`\t\tnot ${q(`flagship model: ${safeName(ship.name, `EVN ship ${id - 1000}`)}`)}`], note: null };
+  }
+  return { lines: [], note: `EVN AvailShipTyp ${id} has no tested ES equivalent` };
+}
+
+function evnMissionLocationType(value) {
+  const id = Math.trunc(Number(value));
+  if (id === 0) return { type: "job", note: null };
+  if (id === 5) return { type: "shipyard", note: null };
+  if (id === 6) return { type: "outfitter", note: null };
+  const notes = {
+    1: "EVN AvailLoc 1 (bar) approximated as landing",
+    2: "EVN AvailLoc 2 (offered from ship) approximated as landing",
+    3: "EVN AvailLoc 3 (spaceport dialog) approximated as landing",
+    4: "EVN AvailLoc 4 (trading dialog) approximated as landing"
+  };
+  return { type: "landing", note: notes[id] || `EVN AvailLoc ${id} approximated as landing` };
+}
+
 function evnMissionStellarFilter(value, field) {
   const id = Math.trunc(Number(value));
   if (!Number.isFinite(id)) return { supported: false, lines: [], note: "missing stellar selector" };
   if (id === -1) {
-    return field === "source"
-      ? { supported: true, lines: [], note: null }
-      : { supported: false, lines: [], note: "EVN ReturnStel -1 means current or any inhabited stellar" };
+    return { supported: true, lines: [], note: field === "destination" ? "EVN no specific return stellar; ES destination omitted" : null };
   }
   if (id >= 128 && id <= 2175) {
     const planet = normalizedOf("Planet", id);
     if (!planet || !planet.name) return { supported: false, lines: [], note: `missing EVN stellar ${id}` };
+    if (field === "waypoint") {
+      const system = referenceData["sÿst"] && referenceData["sÿst"].find(record => {
+        const data = record.data || {};
+        return Array.from({ length: 16 }, (_, index) => Number(data[`Con${index + 1}`])).includes(id);
+      });
+      if (!system) return { supported: false, lines: [], note: `missing EVN system for stellar waypoint ${id}` };
+      return { supported: true, exact: id, lines: [`\twaypoint ${q(nameOf("System", system.id))}`], note: "EVN stellar waypoint reduced to its ES system" };
+    }
     return { supported: true, exact: id, lines: [`\t${field} ${q(safeName(planet.name, `EVN planet ${id}`))}`], note: null };
   }
   if (id >= 5000 && id <= 7047) {
@@ -1086,20 +1188,20 @@ function evnMissionStellarFilter(value, field) {
     };
   }
   const governmentRanges = [
-    { start: 9999, end: 10255, negate: false, note: null },
-    { start: 15000, end: 15255, negate: false, note: "EVN ally selector approximated as government selector" },
-    { start: 20000, end: 20255, negate: true, note: "EVN non-government selector approximated as not government" },
-    { start: 25000, end: 25255, negate: true, note: "EVN enemy selector approximated as not government" },
-    { start: 30000, end: 30255, negate: false, note: "EVN class-mate selector approximated as government selector" },
-    { start: 31000, end: 31255, negate: true, note: "EVN non-class selector approximated as not government" }
+    { start: 9999, end: 10255, mode: "government", negate: false, note: null },
+    { start: 15000, end: 15255, mode: "ally", negate: false, note: "EVN ally selector mapped through government class relations" },
+    { start: 20000, end: 20255, mode: "not-government", negate: true, note: null },
+    { start: 25000, end: 25255, mode: "enemy", negate: false, note: "EVN enemy selector mapped through government class relations" },
+    { start: 30000, end: 30255, mode: "class", negate: false, note: "EVN class-mate selector mapped through government class membership" },
+    { start: 31000, end: 31255, mode: "not-class", negate: true, note: "EVN non-class selector mapped through government class membership" }
   ];
   const range = governmentRanges.find(candidate => id >= candidate.start && id <= candidate.end);
   if (range) {
-    const government = governmentName(128 + id - range.start);
-    if (!government) return { supported: false, lines: [], note: `missing EVN government selector ${id}` };
+    const governments = evnGovernmentSelectorNames(id, range.mode);
+    if (!governments.length) return { supported: false, lines: [], note: `EVN selector ${id} resolves to no ES governments` };
     return {
       supported: true,
-      lines: [`\t${field}`, `\t\t${range.negate ? "not " : ""}government ${q(government)}`],
+      lines: [`\t${field}`, `\t\t${range.negate ? "not " : ""}government ${governments.map(q).join(" ")}`],
       note: range.note
     };
   }
@@ -1184,24 +1286,29 @@ function convertMissionStubs() {
     const destination = evnMissionStellarFilter(data && data.ReturnStel, "destination");
     const source = evnMissionStellarFilter(data && data.AvailStel, "source");
     const availability = String(data && data.AvailBits || "").replace(/\0/g, "").trim();
+    const shipType = evnMissionShipTypeCondition(data && data.AvailShipTyp);
     const activeMission = data && Number(data.PayVal) > 0 && destination.supported && source.supported && evnMissionAvailabilitySupported(availability);
     if (activeMission) {
       active++;
       lines.push(`mission ${q(name)}`);
       const availLoc = Number(data.AvailLoc);
-      lines.push(availLoc === 5 ? "\tshipyard" : "\tlanding");
+      const location = evnMissionLocationType(availLoc);
+      lines.push(`\t${location.type}`);
       lines.push(...source.lines);
       const travel = evnMissionStellarFilter(data.TravelStel, "waypoint");
       if (travel.exact && travel.exact !== destination.exact) lines.push(...travel.lines);
       lines.push(...destination.lines);
+      if (location.note) lines.push(`\t# ${location.note}`);
       if (source.note) lines.push(`\t# ${source.note}`);
       if (destination.note) lines.push(`\t# ${destination.note}`);
       if (travel.note && travel.exact) lines.push(`\t# ${travel.note}`);
-      if (availLoc === 6) lines.push("\t# EVN AvailLoc 6 (outfitter) approximated as landing");
+      if (shipType.note) lines.push(`\t# ${shipType.note}`);
       const flags = hexNumber(data.Flags);
       if (flags & 0x0400) lines.push("\tinvisible");
       if (flags & 0x0004) lines.push("\t# EVN cannot-refuse flag preserved; ES decline remains available");
       if (Number(data.CanAbort) === 0) lines.push("\t# EVN CanAbort=0 preserved; ES abort semantics differ");
+      const flags2 = hexNumber(data.Flags2);
+      if (flags2 & 0x0002) lines.push("\t# EVN Flags2 0x0002 pays on auto-abort; ES equivalent unavailable");
       lines.push(`\tdescription ${q(`EV Nova contract: ${sourceName}.`)}`);
       lines.push(...missionCargoLines(data, sourceName));
       const timeLimit = Number(data && data.TimeLimit);
@@ -1211,8 +1318,13 @@ function convertMissionStubs() {
       if (Number.isFinite(Number(data.AvailRating)) && Number(data.AvailRating) > 0) {
         lines.push(`\t\t\"combat rating\" >= ${Math.round(Number(data.AvailRating))}`);
       }
+      const record = evnMissionRecordCondition(data);
+      lines.push(...record.lines);
+      if (record.note) lines.push(`\t\t# ${record.note}`);
+      lines.push(...shipType.lines);
       if (availability) emitEvnBitConditions(lines, availability, "\t\t");
-      const random = Math.max(1, Math.min(100, Math.round(Number(data.AvailRandom) || 20)));
+      const randomValue = Math.round(Number(data.AvailRandom));
+      const random = Number.isFinite(randomValue) && randomValue > 0 ? Math.min(100, randomValue) : 100;
       lines.push(`\t\trandom < ${random}`);
       const offerText = evnConversationText(data && (data.BriefText || data.QuickBrief));
       const completeText = evnConversationText(data && data.CompText);
@@ -1260,6 +1372,9 @@ function convertMissionStubs() {
         lines.push("\ton abort");
         emitEvnMissionActions(lines, data && data.OnAbort, "\t\t", { messages });
       }
+      if (flags2 & 0x0004) {
+        lines.push("\ton disabled", "\t\tfail");
+      }
       const refuseText = evnConversationText(data && data.RefuseText);
       const refuseActions = evnMissionActions(data && data.OnRefuse);
       if (refuseText || refuseActions.supported.length || refuseActions.unsupported.length) {
@@ -1276,6 +1391,9 @@ function convertMissionStubs() {
     lines.push("\tto offer");
     lines.push("\t\tnever");
     if (data && data.AvailBits) lines.push(`\t# EVN availability preserved: ${q(String(data.AvailBits).replace(/\0/g, "").trim())}`);
+    if (data && data.AvailRecord) lines.push(`\t# EVN legal-record gate preserved: ${q(String(data.AvailRecord))}`);
+    if (data && data.AvailShipTyp) lines.push(`\t# EVN ship-type gate preserved: ${q(String(data.AvailShipTyp))}`);
+    if (data && data.AvailLoc != null) lines.push(`\t# EVN offer location preserved: ${q(String(data.AvailLoc))}`);
     if (data && data.ReturnStel != null) lines.push(`\t# EVN destination preserved: ${q(String(data.ReturnStel))}`);
     for (const field of ["OnAccept", "OnRefuse", "OnSuccess", "OnFailure", "OnAbort", "OnShipDone"]) {
       const action = String(data && data[field] || "").replace(/\0/g, "").trim();

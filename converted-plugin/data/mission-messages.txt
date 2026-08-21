@@ -1,6 +1,9 @@
 # EVN STR# messages referenced by mission Q actions.
 # EVN message lists are reduced to their first recoverable string because ES messages have one text value.
 
+message "EVN message 25057"
+	text `<OSN>: Ready for docking, <PSN>.`
+
 message "EVN message 25059"
 	text `Holographic recording complete. Return to P'ar Aed.`
 
