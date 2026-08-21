@@ -81,6 +81,10 @@ function referencePlanetRecord(planetId) {
   const target = String(refId(planetId));
   return (referenceData["spöb"] || []).find(record => String(record.id) === target) || null;
 }
+function referenceShipRecord(shipId) {
+  const target = String(refId(shipId));
+  return (referenceData["shïp"] || []).find(record => String(record.id) === target) || null;
+}
 function hexNumber(value, fallback = 0) {
   const text = String(value == null ? "" : value).trim();
   if (!text) return fallback;
@@ -741,6 +745,8 @@ function convertShips() {
     if (ship.parseError) continue;
     const name = safeName(ship.name, `EVN ship ${ship.id}`);
     const p = ship.physics || {};
+    const reference = referenceShipRecord(ship.id);
+    const raw = reference && reference.data ? reference.data : {};
     const fields = [
       ["sprite", `ship/${name.replace(/[^A-Za-z0-9]+/g, "_").toLowerCase()}`],
       ["thumbnail", `thumbnail/${name.replace(/[^A-Za-z0-9]+/g, "_").toLowerCase()}`]
@@ -767,6 +773,9 @@ function convertShips() {
       ["turn", number(p.turnRate)],
       ["cargo space", number(p.freeCargo)],
       ["outfit space", number(p.freeMass)],
+      ["cost", Math.max(0, number(raw.Cost))],
+      ["required crew", Math.max(0, number(raw.Crew))],
+      ["fuel capacity", Math.max(0, number(raw.Fuel))],
       ["gun ports", countPorts(ship.animation && ship.animation.exitPoints && ship.animation.exitPoints.gun)],
       ["turret mounts", countPorts(ship.animation && ship.animation.exitPoints && ship.animation.exitPoints.turret)],
       ["turret turn", countPorts(ship.animation && ship.animation.exitPoints && ship.animation.exitPoints.turret) ? 1 : null],

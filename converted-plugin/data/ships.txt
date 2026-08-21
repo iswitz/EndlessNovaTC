@@ -20,6 +20,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 10
 		"outfit space" 11
+		"cost" 10000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 0
@@ -48,6 +51,9 @@
 		"turn" 2.2689280275926285
 		"cargo space" 15
 		"outfit space" 15
+		"cost" 17500
+		"required crew" 2
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 0
@@ -76,6 +82,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 10
 		"outfit space" 0
+		"cost" 2000
+		"required crew" 0
+		"fuel capacity" 200
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -103,6 +112,9 @@
 		"turn" 0.5817764173314431
 		"cargo space" 4000
 		"outfit space" 20
+		"cost" 12000000
+		"required crew" 20
+		"fuel capacity" 800
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -131,6 +143,9 @@
 		"turn" 1.454441043328608
 		"cargo space" 1000
 		"outfit space" 40
+		"cost" 2000000
+		"required crew" 10
+		"fuel capacity" 700
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -160,6 +175,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 30
 		"outfit space" 66
+		"cost" 600000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -192,6 +210,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 120
 		"outfit space" 46
+		"cost" 500000
+		"required crew" 300
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -221,6 +242,9 @@
 		"turn" 3.1997702953229377
 		"cargo space" 20
 		"outfit space" 31
+		"cost" 250000
+		"required crew" 3
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -251,6 +275,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 125
 		"outfit space" 23
+		"cost" 150000
+		"required crew" 4
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -280,6 +307,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 50
+		"cost" 350000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -312,6 +342,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 50
 		"outfit space" 47
+		"cost" 200000
+		"required crew" 10
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -343,6 +376,9 @@
 		"turn" 1.454441043328608
 		"cargo space" 250
 		"outfit space" 74
+		"cost" 450000
+		"required crew" 35
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -373,6 +409,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 250
 		"outfit space" 117
+		"cost" 750000
+		"required crew" 100
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -404,6 +443,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 50
 		"outfit space" 185
+		"cost" 2000000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -439,6 +481,9 @@
 		"turn" 3.1997702953229377
 		"cargo space" 25
 		"outfit space" 127
+		"cost" 500000
+		"required crew" 10
+		"fuel capacity" 600
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -471,6 +516,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 100
 		"outfit space" 463
+		"cost" 12000000
+		"required crew" 200
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -508,6 +556,9 @@
 		"turn" 4.654211338651545
 		"cargo space" 5
 		"outfit space" 21
+		"cost" 100000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -537,6 +588,9 @@
 		"turn" 4.072434921320102
 		"cargo space" 10
 		"outfit space" 33
+		"cost" 150000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -567,6 +621,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 500
 		"outfit space" 275
+		"cost" 12000000
+		"required crew" 120
+		"fuel capacity" 700
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -598,6 +655,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 405
+		"cost" 15000000
+		"required crew" 220
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -631,6 +691,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 64
+		"cost" 725000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -663,6 +726,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 57
+		"cost" 500000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -694,6 +760,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 30
 		"outfit space" 44
+		"cost" 250000
+		"required crew" 10
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -725,6 +794,9 @@
 		"turn" 1.454441043328608
 		"cargo space" 225
 		"outfit space" 115
+		"cost" 700000
+		"required crew" 35
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -756,6 +828,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 96
+		"cost" 400000
+		"required crew" 1
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -787,6 +862,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 50
 		"outfit space" 518
+		"cost" 12000000
+		"required crew" 250
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -822,6 +900,9 @@
 		"turn" 1.454441043328608
 		"cargo space" 75
 		"outfit space" 343
+		"cost" 2000000
+		"required crew" 150
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -856,6 +937,9 @@
 		"turn" 4.654211338651545
 		"cargo space" 5
 		"outfit space" 13
+		"cost" 150000
+		"required crew" 1
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -884,6 +968,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 10
 		"outfit space" 40
+		"cost" 150000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -914,6 +1001,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 15
 		"outfit space" 45
+		"cost" 300000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -944,6 +1034,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 25
 		"outfit space" 117
+		"cost" 2000000
+		"required crew" 10
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -976,6 +1069,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 50
 		"outfit space" 65
+		"cost" 1100000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1006,6 +1102,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 3500
 		"outfit space" 0
+		"cost" 2500000
+		"required crew" 15
+		"fuel capacity" 1200
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -1033,6 +1132,9 @@
 		"turn" 5.817764173314432
 		"cargo space" 15
 		"outfit space" 30
+		"cost" 250000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1062,6 +1164,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 100
 		"outfit space" 247
+		"cost" 7000000
+		"required crew" 20
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1095,6 +1200,9 @@
 		"turn" 4.072434921320102
 		"cargo space" 20
 		"outfit space" 72
+		"cost" 1000000
+		"required crew" 2
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1126,6 +1234,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 200
 		"outfit space" 358
+		"cost" 10000000
+		"required crew" 30
+		"fuel capacity" 1500
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 4
@@ -1158,6 +1269,9 @@
 		"turn" 3.1997702953229377
 		"cargo space" 20
 		"outfit space" 77
+		"cost" 750000
+		"required crew" 2
+		"fuel capacity" 700
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1191,6 +1305,9 @@
 		"turn" 4.072434921320102
 		"cargo space" 15
 		"outfit space" 14
+		"cost" 110000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -1219,6 +1336,9 @@
 		"turn" 4.654211338651545
 		"cargo space" 5
 		"outfit space" 16
+		"cost" 80000
+		"required crew" 1
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -1247,6 +1367,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 0
 		"outfit space" 10
+		"cost" 1
+		"required crew" 0
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1278,6 +1401,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 0
 		"outfit space" 8
+		"cost" 1
+		"required crew" 0
+		"fuel capacity" 800
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -1307,6 +1433,9 @@
 		"turn" 4.654211338651545
 		"cargo space" 0
 		"outfit space" 5
+		"cost" 1
+		"required crew" 0
+		"fuel capacity" 600
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -1335,6 +1464,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 0
 		"outfit space" 15
+		"cost" 1
+		"required crew" 0
+		"fuel capacity" 0
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -1363,6 +1495,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 125
+		"cost" 2500000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1397,6 +1532,9 @@
 		"turn" 5.817764173314432
 		"cargo space" 5
 		"outfit space" 10
+		"cost" 0
+		"required crew" 0
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1428,6 +1566,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 60
 		"outfit space" 20
+		"cost" 0
+		"required crew" 0
+		"fuel capacity" 1500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1461,6 +1602,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 100
 		"outfit space" 50
+		"cost" 0
+		"required crew" 0
+		"fuel capacity" 2000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1496,6 +1640,9 @@
 		"turn" 7.563093425308761
 		"cargo space" 0
 		"outfit space" 30
+		"cost" 1
+		"required crew" 0
+		"fuel capacity" 1000
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -1524,6 +1671,9 @@
 		"turn" 4.654211338651545
 		"cargo space" 10
 		"outfit space" 19
+		"cost" 120000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -1552,6 +1702,9 @@
 		"turn" 3.1997702953229377
 		"cargo space" 20
 		"outfit space" 85
+		"cost" 650000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1586,6 +1739,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 75
+		"cost" 375000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1619,6 +1775,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 50
 		"outfit space" 76
+		"cost" 3000000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1652,6 +1811,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 50
 		"outfit space" 203
+		"cost" 2000000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1686,6 +1848,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 500
 		"outfit space" 0
+		"cost" 500000
+		"required crew" 5
+		"fuel capacity" 800
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -1713,6 +1878,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 50
 		"outfit space" 76
+		"cost" 3000000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -1745,6 +1913,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 50
 		"outfit space" 203
+		"cost" 2000000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1779,6 +1950,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 0
 		"outfit space" 10
+		"cost" 1
+		"required crew" 0
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1808,6 +1982,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 83
+		"cost" 9000000
+		"required crew" 2
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1841,6 +2018,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 25
 		"outfit space" 46
+		"cost" 400000
+		"required crew" 4
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1873,6 +2053,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 10
 		"outfit space" 11
+		"cost" 15000
+		"required crew" 1
+		"fuel capacity" 100
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 0
@@ -1902,6 +2085,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 15
 		"outfit space" 15
+		"cost" 27500
+		"required crew" 2
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 0
@@ -1929,6 +2115,9 @@
 		"turn" 0.5817764173314431
 		"cargo space" 3600
 		"outfit space" 240
+		"cost" 13000000
+		"required crew" 20
+		"fuel capacity" 800
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1959,6 +2148,9 @@
 		"turn" 3.7815467126543805
 		"cargo space" 15
 		"outfit space" 36
+		"cost" 350000
+		"required crew" 3
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -1990,6 +2182,9 @@
 		"turn" 0.5817764173314431
 		"cargo space" 3600
 		"outfit space" 180
+		"cost" 12000000
+		"required crew" 20
+		"fuel capacity" 800
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2019,6 +2214,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 950
 		"outfit space" 75
+		"cost" 2350000
+		"required crew" 10
+		"fuel capacity" 700
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2048,6 +2246,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 950
 		"outfit space" 75
+		"cost" 2350000
+		"required crew" 10
+		"fuel capacity" 700
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2077,6 +2278,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 30
 		"outfit space" 64
+		"cost" 640000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2109,6 +2313,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 15
 		"outfit space" 76
+		"cost" 700000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2142,6 +2349,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 10
 		"outfit space" 126
+		"cost" 800000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2176,6 +2386,9 @@
 		"turn" 3.432480862255515
 		"cargo space" 15
 		"outfit space" 44
+		"cost" 700000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2209,6 +2422,9 @@
 		"turn" 2.0943951023931953
 		"cargo space" 15
 		"outfit space" 103
+		"cost" 640000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2241,6 +2457,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 120
 		"outfit space" 46
+		"cost" 600000
+		"required crew" 300
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2270,6 +2489,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 105
 		"outfit space" 66
+		"cost" 545000
+		"required crew" 300
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2300,6 +2522,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 110
 		"outfit space" 41
+		"cost" 150000
+		"required crew" 4
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2330,6 +2555,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 125
 		"outfit space" 21
+		"cost" 200000
+		"required crew" 4
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2360,6 +2588,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 50
 		"outfit space" 64
+		"cost" 220000
+		"required crew" 10
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2392,6 +2623,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 50
 		"outfit space" 70
+		"cost" 220000
+		"required crew" 10
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2423,6 +2657,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 50
 		"outfit space" 116
+		"cost" 250000
+		"required crew" 10
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2455,6 +2692,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 50
 		"outfit space" 46
+		"cost" 250000
+		"required crew" 10
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2485,6 +2725,9 @@
 		"turn" 1.454441043328608
 		"cargo space" 250
 		"outfit space" 114
+		"cost" 500000
+		"required crew" 35
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2515,6 +2758,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 250
 		"outfit space" 184
+		"cost" 550000
+		"required crew" 35
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2547,6 +2793,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 250
 		"outfit space" 144
+		"cost" 500000
+		"required crew" 35
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2578,6 +2827,9 @@
 		"turn" 2.0943951023931953
 		"cargo space" 50
 		"outfit space" 205
+		"cost" 3500000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2612,6 +2864,9 @@
 		"turn" 2.0943951023931953
 		"cargo space" 50
 		"outfit space" 262
+		"cost" 2750000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2647,6 +2902,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 50
 		"outfit space" 239
+		"cost" 3500000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2682,6 +2940,9 @@
 		"turn" 2.0943951023931953
 		"cargo space" 50
 		"outfit space" 254
+		"cost" 4500000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2716,6 +2977,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 25
 		"outfit space" 85
+		"cost" 500000
+		"required crew" 10
+		"fuel capacity" 600
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2748,6 +3012,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 25
 		"outfit space" 142
+		"cost" 575000
+		"required crew" 10
+		"fuel capacity" 600
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2780,6 +3047,9 @@
 		"turn" 3.1997702953229377
 		"cargo space" 25
 		"outfit space" 91
+		"cost" 600000
+		"required crew" 10
+		"fuel capacity" 600
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2815,6 +3085,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 100
 		"outfit space" 589
+		"cost" 15000000
+		"required crew" 200
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2852,6 +3125,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 100
 		"outfit space" 409
+		"cost" 20000000
+		"required crew" 200
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2890,6 +3166,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 100
 		"outfit space" 659
+		"cost" 15000000
+		"required crew" 200
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2930,6 +3209,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 100
 		"outfit space" 629
+		"cost" 17000000
+		"required crew" 200
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -2967,6 +3249,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 100
 		"outfit space" 686
+		"cost" 12000000
+		"required crew" 200
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3007,6 +3292,9 @@
 		"turn" 3.9560796378538137
 		"cargo space" 5
 		"outfit space" 24
+		"cost" 150000
+		"required crew" 1
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -3037,6 +3325,9 @@
 		"turn" 3.6651914291880923
 		"cargo space" 5
 		"outfit space" 24
+		"cost" 100000
+		"required crew" 1
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -3066,6 +3357,9 @@
 		"turn" 3.6651914291880923
 		"cargo space" 10
 		"outfit space" 38
+		"cost" 220000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -3096,6 +3390,9 @@
 		"turn" 4.1887902047863905
 		"cargo space" 10
 		"outfit space" 49
+		"cost" 150000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -3126,6 +3423,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 500
 		"outfit space" 234
+		"cost" 12000000
+		"required crew" 120
+		"fuel capacity" 700
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -3158,6 +3458,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 500
 		"outfit space" 305
+		"cost" 13500000
+		"required crew" 120
+		"fuel capacity" 700
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -3189,6 +3492,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 500
 		"outfit space" 345
+		"cost" 15500000
+		"required crew" 120
+		"fuel capacity" 700
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -3220,6 +3526,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 500
 		"outfit space" 335
+		"cost" 14000000
+		"required crew" 120
+		"fuel capacity" 700
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -3252,6 +3561,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 66
+		"cost" 800000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3284,6 +3596,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 54
+		"cost" 875000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3316,6 +3631,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 56
+		"cost" 875000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3348,6 +3666,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 10
 		"outfit space" 91
+		"cost" 950000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3381,6 +3702,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 66
+		"cost" 875000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3413,6 +3737,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 225
 		"outfit space" 125
+		"cost" 700000
+		"required crew" 35
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3445,6 +3772,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 225
 		"outfit space" 206
+		"cost" 850000
+		"required crew" 35
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3477,6 +3807,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 225
 		"outfit space" 245
+		"cost" 700000
+		"required crew" 35
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3509,6 +3842,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 157
+		"cost" 550000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3541,6 +3877,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 140
+		"cost" 475000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3573,6 +3912,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 106
+		"cost" 350000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3605,6 +3947,9 @@
 		"turn" 1.5707963267948966
 		"cargo space" 20
 		"outfit space" 72
+		"cost" 400000
+		"required crew" 1
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3636,6 +3981,9 @@
 		"turn" 2.0943951023931953
 		"cargo space" 20
 		"outfit space" 79
+		"cost" 410000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3667,6 +4015,9 @@
 		"turn" 2.0943951023931953
 		"cargo space" 20
 		"outfit space" 96
+		"cost" 425000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3698,6 +4049,9 @@
 		"turn" 2.0943951023931953
 		"cargo space" 20
 		"outfit space" 96
+		"cost" 450000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3729,6 +4083,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 165
+		"cost" 500000
+		"required crew" 1
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3761,6 +4118,9 @@
 		"turn" 1.5707963267948966
 		"cargo space" 75
 		"outfit space" 403
+		"cost" 2000000
+		"required crew" 150
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3794,6 +4154,9 @@
 		"turn" 2.0943951023931953
 		"cargo space" 75
 		"outfit space" 322
+		"cost" 1800000
+		"required crew" 150
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3827,6 +4190,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 464
+		"cost" 2200000
+		"required crew" 150
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3860,6 +4226,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 75
 		"outfit space" 240
+		"cost" 1600000
+		"required crew" 150
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3893,6 +4262,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 75
 		"outfit space" 253
+		"cost" 1600000
+		"required crew" 150
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3927,6 +4299,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 276
+		"cost" 1700000
+		"required crew" 150
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3961,6 +4336,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 281
+		"cost" 1800000
+		"required crew" 150
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -3995,6 +4373,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 318
+		"cost" 2000000
+		"required crew" 150
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4029,6 +4410,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 75
 		"outfit space" 383
+		"cost" 2250000
+		"required crew" 150
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4063,6 +4447,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 56
+		"cost" 2000000
+		"required crew" 2
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4094,6 +4481,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 56
+		"cost" 2050000
+		"required crew" 2
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4125,6 +4515,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 56
+		"cost" 2100000
+		"required crew" 2
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4156,6 +4549,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 25
 		"outfit space" 118
+		"cost" 3500000
+		"required crew" 10
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4189,6 +4585,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 50
 		"outfit space" 66
+		"cost" 1750000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4220,6 +4619,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 100
 		"outfit space" 248
+		"cost" 7000000
+		"required crew" 20
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4254,6 +4656,9 @@
 		"turn" 4.072434921320102
 		"cargo space" 20
 		"outfit space" 73
+		"cost" 1000000
+		"required crew" 2
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4286,6 +4691,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 200
 		"outfit space" 319
+		"cost" 10000000
+		"required crew" 30
+		"fuel capacity" 1500
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 4
@@ -4319,6 +4727,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 200
 		"outfit space" 318
+		"cost" 10000000
+		"required crew" 30
+		"fuel capacity" 1500
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 4
@@ -4351,6 +4762,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 200
 		"outfit space" 319
+		"cost" 10000000
+		"required crew" 30
+		"fuel capacity" 1500
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 4
@@ -4384,6 +4798,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 58
+		"cost" 2150000
+		"required crew" 2
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4416,6 +4833,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 25
 		"outfit space" 122
+		"cost" 3500000
+		"required crew" 10
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4450,6 +4870,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 3500
 		"outfit space" 2
+		"cost" 2500000
+		"required crew" 15
+		"fuel capacity" 1200
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -4478,6 +4901,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 50
 		"outfit space" 68
+		"cost" 2250000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4510,6 +4936,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 100
 		"outfit space" 254
+		"cost" 7000000
+		"required crew" 20
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4545,6 +4974,9 @@
 		"turn" 4.072434921320102
 		"cargo space" 20
 		"outfit space" 75
+		"cost" 1050000
+		"required crew" 2
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4578,6 +5010,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 200
 		"outfit space" 325
+		"cost" 10000000
+		"required crew" 30
+		"fuel capacity" 1500
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 4
@@ -4612,6 +5047,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 500
 		"outfit space" 2
+		"cost" 500000
+		"required crew" 5
+		"fuel capacity" 800
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -4640,6 +5078,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 20
 		"outfit space" 37
+		"cost" 300000
+		"required crew" 3
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4670,6 +5111,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 10
 		"outfit space" 46
+		"cost" 425000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4701,6 +5145,9 @@
 		"turn" 3.7815467126543805
 		"cargo space" 15
 		"outfit space" 74
+		"cost" 550000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4733,6 +5180,9 @@
 		"turn" 3.141592653589793
 		"cargo space" 15
 		"outfit space" 36
+		"cost" 250000
+		"required crew" 3
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4763,6 +5213,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 15
 		"outfit space" 36
+		"cost" 250000
+		"required crew" 3
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4794,6 +5247,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 10
 		"outfit space" 76
+		"cost" 450000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4828,6 +5284,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 20
 		"outfit space" 46
+		"cost" 385000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4860,6 +5319,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 50
+		"cost" 385000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4891,6 +5353,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 250
 		"outfit space" 224
+		"cost" 850000
+		"required crew" 100
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4923,6 +5388,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 250
 		"outfit space" 291
+		"cost" 950000
+		"required crew" 100
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4956,6 +5424,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 250
 		"outfit space" 343
+		"cost" 1100000
+		"required crew" 100
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -4989,6 +5460,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 507
+		"cost" 15750000
+		"required crew" 220
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5026,6 +5500,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 770
+		"cost" 17000000
+		"required crew" 220
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5063,6 +5540,9 @@
 		"turn" 1.454441043328608
 		"cargo space" 15
 		"outfit space" 990
+		"cost" 18000000
+		"required crew" 220
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5100,6 +5580,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 57
+		"cost" 550000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5131,6 +5614,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 10
 		"outfit space" 84
+		"cost" 600000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5164,6 +5650,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 10
 		"outfit space" 66
+		"cost" 600000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5195,6 +5684,9 @@
 		"turn" 3.1997702953229377
 		"cargo space" 10
 		"outfit space" 213
+		"cost" 700000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5228,6 +5720,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 30
 		"outfit space" 117
+		"cost" 250000
+		"required crew" 10
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5260,6 +5755,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 30
 		"outfit space" 180
+		"cost" 325000
+		"required crew" 10
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5292,6 +5790,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 30
 		"outfit space" 107
+		"cost" 310000
+		"required crew" 10
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5324,6 +5825,9 @@
 		"turn" 0.8144869842640204
 		"cargo space" 50
 		"outfit space" 704
+		"cost" 12500000
+		"required crew" 250
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5362,6 +5866,9 @@
 		"turn" 1.3380857598623193
 		"cargo space" 50
 		"outfit space" 589
+		"cost" 11000000
+		"required crew" 250
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5398,6 +5905,9 @@
 		"turn" 0.5235987755982988
 		"cargo space" 50
 		"outfit space" 1089
+		"cost" 12000000
+		"required crew" 250
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5436,6 +5946,9 @@
 		"turn" 0.4072434921320102
 		"cargo space" 50
 		"outfit space" 419
+		"cost" 11000000
+		"required crew" 250
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5471,6 +5984,9 @@
 		"turn" 0.5235987755982988
 		"cargo space" 50
 		"outfit space" 419
+		"cost" 11500000
+		"required crew" 250
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5506,6 +6022,9 @@
 		"turn" 0.5235987755982988
 		"cargo space" 50
 		"outfit space" 499
+		"cost" 12000000
+		"required crew" 250
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5541,6 +6060,9 @@
 		"turn" 0.6399540590645875
 		"cargo space" 50
 		"outfit space" 574
+		"cost" 12500000
+		"required crew" 250
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5577,6 +6099,9 @@
 		"turn" 1.454441043328608
 		"cargo space" 50
 		"outfit space" 1229
+		"cost" 13500000
+		"required crew" 250
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5615,6 +6140,9 @@
 		"turn" 4.71238898038469
 		"cargo space" 5
 		"outfit space" 21
+		"cost" 185000
+		"required crew" 1
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -5644,6 +6172,9 @@
 		"turn" 4.1887902047863905
 		"cargo space" 5
 		"outfit space" 25
+		"cost" 240000
+		"required crew" 1
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -5674,6 +6205,9 @@
 		"turn" 3.6651914291880923
 		"cargo space" 5
 		"outfit space" 43
+		"cost" 195000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -5704,6 +6238,9 @@
 		"turn" 3.6651914291880923
 		"cargo space" 5
 		"outfit space" 48
+		"cost" 250000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -5735,6 +6272,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 15
 		"outfit space" 62
+		"cost" 320000
+		"required crew" 1
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5766,6 +6306,9 @@
 		"turn" 4.654211338651545
 		"cargo space" 15
 		"outfit space" 40
+		"cost" 280000
+		"required crew" 1
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5796,6 +6339,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 15
 		"outfit space" 96
+		"cost" 350000
+		"required crew" 1
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5827,6 +6373,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 200
 		"outfit space" 534
+		"cost" 15000000
+		"required crew" 30
+		"fuel capacity" 1500
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 4
@@ -5859,6 +6408,9 @@
 		"turn" 4.072434921320102
 		"cargo space" 25
 		"outfit space" 182
+		"cost" 3000000
+		"required crew" 10
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5891,6 +6443,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 50
 		"outfit space" 66
+		"cost" 900000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5922,6 +6477,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 111
+		"cost" 1275000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5953,6 +6511,9 @@
 		"turn" 4.945099547317267
 		"cargo space" 0
 		"outfit space" 17
+		"cost" 150000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -5983,6 +6544,9 @@
 		"turn" 6.981317007977318
 		"cargo space" 0
 		"outfit space" 42
+		"cost" 350000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6014,6 +6578,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 100
 		"outfit space" 337
+		"cost" 9500000
+		"required crew" 20
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6047,6 +6614,9 @@
 		"turn" 4.654211338651545
 		"cargo space" 20
 		"outfit space" 107
+		"cost" 1400000
+		"required crew" 2
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -6078,6 +6648,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 20
 		"outfit space" 57
+		"cost" 700000
+		"required crew" 2
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -6108,6 +6681,9 @@
 		"turn" 4.072434921320102
 		"cargo space" 25
 		"outfit space" 183
+		"cost" 4500000
+		"required crew" 10
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6141,6 +6717,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 112
+		"cost" 2500000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6173,6 +6752,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 100
 		"outfit space" 337
+		"cost" 9500000
+		"required crew" 20
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6206,6 +6788,9 @@
 		"turn" 4.654211338651545
 		"cargo space" 20
 		"outfit space" 108
+		"cost" 1400000
+		"required crew" 2
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6239,6 +6824,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 200
 		"outfit space" 535
+		"cost" 15000000
+		"required crew" 30
+		"fuel capacity" 1500
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 4
@@ -6272,6 +6860,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 200
 		"outfit space" 534
+		"cost" 15000000
+		"required crew" 30
+		"fuel capacity" 1500
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 4
@@ -6304,6 +6895,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 200
 		"outfit space" 535
+		"cost" 15000000
+		"required crew" 30
+		"fuel capacity" 1500
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 4
@@ -6337,6 +6931,9 @@
 		"turn" 4.072434921320102
 		"cargo space" 25
 		"outfit space" 189
+		"cost" 4500000
+		"required crew" 10
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6371,6 +6968,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 114
+		"cost" 2400000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6404,6 +7004,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 100
 		"outfit space" 348
+		"cost" 9500000
+		"required crew" 20
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6439,6 +7042,9 @@
 		"turn" 4.654211338651545
 		"cargo space" 20
 		"outfit space" 110
+		"cost" 1450000
+		"required crew" 2
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6473,6 +7079,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 200
 		"outfit space" 545
+		"cost" 15000000
+		"required crew" 30
+		"fuel capacity" 1500
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 4
@@ -6507,6 +7116,9 @@
 		"turn" 3.7815467126543805
 		"cargo space" 5
 		"outfit space" 106
+		"cost" 820000
+		"required crew" 2
+		"fuel capacity" 700
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6541,6 +7153,9 @@
 		"turn" 4.363323129985824
 		"cargo space" 3
 		"outfit space" 129
+		"cost" 950000
+		"required crew" 2
+		"fuel capacity" 700
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6576,6 +7191,9 @@
 		"turn" 4.363323129985824
 		"cargo space" 10
 		"outfit space" 26
+		"cost" 145000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -6605,6 +7223,9 @@
 		"turn" 4.654211338651545
 		"cargo space" 10
 		"outfit space" 28
+		"cost" 250000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -6634,6 +7255,9 @@
 		"turn" 4.945099547317267
 		"cargo space" 5
 		"outfit space" 26
+		"cost" 110000
+		"required crew" 1
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -6663,6 +7287,9 @@
 		"turn" 5.235987755982989
 		"cargo space" 5
 		"outfit space" 28
+		"cost" 150000
+		"required crew" 1
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -6692,6 +7319,9 @@
 		"turn" 5.235987755982989
 		"cargo space" 15
 		"outfit space" 32
+		"cost" 200000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -6722,6 +7352,9 @@
 		"turn" 5.235987755982989
 		"cargo space" 15
 		"outfit space" 40
+		"cost" 155000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -6752,6 +7385,9 @@
 		"turn" 4.363323129985824
 		"cargo space" 10
 		"outfit space" 48
+		"cost" 275000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -6782,6 +7418,9 @@
 		"turn" 3.1997702953229377
 		"cargo space" 20
 		"outfit space" 103
+		"cost" 725000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6816,6 +7455,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 125
+		"cost" 725000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6850,6 +7492,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 10
 		"outfit space" 149
+		"cost" 800000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6886,6 +7531,9 @@
 		"turn" 4.072434921320102
 		"cargo space" 10
 		"outfit space" 137
+		"cost" 875000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6922,6 +7570,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 64
+		"cost" 425000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6956,6 +7607,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 71
+		"cost" 475000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -6990,6 +7644,9 @@
 		"turn" 3.1997702953229377
 		"cargo space" 10
 		"outfit space" 162
+		"cost" 525000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7027,6 +7684,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 346
+		"cost" 4000000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -7064,6 +7724,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 50
 		"outfit space" 338
+		"cost" 2500000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7101,6 +7764,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 50
 		"outfit space" 305
+		"cost" 3250000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7139,6 +7805,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 50
 		"outfit space" 453
+		"cost" 4000000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7177,6 +7846,9 @@
 		"turn" 3.7815467126543805
 		"cargo space" 25
 		"outfit space" 48
+		"cost" 400000
+		"required crew" 4
+		"fuel capacity" 900
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7209,6 +7881,9 @@
 		"turn" 4.072434921320102
 		"cargo space" 15
 		"outfit space" 36
+		"cost" 300000
+		"required crew" 3
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7240,6 +7915,9 @@
 		"turn" 4.363323129985824
 		"cargo space" 15
 		"outfit space" 42
+		"cost" 350000
+		"required crew" 3
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7271,6 +7949,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 10
 		"outfit space" 50
+		"cost" 500000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7302,6 +7983,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 50
 		"outfit space" 111
+		"cost" 4000000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -7336,6 +8020,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 50
 		"outfit space" 203
+		"cost" 2500000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7370,6 +8057,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 361
+		"cost" 5000000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -7408,6 +8098,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 50
 		"outfit space" 353
+		"cost" 3000000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7446,6 +8139,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 50
 		"outfit space" 319
+		"cost" 3750000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7485,6 +8181,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 50
 		"outfit space" 468
+		"cost" 4500000
+		"required crew" 50
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7524,6 +8223,9 @@
 		"turn" 2.15257274412634
 		"cargo space" 9
 		"outfit space" 10
+		"cost" 4995
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 0
@@ -7552,6 +8254,9 @@
 		"turn" 2.5016385945252058
 		"cargo space" 12
 		"outfit space" 11
+		"cost" 60000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 0
@@ -7583,6 +8288,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 14
 		"outfit space" 14
+		"cost" 9995
+		"required crew" 2
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 0
@@ -7611,6 +8319,9 @@
 		"turn" 2.443460952792061
 		"cargo space" 15
 		"outfit space" 13
+		"cost" 75000
+		"required crew" 2
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 0
@@ -7643,6 +8354,9 @@
 		"turn" 1.3380857598623193
 		"cargo space" 950
 		"outfit space" 40
+		"cost" 1250000
+		"required crew" 10
+		"fuel capacity" 700
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7672,6 +8386,9 @@
 		"turn" 1.5707963267948966
 		"cargo space" 900
 		"outfit space" 80
+		"cost" 2750000
+		"required crew" 10
+		"fuel capacity" 700
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7710,6 +8427,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 58
+		"cost" 400000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7740,6 +8460,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 15
 		"outfit space" 91
+		"cost" 650000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7780,6 +8503,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 125
 		"outfit space" 20
+		"cost" 110000
+		"required crew" 4
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7808,6 +8534,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 95
 		"outfit space" 47
+		"cost" 400000
+		"required crew" 4
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7843,6 +8572,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 20
 		"outfit space" 46
+		"cost" 200000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7872,6 +8604,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 51
+		"cost" 600000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7908,6 +8643,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 10
 		"outfit space" 98
+		"cost" 2500000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7942,6 +8680,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 100
 		"outfit space" 871
+		"cost" 0
+		"required crew" 220
+		"fuel capacity" 600
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -7981,6 +8722,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 83
+		"cost" 800000
+		"required crew" 2
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8014,6 +8758,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 83
+		"cost" 950000
+		"required crew" 2
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8047,6 +8794,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 1000
 		"outfit space" 111
+		"cost" 2000000
+		"required crew" 10
+		"fuel capacity" 700
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8078,6 +8828,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 50
 		"outfit space" 170
+		"cost" 50000000
+		"required crew" 1
+		"fuel capacity" 800
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8111,6 +8864,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 100
 		"outfit space" 37
+		"cost" 150000
+		"required crew" 6
+		"fuel capacity" 600
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 0
@@ -8140,6 +8896,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 75
 		"outfit space" 241
+		"cost" 14000000
+		"required crew" 100
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8174,6 +8933,9 @@
 		"turn" 5.817764173314432
 		"cargo space" 5
 		"outfit space" 10
+		"cost" 0
+		"required crew" 0
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8202,6 +8964,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 60
 		"outfit space" 20
+		"cost" 0
+		"required crew" 0
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8230,6 +8995,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 100
 		"outfit space" 50
+		"cost" 0
+		"required crew" 0
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8258,6 +9026,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 112
+		"cost" 400000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8289,6 +9060,9 @@
 		"turn" 1.5707963267948966
 		"cargo space" 20
 		"outfit space" 88
+		"cost" 400000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8320,6 +9094,9 @@
 		"turn" 2.0943951023931953
 		"cargo space" 20
 		"outfit space" 95
+		"cost" 400000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8351,6 +9128,9 @@
 		"turn" 2.0943951023931953
 		"cargo space" 20
 		"outfit space" 102
+		"cost" 400000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8382,6 +9162,9 @@
 		"turn" 2.0943951023931953
 		"cargo space" 20
 		"outfit space" 102
+		"cost" 400000
+		"required crew" 1
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8413,6 +9196,9 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 129
+		"cost" 400000
+		"required crew" 1
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8444,6 +9230,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 5
 		"outfit space" 58
+		"cost" 150000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -8474,6 +9263,9 @@
 		"turn" 4.072434921320102
 		"cargo space" 10
 		"outfit space" 11
+		"cost" 10000
+		"required crew" 0
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 0
@@ -8502,6 +9294,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 15
 		"outfit space" 15
+		"cost" 17500
+		"required crew" 0
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 0
@@ -8530,6 +9325,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 5
 		"outfit space" 0
+		"cost" 2000
+		"required crew" 0
+		"fuel capacity" 200
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -8557,6 +9355,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 500
 		"outfit space" 0
+		"cost" 500000
+		"required crew" 0
+		"fuel capacity" 800
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
@@ -8584,6 +9385,9 @@
 		"turn" 3.1997702953229377
 		"cargo space" 20
 		"outfit space" 175
+		"cost" 400000
+		"required crew" 1
+		"fuel capacity" 200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8617,6 +9421,9 @@
 		"turn" 1.454441043328608
 		"cargo space" 50
 		"outfit space" 1083
+		"cost" 12000000
+		"required crew" 250
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8655,6 +9462,9 @@
 		"turn" 1.1635528346628863
 		"cargo space" 75
 		"outfit space" 253
+		"cost" 1500000
+		"required crew" 150
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8689,6 +9499,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 30
 		"outfit space" 66
+		"cost" 500000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8721,6 +9534,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 50
+		"cost" 275000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8753,6 +9569,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 64
+		"cost" 725000
+		"required crew" 2
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8785,6 +9604,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 57
+		"cost" 425000
+		"required crew" 4
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8816,6 +9638,9 @@
 		"turn" 1.7453292519943295
 		"cargo space" 30
 		"outfit space" 44
+		"cost" 250000
+		"required crew" 10
+		"fuel capacity" 400
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8847,6 +9672,9 @@
 		"turn" 1.454441043328608
 		"cargo space" 225
 		"outfit space" 115
+		"cost" 700000
+		"required crew" 35
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -8878,6 +9706,9 @@
 		"turn" 4.072434921320102
 		"cargo space" 5
 		"outfit space" 19
+		"cost" 200000
+		"required crew" 1
+		"fuel capacity" 300
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -8906,6 +9737,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 361
+		"cost" 3000000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 0
 		"missile mounts" 4
@@ -8944,6 +9778,9 @@
 		"turn" 2.908882086657216
 		"cargo space" 200
 		"outfit space" 544
+		"cost" 10000000
+		"required crew" 30
+		"fuel capacity" 1500
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 4
@@ -8977,6 +9814,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 100
 		"outfit space" 348
+		"cost" 5000000
+		"required crew" 20
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -9012,6 +9852,9 @@
 		"turn" 4.072434921320102
 		"cargo space" 25
 		"outfit space" 189
+		"cost" 2000000
+		"required crew" 10
+		"fuel capacity" 1200
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -9046,6 +9889,9 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 114
+		"cost" 350000
+		"required crew" 10
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -9079,6 +9925,9 @@
 		"turn" 4.654211338651545
 		"cargo space" 20
 		"outfit space" 110
+		"cost" 800000
+		"required crew" 2
+		"fuel capacity" 1000
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -9113,6 +9962,9 @@
 		"turn" 3.1997702953229377
 		"cargo space" 200
 		"outfit space" 545
+		"cost" 10000000
+		"required crew" 30
+		"fuel capacity" 1500
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 4
@@ -9147,6 +9999,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 50
 		"outfit space" 281
+		"cost" 5000000
+		"required crew" 100
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -9182,6 +10037,9 @@
 		"turn" 2.036217460660051
 		"cargo space" 30
 		"outfit space" 336
+		"cost" 6000000
+		"required crew" 100
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -9218,6 +10076,9 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 366
+		"cost" 7000000
+		"required crew" 100
+		"fuel capacity" 500
 		"gun ports" 4
 		"turret mounts" 4
 		"turret turn" 1
@@ -9255,6 +10116,9 @@
 		"turn" 0.5817764173314431
 		"cargo space" 0
 		"outfit space" 0
+		"cost" 0
+		"required crew" 1
+		"fuel capacity" 0
 		"gun ports" 0
 		"turret mounts" 0
 		"missile mounts" 0
