@@ -176,7 +176,8 @@
 	"mass" 5
 	"outfit space" -5
 	"weapon capacity" -5
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "0000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
 		# EVN ProxRadius 2 has no direct ES field.
@@ -219,7 +220,8 @@
 	"mass" 7
 	"outfit space" -7
 	"weapon capacity" -7
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "0000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
 		# EVN ProxRadius 4 has no direct ES field.
@@ -262,7 +264,8 @@
 	"mass" 10
 	"outfit space" -10
 	"weapon capacity" -10
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
 		# EVN ProxRadius 8 has no direct ES field.
@@ -305,7 +308,8 @@
 	"mass" 7
 	"outfit space" -7
 	"weapon capacity" -7
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
 		# EVN ProxRadius 12 has no direct ES field.
@@ -348,7 +352,8 @@
 	"mass" 5
 	"outfit space" -5
 	"weapon capacity" -5
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "0000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/raven_rocket"
 		"sound" "evn-217"
@@ -388,7 +393,8 @@
 	"mass" 15
 	"outfit space" -15
 	"weapon capacity" -15
-	"turret mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "0000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		# EVN AmmoType 10 has no mapped ammo outfit.
 		"sprite" "projectile/raven_turret"
@@ -415,7 +421,8 @@
 	"mass" 3
 	"outfit space" -3
 	"weapon capacity" -3
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "0000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		# EVN ProxRadius 30 has no direct ES field.
 		"sprite" "projectile/stellar_grnd_"
@@ -487,7 +494,7 @@
 	"mass" 25
 	"outfit space" -25
 	"weapon capacity" -25
-	"turret mounts" -1
+	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 3 requires ES beam visual tuning.
 		# EVN ProxRadius 1 has no direct ES field.
@@ -518,7 +525,7 @@
 	"mass" 6
 	"outfit space" -6
 	"weapon capacity" -6
-	"turret mounts" -1
+	"gun ports" -1
 	"weapon"
 		"sprite" "projectile/fusion_pulse_cannon"
 		"sound" "evn-202"
@@ -570,7 +577,8 @@
 	"mass" 10
 	"outfit space" -10
 	"weapon capacity" -10
-	"turret mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/wraithii"
 		"sound" "evn-222"
@@ -669,7 +677,8 @@
 	"mass" 25
 	"outfit space" -25
 	"weapon capacity" -25
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
 		# EVN ProxRadius 10 has no direct ES field.
@@ -711,7 +720,8 @@
 	"mass" 75
 	"outfit space" -75
 	"weapon capacity" -75
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/viper_bay"
 		"sound" "evn-221"
@@ -751,7 +761,8 @@
 	"mass" 75
 	"outfit space" -75
 	"weapon capacity" -75
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/anaconda_bay"
 		"sound" "evn-221"
@@ -791,7 +802,8 @@
 	"mass" 80
 	"outfit space" -80
 	"weapon capacity" -80
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/firebird_bay"
 		"sound" "evn-201"
@@ -831,7 +843,8 @@
 	"mass" 80
 	"outfit space" -80
 	"weapon capacity" -80
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/phoenix_bay"
 		"sound" "evn-201"
@@ -871,7 +884,8 @@
 	"mass" 90
 	"outfit space" -90
 	"weapon capacity" -90
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "0000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/thunderhead_bay"
 		"sound" "evn-220"
@@ -911,7 +925,8 @@
 	"mass" 40
 	"outfit space" -40
 	"weapon capacity" -40
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/manta_bay"
 		"sound" "evn-229"
@@ -951,7 +966,7 @@
 	"mass" 4
 	"outfit space" -4
 	"weapon capacity" -4
-	"turret mounts" -1
+	"gun ports" -1
 	"weapon"
 		"sprite" "projectile/hail_chaingun"
 		"sound" "evn-205"
@@ -993,7 +1008,7 @@
 	"mass" 15
 	"outfit space" -15
 	"weapon capacity" -15
-	"turret mounts" -1
+	"gun ports" -1
 	"weapon"
 		"sprite" "projectile/fixed_railgun_100mm_"
 		"sound" "evn-216"
@@ -1019,7 +1034,7 @@
 	"mass" 25
 	"outfit space" -25
 	"weapon capacity" -25
-	"turret mounts" -1
+	"gun ports" -1
 	"weapon"
 		"sprite" "projectile/fixed_railgun_150mm_"
 		"sound" "evn-214"
@@ -1045,7 +1060,7 @@
 	"mass" 35
 	"outfit space" -35
 	"weapon capacity" -35
-	"turret mounts" -1
+	"gun ports" -1
 	"weapon"
 		"sprite" "projectile/fixed_railgun_200mm_"
 		"sound" "evn-215"
@@ -1097,7 +1112,8 @@
 	"mass" 20
 	"outfit space" -20
 	"weapon capacity" -20
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "0000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
 		# EVN ProxRadius 5 has no direct ES field.
@@ -1641,7 +1657,8 @@
 	"mass" 40
 	"outfit space" -40
 	"weapon capacity" -40
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "0000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/pirate_viper_bay"
 		"sound" "evn-226"
@@ -1825,7 +1842,8 @@
 	"mass" 0
 	"outfit space" 0
 	"weapon capacity" 0
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "402c" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/create_dart"
 		"inaccuracy" 0
@@ -1886,7 +1904,8 @@
 	"mass" 30
 	"outfit space" -30
 	"weapon capacity" -30
-	"turret mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "0000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		# EVN SubType 229 has no mapped ammo outfit.
 		"sprite" "projectile/nanites"
@@ -2251,7 +2270,8 @@
 	"mass" 10
 	"outfit space" -10
 	"weapon capacity" -10
-	"turret mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		# EVN AmmoType 17 has no mapped ammo outfit.
 		"sprite" "projectile/wraithii"
@@ -2526,7 +2546,8 @@
 	"mass" 28
 	"outfit space" -28
 	"weapon capacity" -28
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
 		"submunition" "Polaron Torpedo" 5
@@ -2569,7 +2590,8 @@
 	"mass" 10
 	"outfit space" -10
 	"weapon capacity" -10
-	"turret mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		# EVN AmmoType 17 has no mapped ammo outfit.
 		"sprite" "projectile/wraithii"
@@ -2608,7 +2630,8 @@
 	"mass" 27
 	"outfit space" -27
 	"weapon capacity" -27
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "5000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
 		# EVN AmmoType 20 has no mapped ammo outfit.
@@ -2649,7 +2672,8 @@
 	"mass" 30
 	"outfit space" -30
 	"weapon capacity" -30
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "5000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
 		"submunition" "Polaron Torpedo" 5
@@ -2691,7 +2715,8 @@
 	"mass" 70
 	"outfit space" -70
 	"weapon capacity" -70
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "0000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/pirate_thunderhead_bay"
 		"sound" "evn-220"
@@ -2731,7 +2756,8 @@
 	"mass" 65
 	"outfit space" -65
 	"weapon capacity" -65
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/firebird_bay"
 		"sound" "evn-201"
@@ -2771,7 +2797,8 @@
 	"mass" 65
 	"outfit space" -65
 	"weapon capacity" -65
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/firebird_bay"
 		"sound" "evn-201"
@@ -2811,7 +2838,8 @@
 	"mass" 65
 	"outfit space" -65
 	"weapon capacity" -65
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/phoenix_bay"
 		"sound" "evn-201"
@@ -2851,7 +2879,8 @@
 	"mass" 65
 	"outfit space" -65
 	"weapon capacity" -65
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/phoenix_bay"
 		"sound" "evn-201"
@@ -2891,7 +2920,8 @@
 	"mass" 75
 	"outfit space" -75
 	"weapon capacity" -75
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/pirate_viper_bay"
 		"sound" "evn-226"
@@ -2931,7 +2961,8 @@
 	"mass" 75
 	"outfit space" -75
 	"weapon capacity" -75
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/pirate_viper_bay"
 		"sound" "evn-226"
@@ -2971,7 +3002,8 @@
 	"mass" 50
 	"outfit space" -50
 	"weapon capacity" -50
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/rebel_viper_bay"
 		"sound" "evn-221"
@@ -3011,7 +3043,8 @@
 	"mass" 50
 	"outfit space" -50
 	"weapon capacity" -50
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/rebel_viper_bay"
 		"sound" "evn-221"
@@ -3051,7 +3084,8 @@
 	"mass" 50
 	"outfit space" -50
 	"weapon capacity" -50
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/rebel_viper_bay"
 		"sound" "evn-221"
@@ -3091,7 +3125,8 @@
 	"mass" 50
 	"outfit space" -50
 	"weapon capacity" -50
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/rebel_viper_bay"
 		"sound" "evn-221"
@@ -3131,7 +3166,8 @@
 	"mass" 75
 	"outfit space" -75
 	"weapon capacity" -75
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/viper_bay"
 		"sound" "evn-221"
@@ -3171,7 +3207,8 @@
 	"mass" 75
 	"outfit space" -75
 	"weapon capacity" -75
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/viper_bay"
 		"sound" "evn-221"
@@ -3211,7 +3248,8 @@
 	"mass" 75
 	"outfit space" -75
 	"weapon capacity" -75
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/anaconda_bay"
 		"sound" "evn-221"
@@ -3251,7 +3289,8 @@
 	"mass" 75
 	"outfit space" -75
 	"weapon capacity" -75
-	"fighter bays" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"sprite" "projectile/anaconda_bay"
 		"sound" "evn-221"
@@ -3467,7 +3506,8 @@
 	"mass" 5
 	"outfit space" -5
 	"weapon capacity" -5
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "0800" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
 		# EVN ProxRadius 2 has no direct ES field.
@@ -3510,7 +3550,8 @@
 	"mass" 7
 	"outfit space" -7
 	"weapon capacity" -7
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "0800" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
 		# EVN ProxRadius 4 has no direct ES field.
@@ -3579,7 +3620,8 @@
 	"mass" 7
 	"outfit space" -7
 	"weapon capacity" -7
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
 		# EVN AmmoType 7 has no mapped ammo outfit.
@@ -3621,7 +3663,7 @@
 	"mass" 25
 	"outfit space" -25
 	"weapon capacity" -25
-	"turret mounts" -1
+	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 3 requires ES beam visual tuning.
 		# EVN ProxRadius 1 has no direct ES field.
@@ -3652,7 +3694,7 @@
 	"mass" 25
 	"outfit space" -25
 	"weapon capacity" -25
-	"turret mounts" -1
+	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 3 requires ES beam visual tuning.
 		# EVN ProxRadius 1 has no direct ES field.
@@ -3791,7 +3833,8 @@
 	"mass" 10
 	"outfit space" -10
 	"weapon capacity" -10
-	"turret mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		# EVN AmmoType 17 has no mapped ammo outfit.
 		"sprite" "projectile/wraithii"
@@ -4006,7 +4049,8 @@
 	"mass" 10
 	"outfit space" -10
 	"weapon capacity" -10
-	"missile mounts" -1
+	"gun ports" -1
+	# EVN outfit Flags "0100" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		"homing"
 		# EVN ProxRadius 25 has no direct ES field.
@@ -4099,6 +4143,7 @@
 	"outfit space" 0
 	"weapon capacity" 0
 	"gun ports" -1
+	# EVN outfit Flags "4000" has no fixed-gun or turret bit; mapped to an ES gun port.
 	"weapon"
 		# EVN beam Guidance 0 requires ES beam visual tuning.
 		# EVN ProxRadius 3 has no direct ES field.

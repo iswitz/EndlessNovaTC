@@ -755,8 +755,62 @@ function countPorts(points) {
   return Array.isArray(points) ? points.filter(point => Array.isArray(point) && point.some(number => number !== 0)).length : 0;
 }
 
+function activeExitPoints(points) {
+  return Array.isArray(points) ? points.filter(point => Array.isArray(point) && point.length >= 2 && point.some(value => number(value) !== 0)) : [];
+}
+
+function rawShipWeaponIds(raw) {
+  return ["WeapType", "WeapType2"]
+    .flatMap(field => Array.isArray(raw[field]) ? raw[field] : [])
+    .map(value => number(value, -1))
+    .filter(value => value >= 128);
+}
+
+function fighterBayShipName(raw) {
+  const keyCarried = number(raw.KeyCarried, -1);
+  if (keyCarried >= 128) {
+    const carried = normalizedOf("Ship", `nova:${keyCarried}`);
+    if (carried && carried.name) return safeName(carried.name, null);
+  }
+  for (const weaponId of rawShipWeaponIds(raw)) {
+    const weapon = referenceWeaponRecord(`nova:${weaponId}`);
+    const data = weapon && weapon.data ? weapon.data : {};
+    if (number(data.Guidance, -1) !== 99) continue;
+    const carriedId = number(data.AmmoType, -1);
+    const carried = normalizedOf("Ship", `nova:${carriedId}`);
+    if (carried && carried.name) return safeName(carried.name, null);
+  }
+  return null;
+}
+
+function shipHasFighterBays(raw) {
+  return Boolean(fighterBayShipName(raw)) || rawShipWeaponIds(raw).some(weaponId => {
+    const weapon = referenceWeaponRecord(`nova:${weaponId}`);
+    return weapon && weapon.data && number(weapon.data.Guidance, -1) === 99;
+  });
+}
+
+function appendShipHardpoints(lines, ship, raw) {
+  const exitPoints = ship.animation && ship.animation.exitPoints ? ship.animation.exitPoints : {};
+  const emit = (type, point, extra = "") => {
+    const x = number(point[0]);
+    const y = number(point[1]);
+    lines.push(type === "bay" ? `\tbay ${extra} ${x} ${y}` : `\t${type} ${x} ${y}${extra}`);
+  };
+  for (const point of activeExitPoints(exitPoints.gun)) emit("gun", point);
+  for (const point of activeExitPoints(exitPoints.guided)) emit("gun", point);
+  const fighterBay = shipHasFighterBays(raw);
+  const carriedShip = fighterBay ? fighterBayShipName(raw) : null;
+  for (const point of activeExitPoints(exitPoints.beam)) {
+    if (fighterBay) emit("bay", point, q("Fighter"));
+    else emit("gun", point);
+  }
+  for (const point of activeExitPoints(exitPoints.turret)) emit("turret", point);
+  if (carriedShip) lines.push(`\t# EVN fighter bay payload: ${q(carriedShip)}; ES bay category remains Fighter.`);
+}
+
 function convertShips() {
-  const lines = ["# Generated from EV Nova shïp resources via NovaParse.", "# Sprites and hardpoint positions require asset conversion and manual tuning.", ""];
+  const lines = ["# Generated from EV Nova shïp resources via NovaParse.", "# EVN exit points are emitted as ES hardpoints; sprite scale and orientation still require tuning.", ""];
   for (const ship of Object.values(normalized.Ship || {})) {
     if (ship.parseError) continue;
     const name = safeName(ship.name, `EVN ship ${ship.id}`);
@@ -793,11 +847,11 @@ function convertShips() {
       ["cost", Math.max(0, number(raw.Cost))],
       ["required crew", Math.max(0, number(raw.Crew))],
       ["fuel capacity", Math.max(0, number(raw.Fuel))],
-      ["gun ports", countPorts(ship.animation && ship.animation.exitPoints && ship.animation.exitPoints.gun)],
-      ["turret mounts", countPorts(ship.animation && ship.animation.exitPoints && ship.animation.exitPoints.turret)],
-      ["turret turn", countPorts(ship.animation && ship.animation.exitPoints && ship.animation.exitPoints.turret) ? 1 : null],
+      ["gun ports", raw.MaxGun == null ? countPorts(ship.animation && ship.animation.exitPoints && ship.animation.exitPoints.gun) : Math.max(0, number(raw.MaxGun))],
+      ["turret mounts", raw.MaxTur == null ? countPorts(ship.animation && ship.animation.exitPoints && ship.animation.exitPoints.turret) : Math.max(0, number(raw.MaxTur))],
+      ["turret turn", (raw.MaxTur == null ? countPorts(ship.animation && ship.animation.exitPoints && ship.animation.exitPoints.turret) : number(raw.MaxTur)) > 0 ? 1 : null],
       ["missile mounts", countPorts(ship.animation && ship.animation.exitPoints && ship.animation.exitPoints.guided)],
-      ["fighter bays", countPorts(ship.animation && ship.animation.exitPoints && ship.animation.exitPoints.beam)]
+      ["fighter bays", shipHasFighterBays(raw) ? countPorts(ship.animation && ship.animation.exitPoints && ship.animation.exitPoints.beam) : 0]
     ]) add(lines, key, value, "\t\t");
     lines.push("");
     if (ship.outfits) {
@@ -817,6 +871,14 @@ function convertShips() {
       for (const [ref, quantity] of fitted) {
         lines.push(`\t\t${q(nameOf("Outfit", ref))} ${quantity}`);
       }
+    }
+    appendShipHardpoints(lines, ship, raw);
+    const flags = hexNumber(raw.Flags);
+    const flags2 = hexNumber(raw.Flags2);
+    const flags3 = hexNumber(raw.Flags3);
+    if (raw.InherentAI || raw.SkillVar || raw.PodCount || flags || flags2 || flags3) {
+      lines.push(`\t# EVN AI/ship flags retained: InherentAI=${number(raw.InherentAI, 0)}, SkillVar=${number(raw.SkillVar, 0)}%, PodCount=${number(raw.PodCount, 0)}, Flags=${q(raw.Flags || "0000")}, Flags2=${q(raw.Flags2 || "0000")}, Flags3=${q(raw.Flags3 || "0000")}.`);
+      lines.push("\t# ES ship definitions have no direct equivalents for most EVN escort AI, cloaking, targeting, or turret blind-spot flags.");
     }
     if (ship.desc) add(lines, "description", ship.desc);
     lines.push("");
@@ -843,14 +905,11 @@ function convertOutfits() {
     const rawOutfit = referenceOutfitRecord(outfit.id);
     const rawOutfitData = rawOutfit && rawOutfit.data ? rawOutfit.data : {};
     const isAmmo = Number(rawOutfitData.ModType) === 3;
+    const rawOutfitFlags = hexNumber(rawOutfitData.Flags);
     const weaponRefs = Object.keys(outfit.weapons || {});
     const firstWeapon = weaponRefs.length ? normalizedOf("Weapon", weaponRefs[0]) : null;
-    const firstWeaponRaw = firstWeapon && referenceWeaponRecord(firstWeapon.id);
-    const firstGuidance = firstWeaponRaw && firstWeaponRaw.data ? number(firstWeaponRaw.data.Guidance, -1) : -1;
     const slotAttribute = !weaponRefs.length ? null
-      : firstGuidance === 99 ? "fighter bays"
-      : [3, 4, 7, 8, 9, 10].includes(firstGuidance) || firstWeapon.exitType === "turret" ? "turret mounts"
-      : firstWeapon.exitType === "guided" || [1, 5, 6].includes(firstGuidance) ? "missile mounts"
+      : rawOutfitFlags & 0x0002 ? "turret mounts"
       : "gun ports";
     const category = isAmmo ? "Ammunition" : firstWeapon && firstWeapon.exitType === "turret" ? "Turrets" : weaponRefs.length ? "Guns" : "Systems";
     const fields = [
@@ -870,6 +929,9 @@ function convertOutfits() {
       lines.push(`\t\t${q(licenseName(outfitTech))}`);
     }
     for (const [key, value] of fields) add(lines, key, value);
+    if (weaponRefs.length && !(rawOutfitFlags & 0x0003)) {
+      lines.push(`\t# EVN outfit Flags ${q(rawOutfitData.Flags || "0000")} has no fixed-gun or turret bit; mapped to an ES gun port.`);
+    }
     if (isAmmo) lines.push(`\t${q("ammo")} ${q(name)}`);
     for (const ref of weaponRefs) {
       const weapon = normalizedOf("Weapon", ref);
