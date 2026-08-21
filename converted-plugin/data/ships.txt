@@ -20,6 +20,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 10
 		"outfit space" 11
+		"weapon capacity" 11
 		"cost" 10000
 		"required crew" 1
 		"fuel capacity" 300
@@ -51,6 +52,7 @@
 		"turn" 2.2689280275926285
 		"cargo space" 15
 		"outfit space" 15
+		"weapon capacity" 15
 		"cost" 17500
 		"required crew" 2
 		"fuel capacity" 400
@@ -82,6 +84,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 10
 		"outfit space" 0
+		"weapon capacity" 0
 		"cost" 2000
 		"required crew" 0
 		"fuel capacity" 200
@@ -112,6 +115,7 @@
 		"turn" 0.5817764173314431
 		"cargo space" 4000
 		"outfit space" 20
+		"weapon capacity" 20
 		"cost" 12000000
 		"required crew" 20
 		"fuel capacity" 800
@@ -143,6 +147,7 @@
 		"turn" 1.454441043328608
 		"cargo space" 1000
 		"outfit space" 40
+		"weapon capacity" 40
 		"cost" 2000000
 		"required crew" 10
 		"fuel capacity" 700
@@ -175,6 +180,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 30
 		"outfit space" 66
+		"weapon capacity" 66
 		"cost" 600000
 		"required crew" 2
 		"fuel capacity" 500
@@ -210,6 +216,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 120
 		"outfit space" 46
+		"weapon capacity" 46
 		"cost" 500000
 		"required crew" 300
 		"fuel capacity" 1200
@@ -242,6 +249,7 @@
 		"turn" 3.1997702953229377
 		"cargo space" 20
 		"outfit space" 31
+		"weapon capacity" 31
 		"cost" 250000
 		"required crew" 3
 		"fuel capacity" 400
@@ -275,6 +283,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 125
 		"outfit space" 23
+		"weapon capacity" 23
 		"cost" 150000
 		"required crew" 4
 		"fuel capacity" 400
@@ -307,6 +316,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 50
+		"weapon capacity" 50
 		"cost" 350000
 		"required crew" 4
 		"fuel capacity" 500
@@ -342,6 +352,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 50
 		"outfit space" 47
+		"weapon capacity" 47
 		"cost" 200000
 		"required crew" 10
 		"fuel capacity" 500
@@ -376,6 +387,7 @@
 		"turn" 1.454441043328608
 		"cargo space" 250
 		"outfit space" 74
+		"weapon capacity" 74
 		"cost" 450000
 		"required crew" 35
 		"fuel capacity" 500
@@ -409,6 +421,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 250
 		"outfit space" 117
+		"weapon capacity" 117
 		"cost" 750000
 		"required crew" 100
 		"fuel capacity" 200
@@ -443,6 +456,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 50
 		"outfit space" 185
+		"weapon capacity" 185
 		"cost" 2000000
 		"required crew" 50
 		"fuel capacity" 300
@@ -481,6 +495,7 @@
 		"turn" 3.1997702953229377
 		"cargo space" 25
 		"outfit space" 127
+		"weapon capacity" 127
 		"cost" 500000
 		"required crew" 10
 		"fuel capacity" 600
@@ -516,6 +531,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 100
 		"outfit space" 463
+		"weapon capacity" 463
 		"cost" 12000000
 		"required crew" 200
 		"fuel capacity" 500
@@ -556,6 +572,7 @@
 		"turn" 4.654211338651545
 		"cargo space" 5
 		"outfit space" 21
+		"weapon capacity" 21
 		"cost" 100000
 		"required crew" 1
 		"fuel capacity" 300
@@ -588,6 +605,7 @@
 		"turn" 4.072434921320102
 		"cargo space" 10
 		"outfit space" 33
+		"weapon capacity" 33
 		"cost" 150000
 		"required crew" 1
 		"fuel capacity" 300
@@ -621,6 +639,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 500
 		"outfit space" 275
+		"weapon capacity" 275
 		"cost" 12000000
 		"required crew" 120
 		"fuel capacity" 700
@@ -655,6 +674,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 405
+		"weapon capacity" 405
 		"cost" 15000000
 		"required crew" 220
 		"fuel capacity" 400
@@ -691,6 +711,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 64
+		"weapon capacity" 64
 		"cost" 725000
 		"required crew" 2
 		"fuel capacity" 500
@@ -726,6 +747,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 57
+		"weapon capacity" 57
 		"cost" 500000
 		"required crew" 4
 		"fuel capacity" 500
@@ -760,6 +782,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 30
 		"outfit space" 44
+		"weapon capacity" 44
 		"cost" 250000
 		"required crew" 10
 		"fuel capacity" 500
@@ -794,6 +817,7 @@
 		"turn" 1.454441043328608
 		"cargo space" 225
 		"outfit space" 115
+		"weapon capacity" 115
 		"cost" 700000
 		"required crew" 35
 		"fuel capacity" 500
@@ -828,6 +852,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 96
+		"weapon capacity" 96
 		"cost" 400000
 		"required crew" 1
 		"fuel capacity" 500
@@ -862,6 +887,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 50
 		"outfit space" 518
+		"weapon capacity" 518
 		"cost" 12000000
 		"required crew" 250
 		"fuel capacity" 400
@@ -900,6 +926,7 @@
 		"turn" 1.454441043328608
 		"cargo space" 75
 		"outfit space" 343
+		"weapon capacity" 343
 		"cost" 2000000
 		"required crew" 150
 		"fuel capacity" 300
@@ -937,6 +964,7 @@
 		"turn" 4.654211338651545
 		"cargo space" 5
 		"outfit space" 13
+		"weapon capacity" 13
 		"cost" 150000
 		"required crew" 1
 		"fuel capacity" 200
@@ -968,6 +996,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 10
 		"outfit space" 40
+		"weapon capacity" 40
 		"cost" 150000
 		"required crew" 1
 		"fuel capacity" 300
@@ -1001,6 +1030,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 15
 		"outfit space" 45
+		"weapon capacity" 45
 		"cost" 300000
 		"required crew" 1
 		"fuel capacity" 300
@@ -1034,6 +1064,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 25
 		"outfit space" 117
+		"weapon capacity" 117
 		"cost" 2000000
 		"required crew" 10
 		"fuel capacity" 1200
@@ -1069,6 +1100,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 50
 		"outfit space" 65
+		"weapon capacity" 65
 		"cost" 1100000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -1102,6 +1134,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 3500
 		"outfit space" 0
+		"weapon capacity" 0
 		"cost" 2500000
 		"required crew" 15
 		"fuel capacity" 1200
@@ -1132,6 +1165,7 @@
 		"turn" 5.817764173314432
 		"cargo space" 15
 		"outfit space" 30
+		"weapon capacity" 30
 		"cost" 250000
 		"required crew" 1
 		"fuel capacity" 400
@@ -1164,6 +1198,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 100
 		"outfit space" 247
+		"weapon capacity" 247
 		"cost" 7000000
 		"required crew" 20
 		"fuel capacity" 1000
@@ -1200,6 +1235,7 @@
 		"turn" 4.072434921320102
 		"cargo space" 20
 		"outfit space" 72
+		"weapon capacity" 72
 		"cost" 1000000
 		"required crew" 2
 		"fuel capacity" 1000
@@ -1234,6 +1270,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 200
 		"outfit space" 358
+		"weapon capacity" 358
 		"cost" 10000000
 		"required crew" 30
 		"fuel capacity" 1500
@@ -1269,6 +1306,7 @@
 		"turn" 3.1997702953229377
 		"cargo space" 20
 		"outfit space" 77
+		"weapon capacity" 77
 		"cost" 750000
 		"required crew" 2
 		"fuel capacity" 700
@@ -1305,6 +1343,7 @@
 		"turn" 4.072434921320102
 		"cargo space" 15
 		"outfit space" 14
+		"weapon capacity" 14
 		"cost" 110000
 		"required crew" 1
 		"fuel capacity" 300
@@ -1336,6 +1375,7 @@
 		"turn" 4.654211338651545
 		"cargo space" 5
 		"outfit space" 16
+		"weapon capacity" 16
 		"cost" 80000
 		"required crew" 1
 		"fuel capacity" 200
@@ -1367,6 +1407,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 0
 		"outfit space" 10
+		"weapon capacity" 10
 		"cost" 1
 		"required crew" 0
 		"fuel capacity" 1000
@@ -1401,6 +1442,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 0
 		"outfit space" 8
+		"weapon capacity" 8
 		"cost" 1
 		"required crew" 0
 		"fuel capacity" 800
@@ -1433,6 +1475,7 @@
 		"turn" 4.654211338651545
 		"cargo space" 0
 		"outfit space" 5
+		"weapon capacity" 5
 		"cost" 1
 		"required crew" 0
 		"fuel capacity" 600
@@ -1464,6 +1507,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 0
 		"outfit space" 15
+		"weapon capacity" 15
 		"cost" 1
 		"required crew" 0
 		"fuel capacity" 0
@@ -1495,6 +1539,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 125
+		"weapon capacity" 125
 		"cost" 2500000
 		"required crew" 4
 		"fuel capacity" 500
@@ -1532,6 +1577,7 @@
 		"turn" 5.817764173314432
 		"cargo space" 5
 		"outfit space" 10
+		"weapon capacity" 10
 		"cost" 0
 		"required crew" 0
 		"fuel capacity" 500
@@ -1566,6 +1612,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 60
 		"outfit space" 20
+		"weapon capacity" 20
 		"cost" 0
 		"required crew" 0
 		"fuel capacity" 1500
@@ -1602,6 +1649,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 100
 		"outfit space" 50
+		"weapon capacity" 50
 		"cost" 0
 		"required crew" 0
 		"fuel capacity" 2000
@@ -1640,6 +1688,7 @@
 		"turn" 7.563093425308761
 		"cargo space" 0
 		"outfit space" 30
+		"weapon capacity" 30
 		"cost" 1
 		"required crew" 0
 		"fuel capacity" 1000
@@ -1671,6 +1720,7 @@
 		"turn" 4.654211338651545
 		"cargo space" 10
 		"outfit space" 19
+		"weapon capacity" 19
 		"cost" 120000
 		"required crew" 1
 		"fuel capacity" 400
@@ -1702,6 +1752,7 @@
 		"turn" 3.1997702953229377
 		"cargo space" 20
 		"outfit space" 85
+		"weapon capacity" 85
 		"cost" 650000
 		"required crew" 2
 		"fuel capacity" 500
@@ -1739,6 +1790,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 75
+		"weapon capacity" 75
 		"cost" 375000
 		"required crew" 4
 		"fuel capacity" 500
@@ -1775,6 +1827,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 50
 		"outfit space" 76
+		"weapon capacity" 76
 		"cost" 3000000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -1811,6 +1864,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 50
 		"outfit space" 203
+		"weapon capacity" 203
 		"cost" 2000000
 		"required crew" 50
 		"fuel capacity" 300
@@ -1848,6 +1902,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 500
 		"outfit space" 0
+		"weapon capacity" 0
 		"cost" 500000
 		"required crew" 5
 		"fuel capacity" 800
@@ -1878,6 +1933,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 50
 		"outfit space" 76
+		"weapon capacity" 76
 		"cost" 3000000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -1913,6 +1969,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 50
 		"outfit space" 203
+		"weapon capacity" 203
 		"cost" 2000000
 		"required crew" 50
 		"fuel capacity" 300
@@ -1950,6 +2007,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 0
 		"outfit space" 10
+		"weapon capacity" 10
 		"cost" 1
 		"required crew" 0
 		"fuel capacity" 1000
@@ -1982,6 +2040,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 83
+		"weapon capacity" 83
 		"cost" 9000000
 		"required crew" 2
 		"fuel capacity" 1200
@@ -2018,6 +2077,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 25
 		"outfit space" 46
+		"weapon capacity" 46
 		"cost" 400000
 		"required crew" 4
 		"fuel capacity" 1000
@@ -2053,6 +2113,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 10
 		"outfit space" 11
+		"weapon capacity" 11
 		"cost" 15000
 		"required crew" 1
 		"fuel capacity" 100
@@ -2085,6 +2146,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 15
 		"outfit space" 15
+		"weapon capacity" 15
 		"cost" 27500
 		"required crew" 2
 		"fuel capacity" 200
@@ -2115,6 +2177,7 @@
 		"turn" 0.5817764173314431
 		"cargo space" 3600
 		"outfit space" 240
+		"weapon capacity" 240
 		"cost" 13000000
 		"required crew" 20
 		"fuel capacity" 800
@@ -2148,6 +2211,7 @@
 		"turn" 3.7815467126543805
 		"cargo space" 15
 		"outfit space" 36
+		"weapon capacity" 36
 		"cost" 350000
 		"required crew" 3
 		"fuel capacity" 300
@@ -2182,6 +2246,7 @@
 		"turn" 0.5817764173314431
 		"cargo space" 3600
 		"outfit space" 180
+		"weapon capacity" 180
 		"cost" 12000000
 		"required crew" 20
 		"fuel capacity" 800
@@ -2214,6 +2279,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 950
 		"outfit space" 75
+		"weapon capacity" 75
 		"cost" 2350000
 		"required crew" 10
 		"fuel capacity" 700
@@ -2246,6 +2312,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 950
 		"outfit space" 75
+		"weapon capacity" 75
 		"cost" 2350000
 		"required crew" 10
 		"fuel capacity" 700
@@ -2278,6 +2345,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 30
 		"outfit space" 64
+		"weapon capacity" 64
 		"cost" 640000
 		"required crew" 2
 		"fuel capacity" 500
@@ -2313,6 +2381,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 15
 		"outfit space" 76
+		"weapon capacity" 76
 		"cost" 700000
 		"required crew" 2
 		"fuel capacity" 500
@@ -2349,6 +2418,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 10
 		"outfit space" 126
+		"weapon capacity" 126
 		"cost" 800000
 		"required crew" 2
 		"fuel capacity" 500
@@ -2386,6 +2456,7 @@
 		"turn" 3.432480862255515
 		"cargo space" 15
 		"outfit space" 44
+		"weapon capacity" 44
 		"cost" 700000
 		"required crew" 2
 		"fuel capacity" 500
@@ -2422,6 +2493,7 @@
 		"turn" 2.0943951023931953
 		"cargo space" 15
 		"outfit space" 103
+		"weapon capacity" 103
 		"cost" 640000
 		"required crew" 2
 		"fuel capacity" 500
@@ -2457,6 +2529,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 120
 		"outfit space" 46
+		"weapon capacity" 46
 		"cost" 600000
 		"required crew" 300
 		"fuel capacity" 1200
@@ -2489,6 +2562,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 105
 		"outfit space" 66
+		"weapon capacity" 66
 		"cost" 545000
 		"required crew" 300
 		"fuel capacity" 1200
@@ -2522,6 +2596,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 110
 		"outfit space" 41
+		"weapon capacity" 41
 		"cost" 150000
 		"required crew" 4
 		"fuel capacity" 400
@@ -2555,6 +2630,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 125
 		"outfit space" 21
+		"weapon capacity" 21
 		"cost" 200000
 		"required crew" 4
 		"fuel capacity" 400
@@ -2588,6 +2664,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 50
 		"outfit space" 64
+		"weapon capacity" 64
 		"cost" 220000
 		"required crew" 10
 		"fuel capacity" 500
@@ -2623,6 +2700,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 50
 		"outfit space" 70
+		"weapon capacity" 70
 		"cost" 220000
 		"required crew" 10
 		"fuel capacity" 500
@@ -2657,6 +2735,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 50
 		"outfit space" 116
+		"weapon capacity" 116
 		"cost" 250000
 		"required crew" 10
 		"fuel capacity" 500
@@ -2692,6 +2771,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 50
 		"outfit space" 46
+		"weapon capacity" 46
 		"cost" 250000
 		"required crew" 10
 		"fuel capacity" 500
@@ -2725,6 +2805,7 @@
 		"turn" 1.454441043328608
 		"cargo space" 250
 		"outfit space" 114
+		"weapon capacity" 114
 		"cost" 500000
 		"required crew" 35
 		"fuel capacity" 500
@@ -2758,6 +2839,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 250
 		"outfit space" 184
+		"weapon capacity" 184
 		"cost" 550000
 		"required crew" 35
 		"fuel capacity" 500
@@ -2793,6 +2875,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 250
 		"outfit space" 144
+		"weapon capacity" 144
 		"cost" 500000
 		"required crew" 35
 		"fuel capacity" 500
@@ -2827,6 +2910,7 @@
 		"turn" 2.0943951023931953
 		"cargo space" 50
 		"outfit space" 205
+		"weapon capacity" 205
 		"cost" 3500000
 		"required crew" 50
 		"fuel capacity" 300
@@ -2864,6 +2948,7 @@
 		"turn" 2.0943951023931953
 		"cargo space" 50
 		"outfit space" 262
+		"weapon capacity" 262
 		"cost" 2750000
 		"required crew" 50
 		"fuel capacity" 300
@@ -2902,6 +2987,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 50
 		"outfit space" 239
+		"weapon capacity" 239
 		"cost" 3500000
 		"required crew" 50
 		"fuel capacity" 300
@@ -2940,6 +3026,7 @@
 		"turn" 2.0943951023931953
 		"cargo space" 50
 		"outfit space" 254
+		"weapon capacity" 254
 		"cost" 4500000
 		"required crew" 50
 		"fuel capacity" 300
@@ -2977,6 +3064,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 25
 		"outfit space" 85
+		"weapon capacity" 85
 		"cost" 500000
 		"required crew" 10
 		"fuel capacity" 600
@@ -3012,6 +3100,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 25
 		"outfit space" 142
+		"weapon capacity" 142
 		"cost" 575000
 		"required crew" 10
 		"fuel capacity" 600
@@ -3047,6 +3136,7 @@
 		"turn" 3.1997702953229377
 		"cargo space" 25
 		"outfit space" 91
+		"weapon capacity" 91
 		"cost" 600000
 		"required crew" 10
 		"fuel capacity" 600
@@ -3085,6 +3175,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 100
 		"outfit space" 589
+		"weapon capacity" 589
 		"cost" 15000000
 		"required crew" 200
 		"fuel capacity" 500
@@ -3125,6 +3216,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 100
 		"outfit space" 409
+		"weapon capacity" 409
 		"cost" 20000000
 		"required crew" 200
 		"fuel capacity" 500
@@ -3166,6 +3258,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 100
 		"outfit space" 659
+		"weapon capacity" 659
 		"cost" 15000000
 		"required crew" 200
 		"fuel capacity" 500
@@ -3209,6 +3302,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 100
 		"outfit space" 629
+		"weapon capacity" 629
 		"cost" 17000000
 		"required crew" 200
 		"fuel capacity" 500
@@ -3249,6 +3343,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 100
 		"outfit space" 686
+		"weapon capacity" 686
 		"cost" 12000000
 		"required crew" 200
 		"fuel capacity" 500
@@ -3292,6 +3387,7 @@
 		"turn" 3.9560796378538137
 		"cargo space" 5
 		"outfit space" 24
+		"weapon capacity" 24
 		"cost" 150000
 		"required crew" 1
 		"fuel capacity" 200
@@ -3325,6 +3421,7 @@
 		"turn" 3.6651914291880923
 		"cargo space" 5
 		"outfit space" 24
+		"weapon capacity" 24
 		"cost" 100000
 		"required crew" 1
 		"fuel capacity" 200
@@ -3357,6 +3454,7 @@
 		"turn" 3.6651914291880923
 		"cargo space" 10
 		"outfit space" 38
+		"weapon capacity" 38
 		"cost" 220000
 		"required crew" 1
 		"fuel capacity" 300
@@ -3390,6 +3488,7 @@
 		"turn" 4.1887902047863905
 		"cargo space" 10
 		"outfit space" 49
+		"weapon capacity" 49
 		"cost" 150000
 		"required crew" 1
 		"fuel capacity" 300
@@ -3423,6 +3522,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 500
 		"outfit space" 234
+		"weapon capacity" 234
 		"cost" 12000000
 		"required crew" 120
 		"fuel capacity" 700
@@ -3458,6 +3558,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 500
 		"outfit space" 305
+		"weapon capacity" 305
 		"cost" 13500000
 		"required crew" 120
 		"fuel capacity" 700
@@ -3492,6 +3593,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 500
 		"outfit space" 345
+		"weapon capacity" 345
 		"cost" 15500000
 		"required crew" 120
 		"fuel capacity" 700
@@ -3526,6 +3628,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 500
 		"outfit space" 335
+		"weapon capacity" 335
 		"cost" 14000000
 		"required crew" 120
 		"fuel capacity" 700
@@ -3561,6 +3664,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 66
+		"weapon capacity" 66
 		"cost" 800000
 		"required crew" 2
 		"fuel capacity" 500
@@ -3596,6 +3700,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 54
+		"weapon capacity" 54
 		"cost" 875000
 		"required crew" 2
 		"fuel capacity" 500
@@ -3631,6 +3736,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 56
+		"weapon capacity" 56
 		"cost" 875000
 		"required crew" 2
 		"fuel capacity" 500
@@ -3666,6 +3772,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 10
 		"outfit space" 91
+		"weapon capacity" 91
 		"cost" 950000
 		"required crew" 2
 		"fuel capacity" 500
@@ -3702,6 +3809,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 66
+		"weapon capacity" 66
 		"cost" 875000
 		"required crew" 2
 		"fuel capacity" 500
@@ -3737,6 +3845,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 225
 		"outfit space" 125
+		"weapon capacity" 125
 		"cost" 700000
 		"required crew" 35
 		"fuel capacity" 500
@@ -3772,6 +3881,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 225
 		"outfit space" 206
+		"weapon capacity" 206
 		"cost" 850000
 		"required crew" 35
 		"fuel capacity" 500
@@ -3807,6 +3917,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 225
 		"outfit space" 245
+		"weapon capacity" 245
 		"cost" 700000
 		"required crew" 35
 		"fuel capacity" 500
@@ -3842,6 +3953,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 157
+		"weapon capacity" 157
 		"cost" 550000
 		"required crew" 1
 		"fuel capacity" 400
@@ -3877,6 +3989,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 140
+		"weapon capacity" 140
 		"cost" 475000
 		"required crew" 1
 		"fuel capacity" 400
@@ -3912,6 +4025,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 106
+		"weapon capacity" 106
 		"cost" 350000
 		"required crew" 1
 		"fuel capacity" 400
@@ -3947,6 +4061,7 @@
 		"turn" 1.5707963267948966
 		"cargo space" 20
 		"outfit space" 72
+		"weapon capacity" 72
 		"cost" 400000
 		"required crew" 1
 		"fuel capacity" 200
@@ -3981,6 +4096,7 @@
 		"turn" 2.0943951023931953
 		"cargo space" 20
 		"outfit space" 79
+		"weapon capacity" 79
 		"cost" 410000
 		"required crew" 1
 		"fuel capacity" 300
@@ -4015,6 +4131,7 @@
 		"turn" 2.0943951023931953
 		"cargo space" 20
 		"outfit space" 96
+		"weapon capacity" 96
 		"cost" 425000
 		"required crew" 1
 		"fuel capacity" 400
@@ -4049,6 +4166,7 @@
 		"turn" 2.0943951023931953
 		"cargo space" 20
 		"outfit space" 96
+		"weapon capacity" 96
 		"cost" 450000
 		"required crew" 1
 		"fuel capacity" 400
@@ -4083,6 +4201,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 165
+		"weapon capacity" 165
 		"cost" 500000
 		"required crew" 1
 		"fuel capacity" 500
@@ -4118,6 +4237,7 @@
 		"turn" 1.5707963267948966
 		"cargo space" 75
 		"outfit space" 403
+		"weapon capacity" 403
 		"cost" 2000000
 		"required crew" 150
 		"fuel capacity" 300
@@ -4154,6 +4274,7 @@
 		"turn" 2.0943951023931953
 		"cargo space" 75
 		"outfit space" 322
+		"weapon capacity" 322
 		"cost" 1800000
 		"required crew" 150
 		"fuel capacity" 300
@@ -4190,6 +4311,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 464
+		"weapon capacity" 464
 		"cost" 2200000
 		"required crew" 150
 		"fuel capacity" 300
@@ -4226,6 +4348,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 75
 		"outfit space" 240
+		"weapon capacity" 240
 		"cost" 1600000
 		"required crew" 150
 		"fuel capacity" 300
@@ -4262,6 +4385,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 75
 		"outfit space" 253
+		"weapon capacity" 253
 		"cost" 1600000
 		"required crew" 150
 		"fuel capacity" 300
@@ -4299,6 +4423,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 276
+		"weapon capacity" 276
 		"cost" 1700000
 		"required crew" 150
 		"fuel capacity" 300
@@ -4336,6 +4461,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 281
+		"weapon capacity" 281
 		"cost" 1800000
 		"required crew" 150
 		"fuel capacity" 300
@@ -4373,6 +4499,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 318
+		"weapon capacity" 318
 		"cost" 2000000
 		"required crew" 150
 		"fuel capacity" 300
@@ -4410,6 +4537,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 75
 		"outfit space" 383
+		"weapon capacity" 383
 		"cost" 2250000
 		"required crew" 150
 		"fuel capacity" 300
@@ -4447,6 +4575,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 56
+		"weapon capacity" 56
 		"cost" 2000000
 		"required crew" 2
 		"fuel capacity" 1200
@@ -4481,6 +4610,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 56
+		"weapon capacity" 56
 		"cost" 2050000
 		"required crew" 2
 		"fuel capacity" 1200
@@ -4515,6 +4645,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 56
+		"weapon capacity" 56
 		"cost" 2100000
 		"required crew" 2
 		"fuel capacity" 1200
@@ -4549,6 +4680,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 25
 		"outfit space" 118
+		"weapon capacity" 118
 		"cost" 3500000
 		"required crew" 10
 		"fuel capacity" 1200
@@ -4585,6 +4717,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 50
 		"outfit space" 66
+		"weapon capacity" 66
 		"cost" 1750000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -4619,6 +4752,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 100
 		"outfit space" 248
+		"weapon capacity" 248
 		"cost" 7000000
 		"required crew" 20
 		"fuel capacity" 1000
@@ -4656,6 +4790,7 @@
 		"turn" 4.072434921320102
 		"cargo space" 20
 		"outfit space" 73
+		"weapon capacity" 73
 		"cost" 1000000
 		"required crew" 2
 		"fuel capacity" 1000
@@ -4691,6 +4826,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 200
 		"outfit space" 319
+		"weapon capacity" 319
 		"cost" 10000000
 		"required crew" 30
 		"fuel capacity" 1500
@@ -4727,6 +4863,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 200
 		"outfit space" 318
+		"weapon capacity" 318
 		"cost" 10000000
 		"required crew" 30
 		"fuel capacity" 1500
@@ -4762,6 +4899,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 200
 		"outfit space" 319
+		"weapon capacity" 319
 		"cost" 10000000
 		"required crew" 30
 		"fuel capacity" 1500
@@ -4798,6 +4936,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 58
+		"weapon capacity" 58
 		"cost" 2150000
 		"required crew" 2
 		"fuel capacity" 1200
@@ -4833,6 +4972,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 25
 		"outfit space" 122
+		"weapon capacity" 122
 		"cost" 3500000
 		"required crew" 10
 		"fuel capacity" 1200
@@ -4870,6 +5010,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 3500
 		"outfit space" 2
+		"weapon capacity" 2
 		"cost" 2500000
 		"required crew" 15
 		"fuel capacity" 1200
@@ -4901,6 +5042,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 50
 		"outfit space" 68
+		"weapon capacity" 68
 		"cost" 2250000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -4936,6 +5078,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 100
 		"outfit space" 254
+		"weapon capacity" 254
 		"cost" 7000000
 		"required crew" 20
 		"fuel capacity" 1000
@@ -4974,6 +5117,7 @@
 		"turn" 4.072434921320102
 		"cargo space" 20
 		"outfit space" 75
+		"weapon capacity" 75
 		"cost" 1050000
 		"required crew" 2
 		"fuel capacity" 1000
@@ -5010,6 +5154,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 200
 		"outfit space" 325
+		"weapon capacity" 325
 		"cost" 10000000
 		"required crew" 30
 		"fuel capacity" 1500
@@ -5047,6 +5192,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 500
 		"outfit space" 2
+		"weapon capacity" 2
 		"cost" 500000
 		"required crew" 5
 		"fuel capacity" 800
@@ -5078,6 +5224,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 20
 		"outfit space" 37
+		"weapon capacity" 37
 		"cost" 300000
 		"required crew" 3
 		"fuel capacity" 400
@@ -5111,6 +5258,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 10
 		"outfit space" 46
+		"weapon capacity" 46
 		"cost" 425000
 		"required crew" 1
 		"fuel capacity" 400
@@ -5145,6 +5293,7 @@
 		"turn" 3.7815467126543805
 		"cargo space" 15
 		"outfit space" 74
+		"weapon capacity" 74
 		"cost" 550000
 		"required crew" 1
 		"fuel capacity" 400
@@ -5180,6 +5329,7 @@
 		"turn" 3.141592653589793
 		"cargo space" 15
 		"outfit space" 36
+		"weapon capacity" 36
 		"cost" 250000
 		"required crew" 3
 		"fuel capacity" 400
@@ -5213,6 +5363,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 15
 		"outfit space" 36
+		"weapon capacity" 36
 		"cost" 250000
 		"required crew" 3
 		"fuel capacity" 400
@@ -5247,6 +5398,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 10
 		"outfit space" 76
+		"weapon capacity" 76
 		"cost" 450000
 		"required crew" 4
 		"fuel capacity" 500
@@ -5284,6 +5436,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 20
 		"outfit space" 46
+		"weapon capacity" 46
 		"cost" 385000
 		"required crew" 4
 		"fuel capacity" 500
@@ -5319,6 +5472,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 50
+		"weapon capacity" 50
 		"cost" 385000
 		"required crew" 4
 		"fuel capacity" 500
@@ -5353,6 +5507,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 250
 		"outfit space" 224
+		"weapon capacity" 224
 		"cost" 850000
 		"required crew" 100
 		"fuel capacity" 200
@@ -5388,6 +5543,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 250
 		"outfit space" 291
+		"weapon capacity" 291
 		"cost" 950000
 		"required crew" 100
 		"fuel capacity" 200
@@ -5424,6 +5580,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 250
 		"outfit space" 343
+		"weapon capacity" 343
 		"cost" 1100000
 		"required crew" 100
 		"fuel capacity" 200
@@ -5460,6 +5617,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 507
+		"weapon capacity" 507
 		"cost" 15750000
 		"required crew" 220
 		"fuel capacity" 400
@@ -5500,6 +5658,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 75
 		"outfit space" 770
+		"weapon capacity" 770
 		"cost" 17000000
 		"required crew" 220
 		"fuel capacity" 400
@@ -5540,6 +5699,7 @@
 		"turn" 1.454441043328608
 		"cargo space" 15
 		"outfit space" 990
+		"weapon capacity" 990
 		"cost" 18000000
 		"required crew" 220
 		"fuel capacity" 400
@@ -5580,6 +5740,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 57
+		"weapon capacity" 57
 		"cost" 550000
 		"required crew" 4
 		"fuel capacity" 500
@@ -5614,6 +5775,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 10
 		"outfit space" 84
+		"weapon capacity" 84
 		"cost" 600000
 		"required crew" 4
 		"fuel capacity" 500
@@ -5650,6 +5812,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 10
 		"outfit space" 66
+		"weapon capacity" 66
 		"cost" 600000
 		"required crew" 4
 		"fuel capacity" 500
@@ -5684,6 +5847,7 @@
 		"turn" 3.1997702953229377
 		"cargo space" 10
 		"outfit space" 213
+		"weapon capacity" 213
 		"cost" 700000
 		"required crew" 4
 		"fuel capacity" 500
@@ -5720,6 +5884,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 30
 		"outfit space" 117
+		"weapon capacity" 117
 		"cost" 250000
 		"required crew" 10
 		"fuel capacity" 500
@@ -5755,6 +5920,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 30
 		"outfit space" 180
+		"weapon capacity" 180
 		"cost" 325000
 		"required crew" 10
 		"fuel capacity" 500
@@ -5790,6 +5956,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 30
 		"outfit space" 107
+		"weapon capacity" 107
 		"cost" 310000
 		"required crew" 10
 		"fuel capacity" 500
@@ -5825,6 +5992,7 @@
 		"turn" 0.8144869842640204
 		"cargo space" 50
 		"outfit space" 704
+		"weapon capacity" 704
 		"cost" 12500000
 		"required crew" 250
 		"fuel capacity" 400
@@ -5866,6 +6034,7 @@
 		"turn" 1.3380857598623193
 		"cargo space" 50
 		"outfit space" 589
+		"weapon capacity" 589
 		"cost" 11000000
 		"required crew" 250
 		"fuel capacity" 400
@@ -5905,6 +6074,7 @@
 		"turn" 0.5235987755982988
 		"cargo space" 50
 		"outfit space" 1089
+		"weapon capacity" 1089
 		"cost" 12000000
 		"required crew" 250
 		"fuel capacity" 400
@@ -5946,6 +6116,7 @@
 		"turn" 0.4072434921320102
 		"cargo space" 50
 		"outfit space" 419
+		"weapon capacity" 419
 		"cost" 11000000
 		"required crew" 250
 		"fuel capacity" 400
@@ -5984,6 +6155,7 @@
 		"turn" 0.5235987755982988
 		"cargo space" 50
 		"outfit space" 419
+		"weapon capacity" 419
 		"cost" 11500000
 		"required crew" 250
 		"fuel capacity" 400
@@ -6022,6 +6194,7 @@
 		"turn" 0.5235987755982988
 		"cargo space" 50
 		"outfit space" 499
+		"weapon capacity" 499
 		"cost" 12000000
 		"required crew" 250
 		"fuel capacity" 400
@@ -6060,6 +6233,7 @@
 		"turn" 0.6399540590645875
 		"cargo space" 50
 		"outfit space" 574
+		"weapon capacity" 574
 		"cost" 12500000
 		"required crew" 250
 		"fuel capacity" 400
@@ -6099,6 +6273,7 @@
 		"turn" 1.454441043328608
 		"cargo space" 50
 		"outfit space" 1229
+		"weapon capacity" 1229
 		"cost" 13500000
 		"required crew" 250
 		"fuel capacity" 400
@@ -6140,6 +6315,7 @@
 		"turn" 4.71238898038469
 		"cargo space" 5
 		"outfit space" 21
+		"weapon capacity" 21
 		"cost" 185000
 		"required crew" 1
 		"fuel capacity" 200
@@ -6172,6 +6348,7 @@
 		"turn" 4.1887902047863905
 		"cargo space" 5
 		"outfit space" 25
+		"weapon capacity" 25
 		"cost" 240000
 		"required crew" 1
 		"fuel capacity" 200
@@ -6205,6 +6382,7 @@
 		"turn" 3.6651914291880923
 		"cargo space" 5
 		"outfit space" 43
+		"weapon capacity" 43
 		"cost" 195000
 		"required crew" 1
 		"fuel capacity" 300
@@ -6238,6 +6416,7 @@
 		"turn" 3.6651914291880923
 		"cargo space" 5
 		"outfit space" 48
+		"weapon capacity" 48
 		"cost" 250000
 		"required crew" 1
 		"fuel capacity" 300
@@ -6272,6 +6451,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 15
 		"outfit space" 62
+		"weapon capacity" 62
 		"cost" 320000
 		"required crew" 1
 		"fuel capacity" 200
@@ -6306,6 +6486,7 @@
 		"turn" 4.654211338651545
 		"cargo space" 15
 		"outfit space" 40
+		"weapon capacity" 40
 		"cost" 280000
 		"required crew" 1
 		"fuel capacity" 200
@@ -6339,6 +6520,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 15
 		"outfit space" 96
+		"weapon capacity" 96
 		"cost" 350000
 		"required crew" 1
 		"fuel capacity" 200
@@ -6373,6 +6555,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 200
 		"outfit space" 534
+		"weapon capacity" 534
 		"cost" 15000000
 		"required crew" 30
 		"fuel capacity" 1500
@@ -6408,6 +6591,7 @@
 		"turn" 4.072434921320102
 		"cargo space" 25
 		"outfit space" 182
+		"weapon capacity" 182
 		"cost" 3000000
 		"required crew" 10
 		"fuel capacity" 1200
@@ -6443,6 +6627,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 50
 		"outfit space" 66
+		"weapon capacity" 66
 		"cost" 900000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -6477,6 +6662,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 111
+		"weapon capacity" 111
 		"cost" 1275000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -6511,6 +6697,7 @@
 		"turn" 4.945099547317267
 		"cargo space" 0
 		"outfit space" 17
+		"weapon capacity" 17
 		"cost" 150000
 		"required crew" 1
 		"fuel capacity" 300
@@ -6544,6 +6731,7 @@
 		"turn" 6.981317007977318
 		"cargo space" 0
 		"outfit space" 42
+		"weapon capacity" 42
 		"cost" 350000
 		"required crew" 1
 		"fuel capacity" 300
@@ -6578,6 +6766,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 100
 		"outfit space" 337
+		"weapon capacity" 337
 		"cost" 9500000
 		"required crew" 20
 		"fuel capacity" 1000
@@ -6614,6 +6803,7 @@
 		"turn" 4.654211338651545
 		"cargo space" 20
 		"outfit space" 107
+		"weapon capacity" 107
 		"cost" 1400000
 		"required crew" 2
 		"fuel capacity" 1000
@@ -6648,6 +6838,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 20
 		"outfit space" 57
+		"weapon capacity" 57
 		"cost" 700000
 		"required crew" 2
 		"fuel capacity" 1000
@@ -6681,6 +6872,7 @@
 		"turn" 4.072434921320102
 		"cargo space" 25
 		"outfit space" 183
+		"weapon capacity" 183
 		"cost" 4500000
 		"required crew" 10
 		"fuel capacity" 1200
@@ -6717,6 +6909,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 112
+		"weapon capacity" 112
 		"cost" 2500000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -6752,6 +6945,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 100
 		"outfit space" 337
+		"weapon capacity" 337
 		"cost" 9500000
 		"required crew" 20
 		"fuel capacity" 1000
@@ -6788,6 +6982,7 @@
 		"turn" 4.654211338651545
 		"cargo space" 20
 		"outfit space" 108
+		"weapon capacity" 108
 		"cost" 1400000
 		"required crew" 2
 		"fuel capacity" 1000
@@ -6824,6 +7019,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 200
 		"outfit space" 535
+		"weapon capacity" 535
 		"cost" 15000000
 		"required crew" 30
 		"fuel capacity" 1500
@@ -6860,6 +7056,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 200
 		"outfit space" 534
+		"weapon capacity" 534
 		"cost" 15000000
 		"required crew" 30
 		"fuel capacity" 1500
@@ -6895,6 +7092,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 200
 		"outfit space" 535
+		"weapon capacity" 535
 		"cost" 15000000
 		"required crew" 30
 		"fuel capacity" 1500
@@ -6931,6 +7129,7 @@
 		"turn" 4.072434921320102
 		"cargo space" 25
 		"outfit space" 189
+		"weapon capacity" 189
 		"cost" 4500000
 		"required crew" 10
 		"fuel capacity" 1200
@@ -6968,6 +7167,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 114
+		"weapon capacity" 114
 		"cost" 2400000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -7004,6 +7204,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 100
 		"outfit space" 348
+		"weapon capacity" 348
 		"cost" 9500000
 		"required crew" 20
 		"fuel capacity" 1000
@@ -7042,6 +7243,7 @@
 		"turn" 4.654211338651545
 		"cargo space" 20
 		"outfit space" 110
+		"weapon capacity" 110
 		"cost" 1450000
 		"required crew" 2
 		"fuel capacity" 1000
@@ -7079,6 +7281,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 200
 		"outfit space" 545
+		"weapon capacity" 545
 		"cost" 15000000
 		"required crew" 30
 		"fuel capacity" 1500
@@ -7116,6 +7319,7 @@
 		"turn" 3.7815467126543805
 		"cargo space" 5
 		"outfit space" 106
+		"weapon capacity" 106
 		"cost" 820000
 		"required crew" 2
 		"fuel capacity" 700
@@ -7153,6 +7357,7 @@
 		"turn" 4.363323129985824
 		"cargo space" 3
 		"outfit space" 129
+		"weapon capacity" 129
 		"cost" 950000
 		"required crew" 2
 		"fuel capacity" 700
@@ -7191,6 +7396,7 @@
 		"turn" 4.363323129985824
 		"cargo space" 10
 		"outfit space" 26
+		"weapon capacity" 26
 		"cost" 145000
 		"required crew" 1
 		"fuel capacity" 300
@@ -7223,6 +7429,7 @@
 		"turn" 4.654211338651545
 		"cargo space" 10
 		"outfit space" 28
+		"weapon capacity" 28
 		"cost" 250000
 		"required crew" 1
 		"fuel capacity" 300
@@ -7255,6 +7462,7 @@
 		"turn" 4.945099547317267
 		"cargo space" 5
 		"outfit space" 26
+		"weapon capacity" 26
 		"cost" 110000
 		"required crew" 1
 		"fuel capacity" 200
@@ -7287,6 +7495,7 @@
 		"turn" 5.235987755982989
 		"cargo space" 5
 		"outfit space" 28
+		"weapon capacity" 28
 		"cost" 150000
 		"required crew" 1
 		"fuel capacity" 200
@@ -7319,6 +7528,7 @@
 		"turn" 5.235987755982989
 		"cargo space" 15
 		"outfit space" 32
+		"weapon capacity" 32
 		"cost" 200000
 		"required crew" 1
 		"fuel capacity" 400
@@ -7352,6 +7562,7 @@
 		"turn" 5.235987755982989
 		"cargo space" 15
 		"outfit space" 40
+		"weapon capacity" 40
 		"cost" 155000
 		"required crew" 1
 		"fuel capacity" 400
@@ -7385,6 +7596,7 @@
 		"turn" 4.363323129985824
 		"cargo space" 10
 		"outfit space" 48
+		"weapon capacity" 48
 		"cost" 275000
 		"required crew" 1
 		"fuel capacity" 400
@@ -7418,6 +7630,7 @@
 		"turn" 3.1997702953229377
 		"cargo space" 20
 		"outfit space" 103
+		"weapon capacity" 103
 		"cost" 725000
 		"required crew" 2
 		"fuel capacity" 500
@@ -7455,6 +7668,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 125
+		"weapon capacity" 125
 		"cost" 725000
 		"required crew" 2
 		"fuel capacity" 500
@@ -7492,6 +7706,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 10
 		"outfit space" 149
+		"weapon capacity" 149
 		"cost" 800000
 		"required crew" 2
 		"fuel capacity" 500
@@ -7531,6 +7746,7 @@
 		"turn" 4.072434921320102
 		"cargo space" 10
 		"outfit space" 137
+		"weapon capacity" 137
 		"cost" 875000
 		"required crew" 2
 		"fuel capacity" 500
@@ -7570,6 +7786,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 64
+		"weapon capacity" 64
 		"cost" 425000
 		"required crew" 4
 		"fuel capacity" 500
@@ -7607,6 +7824,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 71
+		"weapon capacity" 71
 		"cost" 475000
 		"required crew" 4
 		"fuel capacity" 500
@@ -7644,6 +7862,7 @@
 		"turn" 3.1997702953229377
 		"cargo space" 10
 		"outfit space" 162
+		"weapon capacity" 162
 		"cost" 525000
 		"required crew" 4
 		"fuel capacity" 500
@@ -7684,6 +7903,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 346
+		"weapon capacity" 346
 		"cost" 4000000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -7724,6 +7944,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 50
 		"outfit space" 338
+		"weapon capacity" 338
 		"cost" 2500000
 		"required crew" 50
 		"fuel capacity" 300
@@ -7764,6 +7985,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 50
 		"outfit space" 305
+		"weapon capacity" 305
 		"cost" 3250000
 		"required crew" 50
 		"fuel capacity" 300
@@ -7805,6 +8027,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 50
 		"outfit space" 453
+		"weapon capacity" 453
 		"cost" 4000000
 		"required crew" 50
 		"fuel capacity" 300
@@ -7846,6 +8069,7 @@
 		"turn" 3.7815467126543805
 		"cargo space" 25
 		"outfit space" 48
+		"weapon capacity" 48
 		"cost" 400000
 		"required crew" 4
 		"fuel capacity" 900
@@ -7881,6 +8105,7 @@
 		"turn" 4.072434921320102
 		"cargo space" 15
 		"outfit space" 36
+		"weapon capacity" 36
 		"cost" 300000
 		"required crew" 3
 		"fuel capacity" 400
@@ -7915,6 +8140,7 @@
 		"turn" 4.363323129985824
 		"cargo space" 15
 		"outfit space" 42
+		"weapon capacity" 42
 		"cost" 350000
 		"required crew" 3
 		"fuel capacity" 400
@@ -7949,6 +8175,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 10
 		"outfit space" 50
+		"weapon capacity" 50
 		"cost" 500000
 		"required crew" 1
 		"fuel capacity" 300
@@ -7983,6 +8210,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 50
 		"outfit space" 111
+		"weapon capacity" 111
 		"cost" 4000000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -8020,6 +8248,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 50
 		"outfit space" 203
+		"weapon capacity" 203
 		"cost" 2500000
 		"required crew" 50
 		"fuel capacity" 300
@@ -8057,6 +8286,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 361
+		"weapon capacity" 361
 		"cost" 5000000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -8098,6 +8328,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 50
 		"outfit space" 353
+		"weapon capacity" 353
 		"cost" 3000000
 		"required crew" 50
 		"fuel capacity" 300
@@ -8139,6 +8370,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 50
 		"outfit space" 319
+		"weapon capacity" 319
 		"cost" 3750000
 		"required crew" 50
 		"fuel capacity" 300
@@ -8181,6 +8413,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 50
 		"outfit space" 468
+		"weapon capacity" 468
 		"cost" 4500000
 		"required crew" 50
 		"fuel capacity" 300
@@ -8223,6 +8456,7 @@
 		"turn" 2.15257274412634
 		"cargo space" 9
 		"outfit space" 10
+		"weapon capacity" 10
 		"cost" 4995
 		"required crew" 1
 		"fuel capacity" 300
@@ -8254,6 +8488,7 @@
 		"turn" 2.5016385945252058
 		"cargo space" 12
 		"outfit space" 11
+		"weapon capacity" 11
 		"cost" 60000
 		"required crew" 1
 		"fuel capacity" 300
@@ -8288,6 +8523,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 14
 		"outfit space" 14
+		"weapon capacity" 14
 		"cost" 9995
 		"required crew" 2
 		"fuel capacity" 400
@@ -8319,6 +8555,7 @@
 		"turn" 2.443460952792061
 		"cargo space" 15
 		"outfit space" 13
+		"weapon capacity" 13
 		"cost" 75000
 		"required crew" 2
 		"fuel capacity" 400
@@ -8354,6 +8591,7 @@
 		"turn" 1.3380857598623193
 		"cargo space" 950
 		"outfit space" 40
+		"weapon capacity" 40
 		"cost" 1250000
 		"required crew" 10
 		"fuel capacity" 700
@@ -8386,6 +8624,7 @@
 		"turn" 1.5707963267948966
 		"cargo space" 900
 		"outfit space" 80
+		"weapon capacity" 80
 		"cost" 2750000
 		"required crew" 10
 		"fuel capacity" 700
@@ -8427,6 +8666,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 58
+		"weapon capacity" 58
 		"cost" 400000
 		"required crew" 2
 		"fuel capacity" 500
@@ -8460,6 +8700,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 15
 		"outfit space" 91
+		"weapon capacity" 91
 		"cost" 650000
 		"required crew" 2
 		"fuel capacity" 500
@@ -8503,6 +8744,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 125
 		"outfit space" 20
+		"weapon capacity" 20
 		"cost" 110000
 		"required crew" 4
 		"fuel capacity" 400
@@ -8534,6 +8776,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 95
 		"outfit space" 47
+		"weapon capacity" 47
 		"cost" 400000
 		"required crew" 4
 		"fuel capacity" 400
@@ -8572,6 +8815,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 20
 		"outfit space" 46
+		"weapon capacity" 46
 		"cost" 200000
 		"required crew" 4
 		"fuel capacity" 500
@@ -8604,6 +8848,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 51
+		"weapon capacity" 51
 		"cost" 600000
 		"required crew" 4
 		"fuel capacity" 500
@@ -8643,6 +8888,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 10
 		"outfit space" 98
+		"weapon capacity" 98
 		"cost" 2500000
 		"required crew" 4
 		"fuel capacity" 500
@@ -8680,6 +8926,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 100
 		"outfit space" 871
+		"weapon capacity" 871
 		"cost" 0
 		"required crew" 220
 		"fuel capacity" 600
@@ -8722,6 +8969,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 83
+		"weapon capacity" 83
 		"cost" 800000
 		"required crew" 2
 		"fuel capacity" 1200
@@ -8758,6 +9006,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 83
+		"weapon capacity" 83
 		"cost" 950000
 		"required crew" 2
 		"fuel capacity" 1200
@@ -8794,6 +9043,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 1000
 		"outfit space" 111
+		"weapon capacity" 111
 		"cost" 2000000
 		"required crew" 10
 		"fuel capacity" 700
@@ -8828,6 +9078,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 50
 		"outfit space" 170
+		"weapon capacity" 170
 		"cost" 50000000
 		"required crew" 1
 		"fuel capacity" 800
@@ -8864,6 +9115,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 100
 		"outfit space" 37
+		"weapon capacity" 37
 		"cost" 150000
 		"required crew" 6
 		"fuel capacity" 600
@@ -8896,6 +9148,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 75
 		"outfit space" 241
+		"weapon capacity" 241
 		"cost" 14000000
 		"required crew" 100
 		"fuel capacity" 500
@@ -8933,6 +9186,7 @@
 		"turn" 5.817764173314432
 		"cargo space" 5
 		"outfit space" 10
+		"weapon capacity" 10
 		"cost" 0
 		"required crew" 0
 		"fuel capacity" 300
@@ -8964,6 +9218,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 60
 		"outfit space" 20
+		"weapon capacity" 20
 		"cost" 0
 		"required crew" 0
 		"fuel capacity" 1000
@@ -8995,6 +9250,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 100
 		"outfit space" 50
+		"weapon capacity" 50
 		"cost" 0
 		"required crew" 0
 		"fuel capacity" 1200
@@ -9026,6 +9282,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 112
+		"weapon capacity" 112
 		"cost" 400000
 		"required crew" 1
 		"fuel capacity" 400
@@ -9060,6 +9317,7 @@
 		"turn" 1.5707963267948966
 		"cargo space" 20
 		"outfit space" 88
+		"weapon capacity" 88
 		"cost" 400000
 		"required crew" 1
 		"fuel capacity" 300
@@ -9094,6 +9352,7 @@
 		"turn" 2.0943951023931953
 		"cargo space" 20
 		"outfit space" 95
+		"weapon capacity" 95
 		"cost" 400000
 		"required crew" 1
 		"fuel capacity" 300
@@ -9128,6 +9387,7 @@
 		"turn" 2.0943951023931953
 		"cargo space" 20
 		"outfit space" 102
+		"weapon capacity" 102
 		"cost" 400000
 		"required crew" 1
 		"fuel capacity" 400
@@ -9162,6 +9422,7 @@
 		"turn" 2.0943951023931953
 		"cargo space" 20
 		"outfit space" 102
+		"weapon capacity" 102
 		"cost" 400000
 		"required crew" 1
 		"fuel capacity" 400
@@ -9196,6 +9457,7 @@
 		"turn" 2.6179938779914944
 		"cargo space" 20
 		"outfit space" 129
+		"weapon capacity" 129
 		"cost" 400000
 		"required crew" 1
 		"fuel capacity" 500
@@ -9230,6 +9492,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 5
 		"outfit space" 58
+		"weapon capacity" 58
 		"cost" 150000
 		"required crew" 1
 		"fuel capacity" 300
@@ -9263,6 +9526,7 @@
 		"turn" 4.072434921320102
 		"cargo space" 10
 		"outfit space" 11
+		"weapon capacity" 11
 		"cost" 10000
 		"required crew" 0
 		"fuel capacity" 300
@@ -9294,6 +9558,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 15
 		"outfit space" 15
+		"weapon capacity" 15
 		"cost" 17500
 		"required crew" 0
 		"fuel capacity" 400
@@ -9325,6 +9590,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 5
 		"outfit space" 0
+		"weapon capacity" 0
 		"cost" 2000
 		"required crew" 0
 		"fuel capacity" 200
@@ -9355,6 +9621,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 500
 		"outfit space" 0
+		"weapon capacity" 0
 		"cost" 500000
 		"required crew" 0
 		"fuel capacity" 800
@@ -9385,6 +9652,7 @@
 		"turn" 3.1997702953229377
 		"cargo space" 20
 		"outfit space" 175
+		"weapon capacity" 175
 		"cost" 400000
 		"required crew" 1
 		"fuel capacity" 200
@@ -9421,6 +9689,7 @@
 		"turn" 1.454441043328608
 		"cargo space" 50
 		"outfit space" 1083
+		"weapon capacity" 1083
 		"cost" 12000000
 		"required crew" 250
 		"fuel capacity" 400
@@ -9462,6 +9731,7 @@
 		"turn" 1.1635528346628863
 		"cargo space" 75
 		"outfit space" 253
+		"weapon capacity" 253
 		"cost" 1500000
 		"required crew" 150
 		"fuel capacity" 300
@@ -9499,6 +9769,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 30
 		"outfit space" 66
+		"weapon capacity" 66
 		"cost" 500000
 		"required crew" 2
 		"fuel capacity" 500
@@ -9534,6 +9805,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 50
+		"weapon capacity" 50
 		"cost" 275000
 		"required crew" 4
 		"fuel capacity" 500
@@ -9569,6 +9841,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 20
 		"outfit space" 64
+		"weapon capacity" 64
 		"cost" 725000
 		"required crew" 2
 		"fuel capacity" 500
@@ -9604,6 +9877,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 57
+		"weapon capacity" 57
 		"cost" 425000
 		"required crew" 4
 		"fuel capacity" 500
@@ -9638,6 +9912,7 @@
 		"turn" 1.7453292519943295
 		"cargo space" 30
 		"outfit space" 44
+		"weapon capacity" 44
 		"cost" 250000
 		"required crew" 10
 		"fuel capacity" 400
@@ -9672,6 +9947,7 @@
 		"turn" 1.454441043328608
 		"cargo space" 225
 		"outfit space" 115
+		"weapon capacity" 115
 		"cost" 700000
 		"required crew" 35
 		"fuel capacity" 500
@@ -9706,6 +9982,7 @@
 		"turn" 4.072434921320102
 		"cargo space" 5
 		"outfit space" 19
+		"weapon capacity" 19
 		"cost" 200000
 		"required crew" 1
 		"fuel capacity" 300
@@ -9737,6 +10014,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 361
+		"weapon capacity" 361
 		"cost" 3000000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -9778,6 +10056,7 @@
 		"turn" 2.908882086657216
 		"cargo space" 200
 		"outfit space" 544
+		"weapon capacity" 544
 		"cost" 10000000
 		"required crew" 30
 		"fuel capacity" 1500
@@ -9814,6 +10093,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 100
 		"outfit space" 348
+		"weapon capacity" 348
 		"cost" 5000000
 		"required crew" 20
 		"fuel capacity" 1000
@@ -9852,6 +10132,7 @@
 		"turn" 4.072434921320102
 		"cargo space" 25
 		"outfit space" 189
+		"weapon capacity" 189
 		"cost" 2000000
 		"required crew" 10
 		"fuel capacity" 1200
@@ -9889,6 +10170,7 @@
 		"turn" 3.490658503988659
 		"cargo space" 50
 		"outfit space" 114
+		"weapon capacity" 114
 		"cost" 350000
 		"required crew" 10
 		"fuel capacity" 1000
@@ -9925,6 +10207,7 @@
 		"turn" 4.654211338651545
 		"cargo space" 20
 		"outfit space" 110
+		"weapon capacity" 110
 		"cost" 800000
 		"required crew" 2
 		"fuel capacity" 1000
@@ -9962,6 +10245,7 @@
 		"turn" 3.1997702953229377
 		"cargo space" 200
 		"outfit space" 545
+		"weapon capacity" 545
 		"cost" 10000000
 		"required crew" 30
 		"fuel capacity" 1500
@@ -9999,6 +10283,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 50
 		"outfit space" 281
+		"weapon capacity" 281
 		"cost" 5000000
 		"required crew" 100
 		"fuel capacity" 500
@@ -10037,6 +10322,7 @@
 		"turn" 2.036217460660051
 		"cargo space" 30
 		"outfit space" 336
+		"weapon capacity" 336
 		"cost" 6000000
 		"required crew" 100
 		"fuel capacity" 500
@@ -10076,6 +10362,7 @@
 		"turn" 2.3271056693257726
 		"cargo space" 20
 		"outfit space" 366
+		"weapon capacity" 366
 		"cost" 7000000
 		"required crew" 100
 		"fuel capacity" 500
@@ -10116,6 +10403,7 @@
 		"turn" 0.5817764173314431
 		"cargo space" 0
 		"outfit space" 0
+		"weapon capacity" 0
 		"cost" 0
 		"required crew" 1
 		"fuel capacity" 0

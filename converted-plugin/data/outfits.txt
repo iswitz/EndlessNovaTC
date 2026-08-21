@@ -11,6 +11,7 @@
 	"thumbnail" "outfit/light_blaster"
 	"mass" 3
 	"outfit space" -3
+	"weapon capacity" -3
 	"gun ports" -1
 	"weapon"
 		# EVN ProxRadius 5 has no direct ES field.
@@ -37,6 +38,7 @@
 	"thumbnail" "outfit/medium_blaster"
 	"mass" 8
 	"outfit space" -8
+	"weapon capacity" -8
 	"gun ports" -1
 	"weapon"
 		# EVN ProxRadius 5 has no direct ES field.
@@ -63,6 +65,7 @@
 	"thumbnail" "outfit/light_blaster_turret"
 	"mass" 10
 	"outfit space" -10
+	"weapon capacity" -10
 	"turret mounts" -1
 	"weapon"
 		# EVN ProxRadius 5 has no direct ES field.
@@ -89,6 +92,7 @@
 	"thumbnail" "outfit/medium_blaster_turret"
 	"mass" 25
 	"outfit space" -25
+	"weapon capacity" -25
 	"turret mounts" -1
 	"weapon"
 		# EVN ProxRadius 5 has no direct ES field.
@@ -115,6 +119,7 @@
 	"thumbnail" "outfit/heavy_blaster_turret"
 	"mass" 45
 	"outfit space" -45
+	"weapon capacity" -45
 	"turret mounts" -1
 	"weapon"
 		# EVN ProxRadius 5 has no direct ES field.
@@ -141,6 +146,7 @@
 	"thumbnail" "outfit/quad_light_blaster_turret"
 	"mass" 20
 	"outfit space" -20
+	"weapon capacity" -20
 	"turret mounts" -1
 	"weapon"
 		# EVN ProxRadius 5 has no direct ES field.
@@ -169,7 +175,8 @@
 	"thumbnail" "outfit/ir_missile_launcher"
 	"mass" 5
 	"outfit space" -5
-	"gun ports" -1
+	"weapon capacity" -5
+	"missile mounts" -1
 	"weapon"
 		"homing"
 		# EVN ProxRadius 2 has no direct ES field.
@@ -211,7 +218,8 @@
 	"thumbnail" "outfit/radar_missile_launcher"
 	"mass" 7
 	"outfit space" -7
-	"gun ports" -1
+	"weapon capacity" -7
+	"missile mounts" -1
 	"weapon"
 		"homing"
 		# EVN ProxRadius 4 has no direct ES field.
@@ -253,7 +261,8 @@
 	"thumbnail" "outfit/gravimetric_missile_launcher"
 	"mass" 10
 	"outfit space" -10
-	"gun ports" -1
+	"weapon capacity" -10
+	"missile mounts" -1
 	"weapon"
 		"homing"
 		# EVN ProxRadius 8 has no direct ES field.
@@ -295,7 +304,8 @@
 	"thumbnail" "outfit/etheric_wake_missile_launcher"
 	"mass" 7
 	"outfit space" -7
-	"gun ports" -1
+	"weapon capacity" -7
+	"missile mounts" -1
 	"weapon"
 		"homing"
 		# EVN ProxRadius 12 has no direct ES field.
@@ -337,7 +347,8 @@
 	"thumbnail" "outfit/raven_rocket_pod"
 	"mass" 5
 	"outfit space" -5
-	"gun ports" -1
+	"weapon capacity" -5
+	"missile mounts" -1
 	"weapon"
 		"sprite" "projectile/raven_rocket"
 		"sound" "evn-217"
@@ -376,7 +387,8 @@
 	"thumbnail" "outfit/raven_rocket_turret"
 	"mass" 15
 	"outfit space" -15
-	"gun ports" -1
+	"weapon capacity" -15
+	"turret mounts" -1
 	"weapon"
 		# EVN AmmoType 10 has no mapped ammo outfit.
 		"sprite" "projectile/raven_turret"
@@ -402,7 +414,8 @@
 	"thumbnail" "outfit/stellar_grenade_launcher"
 	"mass" 3
 	"outfit space" -3
-	"gun ports" -1
+	"weapon capacity" -3
+	"missile mounts" -1
 	"weapon"
 		# EVN ProxRadius 30 has no direct ES field.
 		"sprite" "projectile/stellar_grnd_"
@@ -442,6 +455,7 @@
 	"thumbnail" "outfit/polaron_cannon"
 	"mass" 25
 	"outfit space" -25
+	"weapon capacity" -25
 	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 0 requires ES beam visual tuning.
@@ -472,7 +486,8 @@
 	"thumbnail" "outfit/ionic_particle_cannon"
 	"mass" 25
 	"outfit space" -25
-	"gun ports" -1
+	"weapon capacity" -25
+	"turret mounts" -1
 	"weapon"
 		# EVN beam Guidance 3 requires ES beam visual tuning.
 		# EVN ProxRadius 1 has no direct ES field.
@@ -502,7 +517,8 @@
 	"thumbnail" "outfit/fusion_pulse_cannon"
 	"mass" 6
 	"outfit space" -6
-	"gun ports" -1
+	"weapon capacity" -6
+	"turret mounts" -1
 	"weapon"
 		"sprite" "projectile/fusion_pulse_cannon"
 		"sound" "evn-202"
@@ -527,6 +543,7 @@
 	"thumbnail" "outfit/fusion_pulse_turret"
 	"mass" 20
 	"outfit space" -20
+	"weapon capacity" -20
 	"turret mounts" -1
 	"weapon"
 		"sprite" "projectile/fusion_pulse_turret"
@@ -552,6 +569,7 @@
 	"thumbnail" "outfit/wraith_cannon"
 	"mass" 10
 	"outfit space" -10
+	"weapon capacity" -10
 	"turret mounts" -1
 	"weapon"
 		"sprite" "projectile/wraithii"
@@ -591,6 +609,7 @@
 	"thumbnail" "outfit/capacitor_pulse_laser"
 	"mass" 40
 	"outfit space" -40
+	"weapon capacity" -40
 	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 0 requires ES beam visual tuning.
@@ -621,6 +640,7 @@
 	"thumbnail" "outfit/biorelay_laser"
 	"mass" 15
 	"outfit space" -15
+	"weapon capacity" -15
 	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 0 requires ES beam visual tuning.
@@ -648,7 +668,8 @@
 	"thumbnail" "outfit/polaron_torpedo_tube"
 	"mass" 25
 	"outfit space" -25
-	"gun ports" -1
+	"weapon capacity" -25
+	"missile mounts" -1
 	"weapon"
 		"homing"
 		# EVN ProxRadius 10 has no direct ES field.
@@ -689,7 +710,8 @@
 	"thumbnail" "outfit/viper_bay"
 	"mass" 75
 	"outfit space" -75
-	"gun ports" -1
+	"weapon capacity" -75
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/viper_bay"
 		"sound" "evn-221"
@@ -728,7 +750,8 @@
 	"thumbnail" "outfit/anaconda_bay"
 	"mass" 75
 	"outfit space" -75
-	"gun ports" -1
+	"weapon capacity" -75
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/anaconda_bay"
 		"sound" "evn-221"
@@ -767,7 +790,8 @@
 	"thumbnail" "outfit/firebird_bay"
 	"mass" 80
 	"outfit space" -80
-	"gun ports" -1
+	"weapon capacity" -80
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/firebird_bay"
 		"sound" "evn-201"
@@ -806,7 +830,8 @@
 	"thumbnail" "outfit/phoenix_bay"
 	"mass" 80
 	"outfit space" -80
-	"gun ports" -1
+	"weapon capacity" -80
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/phoenix_bay"
 		"sound" "evn-201"
@@ -845,7 +870,8 @@
 	"thumbnail" "outfit/thunderhead_bay"
 	"mass" 90
 	"outfit space" -90
-	"gun ports" -1
+	"weapon capacity" -90
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/thunderhead_bay"
 		"sound" "evn-220"
@@ -884,7 +910,8 @@
 	"thumbnail" "outfit/manta_bay"
 	"mass" 40
 	"outfit space" -40
-	"gun ports" -1
+	"weapon capacity" -40
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/manta_bay"
 		"sound" "evn-229"
@@ -923,7 +950,8 @@
 	"thumbnail" "outfit/hail_chaingun"
 	"mass" 4
 	"outfit space" -4
-	"gun ports" -1
+	"weapon capacity" -4
+	"turret mounts" -1
 	"weapon"
 		"sprite" "projectile/hail_chaingun"
 		"sound" "evn-205"
@@ -964,7 +992,8 @@
 	"thumbnail" "outfit/100mm_fixed_railgun"
 	"mass" 15
 	"outfit space" -15
-	"gun ports" -1
+	"weapon capacity" -15
+	"turret mounts" -1
 	"weapon"
 		"sprite" "projectile/fixed_railgun_100mm_"
 		"sound" "evn-216"
@@ -989,7 +1018,8 @@
 	"thumbnail" "outfit/150mm_fixed_railgun"
 	"mass" 25
 	"outfit space" -25
-	"gun ports" -1
+	"weapon capacity" -25
+	"turret mounts" -1
 	"weapon"
 		"sprite" "projectile/fixed_railgun_150mm_"
 		"sound" "evn-214"
@@ -1014,7 +1044,8 @@
 	"thumbnail" "outfit/200mm_fixed_railgun"
 	"mass" 35
 	"outfit space" -35
-	"gun ports" -1
+	"weapon capacity" -35
+	"turret mounts" -1
 	"weapon"
 		"sprite" "projectile/fixed_railgun_200mm_"
 		"sound" "evn-215"
@@ -1039,7 +1070,8 @@
 	"thumbnail" "outfit/100mm_turreted_railgun"
 	"mass" 30
 	"outfit space" -30
-	"gun ports" -1
+	"weapon capacity" -30
+	"turret mounts" -1
 	"weapon"
 		"sprite" "projectile/turreted_railgun_100mm_"
 		"sound" "evn-216"
@@ -1064,7 +1096,8 @@
 	"thumbnail" "outfit/emp_torpedo_tube"
 	"mass" 20
 	"outfit space" -20
-	"gun ports" -1
+	"weapon capacity" -20
+	"missile mounts" -1
 	"weapon"
 		"homing"
 		# EVN ProxRadius 5 has no direct ES field.
@@ -1524,7 +1557,8 @@
 	"thumbnail" "outfit/storm_chaingun"
 	"mass" 25
 	"outfit space" -25
-	"gun ports" -1
+	"weapon capacity" -25
+	"turret mounts" -1
 	"weapon"
 		# EVN AmmoType 27 has no mapped ammo outfit.
 		"sprite" "projectile/storm_chaingun"
@@ -1552,6 +1586,7 @@
 	"thumbnail" "outfit/fusion_pulse_battery"
 	"mass" 12
 	"outfit space" -12
+	"weapon capacity" -12
 	"turret mounts" -1
 	"weapon"
 		"sprite" "projectile/fusion_pulse_battery"
@@ -1577,6 +1612,7 @@
 	"thumbnail" "outfit/thunderhead_lance"
 	"mass" 8
 	"outfit space" -8
+	"weapon capacity" -8
 	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 0 requires ES beam visual tuning.
@@ -1604,7 +1640,8 @@
 	"thumbnail" "outfit/pirate_viper_bay"
 	"mass" 40
 	"outfit space" -40
-	"gun ports" -1
+	"weapon capacity" -40
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/pirate_viper_bay"
 		"sound" "evn-226"
@@ -1643,7 +1680,8 @@
 	"thumbnail" "outfit/turreted_biorelay_laser"
 	"mass" 25
 	"outfit space" -25
-	"gun ports" -1
+	"weapon capacity" -25
+	"turret mounts" -1
 	"weapon"
 		# EVN beam Guidance 3 requires ES beam visual tuning.
 		# EVN ProxRadius 1 has no direct ES field.
@@ -1670,6 +1708,7 @@
 	"thumbnail" "outfit/flower_of_spring"
 	"mass" 0
 	"outfit space" 0
+	"weapon capacity" 0
 	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 0 requires ES beam visual tuning.
@@ -1698,7 +1737,8 @@
 	"thumbnail" "outfit/summer_bloom"
 	"mass" 0
 	"outfit space" 0
-	"gun ports" -1
+	"weapon capacity" 0
+	"turret mounts" -1
 	"weapon"
 		# EVN beam Guidance 3 requires ES beam visual tuning.
 		# EVN ProxRadius 2 has no direct ES field.
@@ -1726,7 +1766,8 @@
 	"thumbnail" "outfit/autumn_petal"
 	"mass" 0
 	"outfit space" 0
-	"gun ports" -1
+	"weapon capacity" 0
+	"turret mounts" -1
 	"weapon"
 		# EVN beam Guidance 3 requires ES beam visual tuning.
 		# EVN ProxRadius 3 has no direct ES field.
@@ -1754,6 +1795,7 @@
 	"thumbnail" "outfit/winter_tempest"
 	"mass" 0
 	"outfit space" 0
+	"weapon capacity" 0
 	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 0 requires ES beam visual tuning.
@@ -1782,7 +1824,8 @@
 	"thumbnail" "outfit/create_dart"
 	"mass" 0
 	"outfit space" 0
-	"gun ports" -1
+	"weapon capacity" 0
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/create_dart"
 		"inaccuracy" 0
@@ -1842,7 +1885,8 @@
 	"thumbnail" "outfit/nanites"
 	"mass" 30
 	"outfit space" -30
-	"gun ports" -1
+	"weapon capacity" -30
+	"turret mounts" -1
 	"weapon"
 		# EVN SubType 229 has no mapped ammo outfit.
 		"sprite" "projectile/nanites"
@@ -1868,6 +1912,7 @@
 	"thumbnail" "outfit/solar_lance"
 	"mass" 15
 	"outfit space" -15
+	"weapon capacity" -15
 	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 0 requires ES beam visual tuning.
@@ -1895,6 +1940,7 @@
 	"thumbnail" "outfit/wgb_a_"
 	"mass" 10
 	"outfit space" -10
+	"weapon capacity" -10
 	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 0 requires ES beam visual tuning.
@@ -1924,6 +1970,7 @@
 	"thumbnail" "outfit/wgb_y_"
 	"mass" 8
 	"outfit space" -8
+	"weapon capacity" -8
 	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 0 requires ES beam visual tuning.
@@ -1953,6 +2000,7 @@
 	"thumbnail" "outfit/wgb_c_"
 	"mass" 5
 	"outfit space" -5
+	"weapon capacity" -5
 	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 0 requires ES beam visual tuning.
@@ -2202,7 +2250,8 @@
 	"thumbnail" "outfit/wraith_cannon"
 	"mass" 10
 	"outfit space" -10
-	"gun ports" -1
+	"weapon capacity" -10
+	"turret mounts" -1
 	"weapon"
 		# EVN AmmoType 17 has no mapped ammo outfit.
 		"sprite" "projectile/wraithii"
@@ -2394,6 +2443,7 @@
 	"thumbnail" "outfit/asteroid_mining_laser"
 	"mass" 3
 	"outfit space" -3
+	"weapon capacity" -3
 	"gun ports" -1
 	"weapon"
 		# EVN ProxRadius 5 has no direct ES field.
@@ -2475,7 +2525,8 @@
 	"thumbnail" "outfit/polaron_multi_torpedo_tube"
 	"mass" 28
 	"outfit space" -28
-	"gun ports" -1
+	"weapon capacity" -28
+	"missile mounts" -1
 	"weapon"
 		"homing"
 		"submunition" "Polaron Torpedo" 5
@@ -2517,7 +2568,8 @@
 	"thumbnail" "outfit/wraith_cannon_fire_whilst_cloaked"
 	"mass" 10
 	"outfit space" -10
-	"gun ports" -1
+	"weapon capacity" -10
+	"turret mounts" -1
 	"weapon"
 		# EVN AmmoType 17 has no mapped ammo outfit.
 		"sprite" "projectile/wraithii"
@@ -2555,7 +2607,8 @@
 	"thumbnail" "outfit/polaron_torpedo_tube_fire_whilst_cloaked"
 	"mass" 27
 	"outfit space" -27
-	"gun ports" -1
+	"weapon capacity" -27
+	"missile mounts" -1
 	"weapon"
 		"homing"
 		# EVN AmmoType 20 has no mapped ammo outfit.
@@ -2595,7 +2648,8 @@
 	"thumbnail" "outfit/polaron_multi_torpedo_tube_fire_whilst_cloaked"
 	"mass" 30
 	"outfit space" -30
-	"gun ports" -1
+	"weapon capacity" -30
+	"missile mounts" -1
 	"weapon"
 		"homing"
 		"submunition" "Polaron Torpedo" 5
@@ -2636,7 +2690,8 @@
 	"thumbnail" "outfit/pirate_thunderhead_bay"
 	"mass" 70
 	"outfit space" -70
-	"gun ports" -1
+	"weapon capacity" -70
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/pirate_thunderhead_bay"
 		"sound" "evn-220"
@@ -2675,7 +2730,8 @@
 	"thumbnail" "outfit/firebird_bay"
 	"mass" 65
 	"outfit space" -65
-	"gun ports" -1
+	"weapon capacity" -65
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/firebird_bay"
 		"sound" "evn-201"
@@ -2714,7 +2770,8 @@
 	"thumbnail" "outfit/firebird_bay"
 	"mass" 65
 	"outfit space" -65
-	"gun ports" -1
+	"weapon capacity" -65
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/firebird_bay"
 		"sound" "evn-201"
@@ -2753,7 +2810,8 @@
 	"thumbnail" "outfit/phoenix_bay"
 	"mass" 65
 	"outfit space" -65
-	"gun ports" -1
+	"weapon capacity" -65
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/phoenix_bay"
 		"sound" "evn-201"
@@ -2792,7 +2850,8 @@
 	"thumbnail" "outfit/phoenix_bay"
 	"mass" 65
 	"outfit space" -65
-	"gun ports" -1
+	"weapon capacity" -65
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/phoenix_bay"
 		"sound" "evn-201"
@@ -2831,7 +2890,8 @@
 	"thumbnail" "outfit/pirate_viper_bay"
 	"mass" 75
 	"outfit space" -75
-	"gun ports" -1
+	"weapon capacity" -75
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/pirate_viper_bay"
 		"sound" "evn-226"
@@ -2870,7 +2930,8 @@
 	"thumbnail" "outfit/pirate_viper_bay"
 	"mass" 75
 	"outfit space" -75
-	"gun ports" -1
+	"weapon capacity" -75
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/pirate_viper_bay"
 		"sound" "evn-226"
@@ -2909,7 +2970,8 @@
 	"thumbnail" "outfit/rebel_viper_bay"
 	"mass" 50
 	"outfit space" -50
-	"gun ports" -1
+	"weapon capacity" -50
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/rebel_viper_bay"
 		"sound" "evn-221"
@@ -2948,7 +3010,8 @@
 	"thumbnail" "outfit/rebel_viper_bay"
 	"mass" 50
 	"outfit space" -50
-	"gun ports" -1
+	"weapon capacity" -50
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/rebel_viper_bay"
 		"sound" "evn-221"
@@ -2987,7 +3050,8 @@
 	"thumbnail" "outfit/rebel_viper_bay"
 	"mass" 50
 	"outfit space" -50
-	"gun ports" -1
+	"weapon capacity" -50
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/rebel_viper_bay"
 		"sound" "evn-221"
@@ -3026,7 +3090,8 @@
 	"thumbnail" "outfit/rebel_viper_bay"
 	"mass" 50
 	"outfit space" -50
-	"gun ports" -1
+	"weapon capacity" -50
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/rebel_viper_bay"
 		"sound" "evn-221"
@@ -3065,7 +3130,8 @@
 	"thumbnail" "outfit/viper_bay"
 	"mass" 75
 	"outfit space" -75
-	"gun ports" -1
+	"weapon capacity" -75
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/viper_bay"
 		"sound" "evn-221"
@@ -3104,7 +3170,8 @@
 	"thumbnail" "outfit/viper_bay"
 	"mass" 75
 	"outfit space" -75
-	"gun ports" -1
+	"weapon capacity" -75
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/viper_bay"
 		"sound" "evn-221"
@@ -3143,7 +3210,8 @@
 	"thumbnail" "outfit/anaconda_bay"
 	"mass" 75
 	"outfit space" -75
-	"gun ports" -1
+	"weapon capacity" -75
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/anaconda_bay"
 		"sound" "evn-221"
@@ -3182,7 +3250,8 @@
 	"thumbnail" "outfit/anaconda_bay"
 	"mass" 75
 	"outfit space" -75
-	"gun ports" -1
+	"weapon capacity" -75
+	"fighter bays" -1
 	"weapon"
 		"sprite" "projectile/anaconda_bay"
 		"sound" "evn-221"
@@ -3287,6 +3356,7 @@
 	"thumbnail" "outfit/illegal_medium_blaster"
 	"mass" 10
 	"outfit space" -10
+	"weapon capacity" -10
 	"gun ports" -1
 	"weapon"
 		# EVN ProxRadius 5 has no direct ES field.
@@ -3313,6 +3383,7 @@
 	"thumbnail" "outfit/illegal_medium_blaster_turret"
 	"mass" 30
 	"outfit space" -30
+	"weapon capacity" -30
 	"turret mounts" -1
 	"weapon"
 		# EVN ProxRadius 5 has no direct ES field.
@@ -3339,6 +3410,7 @@
 	"thumbnail" "outfit/illegal_heavy_blaster_turret"
 	"mass" 60
 	"outfit space" -60
+	"weapon capacity" -60
 	"turret mounts" -1
 	"weapon"
 		# EVN ProxRadius 5 has no direct ES field.
@@ -3365,6 +3437,7 @@
 	"thumbnail" "outfit/illegal_quad_light_blaster_turret"
 	"mass" 20
 	"outfit space" -20
+	"weapon capacity" -20
 	"turret mounts" -1
 	"weapon"
 		# EVN ProxRadius 5 has no direct ES field.
@@ -3393,7 +3466,8 @@
 	"thumbnail" "outfit/illegal_ir_missile_launcher"
 	"mass" 5
 	"outfit space" -5
-	"gun ports" -1
+	"weapon capacity" -5
+	"missile mounts" -1
 	"weapon"
 		"homing"
 		# EVN ProxRadius 2 has no direct ES field.
@@ -3435,7 +3509,8 @@
 	"thumbnail" "outfit/illegal_radar_missile_launcher"
 	"mass" 7
 	"outfit space" -7
-	"gun ports" -1
+	"weapon capacity" -7
+	"missile mounts" -1
 	"weapon"
 		"homing"
 		# EVN ProxRadius 4 has no direct ES field.
@@ -3477,6 +3552,7 @@
 	"thumbnail" "outfit/disabling_fusion_pulse_turret"
 	"mass" 20
 	"outfit space" -20
+	"weapon capacity" -20
 	"turret mounts" -1
 	"weapon"
 		"sprite" "projectile/fusion_pulse_turret"
@@ -3502,7 +3578,8 @@
 	"thumbnail" "outfit/disabling_radar_missile_launcher"
 	"mass" 7
 	"outfit space" -7
-	"gun ports" -1
+	"weapon capacity" -7
+	"missile mounts" -1
 	"weapon"
 		"homing"
 		# EVN AmmoType 7 has no mapped ammo outfit.
@@ -3543,7 +3620,8 @@
 	"thumbnail" "outfit/user_modified_ionic_particle_cannon"
 	"mass" 25
 	"outfit space" -25
-	"gun ports" -1
+	"weapon capacity" -25
+	"turret mounts" -1
 	"weapon"
 		# EVN beam Guidance 3 requires ES beam visual tuning.
 		# EVN ProxRadius 1 has no direct ES field.
@@ -3573,7 +3651,8 @@
 	"thumbnail" "outfit/illegal_ionic_particle_cannon"
 	"mass" 25
 	"outfit space" -25
-	"gun ports" -1
+	"weapon capacity" -25
+	"turret mounts" -1
 	"weapon"
 		# EVN beam Guidance 3 requires ES beam visual tuning.
 		# EVN ProxRadius 1 has no direct ES field.
@@ -3711,7 +3790,8 @@
 	"thumbnail" "outfit/wraith_cannon"
 	"mass" 10
 	"outfit space" -10
-	"gun ports" -1
+	"weapon capacity" -10
+	"turret mounts" -1
 	"weapon"
 		# EVN AmmoType 17 has no mapped ammo outfit.
 		"sprite" "projectile/wraithii"
@@ -3925,7 +4005,8 @@
 	"thumbnail" "outfit/hellhound_missile_launcher"
 	"mass" 10
 	"outfit space" -10
-	"gun ports" -1
+	"weapon capacity" -10
+	"missile mounts" -1
 	"weapon"
 		"homing"
 		# EVN ProxRadius 25 has no direct ES field.
@@ -3978,6 +4059,7 @@
 	"thumbnail" "outfit/light_cannon"
 	"mass" 2
 	"outfit space" -2
+	"weapon capacity" -2
 	"gun ports" -1
 	"weapon"
 		# EVN ProxRadius 4 has no direct ES field.
@@ -4015,6 +4097,7 @@
 	"thumbnail" "outfit/triphammer"
 	"mass" 0
 	"outfit space" 0
+	"weapon capacity" 0
 	"gun ports" -1
 	"weapon"
 		# EVN beam Guidance 0 requires ES beam visual tuning.

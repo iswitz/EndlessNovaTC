@@ -789,6 +789,7 @@ function convertShips() {
       ["turn", number(p.turnRate)],
       ["cargo space", number(p.freeCargo)],
       ["outfit space", number(p.freeMass)],
+      ["weapon capacity", number(p.freeMass)],
       ["cost", Math.max(0, number(raw.Cost))],
       ["required crew", Math.max(0, number(raw.Crew))],
       ["fuel capacity", Math.max(0, number(raw.Fuel))],
@@ -844,6 +845,13 @@ function convertOutfits() {
     const isAmmo = Number(rawOutfitData.ModType) === 3;
     const weaponRefs = Object.keys(outfit.weapons || {});
     const firstWeapon = weaponRefs.length ? normalizedOf("Weapon", weaponRefs[0]) : null;
+    const firstWeaponRaw = firstWeapon && referenceWeaponRecord(firstWeapon.id);
+    const firstGuidance = firstWeaponRaw && firstWeaponRaw.data ? number(firstWeaponRaw.data.Guidance, -1) : -1;
+    const slotAttribute = !weaponRefs.length ? null
+      : firstGuidance === 99 ? "fighter bays"
+      : [3, 4, 7, 8, 9, 10].includes(firstGuidance) || firstWeapon.exitType === "turret" ? "turret mounts"
+      : firstWeapon.exitType === "guided" || [1, 5, 6].includes(firstGuidance) ? "missile mounts"
+      : "gun ports";
     const category = isAmmo ? "Ammunition" : firstWeapon && firstWeapon.exitType === "turret" ? "Turrets" : weaponRefs.length ? "Guns" : "Systems";
     const fields = [
       ["category", category],
@@ -851,7 +859,8 @@ function convertOutfits() {
       ["thumbnail", `outfit/${name.replace(/[^A-Za-z0-9]+/g, "_").toLowerCase()}`],
       ["mass", number(outfit.physics && outfit.physics.freeMass)],
       ["outfit space", -number(outfit.physics && outfit.physics.freeMass)],
-      [firstWeapon && firstWeapon.exitType === "turret" ? "turret mounts" : weaponRefs.length ? "gun ports" : null, weaponRefs.length ? -1 : null]
+      [weaponRefs.length ? "weapon capacity" : null, weaponRefs.length ? -number(outfit.physics && outfit.physics.freeMass) : null],
+      [slotAttribute, weaponRefs.length ? -1 : null]
     ];
     lines.push(`${q("outfit")} ${q(name)}`);
     add(lines, "plural", `${name}s`);
