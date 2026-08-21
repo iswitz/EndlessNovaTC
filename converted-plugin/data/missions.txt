@@ -97,7 +97,8 @@ mission "EVN: Infiltrate the Rebels; Vellos4"
 		conversation "EVN dialogue 131 offer"
 	on accept
 		set "EVN rank 148"
-		# EVN unsupported mission actions: "A818"
+		fail "EVN: Drop By Kane Band Bar;Vell-os 3->4 link misn"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on complete
 		"reputation: Rebellion" = 0
 		set "EVN bit 353"
@@ -309,7 +310,8 @@ mission "EVN: Rebel Equipment Drop; Vellos6"
 	on offer
 		conversation "EVN dialogue 144 offer"
 	on accept
-		# EVN unsupported mission actions: "A819"
+		fail "EVN: Drop By Merrol Bar;Rebel Reminder link"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		conversation "EVN dialogue 144 load"
 	on complete
 		payment 25000
@@ -372,7 +374,8 @@ mission "EVN: Rescue Agent; Vellos7"
 	on offer
 		conversation "EVN dialogue 146 offer"
 	on accept
-		# EVN unsupported mission actions: "A819"
+		fail "EVN: Drop By Merrol Bar;Rebel Reminder link"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		conversation "EVN dialogue 146 load"
 	on complete
 		payment 35000
@@ -442,7 +445,8 @@ mission "EVN: Insert Bureau Agent; Vellos9"
 		has "EVN bit 358"
 		random < 100
 	on accept
-		# EVN unsupported mission actions: "A819"
+		fail "EVN: Drop By Merrol Bar;Rebel Reminder link"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on complete
 		payment 35000
 		set "EVN bit 359"
@@ -667,7 +671,8 @@ mission "EVN: Broadcast Message;Polaris8a"
 	on offer
 		conversation "EVN dialogue 157 offer"
 	on accept
-		# EVN unsupported mission actions: "A837"
+		fail "EVN: Drop By P'ar Aed Bar"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on complete
 		payment 50000
 		set "EVN bit 282"
@@ -699,7 +704,8 @@ mission "EVN: Watch Wraith Talks;Polaris9a"
 	on offer
 		conversation "EVN dialogue 158 offer"
 	on accept
-		# EVN unsupported mission actions: "A838"
+		fail "EVN: Drop By Tre'ar Erma Bar"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on complete
 		payment 60000
 		set "EVN bit 283"
@@ -1266,13 +1272,41 @@ mission "EVN: Find Vellos;Polaris32"
 		set "EVN bit 347"
 		set "EVN bit 6666"
 		outfit ";Krypt mind attack" -1
-		# EVN unsupported mission actions: "A862 A863 A864 A865 A866 A867 A868 A869 A870 A871"
+		fail "EVN: Krypt Mind Attack;Polaris 32a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Krypt Mind Attack;Polaris 32a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Krypt Mind Attack;Polaris 32a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Krypt Mind Attack;Polaris 32a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Krypt Mind Attack;Polaris 32a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Krypt Mind Attack Exit;Polaris 32b"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Krypt Mind Attack Exit;Polaris 32b"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Krypt Mind Attack Exit;Polaris 32b"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Krypt Mind Attack Exit;Polaris 32b"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Krypt Mind Attack Exit;Polaris 32b"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		"reputation: Krypt" += 5
 		conversation "EVN dialogue 181 complete"
 	on visit
 		conversation "EVN dialogue 181 drop"
 	on abort
-		# EVN unsupported mission actions: "A862 A863 A864 A865 A866"
+		fail "EVN: Krypt Mind Attack;Polaris 32a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Krypt Mind Attack;Polaris 32a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Krypt Mind Attack;Polaris 32a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Krypt Mind Attack;Polaris 32a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Krypt Mind Attack;Polaris 32a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 
 mission "EVN: Observe Experiment;Polaris33"
 	landing
@@ -1605,7 +1639,10 @@ mission "EVN: Distract Moash House; Vellos13"
 		"reputation: Federation" = 0
 		"reputation: Rimerta" = 0
 		set "EVN bit 362"
-		# EVN unsupported mission actions: "A905 A606"
+		fail "EVN: Silent Mission;Vell-os Auroran pay player misn"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission;Distract Moash defenders"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		"reputation: Bureau" += 5
 		conversation "EVN dialogue 196 complete"
 
@@ -2557,8 +2594,9 @@ mission "EVN: Rebel Equipment Drop;Rebel2"
 	on offer
 		conversation "EVN dialogue 331 offer"
 	on accept
+		fail "EVN: Drop By Merrol Bar;Rebel Reminder link"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		set "EVN bit 127"
-		# EVN unsupported mission actions: "A819"
 		conversation "EVN dialogue 331 load"
 	on complete
 		payment 25000
@@ -2623,7 +2661,8 @@ mission "EVN: Rescue Agent;Rebel3"
 	on offer
 		conversation "EVN dialogue 333 offer"
 	on accept
-		# EVN unsupported mission actions: "A819"
+		fail "EVN: Drop By Merrol Bar;Rebel Reminder link"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		conversation "EVN dialogue 333 load"
 	on complete
 		payment 35000
@@ -2685,7 +2724,8 @@ mission "EVN: Rebel Insertion;Rebel4"
 	on offer
 		conversation "EVN dialogue 335 offer"
 	on accept
-		# EVN unsupported mission actions: "A819"
+		fail "EVN: Drop By Merrol Bar;Rebel Reminder link"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on complete
 		payment 35000
 		set "EVN bit 129"
@@ -2872,17 +2912,20 @@ mission "EVN: Test Polaris Tech;Rebel I9"
 	on complete
 		payment 25000
 		set "EVN bit 134"
-		# EVN unsupported mission actions: "A791"
+		fail "EVN: Silent Mission;Rebel I9a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		"reputation: Rebellion" += 3
 		conversation "EVN dialogue 341 complete"
 		clear "EVN bit 5770"
 	on visit
 		conversation "EVN dialogue 341 drop"
 	on fail
-		# EVN unsupported mission actions: "A791"
+		fail "EVN: Silent Mission;Rebel I9a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on abort
 		clear "EVN bit 5770"
-		# EVN unsupported mission actions: "A791"
+		fail "EVN: Silent Mission;Rebel I9a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 
 mission "EVN: Check Out Roughnecks;Rebel I10"
 	landing
@@ -4000,18 +4043,22 @@ mission "EVN: Take Llyrell to Korell; Vellos31 LAST"
 		set "EVN bit 334"
 		set "EVN bit 613"
 		set "EVN bit 9995"
+		fail "EVN: Silent Mission;Vellos 31a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		set "EVN bit 9500"
 		message "EVN message 25048"
-		# EVN unsupported mission actions: "A718 M472"
+		# EVN unsupported mission actions: "M472"
 		"reputation: Krypt" += 10
 		conversation "EVN dialogue 417 complete"
 	on visit
 		conversation "EVN dialogue 417 drop"
 	on fail
-		# EVN unsupported mission actions: "A718"
+		fail "EVN: Silent Mission;Vellos 31a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on abort
+		fail "EVN: Silent Mission;Vellos 31a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		clear "EVN bit 148"
-		# EVN unsupported mission actions: "A718"
 
 mission "EVN: Federation Resupply;Fed1"
 	invisible
@@ -4504,7 +4551,8 @@ mission "EVN: Rebel Equipment Drop;Fed15"
 	on offer
 		conversation "EVN dialogue 444 offer"
 	on accept
-		# EVN unsupported mission actions: "A819"
+		fail "EVN: Drop By Merrol Bar;Rebel Reminder link"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		conversation "EVN dialogue 444 load"
 	on complete
 		payment 25000
@@ -4566,7 +4614,8 @@ mission "EVN: Rescue Agent;Fed16"
 	on offer
 		conversation "EVN dialogue 446 offer"
 	on accept
-		# EVN unsupported mission actions: "A819"
+		fail "EVN: Drop By Merrol Bar;Rebel Reminder link"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		conversation "EVN dialogue 446 load"
 	on complete
 		payment 35000
@@ -4753,7 +4802,8 @@ mission "EVN: Distract Moash House;Fed23"
 	on complete
 		"reputation: Family Moash" = 0
 		set "EVN bit 69"
-		# EVN unsupported mission actions: "A606"
+		fail "EVN: Silent Mission;Distract Moash defenders"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		"reputation: Bureau" += 5
 		conversation "EVN dialogue 454 complete"
 	on decline
@@ -4919,7 +4969,8 @@ mission "EVN: Lead Attack on Rebels;Fed32"
 		set "EVN bit 148"
 		set "EVN bit 6031"
 		set "EVN bit 8900"
-		# EVN unsupported mission actions: "A607"
+		fail "EVN: Silent Mission;Rebel defenders"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		"reputation: Bureau" += 15
 		conversation "EVN dialogue 463 complete"
 	on visit
@@ -5127,7 +5178,8 @@ mission "EVN: Scout Polaris Space;Fed38"
 		payment 100000
 		set "EVN bit 84"
 		set "EVN bit 6666"
-		# EVN unsupported mission actions: "A913"
+		fail "EVN: Silent Mission;Return to New England"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		"reputation: Bureau" += 5
 		conversation "EVN dialogue 469 complete"
 		# EVN unsupported mission actions: "S913"
@@ -5227,12 +5279,14 @@ mission "EVN: Destroy Polaris Raven;Fed42"
 		"reputation: Polaris" = 0
 		set "EVN bit 88"
 		set "EVN bit 333"
+		fail "EVN: Silent Misn;fed42a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		set "EVN bit 8904"
-		# EVN unsupported mission actions: "A795"
 		"reputation: Bureau" += 10
 		conversation "EVN dialogue 473 complete"
 	on abort
-		# EVN unsupported mission actions: "A795"
+		fail "EVN: Silent Misn;fed42a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on decline
 		outfit "Bureau Bomb Outfit" 1
 		conversation "EVN dialogue 473 decline"
@@ -6892,10 +6946,11 @@ mission "EVN: Deliver Explosives to Ryll;Wild Geese 5a"
 		conversation "EVN dialogue 638 drop"
 	on abort
 		set "EVN bit 803"
+		fail "EVN: Silent Money Mission - for Deliver explosives to Ryll"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		clear "EVN bit 511"
 		clear "EVN bit 515"
 		clear "EVN bit 518"
-		# EVN unsupported mission actions: "A733"
 
 mission "EVN: Free Eiric;Wild Geese 6a"
 	invisible
@@ -6995,10 +7050,11 @@ mission "EVN: Deliver Explosives to Ryll;Wild Geese 5b"
 		conversation "EVN dialogue 644 drop"
 	on abort
 		set "EVN bit 803"
+		fail "EVN: Silent Money Mission - for Deliver explosives to Ryll"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		clear "EVN bit 511"
 		clear "EVN bit 515"
 		clear "EVN bit 518"
-		# EVN unsupported mission actions: "A733"
 
 mission "EVN: Take Peace-Proposal to McGowan;Wild Geese 6b"
 	invisible
@@ -7100,11 +7156,25 @@ mission "EVN: Take Supplies to <RST>;Auroran 001"
 	on fail
 		set "EVN bit 201"
 		clear "EVN bit 511"
-		# EVN unsupported mission actions: "A749 A750 A751 A752"
+		fail "EVN: Silent Mission;Auroran 001b"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission;Auroran 001c"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission;Auroran 001d"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission;Auroran 001e"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on abort
 		set "EVN bit 201"
 		clear "EVN bit 511"
-		# EVN unsupported mission actions: "A749 A750 A751 A752"
+		fail "EVN: Silent Mission;Auroran 001b"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission;Auroran 001c"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission;Auroran 001d"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission;Auroran 001e"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on decline
 		set "EVN bit 201"
 		conversation "EVN dialogue 653 decline"
@@ -7145,11 +7215,25 @@ mission "EVN: Take Supplies to <RST>;Auroran 002"
 	on fail
 		clear "EVN bit 511"
 		set "EVN bit 518"
-		# EVN unsupported mission actions: "A749 A750 A751 A752"
+		fail "EVN: Silent Mission;Auroran 001b"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission;Auroran 001c"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission;Auroran 001d"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission;Auroran 001e"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on abort
 		clear "EVN bit 511"
 		set "EVN bit 518"
-		# EVN unsupported mission actions: "A749 A750 A751 A752"
+		fail "EVN: Silent Mission;Auroran 001b"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission;Auroran 001c"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission;Auroran 001d"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission;Auroran 001e"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on decline
 		clear "EVN bit 511"
 		set "EVN bit 518"
@@ -7386,12 +7470,14 @@ mission "EVN: Cause Havoc for Dani;Auroran 011"
 	on complete
 		"reputation: Rimerta" = 0
 		set "EVN bit 214"
-		# EVN unsupported mission actions: "A792"
+		fail "EVN: Silent Mission;Auroran 011a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		"reputation: Family Heraan" += 5
 		conversation "EVN dialogue 665 complete"
 		message "EVN message 25052"
 	on abort
-		# EVN unsupported mission actions: "A792"
+		fail "EVN: Silent Mission;Auroran 011a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 
 mission "EVN: Start Dechtakars Service;Auroran 012"
 	invisible
@@ -7437,17 +7523,20 @@ mission "EVN: Destroy Pirate Menace;Auroran 012a"
 	on complete
 		payment 10000
 		set "EVN bit 216"
-		# EVN unsupported mission actions: "A793"
+		fail "EVN: Silent Hune Misn; Auroran generic"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		"reputation: Rimerta" += 5
 		conversation "EVN dialogue 667 complete"
 	on visit
 		conversation "EVN dialogue 667 drop"
 	on fail
 		set "EVN bit 217"
-		# EVN unsupported mission actions: "A793"
+		fail "EVN: Silent Hune Misn; Auroran generic"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on abort
 		set "EVN bit 217"
-		# EVN unsupported mission actions: "A793"
+		fail "EVN: Silent Hune Misn; Auroran generic"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on decline
 		set "EVN bit 217"
 		conversation "EVN dialogue 667 decline"
@@ -7518,17 +7607,21 @@ mission "EVN: Battle with Wild Geese;Auroran 012c"
 	on complete
 		payment 10000
 		set "EVN bit 219"
-		# EVN unsupported mission actions: "S788 A793"
+		fail "EVN: Silent Hune Misn; Auroran generic"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		# EVN unsupported mission actions: "S788"
 		"reputation: Auroran Empire" += 10
 		conversation "EVN dialogue 669 complete"
 	on visit
 		conversation "EVN dialogue 669 drop"
 	on fail
 		set "EVN bit 217"
-		# EVN unsupported mission actions: "A793"
+		fail "EVN: Silent Hune Misn; Auroran generic"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on abort
 		set "EVN bit 217"
-		# EVN unsupported mission actions: "A793"
+		fail "EVN: Silent Hune Misn; Auroran generic"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on decline
 		set "EVN bit 217"
 		conversation "EVN dialogue 669 decline"
@@ -8020,12 +8113,14 @@ mission "EVN: Take Cargo to Misfire;Pirate 002"
 		conversation "EVN dialogue 694 drop"
 	on fail
 		clear "EVN bit 511"
+		fail "EVN: Pirate 002 silent money misn"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		set "EVN bit 519"
-		# EVN unsupported mission actions: "A879"
 	on abort
 		clear "EVN bit 511"
+		fail "EVN: Pirate 002 silent money misn"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		set "EVN bit 519"
-		# EVN unsupported mission actions: "A879"
 	on decline
 		clear "EVN bit 511"
 		set "EVN bit 519"
@@ -8227,7 +8322,8 @@ mission "EVN: Rebel Equipment Drop;Pirate 005B"
 	on offer
 		conversation "EVN dialogue 700 offer"
 	on accept
-		# EVN unsupported mission actions: "A819"
+		fail "EVN: Drop By Merrol Bar;Rebel Reminder link"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		conversation "EVN dialogue 700 load"
 	on complete
 		payment 25000
@@ -8287,7 +8383,8 @@ mission "EVN: Rescue Agent;Pirate 005C"
 	on offer
 		conversation "EVN dialogue 702 offer"
 	on accept
-		# EVN unsupported mission actions: "A819"
+		fail "EVN: Drop By Merrol Bar;Rebel Reminder link"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		conversation "EVN dialogue 702 load"
 	on complete
 		payment 35000
@@ -8347,7 +8444,8 @@ mission "EVN: Rebel Insertion;Pirate005D"
 	on offer
 		conversation "EVN dialogue 704 offer"
 	on accept
-		# EVN unsupported mission actions: "A819"
+		fail "EVN: Drop By Merrol Bar;Rebel Reminder link"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on complete
 		payment 35000
 		set "EVN bit 653"
@@ -8485,7 +8583,10 @@ mission "EVN: Set and Launch Trap;Pirate 010"
 		set "EVN bit 8910"
 		# EVN unsupported mission actions: "S711"
 	on abort
-		# EVN unsupported mission actions: "A827 A808"
+		fail "EVN: Silent Mission;Pirate 010b"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent misn;Pirate 010a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 
 mission "EVN: Silent Mission for Extra special ships;Pirate 010A"
 	invisible
@@ -8521,18 +8622,31 @@ mission "EVN: Destroy McGowan;Pirate 011 LAST"
 	on offer
 		conversation "EVN dialogue 712 offer"
 	on accept
-		# EVN unsupported mission actions: "S713 A895"
+		fail "EVN: Silent misn;last pirate misn link"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		# EVN unsupported mission actions: "S713"
 	on complete
 		"reputation: Federation" = 0
 		set "EVN bit 611"
 		set "EVN bit 9995"
 		set "EVN bit 9500"
 		message "EVN message 25048"
-		# EVN unsupported mission actions: "M472 A711 A713 A714 A715"
+		fail "EVN: Silent Mission for Extra special ships;Pirate 010A"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission for Extra special ships;Pirate 011A"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission for Extra special ships;Pirate 011B"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent Mission for Extra special ships;Pirate 011C"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		# EVN unsupported mission actions: "M472"
 		conversation "EVN dialogue 712 complete"
 		# EVN unsupported mission actions: "S711"
 	on abort
-		# EVN unsupported mission actions: "A713 A895"
+		fail "EVN: Silent Mission for Extra special ships;Pirate 011A"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
+		fail "EVN: Silent misn;last pirate misn link"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 
 mission "EVN: Silent Mission for Extra special ships;Pirate 011A"
 	invisible
@@ -9779,7 +9893,8 @@ mission "EVN: Recover Stolen Art;Special Klavs 03b"
 		set "EVN bit 7784"
 	on abort
 		set "EVN bit 7784"
-		# EVN unsupported mission actions: "A833"
+		fail "EVN: Recover Stolen Art;Special Klavs 03c (invisible)"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 	on decline
 		set "EVN bit 7784"
 		conversation "EVN dialogue 832 decline"
@@ -10004,7 +10119,8 @@ mission "EVN: Try to Get Back to <RST>;Polaris ActionMan 004"
 		"reputation: Nil'kemorya" += 5
 		conversation "EVN dialogue 847 complete"
 	on abort
-		# EVN unsupported mission actions: "A848"
+		fail "EVN: Silent Mission;Polaris ActionMan 004a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 
 mission "EVN: Silent Mission;Polaris ActionMan 004a"
 	invisible
@@ -10250,11 +10366,13 @@ mission "EVN: Lead Raid on Moash;Auroran ActionMan 003"
 		# EVN unsupported mission actions: "S858"
 	on complete
 		payment 50000
-		# EVN unsupported mission actions: "A858"
+		fail "EVN: Silent Mission;Auroran ActionMan 003a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 		"reputation: Family Heraan" += 5
 		conversation "EVN dialogue 857 complete"
 	on abort
-		# EVN unsupported mission actions: "A858"
+		fail "EVN: Silent Mission;Auroran ActionMan 003a"
+		# EVN abort action approximated as ES fail; target on-abort behavior differs
 
 mission "EVN: Silent Mission;Auroran ActionMan 003a"
 	invisible

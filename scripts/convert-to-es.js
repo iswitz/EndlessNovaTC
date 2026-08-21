@@ -483,7 +483,7 @@ function evnMissionActions(expression) {
     if (bit) {
       if (bit[1] === "^") unsupported.push(token);
       else supported.push({ type: "bit", bit: bit[3], negate: bit[1] === "!" });
-    } else if (opcode && /^(G|D|F|K|L|Q|X)$/i.test(opcode[1])) {
+    } else if (opcode && /^(A|G|D|F|K|L|Q|X)$/i.test(opcode[1])) {
       supported.push({ type: opcode[1].toUpperCase(), id: Number(opcode[2]), token });
     } else unsupported.push(token);
   }
@@ -596,10 +596,11 @@ function emitEvnMissionActions(lines, expression, indent, context = {}) {
       lines.push(`${indent}outfit ${q(nameOf("Outfit", action.id))} ${action.type === "G" ? 1 : -1}`);
       continue;
     }
-    if (action.type === "F") {
+    if (action.type === "A" || action.type === "F") {
       const missionName = evnMissionName(action.id);
       if (missionName) lines.push(`${indent}fail ${q(missionName)}`);
       else actions.unsupported.push(`${action.token} (unknown mission)`);
+      if (action.type === "A" && missionName) lines.push(`${indent}# EVN abort action approximated as ES fail; target on-abort behavior differs`);
       continue;
     }
     if (action.type === "K" || action.type === "L") {
